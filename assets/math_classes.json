@@ -1,894 +1,522 @@
 [
     {
         "course_title": "MATH 100 - Calculus for Engineering I",
-        "description": "Review of numbers, inequalities, functions, analytic geometry; limits, continuity; derivatives and applications, Taylor polynomials; log, exp, and inverse trig functions. Integration, fundamental theorem of calculus substitution, trapezoidal and Simpson's rules. Prerequisites: Mathematics 30-1 and Mathematics 31. Notes: (1) Credit can be obtained in at most one of MATH 100, 113, 114, 117, 134, 144, 154, or SCI 100. (2) Students in all sections of this course will write a common final examination. (3) Restricted to Engineering students. Non-Engineering students who take this course will receive 3 units.",
-        "prerequisites": []
+        "description": "Review of numbers, inequalities, functions, analytic geometry; limits, continuity; derivatives and applications, Taylor polynomials; log, exp, and inverse trig functions. Integration, fundamental theorem of calculus substitution, trapezoidal and Simpson's rules. Prerequisites: Mathematics 30-1 and Mathematics 31. Notes: (1) Credit can be obtained in at most one of MATH 100, 113, 114, 117, 134, 144, 154, or SCI 100. (2) Students in all sections of this course will write a common final examination. (3) Restricted to Engineering students. Non-Engineering students who take this course will receive 3 units."
     },
     {
         "course_title": "MATH 101 - Calculus for Engineering II",
-        "description": "Area between curves, techniques of integration. Applications of integration to planar areas and lengths, volumes and masses. First order ordinary differential equations: separable, linear, direction fields, Euler's method, applications. Infinite series, power series, Taylor expansions with remainder terms. Polar coordinates. Rectangular, spherical and cylindrical coordinates in 3-dimensional space. Parametric curves in the plane and space: graphing, arc length, curvature; normal binormal, tangent plane in 3- dimensional space. Volumes and surface areas of rotation. Prerequisite: MATH 100. Notes: (1) Credit can be obtained in at most one of MATH 101, 115, 118, 136, 146, 156 or SCI 100. (2) Students in all sections of this course will write a common final examination. (3) Restricted to Engineering students. Non-Engineering students who take this course will receive 3 units.",
-        "prerequisites": [
-            "MATH 100"
-        ]
+        "description": "Area between curves, techniques of integration. Applications of integration to planar areas and lengths, volumes and masses. First order ordinary differential equations: separable, linear, direction fields, Euler's method, applications. Infinite series, power series, Taylor expansions with remainder terms. Polar coordinates. Rectangular, spherical and cylindrical coordinates in 3-dimensional space. Parametric curves in the plane and space: graphing, arc length, curvature; normal binormal, tangent plane in 3- dimensional space. Volumes and surface areas of rotation. Prerequisite: MATH 100. Notes: (1) Credit can be obtained in at most one of MATH 101, 115, 118, 136, 146, 156 or SCI 100. (2) Students in all sections of this course will write a common final examination. (3) Restricted to Engineering students. Non-Engineering students who take this course will receive 3 units."
     },
     {
         "course_title": "MATH 102 - Applied Linear Algebra",
-        "description": "Vectors and matrices, solution of linear equations, equations of lines and planes, determinants, matrix algebra, orthogonality and applications (Gram-Schmidt), eigenvalues and eigenvectors and applications, complex numbers. Prerequisite or corequisite: MATH 100. Notes: (1) Credit can be obtained in at most one of MATH 102, 125, or 127. (2) Students in all sections of this course will write a common final examination. (3) Restricted to Engineering students. Non-Engineering students who take this course will receive 3 units.",
-        "prerequisites": []
+        "description": "Vectors and matrices, solution of linear equations, equations of lines and planes, determinants, matrix algebra, orthogonality and applications (Gram-Schmidt), eigenvalues and eigenvectors and applications, complex numbers. Prerequisite or corequisite: MATH 100. Notes: (1) Credit can be obtained in at most one of MATH 102, 125, or 127. (2) Students in all sections of this course will write a common final examination. (3) Restricted to Engineering students. Non-Engineering students who take this course will receive 3 units."
     },
     {
         "course_title": "MATH 111 - Introduction to Discrete Mathematics",
-        "description": "A problem-solving approach to discrete mathematics, covering secret codes, public-key codes, error-correcting codes, enumeration, recurrence relations, induction, graph theory, graph algorithms and parallel algorithms. Prerequisite: MATH 30-1, 30-2, or equivalent. Note : Credit can only be obtained in at most one of MATH 111 or MATH 222.",
-        "prerequisites": [
-            "MATH 30-1",
-            "30-2",
-            "equivalent"
-        ]
+        "description": "A problem-solving approach to discrete mathematics, covering secret codes, public-key codes, error-correcting codes, enumeration, recurrence relations, induction, graph theory, graph algorithms and parallel algorithms. Prerequisite: MATH 30-1, 30-2, or equivalent. Note : Credit can only be obtained in at most one of MATH 111 or MATH 222."
     },
     {
         "course_title": "MATH 114 - Elementary Calculus I",
-        "description": "Review of analytic geometry. Differentiation of elementary, trigonometric, exponential, and logarithmic functions. Applications of the derivative. Integration. Fundamental Theorem of Calculus. Prerequisite: Pure Mathematics 30 or Mathematics 30-1 or equivalent. Note: Credit can be obtained in at most one of MATH 100, 113, 114, 117, 134, 144, or SCI 100.",
-        "prerequisites": [
-            "Pure Mathematics 30",
-            "Mathematics 30-1",
-            "equivalent"
-        ]
+        "description": "Review of analytic geometry. Differentiation of elementary, trigonometric, exponential, and logarithmic functions. Applications of the derivative. Integration. Fundamental Theorem of Calculus. Prerequisite: Pure Mathematics 30 or Mathematics 30-1 or equivalent. Note: Credit can be obtained in at most one of MATH 100, 113, 114, 117, 134, 144, or SCI 100."
     },
     {
         "course_title": "MATH 115 - Elementary Calculus II",
-        "description": "Inverse trigonometric functions. Techniques of integration. Improper integrals. Applications of the definite integral. Introduction to differential equations. Prerequisite: One of MATH 100, 113, 114, 117, 134, 144 or 154. Note: Credit can be obtained in at most one of MATH 101, 115, 118, 136, 146, 156 or SCI 100.",
-        "prerequisites": [
-            "One of MATH 100",
-            "113",
-            "114",
-            "117",
-            "134",
-            "144",
-            "154"
-        ]
+        "description": "Inverse trigonometric functions. Techniques of integration. Improper integrals. Applications of the definite integral. Introduction to differential equations. Prerequisite: One of MATH 100, 113, 114, 117, 134, 144 or 154. Note: Credit can be obtained in at most one of MATH 101, 115, 118, 136, 146, 156 or SCI 100."
     },
     {
         "course_title": "MATH 117 - Honors Calculus I",
-        "description": "Functions, continuity, and the derivative. Applications of the derivative. Extended limits and L'Hospital's rule. Prerequisites: Mathematics 30-1 and Mathematics 31, or consent of the Department. Notes: (1) This course is designed for students with at least 80 percent in Pure Mathematics 30 or Mathematics 30-1 and Mathematics 31. (2) Credit can be obtained in at most one of MATH 100, 113, 114, 117, 134, 144, 154 or SCI 100. (3) Engineering students will receive a weight of 4.0 units for this course.",
-        "prerequisites": []
+        "description": "Functions, continuity, and the derivative. Applications of the derivative. Extended limits and L'Hospital's rule. Prerequisites: Mathematics 30-1 and Mathematics 31, or consent of the Department. Notes: (1) This course is designed for students with at least 80 percent in Pure Mathematics 30 or Mathematics 30-1 and Mathematics 31. (2) Credit can be obtained in at most one of MATH 100, 113, 114, 117, 134, 144, 154 or SCI 100. (3) Engineering students will receive a weight of 4.0 units for this course."
     },
     {
         "course_title": "MATH 118 - Honors Calculus II",
-        "description": "Integration and the Fundamental Theorem. Techniques and applications of integration. Derivatives and integrals of the exponential, and trigonometric functions. Introduction to infinite series. Introduction to partial derivatives. Prerequisite: MATH 117. (Students with a 100-level calculus course different from MATH 117 may be admitted with consent of the Department.) Notes: (1) Credit can be obtained in at most one MATH 101, 115, 118, 136, 146, 156 or SCI 100. (2) Engineering students will receive a weight of 4.0 units for this course.",
-        "prerequisites": [
-            "MATH 117"
-        ]
+        "description": "Integration and the Fundamental Theorem. Techniques and applications of integration. Derivatives and integrals of the exponential, and trigonometric functions. Introduction to infinite series. Introduction to partial derivatives. Prerequisite: MATH 117. (Students with a 100-level calculus course different from MATH 117 may be admitted with consent of the Department.) Notes: (1) Credit can be obtained in at most one MATH 101, 115, 118, 136, 146, 156 or SCI 100. (2) Engineering students will receive a weight of 4.0 units for this course."
     },
     {
         "course_title": "MATH 125 - Linear Algebra I",
-        "description": "Systems of linear equations. Vectors in n-space, vector equations of lines and planes. Matrix algebra, inverses and invertibility. Introduction to linear transformations. Subspaces of n-space. Determinants. Introduction to eigenvalues and eigenvectors. Complex numbers. Dot product, cross product and orthogonality. Applications in a variety of fields. Prerequisite: Mathematics 30-1. Note: Credit can be obtained in at most one of MATH 102, 125 or 127.",
-        "prerequisites": [
-            "Mathematics 30-1"
-        ]
+        "description": "Systems of linear equations. Vectors in n-space, vector equations of lines and planes. Matrix algebra, inverses and invertibility. Introduction to linear transformations. Subspaces of n-space. Determinants. Introduction to eigenvalues and eigenvectors. Complex numbers. Dot product, cross product and orthogonality. Applications in a variety of fields. Prerequisite: Mathematics 30-1. Note: Credit can be obtained in at most one of MATH 102, 125 or 127."
     },
     {
         "course_title": "MATH 127 - Honors Linear Algebra I",
-        "description": "Linear equations; Euclidean spaces, matrices. Complex numbers and fields. Vector spaces : basis, dimension, linear transformations. Introductions to groups and rings; permutation groups. Determinants. Eigenvalues and Eigenvectors. Prerequisite: Mathematics 30-1. Note: Credit can be obtained in at most one of Math 102, 125 or 127.",
-        "prerequisites": [
-            "Mathematics 30-1"
-        ]
+        "description": "Linear equations; Euclidean spaces, matrices. Complex numbers and fields. Vector spaces : basis, dimension, linear transformations. Introductions to groups and rings; permutation groups. Determinants. Eigenvalues and Eigenvectors. Prerequisite: Mathematics 30-1. Note: Credit can be obtained in at most one of Math 102, 125 or 127."
     },
     {
         "course_title": "MATH 134 - Calculus for the Life Sciences I",
-        "description": "The derivative as a rate of change. Differentiation of elementary, trigonometric, exponential, and logarithmic functions. The definite integral as a summation. Integration. The Fundamental Theorem of Calculus. Applications in the context of the life sciences. Prerequisite: Mathematics 30-1. Note: Credit can be obtained in at most one of MATH 100, 113, 114, 117, 134, 144, 154 or SCI 100.",
-        "prerequisites": [
-            "Mathematics 30-1"
-        ]
+        "description": "The derivative as a rate of change. Differentiation of elementary, trigonometric, exponential, and logarithmic functions. The definite integral as a summation. Integration. The Fundamental Theorem of Calculus. Applications in the context of the life sciences. Prerequisite: Mathematics 30-1. Note: Credit can be obtained in at most one of MATH 100, 113, 114, 117, 134, 144, 154 or SCI 100."
     },
     {
         "course_title": "MATH 136 - Calculus for the Life Sciences II",
-        "description": "Techniques and applications of integration. Improper integrals. Differential equations and mathematical modelling. Partial differentiation. Applications in the context of the life sciences. Prerequisite: One of MATH 100, 113, 114, 117, 134, 144 or 154. Note: Credit can be obtained in at most one of MATH 101, 115, 118, 136, 146, 156 or SCI 100.",
-        "prerequisites": [
-            "One of MATH 100",
-            "113",
-            "114",
-            "117",
-            "134",
-            "144",
-            "154"
-        ]
+        "description": "Techniques and applications of integration. Improper integrals. Differential equations and mathematical modelling. Partial differentiation. Applications in the context of the life sciences. Prerequisite: One of MATH 100, 113, 114, 117, 134, 144 or 154. Note: Credit can be obtained in at most one of MATH 101, 115, 118, 136, 146, 156 or SCI 100."
     },
     {
         "course_title": "MATH 144 - Calculus for the Mathematical and Physical Sciences I",
-        "description": "The derivative as a rate of change. Differentiation of elementary, trigonometric, exponential, and logarithmic functions. The definite integral as a summation. Integration. The Fundamental Theorem of Calculus. Taylor polynomials. Applications in the context of the physical sciences. Prerequisite: Mathematics 30-1. Note: Credit can be obtained in at most one MATH 100, 113, 114, 117, 134, 144, 154 or SCI 100.",
-        "prerequisites": [
-            "Mathematics 30-1"
-        ]
+        "description": "The derivative as a rate of change. Differentiation of elementary, trigonometric, exponential, and logarithmic functions. The definite integral as a summation. Integration. The Fundamental Theorem of Calculus. Taylor polynomials. Applications in the context of the physical sciences. Prerequisite: Mathematics 30-1. Note: Credit can be obtained in at most one MATH 100, 113, 114, 117, 134, 144, 154 or SCI 100."
     },
     {
         "course_title": "MATH 146 - Calculus for the Mathematical and Physical Sciences II",
-        "description": "Techniques and applications of integration. Improper integrals. Introduction to differential equations. Partial differentiation. Applications in the context of the physical sciences. Prerequisite: One of MATH 100, 113, 114, 117, 134, 144 or 154. Note: Credit can be obtained in at most one of MATH 101, 115, 118, 136, 146, 156 or SCI 100.",
-        "prerequisites": [
-            "One of MATH 100",
-            "113",
-            "114",
-            "117",
-            "134",
-            "144",
-            "154"
-        ]
+        "description": "Techniques and applications of integration. Improper integrals. Introduction to differential equations. Partial differentiation. Applications in the context of the physical sciences. Prerequisite: One of MATH 100, 113, 114, 117, 134, 144 or 154. Note: Credit can be obtained in at most one of MATH 101, 115, 118, 136, 146, 156 or SCI 100."
     },
     {
         "course_title": "MATH 154 - Calculus for Business and Economics I",
-        "description": "The derivative as a rate of change. Differentiation of elementary, trigonometric, exponential, and logarithmic functions. The definite integral as a summation. Integration. The Fundamental Theorem of Calculus. Optimization. Applications in the context of business and economics. Prerequisite: Mathematics 30-1. Note: Credit can be obtained in at most one of MATH 100, 113, 114, 117, 134, 144, 154 or SCI 100.",
-        "prerequisites": [
-            "Mathematics 30-1"
-        ]
+        "description": "The derivative as a rate of change. Differentiation of elementary, trigonometric, exponential, and logarithmic functions. The definite integral as a summation. Integration. The Fundamental Theorem of Calculus. Optimization. Applications in the context of business and economics. Prerequisite: Mathematics 30-1. Note: Credit can be obtained in at most one of MATH 100, 113, 114, 117, 134, 144, 154 or SCI 100."
     },
     {
         "course_title": "MATH 156 - Calculus for Business and Economics II",
-        "description": "Techniques and applications of integration. Improper integrals. Partial differentiation. Multivariate optimization. Probability and calculus. Applications in the context of business and economics. Prerequisite: One of MATH 100, 113, 114, 117, 134, 144 or 154. Note: Credit can be obtained in at most one of MATH 101, 115, 118, 136, 146, 156 or SCI 100.",
-        "prerequisites": [
-            "One of MATH 100",
-            "113",
-            "114",
-            "117",
-            "134",
-            "144",
-            "154"
-        ]
+        "description": "Techniques and applications of integration. Improper integrals. Partial differentiation. Multivariate optimization. Probability and calculus. Applications in the context of business and economics. Prerequisite: One of MATH 100, 113, 114, 117, 134, 144 or 154. Note: Credit can be obtained in at most one of MATH 101, 115, 118, 136, 146, 156 or SCI 100."
     },
     {
         "course_title": "MATH 160 - Higher Arithmetic",
-        "description": "Elementary Number Theory, Numeration Systems, Number Systems and Elementary Probability Theory. Math Fair. Prerequisite: Mathematics 30-1 or 30-2, or consent of Department. Notes: (1) This course is restricted to Elementary Education students. (2) This course cannot be used for credit towards a Science degree.",
-        "prerequisites": [
-            "Mathematics 30-1",
-            "30-2",
-            "consent of Department"
-        ]
+        "description": "Elementary Number Theory, Numeration Systems, Number Systems and Elementary Probability Theory. Math Fair. Prerequisite: Mathematics 30-1 or 30-2, or consent of Department. Notes: (1) This course is restricted to Elementary Education students. (2) This course cannot be used for credit towards a Science degree."
     },
     {
         "course_title": "MATH 201 - Differential Equations",
-        "description": "First-order equations; second-order linear equations: reduction of order, variation of parameters; Laplace transform; linear systems; power series; solution by series; separation of variables for PDEs. Prerequisite or corequisite: MATH 209 or 214. Notes: (1) Open only to students in Engineering, Specialization Physics, and Specialization Geophysics. (2) Credit can be obtained in at most one of MATH 201, MATH 334, MATH 336, or MA PH 251. (3) Students in all sections of this course will write a common final examination. Non-Engineering students who take this course will receive 3 units.",
-        "prerequisites": []
+        "description": "First-order equations; second-order linear equations: reduction of order, variation of parameters; Laplace transform; linear systems; power series; solution by series; separation of variables for PDEs. Prerequisite or corequisite: MATH 209 or 214. Notes: (1) Open only to students in Engineering, Specialization Physics, and Specialization Geophysics. (2) Credit can be obtained in at most one of MATH 201, MATH 334, MATH 336, or MA PH 251. (3) Students in all sections of this course will write a common final examination. Non-Engineering students who take this course will receive 3 units."
     },
     {
         "course_title": "MATH 201A - Differential Equations",
-        "description": "First-order equations; second-order linear equations: reduction of order, variation of parameters; Laplace transform; linear systems; power series; solution by series; separation of variables for PDEs. Prerequisite or corequisite: MATH 209 or 214. Notes: (1) Open only to Engineering students and Science students in the following programs: Specialization Physics, Specialization Geophysics, Specialization Computing Science, or Specialization Geography (Meteorology). (2) Credit can be obtained in at most one of MATH 201, MATH 334, MATH 336, or MA PH 251. (3) Students in all sections of this course will write a common final examination. Non-Engineering students who take this course will receive 3 units.",
-        "prerequisites": []
+        "description": "First-order equations; second-order linear equations: reduction of order, variation of parameters; Laplace transform; linear systems; power series; solution by series; separation of variables for PDEs. Prerequisite or corequisite: MATH 209 or 214. Notes: (1) Open only to Engineering students and Science students in the following programs: Specialization Physics, Specialization Geophysics, Specialization Computing Science, or Specialization Geography (Meteorology). (2) Credit can be obtained in at most one of MATH 201, MATH 334, MATH 336, or MA PH 251. (3) Students in all sections of this course will write a common final examination. Non-Engineering students who take this course will receive 3 units."
     },
     {
         "course_title": "MATH 201B - Differential Equations",
-        "description": "First-order equations; second-order linear equations: reduction of order, variation of parameters; Laplace transform; linear systems; power series; solution by series; separation of variables for PDEs. Prerequisite or corequisite: MATH 209 or 214. Notes: (1) Open only to Engineering students and Science students in the following programs: Specialization Physics, Specialization Geophysics, Specialization Computing Science, or Specialization Geography (Meteorology). (2) Credit can be obtained in at most one of MATH 201, MATH 334, MATH 336, or MA PH 251. (3) Students in all sections of this course will write a common final examination. Non-Engineering students who take this course will receive 3 units.",
-        "prerequisites": []
+        "description": "First-order equations; second-order linear equations: reduction of order, variation of parameters; Laplace transform; linear systems; power series; solution by series; separation of variables for PDEs. Prerequisite or corequisite: MATH 209 or 214. Notes: (1) Open only to Engineering students and Science students in the following programs: Specialization Physics, Specialization Geophysics, Specialization Computing Science, or Specialization Geography (Meteorology). (2) Credit can be obtained in at most one of MATH 201, MATH 334, MATH 336, or MA PH 251. (3) Students in all sections of this course will write a common final examination. Non-Engineering students who take this course will receive 3 units."
     },
     {
         "course_title": "MATH 209 - Calculus for Engineering III",
-        "description": "Partial differentiation, derivatives of integrals. Multiple integration using rectangular, cylindrical, and spherical coordinates. Vector Field Theory. Prerequisite: MATH 101. Prerequisite or corequisite: MATH 102. Notes: (1) This course may not be taken for credit if credit has already been obtained in MATH 215, MATH 315, MATH 317 or MA PH 351. (2) Students in all sections of this course will write a common final examination. (3) Restricted to Engineering students. Non-Engineering students who take this course will receive 3 units.",
-        "prerequisites": [
-            "MATH 101"
-        ]
+        "description": "Partial differentiation, derivatives of integrals. Multiple integration using rectangular, cylindrical, and spherical coordinates. Vector Field Theory. Prerequisite: MATH 101. Prerequisite or corequisite: MATH 102. Notes: (1) This course may not be taken for credit if credit has already been obtained in MATH 215, MATH 315, MATH 317 or MA PH 351. (2) Students in all sections of this course will write a common final examination. (3) Restricted to Engineering students. Non-Engineering students who take this course will receive 3 units."
     },
     {
         "course_title": "MATH 214 - Calculus III",
-        "description": "Sequences and series, convergence tests, and Taylor series. Curves, tangent vectors, and arc length. Applications of partial differentiation. Polar, cylindrical, and spherical coordinates. Multiple integration. Prerequisite: One of MATH 101, 115, 118, 136, 146 or 156. One of MATH 102, 125 or 127 recommended. Note: This course may not be taken for credit if credit has already been obtained in MATH 209 or 217.",
-        "prerequisites": [
-            "One of MATH 101",
-            "115",
-            "118",
-            "136",
-            "146",
-            "156"
-        ]
+        "description": "Sequences and series, convergence tests, and Taylor series. Curves, tangent vectors, and arc length. Applications of partial differentiation. Polar, cylindrical, and spherical coordinates. Multiple integration. Prerequisite: One of MATH 101, 115, 118, 136, 146 or 156. One of MATH 102, 125 or 127 recommended. Note: This course may not be taken for credit if credit has already been obtained in MATH 209 or 217."
     },
     {
         "course_title": "MATH 216 - Introduction to Analysis",
-        "description": "Sets and functions. Induction. Axiomatic introduction of the real numbers. Sequences and series. Continuity and properties of continuous functions. Differentiation. Riemann integral. Corequisite: One of MATH 101, 115, 136, 146, 156 or SCI 100. Note: This course may not be taken for credit if credit has already been obtained in MATH 117. Credit can only be obtained in one of MATH 216 or MATH 314.",
-        "prerequisites": []
+        "description": "Sets and functions. Induction. Axiomatic introduction of the real numbers. Sequences and series. Continuity and properties of continuous functions. Differentiation. Riemann integral. Corequisite: One of MATH 101, 115, 136, 146, 156 or SCI 100. Note: This course may not be taken for credit if credit has already been obtained in MATH 117. Credit can only be obtained in one of MATH 216 or MATH 314."
     },
     {
         "course_title": "MATH 217 - Honors Calculus III",
-        "description": "Axiomatic development of the real number system. Topology of Rn. Sequences, limits and continuity. Multi-variable calculus: differentiation and integration, including integration in spherical and polar coordinates. The differential and the chain rule. Taylor's Formula, maxima and minima. Introduction to vector field theory. Prerequisites: One of MATH 102, 125 or 127, and either MATH 118 or MATH 216. Notes: (1) MATH 216 may be accepted as corequisite with consent of the Department. (2) Engineering students will receive a weight of 4.0 units for this course.",
-        "prerequisites": []
+        "description": "Axiomatic development of the real number system. Topology of Rn. Sequences, limits and continuity. Multi-variable calculus: differentiation and integration, including integration in spherical and polar coordinates. The differential and the chain rule. Taylor's Formula, maxima and minima. Introduction to vector field theory. Prerequisites: One of MATH 102, 125 or 127, and either MATH 118 or MATH 216. Notes: (1) MATH 216 may be accepted as corequisite with consent of the Department. (2) Engineering students will receive a weight of 4.0 units for this course."
     },
     {
         "course_title": "MATH 225 - Linear Algebra II",
-        "description": "Vector spaces. Inner product spaces. Examples of n-space and the space of continuous functions. Gram-Schmidt process, QR factorization of a matrix and least squares. Linear transformations, change of basis, similarity and diagonalization. Orthogonal diagonalization, quadratic forms. Applications in a variety of fields. Prerequisites: One of MATH 100, 113, 114, 117, 134, 144, 154 or SCI 100, and one of MATH 102, 125 or 127. Note: Credit can be obtained in at most one of MATH 225 or 227.",
-        "prerequisites": []
+        "description": "Vector spaces. Inner product spaces. Examples of n-space and the space of continuous functions. Gram-Schmidt process, QR factorization of a matrix and least squares. Linear transformations, change of basis, similarity and diagonalization. Orthogonal diagonalization, quadratic forms. Applications in a variety of fields. Prerequisites: One of MATH 100, 113, 114, 117, 134, 144, 154 or SCI 100, and one of MATH 102, 125 or 127. Note: Credit can be obtained in at most one of MATH 225 or 227."
     },
     {
         "course_title": "MATH 226 - Algebraic Structures",
-        "description": "Groups and their homomorphisms; commutative rings and modules; fields and vector spaces; subgroups and quotient groups, permutation groups; modules, submodules, quotient modules; polynomials rings and their ideals, modules over polynomial rings. Prerequisite: MATH 125. Note: Cannot be taken for credit if credit has been received in MATH 227.",
-        "prerequisites": [
-            "MATH 125"
-        ]
+        "description": "Groups and their homomorphisms; commutative rings and modules; fields and vector spaces; subgroups and quotient groups, permutation groups; modules, submodules, quotient modules; polynomials rings and their ideals, modules over polynomial rings. Prerequisite: MATH 125. Note: Cannot be taken for credit if credit has been received in MATH 227."
     },
     {
         "course_title": "MATH 227 - Honors Linear Algebra II",
-        "description": "Quotients and direct sums. Cayley-Hamilton. Canonical Forms (diagonal and Jordan). Real and Complex inner product spaces : orthogonality, singular value decomposition. Introduction to abstract algebra : groups, rings, and modules. Homomorphisms. Prerequisite: MATH 127. (Students with MATH 102 or 125 may be admitted with consent of the Department.) Note: Credit can be obtained in at most one of MATH 225 or 227.",
-        "prerequisites": [
-            "MATH 127"
-        ]
+        "description": "Quotients and direct sums. Cayley-Hamilton. Canonical Forms (diagonal and Jordan). Real and Complex inner product spaces : orthogonality, singular value decomposition. Introduction to abstract algebra : groups, rings, and modules. Homomorphisms. Prerequisite: MATH 127. (Students with MATH 102 or 125 may be admitted with consent of the Department.) Note: Credit can be obtained in at most one of MATH 225 or 227."
     },
     {
         "course_title": "MATH 228 - Algebra: Introduction to Ring Theory",
-        "description": "Integers. Mathematical induction. Equivalence relations. Commutative rings, including the integers mod n, complex numbers and polynomials. The Chinese remainder theorem. Fields and integral domains. Euclidean domains, principal ideal domains and unique factorization. Quotient rings and homomorphisms. Construction of finite fields. Applications such as public domain encryption, Latin squares and designs, polynomial error detecting codes, and/or addition and multiplication of large integers. Prerequisite: MATH 102, 125 or 127. Note: This course may not be taken for credit if credit has already been obtained in MATH 326.",
-        "prerequisites": [
-            "MATH 102",
-            "125",
-            "127"
-        ]
+        "description": "Integers. Mathematical induction. Equivalence relations. Commutative rings, including the integers mod n, complex numbers and polynomials. The Chinese remainder theorem. Fields and integral domains. Euclidean domains, principal ideal domains and unique factorization. Quotient rings and homomorphisms. Construction of finite fields. Applications such as public domain encryption, Latin squares and designs, polynomial error detecting codes, and/or addition and multiplication of large integers. Prerequisite: MATH 102, 125 or 127. Note: This course may not be taken for credit if credit has already been obtained in MATH 326."
     },
     {
         "course_title": "MATH 241 - Geometry",
-        "description": "Basic Euclidean geometry, congruence, parallelism, area, and similarity. Sound axiomatic development with emphasis on problem solving. Constructions and loci, inequalities, maxima and minima, circles, isometries, and additional topics. Prerequisite: Any 100-level MATH course or SCI 100.",
-        "prerequisites": [
-            "Any 100-level MATH course",
-            "SCI 100"
-        ]
+        "description": "Basic Euclidean geometry, congruence, parallelism, area, and similarity. Sound axiomatic development with emphasis on problem solving. Constructions and loci, inequalities, maxima and minima, circles, isometries, and additional topics. Prerequisite: Any 100-level MATH course or SCI 100."
     },
     {
         "course_title": "MATH 243 - Transformation Geometry",
-        "description": "Transformation geometry, isometry and homothety, applications in Euclidean geometry; the algebra of transformations, the Classification Theorem, frieze patterns and wall-paper groups. Prerequisite: MATH 241",
-        "prerequisites": [
-            "MATH 241"
-        ]
+        "description": "Transformation geometry, isometry and homothety, applications in Euclidean geometry; the algebra of transformations, the Classification Theorem, frieze patterns and wall-paper groups. Prerequisite: MATH 241"
     },
     {
         "course_title": "MATH 253 - Theory of Interest",
-        "description": "Accumulation and amount functions, effective, nominal, simple, and compound rates, force of interest and discount, simple and general annuities certain, variable annuities and perpetuities, amortization schedules and sinking funds, bonds and other securities, applications, installment loans, depreciation, depletion, capitalized cost. Prerequisite: One of MATH 101, 115, 118, 136, 146, 156 or SCI 100. Corequisite: MATH 209 or 214.",
-        "prerequisites": [
-            "One of MATH 101",
-            "115",
-            "118",
-            "136",
-            "146",
-            "156",
-            "SCI 100"
-        ]
+        "description": "Accumulation and amount functions, effective, nominal, simple, and compound rates, force of interest and discount, simple and general annuities certain, variable annuities and perpetuities, amortization schedules and sinking funds, bonds and other securities, applications, installment loans, depreciation, depletion, capitalized cost. Prerequisite: One of MATH 101, 115, 118, 136, 146, 156 or SCI 100. Corequisite: MATH 209 or 214."
     },
     {
         "course_title": "MATH 256 - Elementary Number Theory",
-        "description": "Divisibility, prime numbers, congruences, quadratic residues, quadratic reciprocity, arithmetic functions and diophantine equations; sums of squares. Prerequisites: MATH 125 or 127.",
-        "prerequisites": []
+        "description": "Divisibility, prime numbers, congruences, quadratic residues, quadratic reciprocity, arithmetic functions and diophantine equations; sums of squares. Prerequisites: MATH 125 or 127."
     },
     {
         "course_title": "MATH 260 - Mathematical Reasoning for Teachers",
-        "description": "Reasoning and problem solving in the context of logic, algebra, geometry, and combinatorics. Prerequisite: MATH 160, or consent of Department. Notes: (1) This course is restricted to Elementary Education students. (2) This course cannot be used for credit towards a Science degree.",
-        "prerequisites": [
-            "MATH 160",
-            "consent of Department"
-        ]
+        "description": "Reasoning and problem solving in the context of logic, algebra, geometry, and combinatorics. Prerequisite: MATH 160, or consent of Department. Notes: (1) This course is restricted to Elementary Education students. (2) This course cannot be used for credit towards a Science degree."
     },
     {
         "course_title": "MATH 298 - Problem Solving Seminar",
-        "description": "Problem solving techniques (pigeonhole principle, invariants, extremal principle, etc.) and survey of problems from various branches of mathematics: calculus, number theory, algebra, combinatorics, probability, geometry, etc. This credit/no-credit course is intended for students interested in mathematics contests and participation in the Putnam Mathematical Competition will be required. Note: This course may be taken for credit up to four times. Prerequisite: consent of the instructor.",
-        "prerequisites": [
-            "consent of the instructor"
-        ]
+        "description": "Problem solving techniques (pigeonhole principle, invariants, extremal principle, etc.) and survey of problems from various branches of mathematics: calculus, number theory, algebra, combinatorics, probability, geometry, etc. This credit/no-credit course is intended for students interested in mathematics contests and participation in the Putnam Mathematical Competition will be required. Note: This course may be taken for credit up to four times. Prerequisite: consent of the instructor."
     },
     {
         "course_title": "MATH 300 - Advanced Boundary Value Problems",
-        "description": "Derivation of the classical partial differential equations of applied mathematics, solutions using separation of variables. Fourier expansions and their applications to boundary value problems. Introduction to Fourier Transforms. Emphasis on building an appropriate mathematical model from a physical problem, solving the mathematical problem, and carefully interpreting the mathematical results in the context of the original physical problem. Prerequisites: MATH 201 and 209. Notes: (1) Open only to students in Engineering, Specialization Physics, and Specialization Geophysics. (2) Credit can be obtained in at most one of MATH 300 and 337. (3) Course cannot be taken for credit if credit has been obtained in ECE 341.",
-        "prerequisites": []
+        "description": "Derivation of the classical partial differential equations of applied mathematics, solutions using separation of variables. Fourier expansions and their applications to boundary value problems. Introduction to Fourier Transforms. Emphasis on building an appropriate mathematical model from a physical problem, solving the mathematical problem, and carefully interpreting the mathematical results in the context of the original physical problem. Prerequisites: MATH 201 and 209. Notes: (1) Open only to students in Engineering, Specialization Physics, and Specialization Geophysics. (2) Credit can be obtained in at most one of MATH 300 and 337. (3) Course cannot be taken for credit if credit has been obtained in ECE 341."
     },
     {
         "course_title": "MATH 300A - Advanced Boundary Value Problems",
-        "description": "Derivation of the classical partial differential equations of applied mathematics, solutions using separation of variables. Fourier expansions and their applications to boundary value problems. Introduction to Fourier Transforms. Emphasis on building an appropriate mathematical model from a physical problem, solving the mathematical problem, and carefully interpreting the mathematical results in the context of the original physical problem. Prerequisites: MATH 201 and 209. Notes: (1) Open only to students in Engineering, Specialization Physics, and Specialization Geophysics. (2) Credit can be obtained in at most one of MATH 300 and 337. (3) Course cannot be taken for credit if credit has been obtained in ECE 341.",
-        "prerequisites": []
+        "description": "Derivation of the classical partial differential equations of applied mathematics, solutions using separation of variables. Fourier expansions and their applications to boundary value problems. Introduction to Fourier Transforms. Emphasis on building an appropriate mathematical model from a physical problem, solving the mathematical problem, and carefully interpreting the mathematical results in the context of the original physical problem. Prerequisites: MATH 201 and 209. Notes: (1) Open only to students in Engineering, Specialization Physics, and Specialization Geophysics. (2) Credit can be obtained in at most one of MATH 300 and 337. (3) Course cannot be taken for credit if credit has been obtained in ECE 341."
     },
     {
         "course_title": "MATH 300B - Advanced Boundary Value Problems",
-        "description": "Derivation of the classical partial differential equations of applied mathematics, solutions using separation of variables. Fourier expansions and their applications to boundary value problems. Introduction to Fourier Transforms. Emphasis on building an appropriate mathematical model from a physical problem, solving the mathematical problem, and carefully interpreting the mathematical results in the context of the original physical problem. Prerequisites: MATH 201 and 209. Notes: (1) Open only to students in Engineering, Specialization Physics, and Specialization Geophysics. (2) Credit can be obtained in at most one of MATH 300 and 337. (3) Course cannot be taken for credit if credit has been obtained in ECE 341.",
-        "prerequisites": []
+        "description": "Derivation of the classical partial differential equations of applied mathematics, solutions using separation of variables. Fourier expansions and their applications to boundary value problems. Introduction to Fourier Transforms. Emphasis on building an appropriate mathematical model from a physical problem, solving the mathematical problem, and carefully interpreting the mathematical results in the context of the original physical problem. Prerequisites: MATH 201 and 209. Notes: (1) Open only to students in Engineering, Specialization Physics, and Specialization Geophysics. (2) Credit can be obtained in at most one of MATH 300 and 337. (3) Course cannot be taken for credit if credit has been obtained in ECE 341."
     },
     {
         "course_title": "MATH 309 - Mathematical Methods for Electrical Engineers",
-        "description": "Complex numbers, analytic functions, Cauchy-Riemann equation, Cauchy Theorem, power series and Laurent expansions, residues, inverse Laplace transform. Complex inner product spaces, orthogonal expansions, Gram-Schmidt orthogonalization completeness, Fourier expansions applied to signals, Parseval's relation and Bessel's inequality. Prerequisite: MATH 209. Notes: (1) Restricted to Engineering students. (2) This course may not be taken for credit if credit has already been obtained in MATH 311 or 411.",
-        "prerequisites": [
-            "MATH 209"
-        ]
+        "description": "Complex numbers, analytic functions, Cauchy-Riemann equation, Cauchy Theorem, power series and Laurent expansions, residues, inverse Laplace transform. Complex inner product spaces, orthogonal expansions, Gram-Schmidt orthogonalization completeness, Fourier expansions applied to signals, Parseval's relation and Bessel's inequality. Prerequisite: MATH 209. Notes: (1) Restricted to Engineering students. (2) This course may not be taken for credit if credit has already been obtained in MATH 311 or 411."
     },
     {
         "course_title": "MATH 309A - Mathematical Methods for Electrical Engineers",
-        "description": "Complex numbers, analytic functions, Cauchy-Riemann equation, Cauchy Theorem, power series and Laurent expansions, residues, inverse Laplace transform. Complex inner product spaces, orthogonal expansions, Gram-Schmidt orthogonalization completeness, Fourier expansions applied to signals, Parseval's relation and Bessel's inequality. Prerequisite: MATH 209. Notes: (1) Restricted to Engineering students. (2) This course may not be taken for credit if credit has already been obtained in MATH 311 or 411.",
-        "prerequisites": [
-            "MATH 209"
-        ]
+        "description": "Complex numbers, analytic functions, Cauchy-Riemann equation, Cauchy Theorem, power series and Laurent expansions, residues, inverse Laplace transform. Complex inner product spaces, orthogonal expansions, Gram-Schmidt orthogonalization completeness, Fourier expansions applied to signals, Parseval's relation and Bessel's inequality. Prerequisite: MATH 209. Notes: (1) Restricted to Engineering students. (2) This course may not be taken for credit if credit has already been obtained in MATH 311 or 411."
     },
     {
         "course_title": "MATH 309B - Mathematical Methods for Electrical Engineers",
-        "description": "Complex numbers, analytic functions, Cauchy-Riemann equation, Cauchy Theorem, power series and Laurent expansions, residues, inverse Laplace transform. Complex inner product spaces, orthogonal expansions, Gram-Schmidt orthogonalization completeness, Fourier expansions applied to signals, Parseval's relation and Bessel's inequality. Prerequisite: MATH 209. Notes: (1) Restricted to Engineering students. (2) This course may not be taken for credit if credit has already been obtained in MATH 311 or 411.",
-        "prerequisites": [
-            "MATH 209"
-        ]
+        "description": "Complex numbers, analytic functions, Cauchy-Riemann equation, Cauchy Theorem, power series and Laurent expansions, residues, inverse Laplace transform. Complex inner product spaces, orthogonal expansions, Gram-Schmidt orthogonalization completeness, Fourier expansions applied to signals, Parseval's relation and Bessel's inequality. Prerequisite: MATH 209. Notes: (1) Restricted to Engineering students. (2) This course may not be taken for credit if credit has already been obtained in MATH 311 or 411."
     },
     {
         "course_title": "MATH 311 - Theory of Functions of a Complex Variable",
-        "description": "Complex numbers. Complex series. Functions of a complex variable. Cauchy's theorem and contour integration. Residue Theorem and its applications. Corequisite: MATH 215 or MATH 315 or MATH 317 or MA PH 351. Note: This course may not be taken for credit if credit has already been obtained in MATH 309 or 411.",
-        "prerequisites": []
+        "description": "Complex numbers. Complex series. Functions of a complex variable. Cauchy's theorem and contour integration. Residue Theorem and its applications. Corequisite: MATH 215 or MATH 315 or MATH 317 or MA PH 351. Note: This course may not be taken for credit if credit has already been obtained in MATH 309 or 411."
     },
     {
         "course_title": "MATH 314 - Analysis I",
-        "description": "Construction of real numbers, Heine-Borel and related theorems, differentiation and Riemann integral of functions, topological concepts in metric spaces, sequences, continuous maps, contraction maps, and applications. Prerequisite: MATH 209 or 215 or equivalent. Note: This course may not be taken for credit if credit has already been obtained in MATH 217.",
-        "prerequisites": [
-            "MATH 209",
-            "215",
-            "equivalent"
-        ]
+        "description": "Construction of real numbers, Heine-Borel and related theorems, differentiation and Riemann integral of functions, topological concepts in metric spaces, sequences, continuous maps, contraction maps, and applications. Prerequisite: MATH 209 or 215 or equivalent. Note: This course may not be taken for credit if credit has already been obtained in MATH 217."
     },
     {
         "course_title": "MATH 315 - Calculus IV",
-        "description": "Vector calculus. Line and surface integrals. The divergence, Green's, and Stokes' theorems. Differential forms. Prerequisite: One of MATH 102, 125 or 127, and either MATH 214 or MATH 217. Notes: Credit can be obtained in at most one of MATH 215 and MATH 315. This course may not be taken for credit if credit has already been obtained in MATH 209 or 317.",
-        "prerequisites": [
-            "One of MATH 102",
-            "125",
-            "127",
-            "and either MATH 214",
-            "MATH 217"
-        ]
+        "description": "Vector calculus. Line and surface integrals. The divergence, Green's, and Stokes' theorems. Differential forms. Prerequisite: One of MATH 102, 125 or 127, and either MATH 214 or MATH 217. Notes: Credit can be obtained in at most one of MATH 215 and MATH 315. This course may not be taken for credit if credit has already been obtained in MATH 209 or 317."
     },
     {
         "course_title": "MATH 317 - Honors Calculus IV",
-        "description": "Implicit function theorem. Proof of the Change of Variables Theorem. Line integrals. Theorems of Green, Gauss and Stokes in their classical form. Differential forms and Stokes' Theorem in their context. Sequences and series of functions. Uniform convergence. Prerequisite: MATH 217.",
-        "prerequisites": [
-            "MATH 217"
-        ]
+        "description": "Implicit function theorem. Proof of the Change of Variables Theorem. Line integrals. Theorems of Green, Gauss and Stokes in their classical form. Differential forms and Stokes' Theorem in their context. Sequences and series of functions. Uniform convergence. Prerequisite: MATH 217."
     },
     {
         "course_title": "MATH 322 - Graph Theory",
-        "description": "Graphs, paths and cycles, trees, planarity and duality, coloring problems, digraphs, matching problems, matroid theory. Prerequisite: One of MATH 102, 125 or 127, and any 200-level MATH course. (MATH 216 or MATH 228 recommended.)",
-        "prerequisites": [
-            "One of MATH 102",
-            "125",
-            "127",
-            "and any 200-level MATH course"
-        ]
+        "description": "Graphs, paths and cycles, trees, planarity and duality, coloring problems, digraphs, matching problems, matroid theory. Prerequisite: One of MATH 102, 125 or 127, and any 200-level MATH course. (MATH 216 or MATH 228 recommended.)"
     },
     {
         "course_title": "MATH 324 - Elementary Number Theory",
-        "description": "Divisibility, prime numbers, congruences, quadratic residues, quadratic reciprocity, arithmetic functions and diophantine equations; sums of squares. Prerequisites: MATH 227 or 228.",
-        "prerequisites": []
+        "description": "Divisibility, prime numbers, congruences, quadratic residues, quadratic reciprocity, arithmetic functions and diophantine equations; sums of squares. Prerequisites: MATH 227 or 228."
     },
     {
         "course_title": "MATH 325 - Linear Algebra III",
-        "description": "Hermitian and unitary matrices, spectral theorem. Jordan canonical form. Cayley-Hamilton Theorem. Bilinear forms, positive-definiteness, Sylvester's Law of inertia, geometric lattices. Numerical methods. Application to discrete system evolution, matrix exponentials and differential equations. Prerequisite: MATH 225. Note: This course may not be taken for credit if credit has already been obtained in MATH 227.",
-        "prerequisites": [
-            "MATH 225"
-        ]
+        "description": "Hermitian and unitary matrices, spectral theorem. Jordan canonical form. Cayley-Hamilton Theorem. Bilinear forms, positive-definiteness, Sylvester's Law of inertia, geometric lattices. Numerical methods. Application to discrete system evolution, matrix exponentials and differential equations. Prerequisite: MATH 225. Note: This course may not be taken for credit if credit has already been obtained in MATH 227."
     },
     {
         "course_title": "MATH 326 - Rings and Modules",
-        "description": "Rings, fields, polynomials, algebras. Homomorphisms, ideals, quotients. Ring extensions, field extensions, construction of finite fields. Integral domains: Euclidean, principal ideal, unique factorization. Chain conditions. Introduction to modules. Modules over a principal ideal domain, finitely generated abelian groups, matrix canonical forms. Prerequisite MATH 227, or both MATH 225 and 228.",
-        "prerequisites": []
+        "description": "Rings, fields, polynomials, algebras. Homomorphisms, ideals, quotients. Ring extensions, field extensions, construction of finite fields. Integral domains: Euclidean, principal ideal, unique factorization. Chain conditions. Introduction to modules. Modules over a principal ideal domain, finitely generated abelian groups, matrix canonical forms. Prerequisite MATH 227, or both MATH 225 and 228."
     },
     {
         "course_title": "MATH 327 - Algebra I",
-        "description": "Basic group theory: Groups, subgroups, normal subgroups, homomorphisms, quotient groups, coset decomposition, Example: Permutation group and general linear group; basic (commutative) ring theory: Rings, subrings, homomorphisms, ideals, quotient rings, modules over rings, submodules and quotient modules, fraction field; further group theory: Groups operating on a set, Sylow theorems. Prerequisite : One of MATH 226 or MATH 227. Note: Credit can be obtained in at most one of MATH 326 and MATH 327.",
-        "prerequisites": []
+        "description": "Basic group theory: Groups, subgroups, normal subgroups, homomorphisms, quotient groups, coset decomposition, Example: Permutation group and general linear group; basic (commutative) ring theory: Rings, subrings, homomorphisms, ideals, quotient rings, modules over rings, submodules and quotient modules, fraction field; further group theory: Groups operating on a set, Sylow theorems. Prerequisite : One of MATH 226 or MATH 227. Note: Credit can be obtained in at most one of MATH 326 and MATH 327."
     },
     {
         "course_title": "MATH 328 - Group Theory",
-        "description": "Groups, subgroups, homomorphisms. Symmetry groups. Matrix groups. Permutations, symmetric group, Cayley's Theorem. Group actions. Cosets and Lagrange's Theorem. Normal subgroups, quotient groups, isomorphism theorems. Direct and semidirect products. Finite Abelian groups. Prerequisite: MATH 227 or 228. This course may not be taken for credit if credit has already been obtained in MATH 229.",
-        "prerequisites": [
-            "MATH 227",
-            "228"
-        ]
+        "description": "Groups, subgroups, homomorphisms. Symmetry groups. Matrix groups. Permutations, symmetric group, Cayley's Theorem. Group actions. Cosets and Lagrange's Theorem. Normal subgroups, quotient groups, isomorphism theorems. Direct and semidirect products. Finite Abelian groups. Prerequisite: MATH 227 or 228. This course may not be taken for credit if credit has already been obtained in MATH 229."
     },
     {
         "course_title": "MATH 329 - Algebra II",
-        "description": "Factorial rings and principal ideal domains; Noetherian rings and modules, Hilbert basis theorem; field extensions, separable and normal extensions; finite Galois theory; solvable groups and equations, construction by ruler and compass, solution by radicals. Prerequisite : MATH 327. Note: Credit can be obtained in a most one of MATH 328 and 329.",
-        "prerequisites": []
+        "description": "Factorial rings and principal ideal domains; Noetherian rings and modules, Hilbert basis theorem; field extensions, separable and normal extensions; finite Galois theory; solvable groups and equations, construction by ruler and compass, solution by radicals. Prerequisite : MATH 327. Note: Credit can be obtained in a most one of MATH 328 and 329."
     },
     {
         "course_title": "MATH 334 - Ordinary Differential Equations",
-        "description": "First order equations, linear equations of higher order. Power series solution. Laplace transform methods. Introduction to special functions. Introduction to linear systems. Prerequisites: One of MATH 102, 125 or 127, and one of MATH 209, 214 or 217. Note: Credit can be obtained in at most one of MATH 201, MATH 334, MATH 336, or MA PH 251.",
-        "prerequisites": []
+        "description": "First order equations, linear equations of higher order. Power series solution. Laplace transform methods. Introduction to special functions. Introduction to linear systems. Prerequisites: One of MATH 102, 125 or 127, and one of MATH 209, 214 or 217. Note: Credit can be obtained in at most one of MATH 201, MATH 334, MATH 336, or MA PH 251."
     },
     {
         "course_title": "MATH 336 - Honors Ordinary Differential Equations",
-        "description": "First order differential equations. Linear systems of differential equations and linear differential equations of higher order. Stability and qualitative theory of 2-dimensional linear and non-linear systems. Laplace transform methods. Existences and uniqueness theorems. Prerequisites: MATH 225 or 227, and either MATH 209, 217, 314 or both 214 and 216. Note: Credit can be obtained in at most one of MATH 201, MATH 334, MATH 336, and MA PH 251.",
-        "prerequisites": []
+        "description": "First order differential equations. Linear systems of differential equations and linear differential equations of higher order. Stability and qualitative theory of 2-dimensional linear and non-linear systems. Laplace transform methods. Existences and uniqueness theorems. Prerequisites: MATH 225 or 227, and either MATH 209, 217, 314 or both 214 and 216. Note: Credit can be obtained in at most one of MATH 201, MATH 334, MATH 336, and MA PH 251."
     },
     {
         "course_title": "MATH 337 - Introduction to Partial Differential Equations",
-        "description": "Boundary value problems of classical Math Physics, orthogonal expansions, classical special functions. Advanced transform techniques. Prerequisites: One of MATH 209, 215, 217, 315 or MA PH 351, and one of MATH 201, MATH 334, MATH 336, or MA PH 251. Notes: (1) Credit can be obtained in at most one of MATH 300 or 337. (2) Course cannot be taken for credit if credit has been obtained in ECE 341.",
-        "prerequisites": []
+        "description": "Boundary value problems of classical Math Physics, orthogonal expansions, classical special functions. Advanced transform techniques. Prerequisites: One of MATH 209, 215, 217, 315 or MA PH 351, and one of MATH 201, MATH 334, MATH 336, or MA PH 251. Notes: (1) Credit can be obtained in at most one of MATH 300 or 337. (2) Course cannot be taken for credit if credit has been obtained in ECE 341."
     },
     {
         "course_title": "MATH 341 - Geometry of Convex Sets",
-        "description": "Combinatorial geometry and topology, convex sets, sets with constant width, Helly-type problems, extremal problems. Prerequisite: One of MATH 102, 125, 127, 222 or 241.",
-        "prerequisites": [
-            "One of MATH 102",
-            "125",
-            "127",
-            "222",
-            "241"
-        ]
+        "description": "Combinatorial geometry and topology, convex sets, sets with constant width, Helly-type problems, extremal problems. Prerequisite: One of MATH 102, 125, 127, 222 or 241."
     },
     {
         "course_title": "MATH 343 - Projective and Inversive Geometries",
-        "description": "Projective geometry, Poncelet-Steiner constructions, inverse geometry, Mohr-Mascheroni constructions, Principle of Duality, conic sections. Prerequisite: MATH 241.",
-        "prerequisites": [
-            "MATH 241"
-        ]
+        "description": "Projective geometry, Poncelet-Steiner constructions, inverse geometry, Mohr-Mascheroni constructions, Principle of Duality, conic sections. Prerequisite: MATH 241."
     },
     {
         "course_title": "MATH 348 - Differential Geometry of Curves and Surfaces",
-        "description": "Frenet-Seret theory of curves in the plane and in 3-space, examples; local theory of surfaces in 3-space: first and second fundamental forms, Gauss map and Gauss curvature, geodesics and parallel transport, theorema egregium, mean curvature and minimal surfaces. Prerequisites: One of MATH 102, 125 or 127 and one of MATH 209, 215, 217, 315 or MA PH 351.",
-        "prerequisites": []
+        "description": "Frenet-Seret theory of curves in the plane and in 3-space, examples; local theory of surfaces in 3-space: first and second fundamental forms, Gauss map and Gauss curvature, geodesics and parallel transport, theorema egregium, mean curvature and minimal surfaces. Prerequisites: One of MATH 102, 125 or 127 and one of MATH 209, 215, 217, 315 or MA PH 351."
     },
     {
         "course_title": "MATH 356 - Introduction to Mathematical Finance I",
-        "description": "Simple Market Model: one-step binomial model, basic notions and assumptions.  Risk-Free Assets: simple interest, zero-coupon bonds, money market account. Risky Assets: dynamic of stock prices, binomial tree model, trinomial tree model. Discrete time market model: stock and money market model, extended models. Portfolio management: risk, two securities, capital asset pricing model. Prerequisite: MATH 253 and one of STAT 265 or MATH 281, or consent of the Department.",
-        "prerequisites": [
-            "MATH 253 and one of STAT 265",
-            "MATH 281",
-            "consent of the Department"
-        ]
+        "description": "Simple Market Model: one-step binomial model, basic notions and assumptions.  Risk-Free Assets: simple interest, zero-coupon bonds, money market account. Risky Assets: dynamic of stock prices, binomial tree model, trinomial tree model. Discrete time market model: stock and money market model, extended models. Portfolio management: risk, two securities, capital asset pricing model. Prerequisite: MATH 253 and one of STAT 265 or MATH 281, or consent of the Department."
     },
     {
         "course_title": "MATH 357 - Introduction to Mathematical Finance II",
-        "description": "Forward and futures contracts: forward and futures prices, hedging with futures. Options: put-call parity, bounds on option prices, time value of options. Option pricing: European and American options in the binomial tree model, Black-Scholes formula. Financial engineering: hedging option positions, hedging business risk. Variable interest rates: maturity-independent yields, general term structure. Stochastic interest rates: arbitrage pricing of bonds, interest rate derivative securities. Prerequisite: MATH 356 or consent of the Department.",
-        "prerequisites": [
-            "MATH 356",
-            "consent of the Department"
-        ]
+        "description": "Forward and futures contracts: forward and futures prices, hedging with futures. Options: put-call parity, bounds on option prices, time value of options. Option pricing: European and American options in the binomial tree model, Black-Scholes formula. Financial engineering: hedging option positions, hedging business risk. Variable interest rates: maturity-independent yields, general term structure. Stochastic interest rates: arbitrage pricing of bonds, interest rate derivative securities. Prerequisite: MATH 356 or consent of the Department."
     },
     {
         "course_title": "MATH 371 - Mathematical Modelling in the Life Sciences",
-        "description": "Model development, computation, and analysis for problems in the life sciences. Models include differential equations, difference equations and stochastic formulations. Model evaluation and prediction. Applications are chosen from epidemiology, ecology, population biology, physiology and medicine. Prerequisites: One of MATH 102, 125 or 127, and one of MATH 209, 214 or 217. Note: No previous computing experience is needed.",
-        "prerequisites": []
+        "description": "Model development, computation, and analysis for problems in the life sciences. Models include differential equations, difference equations and stochastic formulations. Model evaluation and prediction. Applications are chosen from epidemiology, ecology, population biology, physiology and medicine. Prerequisites: One of MATH 102, 125 or 127, and one of MATH 209, 214 or 217. Note: No previous computing experience is needed."
     },
     {
         "course_title": "MATH 372 - Mathematical Modelling",
-        "description": "This course is designed to develop the students' problem-solving abilities along heuristic lines and to illustrate the processes of Applied Mathematics. Students will be encouraged to recognize and formulate problems in mathematical terms, solve the resulting mathematical problems and interpret the solution in real world terms. Typical problems considered include nonlinear programming, optimization problems, diffusion models. Prerequisites: One of MATH 102, 125 or 127, and one of MATH 209, 214 or 217.",
-        "prerequisites": []
+        "description": "This course is designed to develop the students' problem-solving abilities along heuristic lines and to illustrate the processes of Applied Mathematics. Students will be encouraged to recognize and formulate problems in mathematical terms, solve the resulting mathematical problems and interpret the solution in real world terms. Typical problems considered include nonlinear programming, optimization problems, diffusion models. Prerequisites: One of MATH 102, 125 or 127, and one of MATH 209, 214 or 217."
     },
     {
         "course_title": "MATH 373 - Introduction to Optimization",
-        "description": "Introduction to optimization. Problem formulation. Linear programming. The simplex method and its variants (revised Simplex method, dual simplex method). Extreme points of polyhedral sets. Theory of linear inequalities (Farkas Lemma). Complementary slackness and duality. Post-optimality analysis. Interior point methods. Applications (elementary games, transportation problems, networks, etc.). Prerequisites: One of MATH 102, 125 or 127, and one of MATH 209, 214 or 217.",
-        "prerequisites": []
+        "description": "Introduction to optimization. Problem formulation. Linear programming. The simplex method and its variants (revised Simplex method, dual simplex method). Extreme points of polyhedral sets. Theory of linear inequalities (Farkas Lemma). Complementary slackness and duality. Post-optimality analysis. Interior point methods. Applications (elementary games, transportation problems, networks, etc.). Prerequisites: One of MATH 102, 125 or 127, and one of MATH 209, 214 or 217."
     },
     {
         "course_title": "MATH 381 - Numerical Methods",
-        "description": "Approximation of functions by Taylor series, Newton's formulae, Lagrange and Hermite interpolation. Splines. Orthogonal polynomials and least-squares approximation of functions. Direct and iterative methods for solving linear systems. Methods for solving non-linear equations and systems of non-linear equations. Introduction to computer programming. Prerequisites: One of MATH 102, 125 or 127, and one of MATH 209, 214 or 217. Notes: (1) Credit can be obtained in at most one of MATH 280, 381 or CMPUT 340. (2) Extra classes may be held for students lacking a background in one of the major programming languages such as Fortran, C, C++ or Matlab.",
-        "prerequisites": []
+        "description": "Approximation of functions by Taylor series, Newton's formulae, Lagrange and Hermite interpolation. Splines. Orthogonal polynomials and least-squares approximation of functions. Direct and iterative methods for solving linear systems. Methods for solving non-linear equations and systems of non-linear equations. Introduction to computer programming. Prerequisites: One of MATH 102, 125 or 127, and one of MATH 209, 214 or 217. Notes: (1) Credit can be obtained in at most one of MATH 280, 381 or CMPUT 340. (2) Extra classes may be held for students lacking a background in one of the major programming languages such as Fortran, C, C++ or Matlab."
     },
     {
         "course_title": "MATH 408 - Computational Finance",
-        "description": "Principles of Monte Carlo methods. Essentials of stochastics. Introduction to financial derivatives pricing. Generating random variables. Simulating stochastic differential equations. Application to financial derivatives pricing and interest rate models. Variance reduction techniques. Prerequisite: STAT 471, or E E 387 and consent of the Department.",
-        "prerequisites": [
-            "STAT 471",
-            "E E 387 and consent of the Department"
-        ]
+        "description": "Principles of Monte Carlo methods. Essentials of stochastics. Introduction to financial derivatives pricing. Generating random variables. Simulating stochastic differential equations. Application to financial derivatives pricing and interest rate models. Variance reduction techniques. Prerequisite: STAT 471, or E E 387 and consent of the Department."
     },
     {
         "course_title": "MATH 411 - Honors Complex Variables",
-        "description": "Complex number system. Analytic functions. Cauchy's Integral theorem and formula. Applications including the maximum modulus principle, Taylor expansion and Laurent expansion. Harmonic functions. The residue theorem with applications; calculus of residues, argument principle, and Rouche's theorem. Basics of analytic continuation. Additional topics at the instructor's discretion such as: Normal families, The Riemann mapping Theorem, Picard's Theorem. Prerequisite: MATH 314 or 317. Notes: (1) This course is primarily for Honors students in Mathematics or Physics. (2) Offered in alternate years. It may be offered in intervening years if demand is sufficient.",
-        "prerequisites": [
-            "MATH 314",
-            "317"
-        ]
+        "description": "Complex number system. Analytic functions. Cauchy's Integral theorem and formula. Applications including the maximum modulus principle, Taylor expansion and Laurent expansion. Harmonic functions. The residue theorem with applications; calculus of residues, argument principle, and Rouche's theorem. Basics of analytic continuation. Additional topics at the instructor's discretion such as: Normal families, The Riemann mapping Theorem, Picard's Theorem. Prerequisite: MATH 314 or 317. Notes: (1) This course is primarily for Honors students in Mathematics or Physics. (2) Offered in alternate years. It may be offered in intervening years if demand is sufficient."
     },
     {
         "course_title": "MATH 412 - Algebraic Number Theory",
-        "description": "Valuations and their extensions, ramifications; integral dependence, algebraic number fields, ideals and divisors, class number. Prerequisite: MATH 326 or equivalent.",
-        "prerequisites": [
-            "MATH 326",
-            "equivalent"
-        ]
+        "description": "Valuations and their extensions, ramifications; integral dependence, algebraic number fields, ideals and divisors, class number. Prerequisite: MATH 326 or equivalent."
     },
     {
         "course_title": "MATH 414 - Analysis II",
-        "description": "Differentiation of maps in Rn, implicit function and mapping theorems, sequences of functions, Riemann-Stielties integration, additional topics at the discretion of the instructor. Prerequisite: MATH 314. Note: This course may not be taken for credit if credit has already been obtained in MATH 317.",
-        "prerequisites": [
-            "MATH 314"
-        ]
+        "description": "Differentiation of maps in Rn, implicit function and mapping theorems, sequences of functions, Riemann-Stielties integration, additional topics at the discretion of the instructor. Prerequisite: MATH 314. Note: This course may not be taken for credit if credit has already been obtained in MATH 317."
     },
     {
         "course_title": "MATH 415 - Mathematical Finance I",
-        "description": "Review of probability tools for discrete financial analysis; Conditional probabilities/expectations. Filtrations, adapted and predictable processes. Martingales, submartingales and supermartingales in discrete-time. Doob decomposition for supermartingales. Predictable representation. Discrete- time financial modes: Arbitrage, complete and incomplete markets. Self-financing property, value and gain processes. Valuation of contingent claims. Binomial model: Model specifications, Perfect hedging. Utility functions and consumption/ investment problems. European and American options in discrete time. Futures and forward contracts in discrete time. Transition to the continuous-time framework. Corequisite: STAT 471 or consent of the Department.",
-        "prerequisites": []
+        "description": "Review of probability tools for discrete financial analysis; Conditional probabilities/expectations. Filtrations, adapted and predictable processes. Martingales, submartingales and supermartingales in discrete-time. Doob decomposition for supermartingales. Predictable representation. Discrete- time financial modes: Arbitrage, complete and incomplete markets. Self-financing property, value and gain processes. Valuation of contingent claims. Binomial model: Model specifications, Perfect hedging. Utility functions and consumption/ investment problems. European and American options in discrete time. Futures and forward contracts in discrete time. Transition to the continuous-time framework. Corequisite: STAT 471 or consent of the Department."
     },
     {
         "course_title": "MATH 417 - Real Analysis",
-        "description": "Brief review of set operations and countable sets. Measure theory, integration theory, Lebesgue measure and integrals on R^n, product measure, Tonelli-Fubini theorem. Functions of bounded variation, absolutely continuous functions. Prerequisite: MATH 317 or 414.",
-        "prerequisites": [
-            "MATH 317",
-            "414"
-        ]
+        "description": "Brief review of set operations and countable sets. Measure theory, integration theory, Lebesgue measure and integrals on R^n, product measure, Tonelli-Fubini theorem. Functions of bounded variation, absolutely continuous functions. Prerequisite: MATH 317 or 414."
     },
     {
         "course_title": "MATH 418 - Linear Analysis",
-        "description": "Classical Banach spaces. Hahn-Banach, open mapping and closed graphs theorems. Hilbert spaces, orthonormal bases. Elements of  spectral theory, spectra of compact operators, spectral theorem for compact self-adjoint operators. Prerequisite: MATH 417. Corequisite: MATH 447.",
-        "prerequisites": [
-            "MATH 417"
-        ]
+        "description": "Classical Banach spaces. Hahn-Banach, open mapping and closed graphs theorems. Hilbert spaces, orthonormal bases. Elements of  spectral theory, spectra of compact operators, spectral theorem for compact self-adjoint operators. Prerequisite: MATH 417. Corequisite: MATH 447."
     },
     {
         "course_title": "MATH 421 - Combinatorics",
-        "description": "Permutations and combinations, Binomial Theorem, Principle of Inclusion-Exclusion, recurrence relations, generating functions, orthogonal Latin squares, balanced incomplete block designs, Steiner triple systems, perfect difference sets, Boolean algebra and Finite State Machines. Prerequisites: Either  MATH 326 or one of MATH 111 or 228 and a 300-level MATH course (MATH 322 recommended).",
-        "prerequisites": []
+        "description": "Permutations and combinations, Binomial Theorem, Principle of Inclusion-Exclusion, recurrence relations, generating functions, orthogonal Latin squares, balanced incomplete block designs, Steiner triple systems, perfect difference sets, Boolean algebra and Finite State Machines. Prerequisites: Either  MATH 326 or one of MATH 111 or 228 and a 300-level MATH course (MATH 322 recommended)."
     },
     {
         "course_title": "MATH 422 - Coding Theory",
-        "description": "Elements of group theory, cosets, Lagrange's theorem, binary group codes, polynomials, finite field theory, error correcting codes. Prerequisites: either (1) MATH 227 or (2) MATH 228 and a 300-level MATH course.",
-        "prerequisites": []
+        "description": "Elements of group theory, cosets, Lagrange's theorem, binary group codes, polynomials, finite field theory, error correcting codes. Prerequisites: either (1) MATH 227 or (2) MATH 228 and a 300-level MATH course."
     },
     {
         "course_title": "MATH 424 - Algebra: Groups and Fields",
-        "description": "Field extensions. Groups of automorphisms of fields. Galois theory. Finite fields and applications. Solvable groups, the insolvability of the quintic equation. Ruler and compass construction. Prerequisites: MATH 326 (or MATH 228 by consent of the Department) and MATH 328. Note: This course cannot be taken for credit if credit has already been obtained in MATH 427 or 329.",
-        "prerequisites": []
+        "description": "Field extensions. Groups of automorphisms of fields. Galois theory. Finite fields and applications. Solvable groups, the insolvability of the quintic equation. Ruler and compass construction. Prerequisites: MATH 326 (or MATH 228 by consent of the Department) and MATH 328. Note: This course cannot be taken for credit if credit has already been obtained in MATH 427 or 329."
     },
     {
         "course_title": "MATH 428 - Advanced Ring Theory",
-        "description": "Introduction to commutative algebra, algebraic geometry, and homological algebra. Additional topics at the discretion of the instructor. Prerequisite: MATH 326 or consent of Department.",
-        "prerequisites": [
-            "MATH 326",
-            "consent of Department"
-        ]
+        "description": "Introduction to commutative algebra, algebraic geometry, and homological algebra. Additional topics at the discretion of the instructor. Prerequisite: MATH 326 or consent of Department."
     },
     {
         "course_title": "MATH 429 - Advanced Group Theory",
-        "description": "Group actions, Sylow Theory, solvable and nilpotent groups, Galois Theory. Prerequisite: MATH 328 or consent of the Department.",
-        "prerequisites": [
-            "MATH 328",
-            "consent of the Department"
-        ]
+        "description": "Group actions, Sylow Theory, solvable and nilpotent groups, Galois Theory. Prerequisite: MATH 328 or consent of the Department."
     },
     {
         "course_title": "MATH 432 - Intermediate Differential Equations",
-        "description": "Elementary existence and uniqueness theorems. Systems of equations, stability, perturbation theory. Introduction to numerical methods. Introduction to phase plane analysis. Prerequisite: One of MATH 201, MATH 334, MATH 336, or MA PH 251",
-        "prerequisites": [
-            "One of MATH 201",
-            "MATH 334",
-            "MATH 336",
-            "MA PH 251"
-        ]
+        "description": "Elementary existence and uniqueness theorems. Systems of equations, stability, perturbation theory. Introduction to numerical methods. Introduction to phase plane analysis. Prerequisite: One of MATH 201, MATH 334, MATH 336, or MA PH 251"
     },
     {
         "course_title": "MATH 436 - Intermediate Partial Differential Equations",
-        "description": "Partial differential equations as physical models. Introduction to basic generalized functions. Theory of linear and quasi-linear first-order equations: general solution, initial value problem, generalized solutions and propagation of singularities, characteristic surfaces, shock formation. Theory of fully nonlinear first order equations: complete solution and the initial value problem. Hamilton-Jacobi equation and its applications. Second order linear equations in n dimensions: classification, canonical form, characteristic surfaces and shock formation, initial and boundary value problem. Prerequisite: MATH 300 or MATH 337.",
-        "prerequisites": [
-            "MATH 300",
-            "MATH 337"
-        ]
+        "description": "Partial differential equations as physical models. Introduction to basic generalized functions. Theory of linear and quasi-linear first-order equations: general solution, initial value problem, generalized solutions and propagation of singularities, characteristic surfaces, shock formation. Theory of fully nonlinear first order equations: complete solution and the initial value problem. Hamilton-Jacobi equation and its applications. Second order linear equations in n dimensions: classification, canonical form, characteristic surfaces and shock formation, initial and boundary value problem. Prerequisite: MATH 300 or MATH 337."
     },
     {
         "course_title": "MATH 447 - Elementary Topology",
-        "description": "General point-set topology. Compactness, Tychonoff's tbeorem, connectedness. Metric spaces, completeness, Baire's theorem. Urysohn's lemma. Topological manifolds. Homotopy theory, fundamental group, covering spaces. Prerequisite : MATH 216 or 217. Corequisites: MATH 328 or MA PH 464. Offered in alternate years. It may be offered in intervening years if demand is sufficient.",
-        "prerequisites": []
+        "description": "General point-set topology. Compactness, Tychonoff's tbeorem, connectedness. Metric spaces, completeness, Baire's theorem. Urysohn's lemma. Topological manifolds. Homotopy theory, fundamental group, covering spaces. Prerequisite : MATH 216 or 217. Corequisites: MATH 328 or MA PH 464. Offered in alternate years. It may be offered in intervening years if demand is sufficient."
     },
     {
         "course_title": "MATH 448 - Introduction to Differential Geometry",
-        "description": "Riemannian geometry of n-space, metric tensors, various curvature concepts and their relationships, covariant differentiation, geodesics, parallel transport. Additional topics at the discretion of the instructor. Prerequisite: MATH 348, or MATH 217 and one of MATH 225 or 227. Note: Offered in alternate years. It may be offered in intervening years if demand is sufficient.",
-        "prerequisites": [
-            "MATH 348",
-            "MATH 217 and one of MATH 225",
-            "227"
-        ]
+        "description": "Riemannian geometry of n-space, metric tensors, various curvature concepts and their relationships, covariant differentiation, geodesics, parallel transport. Additional topics at the discretion of the instructor. Prerequisite: MATH 348, or MATH 217 and one of MATH 225 or 227. Note: Offered in alternate years. It may be offered in intervening years if demand is sufficient."
     },
     {
         "course_title": "MATH 471 - Markov Models",
-        "description": "Birth-death processes; continuous-time Markov chains; functional central limit theorem; Brownian motion; weak solutions to stochastic differential equations; weak uniqueness; filtrations; discrete and continuous martingales; martingales problems; strong Markov property; Kolmogorov forward and backward equations; stationary distributions; null and positive recurrence; transience; particle filtering. Prerequisite: STAT 281 or STAT 371. Note: Credit cannot be obtained in MATH 471 if credit has already been in STAT 471.",
-        "prerequisites": [
-            "STAT 281",
-            "STAT 371"
-        ]
+        "description": "Birth-death processes; continuous-time Markov chains; functional central limit theorem; Brownian motion; weak solutions to stochastic differential equations; weak uniqueness; filtrations; discrete and continuous martingales; martingales problems; strong Markov property; Kolmogorov forward and backward equations; stationary distributions; null and positive recurrence; transience; particle filtering. Prerequisite: STAT 281 or STAT 371. Note: Credit cannot be obtained in MATH 471 if credit has already been in STAT 471."
     },
     {
         "course_title": "MATH 483 - Topics in Algebra",
-        "description": "This course will cover advanced algebraic topics not taught in regular courses in the curriculum or will provide a more in-depth continuation of an existing course. Prerequisite: at least one of MATH 326, MATH 327, MATH 328, MATH 329, or equivalent. Note: Upon approval by the Department of Mathematical and Statistical Sciences, this course may be taken for credit multiple times.",
-        "prerequisites": [
-            "at least one of MATH 326",
-            "MATH 327",
-            "MATH 328",
-            "MATH 329",
-            "equivalent"
-        ]
+        "description": "This course will cover advanced algebraic topics not taught in regular courses in the curriculum or will provide a more in-depth continuation of an existing course. Prerequisite: at least one of MATH 326, MATH 327, MATH 328, MATH 329, or equivalent. Note: Upon approval by the Department of Mathematical and Statistical Sciences, this course may be taken for credit multiple times."
     },
     {
         "course_title": "MATH 497 - Reading in Mathematics",
-        "description": "This course is designed to give credit to mature and able students for reading in areas not covered by courses, under the supervision of a staff member. A student, or group of students, wishing to use this course should find a staff member willing to supervise the proposed reading program. A detailed description of the material to be covered should be submitted to the Chair of the Department Honors Committee. (This should include a description of testing methods to be used.) The program will require the approval of both the Honors Committee, and the Chair of the Department. The students' mastery of the material of the course will be tested by a written or oral examination. This course may be taken in Fall or Winter and may be taken any number of times, subject always to the approval mentioned above. Prerequisite: Any 300-level MATH course.",
-        "prerequisites": [
-            "Any 300-level MATH course"
-        ]
+        "description": "This course is designed to give credit to mature and able students for reading in areas not covered by courses, under the supervision of a staff member. A student, or group of students, wishing to use this course should find a staff member willing to supervise the proposed reading program. A detailed description of the material to be covered should be submitted to the Chair of the Department Honors Committee. (This should include a description of testing methods to be used.) The program will require the approval of both the Honors Committee, and the Chair of the Department. The students' mastery of the material of the course will be tested by a written or oral examination. This course may be taken in Fall or Winter and may be taken any number of times, subject always to the approval mentioned above. Prerequisite: Any 300-level MATH course."
     },
     {
         "course_title": "MATH 498 - Mathematical Topics in Data Science",
-        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites: One of MATH 209, 214, or 217 and one of MATH 225 or 227. Additional prerequisites may be required. Note: Credit for this course may be obtained more than once.",
-        "prerequisites": []
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites: One of MATH 209, 214, or 217 and one of MATH 225 or 227. Additional prerequisites may be required. Note: Credit for this course may be obtained more than once."
     },
     {
         "course_title": "MATH 499 - Research Project",
-        "description": "This course provides students in Specialization and Honors programs an opportunity to pursue research in mathematics under the direction of a member of the Department. Course requirements include at least one oral presentation and a written final report. Students interested in taking this course should contact the course coordinator two months in advance. Credit for this course may be obtained more than once. Prerequisites: a 300-level MATH course and consent of the course coordinator.",
-        "prerequisites": []
+        "description": "This course provides students in Specialization and Honors programs an opportunity to pursue research in mathematics under the direction of a member of the Department. Course requirements include at least one oral presentation and a written final report. Students interested in taking this course should contact the course coordinator two months in advance. Credit for this course may be obtained more than once. Prerequisites: a 300-level MATH course and consent of the course coordinator."
     },
     {
         "course_title": "MATH 505 - Stochastic Analysis I",
-        "description": "Discrete-time stochastic analysis: Stochastic basis, filtration, stochastic sequences. Absolute continuity of probability measures and conditional expectations. Martingale-like and predictable stochastic sequences. Doob's decomposition. Stopping times and related properties. Uniformly integrable stochastic sequences. Transition from discrete-time to continuous-time stochastic analysis. Introduction to stochastic integration with respect to Brownian motion. Prerequisites: STAT 471 or consent of the Department.",
-        "prerequisites": []
+        "description": "Discrete-time stochastic analysis: Stochastic basis, filtration, stochastic sequences. Absolute continuity of probability measures and conditional expectations. Martingale-like and predictable stochastic sequences. Doob's decomposition. Stopping times and related properties. Uniformly integrable stochastic sequences. Transition from discrete-time to continuous-time stochastic analysis. Introduction to stochastic integration with respect to Brownian motion. Prerequisites: STAT 471 or consent of the Department."
     },
     {
         "course_title": "MATH 506 - Complex Variables",
-        "description": "A review and some extensions of single variable complex analysis. Complex linearity and holomorphicity in several variables, Hartog's theorem, Weierstrass preparation theorem, Riemann extension theorem, Weierstrass division theorem, analytic Nullstellensatz, implicit and inverse function theorems, complex manifolds and analytic subvarieties, meromorphic maps. Prerequisite: MATH 411.",
-        "prerequisites": [
-            "MATH 411"
-        ]
+        "description": "A review and some extensions of single variable complex analysis. Complex linearity and holomorphicity in several variables, Hartog's theorem, Weierstrass preparation theorem, Riemann extension theorem, Weierstrass division theorem, analytic Nullstellensatz, implicit and inverse function theorems, complex manifolds and analytic subvarieties, meromorphic maps. Prerequisite: MATH 411."
     },
     {
         "course_title": "MATH 508 - Computational Finance",
-        "description": "Principles of Monte Carlo methods. Essentials of stochastics. Introduction to financial derivatives pricing. Generating random variables. Simulating stochastic differential equations. Application to financial derivatives pricing and interest rate models. Variance reduction techniques. Prerequisite: STAT 471 or FIN 654 or ECON 598 or consent of the Department. Note: This course may not be taken for credit if credit has already been obtained in MATH 408.",
-        "prerequisites": [
-            "STAT 471",
-            "FIN 654",
-            "ECON 598",
-            "consent of the Department"
-        ]
+        "description": "Principles of Monte Carlo methods. Essentials of stochastics. Introduction to financial derivatives pricing. Generating random variables. Simulating stochastic differential equations. Application to financial derivatives pricing and interest rate models. Variance reduction techniques. Prerequisite: STAT 471 or FIN 654 or ECON 598 or consent of the Department. Note: This course may not be taken for credit if credit has already been obtained in MATH 408."
     },
     {
         "course_title": "MATH 509 - Data Structures and Platforms",
-        "description": "Basic data analysis with R, SAS, and Python. Program development with Jupyter notebooks. Cloud computing, collaborative software development, docker containers, kubernets. Internet security, privacy and ethics. Technologies will be updated as new developments arise. Prerequisites: No programming skills are needed.",
-        "prerequisites": []
+        "description": "Basic data analysis with R, SAS, and Python. Program development with Jupyter notebooks. Cloud computing, collaborative software development, docker containers, kubernets. Internet security, privacy and ethics. Technologies will be updated as new developments arise. Prerequisites: No programming skills are needed."
     },
     {
         "course_title": "MATH 510 - Stochastic Analysis II",
-        "description": "Continuous semimartingales and quadratic variation. Stochastic integrals for continuous semimartingales. Ito's formula. Change of probability measure (Girsanov transformation). Martingale representation theorem for Brownian filtrations. Stochastic differential equations, diffusions. Introduction to discontinuous semimartingales with emphasis on Poisson processes. Prerequisites: MATH 505 or consent of the Department.",
-        "prerequisites": []
+        "description": "Continuous semimartingales and quadratic variation. Stochastic integrals for continuous semimartingales. Ito's formula. Change of probability measure (Girsanov transformation). Martingale representation theorem for Brownian filtrations. Stochastic differential equations, diffusions. Introduction to discontinuous semimartingales with emphasis on Poisson processes. Prerequisites: MATH 505 or consent of the Department."
     },
     {
         "course_title": "MATH 512 - Algebraic Number Theory",
-        "description": "Valuations and their extensions, ramifications; integral dependence, algebraic number fields, ideals and divisors, class number. Prerequisite: MATH 326 or equivalent.",
-        "prerequisites": [
-            "MATH 326",
-            "equivalent"
-        ]
+        "description": "Valuations and their extensions, ramifications; integral dependence, algebraic number fields, ideals and divisors, class number. Prerequisite: MATH 326 or equivalent."
     },
     {
         "course_title": "MATH 514 - Measure Theory I",
-        "description": "Brief review of set operations and countable sets. Measure theory, integration theory, Lebesgue measure and integrals on R^n, product measure, Tonelli-Fubini theorem. Functions of bounded variation, absolutely continuous functions. Prerequisites: Math 317.",
-        "prerequisites": []
+        "description": "Brief review of set operations and countable sets. Measure theory, integration theory, Lebesgue measure and integrals on R^n, product measure, Tonelli-Fubini theorem. Functions of bounded variation, absolutely continuous functions. Prerequisites: Math 317."
     },
     {
         "course_title": "MATH 515 - Mathematical Finance I",
-        "description": "Review of probability tools for discrete financial analysis; Conditional probabilities/expectations. Filtrations, adapted and predictable processes. Martingales, submartingales and supermartingales in discrete-time. Doob decomposition for supermartingales. Predictable representation. Discrete-time financial modes: Arbitrage, complete and incomplete markets. Self-financing property, value and gain processes. Valuation of contingent claims. Binomial model: Model specifications, Perfect hedging. Utility functions and consumption/investment problems. European and American options in discrete time. Futures and forward contracts in discrete time. Transition to the continuous-time framework. Prerequisite: STAT 471 or consent of the Department. Note: This course may not be taken for credit if credit has already been obtained in MATH 415.",
-        "prerequisites": [
-            "STAT 471",
-            "consent of the Department"
-        ]
+        "description": "Review of probability tools for discrete financial analysis; Conditional probabilities/expectations. Filtrations, adapted and predictable processes. Martingales, submartingales and supermartingales in discrete-time. Doob decomposition for supermartingales. Predictable representation. Discrete-time financial modes: Arbitrage, complete and incomplete markets. Self-financing property, value and gain processes. Valuation of contingent claims. Binomial model: Model specifications, Perfect hedging. Utility functions and consumption/investment problems. European and American options in discrete time. Futures and forward contracts in discrete time. Transition to the continuous-time framework. Prerequisite: STAT 471 or consent of the Department. Note: This course may not be taken for credit if credit has already been obtained in MATH 415."
     },
     {
         "course_title": "MATH 516 - Linear Analysis",
-        "description": "Classical Banach spaces. Hahn-Banach, open mapping and closed graphs theorems. Hilbert spaces, orthonormal bases. Elements of spectral theory, spectra of compact operators, spectral theorem for compact self-adjoint operators. Prerequisite: MATH 417. Corequisite: MATH 447.",
-        "prerequisites": [
-            "MATH 417"
-        ]
+        "description": "Classical Banach spaces. Hahn-Banach, open mapping and closed graphs theorems. Hilbert spaces, orthonormal bases. Elements of spectral theory, spectra of compact operators, spectral theorem for compact self-adjoint operators. Prerequisite: MATH 417. Corequisite: MATH 447."
     },
     {
         "course_title": "MATH 518 - Functional Analysis",
-        "description": "Locally convex spaces, weak topologies and duality in Banach spaces, weak compactness in Banach spaces, structure of classical Banach spaces, local structures, infinite-dimensional geometry of Banach spaces and applications. Prerequisite: MATH 516. Corequisite: MATH 447 or consent of Department.",
-        "prerequisites": [
-            "MATH 516"
-        ]
+        "description": "Locally convex spaces, weak topologies and duality in Banach spaces, weak compactness in Banach spaces, structure of classical Banach spaces, local structures, infinite-dimensional geometry of Banach spaces and applications. Prerequisite: MATH 516. Corequisite: MATH 447 or consent of Department."
     },
     {
         "course_title": "MATH 519 - Introduction to Operator Algebras",
-        "description": "Banach algebras and spectral theory, compact and Fredholm operators, the spectral theorem for bounded normal operators, operator algebras, representations of C+-algebras, elementary von Neumann algebra theory, and other topics. Prerequisite: MATH 516. Corequisite: MATH 447 or consent of Department.",
-        "prerequisites": [
-            "MATH 516"
-        ]
+        "description": "Banach algebras and spectral theory, compact and Fredholm operators, the spectral theorem for bounded normal operators, operator algebras, representations of C+-algebras, elementary von Neumann algebra theory, and other topics. Prerequisite: MATH 516. Corequisite: MATH 447 or consent of Department."
     },
     {
         "course_title": "MATH 520 - Mathematical Finance II",
-        "description": "Financial markets in continuous-time: Arbitrage, completeness, self-financing strategies. Black Scholes model. Option pricing and hedging: European, American and exotic options. Consumption-investment problem: Utility maximization, optimal portfolio and optimal consumption. Prerequisite: MATH 515. Corequisite: MATH 510 or consent of the Department.",
-        "prerequisites": [
-            "MATH 515"
-        ]
+        "description": "Financial markets in continuous-time: Arbitrage, completeness, self-financing strategies. Black Scholes model. Option pricing and hedging: European, American and exotic options. Consumption-investment problem: Utility maximization, optimal portfolio and optimal consumption. Prerequisite: MATH 515. Corequisite: MATH 510 or consent of the Department."
     },
     {
         "course_title": "MATH 521 - Differential Manifolds",
-        "description": "Finite dimensional manifolds/submanifolds; tangent bundle, differential, inverse, and implicit function theorems, partitions of unity; imbeddings, immersions, submersions; vector fields and associated flows; Lie derivative, Lie bracket; tensor analysis, differential forms, orientation, integration, Stokes' theorem; basics of smooth bundle theory, Riemannian metrics; notion of a Lie group with basic examples, smooth Lie group actions, principal bundles. Prerequisite: MATH 446 or 448.",
-        "prerequisites": [
-            "MATH 446",
-            "448"
-        ]
+        "description": "Finite dimensional manifolds/submanifolds; tangent bundle, differential, inverse, and implicit function theorems, partitions of unity; imbeddings, immersions, submersions; vector fields and associated flows; Lie derivative, Lie bracket; tensor analysis, differential forms, orientation, integration, Stokes' theorem; basics of smooth bundle theory, Riemannian metrics; notion of a Lie group with basic examples, smooth Lie group actions, principal bundles. Prerequisite: MATH 446 or 448."
     },
     {
         "course_title": "MATH 524 - Ordinary Differential Equations IIA",
-        "description": "Existence theorems, uniqueness theorems; linear systems (basic theory); stability (basic theory); nonlinear systems (local theory); nonlinear systems (global theory); bifurcations. Prerequisite: MATH 334 or 336, or equivalent.",
-        "prerequisites": [
-            "MATH 334",
-            "336",
-            "equivalent"
-        ]
+        "description": "Existence theorems, uniqueness theorems; linear systems (basic theory); stability (basic theory); nonlinear systems (local theory); nonlinear systems (global theory); bifurcations. Prerequisite: MATH 334 or 336, or equivalent."
     },
     {
         "course_title": "MATH 525 - Ordinary Differential Equations IIB",
-        "description": "Asymptotics; boundary value problems; Poincare-Bendixson theory. Additional material will be chosen from among the following topics at the option of the instructor: separation; dichotomies; comparison and oscillation theory; bifurcation theory; nonautonomous systems; dynamical systems; functional differential equations; contingent equations; differential equations in Banach spaces. Prerequisite: MATH 524 or equivalent.",
-        "prerequisites": [
-            "MATH 524",
-            "equivalent"
-        ]
+        "description": "Asymptotics; boundary value problems; Poincare-Bendixson theory. Additional material will be chosen from among the following topics at the option of the instructor: separation; dichotomies; comparison and oscillation theory; bifurcation theory; nonautonomous systems; dynamical systems; functional differential equations; contingent equations; differential equations in Banach spaces. Prerequisite: MATH 524 or equivalent."
     },
     {
         "course_title": "MATH 527 - Intermediate Partial Differential Equations",
-        "description": "Notions; Elliptic PDE's; Parabolic PDE's; Hyperbolic PDE's; Nonlinear Integrable PDE's. Prerequisite: MATH 436 or equivalent; corequisite: MATH 516.",
-        "prerequisites": [
-            "MATH 436",
-            "equivalent; corequisite: MATH 516"
-        ]
+        "description": "Notions; Elliptic PDE's; Parabolic PDE's; Hyperbolic PDE's; Nonlinear Integrable PDE's. Prerequisite: MATH 436 or equivalent; corequisite: MATH 516."
     },
     {
         "course_title": "MATH 530 - Algebraic Topology",
-        "description": "Particular background from point set topology (pasting and quotienting constructions); homotopy relation between maps and spaces; fundamental group; Seifert VanKampen theorem; covering spaces. Additional topics at the discretion of the instructor. Prerequisites: MATH 227, 317 and 447 or consent of Department.",
-        "prerequisites": []
+        "description": "Particular background from point set topology (pasting and quotienting constructions); homotopy relation between maps and spaces; fundamental group; Seifert VanKampen theorem; covering spaces. Additional topics at the discretion of the instructor. Prerequisites: MATH 227, 317 and 447 or consent of Department."
     },
     {
         "course_title": "MATH 535 - Numerical Methods I",
-        "description": "Direct and iterative methods for solving linear systems, iterative methods for nonlinear systems, polynomial and spline interpolations, least square approximation, numerical differentiation and integration, initial value problems for ODE's (one-step, multistep methods, stiff ODE's). Prerequisite: 400-level MATH course. Students are required to have knowledge of advanced Calculus and introductory knowledge in Analysis and Linear Algebra and some computer programming. Note 1: Restricted to graduate students only. Note 2: May not be taken for credit if credit has already been obtained in MATH 381, 481 or 486 or equivalent.",
-        "prerequisites": [
-            "400-level MATH course"
-        ]
+        "description": "Direct and iterative methods for solving linear systems, iterative methods for nonlinear systems, polynomial and spline interpolations, least square approximation, numerical differentiation and integration, initial value problems for ODE's (one-step, multistep methods, stiff ODE's). Prerequisite: 400-level MATH course. Students are required to have knowledge of advanced Calculus and introductory knowledge in Analysis and Linear Algebra and some computer programming. Note 1: Restricted to graduate students only. Note 2: May not be taken for credit if credit has already been obtained in MATH 381, 481 or 486 or equivalent."
     },
     {
         "course_title": "MATH 536 - Numerical Solutions of Partial Differential Equations I",
-        "description": "Finite difference and finite element methods for boundary-value problems of elliptic equations. Numerical algorithms for large systems of linear algebraic equations: direct, classical relaxation, multigrid and preconditioned conjugate gradient methods. Algorithms for vector/parallel computers and the domain decomposition method. Prerequisites: MATH 337, 436 or equivalent and some computer programming.",
-        "prerequisites": []
+        "description": "Finite difference and finite element methods for boundary-value problems of elliptic equations. Numerical algorithms for large systems of linear algebraic equations: direct, classical relaxation, multigrid and preconditioned conjugate gradient methods. Algorithms for vector/parallel computers and the domain decomposition method. Prerequisites: MATH 337, 436 or equivalent and some computer programming."
     },
     {
         "course_title": "MATH 538 - Techniques of Applied Mathematics",
-        "description": "Asymptotic analysis of integrals: Laplace, stationary phase, and steepest descent methods. Regular and singular perturbations: trained coordinates, multiple scales, asymptotic matching, renormalization techniques, WKB theory, Hamiltonian perturbation theory, center manifolds and stability. Singularities in differential equations. Applications to algebraic, ordinary and partial differential equations. Prerequisite: MATH 438 or equivalent.",
-        "prerequisites": [
-            "MATH 438",
-            "equivalent"
-        ]
+        "description": "Asymptotic analysis of integrals: Laplace, stationary phase, and steepest descent methods. Regular and singular perturbations: trained coordinates, multiple scales, asymptotic matching, renormalization techniques, WKB theory, Hamiltonian perturbation theory, center manifolds and stability. Singularities in differential equations. Applications to algebraic, ordinary and partial differential equations. Prerequisite: MATH 438 or equivalent."
     },
     {
         "course_title": "MATH 539 - Applied Functional Analysis",
-        "description": "Linear part:structure of function spaces, Sobolev spaces, embeddings, topologies, linear operators, adjoint and inverse operators, spectra, distributions, semigroup theory, integral equations, well-posedness and the notion of a solution. Nonlinear part: inequalities, Frechet and Gateaux derivatives, fixed point theorems. Applications from mechanics, reaction-diffusion equations, the Navier-Stokes equations, nonlinear Schr\u00f6dinger equation. Prerequisite: MATH 438 or equivalent.",
-        "prerequisites": [
-            "MATH 438",
-            "equivalent"
-        ]
+        "description": "Linear part:structure of function spaces, Sobolev spaces, embeddings, topologies, linear operators, adjoint and inverse operators, spectra, distributions, semigroup theory, integral equations, well-posedness and the notion of a solution. Nonlinear part: inequalities, Frechet and Gateaux derivatives, fixed point theorems. Applications from mechanics, reaction-diffusion equations, the Navier-Stokes equations, nonlinear Schr\u00f6dinger equation. Prerequisite: MATH 438 or equivalent."
     },
     {
         "course_title": "MATH 542 - Fourier Analysis",
-        "description": "Review, theory and extension of Fourier series for square integrable functions; orthonormal systems, Bessel's inequality, completeness, Parseval's identity, Riesz-Fischer Theorem. Extension to Fourier series for functions in other Lebesgue classes; Fejer means, conjugate series, Dirichlet, Fejer and Poisson kernels. Norm convergence; remarks on pointwise convergence. Fourier transforms and series in several dimensions; inverse transform, Plancherel formula, Poisson Formula, maximal functions, Riesz-Thorin Theorem and applications. Elementary distribution theory; D, D', S, S' and some elementary results, Fourier transforms of tempered distributions. Examination of some earlier results with tempered distributions instead of functions and getting familiar with basic concepts. Prerequisite: MATH 418.",
-        "prerequisites": [
-            "MATH 418"
-        ]
+        "description": "Review, theory and extension of Fourier series for square integrable functions; orthonormal systems, Bessel's inequality, completeness, Parseval's identity, Riesz-Fischer Theorem. Extension to Fourier series for functions in other Lebesgue classes; Fejer means, conjugate series, Dirichlet, Fejer and Poisson kernels. Norm convergence; remarks on pointwise convergence. Fourier transforms and series in several dimensions; inverse transform, Plancherel formula, Poisson Formula, maximal functions, Riesz-Thorin Theorem and applications. Elementary distribution theory; D, D', S, S' and some elementary results, Fourier transforms of tempered distributions. Examination of some earlier results with tempered distributions instead of functions and getting familiar with basic concepts. Prerequisite: MATH 418."
     },
     {
         "course_title": "MATH 543 - Measure Theory II",
-        "description": "Review of basic measure and integration theory. Signed and complex measures. Hahn and  Jordan decompositions. The Radon-Nikodym theorem. Lebesgue decomposition. The Lebesgue-Stieltjes integral. Measure theory over locally compact Hausdorff spaces, in particular, the Riesz representation theorem and Haar measures. Hausdorff measure. Introduction to martingales. Prerequisite: One of MATH 417 or MATH 514, and MATH 447 or equivalent.",
-        "prerequisites": [
-            "One of MATH 417",
-            "MATH 514",
-            "and MATH 447",
-            "equivalent"
-        ]
+        "description": "Review of basic measure and integration theory. Signed and complex measures. Hahn and  Jordan decompositions. The Radon-Nikodym theorem. Lebesgue decomposition. The Lebesgue-Stieltjes integral. Measure theory over locally compact Hausdorff spaces, in particular, the Riesz representation theorem and Haar measures. Hausdorff measure. Introduction to martingales. Prerequisite: One of MATH 417 or MATH 514, and MATH 447 or equivalent."
     },
     {
         "course_title": "MATH 556 - Introduction to Fluid Mechanics",
-        "description": "Fundamentals including continuum hypothesis surface tension, classical thermodynamics, and transport phenomena. Introduction to Cartesian tensors. Kinematics of flow including Lagrangian and Eulerian descriptions, streamline, path line, streak line, vorticity and circulation. Derivation of the conservation laws for mass, momentum, and energy and a detailed description of the Boussinesq approximation. Conservation laws in a rotating frame. Vortex lines and tubes, role of viscosity in vortices, Kelvin's circulation theorem, the vorticity equation in nonrotating and rotating frames. Irrotational flow including its relevance, velocity potential, sources and sinks, and flow past various shapes. Gravity waves in deep and shallow water with and without surface tension in both the linear and nonlinear contexts. Dynamic similarity and Buckingham's Pi Theorem. Prerequisites: One of MATH 311, 411 and MATH 436 or consent of Instructor.",
-        "prerequisites": []
+        "description": "Fundamentals including continuum hypothesis surface tension, classical thermodynamics, and transport phenomena. Introduction to Cartesian tensors. Kinematics of flow including Lagrangian and Eulerian descriptions, streamline, path line, streak line, vorticity and circulation. Derivation of the conservation laws for mass, momentum, and energy and a detailed description of the Boussinesq approximation. Conservation laws in a rotating frame. Vortex lines and tubes, role of viscosity in vortices, Kelvin's circulation theorem, the vorticity equation in nonrotating and rotating frames. Irrotational flow including its relevance, velocity potential, sources and sinks, and flow past various shapes. Gravity waves in deep and shallow water with and without surface tension in both the linear and nonlinear contexts. Dynamic similarity and Buckingham's Pi Theorem. Prerequisites: One of MATH 311, 411 and MATH 436 or consent of Instructor."
     },
     {
         "course_title": "MATH 570 - Mathematical Biology",
-        "description": "Mathematical modeling in the biological and medical sciences. Students will learn how to apply mathematical methods and theory to a variety of different biological problems. Topics will be taken from: (i) continuous and discrete dynamical systems describing interacting and structured populations, resource management, biological control, reaction kinetics, biological oscillators and switches, the dynamics of infectious diseases and genetics and (ii) models of spatial processes in biology including random walks, pattern formation in morphogenesis and ecology, applications of traveling waves to population dynamics, epidemiology, chemical reactions, and models for neural patterns. Prerequisites: MATH 524 and a 400 or 500 level course on Partial Differential Equations or consent of Instructor.",
-        "prerequisites": []
+        "description": "Mathematical modeling in the biological and medical sciences. Students will learn how to apply mathematical methods and theory to a variety of different biological problems. Topics will be taken from: (i) continuous and discrete dynamical systems describing interacting and structured populations, resource management, biological control, reaction kinetics, biological oscillators and switches, the dynamics of infectious diseases and genetics and (ii) models of spatial processes in biology including random walks, pattern formation in morphogenesis and ecology, applications of traveling waves to population dynamics, epidemiology, chemical reactions, and models for neural patterns. Prerequisites: MATH 524 and a 400 or 500 level course on Partial Differential Equations or consent of Instructor."
     },
     {
         "course_title": "MATH 572 - Mathematical Modelling in Industry, Government, and Sciences",
-        "description": "Developing mathematical models to solve real-world problems, model analysis, fitting model to data, model validation and selection, and interpretation of model outcomes. Types of models include difference equation models, differential equation models, network models, and stochastic models. Prerequisites: Linear algebra and differential equations or consent of the instructor.",
-        "prerequisites": []
+        "description": "Developing mathematical models to solve real-world problems, model analysis, fitting model to data, model validation and selection, and interpretation of model outcomes. Types of models include difference equation models, differential equation models, network models, and stochastic models. Prerequisites: Linear algebra and differential equations or consent of the instructor."
     },
     {
         "course_title": "MATH 574 - Mathematical Modeling of Infectious Diseases",
-        "description": "Development of mathematical models for the transmission dynamics of infectious diseases, incorporation of important epidemiological factors including disease latency, recovery, relapse and reinfection, isolation and quarantine, vaccination and immunity. Stability and bifurcation analysis of mathematical models. Estimation of model parameters from public health data, and numerical simulations of models. Prediction of the time course of epidemics and long-term patterns of endemic diseases. Prerequisites: MATH 334 or MATH 336, or with instructor's consent.",
-        "prerequisites": []
+        "description": "Development of mathematical models for the transmission dynamics of infectious diseases, incorporation of important epidemiological factors including disease latency, recovery, relapse and reinfection, isolation and quarantine, vaccination and immunity. Stability and bifurcation analysis of mathematical models. Estimation of model parameters from public health data, and numerical simulations of models. Prediction of the time course of epidemics and long-term patterns of endemic diseases. Prerequisites: MATH 334 or MATH 336, or with instructor's consent."
     },
     {
         "course_title": "MATH 581 - Group Theory",
-        "description": "Group actions, Sylow Theory, solvable and nilpotent groups, Galois Theory. Additional topics at the discretion of the instructor. Prerequisite: MATH 328 or consent of the Department.",
-        "prerequisites": [
-            "MATH 328",
-            "consent of the Department"
-        ]
+        "description": "Group actions, Sylow Theory, solvable and nilpotent groups, Galois Theory. Additional topics at the discretion of the instructor. Prerequisite: MATH 328 or consent of the Department."
     },
     {
         "course_title": "MATH 582 - Rings and Modules",
-        "description": "Introduction to commutative algebra, algebraic geometry, and homological algebra. Additional topics at the discretion of the instructor. Prerequisite: MATH 326 or consent of the Department.",
-        "prerequisites": [
-            "MATH 326",
-            "consent of the Department"
-        ]
+        "description": "Introduction to commutative algebra, algebraic geometry, and homological algebra. Additional topics at the discretion of the instructor. Prerequisite: MATH 326 or consent of the Department."
     },
     {
         "course_title": "MATH 583 - Topics in Algebra",
-        "description": "This course will cover advanced algebraic topics not taught in regular courses in the curriculum or will provide a more in-depth continuation of an existing course. Prerequisite: at least one of MATH 326, MATH 327, MATH 328, MATH 329, or equivalent. Note: Upon approval by the Department of Mathematical and Statistical Sciences, this course may be taken for credit multiple times.",
-        "prerequisites": [
-            "at least one of MATH 326",
-            "MATH 327",
-            "MATH 328",
-            "MATH 329",
-            "equivalent"
-        ]
+        "description": "This course will cover advanced algebraic topics not taught in regular courses in the curriculum or will provide a more in-depth continuation of an existing course. Prerequisite: at least one of MATH 326, MATH 327, MATH 328, MATH 329, or equivalent. Note: Upon approval by the Department of Mathematical and Statistical Sciences, this course may be taken for credit multiple times."
     },
     {
         "course_title": "MATH 600 - Reading in Mathematics",
-        "description": "Students registered in this course are supervised by individual staff members in areas of interest of the staff members. Students will be allowed to take this course only in exceptional circumstances and with the permission of the Chairman of the Department. This course shall not be counted against the minimum course requirement for graduate students.",
-        "prerequisites": []
+        "description": "Students registered in this course are supervised by individual staff members in areas of interest of the staff members. Students will be allowed to take this course only in exceptional circumstances and with the permission of the Chairman of the Department. This course shall not be counted against the minimum course requirement for graduate students."
     },
     {
         "course_title": "MATH 601 - Graduate Colloquium",
-        "description": "Credit for this course can be obtained twice.",
-        "prerequisites": []
+        "description": "Credit for this course can be obtained twice."
     },
     {
         "course_title": "MATH 617 - Topics in Functional Analysis I",
-        "description": "No Description",
-        "prerequisites": []
+        "description": "No Description"
     },
     {
         "course_title": "MATH 623 - Topics in Differential Geometry and Mechanics",
-        "description": "No Description",
-        "prerequisites": []
+        "description": "No Description"
     },
     {
         "course_title": "MATH 625 - Advanced Mathematical Finance",
-        "description": "Topics among: Incomplete markets; Models with imperfection (markets with transaction costs, constraints or defaults); Risk measures; Interplay between finance and insurance; Mathematical models for the term structure of interest rates. Prerequisites: MATH 520 or consent of the Department.",
-        "prerequisites": []
+        "description": "Topics among: Incomplete markets; Models with imperfection (markets with transaction costs, constraints or defaults); Risk measures; Interplay between finance and insurance; Mathematical models for the term structure of interest rates. Prerequisites: MATH 520 or consent of the Department."
     },
     {
         "course_title": "MATH 653 - Seminar in Functional Analysis",
-        "description": "Credit for this course may be obtained more than once.",
-        "prerequisites": []
+        "description": "Credit for this course may be obtained more than once."
     },
     {
         "course_title": "MATH 655 - Topics in Fluid Dynamics",
-        "description": "No Description",
-        "prerequisites": []
+        "description": "No Description"
     },
     {
         "course_title": "MATH 663 - Topics in Applied Mathematics I",
-        "description": "No Description",
-        "prerequisites": []
+        "description": "No Description"
     },
     {
         "course_title": "MATH 664 - Topics in Applied Mathematics II",
-        "description": "No Description",
-        "prerequisites": []
+        "description": "No Description"
     },
     {
         "course_title": "MATH 667 - Topics in Differential Equations I",
-        "description": "No Description",
-        "prerequisites": []
+        "description": "No Description"
     },
     {
         "course_title": "MATH 676 - Topics in Geometry I",
-        "description": "No Description",
-        "prerequisites": []
+        "description": "No Description"
     },
     {
         "course_title": "MATH 681 - Topics in Algebra",
-        "description": "No Description",
-        "prerequisites": []
+        "description": "No Description"
     },
     {
         "course_title": "MATH 682 - Topics in Algebra",
-        "description": "No Description",
-        "prerequisites": []
+        "description": "No Description"
     },
     {
         "course_title": "MATH 900 - Directed Research Project",
-        "description": "Open only to students taking the MSc non-thesis option in mathematics.",
-        "prerequisites": []
+        "description": "Open only to students taking the MSc non-thesis option in mathematics."
     },
     {
         "course_title": "MATH 900A - Directed Research Project",
-        "description": "Open only to students taking the MSc non-thesis option in mathematics.",
-        "prerequisites": []
+        "description": "Open only to students taking the MSc non-thesis option in mathematics."
     },
     {
         "course_title": "MATH 900B - Directed Research Project",
-        "description": "Open only to students taking the MSc non-thesis option in mathematics.",
-        "prerequisites": []
+        "description": "Open only to students taking the MSc non-thesis option in mathematics."
     }
 ]

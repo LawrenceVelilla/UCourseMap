@@ -15,8 +15,8 @@ import json
 import re
 
 
-# URL of the course catalog or specific class listings
-URL = "https://apps.ualberta.ca/catalogue/course/math"  # Replace with the actual URL
+
+URL = "https://apps.ualberta.ca/catalogue/course/math"  
 
 def extract_and_remove(description, pattern):
     """Extract and remove the matched text based on the pattern."""
@@ -52,14 +52,10 @@ def scrape_courses(url):
         title_tag = course_section.select_one("h2 a")
         course_title = title_tag.text.strip() if title_tag else "No Title"
 
-        # Extract description text
+        # Extract course description
         description_tag = course_section.find("p")
         description = description_tag.text.strip() if description_tag else "No Description"
 
-
-
-
-        # Append the course details
         courses.append({
             "course_title": course_title,
             "description": description,
@@ -68,22 +64,14 @@ def scrape_courses(url):
 
     return courses
 
-# Run the scraper
+
 data = scrape_courses(URL)
 
 if data:
-    # Save the data to a JSON file
     with open("courses.json", "w") as file:
         json.dump(data, file, indent=4)
     print("Data saved to courses.json")
 
-    # Print the scraped data
     print(json.dumps(data, indent=4))
 
-import pandas as pd
-
-
-df = pd.read_json("updated_csclasses.json")
-
-print(df)
 

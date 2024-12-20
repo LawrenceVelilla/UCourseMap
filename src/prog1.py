@@ -121,7 +121,7 @@ def update_courses(input_file, output_file):
         course["corequisites"] = corequisites
         course["description"] = description.strip()
 
-    # Save the updated course data from the raw data into a file
+  
     with open(output_file, 'w') as file:
         json.dump(courses, file, indent=4)
     print(f"Updated course data saved to {output_file}")

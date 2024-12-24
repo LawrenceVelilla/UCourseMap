@@ -71,6 +71,29 @@ def parse_courses(course_text):
 
     return parsed
 
+
+import re
+
+def cleaner(lst):
+    """
+    Cleans a list of dictionaries by checking if any values start with 'one of' 
+    and processes them accordingly.
+    """
+    cleaned = []
+
+    for item in lst:  # Loop through each item in the list
+        for value in item.values():  # Loop through each value in the dictionary
+            if isinstance(value, list):  # Check if the value is a list
+                for i in range(len(value)):
+                    # Check if the string starts with 'one of'
+                    match = re.match(r"one of", value[i], flags=re.IGNORECASE)
+                    if match:
+                        cleaned.append(value[i])  # Add matching values to the cleaned list
+    return cleaned
+
+# Finish this function
+
+
 def update_courses(input_file, output_file):
     with open(input_file, 'r') as file:
         courses = json.load(file)

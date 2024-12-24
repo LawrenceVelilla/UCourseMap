@@ -977,11 +977,9 @@
         "course_title": "CMPUT 401 - Software Process and Product Management",
         "description": "All phases of software development are reviewed from a process perspective. Best practices in software project and product development and management are introduced. Architectural and technological impacts on management. Group projects require specification and initial design or redesign of a software system.",
         "prerequisites": [
-            {
-                "All of": [
-                    "CMPUT 301"
-                ]
-            }
+        
+            "CMPUT 301"
+                
         ],
         "corequisites": []
     },
@@ -989,11 +987,9 @@
         "course_title": "CMPUT 402 - Software Quality",
         "description": "Software quality issues are covered. Various types of software testing, ranging from unit testing to integration testing are discussed. Processes to ensure quality, such as reviews and continuous integration, are introduced. State-of-the-art software quality tools that analyze different artifacts within the software lifecycle are described.",
         "prerequisites": [
-            {
-                "All of": [
-                    "CMPUT 301"
-                ]
-            }
+            
+            "CMPUT 301"
+                
         ],
         "corequisites": []
     },
@@ -1017,12 +1013,11 @@
         "course_title": "CMPUT 404 - Web Applications and Architecture",
         "description": "Introduction to modern web architecture, from user-facing applications to machine-facing web-services. Topics include: the evolution of the Internet, relevant technologies and protocols, the architecture of modern web-based information systems, web data exchange and serialization, and service-oriented middleware.",
         "prerequisites": [
-            {
-                "All of": [
+            
                     "CMPUT 291",
                     "CMPUT 301"
-                ]
-            }
+            
+            
         ],
         "corequisites": []
     },
@@ -1098,11 +1093,9 @@
                     "ECE 212"
                 ]
             },
-            {
-                "All of": [
-                    "any 300-level Computing Science course"
-                ]
-            }
+            
+            "any 300-level Computing Science course"
+                
         ],
         "corequisites": []
     },
@@ -1183,11 +1176,9 @@
         "course_title": "CMPUT 455 - Search, Knowledge and Simulation",
         "description": "When making decisions in games, computers rely on three main ideas: search, knowledge and simulations. Knowledge can be created by machine learning techniques and encoded in deep neural networks. Search and simulations help to understand the short and long-term consequences of possible actions. This course leads from basic concepts to state-of-the-art decision-making algorithms.",
         "prerequisites": [
-            {
-                "All of": [
-                    "any 300-level Computing Science course"
-                ]
-            }
+            
+            "any 300-level Computing Science course"
+               
         ],
         "corequisites": []
     },
@@ -1195,16 +1186,15 @@
         "course_title": "CMPUT 461 - Introduction to Natural Language Processing",
         "description": "Natural language processing (NLP) is a subfield of artificial intelligence concerned with the interactions between computers and human languages. This course is an introduction to NLP, with the emphasis on writing programs to process and analyze texts, covering both foundational aspects and applications of NLP. The course aims at a balance between classical and statistical methods for NLP, including methods based on machine learning.",
         "prerequisites": [
+            
             {
-                "All of": [
-                    {"One of": [
-                        "CMPUT 201",
-                        "CMPUT 275"
-                        ]
-                    },
-                    "any 300-level Computing Science course"
+                "One of": [
+                    "CMPUT 201",
+                    "CMPUT 275"
                 ]
-            }
+            },
+            "any 300-level Computing Science course"
+                
         ],
         "corequisites": []
     },
@@ -1257,11 +1247,21 @@
                     "MATH 181"
                 ]
             },
+            
             {
-                "All of": [
-                    "CMPUT 204 or 275; any 300-level Computing Science course; MATH 125 or 127;"
+                "One of": [
+                    "CMPUT 204", 
+                    "CMPUT 275"
+                ]
+            }, 
+            "any 300-level Computing Science course", 
+            {
+                "One of": [
+                    "MATH 125", 
+                    "MATH 127"
                 ]
             }
+                
         ],
         "corequisites": []
     },
@@ -1279,13 +1279,11 @@
                     "MATH 156"
                 ]
             },
-            {
-                "All of": [
-                    "CMPUT 204",
-                    "CMPUT 267", 
-                    "any 300-level Computing Science course"
-                ]
-            }
+            
+            "CMPUT 204",
+            "CMPUT 267", 
+            "any 300-level Computing Science course"
+                
         ],
         "corequisites": []
     },
@@ -1293,13 +1291,11 @@
         "course_title": "CMPUT 469 - Artificial Intelligence Capstone",
         "description": "Students will experience the challenges, and rewards, of working in a team to address a real-world task, related to artificial intelligence or machine learning. This will involve first identifying the task itself, then iteratively addressing relevant issues (typically with feedback from a domain expert), leading to an implementation and culminating in evaluating that system. Students will also learn about best practices in organizing team projects, as well as important information about effective communication.",
         "prerequisites": [
-            {
-                "All of": [
-                    "CMPUT 267",
-                    "CMPUT 365",
-                    "CMPUT 366"
-                ]
-            }
+            
+            "CMPUT 267",
+            "CMPUT 365",
+            "CMPUT 366"
+                
         ],
         "corequisites": []
     },
@@ -1314,11 +1310,9 @@
                     "MATH 228"
                 ]
             },
-            {
-                "All of": [
-                    "CMPUT 204"
-                ]
-            }
+            
+            "CMPUT 204"
+                
         ],
         "corequisites": []
     },
@@ -1326,11 +1320,9 @@
         "course_title": "CMPUT 481 - Parallel and Distributed Systems",
         "description": "This course provides an undergraduate-level introduction to parallel programming, parallel and distributed systems, and high-performance computing in science and engineering. Both shared-memory parallel computers and distributed-memory multi computers (e.g., clusters) will be studied. Aspects of the practice of, and (some) research issues in, parallelism will be covered. There will be an emphasis on thread programming, data-parallel programming, and performance evaluation.",
         "prerequisites": [
-            {
-                "All of": [
+           
                     "CMPUT 379"
-                ]
-            }
+            
         ],
         "corequisites": []
     },

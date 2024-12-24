@@ -36,11 +36,9 @@
         "course_title": "CMPUT 191 - Introduction to Data Science",
         "description": "Introduction to data acquisition, basic data manipulation (cleaning, outlier detection), analysis (regression, clustering, classification), basic statistics and machine learning tools, information visualization to communicate information from data.  This course cannot be taken for credit if credit has been obtained in CMPUT 174, 175, 195, 274, 275, or ENCMP 100.",
         "prerequisites": [
-            {
-                "All of": [
+
                     "Math 30-1"
-                ]
-            }
+
         ],
         "corequisites": []
     },
@@ -65,7 +63,11 @@
                 "One of": [
                     "CMPUT 191",
                     "CMPUT 195",
-                    {"One of": ["CMPUT 174", "CMPUT 274"]}
+                    {"One of": [
+                        "CMPUT 174", 
+                        "CMPUT 274"
+                        ]
+                    }
                 ]
             },
             {
@@ -87,11 +89,9 @@
         "course_title": "CMPUT 201 - Practical Programming Methodology",
         "description": "Introduction to the principles, methods, tools, and practices of the professional programmer. The lectures focus on the fundamental principles of software engineering based on abstract data types and their implementations. The laboratories offer an intensive apprenticeship to the aspiring software developer. Students use C and software development tools of the Unix environment.  Credit cannot be obtained for CMPUT 201 if credit has been obtained for CMPUT 275, except with permission of the Department.",
         "prerequisites": [
-            {
-                "All of": [
+    
                     "CMPUT 175"
-                ]
-            }
+                
         ],
         "corequisites": []
     },
@@ -115,11 +115,9 @@
                     "CMPUT 274"
                 ]
             },
-            {
-                "All of": [
-                    "CMPUT 272"
-                ]
-            }
+            
+            "CMPUT 272"
+               
         ],
         "corequisites": []
     },
@@ -162,11 +160,9 @@
         "course_title": "CMPUT 210 - Codes, Codemakers, Codebreakers: An Introduction to Cryptography",
         "description": "An historical introduction to cryptography intended for a general audience. The development of codes and code-breaking from military espionage in ancient Greece to deciphering hieroglyphics via the Rosetta stone to modern computer ciphers. Includes frequency analysis, one-time-pad security, and public key cryptography.",
         "prerequisites": [
-            {
-                "All of": [
+            
                     "Any 100-level course"
-                ]
-            }
+                
         ],
         "corequisites": []
     },
@@ -187,11 +183,9 @@
         "course_title": "CMPUT 250 - Computers and Games",
         "description": "An interdisciplinary course for students in Science, Arts, and other faculties. The focus is on games as interactive entertainment, their role in society, and how they are made. Teams composed of students with diverse backgrounds (e.g. English, Art and Design, and Computing Science) follow the entire creative process: from concept, through pitch, to delivery, of a short narrative-based game using a commercial game engine. To achieve the required mix of backgrounds and experience, students must apply to be considered for this course. See the Department web site for the online form.",
         "prerequisites": [
-            {
-                "All of": [
+            
                     "Second-year standing"
-                ]
-            }
+            
         ],
         "corequisites": []
     },
@@ -225,12 +219,10 @@
             }
         ],
         "corequisites": [
-            {
-                "All of": [
+            
                     "CMPUT 204",
                     "CMPUT 275"
-                ]
-            }
+                    
         ]
     },
     {
@@ -248,8 +240,9 @@
                 ]
             },
             {
-                "All of": [
-                    "CMPUT 174 or 274;"
+                "One of": [
+                    "CMPUT 174",  
+                    "CMPUT 274"
                 ]
             }
         ],
@@ -317,11 +310,9 @@
         "course_title": "CMPUT 275 - Introduction to Tangible Computing II",
         "description": "This is part 2 of a 2 sequence intensive introduction to Computing Science. Part 2 expands to add object-oriented programming, with C++, and more complex algorithms and data structures such as shortest paths in graphs; divide and conquer and dynamic programming; client-server style computing; and recursion.  Note: this course is taught in studio-style, where lectures and labs are blended into 3 hour sessions, twice a week. Enrollment is limited by the capacity of the combined lecture/lab facilities. Credit cannot be obtained for CMPUT 275 if one already has credit for any of CMPUT 174, 175, or 201, except with permission of the Department.",
         "prerequisites": [
-            {
-                "All of": [
+            
                     "CMPUT 274"
-                ]
-            }
+            
         ],
         "corequisites": []
     },
@@ -329,16 +320,15 @@
         "course_title": "CMPUT 291 - Introduction to File and Database Management",
         "description": "Basic concepts in computer data organization and information processing; entity-relationship model; relational model; SQL and other relational query languages; storage architecture; physical organization of data; access methods for relational data. Programming experience (e.g., Python) is required for the course project.",
         "prerequisites": [
-            {
-                "All of": [
-                    {"One of": [
-                        "CMPUT 175",
-                        "CMPUT 274"
-                        ]
-                    },
-                    "CMPUT 272"
-                ]
-            }
+            
+                {"One of": [
+                    "CMPUT 175",
+                    "CMPUT 274"
+                    ]
+                },
+                "CMPUT 272"
+                
+            
         ],
         "corequisites": [
             {
@@ -477,11 +467,9 @@
         "course_title": "CMPUT 302 - Introduction to Human Computer Interaction",
         "description": "A complementary course to introductory software engineering focused on a user-centered approach to software design. The main themes are how humans interact with physical and information environments, and how to design software with human's information needs and their cognitive capacities in mind. Topics include the user-centered design cycle, and evaluation methods for discovering usability problems in interface design.",
         "prerequisites": [
-            {
-                "All of": [
+            
                     "CMPUT 301"
-                ]
-            }
+               
         ],
         "corequisites": []
     },
@@ -520,11 +508,9 @@
                     "MATH 228"
                 ]
             },
-            {
-                "All of": [
-                    "CMPUT 204"
-                ]
-            }
+            
+            "CMPUT 204"
+               
         ],
         "corequisites": []
     },
@@ -615,7 +601,11 @@
             },
             {
                 "One of": [
-                    {"All of": ["CMPUT 201", "CMPUT 204"]},
+                    {"All of": [
+                        "CMPUT 201", 
+                        "CMPUT 204"
+                        ]
+                    },
                     "CMPUT 275"
                 ]
             }
@@ -642,7 +632,11 @@
             },
             {
                 "One of": [
-                    {"All of": ["CMPUT 201", "CMPUT 204"]},
+                    {"All of": [
+                        "CMPUT 201", 
+                        "CMPUT 204"
+                        ]
+                    },
                     "CMPUT 275"
                 ]
             }
@@ -787,11 +781,9 @@
         "course_title": "CMPUT 355 - Games, Puzzles, Algorithms",
         "description": "An introduction to algorithms and theory behind computer programs that solve puzzles (mazes, peg solitaire, etc.) or play games (chess, Go, Hex, etc.). This course is intended for a general audience.",
         "prerequisites": [
-            {
-                "All of": [
-                    "any 200-level Computing Science course"
-                ]
-            }
+            
+                "any 200-level Computing Science course"
+              
         ],
         "corequisites": []
     },
@@ -801,7 +793,11 @@
         "prerequisites": [
             {
                 "One of": [
-                    {"All of": ["CMPUT 201", "CMPUT 204"]},
+                    {"All of": [
+                        "CMPUT 201", 
+                        "CMPUT 204"
+                        ]
+                    },
                     "CMPUT 275"
                 ]
             }
@@ -855,7 +851,11 @@
             },
             {
                 "One of": [
-                    {"All of": ["CMPUT 201", "CMPUT 204"]},
+                    {"All of": [
+                        "CMPUT 201", 
+                        "CMPUT 204"
+                        ]
+                    },
                     "CMPUT 275"
                 ]
             }
@@ -888,7 +888,11 @@
         "prerequisites": [
             {
                 "One of": [
-                    {"All of": ["CMPUT 201", "CMPUT 204"]},
+                    {"All of": [
+                        "CMPUT 201", 
+                        "CMPUT 204"
+                        ]
+                    },
 
                     "CMPUT 275;"
                 ]

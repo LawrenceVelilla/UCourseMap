@@ -28,15 +28,14 @@ def parse_courses(course_text):
     if not course_text:
         return parsed
 
-    # Match all "One of" groups, case insensitive
+   
     one_of_groups = re.finditer(r"(?:[Oo]ne of) (.+?)(?:,? and |\.|$)", course_text)
     for group in one_of_groups:
         options_text = group.group(1)
-        # Split the options in the "One of" group
         options = re.split(r",|\bor\b", options_text)
         options = [opt.strip() for opt in options if opt.strip()]
 
-        # Propagate prefix within the group
+
         parsed_options = []
         current_prefix = None
         for opt in options:
@@ -50,7 +49,7 @@ def parse_courses(course_text):
 
         parsed.append({"One of": parsed_options})
 
-    # Remove matched "One of" groups from the text
+    # I remove matched "One of" groups from the text
     course_text = re.sub(r"(?:[Oo]ne of) .+?(?:,? and |\.|$)", "", course_text, flags=re.IGNORECASE)
 
     # Handle remaining conditions (e.g., standalone course names or "and")
@@ -64,7 +63,7 @@ def parse_courses(course_text):
                 parsed_remaining.append(course)
             elif re.match(r"^\d+$", course) and current_prefix:  # Only a number
                 parsed_remaining.append(f"{current_prefix} {course}")
-            else:  # Fallback
+            else:  
                 parsed_remaining.append(course)
         if parsed_remaining:
             parsed.append({"All of": parsed_remaining})
@@ -142,9 +141,7 @@ def update_courses(input_file, output_file):
         # Update the course dictionary
         course["prerequisites"] = prerequisites
         course["corequisites"] = corequisites
-        course["description"] = description.strip()
-
-  
+        course["description"] = description.strip()  
     with open(output_file, 'w') as file:
         json.dump(courses, file, indent=4)
     print(f"Updated course data saved to {output_file}")
@@ -159,6 +156,7 @@ def main():
         input_file = f"assets/{code}_classes.json"
         output_file = f"assets/updated_{code}classes.json"
         update_courses(input_file, output_file)    
+   
 
 if __name__ == "__main__":
     main()

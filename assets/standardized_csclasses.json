@@ -1,0 +1,2361 @@
+[
+    {
+        "course_title": "CMPUT 101 - Introduction to Computing",
+        "description": "An introduction to fundamental concepts in computation, including state, abstraction, generalization, and representation. Introduction to algorithms, logic, number systems, circuits, and other topics in elementary computing science. This course cannot be taken for credit if credit has been obtained in CMPUT 114, 174, 175, 274, 275, or SCI 100, or ENCMP 100. See Note (1) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 101"
+    },
+    {
+        "course_title": "CMPUT 174 - Introduction to the Foundations of Computation I",
+        "description": "CMPUT 174 and 175 use a problem-driven approach to introduce the fundamental ideas of Computing Science. Emphasis is on the underlying process behind the solution, independent of programming language or style. Basic notions of state, control flow, data structures, recursion, modularization, and testing are introduced through solving simple problems in a variety of domains such as text analysis, map navigation, game search, simulation, and cryptography. Students learn to program by reading and modifying existing programs as well as writing new ones. No prior programming experience is necessary.  See Note (1) above. Credit cannot be obtained for CMPUT 174 if credit has already been obtained for CMPUT 274, 275, or ENCMP 100, except with permission of the Department.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "Math 30",
+                    "Math 30-1",
+                    "Math 30-2"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 174"
+    },
+    {
+        "course_title": "CMPUT 175 - Introduction to the Foundations of Computation II",
+        "description": "A continuation of CMPUT 174, revisiting topics of greater depth and complexity. More sophisticated notions such as objects, functional programming, and Abstract Data Types are explored. Various algorithms, including popular searching and sorting algorithms, are studied and compared in terms of time and space efficiency. Upon completion of this two course sequence, students from any discipline should be able to build programs to solve basic problems in their area, and will be prepared to take more advanced Computing Science courses.  Credit cannot be obtained for CMPUT 175 if one already has credit for CMPUT 275, except with permission of the Department.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 174",
+                    "SCI 100"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 175"
+    },
+    {
+        "course_title": "CMPUT 191 - Introduction to Data Science",
+        "description": "Introduction to data acquisition, basic data manipulation (cleaning, outlier detection), analysis (regression, clustering, classification), basic statistics and machine learning tools, information visualization to communicate information from data.  This course cannot be taken for credit if credit has been obtained in CMPUT 174, 175, 195, 274, 275, or ENCMP 100.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "Math 30-1"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 191"
+    },
+    {
+        "course_title": "CMPUT 195 - Introduction to Principles and Techniques of Data Science",
+        "description": "This course introduces data science to students with prior computing experience. It covers the basics of data acquisition, manipulation, transformation, and cleaning, as well as data analysis (e.g., regression, clustering, classification) and visualization. Students learn principles and techniques of efficient data-driven communication and decision-making in various domains using industry-standard tools. Credit cannot be obtained for both CMPUT 191 and CMPUT 195.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 174",
+                    "274"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 195"
+    },
+    {
+        "course_title": "CMPUT 200 - Ethics of Data Science and Artificial Intelligence",
+        "description": "This course focuses on ethics issues in Artificial Intelligence (AI) and Data Science (DS). The main themes are privacy, fairness/bias, and explainability in DS. The objectives are to learn how to identify and measure these aspects in outputs of algorithms, and how to build algorithms that correct for these issues. The course will follow a case-studies based approach, where we will examine these aspects by considering real-world case studies for each of these ethics issues. The concepts will be introduced through a humanities perspective by using case studies with an emphasis on a technical treatment including implementation work.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 191",
+                    "CMPUT 195",
+                    {
+                        "One of": [
+                            "CMPUT 174",
+                            "CMPUT 274"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "STAT 151",
+                    "STAT 161",
+                    "STAT 181",
+                    "STAT 235",
+                    "STAT 265",
+                    "SCI 151",
+                    "MATH 181",
+                    "CMPUT 267"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 200"
+    },
+    {
+        "course_title": "CMPUT 201 - Practical Programming Methodology",
+        "description": "Introduction to the principles, methods, tools, and practices of the professional programmer. The lectures focus on the fundamental principles of software engineering based on abstract data types and their implementations. The laboratories offer an intensive apprenticeship to the aspiring software developer. Students use C and software development tools of the Unix environment.  Credit cannot be obtained for CMPUT 201 if credit has been obtained for CMPUT 275, except with permission of the Department.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 175"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 201"
+    },
+    {
+        "course_title": "CMPUT 204 - Algorithms I",
+        "description": "The first of two courses on algorithm design and analysis, with emphasis on fundamentals of searching, sorting, and graph algorithms. Examples include divide and conquer, dynamic programming, greedy methods, backtracking, and local search methods, together with analysis techniques to estimate program efficiency.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 100",
+                    "MATH 114",
+                    "MATH 117",
+                    "MATH 134",
+                    "MATH 144",
+                    "MATH 154"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 174",
+                    "CMPUT 274"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 272"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 204"
+    },
+    {
+        "course_title": "CMPUT 206 - Introduction to Digital Image Processing",
+        "description": "An introduction to basic digital image processing theory, and the tools that make advanced image manipulation possible for ordinary users. Image processing is important in many applications: editing and processing photographs, special effects for movies, drawing animated characters starting with photographs, analyzing and enhancing remote imagery, and detecting suspects from surveillance cameras. Image processing building blocks and fundamental algorithms of image processing operations are introduced using Python libraries.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 101",
+                    "CMPUT 174",
+                    "CMPUT 274"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 100",
+                    "CMPUT 114",
+                    "CMPUT 117",
+                    "CMPUT 134",
+                    "CMPUT 144",
+                    "MATH 154;"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "STAT 151",
+                    "STAT 161",
+                    "STAT 181",
+                    "STAT 235",
+                    "STAT 265",
+                    "SCI 151",
+                    "MATH 181"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 206"
+    },
+    {
+        "course_title": "CMPUT 210 - Codes, Codemakers, Codebreakers: An Introduction to Cryptography",
+        "description": "An historical introduction to cryptography intended for a general audience. The development of codes and code-breaking from military espionage in ancient Greece to deciphering hieroglyphics via the Rosetta stone to modern computer ciphers. Includes frequency analysis, one-time-pad security, and public key cryptography.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "Any 100-level course"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 210"
+    },
+    {
+        "course_title": "CMPUT 229 - Computer Organization and Architecture I",
+        "description": "Number representation, computer architecture and organization, instruction-set architecture, assembly-level programming, procedures, stack frames, memory access through pointers, exception handling, computer arithmetic, floating-point representation, datapath, control logic, pipelining, memory hierarchy, virtual memory.  Credit may be obtained in only one of CMPUT 229, E E 380 or ECE 212.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 201",
+                    "CMPUT 275"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 229"
+    },
+    {
+        "course_title": "CMPUT 250 - Computers and Games",
+        "description": "An interdisciplinary course for students in Science, Arts, and other faculties. The focus is on games as interactive entertainment, their role in society, and how they are made. Teams composed of students with diverse backgrounds (e.g. English, Art and Design, and Computing Science) follow the entire creative process: from concept, through pitch, to delivery, of a short narrative-based game using a commercial game engine. To achieve the required mix of backgrounds and experience, students must apply to be considered for this course. See the Department web site for the online form.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "Second-year standing"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 250"
+    },
+    {
+        "course_title": "CMPUT 256 - Game Artificial Intelligence",
+        "description": "The purpose of this course is for students to gain a breadth of understanding of the AI approaches employed in digital games. This involves learning basic topics covered in other AI courses as they apply to digital games and more specialized game AI topics. Assignments will involve programming Game AI algorithms across a variety of areas including pathfinding, decision making, and data science.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 174",
+                    "CMPUT 274"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 256"
+    },
+    {
+        "course_title": "CMPUT 261 - Introduction to Artificial Intelligence",
+        "description": "Introduction to artificial intelligence focusing on techniques for building intelligent software systems and agents. Topics include search and problem-solving techniques, knowledge representation and reasoning, reasoning and acting under uncertainty, machine learning and neural networks.   Credit cannot be obtained for CMPUT 261 if credit has already been obtained for CMPUT 366, except with permission of the Department.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "STAT 151",
+                    "STAT 161",
+                    "STAT 181",
+                    "STAT 235",
+                    "STAT 265",
+                    "SCI 151",
+                    "MATH 181"
+                ]
+            }
+        ],
+        "corequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 204"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 275"
+                ]
+            }
+        ],
+        "course_code": "CMPUT 261"
+    },
+    {
+        "course_title": "CMPUT 267 - Machine Learning I",
+        "description": "This course introduces the fundamental statistical, mathematical, and computational concepts in analyzing data. The goal for this introductory course is to provide a solid foundation in the mathematics of machine learning, in preparation for more advanced machine learning concepts. The course focuses on univariate models, to simplify some of the mathematics and emphasize some of the underlying concepts in machine learning, including: how should one think about data, how can data be summarized, how models can be estimated from data, what sound estimation principles look like, how generalization is achieved, and how to evaluate the performance of learned models.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 100",
+                    "MATH 114",
+                    "MATH 117",
+                    "MATH 134",
+                    "MATH 144",
+                    "MATH 154"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 174",
+                    "CMPUT 274"
+                ]
+            }
+        ],
+        "corequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "STAT 151",
+                    "STAT 161",
+                    "STAT 181",
+                    "STAT 235",
+                    "STAT 265",
+                    "SCI 151",
+                    "MATH 181"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 175",
+                    "CMPUT 275"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 272"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 102",
+                    "MATH 125",
+                    "MATH 127"
+                ]
+            }
+        ],
+        "course_code": "CMPUT 267"
+    },
+    {
+        "course_title": "CMPUT 272 - Formal Systems and Logic in Computing Science",
+        "description": "An introduction to the tools of set theory, logic, and induction, and their use in the practice of reasoning about algorithms and programs. Basic set theory; the notion of a function; counting; propositional and predicate logic and their proof systems; inductive definitions and proofs by induction; program specification and correctness.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 101",
+                    "CMPUT 174",
+                    "CMPUT 175",
+                    "CMPUT 274",
+                    "SCI 100",
+                    "ENCMP 100"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 272"
+    },
+    {
+        "course_title": "CMPUT 274 - Introduction to Tangible Computing I",
+        "description": "This is part 1 of a 2 sequence intensive problem-based introduction to Computing Science. In part 1, the key concepts of procedural programming, basic algorithm design and analysis (lists, queues, trees, sorting, searching) are learned by solving a series of problems using Python. Development is done using the Linux operating system.  Note: this course is taught in studio-style, where lectures and labs are blended into 3 hour sessions, twice a week. Enrollment is limited by the capacity of the combined lecture/lab facilities. Credit cannot be obtained for CMPUT 274 if one already has credit for any of CMPUT 174, 175, or 201, except with permission of the Department.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "Math 30",
+                    "Math 31"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 274"
+    },
+    {
+        "course_title": "CMPUT 275 - Introduction to Tangible Computing II",
+        "description": "This is part 2 of a 2 sequence intensive introduction to Computing Science. Part 2 expands to add object-oriented programming, with C++, and more complex algorithms and data structures such as shortest paths in graphs; divide and conquer and dynamic programming; client-server style computing; and recursion.  Note: this course is taught in studio-style, where lectures and labs are blended into 3 hour sessions, twice a week. Enrollment is limited by the capacity of the combined lecture/lab facilities. Credit cannot be obtained for CMPUT 275 if one already has credit for any of CMPUT 174, 175, or 201, except with permission of the Department.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 274"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 275"
+    },
+    {
+        "course_title": "CMPUT 291 - Introduction to File and Database Management",
+        "description": "Basic concepts in computer data organization and information processing; entity-relationship model; relational model; SQL and other relational query languages; storage architecture; physical organization of data; access methods for relational data. Programming experience (e.g., Python) is required for the course project.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 175",
+                    "CMPUT 274"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 272"
+                ]
+            }
+        ],
+        "corequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 201",
+                    "CMPUT 275"
+                ]
+            }
+        ],
+        "course_code": "CMPUT 291"
+    },
+    {
+        "course_title": "CMPUT 296 - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 296"
+    },
+    {
+        "course_title": "CMPUT 296A - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 296A"
+    },
+    {
+        "course_title": "CMPUT 296B - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 296B"
+    },
+    {
+        "course_title": "CMPUT 297 - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 297"
+    },
+    {
+        "course_title": "CMPUT 297A - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 297A"
+    },
+    {
+        "course_title": "CMPUT 297B - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 297B"
+    },
+    {
+        "course_title": "CMPUT 298 - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 298"
+    },
+    {
+        "course_title": "CMPUT 298A - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 298A"
+    },
+    {
+        "course_title": "CMPUT 298B - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 298B"
+    },
+    {
+        "course_title": "CMPUT 299 - Topics in Computing Science",
+        "description": "This topics course is designed for a one on one individual study course between a student and an instructor. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 299"
+    },
+    {
+        "course_title": "CMPUT 299A - Topics in Computing Science",
+        "description": "This topics course is designed for a one on one individual study course between a student and an instructor. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 299A"
+    },
+    {
+        "course_title": "CMPUT 299B - Topics in Computing Science",
+        "description": "This topics course is designed for a one on one individual study course between a student and an instructor. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 299B"
+    },
+    {
+        "course_title": "CMPUT 300 - Computers and Society",
+        "description": "Social, ethical, professional, economic, and legal issues in the development and deployment of computer technology in society.",
+        "prerequisites": [
+            {
+                "type": "all_of",
+                "options": [
+                    "Any introductory-level Computing Science course or SCI 100",
+                    "any 200-level course"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 300"
+    },
+    {
+        "course_title": "CMPUT 301 - Introduction to Software Engineering",
+        "description": "Object-oriented design and analysis, with interactive applications as the primary example. Topics include: software process; revision control; Unified Modeling Language (UML); requirements; software architecture, design patterns, frameworks, design guidelines; unit testing; refactoring; software tools.  This course may not be taken for credit if credit has been obtained in MIS 419 or BTM 419.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 201",
+                    "CMPUT 275"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 301"
+    },
+    {
+        "course_title": "CMPUT 301A - Introduction to Software Engineering",
+        "description": "Object-oriented design and analysis, with interactive applications as the primary example. Topics include: software process; revision control; Unified Modeling Language (UML); requirements; software architecture, design patterns, frameworks, design guidelines; unit testing; refactoring; software tools.  This course may not be taken for credit if credit has been obtained in MIS 419 or BTM 419.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 201",
+                    "CMPUT 275"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 301A"
+    },
+    {
+        "course_title": "CMPUT 301B - Introduction to Software Engineering",
+        "description": "Object-oriented design and analysis, with interactive applications as the primary example. Topics include: software process; revision control; Unified Modeling Language (UML); requirements; software architecture, design patterns, frameworks, design guidelines; unit testing; refactoring; software tools.  This course may not be taken for credit if credit has been obtained in MIS 419 or BTM 419.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 201",
+                    "CMPUT 275"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 301B"
+    },
+    {
+        "course_title": "CMPUT 302 - Introduction to Human Computer Interaction",
+        "description": "A complementary course to introductory software engineering focused on a user-centered approach to software design. The main themes are how humans interact with physical and information environments, and how to design software with human's information needs and their cognitive capacities in mind. Topics include the user-centered design cycle, and evaluation methods for discovering usability problems in interface design.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 301"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 302"
+    },
+    {
+        "course_title": "CMPUT 303 - Algorithmics in Practice",
+        "description": "This course is focused on algorithmic problems, where a solution involves properly understanding a written description, designing an efficient algorithm to solve the problem, and then correctly implementing the solution. Students will use previous knowledge in algorithms, data structures, and mathematical reasoning to solve problems in addition to learning new algorithms and data structures. Lectures are shared with CMPUT 403. Credit cannot be obtained for both CMPUT 303 and CMPUT 403.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 201",
+                    "CMPUT 275"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 204"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 303"
+    },
+    {
+        "course_title": "CMPUT 304 - Algorithms II",
+        "description": "The second course of a two-course sequence on algorithm design. Emphasis on principles of algorithm design. Categories of algorithms such as divide-and-conquer, greedy algorithms, dynamic programming; analysis of algorithms; limits of algorithm design; NP-completeness; heuristic algorithms.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "STAT 151",
+                    "STAT 161",
+                    "STAT 181",
+                    "STAT 235",
+                    "STAT 265",
+                    "SCI 151",
+                    "MATH 181"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 225",
+                    "MATH 227",
+                    "MATH 228"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 204"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 304"
+    },
+    {
+        "course_title": "CMPUT 307 - 3D Modeling and Animation",
+        "description": "An introductory course on the theory and applications of computer based 3D modeling and animation. The course will cover a selection of topics from overview of tools supporting modeling and animation, automatically generating 3D models, and animation of skeleton based models through algorithms and software. Applications of 3D modeling and animation in games, virtual/augmented environments, movies, and emerging video transmission algorithms will be discussed.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 225",
+                    "MATH 227"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 206",
+                    "CMPUT 204"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 307"
+    },
+    {
+        "course_title": "CMPUT 308 - Video Processing and Applications",
+        "description": "An introductory course in video data processing, with implementations in programming languages, like Python, C and MATLAB, using libraries like OpenCV. Topics in this course may include video capture, video compression, tracking, video content understanding, real-time video conferencing and surveillance. Time permitting, advanced topics like video mining, 3D modeling, and motion capture-based video coding, video-based 3D scene understanding could be discussed.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 102",
+                    "MATH 125",
+                    "MATH 127"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "STAT 151",
+                    "STAT 161",
+                    "STAT 181",
+                    "STAT 235",
+                    "STAT 265",
+                    "SCI 151",
+                    "MATH 181"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 201"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 206"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 308"
+    },
+    {
+        "course_title": "CMPUT 312 - Introduction to Robotics and Mechatronics",
+        "description": "Algorithms and software paradigms for robot programming; mathematical modeling of robot arms and rovers including kinematics, and an introduction to dynamics and control; sensors, motors and their modeling; basics of image processing and machine vision; vision-guided motion control.   Students having CMPUT 174, 175, 201, 204 may seek permission from the Department.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 275"
+                ]
+            }
+        ],
+        "corequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    {
+                        "One of": [
+                            "CMPUT 340",
+                            "CMPUT 418"
+                        ]
+                    },
+                    "ECE 240"
+                ]
+            }
+        ],
+        "course_code": "CMPUT 312"
+    },
+    {
+        "course_title": "CMPUT 313 - Computer Networks",
+        "description": "Introduction to computer communication networks; protocols for error and flow control; wired and wireless medium access protocols; routing and congestion control; internet architecture and protocols; multimedia transmission; recent advances in networking.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 229",
+                    "E E 380",
+                    "ECE 212"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "STAT 151",
+                    "STAT 161",
+                    "STAT 181",
+                    "STAT 235",
+                    "STAT 265",
+                    "SCI 151",
+                    "MATH 181"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    {
+                        "All of": [
+                            "CMPUT 201",
+                            "CMPUT 204"
+                        ]
+                    },
+                    "CMPUT 275"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 313"
+    },
+    {
+        "course_title": "CMPUT 325 - Non-Procedural Programming Languages",
+        "description": "A study of the theory, run-time structure, and implementation of selected non-procedural programming languages. Languages will be selected from the domains of functional, and logic-based languages.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 229",
+                    "E E 380",
+                    "ECE 212;"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 102",
+                    "MATH 125",
+                    "MATH 127"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    {
+                        "All of": [
+                            "CMPUT 201",
+                            "CMPUT 204"
+                        ]
+                    },
+                    "CMPUT 275"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 325"
+    },
+    {
+        "course_title": "CMPUT 328 - Visual Recognition",
+        "description": "Introduction to visual recognition to recognize objects and classify scenes or images automatically by a computer. Supervised and unsupervised machine learning principles and deep learning techniques will be utilized for visual recognition. Successful commercial systems based on visual recognition range from entertainment to serious scientific research: face detection and recognition on personal devices, social media.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 100",
+                    "MATH 114",
+                    "MATH 117",
+                    "MATH 134",
+                    "MATH 144",
+                    "MATH 154"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 102",
+                    "MATH 125",
+                    "MATH 127"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "STAT 151",
+                    "STAT 161",
+                    "STAT 181",
+                    "STAT 235",
+                    "STAT 265",
+                    "SCI 151",
+                    "MATH 181"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 175",
+                    "CMPUT 275"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 328"
+    },
+    {
+        "course_title": "CMPUT 329 - Computer Organization and Architecture II",
+        "description": "CMOS technology, digital circuits, combinational logic, sequential logic, memory technologies, programmable logic devices, control logic design, register transfer logic, CPU design, hardware description languages.  Credit may be obtained in only one of CMPUT 329, E E 280 or ECE 210.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 229",
+                    "E E 380",
+                    "ECE 212"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 329"
+    },
+    {
+        "course_title": "CMPUT 331 - Computational Cryptography",
+        "description": "Cryptography is the science of secure communications. This course is an introduction to computational methods for encrypting and deciphering messages, with an emphasis on computer implementation.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 201",
+                    "CMPUT 275"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 272"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 331"
+    },
+    {
+        "course_title": "CMPUT 333 - Security in a Networked World",
+        "description": "Introduction to the concepts and components involved in secure, networked, systems. The concepts of confidentiality, integrity, availability; shared and public key cryptography; authentication protocols; third-party authentication services; key agreement protocols; strong password protocols; digital signature schemes; non-repudiation; certificate authorities; random number generation; proof-of-work; network protocol and network services vulnerabilities; firewalls; malicious code; computer viruses and worms; intrusion detection.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 201",
+                    "CMPUT 275"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 333"
+    },
+    {
+        "course_title": "CMPUT 340 - Introduction to Numerical Methods",
+        "description": "Computer arithmetic and errors. The study of computational methods for solving problems in linear algebra, non-linear equations, optimization, interpolation and approximation, and integration. This course will provide a basic foundation in numerical methods that supports further study in machine learning; computer graphics, vision and multimedia; robotics; and other topics in Science and Engineering.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 102",
+                    "MATH 125",
+                    "MATH 127"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 225",
+                    "MATH 227"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "STAT 151",
+                    "STAT 161",
+                    "STAT 181",
+                    "STAT 235",
+                    "STAT 265",
+                    "SCI 151",
+                    "MATH 181"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 204",
+                    "CMPUT 275"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 214"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 340"
+    },
+    {
+        "course_title": "CMPUT 350 - Advanced Games Programming",
+        "description": "This course focuses on state-of-the-art AI and graphics programming for video games. Part 1 introduces C++, the language of choice for video game engines, emphasizing efficiency, safety, the Standard Template Library, and OpenGL. Part 2 on real time strategy deals with efficient pathfinding algorithms, planning, and scripting AI systems. Student projects give hands-on experience directly applicable to the video games industry.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 201",
+                    "CMPUT 275"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 204"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 350"
+    },
+    {
+        "course_title": "CMPUT 355 - Games, Puzzles, Algorithms",
+        "description": "An introduction to algorithms and theory behind computer programs that solve puzzles (mazes, peg solitaire, etc.) or play games (chess, Go, Hex, etc.). This course is intended for a general audience.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "any 200-level Computing Science course"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 355"
+    },
+    {
+        "course_title": "CMPUT 361 - Introduction to Information Retrieval",
+        "description": "Introduction to information retrieval focusing on algorithms and data structures for organizing and searching through large collections of documents, and techniques for evaluating the quality of search results. Topics include boolean retrieval, keyword and phrase queries, ranking, index optimization, practical machine-learning algorithms for text, and optimizations used by Web search engines.  One of MATH 102, 125, or 127 is strongly recommended.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    {
+                        "All of": [
+                            "CMPUT 201",
+                            "CMPUT 204"
+                        ]
+                    },
+                    "CMPUT 275"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 361"
+    },
+    {
+        "course_title": "CMPUT 365 - Introduction to Reinforcement Learning",
+        "description": "This course provides an introduction to reinforcement learning, which focuses on the study and design of learning agents that interact with a complex, uncertain  world to achieve a goal. The course will cover multi- armed bandits, Markov decision processes,  reinforcement learning, planning, and function approximation (online supervised learning). The course will take an information-processing approach to the study of intelligence and briefly touch on perspectives from psychology, neuroscience, and philosophy. The course will use the University of Alberta MOOC on Reinforcement Learning. Any student who understands the material in this course will understand the foundations of much of modern probabilistic artificial intelligence (AI) and be prepared to take more advanced courses, or to apply AI tools and ideas to real-world problems.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 267",
+                    "CMPUT 466",
+                    "STAT 265"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 175",
+                    "CMOUT 275"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 365"
+    },
+    {
+        "course_title": "CMPUT 366 - Search and Planning in Artificial Intelligence",
+        "description": "This course provides an introduction to search and planning in artificial intelligence. The course covers deterministic single-agent and multi-agent problems. Students will learn how to model real-world problems as state-space search problems and how to solve such problems. The course covers algorithms for solving deterministic shortest path problems with factored and non-factored states, combinatorial optimization  problems, constraint satisfaction problems, and multi- agent problems.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 204",
+                    "CMPUT 275"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 272"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 366"
+    },
+    {
+        "course_title": "CMPUT 379 - Operating System Concepts",
+        "description": "Introduction to the structure, components, and concepts behind modern general-purpose operating systems. Processes: process state transitions; operations on processes; interrupt processing; multiprocessor considerations; resource allocation; synchronization; critical sections and events; semaphores; deadlock: avoidance, detection, and recovery; memory management; virtual memory; paging and segmentation; page replacement strategies; working sets; demand paging; process scheduling; scheduling algorithms; file system functions; file organization; space allocation; virtual machines.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 229",
+                    "E E 380",
+                    "ECE 212"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    {
+                        "All of": [
+                            "CMPUT 201",
+                            "CMPUT 204"
+                        ]
+                    },
+                    "CMPUT 275"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 379"
+    },
+    {
+        "course_title": "CMPUT 382 - Introduction to GPU Programming",
+        "description": "Graphics processing units (GPU) can be programmed like a coprocessor to solve non-graphics problems, including voice recognition, computational physics, convolutional neural networks, and machine learning. The many processing cores of a GPU support a high-degree of parallelism. Course topics include hardware architecture, algorithmic design, programming languages (e.g., CUDA, OpenCL), and principles of programming for GPUs for high performance.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 229",
+                    "E E 380",
+                    "ECE 212"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 201",
+                    "CMPUT 275"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 382"
+    },
+    {
+        "course_title": "CMPUT 391 - Database Management Systems",
+        "description": "This course covers the implementation of RDBMSs and some non- relational data models, along with their query languages. Topics:  compilation, execution, and optimization of SQL queries; concurrent execution of transactions; indexing; advanced constructs in SQL; semi-structured data models and query languages; distributed and parallel databases; NoSQL and cloud-based database systems.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    {
+                        "All of": [
+                            "CMPUT 201",
+                            "CMPUT 204"
+                        ]
+                    },
+                    "CMPUT 275;"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 291"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 391"
+    },
+    {
+        "course_title": "CMPUT 396 - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 396"
+    },
+    {
+        "course_title": "CMPUT 396A - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 396A"
+    },
+    {
+        "course_title": "CMPUT 396B - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 396B"
+    },
+    {
+        "course_title": "CMPUT 397 - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 397"
+    },
+    {
+        "course_title": "CMPUT 397A - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 397A"
+    },
+    {
+        "course_title": "CMPUT 397B - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 397B"
+    },
+    {
+        "course_title": "CMPUT 398 - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 398"
+    },
+    {
+        "course_title": "CMPUT 398A - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 398A"
+    },
+    {
+        "course_title": "CMPUT 398B - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 398B"
+    },
+    {
+        "course_title": "CMPUT 399 - Topics in Computing Science",
+        "description": "This topics course is designed for a one on one individual study course between a student and an instructor. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 399"
+    },
+    {
+        "course_title": "CMPUT 399A - Topics in Computing Science",
+        "description": "This topics course is designed for a one on one individual study course between a student and an instructor. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 399A"
+    },
+    {
+        "course_title": "CMPUT 399B - Topics in Computing Science",
+        "description": "This topics course is designed for a one on one individual study course between a student and an instructor. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 399B"
+    },
+    {
+        "course_title": "CMPUT 401 - Software Process and Product Management",
+        "description": "All phases of software development are reviewed from a process perspective. Best practices in software project and product development and management are introduced. Architectural and technological impacts on management. Group projects require specification and initial design or redesign of a software system.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 301"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 401"
+    },
+    {
+        "course_title": "CMPUT 402 - Software Quality",
+        "description": "Software quality issues are covered. Various types of software testing, ranging from unit testing to integration testing are discussed. Processes to ensure quality, such as reviews and continuous integration, are introduced. State-of-the-art software quality tools that analyze different artifacts within the software lifecycle are described.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 301"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 402"
+    },
+    {
+        "course_title": "CMPUT 403 - Algorithmics in Competitive Programming",
+        "description": "This course is focused on algorithmic problems that can be solved within at most several hours by well-prepared people, where a solution involves properly understanding a written description, designing an efficient algorithm to solve the problem, and then correctly implementing the solution. Students will use algorithms, data structures, and mathematical reasoning to solve problems. Lectures are shared with CMPUT 303. CMPUT 403 covers additional material relevant to advanced programming contests. Credit cannot be obtained for both CMPUT 303 and CMPUT 403.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 201",
+                    "CMPUT 275"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 204"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "any 300-level Computing Science course"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 403"
+    },
+    {
+        "course_title": "CMPUT 404 - Web Applications and Architecture",
+        "description": "Introduction to modern web architecture, from user-facing applications to machine-facing web-services. Topics include: the evolution of the Internet, relevant technologies and protocols, the architecture of modern web-based information systems, web data exchange and serialization, and service-oriented middleware.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 291"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 301"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 404"
+    },
+    {
+        "course_title": "CMPUT 411 - Introduction to Computer Graphics",
+        "description": "2D and 3D transformation; 3D modeling and viewing; illumination models and shading methods; texture mapping; ray tracing.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 340",
+                    "CMPUT 418",
+                    "equivalent knowledge"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 214"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 275",
+                    "CMPUT 204"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 301"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 411"
+    },
+    {
+        "course_title": "CMPUT 412 - Experimental Mobile Robotics",
+        "description": "A project-based course dealing with the design and implementation of mobile robots to accomplish specific tasks. Students work in groups and are introduced to concepts in sensor technologies, sensor data processing, motion control based on feedback and real-time programming.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 340",
+                    "CMPUT 418",
+                    "equivalent knowledge"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 214"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    {
+                        "All of": [
+                            "CMPUT 201",
+                            "CMPUT 204"
+                        ]
+                    },
+                    "CMPUT 275"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 412"
+    },
+    {
+        "course_title": "CMPUT 414 - Introduction to Multimedia Technology",
+        "description": "Introduction to basic principles and algorithms used in multimedia systems. Students obtain hands-on experience in issues relating to multimedia data representation, compression, processing, and animation. Topics will be selected from image and video coding and transmission, animation, human perceptual issues associated to multimedia technologies.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 307",
+                    "CMPUT 328",
+                    "CMPUT 411"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 414"
+    },
+    {
+        "course_title": "CMPUT 415 - Compiler Design",
+        "description": "Compilers, interpreters, lexical analysis, syntax analysis, syntax- directed translation, symbol tables, type checking, flow analysis, code generation, code optimization.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 229",
+                    "E E 380",
+                    "ECE 212"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "any 300-level Computing Science course"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 415"
+    },
+    {
+        "course_title": "CMPUT 416 - Foundations of Program Analysis",
+        "description": "Introduction to the main concepts of program analysis such as intermediate representations, inter-procedural and intra-procedural analysis techniques, call graphs, pointer analysis, and analysis frameworks. The course will also include relevant research papers that introduce both classical and state-of-the-art research in the field. The course will give an overview of the program analyses that work and those that do not work in practice and how to design program analyses for modern software systems.  Knowledge of grammars and automata, regular expressions, and finite state machines is recommended.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 201",
+                    "CMPUT 275"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 272"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 416"
+    },
+    {
+        "course_title": "CMPUT 428 - Computer Vision",
+        "description": "Introduction to the geometry and photometry of the 3D to 2D image formation process for the purpose of computing scene properties from camera images. Computing and analyzing motion in image sequences. Recognition of objects (what) and spatial relationships (where) from images and tracking of these in video sequences.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 340",
+                    "CMPUT 418",
+                    "ECE 240",
+                    "equivalent knowledge"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 101",
+                    "MATH 115",
+                    "MATH 118",
+                    "MATH 136",
+                    "MATH 146",
+                    "MATH 156"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 102",
+                    "MATH 125",
+                    "MATH 127"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 201",
+                    "CMPUT 275"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 428"
+    },
+    {
+        "course_title": "CMPUT 429 - Computer Systems and Architecture",
+        "description": "A discussion of computer system design concepts with stress on modern ideas that have shaped the high-performance architecture of contemporary systems. Instruction sets, pipelining, instruction-level parallelism, register reuse, branch prediction, CPU control, cache- coherence, accelerators, and related concepts. Memory technologies, caches, I/O, high-performance networks.  Credit may be obtained in only one of CMPUT 429, CMPE 382, or ECE 311.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 229",
+                    "E E 380",
+                    "ECE 212"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 201",
+                    "CMPUT 275"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 429"
+    },
+    {
+        "course_title": "CMPUT 455 - Search, Knowledge and Simulation",
+        "description": "When making decisions in games, computers rely on three main ideas: search, knowledge and simulations. Knowledge can be created by machine learning techniques and encoded in deep neural networks. Search and simulations help to understand the short and long-term consequences of possible actions. This course leads from basic concepts to state-of-the-art decision-making algorithms.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "any 300-level Computing Science course"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 455"
+    },
+    {
+        "course_title": "CMPUT 461 - Introduction to Natural Language Processing",
+        "description": "Natural language processing (NLP) is a subfield of artificial intelligence concerned with the interactions between computers and human languages. This course is an introduction to NLP, with the emphasis on writing programs to process and analyze texts, covering both foundational aspects and applications of NLP. The course aims at a balance between classical and statistical methods for NLP, including methods based on machine learning.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 201",
+                    "CMPUT 275"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "any 300-level Computing Science course"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 461"
+    },
+    {
+        "course_title": "CMPUT 463 - Probabilistic Graphical Models",
+        "description": "Probabilistic graphical models (PGMs; including Bayesian Belief Nets, Markov Random Fields, etc.) now contribute significantly to many areas, including expert systems, computer perception (vision and speech), natural language interpretation, automated decision making, and robotics. This course provides an introduction to this field, describing semantics, inference and learning, as well as practical applications of these systems. Programming assignments will include hands-on experiments with various reasoning systems.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 340",
+                    "MATH 418"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "STAT 151",
+                    "STAT 161",
+                    "STAT 181",
+                    "STAT 235",
+                    "STAT 265",
+                    "SCI 151",
+                    "MATH 181"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 463"
+    },
+    {
+        "course_title": "CMPUT 466 - Machine Learning Essentials",
+        "description": "Learning is essential for many real-world tasks, including recognition, diagnosis, forecasting and data-mining. This course provides a broad overview of topics in machine learning, from foundational methods for regression, classification and dimensionality reduction to more complex modeling with neural networks. It will also provide the formal foundations for understanding when learning is possible and practical. This single course is an alternative to the more in-depth two-course sequence on machine learning with CMPUT 267 and 467.  Credit cannot be obtained in CMPUT 466 if credit has already been obtained for CMPUT 467.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 115",
+                    "MATH 118",
+                    "MATH 136",
+                    "MATH 146",
+                    "MATH 156"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "STAT 141",
+                    "STAT 151",
+                    "STAT 161",
+                    "STAT 181",
+                    "STAT 235",
+                    "STAT 265",
+                    "SCI 151",
+                    "MATH 181"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 204",
+                    "CMPUT 275"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "any 300-level Computing Science course"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 125",
+                    "MATH 127"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 466"
+    },
+    {
+        "course_title": "CMPUT 467 - Machine Learning II",
+        "description": "This is the second course of a two-course sequence on machine learning, with a focus on extending to nonlinear modeling with neural networks and higher-dimensional data. Topics include: optimization approaches (constrained optimization, hessians, matrix solutions), deep learning and neural networks, generative models, more advanced methods for assessing generalization (cross-validation, bootstrapping), introduction to non-iid data and missing data.  Credit cannot be obtained in both CMPUT 367 and 467.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 101",
+                    "MATH 115",
+                    "MATH 118",
+                    "MATH 136",
+                    "MATH 146",
+                    "MATH 156"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 204"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 267"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "any 300-level Computing Science course"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 467"
+    },
+    {
+        "course_title": "CMPUT 469 - Artificial Intelligence Capstone",
+        "description": "Students will experience the challenges, and rewards, of working in a team to address a real-world task, related to artificial intelligence or machine learning. This will involve first identifying the task itself, then iteratively addressing relevant issues (typically with feedback from a domain expert), leading to an implementation and culminating in evaluating that system. Students will also learn about best practices in organizing team projects, as well as important information about effective communication.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 267"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 365"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 366"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 469"
+    },
+    {
+        "course_title": "CMPUT 474 - Formal Languages, Automata, and Computability",
+        "description": "Formal grammars; relationship between grammars and automata; regular expressions; finite state machines; pushdown automata; Turing machines; computability; the halting problem; time and space complexity.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "MATH 225",
+                    "MATH 227",
+                    "MATH 228"
+                ]
+            },
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 204"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 474"
+    },
+    {
+        "course_title": "CMPUT 481 - Parallel and Distributed Systems",
+        "description": "This course provides an undergraduate-level introduction to parallel programming, parallel and distributed systems, and high-performance computing in science and engineering. Both shared-memory parallel computers and distributed-memory multi computers (e.g., clusters) will be studied. Aspects of the practice of, and (some) research issues in, parallelism will be covered. There will be an emphasis on thread programming, data-parallel programming, and performance evaluation.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "CMPUT 379"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 481"
+    },
+    {
+        "course_title": "CMPUT 495 - Honors Seminar",
+        "description": "This weekly seminar brings students, researchers, and practitioners together to examine a variety of topics, both foundational and leading edge. Content varies over successive offerings of the course. Successful completion required of all Honors Computing Science students during each Fall/Winter semester of their degree program.",
+        "prerequisites": [
+            {
+                "type": "one_of",
+                "options": [
+                    "Restricted to Honors Computing Science students",
+                    "Permission of the Department"
+                ]
+            }
+        ],
+        "corequisites": [],
+        "course_code": "CMPUT 495"
+    },
+    {
+        "course_title": "CMPUT 496 - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 496"
+    },
+    {
+        "course_title": "CMPUT 496A - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 496A"
+    },
+    {
+        "course_title": "CMPUT 496B - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 496B"
+    },
+    {
+        "course_title": "CMPUT 497 - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 497"
+    },
+    {
+        "course_title": "CMPUT 497A - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 497A"
+    },
+    {
+        "course_title": "CMPUT 497B - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 497B"
+    },
+    {
+        "course_title": "CMPUT 498 - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 498"
+    },
+    {
+        "course_title": "CMPUT 498A - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 498A"
+    },
+    {
+        "course_title": "CMPUT 498B - Topics in Computing Science",
+        "description": "This topics course is designed for new course offerings that may be offered in a given term. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 498B"
+    },
+    {
+        "course_title": "CMPUT 499 - Topics in Computing Science",
+        "description": "This topics course is designed for a one on one individual study course between a student and an instructor. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 499"
+    },
+    {
+        "course_title": "CMPUT 499A - Topics in Computing Science",
+        "description": "This topics course is designed for a one on one individual study course between a student and an instructor. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 499A"
+    },
+    {
+        "course_title": "CMPUT 499B - Topics in Computing Science",
+        "description": "This topics course is designed for a one on one individual study course between a student and an instructor. Prerequisites are determined by the instructor in the course outline. See Note (3) above.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 499B"
+    },
+    {
+        "course_title": "CMPUT 500 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 500"
+    },
+    {
+        "course_title": "CMPUT 500A - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 500A"
+    },
+    {
+        "course_title": "CMPUT 500B - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 500B"
+    },
+    {
+        "course_title": "CMPUT 501 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 501"
+    },
+    {
+        "course_title": "CMPUT 501A - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 501A"
+    },
+    {
+        "course_title": "CMPUT 501B - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 501B"
+    },
+    {
+        "course_title": "CMPUT 502 - Software Quality",
+        "description": "Software quality issues are covered. Various types of software testing, ranging from unit testing to integration testing are discussed. Processes to ensure quality, such as reviews and continuous integration, are introduced. State-of-the-art software quality tools that analyze different artifacts within the software lifecycle are described. Credit cannot be obtained for both CMPUT 402 and 502.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 502"
+    },
+    {
+        "course_title": "CMPUT 503 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 503"
+    },
+    {
+        "course_title": "CMPUT 503A - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 503A"
+    },
+    {
+        "course_title": "CMPUT 503B - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 503B"
+    },
+    {
+        "course_title": "CMPUT 504 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 504"
+    },
+    {
+        "course_title": "CMPUT 504A - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 504A"
+    },
+    {
+        "course_title": "CMPUT 504B - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 504B"
+    },
+    {
+        "course_title": "CMPUT 511 - Topics In Computer Science",
+        "description": "2D and 3D transformation; 3D modeling and viewing; illumination models and shading methods; texture mapping; ray tracing. Credit cannot be obtained for both CMPUT 411 and 511.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 511"
+    },
+    {
+        "course_title": "CMPUT 511A - Topics in Computing Science",
+        "description": "2D and 3D transformation; 3D modeling and viewing; illumination models and shading methods; texture mapping; ray tracing. Credit cannot be obtained for both CMPUT 411 and 511.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 511A"
+    },
+    {
+        "course_title": "CMPUT 511B - Topics in Computing Science",
+        "description": "2D and 3D transformation; 3D modeling and viewing; illumination models and shading methods; texture mapping; ray tracing. Credit cannot be obtained for both CMPUT 411 and 511.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 511B"
+    },
+    {
+        "course_title": "CMPUT 512 - Experimental Mobile Robotics",
+        "description": "A project-based course dealing with the design and implementation of mobile robots to accomplish specific tasks. Students work in groups and are introduced to concepts in sensor technologies, sensor data processing, motion control based on feedback and real-time programming. Credit cannot be obtained for both CMPUT 412 and 512.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 512"
+    },
+    {
+        "course_title": "CMPUT 529 - Computer Systems and Architecture",
+        "description": "A discussion of computer system design concepts with stress on modern ideas that have shaped the high-performance architecture of contemporary systems. Instruction sets, pipelining, instruction-level parallelism, register reuse, branch prediction, CPU control, cache-coherence, accelerators, and related concepts. Memory technologies, caches, I/O, high-performance networks. Credit cannot be obtained for both CMPUT 429 and 529.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 529"
+    },
+    {
+        "course_title": "CMPUT 530 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 530"
+    },
+    {
+        "course_title": "CMPUT 530A - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 530A"
+    },
+    {
+        "course_title": "CMPUT 530B - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 530B"
+    },
+    {
+        "course_title": "CMPUT 551 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 551"
+    },
+    {
+        "course_title": "CMPUT 551A - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 551A"
+    },
+    {
+        "course_title": "CMPUT 551B - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 551B"
+    },
+    {
+        "course_title": "CMPUT 561 - Introduction to Natural Language Processing",
+        "description": "Natural language processing (NLP) is a subfield of artificial intelligence concerned with the interactions between computers and human languages. This course is an introduction to NLP, with the emphasis on writing programs to process and analyze text corpora. The course covers both foundational aspects and applications of NLP. The course aims at a balance between classical and statistical methods for NLP, including methods based on machine learning. In this course, students will clean or otherwise pre-process natural language corpora; develop natural language processing tools; integrate existing tools into an analysis task; and apply computational methods to natural language artefacts to extract information, classify the language within the artefact, identify relationships among artefacts, or identify relationships among elements within an artefact. Credit cannot be obtained for both CMPUT 461 and 561.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 561"
+    },
+    {
+        "course_title": "CMPUT 563 - Topics in Computing Science",
+        "description": "Probabilistic graphical models (PGMs; including Bayesian Belief Nets, Markov Random Fields, etc.) now contribute significantly to many areas, including expert systems, computer perception (vision and speech), natural language interpretation, automated decision making, and robotics. This course provides an introduction to this field, describing semantics, inference and learning, as well as practical applications of these systems. Programming assignments will include hands-on experiments with various reasoning systems. Credit cannot be obtained for both CMPUT 463 and 563.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 563"
+    },
+    {
+        "course_title": "CMPUT 563A - Topics in Computing Science",
+        "description": "Probabilistic graphical models (PGMs; including Bayesian Belief Nets, Markov Random Fields, etc.) now contribute significantly to many areas, including expert systems, computer perception (vision and speech), natural language interpretation, automated decision making, and robotics. This course provides an introduction to this field, describing semantics, inference and learning, as well as practical applications of these systems. Programming assignments will include hands-on experiments with various reasoning systems. Credit cannot be obtained for both CMPUT 463 and 563.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 563A"
+    },
+    {
+        "course_title": "CMPUT 563B - Topics in Computing Science",
+        "description": "Probabilistic graphical models (PGMs; including Bayesian Belief Nets, Markov Random Fields, etc.) now contribute significantly to many areas, including expert systems, computer perception (vision and speech), natural language interpretation, automated decision making, and robotics. This course provides an introduction to this field, describing semantics, inference and learning, as well as practical applications of these systems. Programming assignments will include hands-on experiments with various reasoning systems. Credit cannot be obtained for both CMPUT 463 and 563.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 563B"
+    },
+    {
+        "course_title": "CMPUT 566 - Topics in Computing Science",
+        "description": "Learning is essential for many real-world tasks, including recognition, diagnosis, forecasting and data-mining. This course provides a broad overview of topics in machine learning, from foundational methods for regression, classification and dimensionality reduction to more complex modeling with neural networks. It will also provide the formal foundations for understanding when learning is possible and practical. Credit cannot be obtained for both CMPUT 466 and 566.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 566"
+    },
+    {
+        "course_title": "CMPUT 566A - Topics in Computing Science",
+        "description": "Learning is essential for many real-world tasks, including recognition, diagnosis, forecasting and data-mining. This course provides a broad overview of topics in machine learning, from foundational methods for regression, classification and dimensionality reduction to more complex modeling with neural networks. It will also provide the formal foundations for understanding when learning is possible and practical. Credit cannot be obtained for both CMPUT 466 and 566.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 566A"
+    },
+    {
+        "course_title": "CMPUT 566B - Topics in Computing Science",
+        "description": "Learning is essential for many real-world tasks, including recognition, diagnosis, forecasting and data-mining. This course provides a broad overview of topics in machine learning, from foundational methods for regression, classification and dimensionality reduction to more complex modeling with neural networks. It will also provide the formal foundations for understanding when learning is possible and practical. Credit cannot be obtained for both CMPUT 466 and 566.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 566B"
+    },
+    {
+        "course_title": "CMPUT 567 - Machine Learning II",
+        "description": "This course expands on machine learning fundamentals with a focus on extending to nonlinear modeling with neural networks and higher-dimensional data. Topics include: optimization approaches (constrained optimization, hessians, matrix solutions), deep learning and neural networks, generative models, more advanced methods for assessing generalization (cross-validation, bootstrapping), introduction to non-iid data and missing data. Credit cannot be obtained for both CMPUT 467 and 567 or CMPUT 367 and 567.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 567"
+    },
+    {
+        "course_title": "CMPUT 600 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 600"
+    },
+    {
+        "course_title": "CMPUT 603 - Teaching and Research Methods",
+        "description": "This course provides information and resources on teaching and research methods in computing science, and also gives an overview of the research done by faculty in the department. Ethics and professional development are included in this course. Required for all graduate students.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 603"
+    },
+    {
+        "course_title": "CMPUT 604 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 604"
+    },
+    {
+        "course_title": "CMPUT 605 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 605"
+    },
+    {
+        "course_title": "CMPUT 606 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 606"
+    },
+    {
+        "course_title": "CMPUT 607 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 607"
+    },
+    {
+        "course_title": "CMPUT 608 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 608"
+    },
+    {
+        "course_title": "CMPUT 609 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 609"
+    },
+    {
+        "course_title": "CMPUT 610 - Topics in Computer Graphics",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 610"
+    },
+    {
+        "course_title": "CMPUT 615 - Topics in Image Processing and Vision",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 615"
+    },
+    {
+        "course_title": "CMPUT 616 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 616"
+    },
+    {
+        "course_title": "CMPUT 617 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 617"
+    },
+    {
+        "course_title": "CMPUT 620 - Topics in Programming Languages",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 620"
+    },
+    {
+        "course_title": "CMPUT 622 - Topics in Machine Learning",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 622"
+    },
+    {
+        "course_title": "CMPUT 624 - Topics in Machine Learning",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 624"
+    },
+    {
+        "course_title": "CMPUT 626 - Topics in Machine Learning",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 626"
+    },
+    {
+        "course_title": "CMPUT 627 - Topics in Machine Learning",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 627"
+    },
+    {
+        "course_title": "CMPUT 628 - Topics in Machine Learning",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 628"
+    },
+    {
+        "course_title": "CMPUT 629 - Topics in Machine Learning",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 629"
+    },
+    {
+        "course_title": "CMPUT 631 - Robotics",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 631"
+    },
+    {
+        "course_title": "CMPUT 640 - Topics in Computer Networks",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 640"
+    },
+    {
+        "course_title": "CMPUT 641 - Advanced Computer Networks",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 641"
+    },
+    {
+        "course_title": "CMPUT 644 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 644"
+    },
+    {
+        "course_title": "CMPUT 650 - Topics in Artificial Intelligence",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 650"
+    },
+    {
+        "course_title": "CMPUT 651 - Topics in Artificial Intelligence",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 651"
+    },
+    {
+        "course_title": "CMPUT 652 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 652"
+    },
+    {
+        "course_title": "CMPUT 653 - Topics in Artificial Intelligence",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 653"
+    },
+    {
+        "course_title": "CMPUT 654 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 654"
+    },
+    {
+        "course_title": "CMPUT 655 - Topics in Artificial Intelligence",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 655"
+    },
+    {
+        "course_title": "CMPUT 656 - Topics in Artificial Intelligence",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 656"
+    },
+    {
+        "course_title": "CMPUT 657 - Heuristic Search",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 657"
+    },
+    {
+        "course_title": "CMPUT 658 - Topics in Artificial Intelligence",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 658"
+    },
+    {
+        "course_title": "CMPUT 659 - Topics in Artificial Intelligence",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 659"
+    },
+    {
+        "course_title": "CMPUT 660 - Topics in Software Engineering",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 660"
+    },
+    {
+        "course_title": "CMPUT 663 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 663"
+    },
+    {
+        "course_title": "CMPUT 664 - Topics in Software Engineering",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 664"
+    },
+    {
+        "course_title": "CMPUT 670 - Topics in the Theory of Computation",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 670"
+    },
+    {
+        "course_title": "CMPUT 672 - Algorithmic Graph Theory",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 672"
+    },
+    {
+        "course_title": "CMPUT 675 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 675"
+    },
+    {
+        "course_title": "CMPUT 676 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 676"
+    },
+    {
+        "course_title": "CMPUT 680 - Topics in Systems",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 680"
+    },
+    {
+        "course_title": "CMPUT 681 - Topics in Parallel and Distributed Systems",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 681"
+    },
+    {
+        "course_title": "CMPUT 690 - Topics in Databases",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 690"
+    },
+    {
+        "course_title": "CMPUT 691 - Topics in Databases",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 691"
+    },
+    {
+        "course_title": "CMPUT 692 - Modern Database Management Systems",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 692"
+    },
+    {
+        "course_title": "CMPUT 694 - Topics in Databases",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 694"
+    },
+    {
+        "course_title": "CMPUT 696 - Topics in Data Management",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 696"
+    },
+    {
+        "course_title": "CMPUT 697 - Topics in Computing Science",
+        "description": "No Description",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 697"
+    },
+    {
+        "course_title": "CMPUT 701 - Essay in Computing Science I",
+        "description": "A major essay on an agreed topic.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 701"
+    },
+    {
+        "course_title": "CMPUT 701A - Essay in Computing Science I",
+        "description": "A major essay on an agreed topic.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 701A"
+    },
+    {
+        "course_title": "CMPUT 701B - Essay in Computing Science I",
+        "description": "A major essay on an agreed topic.",
+        "prerequisites": [],
+        "corequisites": [],
+        "course_code": "CMPUT 701B"
+    }
+]

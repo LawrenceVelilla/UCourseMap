@@ -24,42 +24,64 @@ def search_course(courses, query):
         if course["course_code"].lower() == query:
             return display_course2(course)
 
+def parse_nested_options(options):
+    """
+    Recursively parse nested prerequisites/corequisites options.
+    Args:
+        options (list): The list of options, which might include nested dictionaries or strings.
+    Returns:
+        list: A formatted list of dictionaries with normalized structure.
+    """
+    result = []
+    for option in options:
+        if isinstance(option, dict):  # Handle nested dictionary
+            for key, value in option.items():
+                if key in ["One of", "All of"]:
+                    result.append({
+                        "type": key.lower().replace(" ", "_"),
+                        "options": parse_nested_options(value)  # Recurse for nested options
+                    })
+                else:
+                    result.append({
+                        "type": key.lower().replace(" ", "_"),
+                        "options": value if isinstance(value, list) else [value]
+                    })
+        else:
+            result.append(option)  # Append string or simple values
+    return result
+
+
 
 def display_course2(course):
     if not course:
         return {"error": "Course not found."}
-    
+
     course_details = {
         "course_title": course["course_title"],
-        "description": course.get("description", "No description available."),
+        "description": course.get('description', "No description available."),
         "prerequisites": [],
         "corequisites": []
     }
 
-    for prereq in course.get("prerequisites", []):
-        if prereq.get("type") == "one_of":
+    # Process prerequisites
+    for prereq in course.get('prerequisites', []):
+        if prereq.get("type"):
+            formatted_options = parse_nested_options(prereq.get("options", []))
             course_details["prerequisites"].append({
-                "type": "one_of",
-                "options": prereq.get("options", [])
+                "type": prereq["type"].replace("_", " ").capitalize(),
+                "options": formatted_options
             })
-        elif prereq.get("type") == "all_of":
-            course_details["prerequisites"].append({
-                "type": "all_of",
-                "options": prereq.get("options", [])
-            })
-    for coreq in course.get("corequisites", []):
-        if coreq.get("type") == "one_of":
-            course_details["corequisites"].append({
-                "type": "one_of",
-                "options": coreq.get("options", [])
-            })
-        elif coreq.get("type") == "all_of":
-            course_details["corequisites"].append({
-                "type": "all_of",
-                "options": coreq.get("options", [])
-            })
-    return course_details
 
+    # Process corequisites
+    for coreq in course.get('corequisites', []):
+        if coreq.get("type"):
+            formatted_options = parse_nested_options(coreq.get("options", []))
+            course_details["corequisites"].append({
+                "type": coreq["type"].replace("_", " ").capitalize(),
+                "options": formatted_options
+            })
+
+    return course_details
 
 def display_course(course):
     if course:

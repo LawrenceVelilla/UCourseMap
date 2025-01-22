@@ -76,7 +76,8 @@
                     "CMPUT 191",
                     "CMPUT 195",
                     {
-                        "One of": [
+                        "type": "one_of",
+                        "options": [
                             "CMPUT 174",
                             "CMPUT 274"
                         ]
@@ -704,7 +705,8 @@
                 "type": "one_of",
                 "options": [
                     {
-                        "One of": [
+                        "type": "one_of",
+                        "options": [
                             "CMPUT 340",
                             "CMPUT 418"
                         ]
@@ -743,7 +745,8 @@
                 "type": "one_of",
                 "options": [
                     {
-                        "All of": [
+                        "type": "all_of",
+                        "options": [
                             "CMPUT 201",
                             "CMPUT 204"
                         ]
@@ -779,7 +782,8 @@
                 "type": "one_of",
                 "options": [
                     {
-                        "All of": [
+                        "type": "all_of",
+                        "options": [
                             "CMPUT 201",
                             "CMPUT 204"
                         ]
@@ -980,7 +984,8 @@
                 "type": "one_of",
                 "options": [
                     {
-                        "All of": [
+                        "type": "all_of",
+                        "options": [
                             "CMPUT 201",
                             "CMPUT 204"
                         ]
@@ -1052,7 +1057,8 @@
                 "type": "one_of",
                 "options": [
                     {
-                        "All of": [
+                        "type": "all_of",
+                        "options": [
                             "CMPUT 201",
                             "CMPUT 204"
                         ]
@@ -1095,7 +1101,8 @@
                 "type": "one_of",
                 "options": [
                     {
-                        "All of": [
+                        "type": "all_of",
+                        "options": [
                             "CMPUT 201",
                             "CMPUT 204"
                         ]
@@ -1329,7 +1336,8 @@
                 "type": "one_of",
                 "options": [
                     {
-                        "All of": [
+                        "type": "all_of",
+                        "options": [
                             "CMPUT 201",
                             "CMPUT 204"
                         ]

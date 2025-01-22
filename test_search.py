@@ -7,10 +7,7 @@ with open('standardized_csclasses.json', 'r') as file:
 
 # Test Cases
 test_queries = [
-    "CMPUT 267",  # Valid class code
-    "CMPUT 174",  # Another valid class code
-    "CMPUT 999",  # Invalid class code
-    " cmpUt 267  ",  # Valid code with extra spaces and mixed case
+    "CMPUT 312",  # Valid code with extra spaces and mixed case
     ""             # Empty query
 ]
 

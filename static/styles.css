@@ -1,54 +1,127 @@
+/* General Body Styling */
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-  }
-  
-  header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1em;
-    text-align: center;
-  }
-  
-  .course-input {
-    margin: 2em;
-    text-align: center;
-  }
-  
-  input, button {
-    padding: 0.5em;
-    margin: 0.5em;
-  }
-  
-  .course-details {
-    margin: 2em;
-    padding: 1em;
-    border: 1px solid #ddd;
-    background: #fff;
-  }
-  
-  .requirements {
-    display: flex;
-    justify-content: space-around;
-    margin: 2em;
-  }
-  
-  .prerequisites, .corequisites {
-    width: 45%;
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 1em;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #4CAF50;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Header Styling */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+/* Course Input Styling */
+.course-input {
+  margin: 2em auto;
+  text-align: center;
+}
+
+input, button {
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Course Details Section */
+.course-details {
+  margin: 2em;
+  padding: 1em;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.course-details h2 {
+  margin-bottom: 0.5em;
+}
+
+.course-details p {
+  margin-top: 0;
+  color: #555;
+}
+
+/* Requirements Section Styling */
+.requirements {
+  display: flex;
+  justify-content: space-around;
+  margin: 2em;
+}
+
+.requirements > div {
+  width: 45%;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-height: 300px; /* Set a maximum height for the container */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+/* Add a slight visual indication for scrollable content */
+.requirements > div::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.requirements > div::-webkit-scrollbar-thumb {
+  background: #ccc; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded edges for the thumb */
+}
+
+.requirements > div::-webkit-scrollbar-thumb:hover {
+  background: #bbb; /* Darker thumb color on hover */
+}
+
+.requirements > div::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+/* List Styling for Prerequisites/Corequisites */
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+ul ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+ul ul ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+li {
+  margin: 5px 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #4CAF50;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

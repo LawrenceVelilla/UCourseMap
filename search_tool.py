@@ -18,6 +18,49 @@ def find_course(course_code, courses):
         
     return None
 
+def search_course(courses, query):
+    query = query.strip().lower()
+    for course in courses:
+        if course["course_code"].lower() == query:
+            return display_course2(course)
+
+
+def display_course2(course):
+    if not course:
+        return {"error": "Course not found."}
+    
+    course_details = {
+        "course_title": course["course_title"],
+        "description": course.get("description", "No description available."),
+        "prerequisites": [],
+        "corequisites": []
+    }
+
+    for prereq in course.get("prerequisites", []):
+        if prereq.get("type") == "one_of":
+            course_details["prerequisites"].append({
+                "type": "one_of",
+                "options": prereq.get("options", [])
+            })
+        elif prereq.get("type") == "all_of":
+            course_details["prerequisites"].append({
+                "type": "all_of",
+                "options": prereq.get("options", [])
+            })
+    for coreq in course.get("corequisites", []):
+        if coreq.get("type") == "one_of":
+            course_details["corequisites"].append({
+                "type": "one_of",
+                "options": coreq.get("options", [])
+            })
+        elif coreq.get("type") == "all_of":
+            course_details["corequisites"].append({
+                "type": "all_of",
+                "options": coreq.get("options", [])
+            })
+    return course_details
+
+
 def display_course(course):
     if course:
         print(f"\nCourse Title: \n{course['course_title']}")

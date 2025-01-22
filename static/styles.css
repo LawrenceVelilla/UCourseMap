@@ -1,0 +1,54 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .course-input {
+    margin: 2em;
+    text-align: center;
+  }
+  
+  input, button {
+    padding: 0.5em;
+    margin: 0.5em;
+  }
+  
+  .course-details {
+    margin: 2em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    background: #fff;
+  }
+  
+  .requirements {
+    display: flex;
+    justify-content: space-around;
+    margin: 2em;
+  }
+  
+  .prerequisites, .corequisites {
+    width: 45%;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1em;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #4CAF50;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  

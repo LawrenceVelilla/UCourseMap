@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS Course Prerequisite Tool</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header>
+    <h1>CS Course Prerequisite Tool</h1>
+  </header>
+
+  <main>
+    <div class="course-input">
+      <label for="courseSearch">Enter Course:</label>
+      <input type="text" id="courseSearch" placeholder="Search for a course...">
+      <button id="searchButton">Search</button>
+    </div>
+
+    <div class="course-details">
+      <h2 id="courseTitle">Course Title</h2>
+      <p id="courseDescription">Course description will appear here.</p>
+    </div>
+
+    <div class="requirements">
+      <div class="prerequisites">
+        <h3>Prerequisites</h3>
+        <ul id="prerequisitesList">
+          <!-- Prerequisites will be added dynamically here -->
+        </ul>
+      </div>
+
+      <div class="corequisites">
+        <h3>Corequisites</h3>
+        <ul id="corequisitesList">
+          <!-- Corequisites will be added dynamically here -->
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CS Course Tool</p>
+  </footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

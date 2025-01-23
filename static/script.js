@@ -13,7 +13,6 @@ document.getElementById('searchButton').addEventListener('click', async () => {
         }
         const data = await response.json();
 
-        console.log("Data received from server:", data); // Debugging
 
         if (data.error) {
             alert(data.error);
@@ -48,7 +47,7 @@ function renderList(element, data) {
                 li.textContent = capitalize(item.type) + ":";
                 renderList(li, item.options);
             } else if (typeof item === "object") {
-                // Handle nested "One of", "All of" cases
+                // Need to fuckin I HATE IT Handle nested "One of", "All of" cases
                 Object.entries(item).forEach(([key, value]) => {
                     const nestedLi = document.createElement("li");
                     nestedLi.textContent = capitalize(key) + ":";

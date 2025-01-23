@@ -8,7 +8,7 @@ body {
 
 /* Header Styling */
 header {
-  background-color: #4CAF50;
+  background-color: #365D10;
   color: white;
   padding: 1em;
   text-align: center;
@@ -28,7 +28,7 @@ input, button {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #365D10;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;

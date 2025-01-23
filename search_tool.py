@@ -25,13 +25,6 @@ def search_course(courses, query):
             return display_course2(course)
 
 def parse_nested_options(options):
-    """
-    Recursively parse nested prerequisites/corequisites options.
-    Args:
-        options (list): The list of options, which might include nested dictionaries or strings.
-    Returns:
-        list: A formatted list of dictionaries with normalized structure.
-    """
     result = []
     for option in options:
         if isinstance(option, dict):  # Handle nested dictionary
@@ -127,9 +120,11 @@ def display_course(course):
 
     
 
-
-
 def main():
+    """
+    For the main function, this the json searcher not the web searcher
+    
+    """
     courses = load_program(f"assets/standardized_csclasses.json")
 
     done = False

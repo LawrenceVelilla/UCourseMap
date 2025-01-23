@@ -20,9 +20,7 @@ def search():
     if not query:
         return jsonify({"error": "Query is missing"}), 400
 
-    # Use the search_tool to find the course
-    
-    result = search_course(course_data, query)  # Replace with your actual search logic
+    result = search_course(course_data, query)  
     return jsonify(result)
 
 if __name__ == '__main__':

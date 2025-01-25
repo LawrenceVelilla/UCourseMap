@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 import json
-from search_tool import search_course  # Import your search function
+from search_tool import search_course  
 
 # Load course data
 with open('standardized_csclasses.json', 'r') as f:

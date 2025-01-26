@@ -8,7 +8,7 @@ with open('standardized_csclasses.json', 'r') as f:
 
 app = Flask(__name__)
 
-# Serve the HTML file
+# HTML file
 @app.route('/')
 def index():
     return render_template('index.html')

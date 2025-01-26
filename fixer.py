@@ -45,48 +45,6 @@ def normalize_json(course_data):
 
     return course_data
 
-# Example usage
-course_data = [
-    {
-        "class_code": "CMPUT 312",
-        "course_title": "Introduction to Robotics and Mechatronics",
-        "description": "An advanced course on robotics.",
-        "prerequisites": [
-            {
-                "type": "one_of",
-                "options": [
-                    {
-                        "One of": ["CMPUT 101", "CMPUT 114"]
-                    },
-                    "CMPUT 275"
-                ]
-            }
-        ],
-        "corequisites": [
-            {
-                "type": "one_of",
-                "options": [
-                    {
-                        "One of": ["CMPUT 340", "CMPUT 418"]
-                    },
-                    "ECE 240",
-                    {
-                        "All of": ["CMPUT 200", "CMPUT 300"]
-                    }
-                ]
-            }
-        ]
-    }
-]
-
-# Normalize the data
-
-
-# Print the normalized data
-
-
-
-
 with open(path, "r") as file:
     courses = json.load(file)
 

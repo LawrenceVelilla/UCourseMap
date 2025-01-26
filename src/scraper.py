@@ -46,7 +46,7 @@ def scrape_courses(url):
     soup = BeautifulSoup(response.content, 'html.parser')
 
     courses = []
-    # Target each course container
+    
     for course_section in soup.find_all("div", class_="mb-3 pb-3 border-bottom"):
         # Extract course title
         title_tag = course_section.select_one("h2 a")

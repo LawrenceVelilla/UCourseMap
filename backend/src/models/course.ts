@@ -1,20 +1,22 @@
-import { defaultMaxListeners } from 'events';
 import { Schema, model, Document } from 'mongoose';
 
-enum Operator {
+// Remove unnecessary import from 'events'
+// import { defaultMaxListeners } from 'events'; 
+
+export enum Operator {
   AND = 'AND',
   OR = 'OR',
   STANDALONE = 'STANDALONE',
   WILDCARD = 'WILDCARD'
 }
 
-interface Condition extends Document {
+export interface Condition {
   operator: Operator;
   courses?: string[];
   pattern?: string;
 }
 
-interface CourseRequirements extends Document {
+export interface CourseRequirements {
   prerequisites: {
     operator: Operator;
     conditions: Condition[];
@@ -26,11 +28,14 @@ interface CourseRequirements extends Document {
   notes?: string;
 }
 
-interface ICourse extends Document {
+export interface ICourse extends Document {
   code: string;
   title: string;
   description: string;
-  requirements: CourseRequirements;
+  requirements?: CourseRequirements;
+  // Add these fields to accommodate simple API operations
+  prerequisites?: string[];
+  corequisites?: string[];
 }
 
 const CourseSchema = new Schema<ICourse>({
@@ -55,8 +60,12 @@ const CourseSchema = new Schema<ICourse>({
       }]
     },
     notes: String
-  }
+  },
+  // Simple fields for backward compatibility with current API
+  prerequisites: [String],
+  corequisites: [String]
 });
 
-export { Operator, Condition, CourseRequirements, ICourse };
-export default model<ICourse>('Course', CourseSchema);
+// Export both types and the model
+export { ICourse as CourseDocument };
+export const Course = model<ICourse>('Course', CourseSchema);

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import { OpenAI } from 'openai';
-import { Course } from '../models/course'; // Your Mongoose model
+import { ICourse } from '../models/course'; // Your Mongoose model
 
 // Initialize OpenAI
 const openai = new OpenAI({
@@ -61,18 +61,16 @@ const basePrompt = `
            CMPUT 174 and 175 use a problem-driven approach to introduce the fundamental ideas of Computing Science. Emphasis is on the underlying process behind the solution, independent of programming language or style. Basic notions of state, control flow, data structures, recursion, modularization, and testing are introduced through solving simple problems in a variety of domains such as text analysis, map navigation, game search, simulation, and cryptography. Students learn to program by reading and modifying existing programs as well as writing new ones. No prior programming experience is necessary. Prerequisite: Math 30, 30-1, or 30-2. See Note (1) above. Credit cannot be obtained for CMPUT 174 if credit has already been obtained for CMPUT 274, 275, or ENCMP 100, except with permission of the Department.
     Output:
         {
-          description: "CMPUT 174 and 175 use a problem-driven approach to introduce the fundamental ideas of Computing Science. Emphasis is on the underlying process behind the solution, independent of programming language or style. Basic notions of state, control flow, data structures, recursion, modularization, and testing are introduced through solving simple problems in a variety of domains such as text analysis, map navigation, game search, simulation, and cryptography. Students learn to program by reading and modifying existing programs as well as writing new ones. No prior programming experience is necessary.",
-          prerequisites: [
+          "description": "CMPUT 174 and 175 use a problem-driven approach to introduce the fundamental ideas of Computing Science. Emphasis is on the underlying process behind the solution, independent of programming language or style. Basic notions of state, control flow, data structures, recursion, modularization, and testing are introduced through solving simple problems in a variety of domains such as text analysis, map navigation, game search, simulation, and cryptography. Students learn to program by reading and modifying existing programs as well as writing new ones. No prior programming experience is necessary.",
+          "prerequisites": {
             {
-              type: "one_of",
-              options: [
-                "Math 30",
-                "Math 30-1",
-                "Math 30-2"
-              ]
+              "type": "one_of",
+              "options": [{ "operator": "OR", "courses": ["Math 30", "Math 30-1", "Math 30-2"] }]
             }
-          ],
-          corequisites: []
+          },
+          "corequisites": {},
+          "notes": "Credit cannot be obtained for CMPUT 174 if credit has already been obtained for CMPUT 274, 275, or ENCMP 100, except with permission of the Department."
+
         }
   `
 
@@ -80,10 +78,15 @@ const basePrompt = `
  * Use OpenAI to parse prerequisites/corequisites from description.
  */
 async function parseWithOpenAI(description: string): Promise<{
-  prerequisites: string[];
-  corequisites: string[];
+  description: string;
+  requirements: {
+    prerequisites: { operator: string; conditions: any[] };
+    corequisites?: { operator: string; conditions: any[] };
+    notes?: string;
+  }
 }> {
-  const prompt = `
+  const prompt = `${basePrompt}
+  Description: ${description}
   `;
 
   const response = await openai.chat.completions.create({
@@ -97,7 +100,7 @@ async function parseWithOpenAI(description: string): Promise<{
     return JSON.parse(response.choices[0].message.content!);
   } catch (error) {
     console.error('Failed to parse OpenAI output:', error);
-    return { prerequisites: [], corequisites: [] };
+    return { prerequisites: {}, corequisites: {} };
   }
 }
 
@@ -108,7 +111,7 @@ async function saveCourses(courses: RawCourse[]) {
   for (const course of courses) {
     const { prerequisites, corequisites } = await parseWithOpenAI(course.description);
 
-    await Course.findOneAndUpdate(
+    await course.findOneAndUpdate(
       { code: course.code },
       {
         title: course.title,

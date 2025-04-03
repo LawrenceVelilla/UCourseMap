@@ -58,6 +58,5 @@ const CourseSchema = new Schema<ICourse>({
   }
 });
 
-const Course = model<ICourse>('Course', CourseSchema);
-
-export { Course };
+export { Operator, Condition, CourseRequirements, ICourse };
+export default model<ICourse>('Course', CourseSchema);

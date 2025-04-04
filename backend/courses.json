@@ -1,5 +1,6 @@
 [
   {
+    "department": "CMPUT",
     "code": "CMPUT 101",
     "title": "Introduction to Computing",
     "units": {
@@ -11,6 +12,7 @@
     "url": "/catalogue/course/cmput/101"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 174",
     "title": "Introduction to the Foundations of Computation I",
     "units": {
@@ -22,6 +24,7 @@
     "url": "/catalogue/course/cmput/174"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 174",
     "title": "A - Introduction to the Foundations of Computation I",
     "units": {
@@ -33,6 +36,7 @@
     "url": "/catalogue/course/cmput/174a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 174",
     "title": "B - Introduction to the Foundations of Computation I",
     "units": {
@@ -44,6 +48,7 @@
     "url": "/catalogue/course/cmput/174b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 175",
     "title": "Introduction to the Foundations of Computation II",
     "units": {
@@ -55,6 +60,7 @@
     "url": "/catalogue/course/cmput/175"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 191",
     "title": "Introduction to Data Science",
     "units": {
@@ -66,6 +72,7 @@
     "url": "/catalogue/course/cmput/191"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 195",
     "title": "Introduction to Principles and Techniques of Data Science",
     "units": {
@@ -77,6 +84,7 @@
     "url": "/catalogue/course/cmput/195"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 200",
     "title": "Ethics of Data Science and Artificial Intelligence",
     "units": {
@@ -88,6 +96,7 @@
     "url": "/catalogue/course/cmput/200"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 201",
     "title": "Practical Programming Methodology",
     "units": {
@@ -99,6 +108,7 @@
     "url": "/catalogue/course/cmput/201"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 204",
     "title": "Algorithms I",
     "units": {
@@ -110,6 +120,7 @@
     "url": "/catalogue/course/cmput/204"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 206",
     "title": "Introduction to Digital Image Processing",
     "units": {
@@ -121,6 +132,7 @@
     "url": "/catalogue/course/cmput/206"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 210",
     "title": "Codes, Codemakers, Codebreakers: An Introduction to Cryptography",
     "units": {
@@ -132,6 +144,7 @@
     "url": "/catalogue/course/cmput/210"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 229",
     "title": "Computer Organization and Architecture I",
     "units": {
@@ -143,6 +156,7 @@
     "url": "/catalogue/course/cmput/229"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 250",
     "title": "Computers and Games",
     "units": {
@@ -154,6 +168,7 @@
     "url": "/catalogue/course/cmput/250"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 256",
     "title": "Game Artificial Intelligence",
     "units": {
@@ -165,6 +180,7 @@
     "url": "/catalogue/course/cmput/256"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 261",
     "title": "Introduction to Artificial Intelligence",
     "units": {
@@ -176,6 +192,7 @@
     "url": "/catalogue/course/cmput/261"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 267",
     "title": "Machine Learning I",
     "units": {
@@ -187,6 +204,7 @@
     "url": "/catalogue/course/cmput/267"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 272",
     "title": "Formal Systems and Logic in Computing Science",
     "units": {
@@ -198,6 +216,7 @@
     "url": "/catalogue/course/cmput/272"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 274",
     "title": "Introduction to Tangible Computing I",
     "units": {
@@ -209,6 +228,7 @@
     "url": "/catalogue/course/cmput/274"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 275",
     "title": "Introduction to Tangible Computing II",
     "units": {
@@ -220,6 +240,7 @@
     "url": "/catalogue/course/cmput/275"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 291",
     "title": "Introduction to File and Database Management",
     "units": {
@@ -231,6 +252,7 @@
     "url": "/catalogue/course/cmput/291"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 296",
     "title": "Topics in Computing Science",
     "units": {
@@ -242,6 +264,7 @@
     "url": "/catalogue/course/cmput/296"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 296",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -253,6 +276,7 @@
     "url": "/catalogue/course/cmput/296a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 296",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -264,6 +288,7 @@
     "url": "/catalogue/course/cmput/296b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 297",
     "title": "Topics in Computing Science",
     "units": {
@@ -275,6 +300,7 @@
     "url": "/catalogue/course/cmput/297"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 297",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -286,6 +312,7 @@
     "url": "/catalogue/course/cmput/297a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 297",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -297,6 +324,7 @@
     "url": "/catalogue/course/cmput/297b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 298",
     "title": "Topics in Computing Science",
     "units": {
@@ -308,6 +336,7 @@
     "url": "/catalogue/course/cmput/298"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 298",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -319,6 +348,7 @@
     "url": "/catalogue/course/cmput/298a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 298",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -330,6 +360,7 @@
     "url": "/catalogue/course/cmput/298b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 299",
     "title": "Topics in Computing Science",
     "units": {
@@ -341,6 +372,7 @@
     "url": "/catalogue/course/cmput/299"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 299",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -352,6 +384,7 @@
     "url": "/catalogue/course/cmput/299a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 299",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -363,6 +396,7 @@
     "url": "/catalogue/course/cmput/299b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 300",
     "title": "Computers and Society",
     "units": {
@@ -374,6 +408,7 @@
     "url": "/catalogue/course/cmput/300"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 301",
     "title": "Introduction to Software Engineering",
     "units": {
@@ -385,6 +420,7 @@
     "url": "/catalogue/course/cmput/301"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 301",
     "title": "A - Introduction to Software Engineering",
     "units": {
@@ -396,6 +432,7 @@
     "url": "/catalogue/course/cmput/301a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 301",
     "title": "B - Introduction to Software Engineering",
     "units": {
@@ -407,6 +444,7 @@
     "url": "/catalogue/course/cmput/301b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 302",
     "title": "Introduction to Human Computer Interaction",
     "units": {
@@ -418,6 +456,7 @@
     "url": "/catalogue/course/cmput/302"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 303",
     "title": "Algorithmics in Practice",
     "units": {
@@ -429,6 +468,7 @@
     "url": "/catalogue/course/cmput/303"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 304",
     "title": "Algorithms II",
     "units": {
@@ -440,6 +480,7 @@
     "url": "/catalogue/course/cmput/304"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 307",
     "title": "3D Modeling and Animation",
     "units": {
@@ -451,6 +492,7 @@
     "url": "/catalogue/course/cmput/307"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 308",
     "title": "Video Processing and Applications",
     "units": {
@@ -462,6 +504,7 @@
     "url": "/catalogue/course/cmput/308"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 312",
     "title": "Introduction to Robotics and Mechatronics",
     "units": {
@@ -473,6 +516,7 @@
     "url": "/catalogue/course/cmput/312"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 313",
     "title": "Computer Networks",
     "units": {
@@ -484,6 +528,7 @@
     "url": "/catalogue/course/cmput/313"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 325",
     "title": "Non-Procedural Programming Languages",
     "units": {
@@ -495,6 +540,7 @@
     "url": "/catalogue/course/cmput/325"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 328",
     "title": "Visual Recognition",
     "units": {
@@ -506,6 +552,7 @@
     "url": "/catalogue/course/cmput/328"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 329",
     "title": "Computer Organization and Architecture II",
     "units": {
@@ -517,6 +564,7 @@
     "url": "/catalogue/course/cmput/329"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 331",
     "title": "Computational Cryptography",
     "units": {
@@ -528,6 +576,7 @@
     "url": "/catalogue/course/cmput/331"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 333",
     "title": "Security in a Networked World",
     "units": {
@@ -539,6 +588,7 @@
     "url": "/catalogue/course/cmput/333"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 340",
     "title": "Introduction to Numerical Methods",
     "units": {
@@ -550,6 +600,7 @@
     "url": "/catalogue/course/cmput/340"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 350",
     "title": "Advanced Games Programming",
     "units": {
@@ -561,6 +612,7 @@
     "url": "/catalogue/course/cmput/350"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 355",
     "title": "Games, Puzzles, Algorithms",
     "units": {
@@ -572,6 +624,7 @@
     "url": "/catalogue/course/cmput/355"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 361",
     "title": "Introduction to Information Retrieval",
     "units": {
@@ -583,6 +636,7 @@
     "url": "/catalogue/course/cmput/361"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 365",
     "title": "Introduction to Reinforcement Learning",
     "units": {
@@ -594,6 +648,7 @@
     "url": "/catalogue/course/cmput/365"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 366",
     "title": "Search and Planning in Artificial Intelligence",
     "units": {
@@ -605,6 +660,7 @@
     "url": "/catalogue/course/cmput/366"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 379",
     "title": "Operating System Concepts",
     "units": {
@@ -616,6 +672,7 @@
     "url": "/catalogue/course/cmput/379"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 382",
     "title": "Introduction to GPU Programming",
     "units": {
@@ -627,6 +684,7 @@
     "url": "/catalogue/course/cmput/382"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 391",
     "title": "Database Management Systems",
     "units": {
@@ -638,6 +696,7 @@
     "url": "/catalogue/course/cmput/391"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 396",
     "title": "Topics in Computing Science",
     "units": {
@@ -649,6 +708,7 @@
     "url": "/catalogue/course/cmput/396"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 396",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -660,6 +720,7 @@
     "url": "/catalogue/course/cmput/396a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 396",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -671,6 +732,7 @@
     "url": "/catalogue/course/cmput/396b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 397",
     "title": "Topics in Computing Science",
     "units": {
@@ -682,6 +744,7 @@
     "url": "/catalogue/course/cmput/397"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 397",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -693,6 +756,7 @@
     "url": "/catalogue/course/cmput/397a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 397",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -704,6 +768,7 @@
     "url": "/catalogue/course/cmput/397b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 398",
     "title": "Topics in Computing Science",
     "units": {
@@ -715,6 +780,7 @@
     "url": "/catalogue/course/cmput/398"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 398",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -726,6 +792,7 @@
     "url": "/catalogue/course/cmput/398a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 398",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -737,6 +804,7 @@
     "url": "/catalogue/course/cmput/398b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 399",
     "title": "Topics in Computing Science",
     "units": {
@@ -748,6 +816,7 @@
     "url": "/catalogue/course/cmput/399"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 399",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -759,6 +828,7 @@
     "url": "/catalogue/course/cmput/399a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 399",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -770,6 +840,7 @@
     "url": "/catalogue/course/cmput/399b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 401",
     "title": "Software Process and Product Management",
     "units": {
@@ -781,6 +852,7 @@
     "url": "/catalogue/course/cmput/401"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 402",
     "title": "Software Quality",
     "units": {
@@ -792,6 +864,7 @@
     "url": "/catalogue/course/cmput/402"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 403",
     "title": "Algorithmics in Competitive Programming",
     "units": {
@@ -803,6 +876,7 @@
     "url": "/catalogue/course/cmput/403"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 404",
     "title": "Web Applications and Architecture",
     "units": {
@@ -814,6 +888,7 @@
     "url": "/catalogue/course/cmput/404"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 411",
     "title": "Introduction to Computer Graphics",
     "units": {
@@ -825,6 +900,7 @@
     "url": "/catalogue/course/cmput/411"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 412",
     "title": "Experimental Mobile Robotics",
     "units": {
@@ -836,6 +912,7 @@
     "url": "/catalogue/course/cmput/412"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 414",
     "title": "Introduction to Multimedia Technology",
     "units": {
@@ -847,6 +924,7 @@
     "url": "/catalogue/course/cmput/414"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 415",
     "title": "Compiler Design",
     "units": {
@@ -858,6 +936,7 @@
     "url": "/catalogue/course/cmput/415"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 416",
     "title": "Foundations of Program Analysis",
     "units": {
@@ -869,6 +948,7 @@
     "url": "/catalogue/course/cmput/416"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 428",
     "title": "Computer Vision",
     "units": {
@@ -880,6 +960,7 @@
     "url": "/catalogue/course/cmput/428"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 429",
     "title": "Computer Systems and Architecture",
     "units": {
@@ -891,6 +972,7 @@
     "url": "/catalogue/course/cmput/429"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 455",
     "title": "Search, Knowledge and Simulation",
     "units": {
@@ -902,6 +984,7 @@
     "url": "/catalogue/course/cmput/455"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 461",
     "title": "Introduction to Natural Language Processing",
     "units": {
@@ -913,6 +996,7 @@
     "url": "/catalogue/course/cmput/461"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 463",
     "title": "Probabilistic Graphical Models",
     "units": {
@@ -924,6 +1008,7 @@
     "url": "/catalogue/course/cmput/463"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 466",
     "title": "Machine Learning Essentials",
     "units": {
@@ -935,6 +1020,7 @@
     "url": "/catalogue/course/cmput/466"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 467",
     "title": "Machine Learning II",
     "units": {
@@ -946,6 +1032,7 @@
     "url": "/catalogue/course/cmput/467"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 469",
     "title": "Artificial Intelligence Capstone",
     "units": {
@@ -957,6 +1044,7 @@
     "url": "/catalogue/course/cmput/469"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 474",
     "title": "Formal Languages, Automata, and Computability",
     "units": {
@@ -968,6 +1056,7 @@
     "url": "/catalogue/course/cmput/474"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 481",
     "title": "Parallel and Distributed Systems",
     "units": {
@@ -979,6 +1068,7 @@
     "url": "/catalogue/course/cmput/481"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 495",
     "title": "Honors Seminar",
     "units": {
@@ -990,6 +1080,7 @@
     "url": "/catalogue/course/cmput/495"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 496",
     "title": "Topics in Computing Science",
     "units": {
@@ -1001,6 +1092,7 @@
     "url": "/catalogue/course/cmput/496"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 496",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -1012,6 +1104,7 @@
     "url": "/catalogue/course/cmput/496a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 496",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -1023,6 +1116,7 @@
     "url": "/catalogue/course/cmput/496b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 497",
     "title": "Topics in Computing Science",
     "units": {
@@ -1034,6 +1128,7 @@
     "url": "/catalogue/course/cmput/497"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 497",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -1045,6 +1140,7 @@
     "url": "/catalogue/course/cmput/497a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 497",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -1056,6 +1152,7 @@
     "url": "/catalogue/course/cmput/497b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 498",
     "title": "Topics in Computing Science",
     "units": {
@@ -1067,6 +1164,7 @@
     "url": "/catalogue/course/cmput/498"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 498",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -1078,6 +1176,7 @@
     "url": "/catalogue/course/cmput/498a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 498",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -1089,6 +1188,7 @@
     "url": "/catalogue/course/cmput/498b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 499",
     "title": "Topics in Computing Science",
     "units": {
@@ -1100,6 +1200,7 @@
     "url": "/catalogue/course/cmput/499"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 499",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -1111,6 +1212,7 @@
     "url": "/catalogue/course/cmput/499a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 499",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -1122,6 +1224,7 @@
     "url": "/catalogue/course/cmput/499b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 500",
     "title": "Topics in Computing Science",
     "units": {
@@ -1133,6 +1236,7 @@
     "url": "/catalogue/course/cmput/500"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 500",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -1144,6 +1248,7 @@
     "url": "/catalogue/course/cmput/500a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 500",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -1155,6 +1260,7 @@
     "url": "/catalogue/course/cmput/500b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 501",
     "title": "Topics in Computing Science",
     "units": {
@@ -1166,6 +1272,7 @@
     "url": "/catalogue/course/cmput/501"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 501",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -1177,6 +1284,7 @@
     "url": "/catalogue/course/cmput/501a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 501",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -1188,6 +1296,7 @@
     "url": "/catalogue/course/cmput/501b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 502",
     "title": "Software Quality",
     "units": {
@@ -1199,6 +1308,7 @@
     "url": "/catalogue/course/cmput/502"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 503",
     "title": "Topics in Computing Science",
     "units": {
@@ -1210,6 +1320,7 @@
     "url": "/catalogue/course/cmput/503"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 503",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -1221,6 +1332,7 @@
     "url": "/catalogue/course/cmput/503a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 503",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -1232,6 +1344,7 @@
     "url": "/catalogue/course/cmput/503b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 504",
     "title": "Topics in Computing Science",
     "units": {
@@ -1243,6 +1356,7 @@
     "url": "/catalogue/course/cmput/504"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 504",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -1254,6 +1368,7 @@
     "url": "/catalogue/course/cmput/504a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 504",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -1265,6 +1380,7 @@
     "url": "/catalogue/course/cmput/504b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 511",
     "title": "Topics In Computer Science",
     "units": {
@@ -1276,6 +1392,7 @@
     "url": "/catalogue/course/cmput/511"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 511",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -1287,6 +1404,7 @@
     "url": "/catalogue/course/cmput/511a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 511",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -1298,6 +1416,7 @@
     "url": "/catalogue/course/cmput/511b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 512",
     "title": "Experimental Mobile Robotics",
     "units": {
@@ -1309,6 +1428,7 @@
     "url": "/catalogue/course/cmput/512"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 529",
     "title": "Computer Systems and Architecture",
     "units": {
@@ -1320,6 +1440,7 @@
     "url": "/catalogue/course/cmput/529"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 530",
     "title": "Topics in Computing Science",
     "units": {
@@ -1331,6 +1452,7 @@
     "url": "/catalogue/course/cmput/530"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 530",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -1342,6 +1464,7 @@
     "url": "/catalogue/course/cmput/530a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 530",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -1353,6 +1476,7 @@
     "url": "/catalogue/course/cmput/530b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 551",
     "title": "Topics in Computing Science",
     "units": {
@@ -1364,6 +1488,7 @@
     "url": "/catalogue/course/cmput/551"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 551",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -1375,6 +1500,7 @@
     "url": "/catalogue/course/cmput/551a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 551",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -1386,6 +1512,7 @@
     "url": "/catalogue/course/cmput/551b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 561",
     "title": "Introduction to Natural Language Processing",
     "units": {
@@ -1397,6 +1524,7 @@
     "url": "/catalogue/course/cmput/561"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 563",
     "title": "Topics in Computing Science",
     "units": {
@@ -1408,6 +1536,7 @@
     "url": "/catalogue/course/cmput/563"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 563",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -1419,6 +1548,7 @@
     "url": "/catalogue/course/cmput/563a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 563",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -1430,6 +1560,7 @@
     "url": "/catalogue/course/cmput/563b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 566",
     "title": "Topics in Computing Science",
     "units": {
@@ -1441,6 +1572,7 @@
     "url": "/catalogue/course/cmput/566"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 566",
     "title": "A - Topics in Computing Science",
     "units": {
@@ -1452,6 +1584,7 @@
     "url": "/catalogue/course/cmput/566a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 566",
     "title": "B - Topics in Computing Science",
     "units": {
@@ -1463,6 +1596,7 @@
     "url": "/catalogue/course/cmput/566b"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 567",
     "title": "Machine Learning II",
     "units": {
@@ -1474,6 +1608,7 @@
     "url": "/catalogue/course/cmput/567"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 600",
     "title": "Topics in Computing Science",
     "units": {
@@ -1485,6 +1620,7 @@
     "url": "/catalogue/course/cmput/600"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 603",
     "title": "Teaching and Research Methods",
     "units": {
@@ -1496,6 +1632,7 @@
     "url": "/catalogue/course/cmput/603"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 604",
     "title": "Topics in Computing Science",
     "units": {
@@ -1507,6 +1644,7 @@
     "url": "/catalogue/course/cmput/604"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 605",
     "title": "Topics in Computing Science",
     "units": {
@@ -1518,6 +1656,7 @@
     "url": "/catalogue/course/cmput/605"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 606",
     "title": "Topics in Computing Science",
     "units": {
@@ -1529,6 +1668,7 @@
     "url": "/catalogue/course/cmput/606"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 607",
     "title": "Topics in Computing Science",
     "units": {
@@ -1540,6 +1680,7 @@
     "url": "/catalogue/course/cmput/607"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 608",
     "title": "Topics in Computing Science",
     "units": {
@@ -1551,6 +1692,7 @@
     "url": "/catalogue/course/cmput/608"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 609",
     "title": "Topics in Computing Science",
     "units": {
@@ -1562,6 +1704,7 @@
     "url": "/catalogue/course/cmput/609"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 610",
     "title": "Topics in Computer Graphics",
     "units": {
@@ -1573,6 +1716,7 @@
     "url": "/catalogue/course/cmput/610"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 615",
     "title": "Topics in Image Processing and Vision",
     "units": {
@@ -1584,6 +1728,7 @@
     "url": "/catalogue/course/cmput/615"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 616",
     "title": "Topics in Computing Science",
     "units": {
@@ -1595,6 +1740,7 @@
     "url": "/catalogue/course/cmput/616"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 617",
     "title": "Topics in Computing Science",
     "units": {
@@ -1606,6 +1752,7 @@
     "url": "/catalogue/course/cmput/617"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 620",
     "title": "Topics in Programming Languages",
     "units": {
@@ -1617,6 +1764,7 @@
     "url": "/catalogue/course/cmput/620"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 622",
     "title": "Topics in Machine Learning",
     "units": {
@@ -1628,6 +1776,7 @@
     "url": "/catalogue/course/cmput/622"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 624",
     "title": "Topics in Machine Learning",
     "units": {
@@ -1639,6 +1788,7 @@
     "url": "/catalogue/course/cmput/624"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 626",
     "title": "Topics in Machine Learning",
     "units": {
@@ -1650,6 +1800,7 @@
     "url": "/catalogue/course/cmput/626"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 627",
     "title": "Topics in Machine Learning",
     "units": {
@@ -1661,6 +1812,7 @@
     "url": "/catalogue/course/cmput/627"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 628",
     "title": "Topics in Machine Learning",
     "units": {
@@ -1672,6 +1824,7 @@
     "url": "/catalogue/course/cmput/628"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 629",
     "title": "Topics in Machine Learning",
     "units": {
@@ -1683,6 +1836,7 @@
     "url": "/catalogue/course/cmput/629"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 631",
     "title": "Robotics",
     "units": {
@@ -1694,6 +1848,7 @@
     "url": "/catalogue/course/cmput/631"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 640",
     "title": "Topics in Computer Networks",
     "units": {
@@ -1705,6 +1860,7 @@
     "url": "/catalogue/course/cmput/640"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 641",
     "title": "Advanced Computer Networks",
     "units": {
@@ -1716,6 +1872,7 @@
     "url": "/catalogue/course/cmput/641"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 644",
     "title": "Topics in Computing Science",
     "units": {
@@ -1727,6 +1884,7 @@
     "url": "/catalogue/course/cmput/644"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 650",
     "title": "Topics in Artificial Intelligence",
     "units": {
@@ -1738,6 +1896,7 @@
     "url": "/catalogue/course/cmput/650"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 651",
     "title": "Topics in Artificial Intelligence",
     "units": {
@@ -1749,6 +1908,7 @@
     "url": "/catalogue/course/cmput/651"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 652",
     "title": "Topics in Computing Science",
     "units": {
@@ -1760,6 +1920,7 @@
     "url": "/catalogue/course/cmput/652"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 653",
     "title": "Topics in Artificial Intelligence",
     "units": {
@@ -1771,6 +1932,7 @@
     "url": "/catalogue/course/cmput/653"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 654",
     "title": "Topics in Computing Science",
     "units": {
@@ -1782,6 +1944,7 @@
     "url": "/catalogue/course/cmput/654"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 655",
     "title": "Topics in Artificial Intelligence",
     "units": {
@@ -1793,6 +1956,7 @@
     "url": "/catalogue/course/cmput/655"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 656",
     "title": "Topics in Artificial Intelligence",
     "units": {
@@ -1804,6 +1968,7 @@
     "url": "/catalogue/course/cmput/656"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 657",
     "title": "Heuristic Search",
     "units": {
@@ -1815,6 +1980,7 @@
     "url": "/catalogue/course/cmput/657"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 658",
     "title": "Topics in Artificial Intelligence",
     "units": {
@@ -1826,6 +1992,7 @@
     "url": "/catalogue/course/cmput/658"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 659",
     "title": "Topics in Artificial Intelligence",
     "units": {
@@ -1837,6 +2004,7 @@
     "url": "/catalogue/course/cmput/659"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 660",
     "title": "Topics in Software Engineering",
     "units": {
@@ -1848,6 +2016,7 @@
     "url": "/catalogue/course/cmput/660"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 663",
     "title": "Topics in Computing Science",
     "units": {
@@ -1859,6 +2028,7 @@
     "url": "/catalogue/course/cmput/663"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 664",
     "title": "Topics in Software Engineering",
     "units": {
@@ -1870,6 +2040,7 @@
     "url": "/catalogue/course/cmput/664"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 670",
     "title": "Topics in the Theory of Computation",
     "units": {
@@ -1881,6 +2052,7 @@
     "url": "/catalogue/course/cmput/670"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 672",
     "title": "Algorithmic Graph Theory",
     "units": {
@@ -1892,6 +2064,7 @@
     "url": "/catalogue/course/cmput/672"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 675",
     "title": "Topics in Computing Science",
     "units": {
@@ -1903,6 +2076,7 @@
     "url": "/catalogue/course/cmput/675"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 676",
     "title": "Topics in Computing Science",
     "units": {
@@ -1914,6 +2088,7 @@
     "url": "/catalogue/course/cmput/676"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 680",
     "title": "Topics in Systems",
     "units": {
@@ -1925,6 +2100,7 @@
     "url": "/catalogue/course/cmput/680"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 681",
     "title": "Topics in Parallel and Distributed Systems",
     "units": {
@@ -1936,6 +2112,7 @@
     "url": "/catalogue/course/cmput/681"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 690",
     "title": "Topics in Databases",
     "units": {
@@ -1947,6 +2124,7 @@
     "url": "/catalogue/course/cmput/690"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 691",
     "title": "Topics in Databases",
     "units": {
@@ -1958,6 +2136,7 @@
     "url": "/catalogue/course/cmput/691"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 692",
     "title": "Modern Database Management Systems",
     "units": {
@@ -1969,6 +2148,7 @@
     "url": "/catalogue/course/cmput/692"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 694",
     "title": "Topics in Databases",
     "units": {
@@ -1980,6 +2160,7 @@
     "url": "/catalogue/course/cmput/694"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 696",
     "title": "Topics in Data Management",
     "units": {
@@ -1991,6 +2172,7 @@
     "url": "/catalogue/course/cmput/696"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 697",
     "title": "Topics in Computing Science",
     "units": {
@@ -2002,6 +2184,7 @@
     "url": "/catalogue/course/cmput/697"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 701",
     "title": "Essay in Computing Science I",
     "units": {
@@ -2013,6 +2196,7 @@
     "url": "/catalogue/course/cmput/701"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 701",
     "title": "A - Essay in Computing Science I",
     "units": {
@@ -2024,6 +2208,7 @@
     "url": "/catalogue/course/cmput/701a"
   },
   {
+    "department": "CMPUT",
     "code": "CMPUT 701",
     "title": "B - Essay in Computing Science I",
     "units": {

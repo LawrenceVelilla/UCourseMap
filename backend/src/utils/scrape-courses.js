@@ -27,6 +27,9 @@ function parseCoursesHTML(html) {
     const codeTitleMatch = headerText.match(/^([A-Z]+\s\d+)\s*[-–—]?\s*(.*)/);
     const code = codeTitleMatch ? codeTitleMatch[1] : '';
     const title = codeTitleMatch ? codeTitleMatch[2] : headerText;
+
+    // Ectract department
+    const department = code.split(' ')[0];
     
     // Extract units
     const unitsText = $course.find('b').text().trim();
@@ -45,6 +48,7 @@ function parseCoursesHTML(html) {
     description = description.replace(/^"(.+)"$/, '$1');
     
     courses.push({
+      department,
       code,
       title,
       units,

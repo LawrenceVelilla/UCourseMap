@@ -15,11 +15,14 @@ interface RequirementCondition {
 export interface CourseRequirements {
     prerequisites?: RequirementCondition;
     corequisites?: RequirementCondition;
+    flattenedPrerequisites?: string[]; // Flattened list of prerequisites
+    flattenedCorequisites?: string[]; // Flattened list of corequisites
     notes?: string;
 }
 
 // Interface for the Course document
 export interface ICourse extends Document {
+    department?: string; // e.g., "CMPUT"
     courseCode: string; // e.g., "CMPUT 174"
     title: string;
     rawDescription: string; // The original description scraped
@@ -32,6 +35,7 @@ export interface ICourse extends Document {
 
 // Define the schema for the raw scraped course data
 export interface RawCourse {
+    department: string; // e.g., "CMPUT"
     code: string; // e.g., "CMPUT 174"
     title: string;
     units: {
@@ -62,6 +66,7 @@ const CourseRequirementsSchema = new Schema<CourseRequirements>({
 }, { _id: false });
 
 const CourseSchema = new Schema<ICourse>({
+    department: { type: String, required: true },
     courseCode: { type: String, required: true, unique: true, index: true },
     title: { type: String, required: true },
     rawDescription: { type: String, required: true },
@@ -72,6 +77,7 @@ const CourseSchema = new Schema<ICourse>({
 }, { timestamps: true }); // Adds createdAt and updatedAt automatically
 
 export interface ProcessedCourseDataforDB {
+    department: string; // e.g., "CMPUT"
     courseCode: string;
     title: string;
     units?:{

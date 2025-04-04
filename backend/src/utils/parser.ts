@@ -30,23 +30,9 @@ Output Rules:
 - For requirements like "any 300-level Computing Science course", use "WILDCARD". Represent as: { "operator": "WILDCARD", "pattern": "CMPUT 3[0-9]{2}", "description": "any 300-level Computing Science course" } (Add a human-readable description).
 - If no prerequisites are found, use: { "operator": "AND", "conditions": [] }
 - If no corequisites are found, omit the 'corequisites' field or use: { "operator": "AND", "conditions": [] }
+- Flatten the prerequisites and corequisites into "flattenedPrerequisites" and "flattenedCorequisites" arrays.
 - Capture any remaining relevant text (often credit restrictions, recommendations, or notes) in the "notes" field.
-
-JSON Output Structure:
-{
-  "description": "<The main course description text>",
-  "requirements": {
-    "prerequisites": {
-      "operator": "AND | OR | STANDALONE | WILDCARD",
-      "conditions": [ /* Array of requirement objects */ ] | undefined,
-      "courses": [ /* Array of course codes */ ] | undefined,
-      "pattern": "<Regex pattern>" | undefined,
-      "description": "<Human readable wildcard desc>" | undefined
-    },
-    "corequisites": { /* Same structure as prerequisites */ } | undefined,
-    "notes": "<Extracted notes text>" | undefined
-  }
-}
+- The output should be a valid JSON object. If the JSON is malformed, return null.
 
 Example 1:
 Input:
@@ -70,24 +56,46 @@ Output:
             { "operator": "OR", "courses": ["MATH 102", "MATH 125", "MATH 127"] },
             { "operator": "OR", "courses": ["STAT 151", "STAT 161", "STAT 181", "STAT 235", "STAT 265", "SCI 151", "MATH 181"] }
           ]
-        }
+        },
+        "flattenedPrerequisites": ["CMPUT 174", "CMPUT 274", "MATH 100", "MATH 114", "MATH 117", "MATH 134", "MATH 144", "MATH 154"],
+        "flattenedCorequisites": ["CMPUT 175", "CMPUT 275", "CMPUT 272", "MATH 102", "MATH 125", "MATH 127", "STAT 151", "STAT 161", "STAT 181", "STAT 235", "STAT 265", "SCI 151", "MATH 181"],
+        "notes": ""
       }
     }
 
 Example 2:
 Input:
-    CMPUT 174 and 175 use a problem-driven approach to introduce the fundamental ideas of Computing Science. Emphasis is on the underlying process behind the solution, independent of programming language or style. Basic notions of state, control flow, data structures, recursion, modularization, and testing are introduced through solving simple problems in a variety of domains such as text analysis, map navigation, game search, simulation, and cryptography. Students learn to program by reading and modifying existing programs as well as writing new ones. No prior programming experience is necessary. Prerequisite: Math 30, 30-1, or 30-2. See Note (1) above. Credit cannot be obtained for CMPUT 174 if credit has already been obtained for CMPUT 274, 275, or ENCMP 100, except with permission of the Department.
+    This course focuses on ethics issues in Artificial Intelligence (AI) and Data Science (DS). The main themes are privacy, fairness/bias, and explainability in DS. The objectives are to learn how to identify and measure these aspects in outputs of algorithms, and how to build algorithms that correct for these issues. The course will follow a case-studies based approach, where we will examine these aspects by considering real-world case studies for each of these ethics issues. The concepts will be introduced through a humanities perspective by using case studies with an emphasis on a technical treatment including implementation work. Prerequisite: one of CMPUT 191 or 195, or one of CMPUT 174 or 274 and one of STAT 151, 161, 181, 235, 265, SCI 151, MATH 181, or CMPUT 267.
 Output:
     {
-      "description": "CMPUT 174 and 175 use a problem-driven approach to introduce the fundamental ideas of Computing Science. Emphasis is on the underlying process behind the solution, independent of programming language or style. Basic notions of state, control flow, data structures, recursion, modularization, and testing are introduced through solving simple problems in a variety of domains such as text analysis, map navigation, game search, simulation, and cryptography. Students learn to program by reading and modifying existing programs as well as writing new ones. No prior programming experience is necessary.",
+      "description": "This course focuses on ethics issues in Artificial Intelligence (AI) and Data Science (DS). The main themes are privacy, fairness/bias, and explainability in DS. The objectives are to learn how to identify and measure these aspects in outputs of algorithms, and how to build algorithms that correct for these issues. The course will follow a case-studies based approach, where we will examine these aspects by considering real-world case studies for each of these ethics issues. The concepts will be introduced through a humanities perspective by using case studies with an emphasis on a technical treatment including implementation work.",
       "requirements": {
         "prerequisites": {
           "operator": "OR",
-          "courses": ["MATH 30", "MATH 30-1", "MATH 30-2"]
+          "conditions": [
+          { 
+            "operator": "OR", 
+            "courses": ["CMPUT 191", "CMPUT 195"] 
+          },
+          { 
+            "operator": "AND",
+            "conditions": [
+            { "operator": "OR", "courses": ["CMPUT 174", "CMPUT 274"] },
+            { "operator": "OR", "courses": ["STAT 151", "STAT 161", "STAT 181", "STAT 235", "STAT 265", "SCI 151", "MATH 181", "CMPUT 267"] }
+            ] 
+          }
+          ]
         },
-        "notes": "See Note (1) above. Credit cannot be obtained for CMPUT 174 if credit has already been obtained for CMPUT 274, 275, or ENCMP 100, except with permission of the Department."
+        "corequisites": {
+          "operator": "AND",
+          "conditions": []
+        },
+        flattenedPrerequisites: ["CMPUT 191", "CMPUT 195", "CMPUT 174", "CMPUT 274", "STAT 151", "STAT 161", "STAT 181", "STAT 235", "STAT 265", "SCI 151", "MATH 181", "CMPUT 267"],
+        flattenedCorequisites: [],
+        "notes": "" 
       }
     }
+          
 
 Example 3 (Wildcard):
 Input:
@@ -107,6 +115,8 @@ Output:
                 "operator": "STANDALONE",
                 "courses": ["CMPUT 401"]
             },
+            flattenedPrerequisites: ["CMPUT 391", "CMPUT 3[0-9]{2}"],
+            flattenedCorequisites: ["CMPUT 401"],
             "notes": "Consult the Department for the specific topics offered in a given term."
         }
     }
@@ -115,10 +125,9 @@ Here is the input description:
 `;
 
 // Define a type for the expected output structure (matches the prompt)
-// You might want to make this more specific with nested types if needed
 export interface ParsedCourseData {
   description: string;
-  requirements: CourseRequirements; // Use the type from your Mongoose model or define here
+  requirements: CourseRequirements; 
 }
 
 /**
@@ -133,7 +142,7 @@ export async function parseCourseDescription(
     const openai = new OpenAI({
       apiKey: process.env.OPENAI_API_KEY!});
     const response = await openai.chat.completions.create({
-      model: 'gpt-4o-mini', // Or 'gpt-4o' if mini struggles
+      model: 'gpt-4o-mini', // Use 'gpt-4o' if mini struggles
       messages: [{ role: 'user', content: prompt }, {role: 'system', content: 'You are a helpful assistant that extracts structured course information from university course catalog descriptions.'}],
       temperature: 0, // For deterministic results
       response_format: { type: 'json_object' }, // Enforce JSON output
@@ -149,10 +158,9 @@ export async function parseCourseDescription(
     // Safely parse the JSON output
     const parsedData = JSON.parse(content) as ParsedCourseData;
 
-    // Basic validation (optional but recommended)
+    
     if (!parsedData.description || !parsedData.requirements) {
         console.error('Parsed data is missing required fields (description or requirements).', parsedData);
-        // You could attempt to salvage parts or just return null
         return null;
     }
 
@@ -186,6 +194,7 @@ export async function processRawCourseData(
       return null;
     }
     const processedData: ProcessedCourseDataforDB = {
+      department: rawCourse.department,
       courseCode: rawCourse.code,
       title: rawCourse.title,
       units: rawCourse.units,

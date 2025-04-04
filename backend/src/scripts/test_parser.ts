@@ -11,7 +11,7 @@ import courses from '../../courses.json'; // Adjust path as needed
 import { parseCourseDescription, ParsedCourseData, processRawCourseData } from '../utils/parser'; // Adjust path as needed
 import { ProcessedCourseDataforDB, RawCourse } from '../models/course';
 // --- Test Cases ---
-
+dotenv.config({ path: path.resolve(__dirname, '../../.env.local') });
 
 // Make a new JSON file with the output of the OpenAI API
 
@@ -24,7 +24,8 @@ interface TestCase {
 
 
 const numCourses = courses.length;
-const courseToTest = courses.slice(0, 25);
+// Already have the first 30 courses in the courses.json file
+const courseToTest = courses.slice(0,10); // <-- Start from 30
 
 console.log(`Running tests on ${courseToTest.length} courses out of ${numCourses} total courses.`);
 
@@ -42,6 +43,7 @@ async function runTest() {
     
     
     try {
+        const listofParsedData = [];
         for (let i = 0; i < courseToTest.length; i++) {
             const testCase = courseToTest[i];
             console.log(`--- Running Test Case ${i + 1}: ${testCase.code} ---`);
@@ -49,13 +51,21 @@ async function runTest() {
 
             console.log("Passing description to OpenAI API...");
             const parsedData = await processRawCourseData(testCase);
-            fs.writeFileSync('parsed.json', JSON.stringify(parsedData, null, 2));
             console.log(`Scraped ${courses.length} courses`);
-            console.log("Parsed data:", parsedData);
+
+            console.log("Parsed data:", JSON.stringify(parsedData, null, 2));
+            console.log("Writing parsed data to listofParsedData...");
+            listofParsedData.push(parsedData);
 
         }
         console.log("All test cases processed successfully.");
         passCount++;
+        // Write the parsed data to a JSON file
+        const outputFilePath = path.join(__dirname, '../../parsed_courses.json');
+        console.log(`Writing parsed data to ${outputFilePath}...`);
+        fs.writeFileSync(outputFilePath, JSON.stringify(listofParsedData, null, 2));
+
+    
     }
     catch (error) {
         console.error("Error during OpenAI call:", error);

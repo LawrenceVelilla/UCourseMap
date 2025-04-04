@@ -8,6 +8,15 @@ import * as dotenv from 'dotenv';
 
 dotenv.config({ path: path.resolve(__dirname, '../../.env.local') });
 
+// TODO:
+// 1. Add caching to avoid repeated API calls for the same course.
+// 2. Implement a retry mechanism for API calls.
+// 3. Add more robust error handling and logging.
+// 4. Consider using a queue system for processing large batches of courses.
+// 5. Implement a rate limiter to avoid hitting API limits.
+// 6. Add unit tests for the parsing logic.
+// 7. Consider using a more structured approach for the OpenAI API calls, such as a wrapper class.
+// 8. Add a fallback mechanism in case OpenAI API is down or slow.
 
 
 

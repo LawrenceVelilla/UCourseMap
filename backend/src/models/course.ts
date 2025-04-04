@@ -1,6 +1,10 @@
 // --- START OF FILE models/course.ts ---
 import mongoose, { Schema, Document } from 'mongoose';
 
+
+// Clean this up, some duplicates
+
+
 // Define interfaces for the nested requirement structures
 // This provides better type safety than mongoose.Schema.Types.Mixed
 interface RequirementCondition {
@@ -94,7 +98,25 @@ export interface ProcessedCourseDataforDB {
     url?: string;
 }
 
-// Avoid redefining the model if it's already compiled (useful for Next.js hot reloading)
-export default mongoose.models.Course || mongoose.model<ICourse>('Course', CourseSchema);
+const DBSchema = new Schema<ProcessedCourseDataforDB>({
+    department: { type: String, required: true },
+    courseCode: { type: String, required: true, unique: true, index: true },
+    title: { type: String, required: true },
+    units: {
+        credits: { type: Number },
+        feeIndex: { type: Number },
+        term: { type: String }
+    },
+    term: { type: String },
+    rawDescription: { type: String, required: true },
+    parsedDescription: { type: String },
+    parsingStatus: { type: String, enum: ['pending', 'success', 'failed'], default: 'pending' },
+    lastParsedAt: { type: Date },
+    requirements: CourseRequirementsSchema,
+    url: { type: String }
+}, { timestamps: true }); // Adds createdAt and updatedAt automatically
+// Create the model
+export default mongoose.models.ProcessedCourseDataforDB || mongoose.model<ProcessedCourseDataforDB>('ProcessedCourseDataforDB', DBSchema);
+
 
 // --- END OF FILE models/course.ts ---

@@ -1,0 +1,457 @@
+[
+  {
+    "department": "CMPUT",
+    "courseCode": "CMPUT 101",
+    "title": "Introduction to Computing",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "rawDescription": "An introduction to fundamental concepts in computation, including state, abstraction, generalization, and representation. Introduction to algorithms, logic, number systems, circuits, and other topics in elementary computing science. This course cannot be taken for credit if credit has been obtained in CMPUT 114, 174, 175, 274, 275, or SCI 100, or ENCMP 100. See Note (1) above.",
+    "parsedDescription": "An introduction to fundamental concepts in computation, including state, abstraction, generalization, and representation. Introduction to algorithms, logic, number systems, circuits, and other topics in elementary computing science.",
+    "parsingStatus": "success",
+    "lastParsedAt": "2025-04-04T05:26:42.614Z",
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "flattenedPrerequisites": [],
+      "flattenedCorequisites": [],
+      "notes": "This course cannot be taken for credit if credit has been obtained in CMPUT 114, 174, 175, 274, 275, or SCI 100, or ENCMP 100."
+    },
+    "url": "/catalogue/course/cmput/101"
+  },
+  {
+    "department": "CMPUT",
+    "courseCode": "CMPUT 174",
+    "title": "Introduction to the Foundations of Computation I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "rawDescription": "CMPUT 174 and 175 use a problem-driven approach to introduce the fundamental ideas of Computing Science. Emphasis is on the underlying process behind the solution, independent of programming language or style. Basic notions of state, control flow, data structures, recursion, modularization, and testing are introduced through solving simple problems in a variety of domains such as text analysis, map navigation, game search, simulation, and cryptography. Students learn to program by reading and modifying existing programs as well as writing new ones. No prior programming experience is necessary. Prerequisite: Math 30, 30-1, or 30-2. See Note (1) above. Credit cannot be obtained for CMPUT 174 if credit has already been obtained for CMPUT 274, 275, or ENCMP 100, except with permission of the Department.",
+    "parsedDescription": "CMPUT 174 and 175 use a problem-driven approach to introduce the fundamental ideas of Computing Science. Emphasis is on the underlying process behind the solution, independent of programming language or style. Basic notions of state, control flow, data structures, recursion, modularization, and testing are introduced through solving simple problems in a variety of domains such as text analysis, map navigation, game search, simulation, and cryptography. Students learn to program by reading and modifying existing programs as well as writing new ones. No prior programming experience is necessary.",
+    "parsingStatus": "success",
+    "lastParsedAt": "2025-04-04T05:26:48.720Z",
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "Math 30"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "Math 30-1"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "Math 30-2"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "flattenedPrerequisites": [
+        "Math 30",
+        "Math 30-1",
+        "Math 30-2"
+      ],
+      "flattenedCorequisites": [],
+      "notes": "Credit cannot be obtained for CMPUT 174 if credit has already been obtained for CMPUT 274, 275, or ENCMP 100, except with permission of the Department."
+    },
+    "url": "/catalogue/course/cmput/174"
+  },
+  {
+    "department": "CMPUT",
+    "courseCode": "CMPUT 174",
+    "title": "A - Introduction to the Foundations of Computation I",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "VAR, 3-0-3"
+    },
+    "rawDescription": "CMPUT 174 and 175 use a problem-driven approach to introduce the fundamental ideas of Computing Science. Emphasis is on the underlying process behind the solution, independent of programming language or style. Basic notions of state, control flow, data structures, recursion, modularization, and testing are introduced through solving simple problems in a variety of domains such as text analysis, map navigation, game search, simulation, and cryptography. Students learn to program by reading and modifying existing programs as well as writing new ones. No prior programming experience is necessary. Prerequisite: Math 30, 30-1, or 30-2. See Note (1) above. Credit cannot be obtained for CMPUT 174 if credit has already been obtained for CMPUT 274, 275, or ENCMP 100, except with permission of the Department.",
+    "parsedDescription": "CMPUT 174 and 175 use a problem-driven approach to introduce the fundamental ideas of Computing Science. Emphasis is on the underlying process behind the solution, independent of programming language or style. Basic notions of state, control flow, data structures, recursion, modularization, and testing are introduced through solving simple problems in a variety of domains such as text analysis, map navigation, game search, simulation, and cryptography. Students learn to program by reading and modifying existing programs as well as writing new ones. No prior programming experience is necessary.",
+    "parsingStatus": "success",
+    "lastParsedAt": "2025-04-04T05:26:53.164Z",
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "Math 30"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "30-1"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "30-2"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "flattenedPrerequisites": [
+        "Math 30",
+        "30-1",
+        "30-2"
+      ],
+      "flattenedCorequisites": [],
+      "notes": "Credit cannot be obtained for CMPUT 174 if credit has already been obtained for CMPUT 274, 275, or ENCMP 100, except with permission of the Department."
+    },
+    "url": "/catalogue/course/cmput/174a"
+  },
+  {
+    "department": "CMPUT",
+    "courseCode": "CMPUT 174",
+    "title": "B - Introduction to the Foundations of Computation I",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "VAR, 3-0-0"
+    },
+    "rawDescription": "CMPUT 174 and 175 use a problem-driven approach to introduce the fundamental ideas of Computing Science. Emphasis is on the underlying process behind the solution, independent of programming language or style. Basic notions of state, control flow, data structures, recursion, modularization, and testing are introduced through solving simple problems in a variety of domains such as text analysis, map navigation, game search, simulation, and cryptography. Students learn to program by reading and modifying existing programs as well as writing new ones. No prior programming experience is necessary. Prerequisite: Math 30, 30-1, or 30-2. See Note (1) above. Credit cannot be obtained for CMPUT 174 if credit has already been obtained for CMPUT 274, 275, or ENCMP 100, except with permission of the Department.",
+    "parsedDescription": "CMPUT 174 and 175 use a problem-driven approach to introduce the fundamental ideas of Computing Science. Emphasis is on the underlying process behind the solution, independent of programming language or style. Basic notions of state, control flow, data structures, recursion, modularization, and testing are introduced through solving simple problems in a variety of domains such as text analysis, map navigation, game search, simulation, and cryptography. Students learn to program by reading and modifying existing programs as well as writing new ones. No prior programming experience is necessary.",
+    "parsingStatus": "success",
+    "lastParsedAt": "2025-04-04T05:26:56.715Z",
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "Math 30",
+          "Math 30-1",
+          "Math 30-2"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "flattenedPrerequisites": [
+        "Math 30",
+        "Math 30-1",
+        "Math 30-2"
+      ],
+      "flattenedCorequisites": [],
+      "notes": "Credit cannot be obtained for CMPUT 174 if credit has already been obtained for CMPUT 274, 275, or ENCMP 100, except with permission of the Department."
+    },
+    "url": "/catalogue/course/cmput/174b"
+  },
+  {
+    "department": "CMPUT",
+    "courseCode": "CMPUT 175",
+    "title": "Introduction to the Foundations of Computation II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "rawDescription": "A continuation of CMPUT 174, revisiting topics of greater depth and complexity. More sophisticated notions such as objects, functional programming, and Abstract Data Types are explored. Various algorithms, including popular searching and sorting algorithms, are studied and compared in terms of time and space efficiency. Upon completion of this two course sequence, students from any discipline should be able to build programs to solve basic problems in their area, and will be prepared to take more advanced Computing Science courses. Prerequisite: CMPUT 174 or SCI 100. Credit cannot be obtained for CMPUT 175 if one already has credit for CMPUT 275, except with permission of the Department.",
+    "parsedDescription": "A continuation of CMPUT 174, revisiting topics of greater depth and complexity. More sophisticated notions such as objects, functional programming, and Abstract Data Types are explored. Various algorithms, including popular searching and sorting algorithms, are studied and compared in terms of time and space efficiency. Upon completion of this two course sequence, students from any discipline should be able to build programs to solve basic problems in their area, and will be prepared to take more advanced Computing Science courses.",
+    "parsingStatus": "success",
+    "lastParsedAt": "2025-04-04T05:27:00.302Z",
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "CMPUT 174"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "SCI 100"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "flattenedPrerequisites": [
+        "CMPUT 174",
+        "SCI 100"
+      ],
+      "flattenedCorequisites": [],
+      "notes": "Credit cannot be obtained for CMPUT 175 if one already has credit for CMPUT 275, except with permission of the Department."
+    },
+    "url": "/catalogue/course/cmput/175"
+  },
+  {
+    "department": "CMPUT",
+    "courseCode": "CMPUT 191",
+    "title": "Introduction to Data Science",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "rawDescription": "Introduction to data acquisition, basic data manipulation (cleaning, outlier detection), analysis (regression, clustering, classification), basic statistics and machine learning tools, information visualization to communicate information from data. Prerequisite: Math 30-1. This course cannot be taken for credit if credit has been obtained in CMPUT 174, 175, 195, 274, 275, or ENCMP 100.",
+    "parsedDescription": "Introduction to data acquisition, basic data manipulation (cleaning, outlier detection), analysis (regression, clustering, classification), basic statistics and machine learning tools, information visualization to communicate information from data.",
+    "parsingStatus": "success",
+    "lastParsedAt": "2025-04-04T05:27:02.959Z",
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "Math 30-1"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "flattenedPrerequisites": [
+        "Math 30-1"
+      ],
+      "flattenedCorequisites": [],
+      "notes": "This course cannot be taken for credit if credit has been obtained in CMPUT 174, 175, 195, 274, 275, or ENCMP 100."
+    },
+    "url": "/catalogue/course/cmput/191"
+  },
+  {
+    "department": "CMPUT",
+    "courseCode": "CMPUT 195",
+    "title": "Introduction to Principles and Techniques of Data Science",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "rawDescription": "This course introduces data science to students with prior computing experience. It covers the basics of data acquisition, manipulation, transformation, and cleaning, as well as data analysis (e.g., regression, clustering, classification) and visualization. Students learn principles and techniques of efficient data-driven communication and decision-making in various domains using industry-standard tools. Credit cannot be obtained for both CMPUT 191 and CMPUT 195. Prerequisite: CMPUT 174 or 274.",
+    "parsedDescription": "This course introduces data science to students with prior computing experience. It covers the basics of data acquisition, manipulation, transformation, and cleaning, as well as data analysis (e.g., regression, clustering, classification) and visualization. Students learn principles and techniques of efficient data-driven communication and decision-making in various domains using industry-standard tools.",
+    "parsingStatus": "success",
+    "lastParsedAt": "2025-04-04T05:27:07.246Z",
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "CMPUT 174"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "CMPUT 274"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "flattenedPrerequisites": [
+        "CMPUT 174",
+        "CMPUT 274"
+      ],
+      "flattenedCorequisites": [],
+      "notes": "Credit cannot be obtained for both CMPUT 191 and CMPUT 195."
+    },
+    "url": "/catalogue/course/cmput/195"
+  },
+  {
+    "department": "CMPUT",
+    "courseCode": "CMPUT 200",
+    "title": "Ethics of Data Science and Artificial Intelligence",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "rawDescription": "This course focuses on ethics issues in Artificial Intelligence (AI) and Data Science (DS). The main themes are privacy, fairness/bias, and explainability in DS. The objectives are to learn how to identify and measure these aspects in outputs of algorithms, and how to build algorithms that correct for these issues. The course will follow a case-studies based approach, where we will examine these aspects by considering real-world case studies for each of these ethics issues. The concepts will be introduced through a humanities perspective by using case studies with an emphasis on a technical treatment including implementation work. Prerequisite: one of CMPUT 191 or 195, or one of CMPUT 174 or 274 and one of STAT 151, 161, 181, 235, 265, SCI 151, MATH 181, or CMPUT 267.",
+    "parsedDescription": "This course focuses on ethics issues in Artificial Intelligence (AI) and Data Science (DS). The main themes are privacy, fairness/bias, and explainability in DS. The objectives are to learn how to identify and measure these aspects in outputs of algorithms, and how to build algorithms that correct for these issues. The course will follow a case-studies based approach, where we will examine these aspects by considering real-world case studies for each of these ethics issues. The concepts will be introduced through a humanities perspective by using case studies with an emphasis on a technical treatment including implementation work.",
+    "parsingStatus": "success",
+    "lastParsedAt": "2025-04-04T05:27:12.805Z",
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "CMPUT 191",
+              "CMPUT 195"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "OR",
+                "courses": [
+                  "CMPUT 174",
+                  "CMPUT 274"
+                ]
+              },
+              {
+                "operator": "OR",
+                "courses": [
+                  "STAT 151",
+                  "STAT 161",
+                  "STAT 181",
+                  "STAT 235",
+                  "STAT 265",
+                  "SCI 151",
+                  "MATH 181",
+                  "CMPUT 267"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "flattenedPrerequisites": [
+        "CMPUT 191",
+        "CMPUT 195",
+        "CMPUT 174",
+        "CMPUT 274",
+        "STAT 151",
+        "STAT 161",
+        "STAT 181",
+        "STAT 235",
+        "STAT 265",
+        "SCI 151",
+        "MATH 181",
+        "CMPUT 267"
+      ],
+      "flattenedCorequisites": [],
+      "notes": ""
+    },
+    "url": "/catalogue/course/cmput/200"
+  },
+  {
+    "department": "CMPUT",
+    "courseCode": "CMPUT 201",
+    "title": "Practical Programming Methodology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "rawDescription": "Introduction to the principles, methods, tools, and practices of the professional programmer. The lectures focus on the fundamental principles of software engineering based on abstract data types and their implementations. The laboratories offer an intensive apprenticeship to the aspiring software developer. Students use C and software development tools of the Unix environment. Prerequisite: CMPUT 175. Credit cannot be obtained for CMPUT 201 if credit has been obtained for CMPUT 275, except with permission of the Department.",
+    "parsedDescription": "Introduction to the principles, methods, tools, and practices of the professional programmer. The lectures focus on the fundamental principles of software engineering based on abstract data types and their implementations. The laboratories offer an intensive apprenticeship to the aspiring software developer. Students use C and software development tools of the Unix environment.",
+    "parsingStatus": "success",
+    "lastParsedAt": "2025-04-04T05:27:17.382Z",
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "CMPUT 175"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "flattenedPrerequisites": [
+        "CMPUT 175"
+      ],
+      "flattenedCorequisites": [],
+      "notes": "Credit cannot be obtained for CMPUT 201 if credit has been obtained for CMPUT 275, except with permission of the Department."
+    },
+    "url": "/catalogue/course/cmput/201"
+  },
+  {
+    "department": "CMPUT",
+    "courseCode": "CMPUT 204",
+    "title": "Algorithms I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-1S-0"
+    },
+    "rawDescription": "The first of two courses on algorithm design and analysis, with emphasis on fundamentals of searching, sorting, and graph algorithms. Examples include divide and conquer, dynamic programming, greedy methods, backtracking, and local search methods, together with analysis techniques to estimate program efficiency. Prerequisites: CMPUT 175 or 275, and CMPUT 272; and one of MATH 100, 114, 117, 134, 144, or 154.",
+    "parsedDescription": "The first of two courses on algorithm design and analysis, with emphasis on fundamentals of searching, sorting, and graph algorithms. Examples include divide and conquer, dynamic programming, greedy methods, backtracking, and local search methods, together with analysis techniques to estimate program efficiency.",
+    "parsingStatus": "success",
+    "lastParsedAt": "2025-04-04T05:27:23.299Z",
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "CMPUT 175",
+              "CMPUT 275"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "CMPUT 272"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "MATH 100",
+              "MATH 114",
+              "MATH 117",
+              "MATH 134",
+              "MATH 144",
+              "MATH 154"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "flattenedPrerequisites": [
+        "CMPUT 175",
+        "CMPUT 275",
+        "CMPUT 272",
+        "MATH 100",
+        "MATH 114",
+        "MATH 117",
+        "MATH 134",
+        "MATH 144",
+        "MATH 154"
+      ],
+      "flattenedCorequisites": [],
+      "notes": ""
+    },
+    "url": "/catalogue/course/cmput/204"
+  }
+]

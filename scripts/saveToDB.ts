@@ -21,7 +21,7 @@ interface CourseJsonData {
 
 const prisma = new PrismaClient();
 const jsonFilePath = path.resolve(__dirname, '../parsed_courses.json');
-const BATCH_SIZE = 50;
+const BATCH_SIZE = 37;
 
 async function main() {
   console.log(`Reading course data from: ${jsonFilePath}`);
@@ -88,10 +88,7 @@ async function main() {
           courseCode: course.courseCode?.trim() || 'UNKNOWN',
           title: course.title?.trim() || 'Untitled Course',
           units: course.units ?? Prisma.JsonNull,
-          rawDescription: course.rawDescription ?? null,
           parsedDescription: course.parsedDescription ?? null,
-          parsingStatus: course.parsingStatus ?? null,
-          lastParsedAt: parsedDate, // Use the validated date object or null
           requirements: course.requirements ?? Prisma.JsonNull,
           flattenedPrerequisites: course.flattenedPrerequisites ?? [],
           flattenedCorequisites: course.flattenedCorequisites ?? [],
@@ -107,9 +104,7 @@ async function main() {
           },
           update: {
              ...processedData,
-             // Ensure lastParsedAt is updated correctly even if it didn't change
-             lastParsedAt: processedData.lastParsedAt,
-             updatedAt: new Date(), // Trigger update timestamp
+             updatedAt: new Date(),
           },
           create: processedData,
         });

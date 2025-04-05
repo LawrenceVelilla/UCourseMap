@@ -7,7 +7,7 @@ import fs from 'fs'; // For file system operations
 
 // Load environment variables from .env.local at the project root
 // Adjust path if needed
-import courses from '../courses.json'; // Adjust path as needed
+import courses from '../parsed_courses.json'; // Adjust path as needed
 import { parseCourseDescription, ParsedCourseData, processRawCourseData } from '../utils/parser'; // Adjust path as needed
 import { Course, RawCourse } from '../lib/types'; // Adjust path as needed
 // --- Test Cases ---
@@ -28,60 +28,62 @@ const numCourses = courses.length;
 const courseToTest = courses.slice(10,numCourses+1); // <-- Start from 30
 
 console.log(`Running tests on ${courseToTest.length} courses out of ${numCourses} total courses.`);
-console.log("Course data:", JSON.stringify(courseToTest, null, 2));
 
 
-const descriptions: string[] = courseToTest.map((dict) => dict.description);
+console.log("The error is between the 98th and 100th course. Printing the 98th, 99th, and 100th course for debugging.");
 
+console.log("98th course:", JSON.stringify(courseToTest[98], null, 2));
+console.log("\n99th course:", JSON.stringify(courseToTest[99], null, 2));
+console.log("\n100th course:", JSON.stringify(courseToTest[100], null, 2));
 
-async function runTest() {
-    console.log("Starting Parser Accuracy Tests...\n");
-    if (!process.env.OPENAI_API_KEY) {
-        console.error("ERROR: OPENAI_API_KEY environment variable not set.");
-        process.exit(1);
-    }
-    let passCount = 0;
-    let failCount = 0;
+// async function runTest() {
+//     console.log("Starting Parser Accuracy Tests...\n");
+//     if (!process.env.OPENAI_API_KEY) {
+//         console.error("ERROR: OPENAI_API_KEY environment variable not set.");
+//         process.exit(1);
+//     }
+//     let passCount = 0;
+//     let failCount = 0;
     
     
-    try {
-        const listofParsedData = [];
-        for (let i = 0; i < courseToTest.length; i++) {
-            const testCase = courseToTest[i];
-            console.log(`--- Running Test Case ${i + 1}: ${testCase.courseCode} ---`);
-            console.log("Raw data:", testCase);
+//     try {
+//         const listofParsedData = [];
+//         for (let i = 0; i < courseToTest.length; i++) {
+//             const testCase = courseToTest[i];
+//             console.log(`--- Running Test Case ${i + 1}: ${testCase.courseCode} ---`);
+//             console.log("Raw data:", testCase);
 
-            console.log("Passing description to OpenAI API...");
-            const parsedData = await processRawCourseData(testCase);
-            console.log(`Scraped ${courses.length} courses`);
+//             console.log("Passing description to OpenAI API...");
+//             const parsedData = await processRawCourseData(testCase);
+//             console.log(`Scraped ${courses.length} courses`);
 
-            console.log("Parsed data:", JSON.stringify(parsedData, null, 2));
-            console.log("Writing parsed data to listofParsedData...");
-            listofParsedData.push(parsedData);
+//             console.log("Parsed data:", JSON.stringify(parsedData, null, 2));
+//             console.log("Writing parsed data to listofParsedData...");
+//             listofParsedData.push(parsedData);
 
-        }
-        console.log("All test cases processed successfully.");
-        passCount++;
-        // Write the parsed data to a JSON file
-        const outputFilePath = path.join(__dirname, '../parsed_courses.json');
-        console.log(`Writing parsed data to ${outputFilePath}...`);
-        fs.writeFileSync(outputFilePath, JSON.stringify(listofParsedData, null, 2));
+//         }
+//         console.log("All test cases processed successfully.");
+//         passCount++;
+//         // Write the parsed data to a JSON file
+//         const outputFilePath = path.join(__dirname, '../parsed_courses.json');
+//         console.log(`Writing parsed data to ${outputFilePath}...`);
+//         fs.writeFileSync(outputFilePath, JSON.stringify(listofParsedData, null, 2));
 
     
-    }
-    catch (error) {
-        console.error("Error during OpenAI call:", error);
-        failCount++;
-    }
+//     }
+//     catch (error) {
+//         console.error("Error during OpenAI call:", error);
+//         failCount++;
+//     }
 
-    console.log("--- Test Summary ---");
-    console.log(`Total Tests: ${courseToTest.length}`);
-    console.log(`✅ Passed: ${passCount}`);
-    console.log(`❌ Failed: ${failCount}`);
-    console.log("--------------------");
-}
+//     console.log("--- Test Summary ---");
+//     console.log(`Total Tests: ${courseToTest.length}`);
+//     console.log(`✅ Passed: ${passCount}`);
+//     console.log(`❌ Failed: ${failCount}`);
+//     console.log("--------------------");
+// }
 
-runTest();
+// runTest();
 
 
 // async function runTests() {

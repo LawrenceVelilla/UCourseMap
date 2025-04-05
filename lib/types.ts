@@ -10,15 +10,11 @@ export interface Course {
       feeIndex?: number;
       term?: string;
     } | null;
-    rawDescription: string | null;
     parsedDescription: string | null;
-    parsingStatus: string | null;
-    lastParsedAt: Date | null; // ISO String date
     requirements: RequirementsData | null;
     flattenedPrerequisites: string[] | null;
     flattenedCorequisites: string[] | null;
     url: string | null;
-    createdAt: string; // ISO String date
     updatedAt: string; // ISO String date
   }
 export interface RawCourse {

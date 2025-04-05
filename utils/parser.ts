@@ -132,7 +132,7 @@ Output:
 Here is the input description:
 `;
 
-// Define a type for the expected output structure (matches the prompt)
+
 export interface ParsedCourseData {
   description: string;
   requirements: RequirementsData
@@ -152,10 +152,10 @@ export async function parseCourseDescription(
     const openai = new OpenAI({
       apiKey: process.env.OPENAI_API_KEY!});
     const response = await openai.chat.completions.create({
-      model: 'gpt-4o-mini', // Use 'gpt-4o' if mini struggles
+      model: 'gpt-4o-mini',
       messages: [{ role: 'user', content: prompt }, {role: 'system', content: 'You are a helpful assistant that extracts structured course information from university course catalog descriptions.'}],
-      temperature: 0, // For deterministic results
-      response_format: { type: 'json_object' }, // Enforce JSON output
+      temperature: 0, // No creativity needed
+      response_format: { type: 'json_object' }
     });
 
     const content = response.choices[0]?.message?.content;

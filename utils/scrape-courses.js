@@ -25,8 +25,17 @@ function parseCoursesHTML(html) {
     
     // Parse course code and title
     const codeTitleMatch = headerText.match(/^([A-Z]+\s\d+)\s*[-–—]?\s*(.*)/);
-    const courseCode = codeTitleMatch ? codeTitleMatch[1] : '';
-    const title = codeTitleMatch ? codeTitleMatch[2] : headerText;
+    let courseCode = codeTitleMatch ? codeTitleMatch[1] : '';
+    let title = codeTitleMatch ? codeTitleMatch[2] : headerText;
+
+   const sectionMatch = title.match(/^([A-Z])\s*-\s*(.*)/);
+   if (sectionMatch) {
+     // Add the section to the course code (no space between number and section)
+     courseCode = courseCode + sectionMatch[1];
+     // Clean up the title by removing the section prefix
+     title = sectionMatch[2].trim();
+   }
+
 
     // Ectract department
     const department = courseCode.split(' ')[0];

@@ -1,5 +1,6 @@
 // scripts/loadCourses.ts
 import { PrismaClient, Prisma } from '@prisma/client';
+import { PrismaPg } from '@prisma/adapter-pg';
 import * as fs from 'fs';
 import * as path from 'path';
 
@@ -28,10 +29,13 @@ async function main() {
 
   try {
     const fileContent = fs.readFileSync(jsonFilePath, 'utf-8');
+    console.log(`File: ${fileContent}`);
     if (!fileContent.trim()) {
       throw new Error("JSON file is empty or contains only whitespace.");
     }
     coursesJson = JSON.parse(fileContent);
+    console.log(`Parsed JSON data successfully.`);
+    console.log(`Data: ${JSON.stringify(coursesJson, null, 2)}`);
   } catch (error: any) {
     console.error(`Error reading or parsing JSON file: ${error.message}`);
     process.exit(1);

@@ -1,7 +1,7 @@
 // lib/types.ts (Create this file)
 
 export interface Course {
-    id: string; // Assuming UUID
+    id?: string; // Assuming UUID
     department: string;
     courseCode: string;
     title: string;
@@ -13,7 +13,7 @@ export interface Course {
     rawDescription: string | null;
     parsedDescription: string | null;
     parsingStatus: string | null;
-    lastParsedAt: string | null; // ISO String date
+    lastParsedAt: Date | null; // ISO String date
     requirements: RequirementsData | null;
     flattenedPrerequisites: string[] | null;
     flattenedCorequisites: string[] | null;
@@ -21,17 +21,30 @@ export interface Course {
     createdAt: string; // ISO String date
     updatedAt: string; // ISO String date
   }
+export interface RawCourse {
+    department: string;
+    courseCode: string;
+    title: string;
+    units: { // Be more specific if possible
+      credits?: number;
+      feeIndex?: number;
+      term?: string;
+    } | null;
+    description: string | null;
+    url: string | null;
+}
   
-  export interface RequirementsData {
-    prerequisites?: RequirementCondition;
-    corequisites?: RequirementCondition;
-    notes?: string | null;
-  }
-  
-  export interface RequirementCondition {
-    operator: 'AND' | 'OR';
-    conditions?: RequirementCondition[];
-    courses?: string[];
-  }
+export interface RequirementsData {
+prerequisites?: RequirementCondition;
+corequisites?: RequirementCondition;
+notes?: string | null;
+}
+
+export interface RequirementCondition {
+operator: 'AND' | 'OR';
+conditions?: RequirementCondition[];
+courses?: string[];
+pattern?: string; // Optional pattern for regex matching
+}
   
   // You might have other types from the template here too

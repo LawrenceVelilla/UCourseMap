@@ -16,7 +16,7 @@ datasource db {
 model Course {
   id                      String     @id @default(uuid()) @db.Uuid // Match Supabase UUID type
   department              String
-  courseCode              String
+  courseCode              String    @courseCode @
   title                   String
   units                   Json? // Use Json type for JSONB columns
   rawDescription          String?
@@ -29,6 +29,6 @@ model Course {
   url                     String?
   createdAt               DateTime   @default(now()) @db.Timestamptz
   updatedAt               DateTime   @updatedAt @db.Timestamptz 
-  @@unique([department, courseCode], name: "department_courseCode_unique")
+  @@map("courses")
 
 }

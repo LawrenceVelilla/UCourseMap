@@ -1,7 +1,7 @@
 // --- START OF FILE parser.ts ---
 
 import { OpenAI } from 'openai'; 
-import { Course, RawCourse, RequirementsData } from '../lib/types'; 
+import { Course, RawCourse, RequirementsData } from '../../lib/types'; 
 import path from 'path';
 import * as dotenv from 'dotenv';
 
@@ -236,5 +236,3 @@ export async function AIparse(
   console.log(`\nParsed ${courseCount} courses successfully.`);
   return parsedCourses;
 }
-
-// --- END OF FILE parser.ts ---

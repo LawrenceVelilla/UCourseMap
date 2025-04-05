@@ -1,11 +1,8 @@
-// lib/data.ts
-import 'server-only'; // Ensure this runs only on the server
+import 'server-only';
 import { PrismaClient } from '@prisma/client';
 import { Course } from './types'; // Import your Course type
 
 // Initialize Prisma Client instance
-// It's generally recommended to instantiate it once and reuse it
-// See Prisma docs for best practices in Next.js (potentially using a singleton pattern)
 const prisma = new PrismaClient();
 
 /**
@@ -27,7 +24,6 @@ export async function getCoursesByDepartment(departmentCode: string): Promise<Pi
         department: true,
         courseCode: true,
         title: true,
-        // Do NOT select large fields like requirements or description here
       },
       orderBy: {
         courseCode: 'asc', // Order courses naturally

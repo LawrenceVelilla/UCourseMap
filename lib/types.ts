@@ -1,5 +1,3 @@
-// lib/types.ts (Create this file)
-
 export interface Course {
     id?: string; // Assuming UUID
     department: string;
@@ -49,4 +47,4 @@ export interface ParsedCourseData {
     flattenedPrerequisites: string[];
     flattenedCorequisites: string[];
   }
-  
+

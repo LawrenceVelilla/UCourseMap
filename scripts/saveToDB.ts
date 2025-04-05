@@ -1,4 +1,3 @@
-// scripts/loadCourses.ts
 import { PrismaClient, Prisma } from '@prisma/client';
 import { PrismaPg } from '@prisma/adapter-pg';
 import * as fs from 'fs';
@@ -111,10 +110,6 @@ async function main() {
         coursesUpserted++;
       } catch (error: any) {
         console.error(`Failed to upsert course ${course.courseCode || (processedData?.courseCode) || 'UNKNOWN'}: ${error.message}`);
-        // If you want more detail on the specific failure:
-        // console.error("Course Data:", JSON.stringify(course));
-        // console.error("Processed Data:", JSON.stringify(processedData)); // Log the data object that caused the failure
-        // console.error("Error:", error);
         coursesFailed++;
       } finally {
         coursesProcessed++;

@@ -7,8 +7,8 @@ import fs from 'fs'; // For file system operations
 
 // Load environment variables from .env.local at the project root
 // Adjust path if needed
-import courses from '../data/courses.json'; 
-import { parseCourseDescription, ParsedCourseData, processRawCourseData } from '../utils/parser'; 
+import courses from '../data/cscourses.json'; 
+import { parseCourseDescription, ParsedCourseData, processRawCourseData } from '../utils/collection/parser'; 
 import { Course, RawCourse } from '../lib/types'; 
 // --- Test Cases ---
 dotenv.config({ path: path.resolve(__dirname, '../.env') });
@@ -32,6 +32,7 @@ console.log("Course data:", JSON.stringify(courseToTest, null, 2));
 
 
 const descriptions: string[] = courseToTest.map((dict: any) => dict.description);
+
 
 
 async function runTest() {

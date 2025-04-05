@@ -1,8 +1,8 @@
 import * as readline from 'readline';
 import { stdin as input, stdout as output } from 'process';
-import { processRawCourseData, AIparse } from '../utils/parser';
+import { processRawCourseData, AIparse } from '../utils/collection/parser';
 import { Course, RawCourse, ParsedCourseData } from '@/lib/types';
-import { scrapeCourses, parseCoursesHTML } from '../utils/scrape-courses'; // Adjust the import path as needed
+import { scrapeCourses, parseCoursesHTML } from '../utils/collection/scrape-courses'; // Adjust the import path as needed
 import dotenv from 'dotenv';
 import path from 'path';
 dotenv.config({ path: path.resolve(__dirname, '../.env') });
@@ -12,7 +12,7 @@ import axios from 'axios';
 const DATA_DIR = path.join(__dirname, '../data'); // Directory to save data
 
 function getDepartmentInput(): Promise<string> {
-    // Create a readline interface
+    // Input department name from user
     const rl = readline.createInterface({ input, output });
 
     return new Promise((resolve) => {
@@ -50,7 +50,7 @@ async function runDataCollection() {
         
 
         // 2. Scrape Data
-        console.log(`\n---------- Starting data collection for department: "${department} -----------\n`);
+        console.log(`\n---------- Starting data collection for department: ${department.toUpperCase()} -----------\n`);
         console.log(`Scraping data for ${department}...`);
         let url = `https://apps.ualberta.ca/catalogue/course/${department}`;
         console.log(`Scraping URL: ${url}`);
@@ -60,7 +60,7 @@ async function runDataCollection() {
              console.error(`Scraping failed or returned no data for ${department}.`);
              return;
         }
-        fs.writeFile(`${DATA_DIR}/${department}_courses.json`, JSON.stringify(scrapedData, null, 2));
+        fs.writeFile(`${DATA_DIR}/${department}courses.json`, JSON.stringify(scrapedData, null, 2));
 
         // 3. Parse Data with AI
         console.log(`Successfully scraped ${scrapedData.length} courses!`);
@@ -78,7 +78,18 @@ async function runDataCollection() {
         }
         fs.writeFile(`${DATA_DIR}/parsed_${department}courses.json`, JSON.stringify(parsedData, null, 2));
 
-        // 4. Process/Output Results
+        console.log(`Successfully parsed ${parsedData.length} courses!`);
+        console.log(`Please check the parsed_${department}courses.json file for the parsed data.\n`);
+        let confirmation2 = await getConfirmationInput("Database Insertion");
+        if (!confirmation2) {
+            console.log("Skipping Database Insertion.");
+            return;
+        }
+        // 4. Insert Data into Database
+        console.log("Starting Database Insertion...");
+
+
+        // 5. Display Results
         console.log("\n--- Data Collection Complete ---");
         console.log("Department:", department);
         console.log("Parsed Data:");

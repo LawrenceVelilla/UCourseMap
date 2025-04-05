@@ -1,8 +1,9 @@
 const cheerio = require('cheerio');
 const axios = require('axios');
 const fs = require('fs');
+import { RawCourse, Course } from '../../lib/types';
 
-async function scrapeCourses(url) {
+export async function scrapeCourses(url) {
   try {
     const response = await axios.get(url);
     return parseCoursesHTML(response.data);
@@ -12,7 +13,7 @@ async function scrapeCourses(url) {
   }
 }
 
-function parseCoursesHTML(html) {
+export async function parseCoursesHTML(html) {
   const $ = cheerio.load(html);
   const courses = [];
   
@@ -25,11 +26,20 @@ function parseCoursesHTML(html) {
     
     // Parse course code and title
     const codeTitleMatch = headerText.match(/^([A-Z]+\s\d+)\s*[-–—]?\s*(.*)/);
-    const code = codeTitleMatch ? codeTitleMatch[1] : '';
-    const title = codeTitleMatch ? codeTitleMatch[2] : headerText;
+    let courseCode = codeTitleMatch ? codeTitleMatch[1] : '';
+    let title = codeTitleMatch ? codeTitleMatch[2] : headerText;
+
+   const sectionMatch = title.match(/^([A-Z])\s*-\s*(.*)/);
+   if (sectionMatch) {
+     // Add the section to the course code (no space between number and section)
+     courseCode = courseCode + sectionMatch[1];
+     // Clean up the title by removing the section prefix
+     title = sectionMatch[2].trim();
+   }
+
 
     // Ectract department
-    const department = code.split(' ')[0];
+    const department = courseCode.split(' ')[0];
     
     // Extract units
     const unitsText = $course.find('b').text().trim();
@@ -49,7 +59,7 @@ function parseCoursesHTML(html) {
     
     courses.push({
       department,
-      code,
+      courseCode,
       title,
       units,
       description,
@@ -60,11 +70,10 @@ function parseCoursesHTML(html) {
   return courses;
 }
 
-// Usage example
-async function main() {
-  const courses = await scrapeCourses('https://apps.ualberta.ca/catalogue/course/cmput');
-  fs.writeFileSync('courses.json', JSON.stringify(courses, null, 2));
-  console.log(`Scraped ${courses.length} courses`);
-}
+// async function main() {
+//   const courses = await scrapeCourses('https://apps.ualberta.ca/catalogue/course/cmput');
+//   fs.writeFileSync('courses.json', JSON.stringify(courses, null, 2));
+//   console.log(`Scraped ${courses.length} courses`);
+// }
 
-main();
+// main();

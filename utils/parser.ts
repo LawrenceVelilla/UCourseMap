@@ -140,9 +140,7 @@ export interface ParsedCourseData {
   flattenedCorequisites: string[];
 }
 
-/**
- * Use OpenAI to parse description, prerequisites, corequisites, and notes.
- */
+
 export async function parseCourseDescription(
   rawDescription: string
 ): Promise<ParsedCourseData | null> { // Return null on failure
@@ -189,9 +187,6 @@ export async function parseCourseDescription(
 export async function processRawCourseData(
   rawCourse: RawCourse
 ): Promise<Course | null> {
-  
-  console.log(`Processing course: ${rawCourse.courseCode}`);
-
   if (!rawCourse.description) {
     console.error(`No description found for course: ${rawCourse.courseCode}`);
     return null;
@@ -209,15 +204,11 @@ export async function processRawCourseData(
       courseCode: rawCourse.courseCode,
       title: rawCourse.title,
       units: rawCourse.units,
-      rawDescription: rawCourse.description,
       parsedDescription: parsedData.description,
-      parsingStatus: 'success',
-      lastParsedAt: new Date(),
       requirements: parsedData.requirements,
       flattenedPrerequisites: parsedData.flattenedPrerequisites || [],
       flattenedCorequisites: parsedData.flattenedCorequisites || [],
       url: rawCourse.url,
-      createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
     };
     return processedData;
@@ -227,5 +218,23 @@ export async function processRawCourseData(
   }
 }
 
+export async function AIparse(
+  rawCourses: RawCourse[]
+): Promise<Course[]> {
+  const parsedCourses: Course[] = [];
+  console.log(`Parsing ${rawCourses.length} ${rawCourses[0].department} courses...`);
+  let courseCount = 0;
+  for (let i = 0; i < rawCourses.length; i++) {
+    const courseToParse: RawCourse = rawCourses[i];
+    console.log(`\nParsing course ${i + 1}: ${courseToParse.courseCode}`);
+    const parsedCourse = await processRawCourseData(courseToParse);
+    if (parsedCourse) {
+      parsedCourses.push(parsedCourse);
+    }
+    courseCount++;
+  }
+  console.log(`\nParsed ${courseCount} courses successfully.`);
+  return parsedCourses;
+}
 
 // --- END OF FILE parser.ts ---

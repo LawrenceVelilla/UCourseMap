@@ -20,7 +20,7 @@ interface CourseJsonData {
 }
 
 const prisma = new PrismaClient();
-const jsonFilePath = path.resolve(__dirname, '../parsed_courses.json');
+const jsonFilePath = path.resolve(__dirname, '../parsed_cscourses.json');
 const BATCH_SIZE = 37;
 
 async function main() {

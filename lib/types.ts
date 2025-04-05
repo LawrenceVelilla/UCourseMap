@@ -43,4 +43,10 @@ courses?: string[];
 pattern?: string; // Optional pattern for regex matching
 }
   
-  // You might have other types from the template here too
+export interface ParsedCourseData {
+    description: string;
+    requirements: RequirementsData
+    flattenedPrerequisites: string[];
+    flattenedCorequisites: string[];
+  }
+  

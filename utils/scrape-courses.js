@@ -1,8 +1,9 @@
 const cheerio = require('cheerio');
 const axios = require('axios');
 const fs = require('fs');
+import { RawCourse, Course } from '../lib/types';
 
-async function scrapeCourses(url) {
+export async function scrapeCourses(url) {
   try {
     const response = await axios.get(url);
     return parseCoursesHTML(response.data);
@@ -12,7 +13,7 @@ async function scrapeCourses(url) {
   }
 }
 
-function parseCoursesHTML(html) {
+export async function parseCoursesHTML(html) {
   const $ = cheerio.load(html);
   const courses = [];
   
@@ -69,11 +70,10 @@ function parseCoursesHTML(html) {
   return courses;
 }
 
-// Usage example
-async function main() {
-  const courses = await scrapeCourses('https://apps.ualberta.ca/catalogue/course/cmput');
-  fs.writeFileSync('courses.json', JSON.stringify(courses, null, 2));
-  console.log(`Scraped ${courses.length} courses`);
-}
+// async function main() {
+//   const courses = await scrapeCourses('https://apps.ualberta.ca/catalogue/course/cmput');
+//   fs.writeFileSync('courses.json', JSON.stringify(courses, null, 2));
+//   console.log(`Scraped ${courses.length} courses`);
+// }
 
-main();
+// main();

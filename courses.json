@@ -25,8 +25,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 174",
-    "title": "A - Introduction to the Foundations of Computation I",
+    "courseCode": "CMPUT 174A",
+    "title": "Introduction to the Foundations of Computation I",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -37,8 +37,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 174",
-    "title": "B - Introduction to the Foundations of Computation I",
+    "courseCode": "CMPUT 174B",
+    "title": "Introduction to the Foundations of Computation I",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -265,8 +265,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 296",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 296A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -277,8 +277,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 296",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 296B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -301,8 +301,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 297",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 297A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -313,8 +313,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 297",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 297B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -337,8 +337,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 298",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 298A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -349,8 +349,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 298",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 298B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -373,8 +373,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 299",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 299A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -385,8 +385,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 299",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 299B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -421,8 +421,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 301",
-    "title": "A - Introduction to Software Engineering",
+    "courseCode": "CMPUT 301A",
+    "title": "Introduction to Software Engineering",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -433,8 +433,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 301",
-    "title": "B - Introduction to Software Engineering",
+    "courseCode": "CMPUT 301B",
+    "title": "Introduction to Software Engineering",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -709,8 +709,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 396",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 396A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -721,8 +721,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 396",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 396B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -745,8 +745,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 397",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 397A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -757,8 +757,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 397",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 397B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -781,8 +781,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 398",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 398A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -793,8 +793,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 398",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 398B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -817,8 +817,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 399",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 399A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -829,8 +829,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 399",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 399B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1093,8 +1093,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 496",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 496A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1105,8 +1105,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 496",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 496B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1129,8 +1129,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 497",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 497A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1141,8 +1141,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 497",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 497B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1165,8 +1165,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 498",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 498A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1177,8 +1177,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 498",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 498B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1201,8 +1201,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 499",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 499A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1213,8 +1213,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 499",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 499B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1237,8 +1237,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 500",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 500A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1249,8 +1249,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 500",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 500B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1273,8 +1273,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 501",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 501A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1285,8 +1285,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 501",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 501B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1321,8 +1321,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 503",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 503A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1333,8 +1333,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 503",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 503B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1357,8 +1357,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 504",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 504A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1369,8 +1369,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 504",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 504B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1393,8 +1393,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 511",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 511A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1405,8 +1405,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 511",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 511B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1453,8 +1453,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 530",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 530A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1465,8 +1465,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 530",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 530B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1489,8 +1489,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 551",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 551A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1501,8 +1501,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 551",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 551B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1537,8 +1537,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 563",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 563A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1549,8 +1549,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 563",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 563B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1573,8 +1573,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 566",
-    "title": "A - Topics in Computing Science",
+    "courseCode": "CMPUT 566A",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -1585,8 +1585,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 566",
-    "title": "B - Topics in Computing Science",
+    "courseCode": "CMPUT 566B",
+    "title": "Topics in Computing Science",
     "units": {
       "credits": 5,
       "feeIndex": 6,
@@ -2197,8 +2197,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 701",
-    "title": "A - Essay in Computing Science I",
+    "courseCode": "CMPUT 701A",
+    "title": "Essay in Computing Science I",
     "units": {
       "credits": 3,
       "feeIndex": 12,
@@ -2209,8 +2209,8 @@
   },
   {
     "department": "CMPUT",
-    "courseCode": "CMPUT 701",
-    "title": "B - Essay in Computing Science I",
+    "courseCode": "CMPUT 701B",
+    "title": "Essay in Computing Science I",
     "units": {
       "credits": 3,
       "feeIndex": 12,

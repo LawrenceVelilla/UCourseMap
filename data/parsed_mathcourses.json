@@ -916,18 +916,13 @@
     "requirements": {
       "prerequisites": {
         "operator": "OR",
-        "conditions": [
-          {
-            "operator": "OR",
-            "courses": [
+        "courses": [
               "MATH 101",
               "MATH 115",
               "MATH 118",
               "MATH 136",
               "MATH 146",
-              "MATH 156"
-            ]
-          }
+              "MATH 156"                      
         ]
       },
       "corequisites": {

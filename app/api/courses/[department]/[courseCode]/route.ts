@@ -1,0 +1,37 @@
+// app/api/courses/[department]/[courseCode]/route.ts
+import { NextResponse } from 'next/server';
+import { getCourseDetails } from '@/lib/data'; // Adjust path
+
+interface Params {
+  department: string;
+  courseCode: string; // This is likely just the number part from the URL segment
+}
+
+export async function GET(
+  request: Request,
+  { params }: { params: Params }
+) {
+  const departmentCode = params.department;
+  const courseCodeNumber = params.courseCode; // Assuming URL is like /api/courses/cmput/200
+
+  if (!departmentCode || !courseCodeNumber) {
+    return NextResponse.json({ message: 'Department and Course Code are required' }, { status: 400 });
+  }
+
+  try {
+    // Call the data fetching function
+    const course = await getCourseDetails(departmentCode, courseCodeNumber);
+
+    if (!course) {
+      // Data function returned null, meaning not found
+      return NextResponse.json({ message: `Course ${departmentCode.toUpperCase()} ${courseCodeNumber} not found` }, { status: 404 });
+    }
+
+    return NextResponse.json(course);
+
+  } catch (error) {
+    // Catch unexpected errors from the data function or processing
+    console.error(`API Error fetching course ${departmentCode} ${courseCodeNumber}:`, error);
+    return NextResponse.json({ message: 'Internal Server Error' }, { status: 500 });
+  }
+}

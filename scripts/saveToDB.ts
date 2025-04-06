@@ -2,6 +2,8 @@ import { PrismaClient, Prisma } from '@prisma/client';
 import { PrismaPg } from '@prisma/adapter-pg';
 import * as fs from 'fs';
 import * as path from 'path';
+import * as readline from 'readline';
+import { stdin as input, stdout as output } from 'process';
 
 interface CourseJsonData {
   department: string;
@@ -19,13 +21,12 @@ interface CourseJsonData {
 }
 
 const prisma = new PrismaClient();
-const jsonFilePath = path.resolve(__dirname, '../parsed_cscourses.json');
-const BATCH_SIZE = 37;
 
-async function main() {
-  console.log(`Reading course data from: ${jsonFilePath}`);
+
+async function save(department: string) {
   let coursesJson: CourseJsonData[];
-
+  const jsonFilePath = path.resolve(__dirname, `../data/parsed_${department}courses.json`);
+  const BATCH_SIZE = 37;
   try {
     const fileContent = fs.readFileSync(jsonFilePath, 'utf-8');
     console.log(`File: ${fileContent}`);
@@ -128,12 +129,38 @@ async function main() {
   console.log("----------------------------------------");
 }
 
-main()
-  .catch((e) => {
-    console.error("An unexpected error occurred:", e);
-    process.exit(1);
-  })
-  .finally(async () => {
-    await prisma.$disconnect();
-    console.log("Prisma client disconnected.");
+function getDepartmentInput(): Promise<string> {
+  // Input department name from user
+  const rl = readline.createInterface({ input, output });
+
+  return new Promise((resolve) => {
+      rl.question('Please enter the department name (lowercase): ', (answer) => {
+          rl.close(); // Close the interface after getting the input
+          resolve(answer.trim()); // Resolve the promise with the trimmed answer
+      });
   });
+}
+
+ async function saveToDB() {
+  const department = await getDepartmentInput();
+  console.log(`Department entered: ${department}`);
+  if (!department) {
+    console.error("No department name entered. Exiting.");
+    return;
+  }
+  try {
+    await save(department);
+    console.log(`Data for department ${department} saved successfully.`); 
+
+  } catch (error) {
+    console.error(`Error saving data for department`);
+  }
+  await prisma.$disconnect();
+  console.log("Prisma client disconnected.");
+}
+
+// Call the main function to start the process
+(async () => {
+  await saveToDB();
+  console.log("Data saving process completed.");
+})();

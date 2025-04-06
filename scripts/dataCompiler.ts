@@ -1,8 +1,8 @@
 import * as readline from 'readline';
 import { stdin as input, stdout as output } from 'process';
-import { processRawCourseData, AIparse } from '../utils/collection/parser';
+import { AIparse } from '../utils/collection/parser';
 import { Course, RawCourse, ParsedCourseData } from '@/lib/types';
-import { scrapeCourses, parseCoursesHTML } from '../utils/collection/scrape-courses'; // Adjust the import path as needed
+import { parseCoursesHTML } from '../utils/collection/scrape-courses'; // Adjust the import path as needed
 import dotenv from 'dotenv';
 import path from 'path';
 dotenv.config({ path: path.resolve(__dirname, '../.env') });
@@ -34,9 +34,43 @@ function getConfirmationInput(nextPhase: string): Promise<boolean> {
     });
 }// Resolve the promise with true if 'yes', false otherwise
 
-/**
- * Main function to orchestrate the data collection process.
- */
+function getNum(list: any[]): Promise<number> {
+    const rl = readline.createInterface({ input, output });
+    return new Promise((resolve) => {
+        rl.question(`\nHow many courses do you want to parse?\n
+                    Options:
+                    - a  (all) (default)
+                    - h  (half)
+                    - <value>`, (answer) => {
+            rl.close(); // Close the interface after getting the input
+            const ans = parseInt(answer.trim());
+            
+            if (isNaN(ans)) {
+                if (answer.trim() === 'a') {
+                    resolve(list.length);
+                } else if (answer.trim() === 'h') {
+                    resolve(Math.floor(list.length / 2));
+                } else {
+                    console.error("Invalid input. Please enter a number or 'a' or 'h'.");
+                    resolve(0); // Default to 0 if invalid input
+                }
+            } else {
+                if (ans > list.length) {
+                    console.error("Input exceeds the number of courses available. Defaulting to all.");
+                    resolve(list.length);
+                }
+                else if (ans < 0) {
+                    console.error("Input is negative. Defaulting to all.");
+                    resolve(list.length);
+                }
+                else {
+                    resolve(ans);
+                }
+            }
+        });
+    });
+}
+
 async function runDataCollection() {
     let department: string | null = null; // Keep track of the department name
 
@@ -70,8 +104,11 @@ async function runDataCollection() {
             console.log("Skipping AI Parsing.");
             return;
         }
-        console.log("Starting AI Parsing...");
-        const parsedData = await AIparse(scrapedData);
+        let paseLimit = await getNum(scrapedData);
+        let dataToParse = scrapedData.slice(0, paseLimit);
+
+        console.log(`Starting AI Parsing for ${dataToParse.length} courses...`);
+        const parsedData: Course[] = await AIparse(dataToParse);
         if (!parsedData) {
             console.error(`AI Parsing failed or returned no data.`);
             return;

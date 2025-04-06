@@ -27,6 +27,15 @@ export interface RawCourse {
     description: string | null;
     url: string | null;
 }
+
+export function isRequirementsData(req: Prisma.JsonValue | null | undefined): req is RequirementsData {
+  if (!req || typeof req !== 'object' || Array.isArray(req)) {
+    return false;
+  }
+  // Add more checks if needed based on structure (e.g., check for operators)
+  return true; // Basic check assumes object structure if not null/array
+}
+
   
 export interface RequirementsData {
 prerequisites?: RequirementCondition;

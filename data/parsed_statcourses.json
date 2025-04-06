@@ -1,0 +1,449 @@
+[
+  {
+    "department": "STAT",
+    "courseCode": "STAT 151",
+    "title": "Introduction to Applied Statistics I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "parsedDescription": "Data collection and presentation, descriptive statistics. Probability distributions, sampling distributions and the central limit theorem. Point estimation and hypothesis testing. Correlation and regression analysis. Goodness of fit and contingency table.",
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "Mathematics 30-1",
+          "Mathematics 30-2"
+        ]
+        
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "(1) Credit can be obtained in at most one of STAT 151, STAT 161, and STAT 235. (2) This course may not be taken for credit if credit has been obtained in STAT 222, STAT 266, STAT 276, KIN 109, PEDS 109, PSYCH 211, PTHER 352, SCI 151 or SOC 210."
+    },
+    "flattenedPrerequisites": [
+      "Mathematics 30-1",
+      "Mathematics 30-2"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/151",
+    "updatedAt": "2025-04-05T18:14:04.577Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 161",
+    "title": "Introductory Statistics for Business and Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "parsedDescription": "Data collection and presentation, descriptive statistics. Probability distributions, sampling distributions and the central limit theorem. Point estimation and hypothesis testing. Correlation and regression analysis. Goodness of fit and contingency table. Use of a microcomputer software package for statistical analyses in business and economics.",
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "Mathematics 30-1"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "Mathematics 30-2"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "(1) Credit can be obtained in at most one of STAT 151, STAT 161, and STAT 235. (2) This course may not be taken for credit if credit has been obtained in obtained in STAT 222, STAT 266, STAT 276, KIN 109, PEDS 109, PSYCH 211, PTHER 352, SCI 151 or SOC 210."
+    },
+    "flattenedPrerequisites": [
+      "Mathematics 30-1",
+      "Mathematics 30-2"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/161",
+    "updatedAt": "2025-04-05T18:14:16.556Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 181",
+    "title": "Introduction to Combinatorics and Probability",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "parsedDescription": "Induction; principles of counting, multinomial coefficients, negative binomial distribution; maximum likelihood estimation, probability axioms; conditional probability, Bayes' rule; independence; probability mass, distribution, and moment generating functions; strong law of large numbers; conditional expectation estimators; gambler's ruin; transience and recurrence; compound processes; applications.",
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 125"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 127"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 101"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 118"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 136"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 146"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 156"
+            ]
+          }
+        ]
+      },
+      "notes": "(1) Credit can be obtained in at most two of STAT 181, STAT 265, or STAT 281. (2) Credit cannot be obtained in STAT 181 if credit has already been obtained in MATH 181."
+    },
+    "flattenedPrerequisites": [
+      "MATH 125",
+      "MATH 127"
+    ],
+    "flattenedCorequisites": [
+      "MATH 101",
+      "MATH 118",
+      "MATH 136",
+      "MATH 146",
+      "MATH 156"
+    ],
+    "url": "/catalogue/course/stat/181",
+    "updatedAt": "2025-04-05T18:14:23.484Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 235",
+    "title": "Introductory Statistics for Engineering",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITH/SP/SU, 3-0-1.5"
+    },
+    "parsedDescription": "Descriptive data analysis. Calculus of Probability. Binomial, multinomial, Poisson, normal, beta, exponential, gamma, hypergeometric, and Weibull distributions. Sampling distributions. Estimation, testing hypotheses, goodness-of-fit tests, and one-way analysis of variance. Linear correlation and regression. Sampling. Quality control. Use of a microcomputer software package for statistical analyses in engineering applications.",
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "MATH 100"
+        ]
+      },
+      "corequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "MATH 101"
+        ]
+      },
+      "notes": "(1) This course may not be taken for credit if credit has already been obtained in one of STAT 151, 161, 222, 265, 266, 276, 281; KIN 109, PEDS 109, PSYCH 211, PTHER 352, SCI 151 or SOC 210. (2) Intended for Engineering students. (2) Intended for Engineering students. Other students who take this course will receive 3.0 units."
+    },
+    "flattenedPrerequisites": [
+      "MATH 100"
+    ],
+    "flattenedCorequisites": [
+      "MATH 101"
+    ],
+    "url": "/catalogue/course/stat/235",
+    "updatedAt": "2025-04-05T18:14:30.284Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 235A",
+    "title": "Introductory Statistics for Engineering",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "EITH/SP/SU, 3-0-1.5"
+    },
+    "parsedDescription": "Descriptive data analysis. Calculus of Probability. Binomial, multinomial, Poisson, normal, beta, exponential, gamma, hypergeometric, and Weibull distributions. Sampling distributions. Estimation, testing hypotheses, goodness-of-fit tests, and one-way analysis of variance. Linear correlation and regression. Sampling. Quality control. Use of a microcomputer software package for statistical analyses in engineering applications.",
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "MATH 100"
+        ]
+      },
+      "corequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "MATH 101"
+        ]
+      },
+      "notes": "(1) This course may not be taken for credit if credit has already been obtained in one of STAT 151, 161, 222, 265, 266, 276, 281; KIN 109, PEDS 109, PSYCH 211, PTHER 352, SCI 151 or SOC 210. (2) Intended for Engineering students. (2) Intended for Engineering students. Other students who take this course will receive 3.0 units."
+    },
+    "flattenedPrerequisites": [
+      "MATH 100"
+    ],
+    "flattenedCorequisites": [
+      "MATH 101"
+    ],
+    "url": "/catalogue/course/stat/235a",
+    "updatedAt": "2025-04-05T18:14:36.316Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 235B",
+    "title": "Introductory Statistics for Engineering",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "EITH/SP/SU, 3-0-1.5"
+    },
+    "parsedDescription": "Descriptive data analysis. Calculus of Probability. Binomial, multinomial, Poisson, normal, beta, exponential, gamma, hypergeometric, and Weibull distributions. Sampling distributions. Estimation, testing hypotheses, goodness-of-fit tests, and one-way analysis of variance. Linear correlation and regression. Sampling. Quality control. Use of a microcomputer software package for statistical analyses in engineering applications.",
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "MATH 100"
+        ]
+      },
+      "corequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "MATH 101"
+        ]
+      },
+      "notes": "(1) This course may not be taken for credit if credit has already been obtained in one of STAT 151, 161, 222, 265, 266, 276, 281; KIN 109, PEDS 109, PSYCH 211, PTHER 352, SCI 151 or SOC 210. (2) Intended for Engineering students. (2) Intended for Engineering students. Other students who take this course will receive 3.0 units."
+    },
+    "flattenedPrerequisites": [
+      "MATH 100"
+    ],
+    "flattenedCorequisites": [
+      "MATH 101"
+    ],
+    "url": "/catalogue/course/stat/235b",
+    "updatedAt": "2025-04-05T18:14:41.638Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 252",
+    "title": "Introduction to Applied Statistics II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "parsedDescription": "Methods in applied statistics including regression techniques, analysis of variance and covariance, and methods of data analysis. Applications are taken from Biological, Physical and Social Sciences, and Business.",
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "STAT 141",
+              "STAT 151",
+              "STAT 161",
+              "STAT 235",
+              "SCI 151"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "(1) Credit can be obtained in at most one of STAT 252, 319, 337 or 341, or AREC 313. (2) This course may not be taken for credit if credit has already been obtained in STAT 368 or 378."
+    },
+    "flattenedPrerequisites": [
+      "STAT 141",
+      "STAT 151",
+      "STAT 161",
+      "STAT 235",
+      "SCI 151"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/252",
+    "updatedAt": "2025-04-05T18:14:45.137Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 265",
+    "title": "Probability and Statistics I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "parsedDescription": "Sample space, events, combinatorial probability, conditional probability, independent events, Bayes Theorem, random variables, discrete random variables, expected values, moment generating function, inequalities, continuous distributions, multivariate distributions, independence.",
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "OR",
+        "courses": [
+          "MATH 209",
+          "MATH 214",
+          "MATH 217"
+        ]
+      },
+      "notes": "Credit can be obtained in at most two of MATH 181, MATH 281, or STAT 265."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [
+      "MATH 209",
+      "MATH 214",
+      "MATH 217"
+    ],
+    "url": "/catalogue/course/stat/265",
+    "updatedAt": "2025-04-05T18:14:48.414Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 266",
+    "title": "Probability and Statistics II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "parsedDescription": "Functions of random variables, sampling distributions, Central Limit Theorem, law of large numbers, statistical models for the data, likelihood, parameters and their interpretation, objectives of statistical inference, point and interval estimation, method of moments, basic notions of testing of hypotheses, errors of the first and second kind, significance level, power, p-value.",
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "MATH 209",
+              "MATH 214",
+              "MATH 217"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "STAT 265",
+              "MATH 281"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "OR",
+        "courses": [
+          "MATH 225",
+          "MATH 227"
+        ]
+      },
+      "notes": "Credit can only be obtained in one of STAT 266 or STAT 276."
+    },
+    "flattenedPrerequisites": [
+      "MATH 209",
+      "MATH 214",
+      "MATH 217",
+      "STAT 265",
+      "MATH 281"
+    ],
+    "flattenedCorequisites": [
+      "MATH 225",
+      "MATH 227"
+    ],
+    "url": "/catalogue/course/stat/266",
+    "updatedAt": "2025-04-05T18:14:55.308Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 276",
+    "title": "Statistics for Data Science",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "parsedDescription": "Fundamental principles of statistical learning and inference for data science Understanding of types of analytics, probability, variability, relationship between variables, probability distributions, law of large numbers, Central Limit Theorem, hypothesis testing and statistical significance, and elementary theory of regression.",
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 281"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 265"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 265"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "MATH 117",
+              "MATH 216"
+            ]
+          }
+        ]
+      },
+      "notes": "Credit can only be obtained in one of STAT 266 or STAT 276."
+    },
+    "flattenedPrerequisites": [
+      "MATH 281",
+      "STAT 265"
+    ],
+    "flattenedCorequisites": [
+      "STAT 265",
+      "MATH 117",
+      "MATH 216"
+    ],
+    "url": "/catalogue/course/stat/276",
+    "updatedAt": "2025-04-05T18:14:59.519Z"
+  }
+]

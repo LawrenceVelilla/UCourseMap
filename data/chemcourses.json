@@ -1,0 +1,1010 @@
+[
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 101",
+    "title": "Introductory University Chemistry I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-1S-3/2"
+    },
+    "description": "Atoms and molecules, states of matter, chemistry of the elements. Prerequisite: Chemistry 30, or equivalent.",
+    "url": "/catalogue/course/chem/101"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 102",
+    "title": "Introductory University Chemistry II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-1S-3/2"
+    },
+    "description": "Rates of reactions, thermodynamics and equilibrium, electro-chemistry, modern applications of chemistry.  Prerequisite: CHEM 101 or 103.",
+    "url": "/catalogue/course/chem/102"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 103",
+    "title": "Introductory University Chemistry I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-1S-3/2"
+    },
+    "description": "Atoms and molecules, states of matter, chemistry of the elements. Prerequisite: Chemistry 30, or equivalent. Note: Restricted to Engineering students only. Other students who take this course will receive 3 units.",
+    "url": "/catalogue/course/chem/103"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 105",
+    "title": "Introductory University Chemistry II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3/2"
+    },
+    "description": "Rates of reactions, thermodynamics and equilibrium, electrochemistry, modern applications of chemistry. Prerequisite: CHEM 103 or 101. Note: Restricted to Engineering students only. Other students who take this course will receive 3 units.",
+    "url": "/catalogue/course/chem/105"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 211",
+    "title": "Quantitative Analysis I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-4"
+    },
+    "description": "Principles, methods, and experimental applications emphasizing solution phase equilibria, titrimetry, volumetric laboratory skills, evaluation of experimental data, and applications of electrochemistry to analytical measurements. Includes examples of organic and inorganic analyses. Prerequisite: CHEM 102.",
+    "url": "/catalogue/course/chem/211"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 213",
+    "title": "Quantitative Analysis II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-4"
+    },
+    "description": "A continuation of CHEM 211 emphasizing the principles, methods, and experimental applications of separation techniques, atomic and molecular optical spectrometry, mass spectrometry, and evaluation of experimental data. Includes examples of organic and inorganic analyses and use of the analytical literature. Prerequisite: CHEM 211. Students who have previously taken CHEM 313 may not take CHEM 213 for credit.",
+    "url": "/catalogue/course/chem/213"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 241",
+    "title": "Introduction to Inorganic Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "description": "The chemistry of main-group elements including a survey of the structure, bonding, and reactivity of their compounds. Transition-metal chemistry will be introduced. The course will include applications in industrial, biochemical, environmental, and materials science. Prerequisites: CHEM 102 or 105 and CHEM 261.",
+    "url": "/catalogue/course/chem/241"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 261",
+    "title": "Organic Chemistry I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "description": "The correlation of structure and chemical bonding in carbon compounds with the physical properties and chemical reactivity of organic molecules. Discussion will be based on functional groups with emphasis on hydrocarbons and derivatives that contain halogens, oxygen, sulfur, and the hydroxy group. Introduction to stereochemistry, three dimensional structure, reaction mechanisms, especially addition to double bonds, nucleophilic substitution and elimination reactions. Prerequisite CHEM 101 or 103. Note: Students who have obtained credit for CHEM 264 cannot take CHEM 261 for credit. Engineering students who take this course will receive 4.5 units.",
+    "url": "/catalogue/course/chem/261"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 263",
+    "title": "Organic Chemistry II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "description": "Continuation of the structural and chemical properties of the basic functional groups of organic compounds including alkynes, aromatic compounds, aldehydes, ketones, carboxylic acids and their derivatives and amines. Illustration of these functional groups in natural products such as carbohydrates, amino acids and proteins, nucleic acids and lipids. Discussion of the application of spectroscopic methods for the structure determination in simple organic molecules. Prerequisites: CHEM 261 or CHEM 264 and 266 or SCI 100. Students who have obtained credit for CHEM 265 cannot take CHEM 263 for credit.",
+    "url": "/catalogue/course/chem/263"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 264",
+    "title": "Organic Chemistry I: Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-1.5S-0"
+    },
+    "description": "A remote delivery offering that emphasizes the correlation of structure and chemical bonding in carbon compounds with the physical properties and chemical reactivity of organic molecules. Discussion will be based on functional groups with emphasis on hydrocarbons and derivatives that contain halogens, oxygen, sulfur, and the hydroxy group. Introduction to stereochemistry, three-dimensional structure, reaction mechanisms, especially addition to double bonds, nucleophilic substitution and elimination reactions. Seminars will emphasize virtual laboratory techniques and online workshops for IR spectroscopy and stereochemistry. Prerequisite CHEM 101 or 103. Note: Students who have obtained credit for CHEM 261 cannot take CHEM 264 for credit.",
+    "url": "/catalogue/course/chem/264"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 265",
+    "title": "Organic Chemistry II: Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-1.5S-0"
+    },
+    "description": "A remote delivery offering that is a continuation of the structural and chemical properties of the basic functional groups of organic compounds including alkynes, aromatic compounds, aldehydes, ketones, carboxylic acids and their derivatives and amines. Illustration of these functional groups in natural products such as carbohydrates, amino acids and proteins, nucleic acids and lipids. Discussion of the application of spectroscopic methods for the structure determination in simple organic molecules. Seminars will emphasize the virtual application of laboratory techniques in standard organic reactions, as well as online workshops for NMR and structure determination. Prerequisites: CHEM 261 or 264. Note: Students who have obtained credit for CHEM 263 cannot take CHEM 265 for credit.",
+    "url": "/catalogue/course/chem/265"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 266",
+    "title": "Introductory Laboratory Skills in Organic Chemistry",
+    "units": {
+      "credits": null,
+      "feeIndex": null,
+      "term": null
+    },
+    "description": "A credit/no-credit course designed to complement lecture material covered in CHEM 264. This course will emphasize important laboratory skills for the purification and characterization of organic compounds. Prerequisite CHEM 101 or 103. Prerequisite or co-requisite: CHEM 264. Notes: (i) CHEM 266 is a requirement for higher level chemistry courses. (ii) Students who have obtained credit for CHEM 261 cannot take CHEM 266 for credit except by department recommendation.",
+    "url": "/catalogue/course/chem/266"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 267",
+    "title": "Practical Applications in Organic Chemistry",
+    "units": {
+      "credits": null,
+      "feeIndex": null,
+      "term": null
+    },
+    "description": "A credit/no-credit course designed to complement lecture material covered in CHEM 265. This course will emphasize synthetic chemistry and practical applications of the laboratory skills learned in CHEM 266, as well as introduce spectroscopic analysis and structure determination.  Prerequisite CHEM 261 or 266. Prerequisite or co- requisite: CHEM265. Notes: (i) CHEM 267 is a requirement for higher level chemistry courses. (ii) Students who have obtained credit for CHEM 263 cannot take CHEM 267 for credit except by department recommendation.",
+    "url": "/catalogue/course/chem/267"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 282",
+    "title": "Atomic and Molecular Structure",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-4"
+    },
+    "description": "An introduction to the quantum view of nature with applications to atomic and molecular structure. Methods to describe the quantum world are introduced, used to describe the electronic structure of simple model systems, and applied to the hydrogen atom, many-electron atoms, simple diatomic molecules, and polyatomic molecules. The laboratory portion of the course consists of applications enriching and illustrating the lecture material, and incorporates the use of computers in predicting experimental results. Prerequisites: CHEM 102 or 105; one 200-level CHEM course; MATH 115 or 136 or 146 or 156; MATH 125; PHYS 124 or 144.",
+    "url": "/catalogue/course/chem/282"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 299",
+    "title": "Research Opportunity Program in Chemistry",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "EITHER, 0-0-3"
+    },
+    "description": "A credit/no-credit course for supervised participation in a faculty research project. Normally taken after completion of a minimum of 30 units but not more than 60 units in a program in the Faculty of Science. Prerequisite: GPA of 2.5 or higher, CHEM 101 or 161; and consent of Department. Specific projects may require additional prerequisites. Project and course information available on Department of Chemistry website. Prospective enrollees in CHEM 299 must apply to Department of Chemistry. Application does not guarantee an ROP position. Credit for this course may be obtained twice.",
+    "url": "/catalogue/course/chem/299"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 300",
+    "title": "Introduction to Industrial Chemistry",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "FIRST, 1.5-0-0"
+    },
+    "description": "A credit/no-credit course that introduces students to the practices, environment, concepts, and other issues associated with the industrial workplace. Course includes lectures by professionals from the local chemical industry, industrial tours, and professional skills development such as resume writing and interviewing. Normally taken after completion of a minimum of 60 but not more than 90 units of course weight in a program in the Department of Chemistry. The course is offered for students in Chemistry Honors, Specialization, and Major Programs. Other students, contact the department for consent. Prerequisite: Satisfactory Standing and consent of Department.",
+    "url": "/catalogue/course/chem/300"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 303",
+    "title": "Environmental Chemistry I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "description": "The chemistry of environmental processes. Atmospheric chemistry; thermal and photochemical reactions of atmospheric gases including oxygen, ozone, hydroxy radical, and oxides of nitrogen and sulfur. Aquatic chemistry; characterization, reactions, and equilibria of dissolved species, water purification treatments. Metals and organohalides in the environment. Risk assessment. Prerequisites: CHEM 102; CHEM 261 or 264; CHEM 263 or 265; and one 200-level CHEM course or CH E 243.",
+    "url": "/catalogue/course/chem/303"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 305",
+    "title": "Environmental Chemistry II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-4"
+    },
+    "description": "The lecture and laboratory portions of this course will highlight sorption and phase partitioning; hydrolysis reactions; convective/diffusive transport; properties and behaviour of particles, including sedimentation, coagulation, and light scattering; and the significance of particulate matter in the atmosphere. Quantitative calculations will be emphasized. The lecture component will provide theoretical background for experiments and instrumentation used for chemical measurements. The course also includes an independent, student-designed air quality monitoring project. Prerequisites: CHEM 263 or 265; CHEM 213; CHEM 303 or 373. Note: Restricted to students in concentration in Chemistry programs or by consent of instructor.",
+    "url": "/catalogue/course/chem/305"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 306",
+    "title": "Green Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduction to green chemistry. The twelve principles and the metrics of green chemistry; Chemical wastes: their impact on health and the environment, and prevention; Green solvents and alternate methods that use safer chemicals; Catalysis and green catalysts; Renewable resources. Prerequisite: CHEM 263. Students who have obtained credit for CHIM 340 cannot take CHEM 306 for credit.",
+    "url": "/catalogue/course/chem/306"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 313",
+    "title": "Instrumentation in Chemical Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-4"
+    },
+    "description": "A continuation of CHEM 213 delving more deeply into advanced concepts in chemical instrumentation including separations, mass spectrometry, optical spectroscopy and electrochemistry. Concepts of signals, electronics, and data interpretation are also explored and applied in the laboratory. Prerequisites: CHEM 213 and PHYS 124 or 144. PHYS 126 or 146 or 181 is recommended.",
+    "url": "/catalogue/course/chem/313"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 333",
+    "title": "Inorganic Materials Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "description": "Fundamentals of the synthesis, structure and properties of inorganic solids, thin films, and nanoscale materials, to be complemented with case studies of modern applications of inorganic materials; selected topics such as catalysis, molecular and nanoparticle-based computing, telecommunications, alternative energies, superconductivity, biomedical technologies, and information storage will be discussed. Techniques for characterization and analysis of materials on the nano and atomic level will be introduced. Prerequisite: CHEM 241.",
+    "url": "/catalogue/course/chem/333"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 343",
+    "title": "Advanced Inorganic Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "description": "An extension of CHEM 241 with emphasis on the bonding, structure, and reactivity of transition-metal elements. The course will include applications in industrial, biochemical, environmental, and materials science. For students in Chemistry Honors, Specialization, and Major Programs only, except by consent of Department. Prerequisites: CHEM 241 or consent of Department. Students who have obtained credit for CHEM 243 cannot take CHEM 343 for credit.",
+    "url": "/catalogue/course/chem/343"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 351",
+    "title": "Introduction to Chemical Biology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduction to chemical strategies used to analyze and manipulate biochemical systems. Topics may include chemical synthesis of biopolymers, protein-small molecule interactions, chemoenzymatic synthesis, enzyme-inhibitor kinetics, assay design, characterization of bioorganic samples, and various chemical biology methods. Prerequisites: CHEM 263 or 265; BIOCH 200. Students who have obtained credit for CHEM 451 cannot take CHEM 351 for credit.",
+    "url": "/catalogue/course/chem/351"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 361",
+    "title": "Organic Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-4"
+    },
+    "description": "Mechanisms and reactions of aromatic and aliphatic compounds. Prerequisites: CHEM 102; CHEM 263, or CHEM 265 and 267.",
+    "url": "/catalogue/course/chem/361"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 371",
+    "title": "Energetics of Chemical Reactions",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-3"
+    },
+    "description": "A study of the implications of the laws of thermodynamics for transformations of matter including phase changes, chemical reactions, and biological processes. Topics include: thermochemistry; entropy change and spontaneity of processes; activity and chemical potential; chemical and phase equilibria; properties of solutions; simple one- and two-component phase diagrams. The conceptual development of thermodynamic principles from both macroscopic and molecular levels, and the application of these principles to systems of interest to chemists, biochemists, and engineers will be emphasized. Note: This course may not be taken for credit if credit has already been received in CHEM 271. Prerequisites: CHEM 102 or 105; MATH 101 or 115 or 136 or 146 or 156. Engineering students who take this course will receive 4.5 units.",
+    "url": "/catalogue/course/chem/371"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 373",
+    "title": "Physical Properties and Dynamics of Chemical Systems",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-3"
+    },
+    "description": "A continuation of CHEM 371 in which the physical properties of chemical systems and the dynamics and energetics of chemical processes are discussed. Topics include: colligative properties; electrochemical cells and ion activities, implications for ionic equilibria; kinetic theory and transport properties of gases and liquids; surfaces and colloid chemistry; reaction dynamics, detailed mechanisms of chemical reactions, catalysis. The emphasis will be on the development of principles of physical chemistry and their application to properties and processes of interest to chemists, biochemists, and engineers. Note: This course may not be taken for credit if credit has already been received in CHEM 273 or 275. Prerequisite: CHEM 371 or 271.",
+    "url": "/catalogue/course/chem/373"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 398",
+    "title": "Molecular Spectroscopy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-2"
+    },
+    "description": "An integrated course in the quantitative and more advanced aspects of spectroscopy and its applications in chemistry. The subjects may include: absorption, emission, dichroism, vibrational and rotational spectroscopy of molecules; time-resolved spectroscopy; nuclear magnetic resonance spectroscopy; surface-specific spectroscopies. A virtual molecular spectroscopy laboratory is included that incorporates the use of computers in predicting spectra and interpreting experimental results. Lab meetings will run for 6 - 8 weeks throughout the term. Prerequisite: CHEM 282.",
+    "url": "/catalogue/course/chem/398"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 399",
+    "title": "Research Experience in Chemistry",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "EITHER, 0-0-6"
+    },
+    "description": "A credit/no-credit course for participation in a research project under the direction of a member of the Department. Students taking CHEM 401 or 403 cannot concurrently take CHEM 399. Credit for this course may be obtained up to four times. Prerequisites: Departmental permission. 9 units of 200-level chemistry or 3 units of 300-level chemistry.",
+    "url": "/catalogue/course/chem/399"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 401",
+    "title": "Introduction to Chemical Research",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-1S-8"
+    },
+    "description": "Introduction to methods of chemical research. Investigational work under the direction of a member of the Department. The results of the research will be submitted to the Department as a report and/or presentation which will be graded. For students in the fourth year of Chemistry Honors, Specialization, or Major Programs. Students should consult with the Course Coordinator four months prior to starting the course. Prerequisites: a 300-level CHEM course, minimum GPA of 3.0 on all courses credited to the degree to date, and consent of the Course Coordinator. Students who have credit in CHEM 499 cannot take CHEM 401 for credit.",
+    "url": "/catalogue/course/chem/401"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 403",
+    "title": "Chemical Research",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-1S-8"
+    },
+    "description": "Investigational work under the direction of a member of the Department. The results of the research will be submitted to the Department as a report, which will be graded. The student must also make an oral presentation of this work to the Department. Prerequisite: CHEM 401.",
+    "url": "/catalogue/course/chem/403"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 405",
+    "title": "Special Topics in Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: a 300- level CHEM course and consent of Instructor; prerequisite courses vary, depending on topic. Course may be repeated for credit, provided there is no duplication of specific topic.",
+    "url": "/catalogue/course/chem/405"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 424",
+    "title": "Optical Spectroscopy and Electrochemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "description": "Optical spectroscopy and electrochemistry and principles and applications to chemical analysis. Electronic and vibrational spectroscopy for probing and monitoring chemical and biochemical systems. Electrode kinetics, mass transport, and voltammetry for electroanalysis. Prerequisite: CHEM 313.",
+    "url": "/catalogue/course/chem/424"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 425",
+    "title": "Separations and Mass Spectrometry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "description": "Concepts and techniques in chromatography, mass spectrometry, and chromatography/MS combinations. Examples of modern instrumentation as well as applications to chemical, biochemical, and biomedical analysis. Prerequisite: CHEM 313.",
+    "url": "/catalogue/course/chem/425"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 434X",
+    "title": "ray Crystallography",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to structure determination by single-crystal X-ray diffraction methods. Topics include X-ray diffraction, crystal symmetry, experimental methods, structure solution, refinement, crystallographic software, and interpretation of crystal structure data. Prerequisite: CHEM 243 and one 300-level CHEM course; or CHEM 343; or CHEM 333; or consent of the instructor.",
+    "url": "/catalogue/course/chem/434"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 436",
+    "title": "Synthesis and Applications of Inorganic and Nano-materials",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduction to methods of synthesizing inorganic materials with control of atomic, meso- and micro-structure. Topics include sol-gel chemistry, chemical vapor deposition, solid state reactions, solid-state metathesis and high-temperature self-propagating reactions, template directed syntheses of micro and mesoporous materials, micelles and colloids, synthesis of nanoparticles and nanomaterials. Applications of these synthetic techniques to applications such as photonic materials, heterogeneous catalysts, magnetic data storage media, nanoelectronics, display technologies, alternative energy technologies, and composite materials will be discussed. Prerequisite: CHEM 243 and one 300 level CHEM course; or CHEM 343; or CHEM 333; or consent of the instructor.",
+    "url": "/catalogue/course/chem/436"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 437",
+    "title": "Transition Metal Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to organotransition metal chemistry. The course will deal with the synthesis, basic bonding, and reactivity of organotransition metal complexes. Topics to be covered include transition metal complexes of hydrides, phosphines, carbonyls, olefins, alkynes, polyolefins, cyclopentadienyl and related cyclic pi-ligands; metal-carbon sigma- and multiple bonds. The application of these complexes to homogeneous catalysis and to organic synthesis will be discussed when appropriate. Prerequisite: CHEM 243 and one 300-level CHEM course; or CHEM 343; or consent of the instructor.",
+    "url": "/catalogue/course/chem/437"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 438",
+    "title": "Solid State Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduction to the chemistry of extended inorganic solids. The topics covered include synthesis, symmetry, descriptive crystal chemistry, bonding, electronic band structures, characterization techniques, and phase diagrams. The correlation of structure with properties of electronic and magnetic materials will be discussed. Prerequisite: CHEM 243 and one 300-level CHEM course; or CHEM 343; or CHEM 333; or consent of the instructor.",
+    "url": "/catalogue/course/chem/438"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 443",
+    "title": "Asymmetric Catalysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introductory course on asymmetric catalysis.  Emphasis will be on reactions catalyzed by chiral transition metal complexes, but non-metal catalyzed reactions and heterogeneous catalysis will be covered. Topics include the general principles of catalysis; mechanisms of common steps in catalytic cycles; rapid pre-equilibrium and steady-state kinetic treatments of catalytic rates; the origins of catalytic selection; and the strategies and principles of new catalyst, ligand, and reaction development. The course will include a survey of common enantioselective catalytic reactions and daily examples from ASAP articles that illustrate the principles and theories being taught in the course. Introductory level knowledge of transition metal and organic chemistry is required.  Prerequisite: CHEM 241 and one 300-level chemistry course.",
+    "url": "/catalogue/course/chem/443"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 444",
+    "title": "Characterization Methods in Nanoscience",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduction to techniques in determining the composition and structure of materials on the nanometer scale. Characterization of atomic, meso-, and microstructure of materials including impurities and defects. Major topics will include electron microscopy (transmission, scanning, and Auger) and associated spectroscopies (EDX, EELS), surface sensitive spectroscopies (e.g., XPS, AES, IR) and spectrometry (SIMS), synchrotron techniques, X-ray absorption, fluorescence and emission, and scanned probe microscopies (AFM, STM, etc.). The strengths, weaknesses, and complementarity of the techniques used will be examined via case studies on the characterization of real-world nanotechnologies, such as heterogeneous catalysts, surfaces and interfaces in semiconductor devices, organic monolayers on metals and semiconductors, nanotube- and nanowire-based electronics, and biocompatible materials. Prerequisite: 4th year standing or consent of instructor.",
+    "url": "/catalogue/course/chem/444"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 451",
+    "title": "Chemical Biology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Advanced methods used to analyze and manipulate biological systems using engineered biomolecules and synthetic organic molecules. Topics may include biomolecule structure and function, enzymology, molecular biology, protein engineering, genome engineering, bioinformatic methods, inhibitor design, library screening methods, fluorescent probes, bioorthogonal chemistry, and various chemical biology methods. Prerequisites: CHEM 351 or BIOCH 200; CHEM 361 (can be taken as co-requisite).",
+    "url": "/catalogue/course/chem/451"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 454",
+    "title": "Bioconjugate Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Discussion of organic reactions to modify or label biopolymers including proteins, carbohydrates, and nucleic acids. Topics will include mechanistic and methodological details of commonly employed reactions used for chemoselective labeling or modification of biomolecules to produce synthetic vaccines, antibody-drug conjugates, and native chemical ligation will be discussed. Prerequisites: CHEM 351 or BIOCH 200; CHEM 361. Note: This course may not be taken for credit if credit has already been received in CHEM 464.",
+    "url": "/catalogue/course/chem/454"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 460",
+    "title": "Contemporary Organic Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-4"
+    },
+    "description": "Modern organic reactions and reactive intermediates. Cations, free radicals, radical ions, carbenes, metallocarbenes, arynes, and transition-metal catalysis. Mechanisms, transition-state conformational analysis and stereoelectronic effects. Diastereoselectivity. The laboratory is focused on multistep organic synthesis, featuring reactions drawn from the lecture topics. Prerequisites: Chem 361 or consent of instructor. Students with credit for Chem 363 cannot take Chem 460 for credit.",
+    "url": "/catalogue/course/chem/460"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 461",
+    "title": "Qualitative Organic Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-4"
+    },
+    "description": "Introductory discussion of the physical techniques used in organic chemistry research for the separation/purification and structural elucidation of organic compounds. Emphasis is on the combined use of modern spectrometric techniques for structure determination, with particular focus on an introduction to modern NMR spectroscopy. Prerequisite: CHEM 363 or 460 or consent of Instructor.",
+    "url": "/catalogue/course/chem/461"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 462",
+    "title": "Physical Organic Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Discussion of organic structural theories, intramolecular and intermolecular interactions in organic chemistry, and the mechanisms and reactive intermediates involved in organic reactions. Prerequisite: CHEM 363 or 460 or consent of Instructor.",
+    "url": "/catalogue/course/chem/462"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 463",
+    "title": "Organic Synthesis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Discussion of the different concepts of chemoselective, regioselective and stereoselective reactions of organic compounds. Main classes of reactions described are oxidations, reductions, functional group protection, and carbon-carbon bond formation methods for single, double, and triple bonds. Emphasis on modern methodology for organic synthesis, including asymmetric catalysis and transition-metal catalyzed methods such as cross-coupling chemistry. Prerequisite: CHEM 363 or CHEM 460 or consent of Instructor.",
+    "url": "/catalogue/course/chem/463"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 477",
+    "title": "Molecular Symmetry and Spectroscopy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Application of the principles of molecular symmetry to molecular properties. Topics include group theory with emphasis on vibrational motion and normal vibrations; quantum mechanics of vibration and rotation; magnetic resonance spectroscopy; perturbation methods; selection rules in rotational, infrared, and Raman spectroscopy; molecular symmetry and molecular orbitals; electronic spectroscopy of polyatomic molecules. Prerequisite: CHEM 282 and one 300-level Chemistry course; or consent of Instructor.",
+    "url": "/catalogue/course/chem/477"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 479",
+    "title": "Molecular Kinetics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Rate laws for simple and complex reactions, reaction mechanisms, potential energy surfaces, molecular dynamics, theories of reaction rates, catalysis, with application to gas and liquid phase reactions, photochemical reactions in chemistry and biology, and enzyme catalysis. Prerequisites: CHEM 273 or CHEM 373; MATH 215, PHYS 230, and a 300-level Chemistry course.",
+    "url": "/catalogue/course/chem/479"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 493",
+    "title": "Computational Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-2"
+    },
+    "description": "The focus is on applications in this course which introduces the student to contemporary computational quantum chemistry (Hartree-Fock, post-Hartree-Fock, and density functional theory methods), using the state of-the-art computer code GAMESS-US running on UNIX workstations and computer servers.  Elementary introduction to the UNIX operating system is given. Subjects include: basis sets; optimization of molecular geometry; prediction of molecular properties; calculation of infra-red and Raman spectra; excited electronic states; solvent effects; computational thermochemistry; mechanisms of chemical reactions; visualization of results. Assignments in the course allow the student to acquire practical computational experience that relates to chemistry. Prerequisite: CHEM 282 and one 300-level chemistry course or consent of Instructor.",
+    "url": "/catalogue/course/chem/493"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 495",
+    "title": "Molecular Dynamics and its Applications",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The fundamentals of statistical mechanics are covered to set up the theoretical framework for Molecular Dynamics (MD) simulation. The basic components of MD simulation are discussed in detail, followed by a brief foray into Monte Carlo simulation. A variety of applications are presented, including the study of structural properties of liquids, the calculation of diffusion coefficients for a solute in a solvent, and the calculation of reaction rate constants. A brief overview of methods for incorporating quantum effects into MD simulations is given. Computational exercises will be assigned to exemplify various topics encountered in the lectures. Prerequisite: CHEM 282 and CHEM 371; or consent of the instructor.",
+    "url": "/catalogue/course/chem/495"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 499A",
+    "title": "Advanced Chemical Research and Training",
+    "units": {
+      "credits": 3,
+      "feeIndex": 12,
+      "term": "TWO TERM, 0-1S-10"
+    },
+    "description": "An advanced, two-term, research placement course where students complete chemical-based exploratory research under the direction of a faculty member of the Department. Research, professional development and seminar components are involved, preparing undergraduates to further build strong chemical foundations to succeed in graduate, industry, or professional school programs. Prerequisites: 4th-year standing in a Chemistry Honors, Specialization, or Major program, two 300-level CHEM courses, minimum GPA of 3.0 on all CHEM courses credited to the degree to date, and consent of instructor. Students who have credit in CHEM 401 cannot take CHEM 499 for credit.",
+    "url": "/catalogue/course/chem/499a"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 499B",
+    "title": "Advanced Chemical Research and Training",
+    "units": {
+      "credits": 3,
+      "feeIndex": 12,
+      "term": "TWO TERM, 0-1S-10"
+    },
+    "description": "An advanced, two-term, research placement course where students complete chemical-based exploratory research under the direction of a faculty member of the Department. Research, professional development and seminar components are involved, preparing undergraduates to further build strong chemical foundations to succeed in graduate, industry, or professional school programs. Prerequisites: 4th-year standing in a Chemistry Honors, Specialization, or Major program, two 300-level CHEM courses, minimum GPA of 3.0 on all CHEM courses credited to the degree to date, and consent of instructor. Students who have credit in CHEM 401 cannot take CHEM 499 for credit.",
+    "url": "/catalogue/course/chem/499b"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 502",
+    "title": "Departmental Research Seminar",
+    "units": {
+      "credits": 1,
+      "feeIndex": 2,
+      "term": "EITHER, 0-2S-0"
+    },
+    "description": "Course may be repeated.",
+    "url": "/catalogue/course/chem/502"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 512",
+    "title": "Optical Spectroscopy",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "FIRST, 3/2-0-0"
+    },
+    "description": "Six week course on optical spectroscopy. Topics may include electromagnetic spectrum, transitions and selection rules, instrumentation, atomic spectroscopy, molecular absorption, fluorescence, vibrational spectroscopy, applications of optical spectroscopy. Not open to students with credit in CHEM 424.",
+    "url": "/catalogue/course/chem/512"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 514",
+    "title": "Electrochemistry",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "FIRST, 3/2-0-0"
+    },
+    "description": "Six week course on electrochemistry. Topics may include electrochemical potentials, junction potentials, interfaces, potentiometry/ion selective electrodes, kinetics, electron transport theory, mass transport, voltammetry, microelectrodes, solid electrodes. Not open to students with credit in CHEM 424.",
+    "url": "/catalogue/course/chem/514"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 515",
+    "title": "Environmental Analytical Chemistry",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "EITHER, 3/2-0-0"
+    },
+    "description": "Six week course on the methods and strategies used to measure trace levels of contaminants in complex environmental matrices, including air, water, soil, and biota. Topics may include sample handling and quality control, sample preparation and matrix effects, modern analytical instrumentation, measurement of reactive species, and online analysis techniques. Not open to students with credit in CHEM 419.",
+    "url": "/catalogue/course/chem/515"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 516",
+    "title": "Separations",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "FIRST, 3/2-0-0"
+    },
+    "description": "Six week course on separations with topics that may include LC, GC, intermolecular forces, retention mechanisms, gradient elution, separation optimization, band broadening, HPLC modes-reversed phase, size exclusion, ion exchange, HILIC. Not open to students with credit in CHEM 425.",
+    "url": "/catalogue/course/chem/516"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 518",
+    "title": "Mass Spectrometry",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "FIRST, 3/2-0-0"
+    },
+    "description": "Six week course on mass spectrometry with topics that may include mass analyzers, sample introduction techniques, ionization techniques, ion detection and data systems, applications. Not open to students with credit in CHEM 425.",
+    "url": "/catalogue/course/chem/518"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 519",
+    "title": "Bioanalytical Chemistry",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "EITHER, 3/2-0-0"
+    },
+    "description": "Six week course with topics that may include antibodies, immunoassays, surface plasmon resonance, biosensors, gel electrophoresis, DNA sequencing, microscopy and imaging. Not open to students with credit in CHEM 419.",
+    "url": "/catalogue/course/chem/519"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 534X",
+    "title": "ray Crystallography",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to structure determination by single-crystal X-ray diffraction methods. Topics include X-ray diffraction, crystal symmetry, experimental methods, structure solution, refinement, crystallographic software, and interpretation of crystal structure data. Not open to students with credit in CHEM 433 or 434.",
+    "url": "/catalogue/course/chem/534"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 536",
+    "title": "Synthesis and Applications of Inorganic and Nano-materials",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduction to methods of synthesizing inorganic materials with control of atomic, meso-, and micro-structure.  Topics include sol-gel chemistry, chemical vapor deposition, solid-state reactions, solid-state metathesis and high-temperature self-propagating reactions, template-directed syntheses of micro and mesoporous materials, micelles and colloids, synthesis of nanoparticles and nanomaterials.  Applications of these synthetic techniques to applications such as photonic materials, heterogeneous catalysts, magnetic data storage media, nanoelectronics, display technologies, alternative energy technologies, and composite materials will be discussed. Not open to students with credit in CHEM 436.",
+    "url": "/catalogue/course/chem/536"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 537",
+    "title": "Transition Metal Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Graduate level course on organotransition metal chemistry. The course will deal with the synthesis, bonding, and reactivity of organotransition metal complexes. Topics to be covered include transition metal complexes of hydrides, phosphines, carbonyls, olefins, alkynes, polyolefins, cyclopentadienyl and related cyclic pi-ligands; metal-carbon sigma- and multiple bonds. The application of these complexes to homogeneous catalysis and to organic syntheses will be discussed when appropriate. Prerequisite: consent of instructor. Not open to students with credit in CHEM 437.",
+    "url": "/catalogue/course/chem/537"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 538",
+    "title": "Solid State Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduction to the chemistry of extended inorganic solids. The topics covered include synthesis, symmetry, descriptive crystal chemistry, bonding, electronic band structures, characterization techniques, and phase diagrams. The correlation of structure with properties of electronic and magnetic materials will be discussed. Not open to students with credit in CHEM 438.",
+    "url": "/catalogue/course/chem/538"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 543",
+    "title": "Asymmetric Catalysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introductory course on asymmetric catalysis. Emphasis will be on reactions catalyzed by chiral transition metal complexes, but non-metal catalyzed reactions and heterogeneous catalysis will be covered. Topics include the general principles of catalysis; mechanisms of common steps in catalytic cycles; rapid pre-equilibrium and steady-state kinetic treatments of catalytic rates; the origins of catalytic selection; and the strategies and principles of new catalyst, ligand, and reaction development. The course will include a survey of common enantioselective catalytic reactions and daily examples from ASAP articles that illustrate the principles and theories being taught in the course. Introductory level knowledge of transition metal and organic chemistry is required. Not open to students with credit in CHEM 443 or 533.",
+    "url": "/catalogue/course/chem/543"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 544",
+    "title": "Characterization Methods in Nanoscience",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduction to techniques in determining the composition and structure of materials on the nanometer scale.  Characterization of atomic, meso-, and micro-structure of materials including impurities and defects. Major topics will include electron microscopy (transmission, scanning, and Auger) and associated spectroscopies (EDX, EELS), surface sensitive spectroscopies (e.g., XPS, AES, IR) and spectrometry (SIMS), synchrotron techniques, X-ray absorption, fluorescence and emission, and scanned probe microscopies (AFM, STM, etc.). The techniques will be examined through real-world nanotechnology case studies.  Not open to students with credit in CHEM 444.",
+    "url": "/catalogue/course/chem/544"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 545",
+    "title": "Special Topics in Inorganic Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/chem/545"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 551",
+    "title": "Chemical Biology I",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "EITHER, 3/2-0-0"
+    },
+    "description": "Six week course that provides an introduction to the structure and function of the major classes of biological macromolecules. Particular emphasis will be placed on approaches for modifying biomolecule structure using chemical biology and molecular biology methods. Not open to students with credit in CHEM 451.",
+    "url": "/catalogue/course/chem/551"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 553",
+    "title": "Chemical Biology II",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "EITHER, 3/2-0-0"
+    },
+    "description": "Six week course that provides an introduction to modern chemical biology methods with particular emphasis on the use of synthetic organic molecules and modified biomacromolecules as tools to probe biological systems. Not open to students with credit in CHEM 451.",
+    "url": "/catalogue/course/chem/553"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 554",
+    "title": "Bioconjugate Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Graduate-level discussion of organic reactions to modify or label biopolymers including proteins, carbohydrates, and nucleic acids. Topics will include mechanistic and methodological details of commonly employed reactions used for chemoselective labeling or modification of biomolecules to produce synthetic bioconjugates. Applications including synthetic vaccines, antibody-drug conjugates, and native chemical ligation will be discussed. Prerequisite: 1 year of introductory organic chemistry and 1 term of biochemistry, or consent of instructor. Not open to students with credit in CHEM 464 or 564.",
+    "url": "/catalogue/course/chem/554"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 561",
+    "title": "Qualitative Organic Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-4"
+    },
+    "description": "Introductory graduate-level discussion of the physical techniques used in organic chemistry research for the separation/purification and structural elucidation of organic compounds. Emphasis is on the combined use of modern spectrometric techniques for structure determination, with particular focus on an introduction to modern one- and two-dimensional NMR spectroscopy. There is a laboratory component to this course. Not open to students with credit in CHEM 461.",
+    "url": "/catalogue/course/chem/561"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 562",
+    "title": "Physical Organic Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Graduate-level discussion of organic structural theories, intramolecular and intermolecular interactions in organic chemistry, and the mechanisms and reactive intermediates involved in organic reactions. Not open to students with credit in CHEM 462 or 465.",
+    "url": "/catalogue/course/chem/562"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 563",
+    "title": "Organic Synthesis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Graduate-level discussion of the different concepts of chemoselective, regioselective and stereoselective reactions of organic compounds. Main classes of reactions described are oxidations, reductions, functional group protection, and carbon-carbon bond formation methods for single, double, and triple bonds. Emphasis on modern methodology for organic synthesis, including asymmetric catalysis and transition-metal catalyzed methods such as cross-coupling chemistry. Not open to students with credit in CHEM 463 or 467.",
+    "url": "/catalogue/course/chem/563"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 577",
+    "title": "Molecular Symmetry and Spectroscopy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Application of the principles of molecular symmetry to molecular properties. Topics include group theory with emphasis on vibrational motion and normal vibrations; quantum mechanics of vibration and rotation; magnetic resonance spectroscopy; perturbation methods; selection rules in rotational, infrared, and Raman spectroscopy; molecular symmetry and molecular orbitals; electronic spectroscopy of polyatomic molecules. Not open to students with credit in CHEM 477.",
+    "url": "/catalogue/course/chem/577"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 579",
+    "title": "Molecular Kinetics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Rate laws: for simple and complex reactions, reaction mechanisms, potential energy surfaces, molecular dynamics, theories of reaction rates, catalysis, with application to gas and liquid phase reactions, photochemical reactions in chemistry and biology, and enzyme catalysis. Not open to students with credit in CHEM 479.",
+    "url": "/catalogue/course/chem/579"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 593",
+    "title": "Computational Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-2"
+    },
+    "description": "The focus is on applications in this course which introduces the student to contemporary computational quantum chemistry (Hartree-Fock, post-Hartree-Fock, and density functional theory methods), using the state-of-the-art computer code GAMESS-US running on UNIX workstations and computer servers.  Elementary introduction to the UNIX operating system is given. Subjects include: basis sets; optimization of molecular geometry; prediction of molecular properties; calculation of infra-red and Raman spectra; excited electronic states; solvent effects; computational thermochemistry; mechanisms of chemical reactions; visualization of results. Assignments in the course allow the student to acquire practical experience that relates to chemistry. Term projects focus on chemistry related to student's research area. Not open to students with credit in CHEM 493.",
+    "url": "/catalogue/course/chem/593"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 595",
+    "title": "Molecular Dynamics and its Applications",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The fundamentals of statistical mechanics are covered to set up the theoretical framework for Molecular Dynamics (MD) simulation. The basic components of MD simulation are discussed in detail, followed by a brief foray into Monte Carlo simulation. A variety of applications are presented, including the study of structural properties of liquids, the calculation of diffusion coefficients for a solute in a solvent, and the calculation of reaction rate constants. A brief overview of methods for incorporating quantum effects into MD simulations is given. Computational exercises will be assigned to exemplify various topics encountered in the lectures. Not open to students with credit in CHEM 495.",
+    "url": "/catalogue/course/chem/595"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 612",
+    "title": "Advanced Optical Spectroscopy",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "SECOND, 3/2-0-0"
+    },
+    "description": "Six week course with topics that may include: sources, wavelength analyzers, interferometers, detectors, signal/noise, signal processing, advanced Raman spectroscopy, single molecule fluorescence and fluorescence imaging, Surface Enhanced Raman Spectroscopy. Prerequisite: CHEM 512.",
+    "url": "/catalogue/course/chem/612"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 614",
+    "title": "Advanced Electrochemistry",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "SECOND, 3/2-0-0"
+    },
+    "description": "Six week course with topics that may include: CV and chemical reactions, microelectrode applications, carbon electrodes, modified electrode surfaces, micro-fabricated sensors, scanning probe microscopy, spectroelectrochemistry, rotating disk electrochemistry, AC voltammetry. Prerequisite: CHEM 514.",
+    "url": "/catalogue/course/chem/614"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 616",
+    "title": "Advanced Separations",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "SECOND, 3/2-0-0"
+    },
+    "description": "Six week course with topics that may include: multidimensional separations, ion chromatography, CE, biological HPLC, advanced sample preparation/introduction techniques. Prerequisite: CHEM 516.",
+    "url": "/catalogue/course/chem/616"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 618",
+    "title": "Advanced Mass Spectrometry",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "SECOND, 3/2-0-0"
+    },
+    "description": "Six week course with topics that may include: mass analyzers and ionization techniques, vacuum systems, advanced sample introduction techniques, tandem MS, mass spectral interpretation, quantitative MS, MS applications. Prerequisite: CHEM 518.",
+    "url": "/catalogue/course/chem/618"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 623",
+    "title": "Special Topics in Advanced Analytical Chemistry",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "EITHER, 3/2-0-0"
+    },
+    "description": "Course may be repeated for credit, provided there is no duplication of specific topic.",
+    "url": "/catalogue/course/chem/623"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 659",
+    "title": "Special Topics in Chemical Biology",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "EITHER, 3/2-0-0"
+    },
+    "description": "Six-week course with advanced discussion of selected topics in chemical biology. Course may be repeated for credit, provided there is no duplication of specific topic.",
+    "url": "/catalogue/course/chem/659"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 667",
+    "title": "Special Topics in Synthetic Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Advanced treatment of selected topics in modern synthetic organic chemistry, drawn from one or more of the following: (1) advanced methodology for organic synthesis, (2) carbohydrate structure and synthesis, (3) organometallic methodology for organic synthesis, and (4) solid-phase organic synthesis and combinatorial chemistry. Other topics appropriate to the category may also be offered. Course may be repeated for credit, provided there is no duplication of specific topic. Prerequisite: CHEM 563 or consent of Instructor.",
+    "url": "/catalogue/course/chem/667"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 669",
+    "title": "Special Topics in Bio-organic Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Advanced discussion of selected topics in modern bio-organic chemistry, drawn from one or more of the following: (1) natural products and secondary metabolism, (2) nucleic acid chemistry, and (3) organic and biophysical carbohydrate chemistry. Other topics appropriate to the category may also be offered. Course may be repeated for credit, provided there is no duplication of specific topic.",
+    "url": "/catalogue/course/chem/669"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 681",
+    "title": "Special Topics in Physical Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: consent of instructor. Course may be repeated for credit, provided there is no duplication of specific topic.",
+    "url": "/catalogue/course/chem/681"
+  }
+]

@@ -1,5 +1,3 @@
-// --- START OF FILE parser.ts ---
-
 import { OpenAI } from 'openai'; 
 import { Course, RawCourse, RequirementsData } from '../../lib/types'; 
 import path from 'path';

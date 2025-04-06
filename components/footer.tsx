@@ -1,8 +1,6 @@
 "use client"
 
 import Link from "next/link"
-import { BookOpen, HelpCircle } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { useState } from "react"
 
 

@@ -35,7 +35,6 @@ async function save(department: string) {
     }
     coursesJson = JSON.parse(fileContent);
     console.log(`Parsed JSON data successfully.`);
-    console.log(`Data: ${JSON.stringify(coursesJson, null, 2)}`);
   } catch (error: any) {
     console.error(`Error reading or parsing JSON file: ${error.message}`);
     process.exit(1);

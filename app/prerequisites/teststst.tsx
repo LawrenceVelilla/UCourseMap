@@ -24,9 +24,9 @@ interface PrerequisitesPageProps {
 
 // --- Main Server Component ---
 export default async function PrerequisitesPage({ searchParams }: PrerequisitesPageProps) {
-    const param = await searchParams;
-    const dept = param?.dept;
-    const code = param?.code;
+    // Use searchParams directly
+    const dept = searchParams?.dept;
+    const code = searchParams?.code;
 
     let courseData: Awaited<ReturnType<typeof getCourseAndPrerequisiteData>> | null = null;
     let fetchError: string | null = null;

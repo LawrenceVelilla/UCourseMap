@@ -44,10 +44,12 @@ notes?: string | null;
 }
 
 export interface RequirementCondition {
-operator: 'AND' | 'OR';
-conditions?: RequirementCondition[];
-courses?: string[];
-pattern?: string; // Optional pattern for regex matching
+  // Operator might need more values if you use 'STANDALONE', 'WILDCARD', etc.
+  operator: 'AND' | 'OR' | 'STANDALONE' | 'WILDCARD' | string; // Make string if more ops exist
+  conditions?: RequirementCondition[]; // Nested conditions
+  courses?: string[]; // List of course codes OR descriptive text
+  pattern?: string; // Optional pattern (e.g., regex)
+  description?: string; // Optional human-readable description <--- ADD THIS LINE
 }
   
 export interface ParsedCourseData {

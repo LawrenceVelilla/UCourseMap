@@ -1,7 +1,6 @@
-// lib/data.ts
-import 'server-only'; // Ensures this code runs only on the server
-import { PrismaClient, Prisma } from '@prisma/client'; // Import Prisma namespace too
-import { Course, isRequirementsData, RequirementsData } from './types'; // Import your custom types
+import 'server-only'
+import { PrismaClient, Prisma } from '@prisma/client'; 
+import { Course, isRequirementsData, RequirementsData } from './types'; 
 
 const prisma = new PrismaClient();
 
@@ -43,7 +42,7 @@ export async function getCourseDetails(departmentCode: string, courseCodeNumber:
             url: dbCourse.url,
             updatedAt: dbCourse.updatedAt.toISOString(),
             // Add any other fields defined in your `Course` type if they exist in the DB
-            // e.g., rawDescription: dbCourse.rawDescription,
+            // rawDescription: dbCourse.rawDescription,
         };
         return mappedCourse;
 
@@ -107,11 +106,6 @@ export async function getCourseAndPrerequisiteData(departmentCode: string, cours
     prerequisiteCourses,
   };
 }
-
-
-// ========================================================================
-// NEW FUNCTIONS FOR RECURSIVE GRAPH DATA
-// ========================================================================
 
 /**
  * Helper function to parse "DEPT CODE" string into components.

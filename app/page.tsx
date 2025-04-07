@@ -11,6 +11,19 @@ import PrerequisiteGraphWrapper, {
     type AppEdge,   
     type GraphNodeData 
 } from '@/components/prerequisiteGraph'; 
+
+
+
+
+// TODDOOO:
+// ADD coures/[department]/[courseCode]/route.ts back so I can use it for the CSF stuff like dynamic rendering and autocomplete
+
+
+
+
+
+
+
 interface PrerequisitesPageProps {
     searchParams?: {
         dept?: string;

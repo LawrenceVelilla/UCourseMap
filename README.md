@@ -47,13 +47,14 @@ This tool aims to demystify course planning by providing readily accessible and 
 *(Instructions for local setup)*
 
 1. **Clone the repository:**
-    
-    `git clone https://github.com/LawrenceVelilla/Web-Project.git
-    cd Web-Project`
+    ```
+    git clone https://github.com/LawrenceVelilla/Web-Project.git
+    cd Web-Project
+   ```
     
     Use code [**with caution**](https://support.google.com/legal/answer/13505487).Bash
     
-2. **Install dependencies:**
+3. **Install dependencies:**
     
     `npm install
     # or
@@ -61,36 +62,37 @@ This tool aims to demystify course planning by providing readily accessible and 
     
     Use code [**with caution**](https://support.google.com/legal/answer/13505487).Bash
     
-3. **Set up Supabase:**
+4. **Set up Supabase:**
     - Create a Supabase project.
     - Get your database connection string (using the pooler).
     - Set up your database schema (use prisma/schema.prisma).
-4. **Environment Variables:**
+5. **Environment Variables:**
     - Create a .env.local file in the root directory.
     - Add your Supabase connection string:
-        
-        `DATABASE_URL="postgresql://postgres:[YOUR-PASSWORD]@[YOUR-SUPABASE-HOST]:6543/postgres?pgbouncer=true&connection_limit=1"`
+        ```
+        DATABASE_URL="postgresql://postgres:[YOUR-PASSWORD]@[YOUR-SUPABASE-HOST]:6543/postgres?pgbouncer=true&connection_limit=1"
+      ```
         
         Use code [**with caution**](https://support.google.com/legal/answer/13505487).Env
         
         *(Note: Use port 6543 for the pooler)*
         
-5. **Apply Database Migrations:**
+6. **Apply Database Migrations:**
     
     `npx prisma migrate dev`
     
     Use code [**with caution**](https://support.google.com/legal/answer/13505487).Bash
     
-6. **(Optional) Seed Database:** If you have seeding scripts, run them. (You'll need to add instructions here if applicable).
-7. **Run the development server:**
-    
-    `npm run dev
+7. **(Optional) Seed Database:** If you have seeding scripts, run them. (You'll need to add instructions here if applicable).
+8. **Run the development server:**
+    ```
+    npm run dev
     # or
-    yarn dev`
-    
+    yarn dev
+    ```
     Use code [**with caution**](https://support.google.com/legal/answer/13505487).Bash
     
-8. Open [**http://localhost:3000**](https://www.google.com/url?sa=E&q=http%3A%2F%2Flocalhost%3A3000) in your browser.
+9. Open [**http://localhost:3000**](https://www.google.com/url?sa=E&q=http%3A%2F%2Flocalhost%3A3000) in your browser.
 
 ## Project Structure (Key Areas)
 
@@ -104,6 +106,8 @@ This tool aims to demystify course planning by providing readily accessible and 
 
 ## Future Enhancements (Roadmap)
 
+- Client Side Fetching intead of (or alongside of) the current ServerSide Renderign
+- Caching to help limit usage on vercel.
 - Visual representation of AND/OR logic within the graph.
 - Corequisite visualization (separate graph or styled edges).
 - Autocomplete/suggestions for the course search bar.

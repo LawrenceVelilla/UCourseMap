@@ -19,18 +19,13 @@ import PrerequisiteGraphWrapper, {
 
 // --- Type Imports for Graph ---
 import type { Node, Edge } from '@xyflow/react';
-
-// --- Corrected Page Props Interface ---
 interface CoursePageProps {
-    // Parameters from the URL path segments ([department], [courseCode])
     params: {
         department: string;
         courseCode: string;
     };
-    // Optional search parameters from the query string (e.g., ?view=graph)
-    searchParams?: { [key: string]: string | string[] | undefined };
+    searchParams?: { [key: string]: string | string[] | undefined }; // This type IS correct
 }
-// --- End Page Props Interface ---
 
 
 // --- Main Server Component for the Dedicated Course Page ---

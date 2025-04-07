@@ -17,22 +17,29 @@ import PrerequisiteGraphWrapper, {
     type InputNode, type AppEdge, type GraphNodeData
 } from '@/components/prerequisiteGraph';
 
-// --- Type Imports for Graph ---
-import type { Node, Edge } from '@xyflow/react';
-interface CoursePageProps {
-    params: {
-        department: string;
-        courseCode: string;
-    };
-    searchParams: { [key: string]: string | string[] | undefined }; // This type IS correct
-}
 
 
 // --- Main Server Component for the Dedicated Course Page ---
 // Use the Corrected Props Interface
-export default async function DedicatedCoursePage({ params, searchParams }: CoursePageProps) {
+<<<<<<< HEAD
+export default async function DedicatedCoursePage({ 
+    params,
+    searchParams 
+  }: {
+    params: { department: string; courseCode: string };
+    searchParams: Record<string, string | string[] | undefined>;
+  }) {
     // Destructure department and course code from 'params' NOT 'searchParams'
     const { department: deptParam, courseCode: codeParam } = params;
+=======
+export default async function DedicatedCoursePage({ params, searchParams }: Record<string, any>) {
+    // Type assertion inside the function if needed
+    const { department: deptParam, courseCode: codeParam } = params as { 
+      department: string; 
+      courseCode: string 
+    }; 
+
+>>>>>>> fa9b03f (Trying to bypass type limitations for now)
 
     // Normalize for fetching (lowercase dept, ensure code is string)
     const dept = deptParam?.toLowerCase();

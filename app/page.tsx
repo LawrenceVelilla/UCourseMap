@@ -11,6 +11,7 @@ import PrerequisiteGraphWrapper, {
     type AppEdge,   
     type GraphNodeData 
 } from '@/components/prerequisiteGraph'; 
+<<<<<<< HEAD
 interface PrerequisitesPageProps {
     searchParams?: {
         dept?: string;
@@ -18,6 +19,28 @@ interface PrerequisitesPageProps {
     };
 }
 export default async function PrerequisitesPage({ searchParams }: PrerequisitesPageProps) {
+=======
+
+
+
+
+// TODDOOO:
+// ADD coures/[department]/[courseCode]/route.ts back so I can use it for the CSF stuff like dynamic rendering and autocomplete
+
+
+
+
+
+
+
+// interface PrerequisitesPageProps {
+//     searchParams?: {
+//         dept?: string;
+//         code?: string;
+//     };
+// }
+export default async function PrerequisitesPage({ searchParams }: { searchParams?: Record<string, any> }) {
+>>>>>>> fa9b03f (Trying to bypass type limitations for now)
     const param = await searchParams
     
     const dept = param?.dept;

@@ -24,7 +24,7 @@ interface CoursePageProps {
         department: string;
         courseCode: string;
     };
-    searchParams?: { [key: string]: string | string[] | undefined }; // This type IS correct
+    searchParams: { [key: string]: string | string[] | undefined }; // This type IS correct
 }
 
 

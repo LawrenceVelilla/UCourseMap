@@ -64,7 +64,7 @@ export function RequirementConditionDisplay({ condition }: { condition: Requirem
                         const parsedLinkData = isCourse ? parseCourseCodeForLink(itemText) : null;
                         return (
                              <li key={itemText} style={{ marginBottom: '3px' }}>
-                                 {isCourse && parsedLinkData ? ( <Link href={`/prerequisites?dept=${parsedLinkData.dept.toLowerCase()}&code=${parsedLinkData.code}`} className="text-[#283618] hover:underline" title={`Check prerequisites for ${itemText}`}> {itemText} </Link> )
+                                 {isCourse && parsedLinkData ? ( <Link href={`/?dept=${parsedLinkData.dept.toLowerCase()}&code=${parsedLinkData.code}`} className="text-[#283618] hover:underline" title={`Check prerequisites for ${itemText}`}> {itemText} </Link> )
                                   : ( <span style={{ fontStyle: 'italic', color: '#333' }}>{itemText}</span> )}
                              </li>
                           );

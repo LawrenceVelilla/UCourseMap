@@ -1,5 +1,4 @@
-// components/PrerequisiteCheckerForm.tsx
-'use client'; // <--- Make this a Client Component
+'use client'
 
 import { useState, FormEvent, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
@@ -56,7 +55,7 @@ export function PrerequisiteCheckerForm() {
         const params = new URLSearchParams();
         params.set('dept', parsed.dept.toLowerCase()); // Use lowercase for consistency in URL
         params.set('code', parsed.code);
-        const newPath = `/prerequisites?${params.toString()}`;
+        const newPath = `/?${params.toString()}`;
 
         // Use router.push for client-side navigation
         router.push(newPath);

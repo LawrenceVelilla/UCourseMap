@@ -81,7 +81,7 @@ export function Sidebar({ className }: SidebarProps) {
           {!collapsed && <span>Planner</span>}
         </Link>
         <Link
-          href="/prerequisites"
+          href="/"
           className={cn(
             "flex items-center gap-3 px-3 py-2 rounded-md hover:bg-[#4a5349] transition-colors",
             collapsed && "justify-center px-2",

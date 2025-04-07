@@ -1,61 +1,56 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getCoursesByDepartment } from '@/lib/data'; 
 
-// Interface defining the expected URL path parameter
-interface DepartmentRouteParams {
-  department: string;
-}
-
+// Interface defining the expected URL path parameters
 interface CourseRouteParams {
   department: string;
   courseCode: string;
 }
 
-
-/**
- * API Route Handler for GET requests to /api/courses/[department]
- * Fetches and returns all courses listed under a specific department.
- */
 export async function GET(
-  request: NextRequest, // Use NextRequest
-  { params }: { params: CourseRouteParams } // Context object with params
+  request: NextRequest,
+  { params }: { params: CourseRouteParams }
 ) {
-  // Destructure the department code from params
-  const pp = await params
-  const department = pp.department; 
-  const courseCode = pp.courseCode; 
+  // Access params directly - no need for await
+  const { department, courseCode } = params;
 
   // Basic validation
   if (!department) {
     return NextResponse.json(
       { message: 'Department code parameter is required in the URL path' },
-      { status: 400 } // Bad Request
+      { status: 400 } 
     );
   }
 
-  // Optional: Add more specific validation for department format
-  // if (!/^[a-zA-Z]+$/.test(department)) {
-  //   return NextResponse.json({ message: 'Invalid department code format' }, { status: 400 });
-  // }
+  if (!courseCode) {
+    return NextResponse.json(
+      { message: 'Course code parameter is required in the URL path' },
+      { status: 400 }
+    );
+  }
 
   try {
-    // Call the data fetching function - **** Ensure this function exists! ****
-    // If getCoursesByDepartment doesn't exist, you'll need to create it in lib/data.ts
-    // using prisma.course.findMany({ where: { department: department.toUpperCase() } })
+    // Call the data fetching function
     const courses = await getCoursesByDepartment(department);
 
-    // Check if the function returned results (it might return empty array if none found)
-    // No specific check needed here unless you want to return 404 if department has 0 courses
+    // Since this is a specific course route, you might want to filter for the specific course
+    const specificCourse = courses.find(course => course.courseCode === courseCode);
+    
+    if (!specificCourse) {
+      return NextResponse.json(
+        { message: `Course ${courseCode} not found in department ${department}` },
+        { status: 404 }
+      );
+    }
 
-    // Return the array of courses (or empty array) as JSON
-    return NextResponse.json(courses);
+    // Return the specific course as JSON
+    return NextResponse.json(specificCourse);
 
   } catch (error) {
-    // Catch unexpected errors during data fetching
-    console.error(`API Error fetching courses for department ${department}:`, error);
+    console.error(`API Error fetching course ${department} ${courseCode}:`, error);
     return NextResponse.json(
-      { message: 'Internal Server Error while fetching department courses' },
-      { status: 500 } // Internal Server Error
+      { message: 'Internal Server Error while fetching course data' },
+      { status: 500 }
     );
   }
 }

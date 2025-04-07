@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "@prisma/client": "^6.5.0",
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^22.14.0",
     "@types/react": "^19.0.2",
     "@types/react-dom": "19.0.2",

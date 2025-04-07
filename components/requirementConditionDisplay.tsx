@@ -35,8 +35,8 @@ export function RequirementConditionDisplay({ condition }: { condition: Requirem
 
     // --- Determine Operator Text (only for AND/OR) ---
     const operatorText = condition.operator === 'AND'
-      ? 'ALL of the following:'
-      : (condition.operator === 'OR' ? 'ONE of the following:' : null);
+      ? 'ALL of:'
+      : (condition.operator === 'OR' ? 'ONE of:' : null);
 
     // --- Determine if this node requires its own UL structure ---
     // Needs UL if it has an operator (AND/OR) OR if it has nested conditions.

@@ -1,17 +1,17 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getCoursesByDepartment } from '@/lib/data'; 
 
-// Interface defining the expected URL path parameters
-interface CourseRouteParams {
+// Define the params with the correct type that Next.js expects
+type Params = {
   department: string;
   courseCode: string;
 }
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: CourseRouteParams }
+  { params }: { params: Params }
 ) {
-  // Access params directly - no need for await
+  // Access params directly
   const { department, courseCode } = params;
 
   // Basic validation
@@ -54,6 +54,3 @@ export async function GET(
     );
   }
 }
-
-// Add other HTTP methods if needed (CRUD) - but typically GET is enough for fetching data
-// For example, you might want to add POST for creating a new course, etc.

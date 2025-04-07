@@ -1,101 +1,114 @@
-# UniPlanner 🎓✨
+# UniPlanner - University of Alberta Course Planner & Prerequisite Checker
 
-**Simplify your university course planning!** UniPlanner helps students visualize course prerequisites and corequisites, making academic planning easier and less error-prone. Initially built for the University of Alberta (UofA), where navigating the course catalogue manually can be challenging.
+**(Placeholder: Add a cool banner image or GIF showing the app in action here)**
 
+## Overview
 
-## The Problem
+UniPlanner is a web application designed to help University of Alberta students navigate course selection and academic planning. Its core feature is an interactive prerequisite checker that allows users to:
 
-Manually checking the course catalogue for prerequisites at universities like UofA is time-consuming and complex, especially for programs with intricate dependency chains (like Computer Science). It's easy to miss requirements or struggle to visualize the optimal path through a degree.
+- Search for any UofA course.
+- View detailed course information (title, description, units).
+- See accurately parsed prerequisite and corequisite requirements in a clear, nested list format, handling complex AND/OR logic.
+- Visualize course dependencies through an automatically generated, multi-level prerequisite graph.
 
-## The Solution
+**(Placeholder: Add screenshot of the main checker interface - search bar, list results, graph section)**
 
-UniPlanner provides a user-friendly web interface to:
+This tool aims to demystify course planning by providing readily accessible and easy-to-understand requirement information, sourced directly from publicly available UofA data.
 
-*   **Browse Courses:** View detailed information for courses within specific departments.
-*   **Visualize Prerequisites:** See requirements clearly displayed in both:
-    *   A structured **List Format** (showing AND/OR logic).
-    *   An interactive **Node-Based Graph** showing course dependencies visually.
-*   **Accurate Data:** Leverages scraped data from the official course catalogue, parsed intelligently to extract requirement structures.
+## Features
 
-**MVP Focus:** University of Alberta - Computer Science (CMPUT) department.
+- **Course Search:** Enter a course code (e.g., "CMPUT 272") to fetch details.
+- **Detailed Prerequisite/Corequisite Lists:** Accurately displays complex requirements using nested AND/OR logic, including text-based requirements (e.g., "Any 300-level course").
+    
+    **(Placeholder: Add screenshot focusing on the detailed RequirementConditionDisplay list for a complex course)**
+    
+- **Interactive Prerequisite Graph:** Visualizes the dependency tree for prerequisites, showing multiple levels of requirements. Uses automatic layout for clarity. Handles text-based prerequisites as terminal nodes.
+    
+    **(Placeholder: Add screenshot or short GIF/video of the React Flow graph rendering and laying out)**
+    
+- **Responsive Design:** Basic layout adapts for desktop (with sidebar) and mobile use.
+- **Server-Side Rendering:** Leverages Next.js App Router for efficient data fetching and rendering.
 
-## Key Features (MVP)
+## Technology Stack
 
-*   Detailed view for individual CMPUT courses (Title, Code, Units, Description, Requirements).
-*   Structured list display of prerequisites and corequisites.
-*   Interactive prerequisite graph visualization.
-*   Data populated from scraped and parsed UofA catalogue information.
-
-## Tech Stack
-
-*   **Framework:** Next.js (App Router)
-*   **Language:** TypeScript
-*   **UI Library:** React
-*   **Styling:** Tailwind CSS
-*   **Database:** Supabase (PostgreSQL)
-*   **ORM:** Prisma
-*   **Data Parsing:** OpenAI API (for initial structured requirement extraction) 
-*   **Graph Visualization:** React Flow (or specify your chosen library) --> To be implemented
-*   **Deployment:** Vercel / Netlify (specify yours)
+- **Framework:** [**Next.js**](https://www.google.com/url?sa=E&q=https%3A%2F%2Fnextjs.org%2F) (App Router)
+- **Language:** [**TypeScript**](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.typescriptlang.org%2F)
+- **Database:** [**Supabase**](https://www.google.com/url?sa=E&q=https%3A%2F%2Fsupabase.com%2F) (PostgreSQL)
+- **ORM:** [**Prisma**](https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.prisma.io%2F)
+- **UI:** [**React**](https://www.google.com/url?sa=E&q=https%3A%2F%2Freactjs.org%2F)
+- **Component Library:** [**Shadcn/UI**](https://www.google.com/url?sa=E&q=https%3A%2F%2Fui.shadcn.com%2F)
+- **Styling:** [**Tailwind CSS**](https://www.google.com/url?sa=E&q=https%3A%2F%2Ftailwindcss.com%2F)
+- **Graph Visualization:** [**@xyflow/react**](https://www.google.com/url?sa=E&q=https%3A%2F%2Freactflow.dev%2F) (React Flow v11+)
+- **Graph Layout:** [**Dagre**](https://www.google.com/url?sa=E&q=https%3A%2F%2Fgithub.com%2Fdagrejs%2Fdagre)
+- **Deployment:** [**Vercel**](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvercel.com%2F)
 
 ## Getting Started
 
-Follow these steps to set up the project locally:
+*(Instructions for local setup)*
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/your-username/uniplanner.git
-    cd uniplanner
-    ```
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    # or yarn install / pnpm install
-    ```
-3.  **Set up Environment Variables:**
-    *   Create a `.env` file in the project root.
-    *   Copy the contents of `.env.example` (create this file if it doesn't exist) into `.env`.
-    *   Fill in the required values:
-        *   `DATABASE_URL`: Your PostgreSQL connection string from Supabase (Project Settings > Database > Connection string > URI).
-        *   `NEXT_PUBLIC_SUPABASE_URL`: Your Supabase Project URL (Project Settings > API).
-        *   `NEXT_PUBLIC_SUPABASE_ANON_KEY`: Your Supabase Anon (public) Key (Project Settings > API).
-        *   `OPENAI_API_KEY`: Your OpenAI API key (if running the parser).
-        *   *(Add any other required keys)*
-4.  **Set up Supabase Database:**
-    *   Ensure you have a Supabase project created.
-    *   The necessary table schema is defined in `prisma/schema.prisma`.
-5.  **Apply Database Migrations:**
-    ```bash
-    npx prisma migrate dev
-    ```
-    *(This will create the `courses` table based on the schema)*
-6.  **Generate Prisma Client:**
-    ```bash
-    npx prisma generate
-    ```
-7.  **Seed the Database:**
-    *   Ensure your parsed course data JSON (e.g., `data/parsed_courses.json`) exists.
-    *   Run the seeding script (adjust script name/path if needed):
-        ```bash
-        npm run db:load
-        # or: npx ts-node ./scripts/loadCourses.ts
-        ```
-8.  **Run the Development Server:**
-    ```bash
-    npm run dev
-    ```
-    Open [http://localhost:3000](http://localhost:3000) in your browser.
+1. **Clone the repository:**
+    
+    `git clone https://github.com/LawrenceVelilla/Web-Project.git
+    cd Web-Project`
+    
+    Use code [**with caution**](https://support.google.com/legal/answer/13505487).Bash
+    
+2. **Install dependencies:**
+    
+    `npm install
+    # or
+    yarn install`
+    
+    Use code [**with caution**](https://support.google.com/legal/answer/13505487).Bash
+    
+3. **Set up Supabase:**
+    - Create a Supabase project.
+    - Get your database connection string (using the pooler).
+    - Set up your database schema (use prisma/schema.prisma).
+4. **Environment Variables:**
+    - Create a .env.local file in the root directory.
+    - Add your Supabase connection string:
+        
+        `DATABASE_URL="postgresql://postgres:[YOUR-PASSWORD]@[YOUR-SUPABASE-HOST]:6543/postgres?pgbouncer=true&connection_limit=1"`
+        
+        Use code [**with caution**](https://support.google.com/legal/answer/13505487).Env
+        
+        *(Note: Use port 6543 for the pooler)*
+        
+5. **Apply Database Migrations:**
+    
+    `npx prisma migrate dev`
+    
+    Use code [**with caution**](https://support.google.com/legal/answer/13505487).Bash
+    
+6. **(Optional) Seed Database:** If you have seeding scripts, run them. (You'll need to add instructions here if applicable).
+7. **Run the development server:**
+    
+    `npm run dev
+    # or
+    yarn dev`
+    
+    Use code [**with caution**](https://support.google.com/legal/answer/13505487).Bash
+    
+8. Open [**http://localhost:3000**](https://www.google.com/url?sa=E&q=http%3A%2F%2Flocalhost%3A3000) in your browser.
 
-## Future Development
+## Project Structure (Key Areas)
 
-*   Expand data coverage to more UofA departments (BIOL, CHEM, MATH, etc.).
-*   Implement user accounts (Supabase Auth) for saving course plans.
-*   Develop an AI assistant for course recommendations and planning queries.
-*   Add advanced search and filtering capabilities.
-*   (Potentially) Add professor information and internal rating system.
+- app/prerequisites/page.tsx: Main interactive checker page (Server Component).
+- components/PrerequisiteGraph.tsx: React Flow graph rendering (Client Component).
+- components/RequirementConditionDisplay.tsx: Recursive list display for requirements.
+- components/PrerequisiteCheckerForm.tsx: User input form (Client Component).
+- lib/data.ts: Server-side data fetching logic using Prisma (getCourseAndPrerequisiteData, getRecursivePrerequisites).
+- lib/types.ts: Core TypeScript type definitions (Course, RequirementCondition, etc.).
+- prisma/schema.prisma: Database schema definition.
 
-## Contributing
+## Future Enhancements (Roadmap)
 
-Contributions are welcome! Please feel free to open an issue or submit a pull request. (Add more specific guidelines if desired).
-
-
+- Visual representation of AND/OR logic within the graph.
+- Corequisite visualization (separate graph or styled edges).
+- Autocomplete/suggestions for the course search bar.
+- User authentication for saving course plans.
+- Requirement satisfaction checking based on user's saved courses.
+- Enhanced mobile UI/UX.
+- Comprehensive testing (unit, integration, e2e).
+- Linking to external resources (RateMyProf, UAlberta Calendar).

@@ -4,243 +4,164 @@ import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Sidebar } from "@/components/sidebar";
+import { Sidebar } from "@/components/sidebar"; // Assuming Sidebar is part of layout now?
 
-// --- Data Fetching & Types ---
-// Import BOTH data fetching functions again
+// Data fetching and base types
 import { getCourseAndPrerequisiteData, getRecursivePrerequisites } from '@/lib/data';
 import { Course, RequirementCondition } from '@/lib/types';
 
-// --- UI Components ---
-import { PrerequisiteCheckerForm } from '@/components/PrerequisiteCheckerForm';
-import { RequirementConditionDisplay } from '@/components/requirementConditionDisplay'; // Corrected casing
-import PrerequisiteGraphWrapper from '@/components/prerequisiteGraph'; // Import graph wrapper
+// UI Components (Consider if Form is needed here, probably not)
+// import { PrerequisiteCheckerForm } from '@/components/PrerequisiteCheckerForm';
+import { RequirementConditionDisplay } from '@/components/requirementConditionDisplay';
+import PrerequisiteGraphWrapper, {
+    type InputNode, type AppEdge, type GraphNodeData
+} from '@/components/prerequisiteGraph';
 
-// --- Graph-Specific Types ---
+// --- Type Imports for Graph ---
 import type { Node, Edge } from '@xyflow/react';
 
-interface GraphNodeData extends Record<string, unknown> {
-  label: string; // Display text for the node
-  isCourse: boolean; // Flag to know if it's a real course or descriptive text
-  type?: 'target' | 'prerequisite' | 'text_requirement'; // Add type for text nodes
-}
-// Specific Node type used internally by graph component
-type AppNode = Node<GraphNodeData>;
-// Type for nodes passed as props
-interface InputNode extends Omit<AppNode, 'position' | 'width' | 'height' | 'style' | 'selected' | 'dragging' | 'selectable' | 'draggable' | 'hidden' | 'resizing' | 'focusable' | 'sourcePosition' | 'targetPosition'> {
-  style?: React.CSSProperties;
-}
-// Specific Edge type (using base type)
-type AppEdge = Edge;
-// --- End Graph Types ---
-
-
-// --- Page Props Interface ---
-interface PrerequisitesPageProps {
-    searchParams?: {
-        dept?: string;
-        code?: string;
+// --- Corrected Page Props Interface ---
+interface CoursePageProps {
+    // Parameters from the URL path segments ([department], [courseCode])
+    params: {
+        department: string;
+        courseCode: string;
     };
+    // Optional search parameters from the query string (e.g., ?view=graph)
+    searchParams?: { [key: string]: string | string[] | undefined };
 }
-
-// --- Helper to check if a string looks like a course code ---
-// (You might already have this in lib/utils.ts)
-function looksLikeCourseCode(text: string): boolean {
-    if (!text) return false;
-    return /^[A-Z]+\s*\d+[A-Z]*$/i.test(text.trim());
-}
+// --- End Page Props Interface ---
 
 
-// --- Main Server Component ---
-export default async function PrerequisitesPage({ searchParams }: PrerequisitesPageProps) {
-    const dept = searchParams?.dept;
-    const code = searchParams?.code;
+// --- Main Server Component for the Dedicated Course Page ---
+// Use the Corrected Props Interface
+export default async function DedicatedCoursePage({ params, searchParams }: CoursePageProps) {
+    // Destructure department and course code from 'params' NOT 'searchParams'
+    const { department: deptParam, courseCode: codeParam } = params;
 
-    // State variables
+    // Normalize for fetching (lowercase dept, ensure code is string)
+    const dept = deptParam?.toLowerCase();
+    const code = typeof codeParam === 'string' ? codeParam : undefined;
+
+    // --- State Variables ---
     let displayCourseData: Awaited<ReturnType<typeof getCourseAndPrerequisiteData>> | null = null;
     let recursiveGraphData: Awaited<ReturnType<typeof getRecursivePrerequisites>> | null = null;
     let fetchError: string | null = null;
     let notFoundError: boolean = false;
     const targetCourseCode = dept && code ? `${dept.toUpperCase()} ${code}` : null;
 
-    // --- Fetch Data ---
+    // --- Fetch Data (based on URL params) ---
     if (dept && code && targetCourseCode) {
-        console.log(`Fetching data for ${targetCourseCode}...`);
+        console.log(`Fetching data for dedicated page: ${targetCourseCode}...`);
         try {
-            if (!/^[a-z]+$/.test(dept) || !/^\d+[a-z]*$/.test(code)) { throw new Error("Invalid URL format."); }
-
-            // Fetch recursive data FIRST, as it contains all nodes needed
-            recursiveGraphData = await getRecursivePrerequisites(dept, code); // Default depth = 3
-
-            // Check if the *target* node exists within the recursive results
+            // No need to validate format here as much, Next.js routing handles it somewhat
+            // Fetch recursive data first
+            recursiveGraphData = await getRecursivePrerequisites(dept, code);
             const targetNodeExists = recursiveGraphData?.nodes.some(node => node.courseCode === targetCourseCode);
 
             if (!targetNodeExists) {
-                // If the target wasn't found even by recursive search, it likely doesn't exist
-                console.log(`Target course ${targetCourseCode} not found via recursive search.`);
                 notFoundError = true;
-                // Fetch display data separately only if needed (maybe for error msg context)
-                // displayCourseData = await getCourseAndPrerequisiteData(dept, code);
             } else {
-                console.log(`Recursive data fetched: ${recursiveGraphData.nodes.length} nodes, ${recursiveGraphData.edges.length} edges`);
-                // Fetch the simple display data as well for the list view
+                // Fetch simple display data
                  displayCourseData = await getCourseAndPrerequisiteData(dept, code);
                  if (!displayCourseData?.targetCourse) {
-                     // Should be rare if recursive search found it, but handle anyway
-                     console.warn("Target course found recursively but not via direct fetch?");
-                     notFoundError = true; // Or handle differently
+                     notFoundError = true; // Or set fetchError
                  }
             }
         } catch (error) {
             console.error(`Error fetching course data for ${targetCourseCode}:`, error);
             fetchError = error instanceof Error ? error.message : "An unknown error occurred.";
         }
+    } else {
+        // Handle cases where params might be missing/invalid (though routing usually prevents this)
+        fetchError = "Invalid course parameters in URL.";
     }
 
-    // --- Prepare Graph Input Data from RECURSIVE results ---
-    // Process nodes first to identify which are real courses vs text
-    const allNodeIds = new Set(recursiveGraphData?.nodes.map(n => n.courseCode) ?? []);
+    // --- Prepare Graph Input Data ---
+    // (Logic remains the same as before, using recursiveGraphData)
     const graphInputNodes: InputNode[] = [];
-    const processedEdges: AppEdge[] = []; // Edges might need adjustment based on text nodes
-
-    if (recursiveGraphData) {
-        // Add actual course nodes found
-        recursiveGraphData.nodes.forEach(node => {
-            graphInputNodes.push({
-                id: node.courseCode,
-                type: 'default',
-                data: {
-                    label: node.courseCode, // Display only CODE on node
-                    // title: node.title, // Store full title if needed for tooltips later
-                    isCourse: true,
-                    type: (node.courseCode === targetCourseCode) ? 'target' : 'prerequisite'
-                },
-            });
-        });
-
-        // Process edges and create text nodes for non-course targets
-        recursiveGraphData.edges.forEach((edge, index) => {
-            const targetIsCourse = allNodeIds.has(edge.target);
-
-            if (targetIsCourse) {
-                // If target is a known course, add the edge normally
-                processedEdges.push({
-                    id: `edge-${edge.source}-${edge.target}-${index}`,
-                    source: edge.source,
-                    target: edge.target,
-                });
-            } else {
-                // If target is NOT a known course, it's likely descriptive text
-                // 1. Create a new 'text' node if it doesn't exist yet
-                const textNodeId = `text-${edge.target}`; // Create a unique ID for the text node
-                if (!graphInputNodes.some(n => n.id === textNodeId)) {
-                     graphInputNodes.push({
-                        id: textNodeId,
-                        type: 'default', // Can create a custom node type later if needed
-                        data: {
-                            label: edge.target, // Use the descriptive text as label
-                            isCourse: false,
-                            type: 'text_requirement'
-                        },
-                        // Apply different style for text nodes? Handled in graph component maybe
-                        style: { background: '#fffbdd', border: '1px dashed #e6db74', fontSize: '12px', padding: '5px 10px', height: 'auto' } // Example style
-                    });
-                }
-                // 2. Create an edge from the source course to this new text node
-                processedEdges.push({
-                    id: `edge-${edge.source}-${textNodeId}-${index}`,
-                    source: edge.source,
-                    target: textNodeId, // Target the text node
-                });
-            }
-        });
-    }
-    const graphInputEdges = processedEdges; // Assign the processed edges
-    // --- End Graph Input Data Preparation ---
+    const graphInputEdges: AppEdge[] = [];
+    // ... (populate graphInputNodes and graphInputEdges based on recursiveGraphData) ...
+     const allCourseNodeIds = new Set(recursiveGraphData?.nodes.map(n => n.courseCode) ?? []);
+     if (recursiveGraphData) {
+         recursiveGraphData.nodes.forEach(node => graphInputNodes.push({ id: node.courseCode, type: 'default', data: { label: node.courseCode, isCourse: true, type: (node.courseCode === targetCourseCode) ? 'target' : 'prerequisite' } }));
+         recursiveGraphData.edges.forEach((edge, index) => { /* ... handle text nodes and add to graphInputEdges ... */
+            const targetIsCourse = allCourseNodeIds.has(edge.target);
+             if (targetIsCourse) { graphInputEdges.push({ id: `edge-${edge.source}-${edge.target}-${index}`, source: edge.source, target: edge.target }); }
+             else {
+                 const textNodeId = `text-${edge.target}`;
+                 if (!graphInputNodes.some(n => n.id === textNodeId)) { graphInputNodes.push({ id: textNodeId, type: 'default', data: { label: edge.target, isCourse: false, type: 'text_requirement'}, style: { background: '#fffbdd', border: '1px dashed #e6db74', fontSize: '12px', fontStyle: 'italic', padding: '8px 12px', textAlign: 'center', height: 60, width: 180 } }); }
+                 graphInputEdges.push({ id: `edge-${edge.source}-${textNodeId}-${index}`, source: edge.source, target: textNodeId });
+             }
+         });
+     }
 
 
     // --- Render Page UI ---
     return (
-        <div className="flex flex-col min-h-screen">
-            <div className="flex flex-1"> {/* Sidebar + Main */}
-                <div className="hidden md:block bg-[#f5f5f0]"><Sidebar /></div>
-                <div className="flex-1 bg-[#f5f5f0] flex flex-col"> {/* Main Area */}
-                    {/* Header */}
-                    <header className="md:hidden ...">...</header>
+        // This content is rendered *within* the RootLayout
+        // No need for outer flex divs or Footer here if handled by layout.tsx
+        <div className="container mx-auto py-8 px-4">
+             {/* Maybe a different back button? Or none? */}
+             <div className="flex items-center gap-2 mb-6">
+                 <Link href="/"> {/* Link back to checker/home */}
+                     <Button variant="ghost" size="sm"><ArrowLeft className="mr-2 h-4 w-4" /> Back to Checker</Button>
+                 </Link>
+             </div>
 
-                    {/* Scrollable Content */}
-                    <main className="flex-1 overflow-y-auto container mx-auto py-8 px-4">
-                        {/* Back Button */}
-                        <div className="flex items-center gap-2 mb-6">...</div>
+             {/* Display Errors or Content */}
+             {fetchError && <Alert variant="destructive"><AlertTitle>Error</AlertTitle><AlertDescription>{fetchError}</AlertDescription></Alert>}
+             {notFoundError && <Alert variant="default"><AlertTitle>Not Found</AlertTitle><AlertDescription>Course {targetCourseCode} could not be found.</AlertDescription></Alert>}
 
-                        {/* Top Section: Input/Results + Empty Right */}
-                        <div className="flex flex-col md:flex-row gap-6">
-                            {/* Left Column */}
-                            <div className="md:w-2/3">
-                                <h1 className="text-3xl font-bold mb-6">Prerequisite Checker</h1>
-                                <Card>
-                                    <CardHeader><CardTitle>Check Course Requirements</CardTitle></CardHeader>
-                                    <CardContent>
-                                        <PrerequisiteCheckerForm />
-                                        <div className="mt-6 space-y-4">
-                                            {/* Alerts */}
-                                            {fetchError && <Alert variant="destructive">...</Alert>}
-                                            {notFoundError && <Alert variant="default" className="bg-yellow-50 ...">...</Alert>}
-                                            {/* Course Details & List Display */}
-                                            {displayCourseData?.targetCourse && !fetchError && !notFoundError && (
-                                                <div className="border rounded-md p-4 space-y-4">
-                                                   {/* Use displayCourseData for title/desc/units/lists */}
-                                                   <h3 className="font-medium text-lg">{displayCourseData.targetCourse.courseCode} - {displayCourseData.targetCourse.title}</h3>
-                                                   <p className="text-sm text-gray-600">{displayCourseData.targetCourse.parsedDescription || 'No description.'}</p>
-                                                   <p className="text-sm text-gray-500">Credits: {displayCourseData.targetCourse.units?.credits ?? 'N/A'}</p>
-                                                    {/* Prereqs List (Accurate Logic) */}
-                                                    <div>
-                                                        <h4 className="font-medium mb-2">Prerequisites Details:</h4>
-                                                        {(displayCourseData.targetCourse.requirements?.prerequisites /*...*/) ? (<RequirementConditionDisplay condition={displayCourseData.targetCourse.requirements.prerequisites} />) : (<p className="text-sm text-gray-500">None listed.</p>)}
-                                                    </div>
-                                                    {/* Coreqs List (Accurate Logic) */}
-                                                    <div>
-                                                        <h4 className="font-medium mb-2">Corequisites Details:</h4>
-                                                        {(displayCourseData.targetCourse.requirements?.corequisites /*...*/) ? (<RequirementConditionDisplay condition={displayCourseData.targetCourse.requirements.corequisites} />) : (<p className="text-sm text-gray-500">None listed.</p>)}
-                                                    </div>
-                                                </div>
-                                            )}
-                                        </div>
-                                    </CardContent>
-                                </Card>
-                            </div>
-                            {/* Right Column */}
-                            <div className="md:w-1/3"> {/* Empty */} </div>
-                        </div>
+             {displayCourseData?.targetCourse && !fetchError && !notFoundError && (
+                // Main content structure for this dedicated page
+                <div className="space-y-8">
+                    {/* Course Header Info */}
+                    <div>
+                        <h1 className="text-3xl font-bold">{displayCourseData.targetCourse.courseCode} - {displayCourseData.targetCourse.title}</h1>
+                        <p className="text-sm text-gray-500 mt-1">Credits: {displayCourseData.targetCourse.units?.credits ?? 'N/A'} | Term: {displayCourseData.targetCourse.units?.term ?? 'N/A'}</p>
+                        <p className="mt-4 text-base">{displayCourseData.targetCourse.parsedDescription || 'No description available.'}</p>
+                    </div>
 
-                        {/* Bottom Section: Multi-Level Prerequisite Graph */}
-                        <div className="mt-8 md:mt-12">
-                             <Card>
-                                <CardHeader>
-                                    <CardTitle>Prerequisite Dependency Graph</CardTitle>
-                                    <CardDescription>Visual representation of prerequisite dependencies (recursive).</CardDescription>
-                                </CardHeader>
-                                <CardContent>
-                                     {/* Disclaimer about logic still applies somewhat */}
-                                     <p className="text-xs text-gray-500 mb-4 italic">Note: This graph shows dependencies based on the listed prerequisites. It does not explicitly visualize AND/OR logic between requirements (see details list above).</p>
-                                     {/* Conditionally render graph based on fetched RECURSIVE data */}
-                                     {(targetCourseCode && !fetchError && !notFoundError) ? (
-                                        // Use graphInputNodes/Edges derived from recursive fetch
-                                        graphInputNodes.length > 0 || graphInputEdges.length > 0 ? (
-                                            <PrerequisiteGraphWrapper initialNodes={graphInputNodes} initialEdges={graphInputEdges} />
-                                        ) : (
-                                             <div className="p-4 text-center h-[100px] flex items-center justify-center"><p className="text-sm text-gray-500">No prerequisite dependencies found for {targetCourseCode}.</p></div>
-                                        )
-                                    ) : (
-                                        <div className="p-4 text-center h-[100px] flex items-center justify-center"><p className="text-sm text-gray-500">{fetchError ? 'Error.' : (notFoundError ? `Course not found.` : 'Check a course.')}</p></div>
-                                    )}
-                                </CardContent>
-                             </Card>
-                        </div>
-                    </main>
+                     {/* Prerequisites List Card */}
+                     <Card>
+                        <CardHeader><CardTitle>Prerequisites Details</CardTitle></CardHeader>
+                        <CardContent>
+                             {(displayCourseData.targetCourse.requirements?.prerequisites && (displayCourseData.targetCourse.requirements.prerequisites.courses?.length || displayCourseData.targetCourse.requirements.prerequisites.conditions?.length))
+                                ? (<RequirementConditionDisplay condition={displayCourseData.targetCourse.requirements.prerequisites} />)
+                                : (<p className="text-sm text-gray-500">None listed.</p>)
+                             }
+                        </CardContent>
+                     </Card>
+
+                      {/* Corequisites List Card */}
+                      <Card>
+                        <CardHeader><CardTitle>Corequisites Details</CardTitle></CardHeader>
+                        <CardContent>
+                             {(displayCourseData.targetCourse.requirements?.corequisites && (displayCourseData.targetCourse.requirements.corequisites.courses?.length || displayCourseData.targetCourse.requirements.corequisites.conditions?.length))
+                                ? (<RequirementConditionDisplay condition={displayCourseData.targetCourse.requirements.corequisites} />)
+                                : (<p className="text-sm text-gray-500">None listed.</p>)
+                             }
+                        </CardContent>
+                     </Card>
+
+                    {/* Prerequisite Graph Card */}
+                    <Card>
+                        <CardHeader>
+                            <CardTitle>Prerequisite Dependency Graph</CardTitle>
+                            <CardDescription>Visual representation of dependencies.</CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-xs text-gray-500 mb-4 italic">Note: Graph shows dependencies based on listed prerequisites, not detailed AND/OR logic.</p>
+                            {graphInputNodes.length > 0 || graphInputEdges.length > 0 ? (
+                                <PrerequisiteGraphWrapper initialNodes={graphInputNodes} initialEdges={graphInputEdges} />
+                            ) : (
+                                <div className="p-4 text-center h-[100px] flex items-center justify-center"><p className="text-sm text-gray-500">No prerequisite dependencies found.</p></div>
+                            )}
+                        </CardContent>
+                    </Card>
                 </div>
-            </div>
-            <Footer className="bg-[#f0f0e8] py-6 px-6 border-t text-center w-full" />
-        </div>
+             )}
+        </div> // End container
     );
 }

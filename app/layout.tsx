@@ -30,6 +30,19 @@ const caveat = Caveat({
 export const metadata = {
   title: "UniPlanner - University of Alberta Course Planner",
   description: "Plan your University of Alberta courses and check prerequisites",
+  openGraph: {
+    title: "UniPlanner - University of Alberta Course Planner",
+    description: "Plan your University of Alberta courses and check prerequisites",
+    url: "https://uniplannerproject.vercel.app",
+    images: [
+      {
+      url: "/preview.png",
+      width: 1200,
+      height: 630,
+      alt: "UniPlanner - University of Alberta Course Planner",
+      }
+    ]
+  }
 }
 
 export default function RootLayout({

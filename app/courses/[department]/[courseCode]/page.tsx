@@ -17,23 +17,15 @@ import PrerequisiteGraphWrapper, {
     type InputNode, type AppEdge, type GraphNodeData
 } from '@/components/prerequisiteGraph';
 
-// --- Type Imports for Graph ---
-import type { Node, Edge } from '@xyflow/react';
-import { Page } from "openai/pagination";
-interface PageProps {
-    params: {
-        department: string;
-        courseCode: string;
-    };
-    searchParams: {
-       [key: string]: string | string[] | undefined;
-    };
-}
-
-
 // --- Main Server Component for the Dedicated Course Page ---
 // Use the Corrected Props Interface
-export default async function DedicatedCoursePage({ params, searchParams }: PageProps) {
+export default async function DedicatedCoursePage({ 
+    params,
+    searchParams 
+  }: {
+    params: { department: string; courseCode: string };
+    searchParams: Record<string, string | string[] | undefined>;
+  }) {
     // Destructure department and course code from 'params' NOT 'searchParams'
     const { department: deptParam, courseCode: codeParam } = params;
 

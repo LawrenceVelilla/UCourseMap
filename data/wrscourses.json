@@ -1,0 +1,218 @@
+[
+  {
+    "department": "WRS",
+    "courseCode": "WRS 100",
+    "title": "Topics in Academic Writing",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "An introduction to the theory and practice of writing in various disciplines. Prerequisites: None.",
+    "url": "/catalogue/course/wrs/100"
+  },
+  {
+    "department": "WRS",
+    "courseCode": "WRS 101",
+    "title": "Exploring Writing",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "This workshop course focuses on both the theory and practice of the writing process to help students experience firsthand how university writers enter into rich ongoing conversations by engaging with the words and ideas of others.",
+    "url": "/catalogue/course/wrs/101"
+  },
+  {
+    "department": "WRS",
+    "courseCode": "WRS 101A",
+    "title": "Exploring Writing",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "This workshop course focuses on both the theory and practice of the writing process to help students experience firsthand how university writers enter into rich ongoing conversations by engaging with the words and ideas of others.",
+    "url": "/catalogue/course/wrs/101a"
+  },
+  {
+    "department": "WRS",
+    "courseCode": "WRS 101B",
+    "title": "Exploring Writing",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "This workshop course focuses on both the theory and practice of the writing process to help students experience firsthand how university writers enter into rich ongoing conversations by engaging with the words and ideas of others.",
+    "url": "/catalogue/course/wrs/101b"
+  },
+  {
+    "department": "WRS",
+    "courseCode": "WRS 102",
+    "title": "Writing in the Disciplines",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, VARIABLE"
+    },
+    "description": "A blended learning course (combining online work and one weekly in-person meeting) that introduces students to academic writing in three broad areas: humanities, social sciences, and sciences. No prerequisite. May not be repeated. May contain alternative delivery sections; refer to the Tuition and Fees page in the University Regulations section of the Calendar.",
+    "url": "/catalogue/course/wrs/102"
+  },
+  {
+    "department": "WRS",
+    "courseCode": "WRS 103",
+    "title": "An Introduction to Writing in the Sciences",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Basic principles and genres of writing for science students. Note: Restricted to students in the Faculty of Science.",
+    "url": "/catalogue/course/wrs/103"
+  },
+  {
+    "department": "WRS",
+    "courseCode": "WRS 104",
+    "title": "Writing Persuasive Arguments",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Introduction to the principles, theories and practice of writing well supported and convincing arguments.",
+    "url": "/catalogue/course/wrs/104"
+  },
+  {
+    "department": "WRS",
+    "courseCode": "WRS 201",
+    "title": "Peer Tutor Training in Writing",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Introduction to practices and strategies for tutoring undergraduate writers focusing on online and ESL writers. Prerequisites: 3 units WRS at the 100 level.",
+    "url": "/catalogue/course/wrs/201"
+  },
+  {
+    "department": "WRS",
+    "courseCode": "WRS 206",
+    "title": "Writing Special Effects: Rhetorical Grammar and Style",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Analysis of and practice in sentence structures to create/alter meaning and voice in nonfiction prose. Prerequisites: 3 units selected from 100-level ENGL or 100-level WRS (or consent of instructor).",
+    "url": "/catalogue/course/wrs/206"
+  },
+  {
+    "department": "WRS",
+    "courseCode": "WRS 210",
+    "title": "Introduction to Professional Communication",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Analysis of and practice in key genres, processes, and strategies for professional communication. Prerequisites: 6 units selected from 100-level ENGL or 100-level WRS, or consent of instructor.",
+    "url": "/catalogue/course/wrs/210"
+  },
+  {
+    "department": "WRS",
+    "courseCode": "WRS 301",
+    "title": "Introduction to Writing Centre Practice",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Introduces students to the primary themes of interdisciplinary writing studies and collaborative learning necessary to successfully work as peer writing coaches in a university writing centre. Building on the foundation of theory, the course guides students through coaching sessions to synthesize an appropriate coaching practice. Prerequisites: 6 units selected from 100-level ENGL or 100-level WRS (or consent of instructor).",
+    "url": "/catalogue/course/wrs/301"
+  },
+  {
+    "department": "WRS",
+    "courseCode": "WRS 305",
+    "title": "Risk Communication",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Basic principles and processes of written forms of risk communication within the context of theoretical issues of the public's right to know, rhetorical effectiveness, cultural awareness, and ethics. Prerequisites: 6 units selected from 100-level ENGL or 100-level WRS or consent of the instructor.",
+    "url": "/catalogue/course/wrs/305"
+  },
+  {
+    "department": "WRS",
+    "courseCode": "WRS 311",
+    "title": "Editing Texts",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Students will learn the skills required to transform manuscripts into publishable form for print and digital platforms. Prerequisites: 6 units selected from 100-level ENGL or 100-level WRS (or consent of instructor).",
+    "url": "/catalogue/course/wrs/311"
+  },
+  {
+    "department": "WRS",
+    "courseCode": "WRS 450",
+    "title": "Capstone Portfolio Project",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Revision of documents and writing of new documents to create a portfolio of writing. Prerequisites: 12 units selected from WRS, or consent of instructor.",
+    "url": "/catalogue/course/wrs/450"
+  },
+  {
+    "department": "WRS",
+    "courseCode": "WRS 580",
+    "title": "Directed Reading in Writing Studies",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Prerequisite: consent of program.",
+    "url": "/catalogue/course/wrs/580"
+  },
+  {
+    "department": "WRS",
+    "courseCode": "WRS 601",
+    "title": "Composition Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/wrs/601"
+  },
+  {
+    "department": "WRS",
+    "courseCode": "WRS 603",
+    "title": "Writing Centre Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Introducing students to research in writing studies with a focus on writing in the disciplines and in writing centres.",
+    "url": "/catalogue/course/wrs/603"
+  },
+  {
+    "department": "WRS",
+    "courseCode": "WRS 604",
+    "title": "Writing and Disciplinarity",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/wrs/604"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "department": "ENCMP",
+    "courseCode": "ENCMP 100",
+    "title": "Computer Programming for Engineers",
+    "units": {
+      "credits": 3,
+      "feeIndex": 8,
+      "term": "EITHER, 3-0-1.5"
+    },
+    "keywords": [
+      "Computer Programming",
+      "Engineering Problems",
+      "Data Types",
+      "Control Structures",
+      "Functions",
+      "Debugging"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/encmp/100",
+    "updatedAt": "2025-04-11T05:59:34.108Z"
+  }
+]

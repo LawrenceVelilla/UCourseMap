@@ -1,0 +1,1226 @@
+[
+  {
+    "department": "SOC",
+    "courseCode": "SOC 100",
+    "title": "Introductory Sociology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An examination of the theory, methods, and substance of Sociology. The study of how societies are shaped including economy, culture, socialization, deviance, stratification, and groups. The process of social change through social movements, industrialization, etc. Note: Not to be taken by students with credit in SOC 300.",
+    "url": "/catalogue/course/soc/100"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 203",
+    "title": "Social Problems",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Selected structural issues in various societies, including inequality, population growth, environment, and human rights. Note: Not to be taken by students with credit in SOC 102.",
+    "url": "/catalogue/course/soc/203"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 210",
+    "title": "Introduction to Social Statistics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-2"
+    },
+    "description": "Statistical reasoning and techniques used by sociologists to summarize data and test hypotheses. Topics include describing distributions, cross-tabulations, scaling, probability, correlation/regression and non-parametric tests. Prerequisite: SOC 100 or consent of instructor. Note: This course is intended primarily for students concentrating in Sociology",
+    "url": "/catalogue/course/soc/210"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 212",
+    "title": "Classical Social Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The foundational contributions and relevance of the works of Marx, Weber, Durkheim and others to sociology and social theory. Course emphasizes close reading of primary texts to cultivate reading, writing and reasoning skills. Prerequisite: SOC 100 or consent of the instructor.",
+    "url": "/catalogue/course/soc/212"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 224",
+    "title": "Sociology of Deviance and Conformity",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Processes involved in defining behaviour patterns as deviant; factors that influence conformity and change; examination of behaviour patterns such as sexuality, alcoholism, drug use, and selected mental and physical disabilities; public reaction to such behaviour.",
+    "url": "/catalogue/course/soc/224"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 225",
+    "title": "Criminology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Examination and attempted explanation of crime and juvenile delinquency, with an analysis of the social processes leading to criminal behaviour.",
+    "url": "/catalogue/course/soc/225"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 226",
+    "title": "Surveillance Studies",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Critical analysis of the increased prominence of diverse forms of surveillance in contemporary society.",
+    "url": "/catalogue/course/soc/226"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 241",
+    "title": "Social Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to the study of individual and group behaviour observed in social processes. Prerequisites: SOC 100, or PSYCH 104 or 105, or consent of instructor. Note: SOC 241 and PSYCH 241 may not both be taken for credit.",
+    "url": "/catalogue/course/soc/241"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 242",
+    "title": "Biologically Coordinated Social Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A biologically consistent introduction to the study of individual and group behaviour observed in social processes. Prerequisite: One of SOC 100, PSYCH 104, PSYCH 105, EDPY 200 or consent of instructor.",
+    "url": "/catalogue/course/soc/242"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 251",
+    "title": "Population and Society",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Population trends, issues and concerns in Canada and international contexts; social and cultural factors underlying fertility, mortality, and migration; urbanization; population change; population theory; and demographic analysis.",
+    "url": "/catalogue/course/soc/251"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 260",
+    "title": "Inequality and Social Stratification",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduction to the study of structured social inequalities and poverty; major theoretical approaches; findings from key empirical studies, with emphasis on Canada. Prerequisite: SOC 100 or consent of instructor.",
+    "url": "/catalogue/course/soc/260"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 269",
+    "title": "Introductory Sociology of Globalization",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduces various aspects of globalization and its impact on our lives at local, national, and international levels. Prerequisite: SOC 100 or consent of instructor.",
+    "url": "/catalogue/course/soc/269"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 271",
+    "title": "Introduction to the Family",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to the study of family relationships and their variant forms with focus on mate selection, couple, kin, age, and gender dynamics, family dissolution or reconstitution and change. A comparative approach with emphasis on families in Canada.",
+    "url": "/catalogue/course/soc/271"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 272",
+    "title": "Navigating Settler Institutions",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Through an Indigenous sociological lens, this course examines settler institutions that uphold inequality and racism towards Indigenous Peoples within Canada. Prerequisite: SOC 100 or consent of Instructor.",
+    "url": "/catalogue/course/soc/272"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 291",
+    "title": "Introduction to Environmental Sociology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Sociological examination of the relationship between human societies and the natural environment.",
+    "url": "/catalogue/course/soc/291"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 301",
+    "title": "Sociology of Gender",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Comparative study of sex roles in selected societies with an emphasis on contemporary Canada; sex-specific role behaviours and theories regarding their origin; recent sociological research on the social effects of sex roles. Prerequisite: SOC 100 or consent of instructor.",
+    "url": "/catalogue/course/soc/301"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 302",
+    "title": "Topics in Sociology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: SOC 100 or consent of the instructor. Note: Consult the Department for any additional prerequisites. Course may be taken more than once if topic(s) vary.",
+    "url": "/catalogue/course/soc/302"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 315",
+    "title": "Introduction to Social Methodology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-2"
+    },
+    "description": "Research design, data collection, and data processing strategies used by sociologists. Topics include research values and ethics, reliability and validity, experimentation, survey research techniques, historical methods, field research, and content analysis. Prerequisite: SOC 210 or consent of instructor.",
+    "url": "/catalogue/course/soc/315"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 321",
+    "title": "Youth, Crime and Society",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A survey of the understanding and treatment of youth in the Canadian criminal justice system. Prerequisite: SOC 225 or consent of instructor.",
+    "url": "/catalogue/course/soc/321"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 323",
+    "title": "Sociology of Policing",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Examines the nature of policing, its structure and function from a sociological perspective. Focus on theoretical analyses of policing, history of policing, police-citizen relations, strategies, powers, and culture of police, its public and private forms. Prerequisite: SOC 225 or SOC 327 or consent of instructor.",
+    "url": "/catalogue/course/soc/323"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 325",
+    "title": "Topics in Criminology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: SOC 225 or consent of the instructor. Consult the Department for any additional prerequisites. Course may be taken more than once if topic(s) vary.",
+    "url": "/catalogue/course/soc/325"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 327",
+    "title": "Criminal Justice Administration in Canada",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The evolution and evaluation of the theories of punishment; the law, the police and the courts; penal and reformatory institutions; probation and parole; experiments in reform and rehabilitation. Prerequisite: SOC 225 or consent of instructor.",
+    "url": "/catalogue/course/soc/327"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 335",
+    "title": "Themes in Contemporary Social Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Major theoretical questions through analysis of works by contemporary theorists. Prerequisite: SOC 212 or consent of the instructor. Not open to students with credit in SOC 332, 333, or 334.",
+    "url": "/catalogue/course/soc/335"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 342",
+    "title": "Socialization",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The processes of social development and how socio-cultural influences affect the individual from infancy to old age. Prerequisite: SOC 241 or PSYCH 241 or consent of instructor.",
+    "url": "/catalogue/course/soc/342"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 343",
+    "title": "Social Movements",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "How social movements arise and their impact on culture, society and politics. Prerequisite: SOC 100 or consent of instructor.",
+    "url": "/catalogue/course/soc/343"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 344",
+    "title": "Media Culture and Society",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Critical examination of the central issues and debates about the media-society relationship. Emphasis on the cultural, political and economic aspects of various media forms/genres, media theories, and audience considerations. Note: Not to be taken by students with credit in SOC 346 and not to be used as the prerequisite for SOC 444 or 477.",
+    "url": "/catalogue/course/soc/344"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 345",
+    "title": "Cultural Studies",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduction to theoretical paradigms, methodologies and fundamental concepts of postmodern sociology and cultural studies. Prerequisite: SOC 100 or consent of instructor.",
+    "url": "/catalogue/course/soc/345"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 346",
+    "title": "Media and the Production of Culture",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Media as cultural industries that contribute to the construction of meaning in contemporary societies. Prerequisite: Restricted to Faculty of Arts students who have completed the first year of their programs or consent of instructor. Note: This is the prerequisite for SOC 444. SOC 346 may not be taken by students with credit in SOC 344.",
+    "url": "/catalogue/course/soc/346"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 347",
+    "title": "Intermedia Environments and Communication Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to Canadian communication and intermedia theory, including critical examination of the new information flows, AI media ecologies, and smart infrastructures of racial-capitalism. Prerequisite: SOC 100 or consent of instructor.",
+    "url": "/catalogue/course/soc/347"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 363",
+    "title": "Sociology of Work and Industry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Sociological analysis of the changing nature and content of work, its diversity of industrial contexts and organizational forms, and its consequences for individuals and society, from Canadian and comparative perspectives. Prerequisite: SOC 100. Not open to students with credit in SOC 366.",
+    "url": "/catalogue/course/soc/363"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 366",
+    "title": "People in Industry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduction to the sociological analysis of the attitudes and behaviour of employees in work organizations, with emphasis on contemporary Canada. Note: Restricted to Engineering students only. Not open to students with credit in SOC 363.",
+    "url": "/catalogue/course/soc/366"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 369",
+    "title": "Sociology of Globalization",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Critically examines various aspects of globalization from the perspective of world-system studies. Prerequisite: SOC 269 or consent of instructor.",
+    "url": "/catalogue/course/soc/369"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 370",
+    "title": "Racism and Decolonization",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Examines decolonizing cultural politics and theory with an emphasis on racism and its connection to other forms of social inequality and oppression. Prerequisite: SOC 100 or consent of instructor.",
+    "url": "/catalogue/course/soc/370"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 371",
+    "title": "Anti-Racism and Racial Injustice",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Examines historical and contemporary forms of racial injustice and anti-racist strategies and practices. Prerequisite: SOC 100 or consent of Instructor.",
+    "url": "/catalogue/course/soc/371"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 375",
+    "title": "Sociology of Aging",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Aging as a socio-cultural phenomenon. Includes aging in relation to the self-concept, family, religion, politics, health, retirement and leisure, housing, attitudes toward death, with particular emphasis on Canadian society.",
+    "url": "/catalogue/course/soc/375"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 376",
+    "title": "Sociology of Religion",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Religion as a social phenomenon: theories of religious behaviour; religious authority and leadership; the individual's religion and the interplay with other spheres of social life; the role of religion in relation to social change and social integration. Prerequisite: SOC 100 or consent of instructor.",
+    "url": "/catalogue/course/soc/376"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 377",
+    "title": "Sociology of Youth",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The comparative analysis of youth in various types of societies, with special emphasis on Canada including investigation of social structures and processes influencing behaviour of young people.",
+    "url": "/catalogue/course/soc/377"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 382",
+    "title": "Sociology of Health and Illness",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The distribution of health and illness in human populations, the social psychology of health and illness, and the social organization of health care. Prerequisite: SOC 100 or consent of instructor.",
+    "url": "/catalogue/course/soc/382"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 399",
+    "title": "Field Placement in Criminology",
+    "units": {
+      "credits": 6,
+      "feeIndex": 12,
+      "term": "EITHER, 0-16S-0"
+    },
+    "description": "Supervised work experience and seminar sessions. Note: Restricted to BA (Criminology) Field Placement students.",
+    "url": "/catalogue/course/soc/399"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 401",
+    "title": "Honors Individual Study",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Individual study opportunity on topics for which no specific course is currently offered by the Department. Course may be taken once only. Prerequisites: consent of instructor and Honors Advisor. Note: Restricted to Sociology Honors students. Closed to web registration.",
+    "url": "/catalogue/course/soc/401"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 402",
+    "title": "Topics in Sociology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: SOC 100 or consent of the instructor. Note: Consult the Department for any additional prerequisites. Course may be taken more than once if topic(s) vary.",
+    "url": "/catalogue/course/soc/402"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 403",
+    "title": "Individual Study",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Individual study opportunity on topics for which no specific course is currently offered by the Department. Prerequisite: Consent of Instructor and the Undergraduate Advisor.",
+    "url": "/catalogue/course/soc/403"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 404",
+    "title": "Individual Empirical Research Project",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Individual research project conducted under the supervision of a faculty member. Course must involve empirical or applied research for which the student is responsible. Prerequisite: Consent of Instructor and the Undergraduate Advisor.",
+    "url": "/catalogue/course/soc/404"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 407",
+    "title": "Honors Thesis I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Literature review and proposal stage of Honors Thesis completed in SOC 408. Prerequisites: consent of instructor and Honors Advisor. Note: Restricted to Sociology Honors students. Closed to web registration.",
+    "url": "/catalogue/course/soc/407"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 408",
+    "title": "Honors Thesis II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: SOC 407 and consent of instructor and Honors Advisor. Note: Restricted to Sociology Honors students. Closed to web registration.",
+    "url": "/catalogue/course/soc/408"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 415",
+    "title": "Applied Research Internship",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Supervised applied research experience and seminar sessions. Prerequisite: SOC 315 or consent of instructor.",
+    "url": "/catalogue/course/soc/415"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 418",
+    "title": "Qualitative Methods in Social Research",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-2"
+    },
+    "description": "Further study of the design and evaluation of qualitative research strategies. Topics include participant observation, ethnomethodology, unobtrusive measures, and document analysis. Prerequisites: SOC 315 or consent of instructor.",
+    "url": "/catalogue/course/soc/418"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 420",
+    "title": "Topics in Criminal Justice",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: SOC 225 or consent of instructor. Note: Consult the Department for any additional prerequisites. Course may be taken more than once if topic(s) vary.",
+    "url": "/catalogue/course/soc/420"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 421",
+    "title": "Sociology of Punishment",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Historical and contemporary social underpinnings of punishment in the criminal justice apparatus. Prerequisites: SOC 225 or consent of instructor.",
+    "url": "/catalogue/course/soc/421"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 423",
+    "title": "Crime and Public Policy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Social responses to criminal behaviour, including general public attitudes and government legislation. Topics include police strategies; sentencing options; prediction research, and social prevention. Prerequisites: SOC 225 or consent of instructor.",
+    "url": "/catalogue/course/soc/423"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 424",
+    "title": "Gangs and Violence",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The sociological examination of gangs and gang violence and their effects on society. Prerequisite: SOC 225 or consent of instructor.",
+    "url": "/catalogue/course/soc/424"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 425",
+    "title": "Sociology of Terrorism",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "A sociological engagement with the phenomenon of terrorism by state and non-state actors. Prerequisites: SOC 100 or consent of instructor.",
+    "url": "/catalogue/course/soc/425"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 427",
+    "title": "Immigration, Ethnicity, and Crime",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "An exploration of the debates around immigration, ethnicity and crime. Prerequisite: SOC 225 or consent of instructor.",
+    "url": "/catalogue/course/soc/427"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 429",
+    "title": "Sociology of Law",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Conceptual and practical points of convergence between legal and social theory; processes by which legal rules are created, maintained and changed; law as an instrument of social control and change. Prerequisite: SOC 225 or consent of instructor.",
+    "url": "/catalogue/course/soc/429"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 430",
+    "title": "Women and Crime",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Key concepts, issues and debates with respect to women in the criminal justice system as offenders, defendants, prisoners, and victims. Prerequisite: SOC 225 or consent of instructor.",
+    "url": "/catalogue/course/soc/430"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 435",
+    "title": "Theorizing 'the Social': Critical Debates in Social Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Seminar in fundamental assumptions and philosophy of social sciences and the relation between explanatory and normative theorizing. Prerequisite: SOC 212 or 335 or consent of the instructor.",
+    "url": "/catalogue/course/soc/435"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 441",
+    "title": "Sociology of Religious Sects",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Examination of conversion, membership maintenance, member disaffiliation, and resource acquisition strategies among religious sects. Emphasis on Canadian examples. Prerequisites: SOC 376 or consent of instructor.",
+    "url": "/catalogue/course/soc/441"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 444",
+    "title": "Critical Media Studies",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Analysis of media texts as social forms with emphasis on television, advertising, and emerging media technologies. Prerequisite: SOC 100 or consent of instructor.",
+    "url": "/catalogue/course/soc/444"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 445",
+    "title": "Cities and Suburbia",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "The significance of urban social spaces and environments, architecture, planning, design and material culture. Prerequisite: SOC 100 or consent of instructor.",
+    "url": "/catalogue/course/soc/445"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 451",
+    "title": "Sociology of Human Fertility",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Emphasis on the social, social-psychological, and cultural correlates of human fertility in historical and contemporary contexts; reproductive health programs; prediction and control. Prerequisite: SOC 251 or consent of Instructor.",
+    "url": "/catalogue/course/soc/451"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 452",
+    "title": "Mortality and Population Health",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Analysis of variations, trends and patterns of human mortality and morbidity in historical and contemporary contexts; comparisons of the experiences of Canada, other industrialized nations and developing countries with respect to causes of death and illness; demographic aspects of aging and its relationship to morbidity and mortality health surveys and policies. Prerequisite: SOC 251 or consent of instructor.",
+    "url": "/catalogue/course/soc/452"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 456",
+    "title": "Data Analysis and Research",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "A practical approach to social science research that focuses on methods for preparing, analyzing, and presenting data. Prerequisite: SOC 100 or consent of instructor",
+    "url": "/catalogue/course/soc/456"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 459",
+    "title": "The Social Demography of Partnerships and Families",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Social demographic analysis of family change and processes; the transitions individuals make into and out of partnerships, parenting and family formation. Prerequisites: One of SOC 251, SOC 271, SOC 301 or consent of the Instructor.",
+    "url": "/catalogue/course/soc/459"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 461",
+    "title": "Sociology of Art",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A sociological study of art forms including painting, literature, music, and architecture; cross-cultural analysis of the roles of the artist; the relationship of art forms and movements to different social conditions and social change. Prerequisite: SOC 212 or consent of instructor.",
+    "url": "/catalogue/course/soc/461"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 472",
+    "title": "Indigenous-Settler Relations",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Examines the ongoing relationships shaped through Indigenous and non-Indigenous worldviews, social structures, and institutions. Prerequisite: SOC 100 or consent of Instructor.",
+    "url": "/catalogue/course/soc/472"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 473",
+    "title": "Sociology of Death and Dying",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Comparative examination of death and dying in socio-cultural contexts, including theoretical and methodological issues. Prerequisite: SOC 100 or consent of instructor.",
+    "url": "/catalogue/course/soc/473"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 476",
+    "title": "Religion and Societies",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A comparative survey of the major world religions in interaction with the socioeconomic and political structures of various societies. Prerequisite: SOC 376 or consent of instructor.",
+    "url": "/catalogue/course/soc/476"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 486",
+    "title": "Sociology of Mental Health and Illness",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Sociological aspects of mental health and illness. Includes historical perspectives, diagnostic issues, and perspectives on causation and treatment. Prerequisite: SOC 224 or 382 or consent of instructor.",
+    "url": "/catalogue/course/soc/486"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 492",
+    "title": "Queering the Social",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Sex/gender/sexuality as a complex social constellation. Prerequisite: One of SOC 301, 335, WGS 102 or consent of instructor.",
+    "url": "/catalogue/course/soc/492"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 496",
+    "title": "Human Rights in International Perspective",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Human rights theories, issues and controversies in local, national and international context. Prerequisite: SOC 100 or POL S 101 or POL S 417 or PHIL 101 or HIST 110 or HIST 114 or consent of instructor.",
+    "url": "/catalogue/course/soc/496"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 498",
+    "title": "Commons and Climate Justice",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Critical analysis of the political ecology of fossil capitalism and carbon colonialism, including degrowth theory and eco-socialist-feminist approaches to decolonization and environmental justice. Prerequisite: SOC 100 or consent of instructor.",
+    "url": "/catalogue/course/soc/498"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 499",
+    "title": "Advanced Field Placement in Criminology",
+    "units": {
+      "credits": 6,
+      "feeIndex": 12,
+      "term": "EITHER, 0-16S-0"
+    },
+    "description": "Supervised work experience and seminar sessions. Prerequisite: SOC 399. Note: Restricted to BA (Criminology) Field Placement students.",
+    "url": "/catalogue/course/soc/499"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 503",
+    "title": "Conference Course in Sociology for Graduate Students",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/soc/503"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 504",
+    "title": "Conference Course in Sociology for Graduate Students",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/soc/504"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 509",
+    "title": "Quantitative Data Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-2"
+    },
+    "description": "Prerequisites: SOC 210 or equivalent and SOC 315 or equivalent. Note: Not to be taken by students with credit in SOC 411 or 410.",
+    "url": "/catalogue/course/soc/509"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 515",
+    "title": "Quantitative Methods in Social Research",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-2"
+    },
+    "description": "Prerequisites: SOC 210 and 315 or equivalent. Note: Not to be taken by students with credit in SOC 412 or 417. Not available for credit for students with credit in R SOC 415.",
+    "url": "/catalogue/course/soc/515"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 518",
+    "title": "Qualitative Methods in Social Research",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-2"
+    },
+    "description": "Prerequisite: SOC 418 or equivalent or permission of Instructor.",
+    "url": "/catalogue/course/soc/518"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 519",
+    "title": "Comparative and Historical Methods in Sociological Research",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: SOC 210 and 315 or equivalent. Note: Not to be taken by students with credit in SOC 419.",
+    "url": "/catalogue/course/soc/519"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 525",
+    "title": "Seminar in Criminal Justice",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/soc/525"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 531",
+    "title": "Seminar in the History of Sociological Thought",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/soc/531"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 533",
+    "title": "Research Design",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 0-3S-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/soc/533"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 535",
+    "title": "Seminar in Contemporary Sociological Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Prerequisite: SOC 333.",
+    "url": "/catalogue/course/soc/535"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 549",
+    "title": "Social Movements",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/soc/549"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 552",
+    "title": "Mortality and Population Health",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: SOC 251. Note: Not to be taken by students with credit in SOC 452.",
+    "url": "/catalogue/course/soc/552"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 557",
+    "title": "Sociology of Human Fertility",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: SOC 251. Note: Not to be taken by students with credit in SOC 451.",
+    "url": "/catalogue/course/soc/557"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 565",
+    "title": "Seminar in Work",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/soc/565"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 580",
+    "title": "Colonialism, Post-colonialism and Globalization",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/soc/580"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 585",
+    "title": "Cities and Suburbia",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/soc/585"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 602",
+    "title": "Topics in Sociology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Course may be taken more than once if topics(s) vary.",
+    "url": "/catalogue/course/soc/602"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 603",
+    "title": "Conference Course",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/soc/603"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 604",
+    "title": "Conference Course",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/soc/604"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 605",
+    "title": "Seminar in Teaching and Professional Skills",
+    "units": {
+      "credits": 1,
+      "feeIndex": 1,
+      "term": "EITHER, UNASSIGNED"
+    },
+    "description": "",
+    "url": "/catalogue/course/soc/605"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 606",
+    "title": "Special Topics I",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "EITHER, 0-1.5S-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/soc/606"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 607",
+    "title": "Special Topics II",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "EITHER, 0-1.5S-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/soc/607"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 616",
+    "title": "Structural Equation Modeling with LISREL",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: SOC 609.",
+    "url": "/catalogue/course/soc/616"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 622",
+    "title": "Topics in Criminology and Deviance",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/soc/622"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 634",
+    "title": "Material and Virtual Culture",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/soc/634"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 670",
+    "title": "Sociology of Gender and Family",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/soc/670"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 696",
+    "title": "Human Rights in Theory and Practice",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An exploration of the sociology of human rights in theory and practice in a national and international context.",
+    "url": "/catalogue/course/soc/696"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 900",
+    "title": "Directed Research Project",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "VAR, UNASSIGNED"
+    },
+    "description": "",
+    "url": "/catalogue/course/soc/900"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 900A",
+    "title": "Directed Research Project",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "VAR, UNASSIGNED"
+    },
+    "description": "",
+    "url": "/catalogue/course/soc/900a"
+  },
+  {
+    "department": "SOC",
+    "courseCode": "SOC 900B",
+    "title": "Directed Research Project",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "VAR, UNASSIGNED"
+    },
+    "description": "",
+    "url": "/catalogue/course/soc/900b"
+  }
+]

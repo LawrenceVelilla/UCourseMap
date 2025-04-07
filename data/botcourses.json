@@ -1,0 +1,230 @@
+[
+  {
+    "department": "BOT",
+    "courseCode": "BOT 205",
+    "title": "Fundamentals of Plant Biology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-3"
+    },
+    "description": "An overview of the diversity and biology of organisms traditionally included in the Plant Kingdom (algae, fungi, lichens, mosses, ferns, gymnosperms and flowering plants). Emphasis throughout the course is on the relationship between structural and functional innovations in plants and how these have influenced their reproduction and evolution in various ecosystems. Symbioses and co-evolutionary relationships between or among different kinds of plants, and with other groups of organisms, are also considered. Prerequisite: BIOL 108 or SCI 100. Credit cannot be obtained for both BOT 205 and PL SC 221.",
+    "url": "/catalogue/course/bot/205"
+  },
+  {
+    "department": "BOT",
+    "courseCode": "BOT 303",
+    "title": "Plant Development",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "The generation of a functional plant requires the spatially coordinated acquisition of numerous cell identities. Examines developmental processes in plants at the molecular and cellular level and will cover: body axis establishment and tissue pattern formation during embryogenesis, cell-to-cell communication in patterning events and differentiation processes, and cell differentiation patterns in tissue systems. Emphasis throughout the course will be on current research using developmental mutants. Prerequisites: BIOL 201 and 207; one of BOT 205 or 340 strongly recommended.",
+    "url": "/catalogue/course/bot/303"
+  },
+  {
+    "department": "BOT",
+    "courseCode": "BOT 306",
+    "title": "Biology of the Fungi",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-3"
+    },
+    "description": "The Kingdom Fungi, including yeasts, molds, mushrooms, rusts, smuts, mildews, and lichen forming fungi, is one of the most diverse groups of living organisms and plays important roles in nutrient cycling in ecosystems, pathogenesis in plants and animals, and industrial processes. This course offers a systematic overview of the morphology and ecology of fungi and the relevance of these organisms to human affairs. Laboratories offer a selection of fungi for detailed study and permit students to develop and identify pure cultures of fungi from soil, wood and other materials. Prerequisites: BIOL 108 or SCI 100 and a 200-level Biological Sciences course. BOT 205 recommended.  This course requires payment of additional student instructional support fees. Refer to the Tuition and Fees page in the University Regulations section of the Calendar.",
+    "url": "/catalogue/course/bot/306"
+  },
+  {
+    "department": "BOT",
+    "courseCode": "BOT 308",
+    "title": "Plant Anatomy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-1S-3"
+    },
+    "description": "Seed plant structure and development with particular emphasis on flowering plants. The course covers origin, development, and function of meristems (apical, primary, and lateral), tissue and organ development, wood structure and identification, floral anatomy, embryogenesis, and fruit structure. Prerequisites: BIOL 108 or SCI 100. BOT 205 recommended. Offered in alternate years.",
+    "url": "/catalogue/course/bot/308"
+  },
+  {
+    "department": "BOT",
+    "courseCode": "BOT 314",
+    "title": "Biology of Bryophytes",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-3"
+    },
+    "description": "Bryophytes (hornworts, liverworts and mosses) form a unique group of basal land plants that are pivotal for understanding evolution of life in terrestrial environments. This course covers the evolution, systematics and ecological diversity of bryophytes of the world, using morphological, molecular and developmental data. Prerequisite: BIOL 108 or SCI 100 and a 200-level Biology course (BOT 205 recommended). Offered in alternate years. This course requires payment of additional miscellaneous fees. Refer to the Fees Payment Guide in the University Regulations and Information for Students section of the Calendar.",
+    "url": "/catalogue/course/bot/314"
+  },
+  {
+    "department": "BOT",
+    "courseCode": "BOT 321",
+    "title": "Plant Diversity and Evolution",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-3"
+    },
+    "description": "Approaches to the classification and evolution of seed plants with emphasis on flowering plants. The diversity and relationships of seed plants are examined from a phylogenetic perspective. Topics include practical and theoretical aspects of species description, nomenclature and phylogeny interpretation, with a focus on the characteristics and significance of the major plant families in Alberta and from around the world. Prerequisite: BIOL 108 or SCI 100. BOT 205 recommended.",
+    "url": "/catalogue/course/bot/321"
+  },
+  {
+    "department": "BOT",
+    "courseCode": "BOT 322",
+    "title": "Field Botany",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-3"
+    },
+    "description": "Lectures, laboratory, and field exercises provide an introduction to description and identification of plants and their local habitats. Factors affecting variation in natural vegetation and methods used to describe it are discussed. Field exercises and projects take place during the two weeks preceding the fall term and some may take place off campus. Presentations take place during the first four weeks of class time in September. Prerequisites: BIOL 108 or SCI 100 and any 200-level Biology course. (BOT 321 is strongly recommended). May not be taken for credit if credit already obtained in BOT 304. Offered in alternate years. This course requires payment of additional miscellaneous fees. Refer to the Tuition and Fees page in the University Regulations section of the Calendar.",
+    "url": "/catalogue/course/bot/322"
+  },
+  {
+    "department": "BOT",
+    "courseCode": "BOT 330",
+    "title": "Biodiversity and Ecosystem Function of Algae",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-3"
+    },
+    "description": "The remarkable biodiversity of algae provides the foundation for most aquatic ecosystems around the world. This course emphasizes the evolution, taxonomy, and ecology of major groups of algae to illustrate relationships between their form and function in pristine and polluted environments. Laboratories will focus on the taxonomic diversity of algae through the use of field surveys of local streams and lakes, and experiments using our extensive algal culture collection. Prerequisite: 200-level Biology course. Both BOT 205 and BIOL 208 recommended.",
+    "url": "/catalogue/course/bot/330"
+  },
+  {
+    "department": "BOT",
+    "courseCode": "BOT 332",
+    "title": "Plant Ecology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-3"
+    },
+    "description": "Study of the local factors that limit plant growth, reproduction, and diversity. Particular emphasis on the mechanisms by which plants interact with their local environment and the effects of these interactions on diversity and community functioning. Specific topics include plant foraging, germination ecology, mechanisms of competition and facilitation, patterns of diversity, and community stability. Prerequisites: BIOL 208 and STAT 151 or SCI 151. BOT 205 recommended. Credit cannot be obtained for both BOT 332 and 532. This course requires payment of additional miscellaneous fees. Refer to the Tuition and Fees page in the University Regulations section of the Calendar.",
+    "url": "/catalogue/course/bot/332"
+  },
+  {
+    "department": "BOT",
+    "courseCode": "BOT 340",
+    "title": "Plant Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-3"
+    },
+    "description": "This course explores how plants function. Topics include water transport and the soil-plant-atmosphere continuum, photosynthesis and carbon resource utilization, nitrogen nutrition and symbioses, photosensing, and responses to environmental stresses such as attack by pests and pathogens. Laboratories introduce both classical and contemporary methods in plant physiology. Prerequisites: BIOL 107; CHEM 101 or 164 or 261; and a 200-level Biological Sciences course or PL SC 221. Credit cannot be obtained for both BOT 340 and 540. SCI 100 may be used in lieu of BIOL 107 and CHEM 101.",
+    "url": "/catalogue/course/bot/340"
+  },
+  {
+    "department": "BOT",
+    "courseCode": "BOT 380",
+    "title": "Drug Plants",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "Survey of historical and current use of important drug-producing plants. Evaluation of the chemistry and physiology of biologically active compounds from poisonous, analgesic, and hallucinogenic plants, and the current uses of such plant products. Use of plant biotechnology to develop drug-producing plants. Prerequisite: a 200-level Biological Sciences course or BIOCH 200. BOT 205 recommended.",
+    "url": "/catalogue/course/bot/380"
+  },
+  {
+    "department": "BOT",
+    "courseCode": "BOT 411",
+    "title": "Paleobotany",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-3"
+    },
+    "description": "The fossil record of plants as it relates to the evolutionary history of existing groups. Prerequisite: BOT 205 and a 300-level Biological Sciences course. Offered in alternate years.",
+    "url": "/catalogue/course/bot/411"
+  },
+  {
+    "department": "BOT",
+    "courseCode": "BOT 445",
+    "title": "Molecular Plant Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "Plant responses to their environment are underpinned by myriad molecular events. This course examines the molecular and cellular biology of plant responses to environmental cues, with an emphasis on signalling and regulation of gene expression mediating physiological responses. Topics such as plant cell walls, phytohormone action, photoreceptors, and programmed cell death will be covered. Prerequisite: BOT 382 or GENET 364 or consent of the instructor. BOT 240 or 340 recommended. Credit cannot be obtained for both BOT 445 and BOT 545. Offered in alternate years.",
+    "url": "/catalogue/course/bot/445"
+  },
+  {
+    "department": "BOT",
+    "courseCode": "BOT 464",
+    "title": "Plant Functional Genomics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "Through a combination of lectures, discussions, and computer-based exercises, skills are taught for the analysis of large-scale molecular data sets (e.g. genomic, transcriptomic, or proteomic data). These analytical skills are applied to recently published studies to derive biologically relevant information about the physiology and development of plants. Prerequisite: GENET 364 or consent of the instructor. Credit cannot be obtained for both BOT 464 and 564. Offered in alternate years.",
+    "url": "/catalogue/course/bot/464"
+  },
+  {
+    "department": "BOT",
+    "courseCode": "BOT 532",
+    "title": "Advanced Plant Ecology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "description": "Study of the ecological processes which influence plant growth and fitness, species diversity, and ecosystem function. The lecture and required assignments emphasize critical thinking, scientific communication, intellectual creativity, and active participation by students. Lectures are the same as BOT 332, but with additional assignments and evaluation appropriate to graduate studies. Prerequisite: Consent of department. Prior coursework in ecology and plant biology are recommended. Credit cannot be obtained for both BOT 332 and 532.",
+    "url": "/catalogue/course/bot/532"
+  },
+  {
+    "department": "BOT",
+    "courseCode": "BOT 540",
+    "title": "Advanced Plant Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-3"
+    },
+    "description": "This course explores how plants function. Topics include water transport and the soil-plant-atmosphere continuum, photosynthesis and carbon resource utilization, nitrogen nutrition and symbioses, photosensing, and responses to environmental stresses such as attack by pests and pathogens. Lectures, assignments and exams are the same as BOT 340 with additional assignments and evaluation appropriate to graduate studies. Normally, BOT 540 students will also participate in the BOT 340 laboratory component. Prerequisite: consent of the instructor. Credit cannot be obtained for both BOT 340 and 540.",
+    "url": "/catalogue/course/bot/540"
+  },
+  {
+    "department": "BOT",
+    "courseCode": "BOT 545",
+    "title": "Advanced Molecular Plant Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "Plant responses to their environment are underpinned by myriad molecular events. This course examines the molecular and cellular biology of plant responses to environmental cues, with an emphasis on signalling and regulation of gene expression mediating physiological responses. Topics such as plant cell walls, phytohormone action, photoreceptors, and programmed cell death will be covered. Lectures are the same as for BOT 445, but with additional assignments and evaluation appropriate to graduate studies. Prerequisite: Consent of the instructor. Credit cannot be obtained for both BOT 445 and 545. Offered in alternate years.",
+    "url": "/catalogue/course/bot/545"
+  },
+  {
+    "department": "BOT",
+    "courseCode": "BOT 564",
+    "title": "Advanced Plant Functional Genomics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "Through a combination of lectures, discussions, and computer-based exercises, skills are taught for the analysis of large-scale molecular data sets (e.g. genomic, transcriptomic, or proteomic data). These analytical skills are applied to recently published studies to derive biologically relevant information about the physiology and development of plants. Scheduled classes are the same as for BOT 464, but with additional assignments and evaluation appropriate to graduate studies. Prerequisite: consent of the instructor. Credit cannot be obtained for both BOT 464 and 564. Offered in alternate years.",
+    "url": "/catalogue/course/bot/564"
+  },
+  {
+    "department": "BOT",
+    "courseCode": "BOT 600",
+    "title": "Seminar in Plant Biology",
+    "units": {
+      "credits": null,
+      "feeIndex": null,
+      "term": null
+    },
+    "description": "Credit for this course may be obtained more than once.",
+    "url": "/catalogue/course/bot/600"
+  }
+]

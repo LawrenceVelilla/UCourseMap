@@ -1,0 +1,984 @@
+[
+  {
+    "department": "BTM",
+    "courseCode": "BTM 211",
+    "title": "Management Information Systems",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-1"
+    },
+    "keywords": [
+      "Information Systems",
+      "Technology",
+      "Data Modeling",
+      "Databases",
+      "Systems Analysis",
+      "Analytical Skills"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Students are expected to have basic familiarity with microcomputer applications (word processing, spreadsheets, personal data base, presentation graphics, personal information manager, email, web browser). The lab component will be taught for up to 10 weeks. Students may not receive credit for both BTM 211 and BTM 311."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/211",
+    "updatedAt": "2025-04-11T21:15:32.794Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 412",
+    "title": "Managerial Support Systems",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Decision-Making",
+      "Technology",
+      "Organizational Contexts",
+      "Decision Support Systems",
+      "Design",
+      "Effectiveness"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "BTM 311"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "BTM 311"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/412",
+    "updatedAt": "2025-04-11T21:15:35.540Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 413",
+    "title": "Systems Analysis and Design",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Systems Development",
+      "Information Systems",
+      "Business Functions",
+      "Life Cycle",
+      "Modeling Techniques",
+      "CASE Tools"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "BTM 311"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "BTM 311"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/413",
+    "updatedAt": "2025-04-11T21:15:37.697Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 415",
+    "title": "Data Base Design and Administration",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-2"
+    },
+    "keywords": [
+      "Database Concepts",
+      "Relational Databases",
+      "SQL",
+      "Data Administration",
+      "Data Warehousing",
+      "Object-Oriented Data Model"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "BTM 311"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "There will be a lab component for up to ten weeks during the term."
+    },
+    "flattenedPrerequisites": [
+      "BTM 311"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/415",
+    "updatedAt": "2025-04-11T21:15:39.866Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 417",
+    "title": "Telecommunications in Business",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Telecommunication",
+      "Technologies",
+      "Business Environment",
+      "Networks",
+      "Protocols",
+      "Managerial Aspects"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "BTM 311"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "BTM 311"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/417",
+    "updatedAt": "2025-04-11T21:15:43.572Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 418",
+    "title": "Electronic Commerce",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Electronic Commerce",
+      "Business Transactions",
+      "E-commerce Strategies",
+      "Technical Architecture",
+      "Payment Systems",
+      "Security",
+      "Privacy"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "BTM 311"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "BTM 311"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/418",
+    "updatedAt": "2025-04-11T21:15:45.375Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 419",
+    "title": "Systems Development Using Advanced Software Tools",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-2"
+    },
+    "keywords": [
+      "Physical Design",
+      "Implementation",
+      "Computer Systems",
+      "Software Development",
+      "Systems Analysis",
+      "Lab Component"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "BTM 413"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "BTM 415",
+              "consent of Department"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "CMPUT 175"
+            ]
+          }
+        ]
+      },
+      "notes": "There will be a lab component for up to 12 weeks during the term. Credit may not be obtained for both BTM 419 and CMPUT 301 or 401."
+    },
+    "flattenedPrerequisites": [
+      "BTM 413"
+    ],
+    "flattenedCorequisites": [
+      "BTM 415",
+      "CMPUT 175",
+      "consent of Department"
+    ],
+    "url": "/catalogue/course/btm/419",
+    "updatedAt": "2025-04-11T21:15:48.709Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 424",
+    "title": "Introduction to Information Systems Project Management",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Information Systems",
+      "Project Management",
+      "System Development",
+      "Investigation",
+      "Analysis",
+      "Implementation"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "BTM 311"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "BTM 311"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/424",
+    "updatedAt": "2025-04-11T21:15:51.010Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 426",
+    "title": "Technology-Enabled Business Process Management",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Business Processes",
+      "Operational Activities",
+      "Process Mapping",
+      "Process Analysis",
+      "Process Redesign",
+      "IT Role"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "BTM 311"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "BTM 311"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/426",
+    "updatedAt": "2025-04-11T21:15:53.915Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 427",
+    "title": "Information System Security Management",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Information System Security",
+      "Managerial Perspective",
+      "Threat Assessment",
+      "Policy Creation",
+      "Auditing",
+      "Forensics"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "BTM 311"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "BTM 311"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/427",
+    "updatedAt": "2025-04-11T21:15:55.478Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 437",
+    "title": "Accounting Information Systems",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Computerized Accounting",
+      "Information Systems",
+      "Design",
+      "Integration",
+      "Management Information Systems",
+      "System Development"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "courses": [
+          "ACCTG 311",
+          "ACCTG 322",
+          "BTM 311"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Credit may be granted for only one of ACCTG 437 or BTM 437."
+    },
+    "flattenedPrerequisites": [
+      "ACCTG 311",
+      "ACCTG 322",
+      "BTM 311"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/437",
+    "updatedAt": "2025-04-11T21:15:57.474Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 441",
+    "title": "Managing Information Systems: A Senior Management Perspective",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Capstone",
+      "Information Systems",
+      "Management",
+      "CIO",
+      "Integrative Cases",
+      "Strategic Alignment"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "BTM 311"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "any 400-level BTM course",
+              "consent of Department"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Open only to fourth year students. Credit will be granted for only one of BTM 414 or 441."
+    },
+    "flattenedPrerequisites": [
+      "BTM 311",
+      "any 400-level BTM course",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/441",
+    "updatedAt": "2025-04-11T21:16:00.450Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 495",
+    "title": "Individual Research Project I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Special Study",
+      "Advanced Undergraduates",
+      "Consent",
+      "Instructor",
+      "Assistant Dean"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "Consent of Instructor"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "Consent of Assistant Dean, Undergraduate Program"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "Consent of Instructor",
+      "Consent of Assistant Dean, Undergraduate Program"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/495",
+    "updatedAt": "2025-04-11T21:16:02.421Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 496",
+    "title": "Individual Research Project II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Special Study",
+      "Advanced Undergraduates",
+      "Prerequisites",
+      "Consent",
+      "Instructor",
+      "Assistant Dean"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "BTM 495"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "Consent of the Instructor"
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "Consent of the Assistant Dean, Undergraduate Program"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "BTM 495",
+      "Consent of the Instructor",
+      "Consent of the Assistant Dean, Undergraduate Program"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/496",
+    "updatedAt": "2025-04-11T21:16:05.523Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 497",
+    "title": "Individual Research Project III",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Special Study",
+      "Advanced Undergraduates",
+      "Prerequisites",
+      "Consent",
+      "Instructor",
+      "Assistant Dean"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "BTM 496"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "Consent of the Instructor"
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "Consent of the Assistant Dean, Undergraduate Program"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "BTM 496",
+      "Consent of the Instructor",
+      "Consent of the Assistant Dean, Undergraduate Program"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/497",
+    "updatedAt": "2025-04-11T21:16:09.029Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 611",
+    "title": "Seminar in Information Systems",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-1"
+    },
+    "keywords": [
+      "Information Systems",
+      "Technology",
+      "File Systems",
+      "Data Modeling",
+      "Databases",
+      "Systems Analysis"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Students are expected to have basic familiarity with microcomputer applications. There will be a lab component during the term."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/611",
+    "updatedAt": "2025-04-11T21:16:11.711Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 612",
+    "title": "Managerial Support Systems",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Decision-Making",
+      "Technology",
+      "Organizational Contexts",
+      "Decision Support Systems",
+      "Design",
+      "Evaluation"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/612",
+    "updatedAt": "2025-04-11T21:16:13.124Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 613",
+    "title": "Systems Analysis and Design",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Systems Development",
+      "Information Systems",
+      "Business Functions",
+      "Life Cycle",
+      "Modeling Techniques",
+      "CASE Tools"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/613",
+    "updatedAt": "2025-04-11T21:16:15.028Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 615",
+    "title": "Data Base Design and Administration",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-2"
+    },
+    "keywords": [
+      "Database Concepts",
+      "Relational Databases",
+      "SQL",
+      "Data Administration",
+      "Data Warehousing",
+      "Object-Oriented Data Model"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "The lab component will be taught for ten weeks during the term."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/615",
+    "updatedAt": "2025-04-11T21:16:16.813Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 618",
+    "title": "Electronic Commerce",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Electronic Commerce",
+      "Business Transactions",
+      "E-commerce Strategies",
+      "Technical Architecture",
+      "Payment Systems",
+      "Security",
+      "Privacy"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/618",
+    "updatedAt": "2025-04-11T21:16:18.377Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 624",
+    "title": "IT/IS Project Management",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Information Systems",
+      "Project Management",
+      "Development",
+      "Analysis",
+      "Estimation",
+      "Implementation"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/624",
+    "updatedAt": "2025-04-11T21:16:20.500Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 641",
+    "title": "Information Systems Management",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Information Systems",
+      "Management",
+      "CIO",
+      "Human Resources",
+      "Financial Policies",
+      "Strategic Alignment"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/641",
+    "updatedAt": "2025-04-11T21:16:22.664Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 686",
+    "title": "Selected Topics in Management Information Systems",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "MBA",
+      "Topics",
+      "Pre/corequisites",
+      "Office",
+      "Students"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Students should check with the MBA Office for pre/corequisites of specific sections."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/686",
+    "updatedAt": "2025-04-11T21:16:24.491Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 701",
+    "title": "Introduction to Management Information Systems Research",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Management Information Systems",
+      "Research Fields",
+      "Seminar",
+      "Information Systems Journals",
+      "BTM Literature"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "A graduate or undergraduate course in management information systems or equivalent"
+        ]
+      },
+      "corequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "MGTSC 705"
+        ]
+      },
+      "notes": "Open to all doctoral students or with the written permission of the instructor. Approval of the Business PhD Program Director is also required for non-PhD students."
+    },
+    "flattenedPrerequisites": [
+      "A graduate or undergraduate course in management information systems or equivalent"
+    ],
+    "flattenedCorequisites": [
+      "MGTSC 705"
+    ],
+    "url": "/catalogue/course/btm/701",
+    "updatedAt": "2025-04-11T21:16:27.113Z"
+  },
+  {
+    "department": "BTM",
+    "courseCode": "BTM 702",
+    "title": "Advanced Research Topics in Management Information Systems",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Management Information Systems",
+      "Research Methodology",
+      "Optimal Control Theory",
+      "Operations Management",
+      "Collaborative Communication Systems",
+      "Quantitative Models"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "Written permission of the instructor"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "Approval of the Business PhD Program Director"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "Written permission of the instructor",
+      "Approval of the Business PhD Program Director"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/btm/702",
+    "updatedAt": "2025-04-11T21:16:30.024Z"
+  }
+]

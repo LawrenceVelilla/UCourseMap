@@ -1,0 +1,1298 @@
+[
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 101",
+    "title": "Introduction to Philosophy: Values and Society",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 2-1S-0"
+    },
+    "description": "An introduction to the classical problems of philosophy through study and critical discussion of selected philosophical classics and contemporary works. Emphasis will be placed on questions of moral and other values and on the nature of society and justice.",
+    "url": "/catalogue/course/phil/101"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 102",
+    "title": "Introduction to Philosophy: Knowledge and Reality",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 2-1S-0"
+    },
+    "description": "An introduction to the classical problems of philosophy through study and critical discussion of selected philosophical classics and contemporary works. Emphasis will be placed on questions of the nature and extent of human knowledge and classic problems about the nature of reality and our place in it.",
+    "url": "/catalogue/course/phil/102"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 120",
+    "title": "Symbolic Logic I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A study of sentential logic, including translation, semantics, decision procedures and natural deduction followed by an introduction to predicate logic, concentrating on translation. Note: Not open to students with credit in PHIL 220.",
+    "url": "/catalogue/course/phil/120"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 125",
+    "title": "Practical Logic",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Elementary methods and principles for analyzing reasoning as it occurs in everyday contexts. Topics may include informal fallacies, introduction to scientific method, elementary statistical reasoning, elementary sentential logic, as well as the study of argument in contemporary debates about issues of social concern.",
+    "url": "/catalogue/course/phil/125"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 200",
+    "title": "Metaphysics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Basic questions concerning the nature of reality. Topics may include existence, materialism and idealism, freedom and determinism, appearance and reality, causality, identity, time and space, universals and particulars.",
+    "url": "/catalogue/course/phil/200"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 202",
+    "title": "Indian Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "This course provides an overview of the ancient and classical period of Indian philosophy (500 BCE-1500 CE); major metaphysical and ethical concepts within traditions such as Yoga, Advaita Vedanta, and Buddhism. Note: Not open to students with credit in PHIL 302. Not open to students with credit in PHIL 301 completed prior to 2012.",
+    "url": "/catalogue/course/phil/202"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 203",
+    "title": "Islamic Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A survey of the main figures and schools of thought in the Islamic world from the 10th to the 17th centuries CE.",
+    "url": "/catalogue/course/phil/203"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 204",
+    "title": "Indigenous Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to Indigenous systems of knowledge as philosophical systems, which investigates these systems as parallel and coexisting with Western philosophical systems.",
+    "url": "/catalogue/course/phil/204"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 205",
+    "title": "Philosophy of Mind",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Basic questions concerning the mind and our attempts to study it scientifically.",
+    "url": "/catalogue/course/phil/205"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 209",
+    "title": "The Human Person: Philosophical Issues",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Personal identity, interpersonal relationships, sex and gender, freedom and immortality in historical and contemporary contexts.",
+    "url": "/catalogue/course/phil/209"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 215",
+    "title": "Epistemology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A study of such central topics in the theory of knowledge as truth and rationality, skepticism and the limits of knowledge, relativism and the objectivity of knowledge, the role of perception, memory and reason as sources of knowledge.",
+    "url": "/catalogue/course/phil/215"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 217",
+    "title": "Biology, Society, and Values",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The philosophical and social impact of historical and contemporary topics in the biological sciences.",
+    "url": "/catalogue/course/phil/217"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 219",
+    "title": "The Art of Living Well: Meaning and the Good Life",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Philosophies of the good life. Topics may include integrated wellness, attentiveness, objects of devotion, and community in historical and contemporary contexts.",
+    "url": "/catalogue/course/phil/219"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 220",
+    "title": "Symbolic Logic II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A brief review of sentential logic followed by an intensive study of predicate logic with identity. Topics include translation, semantics, decision procedures, natural deduction systems, mathematical induction. Other topics include: theories of definite descriptions, elementary modal logic, formal axiomatic systems. Prerequisite: PHIL 120 or consent of Department.",
+    "url": "/catalogue/course/phil/220"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 230",
+    "title": "Ancient Greek Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A survey of the thought of the ancient Greek world from its beginnings with the Pre-Socratics up to and including Aristotle.",
+    "url": "/catalogue/course/phil/230"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 233",
+    "title": "Trial and Execution of Socrates",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A philosophical examination of Socrates' death in its cultural, historical and political setting.",
+    "url": "/catalogue/course/phil/233"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 239",
+    "title": "Greek Philosophy and the Christian Tradition",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Issues concerning human beings, knowledge, ethics and society among Greek thinkers and their impact on Christian thought. Note: Not available for credit with PHIL 139.",
+    "url": "/catalogue/course/phil/239"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 240",
+    "title": "Descartes to Hume",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A survey of Philosophy in the 17th- and 18th centuries. Philosophers studied may include Descartes, Leibniz, Princess Elisabeth of Bohemia, Spinoza, Locke, Berkeley, and Hume.",
+    "url": "/catalogue/course/phil/240"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 249",
+    "title": "Medieval Philosophy and the Christian Tradition",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A survey of philosophy from the 5th to the 15th centuries; Philosophers from the Jewish, Islamic and Christian traditions.",
+    "url": "/catalogue/course/phil/249"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 250",
+    "title": "Contemporary Ethical Issues",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An examination of questions of right and wrong, good and evil, and the application of ethical theories to practical issues.",
+    "url": "/catalogue/course/phil/250"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 265",
+    "title": "Philosophy of Science",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to the central issues in contemporary philosophy of science. Topics may include theory evaluation, paradigm shifts and theory change, laws of nature, causation and explanation, the rationality of science and its social and historical setting.",
+    "url": "/catalogue/course/phil/265"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 269",
+    "title": "Moral Philosophy and the Christian Tradition",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Analysis and evaluation of selected moral and social issues.",
+    "url": "/catalogue/course/phil/269"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 270",
+    "title": "Political Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A survey of issues in contemporary political philosophy with attention to liberalism and communitarianism, sovereignty, feminism, entitlement and distribution, and global justice.",
+    "url": "/catalogue/course/phil/270"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 272",
+    "title": "Feminist Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to feminist issues in current philosophy. Note: Not open to students with credit in PHIL 332.",
+    "url": "/catalogue/course/phil/272"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 279",
+    "title": "Philosophy of Hunting",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The moral, conceptual, existential, environmental, socio-political, and spiritual issues raised by the practice of hunting by humans.",
+    "url": "/catalogue/course/phil/279"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 280",
+    "title": "Philosophy of Art",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to some of the traditional theories, such as the expressionist and the formalist theories, which investigate the nature and function of the arts. The nature of aesthetic experience will also be considered.",
+    "url": "/catalogue/course/phil/280"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 282",
+    "title": "Philosophy of Law",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An investigation of the nature of law and of law's relationship to other systems of norms.",
+    "url": "/catalogue/course/phil/282"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 291",
+    "title": "Existentialism",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to the background and main themes of existentialist philosophy. Authors such as Kierkegaard, Nietzsche, Heidegger, and Sartre are considered.",
+    "url": "/catalogue/course/phil/291"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 301",
+    "title": "Topics in Non-Western and Comparative Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Variable content course which may be repeated if topic(s) vary.",
+    "url": "/catalogue/course/phil/301"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 305",
+    "title": "Topics in Philosophy and Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Central topics at the interface of philosophy and psychology. Variable content course which may be repeated if topic(s) vary.",
+    "url": "/catalogue/course/phil/305"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 309",
+    "title": "Augustine",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 3 units in PHIL or consent of the College.",
+    "url": "/catalogue/course/phil/309"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 317",
+    "title": "Philosophy of Biology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Core topics at the interface of biology and philosophy.",
+    "url": "/catalogue/course/phil/317"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 319",
+    "title": "Thomas Aquinas",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 3 units in PHIL or consent of the College.",
+    "url": "/catalogue/course/phil/319"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 325",
+    "title": "Risk, Choice, and Rationality",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A study of the formal theory of rationality including probability and induction, and elementary decision theory, with attention to the paradoxes of choice.",
+    "url": "/catalogue/course/phil/325"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 333",
+    "title": "Aristotle",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An in-depth study of the philosophy of Aristotle.",
+    "url": "/catalogue/course/phil/333"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 336",
+    "title": "Medieval and Renaissance Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A historical survey of western philosophy from the end of classical antiquity until the sixteenth century.",
+    "url": "/catalogue/course/phil/336"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 339",
+    "title": "Contemporary World Views and Christianity",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Critical study of Christianity in dialogue with such worldviews as atheism, agnosticism, naturalism, materialism, existentialism, feminism, liberalism, postmodernism.",
+    "url": "/catalogue/course/phil/339"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 343",
+    "title": "Kant to Nietzsche",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A survey of the philosophy of Kant and the 19th century. Philosophers studied may also include Hegel, Marx, Mill, and Nietzsche. Note: Not open to students with credit in PHIL 245.",
+    "url": "/catalogue/course/phil/343"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 345",
+    "title": "Humans and Animals",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Philosophical approaches to the question of comparative human and animal cognition, emotion, awareness, and language. The course will also address the problem of animal rights vis-à-vis individual and institutional human interests.",
+    "url": "/catalogue/course/phil/345"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 350",
+    "title": "Foundations of Ethics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A philosophical investigation of theoretical questions about ethics, such as whether ethical values are objective or subjective, why we should be moral, whether virtues really exist, what role reason plays in ethical deliberation, and what constitutes the basis of our ethical obligations.",
+    "url": "/catalogue/course/phil/350"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 355",
+    "title": "Environmental Ethics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Philosophical dimensions of issues raised by our relationship to the environment.",
+    "url": "/catalogue/course/phil/355"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 357",
+    "title": "Philosophy of Religion",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "General topics in the Philosophy of Religion, which may include the concept of 'religion,' the existence of God, meaning and intelligibility in religious language, religion and morality, implications of the social scientific study of religion.",
+    "url": "/catalogue/course/phil/357"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 359",
+    "title": "Topics in Christian Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/phil/359"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 365",
+    "title": "Philosophy of Computing",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Philosophical issues arising from computation and computer science. No previous familiarity with computing is necessary.",
+    "url": "/catalogue/course/phil/365"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 366",
+    "title": "Computers and Culture",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Cultural, social, ethical and political issues arising from the computer revolution and new digital technologies.",
+    "url": "/catalogue/course/phil/366"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 367",
+    "title": "Introduction to Philosophy of Mathematics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Overview of approaches to the foundations of mathematics and of philosophical issues concerning the nature of mathematical objects, mathematical theories and the special status of mathematics among the sciences and other areas of knowledge.",
+    "url": "/catalogue/course/phil/367"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 368",
+    "title": "Topics in Social Justice",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Variable content course which may be repeated if topic(s) vary.",
+    "url": "/catalogue/course/phil/368"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 369",
+    "title": "Business Ethics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Ethical issues in business settings, dealing with such themes as employer-employee relations, job security, advertising, distribution of wealth, acquisitive individualism, the common good, and decision-making. Recommended preparation: 3 units in PHIL. Note: Not available for credit with CHRTC 394.",
+    "url": "/catalogue/course/phil/369"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 372",
+    "title": "Philosophy of Sexuality",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Ontological, epistemological, political and ethical issues arising through readings of classical and contemporary texts.",
+    "url": "/catalogue/course/phil/372"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 374",
+    "title": "Philosophy of Disability",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to philosophical approaches to disability.",
+    "url": "/catalogue/course/phil/374"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 375",
+    "title": "Science and Society",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A broadly based introduction to the intellectual, cultural, and social dimensions of science and their implications. Topics may include the impact of the Newtonian revolution, mechanism, materialism and Darwinism, and the nature of objectivity and rationality.",
+    "url": "/catalogue/course/phil/375"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 380",
+    "title": "Philosophy of Criticism",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to the philosophical foundations of art criticism. Questions concerning the standards of interpretation and of evaluation of the arts will be given special attention.",
+    "url": "/catalogue/course/phil/380"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 383",
+    "title": "Film and Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Study of philosophical issues raised by films: distinguishing film from other arts (photography, theatre, video games), whether films depict or represent reality, emotional engagement, the relation of moral and aesthetic values, and approaches to film criticism.",
+    "url": "/catalogue/course/phil/383"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 384",
+    "title": "Topics in Practical Ethics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Variable content course which may be repeated if topic(s) vary.",
+    "url": "/catalogue/course/phil/384"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 385",
+    "title": "Ethics and Artificial Intelligence",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A study of ethical issues raised by artificial intelligence systems.",
+    "url": "/catalogue/course/phil/385"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 386",
+    "title": "Health Care Ethics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A study of ethical issues arising in health care and in the practice of health professions.",
+    "url": "/catalogue/course/phil/386"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 399",
+    "title": "Religious Existentialism",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/phil/399"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 400",
+    "title": "Topics in Metaphysics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200-level, or consent of Department.",
+    "url": "/catalogue/course/phil/400"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 401",
+    "title": "Topics in Epistemology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200-level, or consent of Department.",
+    "url": "/catalogue/course/phil/401"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 405",
+    "title": "Topics in Philosophy of Mind",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200-level, or consent of Department.",
+    "url": "/catalogue/course/phil/405"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 412",
+    "title": "Topics in Philosophy of Science",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200-level, or consent of Department.",
+    "url": "/catalogue/course/phil/412"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 415",
+    "title": "Topics in Philosophy of Biology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200-level, or consent of the Department.",
+    "url": "/catalogue/course/phil/415"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 420",
+    "title": "Metalogic",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The theoretical study of formal systems of logic. Topics include formal axiomatic systems, formal syntax and semantics, soundness and completeness proofs for both sentential and predicate logic. Prerequisite: PHIL 220 or consent of Department.",
+    "url": "/catalogue/course/phil/420"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 421",
+    "title": "Modal Logic",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Standard modal systems in sentential and predicate logic including possible world semantics and completeness proofs. Tense logic and epistemic logic may be considered. Prerequisite: PHIL 220 or consent of Department.",
+    "url": "/catalogue/course/phil/421"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 422",
+    "title": "Topics in Advanced Symbolic Logic",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: PHIL 220 or consent of Department.",
+    "url": "/catalogue/course/phil/422"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 426",
+    "title": "Philosophy of Language",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Selected problems concerning the nature of language and meaning. Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200-level, or consent of Department.",
+    "url": "/catalogue/course/phil/426"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 428",
+    "title": "Logic and Language",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Philosophical logic and its application to the semantics of natural language. Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200-level, or consent of Department.",
+    "url": "/catalogue/course/phil/428"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 433",
+    "title": "Topics in Feminist Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: PHIL 272 or 332 (taken prior to 2006) or W ST 301 or consent of Department.",
+    "url": "/catalogue/course/phil/433"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 436",
+    "title": "Topics in Medieval Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200 level, or consent of Department.",
+    "url": "/catalogue/course/phil/436"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 438",
+    "title": "Topics in Indian Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200 level, or consent of Department.",
+    "url": "/catalogue/course/phil/438"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 440",
+    "title": "Topics in Ancient Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200 level, or consent of Department.",
+    "url": "/catalogue/course/phil/440"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 442",
+    "title": "Topics in 17th- and 18th-Century Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Topics concerning the early modern philosophical tradition. Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200-level, or consent of Department",
+    "url": "/catalogue/course/phil/442"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 444",
+    "title": "Kant",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200-level, or consent of Department.",
+    "url": "/catalogue/course/phil/444"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 445",
+    "title": "Topics in 19th-Century Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200-level, or consent of Department.",
+    "url": "/catalogue/course/phil/445"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 446",
+    "title": "Early Analytic Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200 level, or  consent of Department.",
+    "url": "/catalogue/course/phil/446"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 448",
+    "title": "Topics in 20th-Century Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200-level, or consent of Department.",
+    "url": "/catalogue/course/phil/448"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 450",
+    "title": "Topics in Ethics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200-level, or consent of Department.",
+    "url": "/catalogue/course/phil/450"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 451",
+    "title": "Topics in the History of Moral and Political Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200-level, or consent of Department.",
+    "url": "/catalogue/course/phil/451"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 457",
+    "title": "Topics in Philosophy of Religion",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200-level, or consent of Department. Variable content course which may be repeated if topic(s) vary.",
+    "url": "/catalogue/course/phil/457"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 459",
+    "title": "Advanced Topics in Christian Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/phil/459"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 470",
+    "title": "Topics in Social and Political Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200-level, or consent of Department.",
+    "url": "/catalogue/course/phil/470"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 480",
+    "title": "Topics in Aesthetics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200-level, or consent of Department.",
+    "url": "/catalogue/course/phil/480"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 486",
+    "title": "Directed Reading I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: consent of Department.",
+    "url": "/catalogue/course/phil/486"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 487",
+    "title": "Directed Reading II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: consent of Department.",
+    "url": "/catalogue/course/phil/487"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 488",
+    "title": "Current Research in Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200-level, or consent of Department.",
+    "url": "/catalogue/course/phil/488"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 492",
+    "title": "Topics in Phenomenology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200-level, or consent of Department.",
+    "url": "/catalogue/course/phil/492"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 498",
+    "title": "Honors Essay",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Preparation of the honors essay, required in the fourth year of the Honors program.",
+    "url": "/catalogue/course/phil/498"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 500",
+    "title": "Metaphysics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/phil/500"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 501",
+    "title": "Epistemology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/phil/501"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 505",
+    "title": "Philosophy of Mind",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/phil/505"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 510",
+    "title": "Philosophy of Science",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/phil/510"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 522",
+    "title": "Topics in Logic",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/phil/522"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 526",
+    "title": "Philosophy of Language",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/phil/526"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 536",
+    "title": "Topics in Medieval Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/phil/536"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 540",
+    "title": "Topics in Ancient Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/phil/540"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 546",
+    "title": "Topics in Modern Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/phil/546"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 547",
+    "title": "Topics in 20th Century Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/phil/547"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 550",
+    "title": "Moral Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/phil/550"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 557",
+    "title": "Topics in Philosophy of Religion",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/phil/557"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 570",
+    "title": "Social and Political Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/phil/570"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 580",
+    "title": "Aesthetics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/phil/580"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 592",
+    "title": "Topics in Phenomenology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: At least 6 units in PHIL, 3 units of which must be at the 200-level, or consent of Department.",
+    "url": "/catalogue/course/phil/592"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 594",
+    "title": "Selected Problems in Philosophy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/phil/594"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 596",
+    "title": "Directed Reading I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: Open only to graduate students beyond the qualifying year.",
+    "url": "/catalogue/course/phil/596"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 597",
+    "title": "Directed Reading II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: Open only to graduate students beyond the qualifying year.",
+    "url": "/catalogue/course/phil/597"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 900",
+    "title": "Research Project",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "VAR, UNASSIGNED"
+    },
+    "description": "Capstone Research project required for and restricted to students in the course-based MA program.",
+    "url": "/catalogue/course/phil/900"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 900A",
+    "title": "Research Project",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "VAR, UNASSIGNED"
+    },
+    "description": "Capstone Research project required for and restricted to students in the course-based MA program.",
+    "url": "/catalogue/course/phil/900a"
+  },
+  {
+    "department": "PHIL",
+    "courseCode": "PHIL 900B",
+    "title": "Research Project",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "VAR, UNASSIGNED"
+    },
+    "description": "Capstone Research project required for and restricted to students in the course-based MA program.",
+    "url": "/catalogue/course/phil/900b"
+  }
+]

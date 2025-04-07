@@ -1,0 +1,134 @@
+[
+  {
+    "department": "ASTRO",
+    "courseCode": "ASTRO 101",
+    "title": "Black Holes",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to the science of black holes and its connection to how black holes are portrayed in popular culture and news. Topics include: properties of light; introduction to gravity, relativity and quantum physics; life cycle of stars; measurements of black hole properties; observed features of black holes interacting with their environment; event horizons, the ergosphere, and singularities; quantum black holes, information, and Hawking radiation; gravitational lensing; gravitational radiation. Prerequisites: Math 30-1. This course may not be taken for credit if credit has been obtained in ASTRO 122.",
+    "url": "/catalogue/course/astro/101"
+  },
+  {
+    "department": "ASTRO",
+    "courseCode": "ASTRO 120",
+    "title": "Astronomy of the Solar System",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The development of astronomy and astronomical techniques, including results obtained from the latest orbiting observatories. The origin, evolution and nature of the Earth, the other planets and non-planetary bodies will be discussed. Viewing experience will be available using the campus observatory. Prerequisites: Mathematics 30-1 and Physics 30.",
+    "url": "/catalogue/course/astro/120"
+  },
+  {
+    "department": "ASTRO",
+    "courseCode": "ASTRO 122",
+    "title": "Astronomy of Stars and Galaxies",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The development of our understanding of the universe, including current models of stellar evolution and cosmology. Emphasis on understanding the physical processes underlying astronomical phenomena. Viewing experience will be available using the campus observatory. Prerequisites: Mathematics 30-1 and Physics 30. This course may not be taken for credit if credit has been obtained in ASTRO 101.",
+    "url": "/catalogue/course/astro/122"
+  },
+  {
+    "department": "ASTRO",
+    "courseCode": "ASTRO 320",
+    "title": "Stellar Astrophysics I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Application of physics to stellar formation and stellar evolution; theoretical models and observational comparisons of main sequence stars, white dwarf stars, neutron stars, supernovae, black holes; binary star systems, stellar atmospheres and stellar spectra. Prerequisites: MATH 115, 118, 136, 146 or 156 and one of PHYS 208 or 271. Previous knowledge of astronomy is advantageous.",
+    "url": "/catalogue/course/astro/320"
+  },
+  {
+    "department": "ASTRO",
+    "courseCode": "ASTRO 322",
+    "title": "Galactic and Extragalactic Astrophysics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The interstellar medium and interstellar reddening; galactic structure; kinematics and dynamics of stars in galaxies; quasars; introduction of cosmology. Prerequisites: MATH 115, 118, 136, 146 or 156, and one of PHYS 208 or 271. Previous knowledge of astronomy is advantageous.",
+    "url": "/catalogue/course/astro/322"
+  },
+  {
+    "department": "ASTRO",
+    "courseCode": "ASTRO 429",
+    "title": "Upper Atmosphere and Space Physics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Basic space plasma phenomena: the Earth's plasma and field environment; the solar cycle; generation of the solar wind; the interplanetary plasma and field environment; the solar-terrestrial interaction; magnetospheric substorms; the aurora borealis; magnetosphere-ionosphere interactions; effects of magnetospheric storms on man-made systems; use of natural electromagnetic fields for geophysical exploration. Pre- or corequisite: PHYS 381.",
+    "url": "/catalogue/course/astro/429"
+  },
+  {
+    "department": "ASTRO",
+    "courseCode": "ASTRO 430",
+    "title": "Physical Cosmology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Observational cosmology; geometry and matter content of the Universe; physical processes in the early stages of the Universe; inflation, Big Bang nucleosynthesis and the cosmic microwave background radiation; cosmological aspects of galaxy formation and the growth of large-scale structure. Prerequisites: PHYS 310, MA PH 251 or MATH 334. Pre- or corequisite: PHYS 458.",
+    "url": "/catalogue/course/astro/430"
+  },
+  {
+    "department": "ASTRO",
+    "courseCode": "ASTRO 465",
+    "title": "Stellar Astrophysics II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Stellar interiors and nuclear transformations; energy transport; model stars; variable stars; stellar evolution. Prerequisites: PHYS 310, 271, ASTRO 320, MA PH 251 or MATH 334. Note: Credit may be obtained for only one of ASTRO 465 or ASTRO 565.",
+    "url": "/catalogue/course/astro/465"
+  },
+  {
+    "department": "ASTRO",
+    "courseCode": "ASTRO 495",
+    "title": "Special Topics in Astrophysics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The course covers specialized topics of interest to advanced undergraduate students. Consult the Department for details about current offerings. Prerequisites depend on the subject. Credit for this course may be obtained more than once.",
+    "url": "/catalogue/course/astro/495"
+  },
+  {
+    "department": "ASTRO",
+    "courseCode": "ASTRO 565",
+    "title": "Stellar Astrophysics II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Stellar interiors and nuclear transformations; energy transport; model stars; variable stars; stellar evolution. Prerequisites: Consent of Instructor. Note: Credit may be obtained for only one of ASTRO 465 or ASTRO 565.",
+    "url": "/catalogue/course/astro/565"
+  },
+  {
+    "department": "ASTRO",
+    "courseCode": "ASTRO 595",
+    "title": "Special Topics in Astrophysics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The course covers specialized topics of interest to junior graduate students. Consult the Department for details about current offerings. Prerequisites depend on the subject. Credit for this course may be obtained more than once.",
+    "url": "/catalogue/course/astro/595"
+  }
+]

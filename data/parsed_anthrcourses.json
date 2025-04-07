@@ -1,0 +1,3165 @@
+[
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 101",
+    "title": "Introductory Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Anthropology",
+      "Human Diversity",
+      "Cultural Approaches",
+      "Historical Perspectives",
+      "Social Science"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/101",
+    "updatedAt": "2025-04-12T18:37:32.156Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 103",
+    "title": "Introductory Topics in Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Department",
+      "Topics",
+      "Offered",
+      "Repeated",
+      "Vary"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consult the department for the specific topics offered. May be repeated if topics vary."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/103",
+    "updatedAt": "2025-04-12T18:37:33.714Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 110",
+    "title": "Gender, Age, and Culture",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Anthropology",
+      "Cultural Comparison",
+      "Social Positions",
+      "Sex",
+      "Age"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/110",
+    "updatedAt": "2025-04-12T18:37:35.402Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 140",
+    "title": "Anthropology of Death",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Comparative Survey",
+      "Beliefs",
+      "Customs",
+      "Death",
+      "Human Cultures"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/140",
+    "updatedAt": "2025-04-12T18:37:38.467Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 150",
+    "title": "Race and Racism",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Racism",
+      "Anthropology",
+      "Human Variation",
+      "Race Concept",
+      "Modern Societies"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/150",
+    "updatedAt": "2025-04-12T18:37:40.491Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 206",
+    "title": "Introduction to Archaeology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 2-0-1"
+    },
+    "keywords": [
+      "Anthropological Archaeology",
+      "Cultural Evolution",
+      "Reconstruction",
+      "Past Societies",
+      "Archaeological Evidence",
+      "Theory and Methods"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/206",
+    "updatedAt": "2025-04-12T18:37:42.773Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 207",
+    "title": "Introduction to Social and Cultural Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 2-1S-0"
+    },
+    "keywords": [
+      "Comparative Study",
+      "Human Society",
+      "Culture",
+      "Non-Western Communities",
+      "Family",
+      "Social Structure"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/207",
+    "updatedAt": "2025-04-12T18:37:44.818Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 208",
+    "title": "Introduction to Linguistic Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Anthropology",
+      "Language",
+      "Communication",
+      "Field Methods",
+      "Analytical Methods",
+      "Linguistic Anthropology"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/208",
+    "updatedAt": "2025-04-12T18:37:46.488Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 209",
+    "title": "Introduction to Biological Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 2-0-1"
+    },
+    "keywords": [
+      "Human Evolution",
+      "Human Variation",
+      "Primatology",
+      "Osteology",
+      "Paleontology"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/209",
+    "updatedAt": "2025-04-12T18:37:49.529Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 219",
+    "title": "World Prehistory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Archaeology",
+      "Cultural Evolution",
+      "Human Evidence",
+      "Survey",
+      "Evidence"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/219",
+    "updatedAt": "2025-04-12T18:37:51.370Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 230",
+    "title": "Anthropology of Science, Technology, and Environment",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Science",
+      "Cultural Practice",
+      "Globalization",
+      "Technology",
+      "Gender",
+      "Ecological Knowledge"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/230",
+    "updatedAt": "2025-04-12T18:37:52.810Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 235",
+    "title": "Anthropology of Disability",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Cultural Variations",
+      "Disability",
+      "Anthropological Analysis",
+      "Understanding",
+      "Experiences"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/235",
+    "updatedAt": "2025-04-12T18:37:54.548Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 256",
+    "title": "Alberta Archaeology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Alberta",
+      "History",
+      "Archaeology",
+      "Past",
+      "Introduction"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/256",
+    "updatedAt": "2025-04-12T18:37:55.920Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 286",
+    "title": "Topics in Regional Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Department",
+      "Schedule",
+      "Topics",
+      "Variable Content",
+      "Repeatable"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consult the Department and/or the schedule of classes for the specific topics offered. Variable content course which may be repeated if topic(s) vary."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/286",
+    "updatedAt": "2025-04-12T18:37:57.671Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 287",
+    "title": "Topics in Asian Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Department",
+      "Schedule",
+      "Topics",
+      "Variable Content",
+      "Repeatable"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consult the Department and/or the schedule of classes for the specific topics offered. Variable content course which may be repeated if topic(s) vary."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/287",
+    "updatedAt": "2025-04-12T18:37:59.463Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 301",
+    "title": "Introduction to Ethnographic Methods",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Ethnographic Research",
+      "Observation",
+      "Interviewing",
+      "Ethnographic Writing",
+      "Research Methods"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "ANTHR 207",
+              "ANTHE 207"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "ANTHR 208",
+              "ANTHE 208"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "consent of Department"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in ANTHR 401."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 207",
+      "ANTHE 207",
+      "ANTHR 208",
+      "ANTHE 208",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/301",
+    "updatedAt": "2025-04-12T18:38:03.709Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 302",
+    "title": "History of Anthropological Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Social Anthropology",
+      "Cultural Anthropology",
+      "Nineteenth Century",
+      "Twentieth Century",
+      "Theoretical Trends"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "ANTHR 207",
+              "ANTHR 208",
+              "ANTHE 207",
+              "ANTHE 208"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "consent of Department"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in ANTHR 415."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 207",
+      "ANTHR 208",
+      "ANTHE 207",
+      "ANTHE 208",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/302",
+    "updatedAt": "2025-04-12T18:38:06.560Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 303",
+    "title": "History of Anthropological Archaeology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Anthropological Archaeology",
+      "Theory",
+      "Method",
+      "Survey",
+      "Development"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 206",
+          "consent of Department"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in ANTHR 481."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 206",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/303",
+    "updatedAt": "2025-04-12T18:38:11.584Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 304",
+    "title": "History of Biological Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Biological Anthropology",
+      "Theory",
+      "Method",
+      "Survey",
+      "Development"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 209",
+          "consent of Department"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years. Not open to students with credit in ANTHR 498."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 209",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/304",
+    "updatedAt": "2025-04-12T18:38:13.414Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 310",
+    "title": "The Anthropology of Gender",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Comparative",
+      "Cross-Cultural",
+      "Cross-Species",
+      "Biological",
+      "Social",
+      "Sex and Gender Differences"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "ANTHR 110",
+              "ANTHR 207",
+              "ANTHE 207",
+              "ANTHR 209"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "consent of Department"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 110",
+      "ANTHR 207",
+      "ANTHE 207",
+      "ANTHR 209",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/310",
+    "updatedAt": "2025-04-12T18:38:16.336Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 311",
+    "title": "Archaeology of Indigenous North America",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Archaeology",
+      "Indigenous Histories",
+      "North America",
+      "Decolonization",
+      "Engagement",
+      "Anthropology"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 206"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 206"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/311",
+    "updatedAt": "2025-04-12T18:38:18.715Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 312",
+    "title": "Lower Palaeolithic Prehistory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Prehistoric Culture",
+      "Europe",
+      "Africa",
+      "Asia",
+      "Lower Palaeolithic"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 206",
+          "consent of Department"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 206",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/312",
+    "updatedAt": "2025-04-12T18:38:20.430Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 313",
+    "title": "Middle and Upper Palaeolithic Prehistory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Prehistoric Culture",
+      "Europe",
+      "Africa",
+      "Asia",
+      "Palaeolithic"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 206",
+          "consent of Department"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 206",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/313",
+    "updatedAt": "2025-04-12T18:38:22.194Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 318",
+    "title": "Political Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Political Anthropology",
+      "State Structure",
+      "Non-State Societies",
+      "Pluralism",
+      "Stratification"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/318",
+    "updatedAt": "2025-04-12T18:38:23.754Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 320",
+    "title": "Anthropology of Religion",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Anthropology",
+      "Religions",
+      "Magic",
+      "Taboo",
+      "Shamanism",
+      "Witchcraft"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 207",
+          "ANTHE 207"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consent of Department may be required."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 207",
+      "ANTHE 207"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/320",
+    "updatedAt": "2025-04-12T18:38:26.352Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 321",
+    "title": "Religions of China in Practice",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Contemporary",
+      "Chinese",
+      "Religious Culture",
+      "Family",
+      "Community",
+      "Political Sphere"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/321",
+    "updatedAt": "2025-04-12T18:38:27.725Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 322",
+    "title": "Anthropological Perspectives on Discursive Practices",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Cultural Constructions",
+      "Narrative",
+      "Discourse",
+      "Interethnic Communication",
+      "Code Choice",
+      "Electronic Media"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 208",
+          "ANTHE 208"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 208",
+      "ANTHE 208"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/322",
+    "updatedAt": "2025-04-12T18:38:31.200Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 324",
+    "title": "Economic Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Literature",
+      "Controversies",
+      "Field",
+      "Systems of Exchange",
+      "Alternate Years"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/324",
+    "updatedAt": "2025-04-12T18:38:36.736Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 325",
+    "title": "Anthropology of Japan",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Anthropological Writing",
+      "Japan",
+      "History of Ideas",
+      "Sociology of Knowledge",
+      "Case Study"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "Any 200-level Anthropology course",
+          "consent of Department"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "Any 200-level Anthropology course",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/325",
+    "updatedAt": "2025-04-12T18:38:38.601Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 332",
+    "title": "Anthropology of Science",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Contemporary Views",
+      "Nature of Science",
+      "Universalism",
+      "Objectives",
+      "Culture-bound Epistemologies",
+      "Debates"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/332",
+    "updatedAt": "2025-04-12T18:38:40.636Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 333",
+    "title": "Anthropology of Time and Space",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Classical Debates",
+      "Social Inflections",
+      "Cultural Inflections",
+      "Temporalities",
+      "Industrial Ages",
+      "Post-Industrial Ages"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 207",
+          "consent of Department"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 207",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/333",
+    "updatedAt": "2025-04-12T18:38:43.079Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 350",
+    "title": "Kinship and Social Structure",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Anthropology",
+      "Kinship Systems",
+      "Social Organization",
+      "Non-Western Societies",
+      "Cultural Approaches"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/350",
+    "updatedAt": "2025-04-12T18:38:45.122Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 372",
+    "title": "Anthropology of Food",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Food",
+      "Culture",
+      "Historical Analysis",
+      "Cross-Cultural",
+      "Foodways"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/372",
+    "updatedAt": "2025-04-12T18:38:46.736Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 385",
+    "title": "Topics in Social Cultural Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consult the Department for the specific topics offered and any recommended courses to be completed prior to registering."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/385",
+    "updatedAt": "2025-04-12T18:38:48.410Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 386",
+    "title": "Topics in Biological Anthropology or Archaeology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consult the Department for the specific topics offered and any recommended courses to be completed prior to registering."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/386",
+    "updatedAt": "2025-04-12T18:38:50.150Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 390",
+    "title": "Human Osteology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "keywords": [
+      "Human Skeletal Biology",
+      "Bones Identification",
+      "Functional Anatomy",
+      "Lecture",
+      "Laboratory",
+      "Anthropology"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 209",
+          "consent of Department"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 209",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/390",
+    "updatedAt": "2025-04-12T18:38:52.494Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 391",
+    "title": "Hominid Evolution",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Fossil Evidence",
+      "Human Evolution",
+      "Anthropology",
+      "Survey",
+      "Department Consent"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 209",
+          "Department Consent"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 209",
+      "Department Consent"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/391",
+    "updatedAt": "2025-04-12T18:38:54.267Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 393",
+    "title": "Health and Healing",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Cross-Cultural",
+      "Health",
+      "Illness",
+      "Healing",
+      "Social Activities",
+      "Beliefs"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/393",
+    "updatedAt": "2025-04-12T18:38:55.986Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 396",
+    "title": "Archaeological Field Training",
+    "units": {
+      "credits": 6,
+      "feeIndex": 12,
+      "term": "SPR/SUM, 3-0-3"
+    },
+    "keywords": [
+      "Archaeological",
+      "Field Techniques",
+      "Excavation",
+      "Survey",
+      "Recording",
+      "Conservation"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "ANTHR 206",
+              "equivalent"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "consent of Department"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Requires payment of additional student instructional support fees. Refer to the Tuition and Fees page in the University Regulations section of the Calendar."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 206",
+      "equivalent",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/396",
+    "updatedAt": "2025-04-12T18:38:58.533Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 397",
+    "title": "Anthropological Field Training",
+    "units": {
+      "credits": 6,
+      "feeIndex": 12,
+      "term": "SPR/SUM, 3-0-3"
+    },
+    "keywords": [
+      "Field Training",
+      "Socio-Cultural Anthropology",
+      "Practical Aspects",
+      "Department Consent",
+      "Instructional Support Fees"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "ANTHR 207",
+              "equivalent"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "consent of Department"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Requires payment of additional student instructional support fees. Refer to the Tuition and Fees page in the University Regulations section of the Calendar."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 207",
+      "equivalent",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/397",
+    "updatedAt": "2025-04-12T18:39:01.081Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 404",
+    "title": "Mortuary Archaeology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Theory",
+      "Method",
+      "Interpretation",
+      "Treatment of the Dead",
+      "Prehistoric",
+      "Historic"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 206",
+          "ANTHR 209"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consent of Department."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 206",
+      "ANTHR 209"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/404",
+    "updatedAt": "2025-04-12T18:39:03.704Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 407",
+    "title": "Paleopathology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 2-0-1"
+    },
+    "keywords": [
+      "Disease Processes",
+      "Antiquity",
+      "Skeletal Tissues",
+      "Preserved Tissues",
+      "Anthropology"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 390",
+          "consent of Department"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 390",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/407",
+    "updatedAt": "2025-04-12T18:39:05.814Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 411",
+    "title": "Ethnographic Field Methods",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Ethnographic Research",
+      "Methodological Challenges",
+      "Research Project",
+      "Proposal Writing",
+      "ANTHR 207",
+      "Consent of Department"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 207",
+          "ANTHE 207"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 207",
+      "ANTHE 207"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/411",
+    "updatedAt": "2025-04-12T18:39:07.763Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 417",
+    "title": "Anthropology of Modernity",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Modernity",
+      "Globalization",
+      "Transnationalism",
+      "Ethnographic Perspective",
+      "New Technologies"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/417",
+    "updatedAt": "2025-04-12T18:39:09.899Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 420",
+    "title": "Anthropology and the Twentieth Century",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Anthropological Theory",
+      "Social Movements",
+      "Anti-Colonialism",
+      "Feminism",
+      "Identity",
+      "Disability"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 207",
+          "ANTHE 207"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 207",
+      "ANTHE 207"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/420",
+    "updatedAt": "2025-04-12T18:39:12.167Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 423",
+    "title": "Anthropological Approaches to Verbal Performance",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Figurative Language",
+      "Rhetorics",
+      "Narrative Forms",
+      "Myth",
+      "Folklore",
+      "Oral History"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 207",
+          "ANTHR 208"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "consent of Department"
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 207",
+      "ANTHR 208"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/423",
+    "updatedAt": "2025-04-12T18:39:13.875Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 424",
+    "title": "Visual Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Visual Media",
+      "Visualization",
+      "Culture",
+      "Imagery",
+      "Anthropology"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "Consent of Department"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [
+      "Consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/424",
+    "updatedAt": "2025-04-12T18:39:15.823Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 425",
+    "title": "Anthropology of Art",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Anthropology",
+      "Artistic Expression",
+      "Cultural System",
+      "Social Position",
+      "Contemporary Studies"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "Consent of Department"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "Consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/425",
+    "updatedAt": "2025-04-12T18:39:17.593Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 443",
+    "title": "Juvenile Osteology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 2-0-1"
+    },
+    "keywords": [
+      "Juvenile Skeleton",
+      "Development",
+      "Identification",
+      "Age at Death",
+      "Health",
+      "Childrearing Practices"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 390",
+          "consent of Department"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 390",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/443",
+    "updatedAt": "2025-04-12T18:39:20.052Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 464",
+    "title": "Chemical Analysis of Bone",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Stable Isotope",
+      "aDNA Analysis",
+      "Archaeological",
+      "Human Remains",
+      "Faunal Remains",
+      "Research"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 390",
+          "consent of Department"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 390",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/464",
+    "updatedAt": "2025-04-12T18:39:22.129Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 468",
+    "title": "Fundamentals of Archaeological Mapping",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Archaeological Mapping",
+      "Spatial Analysis",
+      "Mapping Technology",
+      "Digital Forms",
+      "Theoretical Foundations"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 206",
+          "consent of Department"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 206",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/468",
+    "updatedAt": "2025-04-12T18:39:24.799Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 469",
+    "title": "Dental Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Dental Anthropology",
+      "Methodological Issues",
+      "Theoretical Issues",
+      "Human Teeth",
+      "Archaeological Contexts"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 390"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 390"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/469",
+    "updatedAt": "2025-04-12T18:39:26.773Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 471",
+    "title": "Readings in Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Research",
+      "Project",
+      "Individual",
+      "Department",
+      "Faculty",
+      "Consent"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "Consent of Department"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "Consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/471",
+    "updatedAt": "2025-04-12T18:39:31.869Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 472",
+    "title": "Independent Research",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-0-3"
+    },
+    "keywords": [
+      "Research",
+      "Project",
+      "Laboratory Work",
+      "Department Faculty",
+      "Consent"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "Consent of Department"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "Consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/472",
+    "updatedAt": "2025-04-12T18:39:33.466Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 474",
+    "title": "Northwest Coast Societies from an Anthropological Perspective",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Northwest Coast",
+      "Cultures",
+      "Ethnography",
+      "Social Structure",
+      "Kinship",
+      "Economic Systems"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 207",
+          "ANTHE 207",
+          "ANTHR 250"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 207",
+      "ANTHE 207",
+      "ANTHR 250"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/474",
+    "updatedAt": "2025-04-12T18:39:37.369Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 476",
+    "title": "Palaeodietary Reconstruction",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Human Diets",
+      "Reconstruction",
+      "Human Remains",
+      "Methods",
+      "Anthropology"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 206",
+          "ANTHR 209"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 206",
+      "ANTHR 209"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/476",
+    "updatedAt": "2025-04-12T18:39:39.609Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 480",
+    "title": "Zooarchaeology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 2-0-1"
+    },
+    "keywords": [
+      "Zooarchaeology",
+      "Methodological Issues",
+      "Theoretical Issues",
+      "Animal Remains",
+      "Archaeological Contexts"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 206",
+          "consent of Department"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 206",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/480",
+    "updatedAt": "2025-04-12T18:39:41.713Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 484",
+    "title": "Topics in Archaeology and/or Biological Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consult the Department for the specific topics offered and any recommended courses to be completed prior to registering."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/484",
+    "updatedAt": "2025-04-12T18:39:43.854Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 485",
+    "title": "Topics in Social, Cultural and/or Linguistic Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consult the Department for the specific topics offered and any recommended courses to be completed prior to registering."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/485",
+    "updatedAt": "2025-04-12T18:39:45.343Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 486",
+    "title": "Seminar in Archaeology and/or Biological Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consult the Department for the specific topics offered and any recommended courses to be completed prior to registering."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/486",
+    "updatedAt": "2025-04-12T18:39:46.777Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 487",
+    "title": "Seminar in Social, Cultural and/or Linguistic Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consult the Department for the specific topics offered and any recommended courses to be completed prior to registering."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/487",
+    "updatedAt": "2025-04-12T18:39:48.517Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 490",
+    "title": "Human Osteoarchaeology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Data Analysis",
+      "Interpretation",
+      "Skeletal Remains",
+      "Dental Remains",
+      "Archaeological Sites"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 390"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 390"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/490",
+    "updatedAt": "2025-04-12T18:39:50.522Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 491",
+    "title": "Stone Tools",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Methodological",
+      "Theoretical",
+      "Analysis",
+      "Stone Tools",
+      "Anthropology"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 206",
+          "consent of Department"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 206",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/491",
+    "updatedAt": "2025-04-12T18:39:52.665Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 494",
+    "title": "Forensic Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Human Skeletal Individualization",
+      "Death Investigation",
+      "Anthropology",
+      "Forensic Science",
+      "Human Remains"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 390"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 390"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/494",
+    "updatedAt": "2025-04-12T18:39:54.355Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 495",
+    "title": "Archaeological Methods",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Archaeological Theory",
+      "Methods",
+      "Field Problems",
+      "Laboratory Problems",
+      "Department Consent"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+          "ANTHR 206",
+          "Department Consent"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [
+      "ANTHR 206",
+      "Department Consent"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/495",
+    "updatedAt": "2025-04-12T18:39:56.198Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 499A",
+    "title": "Honors Seminar and Research Project",
+    "units": {
+      "credits": 3,
+      "feeIndex": 12,
+      "term": "TWO TERM, 0-3S-0"
+    },
+    "keywords": [
+      "Anthropology",
+      "Contemporary Issues",
+      "BA Honors",
+      "Essay Preparation",
+      "Faculty Supervision"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/499a",
+    "updatedAt": "2025-04-12T18:39:57.530Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 499B",
+    "title": "Honors Seminar and Research Project",
+    "units": {
+      "credits": 3,
+      "feeIndex": 12,
+      "term": "TWO TERM, 0-3S-0"
+    },
+    "keywords": [
+      "Anthropology",
+      "Contemporary Issues",
+      "BA Honors",
+      "Essay",
+      "Supervision"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/499b",
+    "updatedAt": "2025-04-12T18:39:59.277Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 500",
+    "title": "MA Thesis Prospectus",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Research Proposal",
+      "MA Thesis",
+      "Theoretical Knowledge",
+      "Methodological Knowledge",
+      "Department Consent"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Closed to web registration. Department consent required."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/500",
+    "updatedAt": "2025-04-12T18:40:01.214Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 501",
+    "title": "MA Colloquium",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 0-3S-0"
+    },
+    "keywords": [
+      "Readings",
+      "Presentations",
+      "Discussions",
+      "Research",
+      "Anthropology",
+      "Current Issues"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Limited to new MA students"
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/501",
+    "updatedAt": "2025-04-12T18:40:03.163Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 507",
+    "title": "Advanced Paleopathology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 2-0-1"
+    },
+    "keywords": [
+      "Disease Processes",
+      "Antiquity",
+      "Skeletal Tissues",
+      "Preserved Tissues",
+      "Survey",
+      "Department Consent"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "Department Consent"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [
+      "Department Consent"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/507",
+    "updatedAt": "2025-04-12T18:40:05.107Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 511",
+    "title": "Ethnographic Field Methods",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Not Open",
+      "Credit",
+      "ANTHR 401",
+      "ANTHR 505",
+      "Offered",
+      "Alternate Years"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in ANTHR 401 or 505. Offered in alternate years."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/511",
+    "updatedAt": "2025-04-12T18:40:07.564Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 517",
+    "title": "Anthropology of Modernity",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Modernity",
+      "Globalization",
+      "Transnationalism",
+      "Ethnographic Perspective",
+      "New Technologies"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/517",
+    "updatedAt": "2025-04-12T18:40:09.798Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 520",
+    "title": "Anthropology and the Twentieth Century",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Anthropological Theory",
+      "Social Movements",
+      "Anti-Colonialism",
+      "Anti-Racism",
+      "Feminism",
+      "Identity"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/520",
+    "updatedAt": "2025-04-12T18:40:12.068Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 524",
+    "title": "Visual Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Visual Media",
+      "Visualization",
+      "Culture",
+      "Imagery",
+      "Anthropology"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/524",
+    "updatedAt": "2025-04-12T18:40:14.014Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 543",
+    "title": "Advanced Juvenile Osteology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 2-0-1"
+    },
+    "keywords": [
+      "Juvenile Skeleton",
+      "Development",
+      "Identification",
+      "Age at Death",
+      "Health",
+      "Childrearing Practices"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/543",
+    "updatedAt": "2025-04-12T18:40:16.056Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 564",
+    "title": "Advanced Chemical Analysis of Bone",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Stable Isotope",
+      "aDNA Analysis",
+      "Archaeological",
+      "Human Remains",
+      "Faunal Remains",
+      "Research"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/564",
+    "updatedAt": "2025-04-12T18:40:18.214Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 568",
+    "title": "Advanced Fundamentals of Archaeological Mapping",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Archaeological Mapping",
+      "Spatial Analysis",
+      "Non-Digital Mapping",
+      "Digital Mapping",
+      "Mapping Technology",
+      "Mapping Software"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/568",
+    "updatedAt": "2025-04-12T18:40:19.762Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 569",
+    "title": "Advanced Dental Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Dental Anthropology",
+      "Methodological Issues",
+      "Theoretical Issues",
+      "Human Teeth",
+      "Archaeological Contexts"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/569",
+    "updatedAt": "2025-04-12T18:40:21.387Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 571",
+    "title": "Advanced Readings in Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Research",
+      "Project",
+      "Department Faculty",
+      "Consent",
+      "Individual"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Closed to web registration. Department consent required."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/571",
+    "updatedAt": "2025-04-12T18:40:23.027Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 572",
+    "title": "Independent Research",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-0-3"
+    },
+    "keywords": [
+      "Research",
+      "Project",
+      "Laboratory",
+      "Field Work",
+      "Department Consent",
+      "Supervision"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Closed to web registration. Department consent required."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/572",
+    "updatedAt": "2025-04-12T18:40:24.543Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 573",
+    "title": "Advanced Field Training",
+    "units": {
+      "credits": 6,
+      "feeIndex": 12,
+      "term": "SPR/SUM, 3-0-3"
+    },
+    "keywords": [
+      "Fieldwork",
+      "Anthropology",
+      "Consent",
+      "Department",
+      "Instructional Support Fees",
+      "Tuition"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "Consent of Department"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Requires payment of additional student instructional support fees. Refer to the Tuition and Fees page in the University Regulations section of the Calendar."
+    },
+    "flattenedPrerequisites": [
+      "Consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/573",
+    "updatedAt": "2025-04-12T18:40:27.273Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 576",
+    "title": "Advanced Palaeodietary Reconstruction",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Human Diets",
+      "Reconstruction",
+      "Methods",
+      "Human Remains",
+      "Survey"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/576",
+    "updatedAt": "2025-04-12T18:40:29.170Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 580",
+    "title": "Advanced Zooarchaeology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 2-0-1"
+    },
+    "keywords": [
+      "Zooarchaeology",
+      "Methodological Issues",
+      "Theoretical Issues",
+      "Animal Remains",
+      "Archaeological Contexts"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/580",
+    "updatedAt": "2025-04-12T18:40:31.402Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 584",
+    "title": "Advanced Topics in Archaeology and/or Biological Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consult the Department and/or the schedule of classes for the specific topics offered."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/584",
+    "updatedAt": "2025-04-12T18:40:32.985Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 585",
+    "title": "Advanced Topics in Social, Cultural and/or Linguistic Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consult the Department and/or the University timetable for the specific topics offered."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/585",
+    "updatedAt": "2025-04-12T18:40:34.290Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 586",
+    "title": "Advanced Seminar in Archaeology and/or Biological Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consult the Department and/or the schedule of classes for the specific topics offered."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/586",
+    "updatedAt": "2025-04-12T18:40:35.723Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 587",
+    "title": "Advanced Seminar in Social, Cultural and/or Linguistic Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consult the Department and/or the University timetable for the specific topics offered."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/587",
+    "updatedAt": "2025-04-12T18:40:37.041Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 589",
+    "title": "Advanced Seminar in Linguistic Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consult the Department and/or the University timetable for the specific topics offered."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/589",
+    "updatedAt": "2025-04-12T18:40:38.489Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 598",
+    "title": "Landscape and Culture",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Cultural Experiences",
+      "Representations",
+      "Landscape"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/598",
+    "updatedAt": "2025-04-12T18:40:43.313Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 600",
+    "title": "PhD Thesis Prospectus",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Research Proposal",
+      "PhD Thesis",
+      "Theoretical Knowledge",
+      "Methodological Knowledge",
+      "Department Consent"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Closed to web registration. Department consent required."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/600",
+    "updatedAt": "2025-04-12T18:40:45.262Z"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 601",
+    "title": "PhD Colloquium",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 0-3S-0"
+    },
+    "keywords": [
+      "Anthropology",
+      "Research",
+      "Presentations",
+      "Discussions",
+      "PhD Students",
+      "Current Issues"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Limited to new PhD students. Optional for students with credit in ANTHR 501."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/anthr/601",
+    "updatedAt": "2025-04-12T18:40:47.232Z"
+  }
+]

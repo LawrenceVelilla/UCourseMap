@@ -1,0 +1,230 @@
+[
+  {
+    "department": "COMM",
+    "courseCode": "COMM 501",
+    "title": "Applied Research in Communications and Technology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduction to quantitative and qualitative approaches for conducting research into technology-mediated communications. Guides students in their topic selection and development for their culminating project. Restricted to MACT students, normally in the second year. Students may not receive credit for both EXT 501 and COMM 501. Prerequisite: COMM 502 and COMM 503 or consent of the Department.",
+    "url": "/catalogue/course/comm/501"
+  },
+  {
+    "department": "COMM",
+    "courseCode": "COMM 502",
+    "title": "Human Communication",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SPR/SUM, 3-0-0"
+    },
+    "description": "Survey of classic theories and emerging perspectives in communication studies. Emphasizes the development of skills for analyzing and understanding communication in context. Restricted to MACT students, normally in the first year. Offered during the Spring Institute. Students may not receive credit for both EXT 502 and COMM 502.",
+    "url": "/catalogue/course/comm/502"
+  },
+  {
+    "department": "COMM",
+    "courseCode": "COMM 503",
+    "title": "Social Impact of Digital Communications",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SPR/SUM, 3-0-0"
+    },
+    "description": "This course explores the social impact of digital communications, with a specific focus on new and emerging social media and networks. Course themes cover a broad range of topics on the history and development of digital communications including social networks, virtual communities, and participatory culture. This course also touches on legal, ethical, and practical dimensions of digital communications as they relate to a range of personal and professional contexts. Restricted to MACT students, normally in the first year. Offered during the Spring Institute. Students may not receive credit for both EXT 503 and COMM 503.",
+    "url": "/catalogue/course/comm/503"
+  },
+  {
+    "department": "COMM",
+    "courseCode": "COMM 504",
+    "title": "Organizational Communications",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, UNASSIGNED"
+    },
+    "description": "This course deals with both internal communications (formal and informal) within an organization, and external communications (public relations, media relations, print and multimedia communications). Brief survey of the field of organizational analysis, with focus on marketing, clear language writing, rhetoric, public speaking, and writing for new media (e.g. hypertext). Restricted to MACT students. Course delivered by asynchronous Internet communication. Students may not receive credit for both EXT 504 and COMM 504. Prerequisites: COMM 502 and COMM 503 or consent of the Department.",
+    "url": "/catalogue/course/comm/504"
+  },
+  {
+    "department": "COMM",
+    "courseCode": "COMM 505",
+    "title": "Contemporary Issues in Communications and Technology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Current and emerging issues in communications and technology will be explored with an emphasis on providing professionals with an advanced understanding of current developments in the field informed by historical and critical theoretical perspectives. Restricted to MACT students. Students may not receive credit for both EXT 505 and COMM 505. Prerequisites: COMM 502 and COMM 503 or consent of the Department.",
+    "url": "/catalogue/course/comm/505"
+  },
+  {
+    "department": "COMM",
+    "courseCode": "COMM 506",
+    "title": "Strategic Communications in a Digital World",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The conceptual and practical foundations for effective strategic communications management will be examined, providing professionals with the insights and skills needed to integrate digital media into strategic communications planning for a range of organizations including non-profit, education, government, health, and private sector. Restricted to MACT students. Students may not receive credit for both EXT 506 and COMM 506. Prerequisites: COMM 502 and COMM 503 or consent of the Department.",
+    "url": "/catalogue/course/comm/506"
+  },
+  {
+    "department": "COMM",
+    "courseCode": "COMM 509",
+    "title": "Advanced Seminar in Research Design",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Advanced seminar on qualitative and quantitative approaches for conducting research in communications and technology. This course provides students with in depth study of research design and guides them in preparation for commencing their culminating project. Offered by asynchronous Internet communication. Restricted to MACT course-based students. Prerequisite: COMM 501 or consent of the department.",
+    "url": "/catalogue/course/comm/509"
+  },
+  {
+    "department": "COMM",
+    "courseCode": "COMM 511",
+    "title": "Topics in Research Methods",
+    "units": {
+      "credits": 6,
+      "feeIndex": 12,
+      "term": "EITHER, UNASSIGNED"
+    },
+    "description": "Introduction to approaches for conducting research into technology-mediated communications, with an emphasis on qualitative methods. Students may not receive credit for both COMM 501 and COMM 511. Offered by asynchronous Internet communication, in the classroom, or as a tutorial.",
+    "url": "/catalogue/course/comm/511"
+  },
+  {
+    "department": "COMM",
+    "courseCode": "COMM 550",
+    "title": "Introduction to Electronic Commerce",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, UNASSIGNED"
+    },
+    "description": "An introduction to the concepts, technologies, and functions of electronic commerce. Considers the organizational implications of electronic commerce as a broad shift in how transactions are completed in the marketplace. Offered by asynchronous Internet communication. Students may not receive credit for both EXT 550 and COMM 550.",
+    "url": "/catalogue/course/comm/550"
+  },
+  {
+    "department": "COMM",
+    "courseCode": "COMM 553",
+    "title": "Real World Evaluation",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A senior seminar course examining the use of evaluation within various organizational contexts, with an emphasis on survey and focus-group methods. Student activities include development of an evaluation plan. Offered by asynchronous Internet communication. Students may not receive credit for COMM 553 if they have already received credit.",
+    "url": "/catalogue/course/comm/553"
+  },
+  {
+    "department": "COMM",
+    "courseCode": "COMM 554",
+    "title": "Risk Communication",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The theory, research, and practice of risk communication are explored through the introduction of models of risk communication and risk assessment in various contexts which may include environmental issues, public health and safety, occupational hazards, and consumer products. Students may not receive credit for both COMM 597 (Case Studies in Risk Communication) and COMM 554.",
+    "url": "/catalogue/course/comm/554"
+  },
+  {
+    "department": "COMM",
+    "courseCode": "COMM 555",
+    "title": "New Media Narratives",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Providing insights into the role of new media in the practices and processes of writing, editing, and publishing, the focus will be on the interpretation of new media use in the development and future of publishing. A critical assessment of the tools and skills required for participation in publishing in the era of the Internet will be examined. Students may not receive credit for both COMM 597 (New Media Narratives) and COMM 555.",
+    "url": "/catalogue/course/comm/555"
+  },
+  {
+    "department": "COMM",
+    "courseCode": "COMM 556",
+    "title": "Digital Outreach and Engagement",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A hands-on experience in participatory action research working in collaboration with one or more community organizations to design, implement, and evaluate a communications project using digital technologies. Students may not receive credit for both COMM 597 (Digital Outreach) and COMM 556.",
+    "url": "/catalogue/course/comm/556"
+  },
+  {
+    "department": "COMM",
+    "courseCode": "COMM 590",
+    "title": "Conference Course in Communications and Technology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, UNASSIGNED"
+    },
+    "description": "Offered by asynchronous Internet communication, in the classroom, or as a tutorial.",
+    "url": "/catalogue/course/comm/590"
+  },
+  {
+    "department": "COMM",
+    "courseCode": "COMM 597",
+    "title": "Topics in Communications and Technology",
+    "units": {
+      "credits": null,
+      "feeIndex": null,
+      "term": null
+    },
+    "description": "An elective course on selected topics in communications and technology.",
+    "url": "/catalogue/course/comm/597"
+  },
+  {
+    "department": "COMM",
+    "courseCode": "COMM 598",
+    "title": "Directed Study in Communications and Technology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, UNASSIGNED"
+    },
+    "description": "An elective course to be completed under the direction of a faculty member. Requires the approval of the Director. Offered by asynchronous Internet communication.",
+    "url": "/catalogue/course/comm/598"
+  },
+  {
+    "department": "COMM",
+    "courseCode": "COMM 900",
+    "title": "Directed Research Project",
+    "units": {
+      "credits": 6,
+      "feeIndex": 12,
+      "term": "EITHER, UNASSIGNED"
+    },
+    "description": "Offered by asynchronous Internet communication. Restricted to MACT students. Students may not receive credit for both COMM 508 and COMM 900.",
+    "url": "/catalogue/course/comm/900"
+  },
+  {
+    "department": "COMM",
+    "courseCode": "COMM 900A",
+    "title": "Directed Research Project",
+    "units": {
+      "credits": 3,
+      "feeIndex": 12,
+      "term": "TWO TERM, UNASSIGNED"
+    },
+    "description": "Offered by asynchronous Internet communication. Restricted to MACT students. Students may not receive credit for both COMM 508 and COMM 900.",
+    "url": "/catalogue/course/comm/900a"
+  },
+  {
+    "department": "COMM",
+    "courseCode": "COMM 900B",
+    "title": "Directed Research Project",
+    "units": {
+      "credits": 3,
+      "feeIndex": 12,
+      "term": "TWO TERM, UNASSIGNED"
+    },
+    "description": "Offered by asynchronous Internet communication. Restricted to MACT students. Students may not receive credit for both COMM 508 and COMM 900.",
+    "url": "/catalogue/course/comm/900b"
+  }
+]

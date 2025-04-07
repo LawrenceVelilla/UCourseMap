@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Sidebar } from "@/components/sidebar"; // Assuming Sidebar is part of layout now?
+export const dynamic = 'force-dynamic'; // Ensure this page is always server-rendered
 
 // Data fetching and base types
 import { getCourseAndPrerequisiteData, getRecursivePrerequisites } from '@/lib/data';
@@ -19,15 +20,13 @@ import PrerequisiteGraphWrapper, {
 
 // --- Main Server Component for the Dedicated Course Page ---
 // Use the Corrected Props Interface
-export default async function DedicatedCoursePage({ 
-    params,
-    searchParams 
-  }: {
-    params: { department: string; courseCode: string };
-    searchParams: Record<string, string | string[] | undefined>;
-  }) {
-    // Destructure department and course code from 'params' NOT 'searchParams'
-    const { department: deptParam, courseCode: codeParam } = params;
+export default async function DedicatedCoursePage({ params, searchParams }) {
+    // Type assertion inside the function if needed
+    const { department: deptParam, courseCode: codeParam } = params as { 
+      department: string; 
+      courseCode: string 
+    }; 
+
 
     // Normalize for fetching (lowercase dept, ensure code is string)
     const dept = deptParam?.toLowerCase();

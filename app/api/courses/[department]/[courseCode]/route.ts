@@ -1,13 +1,16 @@
-// app/api/courses/[department]/route.ts
-
 import { NextRequest, NextResponse } from 'next/server';
-// **** Make sure you have this function defined in lib/data.ts ****
-import { getCoursesByDepartment } from '@/lib/data'; // Adjust path as needed
+import { getCoursesByDepartment } from '@/lib/data'; 
 
 // Interface defining the expected URL path parameter
 interface DepartmentRouteParams {
   department: string;
 }
+
+interface CourseRouteParams {
+  department: string;
+  courseCode: string;
+}
+
 
 /**
  * API Route Handler for GET requests to /api/courses/[department]
@@ -15,10 +18,10 @@ interface DepartmentRouteParams {
  */
 export async function GET(
   request: NextRequest, // Use NextRequest
-  context: { params: DepartmentRouteParams } // Context object with params
+  context: { params: CourseRouteParams } // Context object with params
 ) {
   // Destructure the department code from params
-  const { department } = context.params;
+  const { department, courseCode } = context.params;
 
   // Basic validation
   if (!department) {

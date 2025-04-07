@@ -30,7 +30,7 @@ import PrerequisiteGraphWrapper, {
 //         code?: string;
 //     };
 // }
-export default async function PrerequisitesPage({ searchParams }) {
+export default async function PrerequisitesPage({ searchParams }: { searchParams?: Record<string, any> }) {
     const param = await searchParams
 
     const dept = param?.dept;

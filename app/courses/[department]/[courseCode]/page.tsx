@@ -18,9 +18,11 @@ import PrerequisiteGraphWrapper, {
     type InputNode, type AppEdge, type GraphNodeData
 } from '@/components/prerequisiteGraph';
 
+
+
 // --- Main Server Component for the Dedicated Course Page ---
 // Use the Corrected Props Interface
-export default async function DedicatedCoursePage({ params, searchParams }) {
+export default async function DedicatedCoursePage({ params, searchParams }: Record<string, any>) {
     // Type assertion inside the function if needed
     const { department: deptParam, courseCode: codeParam } = params as { 
       department: string; 

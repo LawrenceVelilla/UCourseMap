@@ -5,14 +5,14 @@ import { getCoursesByDepartment } from '@/lib/data';
 type Params = {
   department: string;
   courseCode: string;
-} & Record<string, string>;
+};
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: Params }
+  context: { params: {department: string, courseCode: string} }
 ) {
   // Access params directly
-  const { department, courseCode } = params;
+  const { department, courseCode } = context.params;
 
   // Basic validation
   if (!department) {

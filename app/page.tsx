@@ -24,15 +24,15 @@ import PrerequisiteGraphWrapper, {
 
 
 
-interface PrerequisitesPageProps {
-    searchParams?: {
-        dept?: string;
-        code?: string;
-    };
-}
-export default async function PrerequisitesPage({ searchParams }: PrerequisitesPageProps) {
+// interface PrerequisitesPageProps {
+//     searchParams?: {
+//         dept?: string;
+//         code?: string;
+//     };
+// }
+export default async function PrerequisitesPage({ searchParams }) {
     const param = await searchParams
-    
+
     const dept = param?.dept;
     const code = param?.code;
 

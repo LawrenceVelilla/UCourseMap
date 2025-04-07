@@ -124,6 +124,39 @@ function parseCourseString(courseString: string): { department: string; codeNumb
 }
 
 /**
+ * NEW FUNCTION: Fetches all courses for a specific department.
+ * Returns only basic details suitable for lists or autocomplete.
+ */
+export async function getCoursesByDepartment(departmentCode: string): Promise<Pick<Course, 'id' | 'department' | 'courseCode' | 'title'>[]> {
+  const upperDeptCode = departmentCode.toUpperCase();
+  console.log(`Fetching courses for department: ${upperDeptCode}`); // Add log
+  try {
+    const courses = await prisma.course.findMany({
+      where: {
+        // Filter by the department code (case-insensitive search might be better depending on DB collation, but uppercase match is safer)
+        department: upperDeptCode,
+      },
+      select: {
+        // Select only the fields needed for the list/API response
+        id: true,
+        department: true,
+        courseCode: true,
+        title: true,
+      },
+      orderBy: {
+        // Optional: Order courses numerically/alphabetically
+        courseCode: 'asc',
+      },
+    });
+    return courses; // Prisma's selected fields match the Pick<> type
+  } catch (error) {
+    console.error(`Error fetching courses for department ${upperDeptCode}:`, error);
+    return []; // Return empty array on error, as the API route expects
+  }
+}
+
+
+/**
  * Interface for the data structure returned by the recursive fetcher.
  */
 interface RecursiveData {

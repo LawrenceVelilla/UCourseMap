@@ -1,36 +1,58 @@
-import { NextResponse } from 'next/server';
-import { getCourseDetails } from '@/lib/data';
+// app/api/courses/[department]/route.ts
 
-interface Params {
+import { NextRequest, NextResponse } from 'next/server';
+// **** Make sure you have this function defined in lib/data.ts ****
+import { getCoursesByDepartment } from '@/lib/data'; // Adjust path as needed
+
+// Interface defining the expected URL path parameter
+interface DepartmentRouteParams {
   department: string;
-  courseCode: string;
 }
 
+/**
+ * API Route Handler for GET requests to /api/courses/[department]
+ * Fetches and returns all courses listed under a specific department.
+ */
 export async function GET(
-  request: Request,
-  { params }: { params: Params }
+  request: NextRequest, // Use NextRequest
+  context: { params: DepartmentRouteParams } // Context object with params
 ) {
-  const departmentCode = params.department;
-  const courseCodeNumber = params.courseCode; 
+  // Destructure the department code from params
+  const { department } = context.params;
 
-  if (!departmentCode || !courseCodeNumber) {
-    return NextResponse.json({ message: 'Department and Course Code are required' }, { status: 400 });
+  // Basic validation
+  if (!department) {
+    return NextResponse.json(
+      { message: 'Department code parameter is required in the URL path' },
+      { status: 400 } // Bad Request
+    );
   }
+
+  // Optional: Add more specific validation for department format
+  // if (!/^[a-zA-Z]+$/.test(department)) {
+  //   return NextResponse.json({ message: 'Invalid department code format' }, { status: 400 });
+  // }
 
   try {
-    // Call the data fetching function
-    const course = await getCourseDetails(departmentCode, courseCodeNumber);
+    // Call the data fetching function - **** Ensure this function exists! ****
+    // If getCoursesByDepartment doesn't exist, you'll need to create it in lib/data.ts
+    // using prisma.course.findMany({ where: { department: department.toUpperCase() } })
+    const courses = await getCoursesByDepartment(department);
 
-    if (!course) {
-      // Data function returned null, meaning not found
-      return NextResponse.json({ message: `Course ${departmentCode.toUpperCase()} ${courseCodeNumber} not found` }, { status: 404 });
-    }
+    // Check if the function returned results (it might return empty array if none found)
+    // No specific check needed here unless you want to return 404 if department has 0 courses
 
-    return NextResponse.json(course);
+    // Return the array of courses (or empty array) as JSON
+    return NextResponse.json(courses);
 
   } catch (error) {
-    // Catch unexpected errors from the data function or processing
-    console.error(`API Error fetching course ${departmentCode} ${courseCodeNumber}:`, error);
-    return NextResponse.json({ message: 'Internal Server Error' }, { status: 500 });
+    // Catch unexpected errors during data fetching
+    console.error(`API Error fetching courses for department ${department}:`, error);
+    return NextResponse.json(
+      { message: 'Internal Server Error while fetching department courses' },
+      { status: 500 } // Internal Server Error
+    );
   }
 }
+
+// Add other HTTP methods if needed

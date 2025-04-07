@@ -18,10 +18,12 @@ interface CourseRouteParams {
  */
 export async function GET(
   request: NextRequest, // Use NextRequest
-  context: { params: CourseRouteParams } // Context object with params
+  { params }: { params: CourseRouteParams } // Context object with params
 ) {
   // Destructure the department code from params
-  const { department, courseCode } = context.params;
+  const pp = await params
+  const department = pp.department; 
+  const courseCode = pp.courseCode; 
 
   // Basic validation
   if (!department) {
@@ -58,4 +60,5 @@ export async function GET(
   }
 }
 
-// Add other HTTP methods if needed
+// Add other HTTP methods if needed (CRUD) - but typically GET is enough for fetching data
+// For example, you might want to add POST for creating a new course, etc.

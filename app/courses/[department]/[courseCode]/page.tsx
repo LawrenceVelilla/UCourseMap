@@ -22,7 +22,7 @@ import PrerequisiteGraphWrapper, {
 
 // --- Main Server Component for the Dedicated Course Page ---
 // Use the Corrected Props Interface
-export default async function DedicatedCoursePage({ params, searchParams }: Record<string, any>) {
+export default async function DedicatedCoursePage({ params, searchParams }: { params: any; searchParams: any }) {
     // Type assertion inside the function if needed
     const { department: deptParam, courseCode: codeParam } = params as { 
       department: string; 

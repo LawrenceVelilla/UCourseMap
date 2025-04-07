@@ -1,3 +1,6 @@
+
+import { Prisma } from '@prisma/client';
+
 export interface Course {
     id?: string; // Assuming UUID
     department: string;
@@ -28,12 +31,17 @@ export interface RawCourse {
     url: string | null;
 }
 
-export function isRequirementsData(req: Prisma.JsonValue | null | undefined): req is RequirementsData {
+export function isRequirementsData(req: unknown | null | undefined): req is RequirementsData {
   if (!req || typeof req !== 'object' || Array.isArray(req)) {
     return false;
   }
-  // Add more checks if needed based on structure (e.g., check for operators)
-  return true; // Basic check assumes object structure if not null/array
+  const reqObj = req as Record<string, undefined>
+
+  return (
+    (!reqObj.prerequisites || typeof reqObj.prerequisites === 'object') &&
+    (!reqObj.corequisites || typeof reqObj.corequisites === 'object') &&
+    (!reqObj.notes || typeof reqObj.notes === 'string' || reqObj.notes === null)
+  );
 }
 
   

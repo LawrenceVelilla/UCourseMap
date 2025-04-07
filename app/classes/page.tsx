@@ -1,5 +1,5 @@
-// app/classes/page.tsx
-'use client'; // Mark as Client Component because we use hooks
+'use client'
+// TEST PAGE FOR REACT FLOW
 
 import React, { useEffect, useCallback } from 'react';
 import {

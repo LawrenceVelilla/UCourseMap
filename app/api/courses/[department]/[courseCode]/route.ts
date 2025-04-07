@@ -1,10 +1,9 @@
-// app/api/courses/[department]/[courseCode]/route.ts
 import { NextResponse } from 'next/server';
-import { getCourseDetails } from '@/lib/data'; // Adjust path
+import { getCourseDetails } from '@/lib/data';
 
 interface Params {
   department: string;
-  courseCode: string; // This is likely just the number part from the URL segment
+  courseCode: string;
 }
 
 export async function GET(
@@ -12,7 +11,7 @@ export async function GET(
   { params }: { params: Params }
 ) {
   const departmentCode = params.department;
-  const courseCodeNumber = params.courseCode; // Assuming URL is like /api/courses/cmput/200
+  const courseCodeNumber = params.courseCode; 
 
   if (!departmentCode || !courseCodeNumber) {
     return NextResponse.json({ message: 'Department and Course Code are required' }, { status: 400 });

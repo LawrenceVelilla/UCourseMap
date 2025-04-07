@@ -5,7 +5,7 @@ import { getCoursesByDepartment } from '@/lib/data';
 type Params = {
   department: string;
   courseCode: string;
-}
+} & Record<string, string>;
 
 export async function GET(
   request: NextRequest,

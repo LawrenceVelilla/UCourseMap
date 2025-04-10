@@ -1,0 +1,350 @@
+[
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 224",
+    "title": "Vertebrate Diversity",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-3"
+    },
+    "description": "A comparative survey of vertebrates, focusing on their morphology, classification, and phylogeny. Prerequisite: BIOL 108 or SCI 100.",
+    "url": "/catalogue/course/zool/224"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 241",
+    "title": "Animal Physiology I: Homeostasis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-1S-0"
+    },
+    "description": "Survey of physiological systems that regulate levels of gases, food, energy, temperature, water, and ions. Examples from invertebrates and vertebrates. Prerequisite: BIOL 107 or SCI 100. This course may not be taken for credit if credit has been obtained in PHYSL 210 or 212.",
+    "url": "/catalogue/course/zool/241"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 242",
+    "title": "Animal Physiology II: Intercellular Communication",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-1S-0"
+    },
+    "description": "Endocrinology, immunology and neural, sensory, motor, and reproductive physiology. Examples from invertebrates and vertebrates. Prerequisite: BIOL 107 or SCI 100. This course may not be taken for credit if credit has been obtained in PHYSL 210 or 214.",
+    "url": "/catalogue/course/zool/242"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 250",
+    "title": "Survey of the Invertebrates",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-3"
+    },
+    "description": "The functional anatomy and life cycles of the major invertebrate taxa are emphasized. Prerequisite: BIOL 108 or SCI 100.",
+    "url": "/catalogue/course/zool/250"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 303",
+    "title": "Animal Developmental Biology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-3"
+    },
+    "description": "An introduction to basic principles in animal development both in vertebrates and invertebrates. This course examines how the molecular, cellular and comparative approaches are integrated to explain the development of the egg into the embryo, and the cellular interactions that culminate in the development of organ systems. Prerequisite: BIOL 201 or CELL 201.",
+    "url": "/catalogue/course/zool/303"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 325",
+    "title": "Comparative Anatomy of the Vertebrates",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-3"
+    },
+    "description": "A comparative survey of form and function in vertebrate animals. Lectures focus on patterns of evolution and adaptation. Laboratories offer detailed examinations of major organ systems in representative species. Prerequisite: a 200-level ZOOL course; ZOOL 224 strongly recommended. May not be taken for credit if credit already obtained in ZOOL 225.",
+    "url": "/catalogue/course/zool/325"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 340",
+    "title": "Comparative Environmental Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "A comparative examination of the integrated responses of animals to environmental changes. This course focuses on both the acute physiological and long-term adaptations to dealing with environmental challenges. Focus is on biochemical and physiological responses to extreme environments. Prerequisite: ZOOL 241 or  PHYSL 210 or 212 or 214.",
+    "url": "/catalogue/course/zool/340"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 342",
+    "title": "Neurobiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "Nerve cells, nervous systems and neuromuscular systems from molecular, physiological, behavioral, and developmental perspectives. Examples from both invertebrates and vertebrates are given. Prerequisite: ZOOL 242 or PHYSL 210 or 212. Students who have taken PMCOL 371 may not receive credit in ZOOL 342.",
+    "url": "/catalogue/course/zool/342"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 343",
+    "title": "Comparative Endocrinology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "description": "Endocrine systems and actions of hormones at the tissue, cell and molecular levels; vertebrate systems are emphasized. Prerequisite: ZOOL 242 or PHYSL 210 or 212 or 214.",
+    "url": "/catalogue/course/zool/343"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 344",
+    "title": "Laboratory Exercises in Animal Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 1-0-4"
+    },
+    "description": "Physiological topics are reinforced in experimental lab exercises. Labs include computer simulations, artificial tissue models and animal models. Prerequisite: ZOOL 241 or  242 or PHYSL 210 or 212 or 214.",
+    "url": "/catalogue/course/zool/344"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 350",
+    "title": "Biology and Evolution of Invertebrates",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 2-0-3"
+    },
+    "description": "Invertebrate evolution and adaptations including topics on feeding and nutrition, motility, reproduction and development, and sensory systems. Emphasis will be on material from the primary literature. Laboratory exercises will involve advanced training in techniques of microscopy. Prerequisite: ZOOL 250. ZOOL 303 and ZOOL 351 recommended. Credit can only be obtained for one of ZOOL 350, 450 or 550. Offered in alternate years.",
+    "url": "/catalogue/course/zool/350"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 351",
+    "title": "Freshwater Invertebrate Diversity",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-3"
+    },
+    "description": "Emphasis is on an identified collection of invertebrates found in Alberta's lakes and streams. Lecture material pertains mainly to ecological features of the various fresh water groups. Prerequisite: ZOOL 250. Offered in alternate years.",
+    "url": "/catalogue/course/zool/351"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 352",
+    "title": "Principles of Parasitism",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-1.5S-0"
+    },
+    "description": "An introduction to protozoan, helminth and arthropod parasites of animals; principles of host and parasite adaptation, epidemiology, ecology, host defenses and immunology, and control of parasitic infections. The seminar will highlight the diversity of parasites in the major groups. Prerequisite: a 200-level Biological Sciences course (ZOOL 250 or IMIN 200 recommended).",
+    "url": "/catalogue/course/zool/352"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 354",
+    "title": "Wildlife Disease",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-3"
+    },
+    "description": "Occurrence, principles, concepts, causes and significance of disease in wildlife. Laboratory exercises emphasize methods for the study of parasites of wild hosts. Prerequisite: one of BIOL 208, REN R 376, ZOOL 250.",
+    "url": "/catalogue/course/zool/354"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 370",
+    "title": "Ethological Mechanisms",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-3"
+    },
+    "description": "Animal behavior from an ethological perspective, with emphasis on the mechanisms underlying a variety of behaviors. The material is intended to complement that of ZOOL 371. Prerequisite or corequisite: ZOOL 241 or 242 or PHYSL 210, or 212 or 214.",
+    "url": "/catalogue/course/zool/370"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 371",
+    "title": "Behavioral Ecology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-3"
+    },
+    "description": "Animal behavior from an ecological and evolutionary perspective, with emphasis on social behavior. The material is intended to complement that of ZOOL 370.  Prerequisite: BIOL 208",
+    "url": "/catalogue/course/zool/371"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 402",
+    "title": "Current Topics in Developmental Biology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 0-3S-0"
+    },
+    "description": "Discussion of selected topics in animal developmental biology from a molecular and cellular perspective. Evaluation of the primary literature and communication skills are emphasized. Prerequisite: ZOOL 303 and consent of instructor. Credit for this course may be obtained more than once. Offered in alternate years.",
+    "url": "/catalogue/course/zool/402"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 405",
+    "title": "Biology of Fishes",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-3"
+    },
+    "description": "A survey of fish diversity focussing on the morphology, systematics, behavior, and ecology of the major groups. Laboratories feature extensive use of departmental collections, with an emphasis on Alberta species. Prerequisites: ZOOL 325 or both ZOOL 224 and a 300-level Biological Sciences course. Offered in alternate years.",
+    "url": "/catalogue/course/zool/405"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 406",
+    "title": "Biology of Amphibians and Reptiles",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-3"
+    },
+    "description": "A survey of amphibian and reptile diversity focussing on morphology, systematics, behaviour, and ecology of major groups, within a phylogenetic and evolutionary framework. Laboratories feature extensive use of departmental collections, and include Albertan species. This course will normally include traditional lectures and student seminars. Prerequisite: ZOOL 325 or both ZOOL 224 and a 300-level Biological Sciences course. Offered in alternate years.",
+    "url": "/catalogue/course/zool/406"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 407",
+    "title": "Biology of Birds",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "description": "A survey of bird diversity focussing on the morphology, systematics, behaviour, and ecology of the major groups. Laboratories feature extensive use of departmental collections, with an emphasis on Alberta species. Prerequisites: ZOOL 325 or both ZOOL 224 and a 300-level Biological Sciences course.",
+    "url": "/catalogue/course/zool/407"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 408",
+    "title": "Biology of Mammals",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-3"
+    },
+    "description": "A survey of mammal diversity focussing on the morphology, systematics, behavior, and ecology of the major groups. Laboratories feature extensive use of departmental collections, with an emphasis on Alberta species. Prerequisites: ZOOL 325 or both ZOOL 224 and a 300-level Biological Sciences course.",
+    "url": "/catalogue/course/zool/408"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 441",
+    "title": "Current Topics on Homeostasis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Discussion of selected topics in cardiac, gut, renal, respiratory, temperature, and metabolic physiology. Evaluation of the primary literature and communication skills are emphasized. Prerequisites: ZOOL 340 or 342 or 343, or PHYSL 372, and consent of instructor. Credit for this course may be obtained more than once. Offered in alternate years.",
+    "url": "/catalogue/course/zool/441"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 442",
+    "title": "Current Topics in Intercellular Communication",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Discussion of selected topics in endocrinology, immunology, and neurobiology from molecular, cellular, and whole-animal perspectives. Evaluation of the primary literature and communication skills are emphasized. Prerequisite: ZOOL 342 or 343 or 352 or PMCOL 371 and consent of Department. Credit for this course may be obtained more than once. Offered in alternate years.",
+    "url": "/catalogue/course/zool/442"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 452",
+    "title": "Topics in Parasitology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-2S-0"
+    },
+    "description": "Experimental approaches to the study of parasitism, including topics on epidemiology, ecology, biochemistry, cell biology, genetics, molecular biology, pathology, and immunology of host-parasite relationships. Reading assignments emphasize experimental approaches to study eukaryotic host-parasite relationships. Prerequisite: ZOOL 352 or MMI 426 or consent of Department. Credit cannot be obtained for both ZOOL 452 and 552.",
+    "url": "/catalogue/course/zool/452"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 502",
+    "title": "Advanced Current Topics in Developmental Biology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 0-3S-0"
+    },
+    "description": "Discussion of selected topics in animal developmental biology from a molecular and cellular perspective. Evaluation of the primary literature and communication skills are emphasized. Discussions are the same as for ZOOL 402, but with additional assignments and evaluation appropriate to graduate studies. Prerequisite: consent of instructor. Credit may be obtained more than once. Offered in alternate years.",
+    "url": "/catalogue/course/zool/502"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 541",
+    "title": "Advanced Current Topics on Homeostasis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Discussion of selected topics in cardiac, gut, renal, respiratory, temperature, and metabolic physiology. Evaluation of the primary literature and communication skills are emphasized. Discussions are the same as for ZOOL 441, but with additional assignments and evaluation appropriate to graduate studies. Prerequisite: consent of instructor. Credit may be obtained more than once. Offered in alternate years.",
+    "url": "/catalogue/course/zool/541"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 542",
+    "title": "Advanced Current Topics in Intercellular Communication",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Discussion of selected topics in endocrinology, immunology, and neurobiology from molecular, cellular, and whole-animal perspectives. Evaluation of the primary literature and communication skills are emphasized. Discussions are the same as for ZOOL 442, but with additional assignments and evaluation appropriate to graduate studies. Prerequisite: consent of instructor. Credit may be obtained more than once. Offered in alternate years.",
+    "url": "/catalogue/course/zool/542"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 550",
+    "title": "Advanced Biology and Evolution of Invertebrates",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 2-0-3"
+    },
+    "description": "Invertebrate evolution and adaptations including topics on feeding and nutrition, motility, reproduction and development, and sensory systems. Emphasis will be on material from the primary literature. Laboratory exercises will involve advanced training in techniques of microscopy. Lectures and labs are the same as for ZOOL 350, but with additional assignments and evaluation appropriate to graduate studies. Prerequisite: consent of instructor. Credit can only be obtained for one of ZOOL 350, 450 or 550. Offered in alternate years.",
+    "url": "/catalogue/course/zool/550"
+  },
+  {
+    "department": "ZOOL",
+    "courseCode": "ZOOL 552",
+    "title": "Advanced Topics in Parasitology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-2S-0"
+    },
+    "description": "Experimental approaches to the study of parasitism, including topics on epidemiology, ecology, biochemistry, cell biology, genetics, molecular biology, pathology, and immunology of host-parasite relationships. Reading assignments emphasize experimental approaches to study eukaryotic host-parasite relationships. Lectures are the same as for ZOOL 452, but with additional assignments and evaluation appropriate to graduate studies. Prerequisite: consent of instructor. Credit cannot be obtained for both ZOOL 452 and 552.",
+    "url": "/catalogue/course/zool/552"
+  }
+]

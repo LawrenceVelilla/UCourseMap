@@ -19,7 +19,7 @@ model Course {
   courseCode              String    
   title                   String
   units                   Json? // Use Json type for JSONB columns
-  parsedDescription       String?
+  keywords                String[]
   requirements            Json?      // Use Json type for JSONB columns
   flattenedPrerequisites  String[]   // Use String[] for text[]
   flattenedCorequisites   String[]   // Use String[] for text[]

@@ -1,0 +1,4925 @@
+[
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 104",
+    "title": "Basic Psychological Processes",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-1/4"
+    },
+    "keywords": [
+      "Perception",
+      "Motivation",
+      "Learning",
+      "Thinking",
+      "Psychological Functioning"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "PSYCH 104 is not a prerequisite for PSYCH 105. PSYCH 104 and 105 can be taken in either term, but not in the same term."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/104",
+    "updatedAt": "2025-04-09T06:03:12.643Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 105",
+    "title": "Individual and Social Behavior",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-1/4"
+    },
+    "keywords": [
+      "Human Individuality",
+      "Personality",
+      "Social Psychology",
+      "Psychological Assessment",
+      "Development"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "PSYCH 104 and 105 can be taken in either term, but not in the same term."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/105",
+    "updatedAt": "2025-04-09T06:03:15.610Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 212",
+    "title": "Introduction to Research Methods in Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Psychology",
+      "Experimental Methods",
+      "Measurement",
+      "Research Ethics",
+      "Designs"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 104",
+              "SCI 100"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 105"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 104",
+      "SCI 100",
+      "PSYCH 105"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/212",
+    "updatedAt": "2025-04-09T06:03:18.484Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 213",
+    "title": "Introduction to Data Analysis in Psychology I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-1"
+    },
+    "keywords": [
+      "Psychological Research",
+      "Data Analysis",
+      "Quantitative Methods",
+      "Qualitative Methods",
+      "Psychometrics"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 104"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 105"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "This course may not be taken for credit if credit has been obtained in STAT 151 or 161, KIN 109, PEDS 109, PTHER 352, or SOC 210."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 104",
+      "PSYCH 105"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/213",
+    "updatedAt": "2025-04-09T06:03:22.878Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 223",
+    "title": "Lifespan Developmental Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Psychological Development",
+      "Biological Aspects",
+      "Cognitive Aspects",
+      "Social Aspects",
+      "PSYCH 105"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 105"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 105"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/223",
+    "updatedAt": "2025-04-09T06:03:25.488Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 239",
+    "title": "Abnormal Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Psychological Disorders",
+      "Psychopathology",
+      "Cross-disciplinary Perspectives",
+      "Understanding",
+      "Everyday Life"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 105"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in PSYCH 339."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 105"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/239",
+    "updatedAt": "2025-04-09T06:03:27.913Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 241",
+    "title": "Social Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Theories",
+      "Research",
+      "Social Context",
+      "Psychology",
+      "Sociology"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 105"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "PSYCH 241 and SOC 241 may not both be taken for credit."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 105"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/241",
+    "updatedAt": "2025-04-09T06:03:30.585Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 258",
+    "title": "Cognitive Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Cognition",
+      "Perception",
+      "Memory",
+      "Learning",
+      "Language"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+              "PSYCH 104","SCI 100"]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Science]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 104",
+      "SCI 100"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/258",
+    "updatedAt": "2025-04-09T06:03:33.259Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 275",
+    "title": "Brain and Behavior",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Brain Mechanisms",
+      "Sensation",
+      "Perception",
+      "Cognition",
+      "Learning"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+              "PSYCH 104","SCI 100"]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Science]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 104",
+      "SCI 100"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/275",
+    "updatedAt": "2025-04-09T06:03:36.084Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 282",
+    "title": "Behavior Modification",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Learning Principles",
+      "Behavior Problems",
+      "Behavior Modification",
+      "Cognitive Techniques",
+      "Empirical Research"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+              "PSYCH 104","SCI 100"]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in PSYCH 281."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 104",
+      "SCI 100"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/282",
+    "updatedAt": "2025-04-09T06:03:39.157Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 299",
+    "title": "Research Opportunity Program in Psychology",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "EITHER, 0-0-3"
+    },
+    "keywords": [
+      "Research",
+      "Participation",
+      "Psychology",
+      "GPA",
+      "Consent"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "description": "GPA of 2.5 or higher"
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 104",
+              "SCI 100"
+            ]
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "PSYCH",
+            "description": "one other PSYCH course"
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "consent of Department"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Application does not guarantee an ROPP position. Credit may be obtained twice."
+    },
+    "flattenedPrerequisites": [
+      "GPA of 2.5 or higher",
+      "PSYCH 104",
+      "SCI 100",
+      "PSYCH",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/299",
+    "updatedAt": "2025-04-09T06:03:43.354Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 300",
+    "title": "Honors Seminar I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "VAR, 3-0-0"
+    },
+    "keywords": [
+      "Psychology",
+      "Methodological Issues",
+      "Communication",
+      "Third-Year",
+      "Arts Honors"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Restricted to, and required of, third-year students in the Arts Honors Psychology program."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/300",
+    "updatedAt": "2025-04-09T06:03:45.078Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 302",
+    "title": "Special Topics in Psychological Research",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Psychology",
+      "Experimental",
+      "Learning",
+      "Memory",
+      "Behavior"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 104",
+              "SCI 100"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 105"
+            ]
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "PSYCH 2[0-9]{2}",
+            "description": "one 200-level Psychology course"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Students must check with the Department for the topics for the year and any additional prerequisites."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 104",
+      "SCI 100",
+      "PSYCH 105",
+      "PSYCH 2[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/302",
+    "updatedAt": "2025-04-09T06:03:49.917Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 303",
+    "title": "History of Ideas in Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Psychology",
+      "Cognitive Science",
+      "Ancient Ideas",
+      "200-level Courses",
+      "Faculty of Arts"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "WILDCARD",
+            "pattern": "PSYCH 2[0-9]{2}",
+            "description": "one 200-level PSYCH offered by the Faculty of Arts"
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "PSYCH 2[0-9]{2}",
+            "description": "one 200-level PSYCH offered by the Faculty of Science"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Arts]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 2[0-9]{2}",
+      "PSYCH 2[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/303",
+    "updatedAt": "2025-04-09T06:03:54.536Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 304",
+    "title": "History of Modern Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Psychology",
+      "Scientific Discipline",
+      "Mid-20th Century",
+      "Faculty of Arts",
+      "Faculty of Science"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "WILDCARD",
+            "pattern": "PSYCH 2[0-9]{2}",
+            "description": "one 200-level PSYCH offered by the Faculty of Arts"
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "PSYCH 2[0-9]{2}",
+            "description": "one 200-level PSYCH offered by the Faculty of Science"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Science]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 2[0-9]{2}",
+      "PSYCH 2[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/304",
+    "updatedAt": "2025-04-09T06:03:58.302Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 305",
+    "title": "Special Topics in Psychology I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Psychology",
+      "Developmental",
+      "Social",
+      "Cognitive",
+      "Personality"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 104",
+              "SCI 100"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 105"
+            ]
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "PSYCH 2[0-9]{2}",
+            "description": "any 200-level PSYCH class"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consult the Department of Psychology's website for the specific topic(s) offered each year and any additional prerequisites."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 104",
+      "SCI 100",
+      "PSYCH 105",
+      "PSYCH 2[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/305",
+    "updatedAt": "2025-04-09T06:04:02.195Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 309",
+    "title": "Honors Seminar I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "VAR, 3-0-0"
+    },
+    "keywords": [
+      "Psychology",
+      "Methodological Issues",
+      "Written Communication",
+      "Oral Communication",
+      "Thesis Supervisor"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "Thesis Supervisor"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "Psychology Honors Advisors approval"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Restricted to, and required of, students in their first year in the Science Honors Psychology program."
+    },
+    "flattenedPrerequisites": [
+      "Thesis Supervisor",
+      "Psychology Honors Advisors approval"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/309",
+    "updatedAt": "2025-04-09T06:04:05.272Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 310",
+    "title": "Foundations in Professional Competencies",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Professional Development",
+      "Communication Skills",
+      "Team Environment",
+      "Practical Competencies",
+      "Workplace Skills"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 104"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 105"
+            ]
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "PSYCH 2[0-9]{2}",
+            "description": "any 200-level PSYCH class"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Arts]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 104",
+      "PSYCH 105",
+      "PSYCH 2[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/310",
+    "updatedAt": "2025-04-09T06:04:09.874Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 313",
+    "title": "Introduction to Data Analysis in Psychology II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "keywords": [
+      "Psychological Research",
+      "Analytical Concepts",
+      "Data Analysis",
+      "Software",
+      "Advanced Methods"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 212"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "This course may not be taken for credit if credit has been obtained in STAT 252."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 212",
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/313",
+    "updatedAt": "2025-04-09T06:04:13.168Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 315",
+    "title": "Introduction to Qualitative Methods in Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "keywords": [
+      "Qualitative Research",
+      "Psychology",
+      "Data Management",
+      "Data Analysis",
+      "Research Methods"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 212"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Fulfillment of the 3 hour lab component typically involves the completion of assignments."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 212",
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/315",
+    "updatedAt": "2025-04-09T06:04:16.365Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 323",
+    "title": "Infant and Child Development",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Psychological Development",
+      "Infancy",
+      "Childhood",
+      "Cognitive Aspects",
+      "Social Aspects"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 223"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 223"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/323",
+    "updatedAt": "2025-04-09T06:04:18.252Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 325",
+    "title": "Applied Research in Developmental Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Developmental Theories",
+      "Healthy Development",
+      "Practical Approaches",
+      "Community-Service Learning",
+      "Volunteering"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 223"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Arts]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 223"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/325",
+    "updatedAt": "2025-04-09T06:04:20.417Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 327",
+    "title": "Adolescent Development",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Biological Aspects",
+      "Cognitive Development",
+      "Social Aspects",
+      "Adolescence",
+      "Psychology"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 223"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 223"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/327",
+    "updatedAt": "2025-04-09T06:04:22.981Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 329",
+    "title": "Adult Development and Aging",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Aging",
+      "Psychological Realities",
+      "Sociocultural Realities",
+      "Community Service-Learning",
+      "Physical Realities"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 223"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 223"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/329",
+    "updatedAt": "2025-04-09T06:04:24.891Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 333",
+    "title": "Personality Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Psychological Theories",
+      "Personality",
+      "PSYCH 223",
+      "PSYCH 239",
+      "PSYCH 241"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+              "PSYCH 223","PSYCH 239","PSYCH 241"]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in PSYCH 233 or PSYCH 305 Topic: Personality."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 223",
+      "PSYCH 239",
+      "PSYCH 241"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/333",
+    "updatedAt": "2025-04-09T06:04:28.920Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 335",
+    "title": "Introduction to Clinical Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Clinical Psychology",
+      "Diagnosis",
+      "Assessment",
+      "Psychotherapy",
+      "Community Interventions"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 239"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in PSYCH 435."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 239"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/335",
+    "updatedAt": "2025-04-09T06:04:31.125Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 341",
+    "title": "Cultural Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Cultural Variations",
+      "Psychological Processes",
+      "Self-Perception",
+      "Cognition",
+      "Multiculturalism"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+              "PSYCH 223",
+              "PSYCH 241",
+              "PSYCH 258"
+            ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Arts]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 223",
+      "PSYCH 241",
+      "PSYCH 258"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/341",
+    "updatedAt": "2025-04-09T06:04:34.656Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 342",
+    "title": "Social Influence",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Social Influence",
+      "Conformity",
+      "Compliance",
+      "Obedience",
+      "Research"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+              "PSYCH 241","SOC 241"]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in PSYCH 305 Topic: Social Influence."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 241",
+      "SOC 241"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/342",
+    "updatedAt": "2025-04-09T06:04:38.136Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 344",
+    "title": "Intercultural Communication",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Communication",
+      "Intercultural",
+      "Social Interactions",
+      "Research",
+      "Theory"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 105"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with previous credit in PSYCH 405 Topic: Intercultural Communications [Faculty of Arts]."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 105"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/344",
+    "updatedAt": "2025-04-09T06:04:40.433Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 347",
+    "title": "Interpersonal Relationships",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Research",
+      "Theory",
+      "Relationships",
+      "Social Psychology",
+      "Adult Romantic Relationships"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": ["PSYCH 241","SOC 241"]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in HECOL 210 or PSYCH 305 Topic: Interpersonal Relationships."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 241",
+      "SOC 241"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/347",
+    "updatedAt": "2025-04-09T06:04:43.151Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 348",
+    "title": "Organizational Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Human Behavior",
+      "Organizations",
+      "Workplace",
+      "Psychology",
+      "Problem Solving"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 104"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 105"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 241",
+              "SOC 241"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in PSYCH 305 Topic: Organizational Psychology."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 104",
+      "PSYCH 105",
+      "PSYCH 241",
+      "SOC 241"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/348",
+    "updatedAt": "2025-04-09T06:04:48.069Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 349",
+    "title": "Theories of Leadership",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Leadership",
+      "Research",
+      "Theory",
+      "Psychology",
+      "Social Science"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 104"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 105"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 241",
+              "SOC 241"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in PSYCH 302 Topic: Theories of Leadership."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 104",
+      "PSYCH 105",
+      "PSYCH 241",
+      "SOC 241"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/349",
+    "updatedAt": "2025-04-09T06:04:51.245Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 350",
+    "title": "Human Memory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Human Memory",
+      "Verbal Learning",
+      "Interference Theory",
+      "Memory Distinction",
+      "Amnesia"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 258"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Arts]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 258"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/350",
+    "updatedAt": "2025-04-09T06:04:53.087Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 351",
+    "title": "Spatial Cognition",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Spatial Information",
+      "Learning",
+      "Memory",
+      "Navigation",
+      "Neurology"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses": [
+              "PSYCH 258",
+              "PSYCH 267",
+              "PSYCH 275"
+            ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Science]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 258",
+      "PSYCH 267",
+      "PSYCH 275"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/351",
+    "updatedAt": "2025-04-09T06:04:56.986Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 353",
+    "title": "The Psychology of Board Games",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Psychology",
+      "Board Games",
+      "Cognitive Psychology",
+      "Game Design",
+      "Critical Thinking"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 104"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 105"
+            ]
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "PSYCH 2[0-9]{2}",
+            "description": "one 200-level PSYCH course"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in PSYCH 302 or 305 Topic: The Psychology of Board Games."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 104",
+      "PSYCH 105",
+      "PSYCH 2[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/353",
+    "updatedAt": "2025-04-09T06:05:01.995Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 354",
+    "title": "Foundations of Cognitive Science",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Cognitive Science",
+      "Cognitive Psychology",
+      "Artificial Intelligence",
+      "Linguistics",
+      "Neuroscience"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 258"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Science]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 258"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/354",
+    "updatedAt": "2025-04-09T06:05:04.940Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 356",
+    "title": "Research Methods in Cognition",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "keywords": [
+      "Cognitive Processes",
+      "Response Time Methods",
+      "Priming Paradigms",
+      "Cognitive Psychology",
+      "Research Methods"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 258"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Science]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 258"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/356",
+    "updatedAt": "2025-04-09T06:05:08.371Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 357",
+    "title": "Language Processing",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Language Production",
+      "Comprehension",
+      "Speech Perception",
+      "Reading",
+      "Language Development"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 258"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Arts]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 258"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/357",
+    "updatedAt": "2025-04-09T06:05:12.312Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 358",
+    "title": "Applied Cognitive Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Applied Cognitive Psychology",
+      "Methodologies",
+      "Real-world Problems",
+      "Psychology",
+      "Statistics"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 258"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in PSYCH 405 Topic: Applied Cognitive Psychology."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 258"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/358",
+    "updatedAt": "2025-04-09T06:05:18.170Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 367",
+    "title": "Perception",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Sensory Experience",
+      "Perceptual Experience",
+      "Theoretical Issues",
+      "Experimental Issues",
+      "Psychology"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 275"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 258"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Science]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 275",
+      "PSYCH 258"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/367",
+    "updatedAt": "2025-04-09T06:05:20.929Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 371",
+    "title": "The Neurobiology of Learning and Memory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Neural Basis",
+      "Learning",
+      "Memory",
+      "Neurobiology",
+      "Biological Organization"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 275"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Science]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 275"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/371",
+    "updatedAt": "2025-04-09T06:05:22.620Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 372",
+    "title": "Behavior in Relation to Genetics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Genetic Variations",
+      "Behavioral Differences",
+      "Human Populations",
+      "Psychology",
+      "Biology"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 104"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "BIOL 207"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Science]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 104",
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "BIOL 207"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/372",
+    "updatedAt": "2025-04-09T06:05:27.372Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 374",
+    "title": "Psychopharmacology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Psychopharmacology",
+      "Drug Abuse",
+      "Neurotransmitter Systems",
+      "Addiction",
+      "Drug Actions"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 275"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in PMCOL 305 or PSYCH 302 or 403 Topic: Psychopharmacology."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 275"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/374",
+    "updatedAt": "2025-04-09T06:05:33.022Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 375",
+    "title": "Introduction to Cognitive Neuroscience",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Cognition",
+      "Neuroimaging",
+      "Electrophysiology",
+      "Perception",
+      "Memory"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 275"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 275"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/375",
+    "updatedAt": "2025-04-09T06:05:39.263Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 377",
+    "title": "Human Neuropsychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Cognition",
+      "Brain Damage",
+      "Mood",
+      "Memory",
+      "Language"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 275"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 275"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/377",
+    "updatedAt": "2025-04-09T06:05:41.962Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 381",
+    "title": "Principles of Learning",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Learning Principles",
+      "Classical Conditioning",
+      "Instrumental Learning",
+      "Memory",
+      "Research"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 282"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Science]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 282"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/381",
+    "updatedAt": "2025-04-09T06:05:47.035Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 390",
+    "title": "Honors Thesis I: Research Apprenticeship",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "VAR, 0-0-6"
+    },
+    "keywords": [
+      "Thesis Proposal",
+      "Research",
+      "Honors Program",
+      "Empirical Research",
+      "Presentation"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "A committed Thesis Supervisor"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "Restricted to students in their first year in the Science Honors Psychology program"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Must be taken twice in the first year in the Honors program. In the first year in the Honors Program students must complete a formal presentation (i.e., oral or poster) about their research progress. This is typically done at the annual Honors Psychology Conference. Other public venues can fulfill this requirement, with approval by the Honors advisor."
+    },
+    "flattenedPrerequisites": [
+      "A committed Thesis Supervisor",
+      "Restricted to students in their first year in the Science Honors Psychology program"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/390",
+    "updatedAt": "2025-04-09T06:05:52.172Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 391",
+    "title": "Evolutionary Theory in Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "keywords": [
+      "Evolutionary Psychology",
+      "Psychology",
+      "Evolutionary Theory",
+      "Behavior",
+      "Human Nature"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "WILDCARD",
+        "pattern": "PSYCH 2[0-9]{2}",
+        "description": "two 200-level PSYCH courses"
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/391",
+    "updatedAt": "2025-04-09T06:05:55.653Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 396",
+    "title": "Individual Research",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-3"
+    },
+    "keywords": [
+      "Research",
+      "Psychology",
+      "Undergraduate",
+      "Supervised",
+      "Project"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "WILDCARD",
+            "pattern": "PSYCH 2[0-9]{2}",
+            "description": "a 200-level PSYCH course"
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "consent of the Department"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Specific projects may require additional prerequisites. Cannot be taken more than twice."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 2[0-9]{2}",
+      "consent of the Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/396",
+    "updatedAt": "2025-04-09T06:05:59.774Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 398",
+    "title": "Individual Study I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-3"
+    },
+    "keywords": [
+      "Research",
+      "Psychology",
+      "Supervised Project",
+      "Proposal",
+      "Third Year"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "WILDCARD",
+            "pattern": "PSYCH 2[0-9]{2}",
+            "description": "a 200-level PSYCH course"
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "consent of the Department"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Specific projects may require additional prerequisites. Cannot be taken more than twice."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 2[0-9]{2}",
+      "consent of the Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/398",
+    "updatedAt": "2025-04-09T06:06:07.944Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 399",
+    "title": "Honors Thesis I: Research Apprenticeship",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "VAR, 0-0-6"
+    },
+    "keywords": [
+      "Thesis Proposal",
+      "Research",
+      "Psychology",
+      "Directed Readings",
+      "Empirical Research"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Restricted to, and required of, third-year students in the Arts Honors Psychology program."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/399",
+    "updatedAt": "2025-04-09T06:06:10.009Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 400",
+    "title": "Honors Seminar II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "VAR, 3-0-0"
+    },
+    "keywords": [
+      "Professional Skills",
+      "Information Technologies",
+      "Publication Process",
+      "Ethical Issues",
+      "Research Findings"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 300"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Restricted to, and required of, fourth-year students in the Arts Honors Psychology program."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 300"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/400",
+    "updatedAt": "2025-04-09T06:06:13.652Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 403",
+    "title": "Recent Advances in Experimental Psychology: Models and Theories",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Experimental Psychology",
+      "Theory",
+      "Data",
+      "Advanced Concepts",
+      "Psychology"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "PSYCH 3[0-9]{2}",
+            "description": "a 300-level PSYCH course"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consult the Department of Psychology webpage for the topics for the year and any additional prerequisites."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 3[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/403",
+    "updatedAt": "2025-04-09T06:06:19.321Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 405",
+    "title": "Special Topics in Psychology II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Psychology",
+      "Research",
+      "Methodology",
+      "Theoretical Topics",
+      "Emerging Areas"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 104",
+              "PSYCH 105",
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "PSYCH 3[0-9]{2}",
+            "description": "a 300-level PSYCH course"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consult the Department of Psychology webpage for the topics for the year and any additional prerequisites."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 104",
+      "PSYCH 105",
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 3[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/405",
+    "updatedAt": "2025-04-09T06:06:24.858Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 409",
+    "title": "Honors Seminar II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "VAR, 3-0-0"
+    },
+    "keywords": [
+      "Professional Skills",
+      "Research Application",
+      "Ethical Issues",
+      "Information Technologies",
+      "Psychology Honors"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 309"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "a committed Thesis Supervisor"
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "approval of the Psychology Honors Advisor"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Restricted to, and required of, students in their second year in the Science Honors Psychology program."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 309",
+      "a committed Thesis Supervisor",
+      "approval of the Psychology Honors Advisor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/409",
+    "updatedAt": "2025-04-09T06:06:29.346Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 413",
+    "title": "Design and Analysis of Experiments in Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "keywords": [
+      "Experimental Psychology",
+      "Data Analysis",
+      "Hypothesis Testing",
+      "Research Design",
+      "Sampling Distributions"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 212",
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 313",
+              "STAT 252"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "Permission of the department"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Science]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 212",
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 313",
+      "STAT 252",
+      "Permission of the department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/413",
+    "updatedAt": "2025-04-09T06:06:39.704Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 415",
+    "title": "Qualitative Methods in Sociocultural Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-2"
+    },
+    "keywords": [
+      "Qualitative Research",
+      "Sociocultural Psychology",
+      "Interviews",
+      "Data Analysis",
+      "Textual Archives"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 212"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 223",
+              "PSYCH 239",
+              "PSYCH 241",
+              "PSYCH 341"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Arts]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 212",
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 223",
+      "PSYCH 239",
+      "PSYCH 241",
+      "PSYCH 341"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/415",
+    "updatedAt": "2025-04-09T06:06:45.746Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 421",
+    "title": "Advanced Topics in Human Development",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Human Development",
+      "Research Analysis",
+      "Psychology",
+      "Statistics",
+      "Prerequisites"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 323",
+              "PSYCH 327",
+              "PSYCH 329"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consult the Department of Psychology website for the specific topic offered each year and any additional prerequisites (https://www.ualberta.ca/psychology/undergraduate-studies/courses/special-topics.html)."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 323",
+      "PSYCH 327",
+      "PSYCH 329"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/421",
+    "updatedAt": "2025-04-09T06:06:50.238Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 423",
+    "title": "Advanced Topics in Developmental Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Developmental Psychology",
+      "Research Analysis",
+      "Psychology",
+      "Prerequisites",
+      "Consultation"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 323",
+              "PSYCH 327",
+              "PSYCH 329"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Consult with the Department for the specific topic offered each year and any additional prerequisites."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 323",
+      "PSYCH 327",
+      "PSYCH 329"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/423",
+    "updatedAt": "2025-04-09T06:06:54.431Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 425",
+    "title": "Developmental Cognitive Neuroscience",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Cognitive Neuroscience",
+      "Brain Development",
+      "Neuroplasticity",
+      "Attention",
+      "Language"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 212"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 323",
+              "PSYCH 327",
+              "PSYCH 329",
+              "PSYCH 371",
+              "PSYCH 375",
+              "PSYCH 377"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Science]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 212",
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 323",
+      "PSYCH 327",
+      "PSYCH 329",
+      "PSYCH 371",
+      "PSYCH 375",
+      "PSYCH 377"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/425",
+    "updatedAt": "2025-04-09T06:06:59.206Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 427",
+    "title": "Developmental Psychopathology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Developmental Psychopathology",
+      "Human Development",
+      "Adaptation",
+      "Maladaptation",
+      "Applied Research"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 323",
+              "PSYCH 325",
+              "PSYCH 327",
+              "PSYCH 329",
+              "PSYCH 335"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in PSYCH 423 Topic: Developmental Psychopathology."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 323",
+      "PSYCH 325",
+      "PSYCH 327",
+      "PSYCH 329",
+      "PSYCH 335"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/427",
+    "updatedAt": "2025-04-09T06:07:03.533Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 431",
+    "title": "Theory and Practice of Psychometrics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "keywords": [
+      "Psychological Tests",
+      "Administration",
+      "Scoring",
+      "Interpretation",
+      "Practical Work"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 333",
+              "PSYCH 335"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Arts]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 333",
+      "PSYCH 335"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/431",
+    "updatedAt": "2025-04-09T06:07:06.711Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 432",
+    "title": "Psychological Studies of Dreaming",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Dream Studies",
+      "Psychology",
+      "Cognition",
+      "Therapeutic Dream Use",
+      "Art and Culture"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 223",
+              "PSYCH 233",
+              "PSYCH 241",
+              "PSYCH 333",
+              "PSYCH 341"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Arts]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 223",
+      "PSYCH 233",
+      "PSYCH 241",
+      "PSYCH 333",
+      "PSYCH 341"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/432",
+    "updatedAt": "2025-04-09T06:07:10.092Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 436",
+    "title": "Psychology of Self-Estrangement",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Self-Deception",
+      "Self-Awareness",
+      "Psychoanalytic Theories",
+      "Existential Humanistic Theories",
+      "Methods of Inquiry"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 223",
+              "PSYCH 233",
+              "PSYCH 241",
+              "PSYCH 333",
+              "PSYCH 341"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Arts]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 223",
+      "PSYCH 233",
+      "PSYCH 241",
+      "PSYCH 333",
+      "PSYCH 341"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/436",
+    "updatedAt": "2025-04-09T06:07:14.454Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 440",
+    "title": "Advanced Topics in Culture and Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Psychology",
+      "Prerequisites",
+      "Faculty of Arts"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 341"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 343"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 341",
+      "PSYCH 343"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/440",
+    "updatedAt": "2025-04-09T06:07:17.706Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 441",
+    "title": "Advanced Cultural Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Cultural Psychology",
+      "Theoretical Bases",
+      "Methodological Bases",
+      "Specific Topics",
+      "Issues"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 341",
+              "PSYCH 342",
+              "PSYCH 343",
+              "PSYCH 344",
+              "PSYCH 347"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 341",
+      "PSYCH 342",
+      "PSYCH 343",
+      "PSYCH 344",
+      "PSYCH 347"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/441",
+    "updatedAt": "2025-04-09T06:07:22.363Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 443",
+    "title": "Social Cognition",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Social Cognition",
+      "Categories",
+      "Schemas",
+      "Stereotyping",
+      "Bias"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 241"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Arts]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 241"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/443",
+    "updatedAt": "2025-04-09T06:07:25.875Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 445",
+    "title": "Social Psychology and Cinema",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Social Psychology",
+      "Human Behavior",
+      "Aggression",
+      "Prejudice",
+      "Relationships"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 212",
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 333",
+              "PSYCH 342",
+              "PSYCH 343",
+              "PSYCH 347"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in PSYCH 405 Topic: Studies of Self Through Cinema."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 212",
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 333",
+      "PSYCH 342",
+      "PSYCH 343",
+      "PSYCH 347"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/445",
+    "updatedAt": "2025-04-09T06:07:31.670Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 447",
+    "title": "Self and Identity",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Self",
+      "Social Psychology",
+      "Research",
+      "Theory",
+      "Identity"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 212",
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 342",
+              "PSYCH 347"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "PSYCH 212 is strongly recommended. Not open to students with credit in PSYCH 405 Topic: Self and Identity."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 212",
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 342",
+      "PSYCH 347"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/447",
+    "updatedAt": "2025-04-09T06:07:37.270Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 448",
+    "title": "Group Processes and Intergroup Relations",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Social Psychology",
+      "Group Processes",
+      "Social Influence",
+      "Leadership",
+      "Intergroup Conflict"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "PSYCH 3[0-9]{2}",
+            "description": "one 300-level PSYCH course"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in PSYCH 405 Topic: Group Processes and Intergroup Relations."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 3[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/448",
+    "updatedAt": "2025-04-09T06:07:42.343Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 449",
+    "title": "Psychology of Teaching and Learning",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Psychology",
+      "Education",
+      "Learning",
+      "Teaching",
+      "Undergraduate"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "one 300-level PSYCH course"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "3.0 GPA on all attempted PSYCH courses (excluding PSYCH 104 and 105)"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in PSYCH 405 Topic: Psychology of Teaching and Learning."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "one 300-level PSYCH course",
+      "3.0 GPA on all attempted PSYCH courses (excluding PSYCH 104 and 105)"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/449",
+    "updatedAt": "2025-04-09T06:07:49.800Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 452",
+    "title": "Minds and Machines",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Computational Models",
+      "Cognitive Psychology",
+      "Theoretical Background",
+      "Experimental Validation",
+      "Hands-on Experience"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 354"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Science]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 354"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/452",
+    "updatedAt": "2025-04-09T06:07:53.897Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 453",
+    "title": "Social Neuroscience",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Social Neuroscience",
+      "Research",
+      "Social Behavior",
+      "Neuroscientific Perspective",
+      "Theory"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "PSYCH 3[0-9]{2}",
+            "description": "one 300-level PSYCH course"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in PSYCH 403 Topic: Social Neuroscience."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 3[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/453",
+    "updatedAt": "2025-04-09T06:08:03.458Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 454",
+    "title": "Cognitive Neuroscience of Attention",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Attention Research",
+      "Cognitive Processes",
+      "Memory",
+      "Consciousness",
+      "Psychology"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "PSYCH 3[0-9]{2}",
+            "description": "one 300-level PSYCH course"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in PSYCH 403 Topic: Cognitive Neuroscience of Attention."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 3[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/454",
+    "updatedAt": "2025-04-09T06:08:07.403Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 455",
+    "title": "Speech Perception",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Speech Perception",
+      "Historical Development",
+      "Current Issues",
+      "Investigation",
+      "Psychology"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 357"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "LING 205"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in PSYCH 405 Topic: Speech Perception or LING 455."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 357",
+      "LING 205"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/455",
+    "updatedAt": "2025-04-09T06:08:11.978Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 457",
+    "title": "Embodied Cognitive Science",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Cognitive Science",
+      "Agent-Environment",
+      "Complex Behavior",
+      "Psychology",
+      "Embodied Cognition"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 354"
+            ]
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "PSYCH 3[0-9]{2}",
+            "description": "a 300-level psychology course"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Science]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 354",
+      "PSYCH 3[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/457",
+    "updatedAt": "2025-04-09T06:08:21.233Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 458",
+    "title": "Advanced Topics in Cognition",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Cognitive Psychology",
+      "Knowledge Representation",
+      "Visual Cognition",
+      "Memory",
+      "Decision Making"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 350",
+              "PSYCH 354",
+              "PSYCH 356",
+              "PSYCH 357",
+              "PSYCH 365"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Science]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 350",
+      "PSYCH 354",
+      "PSYCH 356",
+      "PSYCH 357",
+      "PSYCH 365"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/458",
+    "updatedAt": "2025-04-09T06:08:29.409Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 459",
+    "title": "Human Aging: Cognitive Processes",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Aging",
+      "Cognition",
+      "Psychology",
+      "Memory",
+      "Perception"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 258"
+            ]
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "PSYCH 3[0-9]{2}",
+            "description": "a 300-level Psychology course"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 258",
+      "PSYCH 3[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/459",
+    "updatedAt": "2025-04-09T06:08:35.674Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 467",
+    "title": "Advanced Perception",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Vision Science",
+      "Perception",
+      "Philosophical Perspectives",
+      "Psychological Perspectives",
+      "Neuroscientific Perspectives"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 213",
+              "STAT 151",
+              "STAT 161"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 367"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in PSYCH 403 Topic: Advanced Perception."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 213",
+      "STAT 151",
+      "STAT 161",
+      "PSYCH 367"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/467",
+    "updatedAt": "2025-04-09T06:08:40.252Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 471",
+    "title": "Neurophysiology: Theory, Methods, and Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Neurophysiology",
+      "Brain-Behaviour Research",
+      "In Vivo Recordings",
+      "Methods",
+      "Analysis"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 371",
+              "PSYCH 375",
+              "PSYCH 377"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PMCOL 371"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Science]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 371",
+      "PSYCH 375",
+      "PSYCH 377",
+      "PMCOL 371"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/471",
+    "updatedAt": "2025-04-09T06:08:44.996Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 473",
+    "title": "Advanced Topics in Neuroscience",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Neuroscience",
+      "Topics",
+      "Examination",
+      "Department",
+      "Prerequisites"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "description": "Students must check with the Department website for the topics for the year and any additional prerequisites."
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/473",
+    "updatedAt": "2025-04-09T06:08:47.337Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 478",
+    "title": "Behavior and Brain Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Environmental Factors",
+      "Genetic Factors",
+      "Chemistry of the Brain",
+      "Human Behavior",
+      "Animal Behavior"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 371"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 375"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 377"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Science]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 371",
+      "PSYCH 375",
+      "PSYCH 377"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/478",
+    "updatedAt": "2025-04-09T06:08:50.748Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 483",
+    "title": "Spatial Cognition and Navigation",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Spatial Cognition",
+      "Navigation",
+      "Comparative Cognition",
+      "Neuroscience",
+      "Artificial Intelligence"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "STAT 141",
+              "STAT 151",
+              "SCI 151"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 351",
+              "PSYCH 381"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Science]"
+    },
+    "flattenedPrerequisites": [
+      "STAT 141",
+      "STAT 151",
+      "SCI 151",
+      "PSYCH 351",
+      "PSYCH 381"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/483",
+    "updatedAt": "2025-04-09T06:08:53.629Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 485",
+    "title": "Theory in Learning and Comparative Cognition",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Theoretical Analysis",
+      "Pavlovian Conditioning",
+      "Instrumental Learning",
+      "Working Memory",
+      "Comparative Cognition"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 381"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Science]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 381"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/485",
+    "updatedAt": "2025-04-09T06:08:57.789Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 486",
+    "title": "Animal Cognition",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Animal Cognition",
+      "Methodology",
+      "Psychology",
+      "Behavioural Ecology",
+      "Cognitive Abilities"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 381"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in PSYCH 403 Topic: Animal Cognition."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 381"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/486",
+    "updatedAt": "2025-04-09T06:09:03.188Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 490",
+    "title": "Honors Thesis II: Thesis Research",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "VAR, 0-0-6"
+    },
+    "keywords": [
+      "Empirical Research",
+      "Honors Thesis",
+      "Psychology",
+      "Fourth-Year Students",
+      "Arts Honors"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 399"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Restricted to, and required of, fourth-year students in the Arts Honors psychology program."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 399"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/490",
+    "updatedAt": "2025-04-09T06:09:06.157Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 490A",
+    "title": "Honors Thesis II: Thesis Research",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "VAR, 0-0-6"
+    },
+    "keywords": [
+      "Empirical Research",
+      "Honors Thesis",
+      "Psychology",
+      "Fourth-Year Students",
+      "Arts Honors"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 399"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Restricted to, and required of, fourth-year students in the Arts Honors psychology program."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 399"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/490a",
+    "updatedAt": "2025-04-09T06:09:09.516Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 490B",
+    "title": "Honors Thesis II: Thesis Research",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "VAR, 0-0-6"
+    },
+    "keywords": [
+      "Empirical Research",
+      "Honors Thesis",
+      "Psychology",
+      "Fourth-Year Students",
+      "Arts Honors"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 399"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Restricted to, and required of, fourth-year students in the Arts Honors psychology program."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 399"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/490b",
+    "updatedAt": "2025-04-09T06:09:12.701Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 491",
+    "title": "Topics in Evolutionary Theory in Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "keywords": [
+      "Evolutionary Psychology",
+      "Theory",
+      "Research",
+      "Advanced Topics",
+      "Analysis"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "PSYCH 391"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 391"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/491",
+    "updatedAt": "2025-04-09T06:09:14.828Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 494",
+    "title": "Human Factors and Ergonomics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Scientific Knowledge",
+      "Human Behaviours",
+      "Design",
+      "Systems Failures",
+      "Psychology"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "WILDCARD",
+          "pattern: PSYCH 3[0-9]{2}",
+          "description: A 300-level PSYCH course"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Science]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 3[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/494",
+    "updatedAt": "2025-04-09T06:09:17.561Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 495",
+    "title": "Psychology of Aesthetics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Psychological Analysis",
+      "Art",
+      "Theoretical",
+      "Empirical",
+      "Aesthetic Behavior"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "PSYCH 223",
+              "PSYCH 239",
+              "PSYCH 241"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Arts]"
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 223",
+      "PSYCH 239",
+      "PSYCH 241"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/495",
+    "updatedAt": "2025-04-09T06:09:20.265Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 496",
+    "title": "Individual Research",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-3"
+    },
+    "keywords": [
+      "Research",
+      "Undergraduate",
+      "Psychology",
+      "Directed Reading",
+      "Laboratory Experience"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "WILDCARD",
+            "pattern": "PSYC 3[0-9]{2}",
+            "description": "A 300-level psychology course"
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "Consent of Department"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Cannot be taken more than twice."
+    },
+    "flattenedPrerequisites": [
+      "PSYC 3[0-9]{2}",
+      "Consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/496",
+    "updatedAt": "2025-04-09T06:09:23.496Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 498",
+    "title": "Individual Study II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-3"
+    },
+    "keywords": [
+      "Research",
+      "Undergraduate",
+      "Psychology",
+      "Directed Reading",
+      "Laboratory Experience"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "WILDCARD",
+            "pattern": "PSYCH 3[0-9]{2}",
+            "description": "A 300-level psychology course"
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "Consent of Department"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Cannot be taken more than twice."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 3[0-9]{2}",
+      "Consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/498",
+    "updatedAt": "2025-04-09T06:09:27.108Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 499",
+    "title": "Honors Thesis II: Thesis Research",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "VAR, 0-0-6"
+    },
+    "keywords": [
+      "Empirical Research",
+      "Honors Thesis",
+      "Psychology",
+      "Second Year",
+      "Conference Presentation"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 390"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "a committed Thesis Supervisor"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Must be taken twice in the second year in the Honors program. In the second year in the Honors Program students must formally present the results of their thesis research. This is typically done at the annual Honors Psychology Conference. Other public venues can fulfill this requirement, with approval by the Honors advisor."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 390",
+      "a committed Thesis Supervisor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/499",
+    "updatedAt": "2025-04-09T06:09:35.091Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 499A",
+    "title": "Honors Thesis II: Thesis Research",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "VAR, 0-0-6"
+    },
+    "keywords": [
+      "Empirical Research",
+      "Honors Thesis",
+      "Psychology",
+      "Second Year",
+      "Presentation"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 390"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "a committed Thesis Supervisor"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Must be taken twice in the second year in the Honors program. In the second year in the Honors Program students must formally present the results of their thesis research. This is typically done at the annual Honors Psychology Conference. Other public venues can fulfill this requirement, with approval by the Honors advisor."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 390",
+      "a committed Thesis Supervisor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/499a",
+    "updatedAt": "2025-04-09T06:09:38.950Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 499B",
+    "title": "Honors Thesis II: Thesis Research",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "VAR, 0-0-6"
+    },
+    "keywords": [
+      "Empirical Research",
+      "Honors Thesis",
+      "Psychology",
+      "Second Year",
+      "Conference Presentation"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 390"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "a committed Thesis Supervisor"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Must be taken twice in the second year in the Honors program. In the second year in the Honors Program students must formally present the results of their thesis research. This is typically done at the annual Honors Psychology Conference. Other public venues can fulfill this requirement, with approval by the Honors advisor."
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 390",
+      "a committed Thesis Supervisor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/499b",
+    "updatedAt": "2025-04-09T06:09:42.337Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 502",
+    "title": "Professional and Ethical Issues",
+    "units": {
+      "credits": 2,
+      "feeIndex": 4,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/502",
+    "updatedAt": "2025-04-09T06:09:43.989Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 505",
+    "title": "Conference Course in Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/505",
+    "updatedAt": "2025-04-09T06:09:45.614Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 521",
+    "title": "Developmental Concepts and Theories",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/521",
+    "updatedAt": "2025-04-09T06:09:47.871Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 522",
+    "title": "Developmental Methods: Design and Data",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/522",
+    "updatedAt": "2025-04-09T06:09:49.635Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 523",
+    "title": "Developmental Methods: Application",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Psychology",
+      "Prerequisite",
+      "Instructor Permission",
+      "Faculty of Science"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 522"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "permission of Instructor"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 522",
+      "permission of Instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/523",
+    "updatedAt": "2025-04-09T06:09:52.375Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 531",
+    "title": "Design and Analysis in Psychological Research I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-1"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/531",
+    "updatedAt": "2025-04-09T06:09:54.055Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 532",
+    "title": "Design and Analysis in Psychological Research II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-1"
+    },
+    "keywords": [
+      "Psychology",
+      "Prerequisite",
+      "Equivalent",
+      "Faculty of Science"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 531"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "equivalent"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 531",
+      "equivalent"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/532",
+    "updatedAt": "2025-04-09T06:09:57.298Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 541",
+    "title": "Advanced Social and Cultural Psychology I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/541",
+    "updatedAt": "2025-04-09T06:09:59.075Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 542",
+    "title": "Advanced Social and Cultural Psychology II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/542",
+    "updatedAt": "2025-04-09T06:10:00.725Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 543",
+    "title": "Advanced Cultural Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Cultural Psychology",
+      "Theoretical Bases",
+      "Methodological Bases",
+      "In-depth Review",
+      "Specific Topics"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "[Faculty of Arts]"
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/543",
+    "updatedAt": "2025-04-09T06:10:02.408Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 560",
+    "title": "Memory and Cognition",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/560",
+    "updatedAt": "2025-04-09T06:10:04.078Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 561",
+    "title": "Advanced Learning and Comparative Cognition",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/561",
+    "updatedAt": "2025-04-09T06:10:06.511Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 574A",
+    "title": "Advanced Topics in Neuroscience",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "TWO TERM, 0-1.5S-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/574a",
+    "updatedAt": "2025-04-09T06:10:08.202Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 574B",
+    "title": "Advanced Topics in Neuroscience",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "TWO TERM, 0-1.5S-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/574b",
+    "updatedAt": "2025-04-09T06:10:09.787Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 576",
+    "title": "Cognitive Neuroscience",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "keywords": [
+      "Prerequisite",
+      "Department",
+      "Consent",
+      "Faculty",
+      "Science"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "consent of Department"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/576",
+    "updatedAt": "2025-04-09T06:10:14.531Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 600",
+    "title": "Individual Studies",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/600",
+    "updatedAt": "2025-04-09T06:10:16.900Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 622",
+    "title": "Topics in Developmental Psychology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/622",
+    "updatedAt": "2025-04-09T06:10:18.768Z"
+  },
+  {
+    "department": "PSYCH",
+    "courseCode": "PSYCH 631",
+    "title": "Topics in Quantitative Methods",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Psychology",
+      "Prerequisite",
+      "Instructor Permission",
+      "Faculty of Science"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "PSYCH 532"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "permission of Instructor"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "PSYCH 532",
+      "permission of Instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/psych/631",
+    "updatedAt": "2025-04-09T06:10:21.515Z"
+  }
+]

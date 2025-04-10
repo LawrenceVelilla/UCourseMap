@@ -1,0 +1,566 @@
+[
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 210A",
+    "title": "Human Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 12,
+      "term": "TWO TERM, 3-0-0"
+    },
+    "description": "Introductory course in human physiology. Students will study the function and regulation of the human body and the complexities and interactions of cells, tissues, major organs and systems. This course is offered as a classroom-based course or in an online format. Students may not transfer from one mode of instruction to the other. Prerequisites: BIOL 107; plus 6 credits in University level Chemistry. Credit may be obtained in only one of PHYSL 210 or 212 and 214. This course may not be taken for credit if credit has been obtained in ZOOL 241 and/or 242.",
+    "url": "/catalogue/course/physl/210a"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 210B",
+    "title": "Human Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 12,
+      "term": "TWO TERM, 3-0-0"
+    },
+    "description": "Introductory course in human physiology. Students will study the function and regulation of the human body and the complexities and interactions of cells, tissues, major organs and systems. This course is offered as a classroom-based course or in an online format. Students may not transfer from one mode of instruction to the other. Prerequisites: BIOL 107; plus 6 credits in University level Chemistry. Credit may be obtained in only one of PHYSL 210 or 212 and 214. This course may not be taken for credit if credit has been obtained in ZOOL 241 and/or 242.",
+    "url": "/catalogue/course/physl/210b"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 212",
+    "title": "Human Physiology I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "description": "An introduction to human physiology. Part 1, covering: membrane transport mechanisms; intracellular and electrical signaling; the physiology of excitable tissues; the physiology of blood; and the cardiovascular system. Required for students in the Physiology Honors program. Recommended for students in other Honors/Specialization programs. Prerequisites: BIOL 107; CHEM 101 and 102. Pre- or corequisites: CHEM 164 or 261, and 263. Credit may be obtained in only one of PHYSL 212 and 214, or 210. This course may not be taken for credit if credit has been obtained in ZOOL 241 and/or 242. Students in some Honors/Specialization programs may require PHYSL 212 and 214, or 210. See your departmental advisor",
+    "url": "/catalogue/course/physl/212"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 214",
+    "title": "Human Physiology II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "An introduction to human physiology. Part 2, covering: the physiology of the gastrointestinal tract; the respiratory system; the renal system; endocrinology; and the reproductive system. Required for students in the Physiology Honors program. Recommended for students in other Honors/Specialization programs. Prerequisite: PHYSL 212.",
+    "url": "/catalogue/course/physl/214"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 310",
+    "title": "Experimental Techniques in Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 1-0-6"
+    },
+    "description": "Modern techniques in Physiology (involving cell biology, molecular, histological and live cell imaging, and non-invasive experimentation) will be discussed in theory and demonstrated/utilized in a series of laboratory experiments. Student participation as subjects may be required in some labs. Prerequisites: Successful completion of PHYSL 210 or PHYSL 212 and 214 and consent of Department.",
+    "url": "/catalogue/course/physl/310"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 371",
+    "title": "Cellular and Molecular Neuroscience",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "description": "Lectures presented by the Faculty of Medicine and Dentistry and the Faculty of Science. Topics include structure and function of nerve cell membranes, ion channels, neurotransmitters and their receptors, intracellular signaling systems, synaptic mechanisms and communication, plasticity, gene regulation and development and the physiology of small neural networks underlying discrete behaviours. Cellular and molecular mechanisms underlying brain dysfunctions implicated in specific disorders of the central nervous system will also be discussed to illustrate the clinical relevance of basic neuroscience. Prerequisite: Either PHYSL 210, or PHYSL 212 and 214, or ZOOL 241 and 242. Students who have taken ZOOL 342 or NEURO 371 may not receive credit in PHYSL 371.",
+    "url": "/catalogue/course/physl/371"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 372",
+    "title": "Systems Neuroscience",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "Introduction to the organization and function of vertebrate nervous systems. Major topics will be neural development, control of movement, integration of sensory information, and the neuronal mechanisms underlying memory and learning. Prerequisites: PHYSL 212 and 214, or 210, or ZOOL 242.",
+    "url": "/catalogue/course/physl/372"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 400",
+    "title": "Reproductive Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "The aim of this course is to describe (i) the causes of infertility, (ii) therapeutic approaches to restore or enhance fertility and (iii) contraceptive approaches to avoid pregnancy. Prerequisites: PHYSL 212 and 214, or 210 and consent of Department.",
+    "url": "/catalogue/course/physl/400"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 403",
+    "title": "Neuroendoimmunomodulation",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "description": "The physiological and pathophysiological interrelationships between the nervous, endocrine and immune systems. Prerequisites: PHYSL 212 and 214, or 210 and consent of Department.",
+    "url": "/catalogue/course/physl/403"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 404",
+    "title": "Cardiovascular Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "description": "General concepts in human cardiovascular physiology: properties of the myocardium, heart function, vascular biology, hemodynamics and control of cardiovascular system. Discussion of cardiovascular pathologies and relevant clinical situations. Prerequisites: PHYSL 212 and 214, or 210 and consent of Department.",
+    "url": "/catalogue/course/physl/404"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 405",
+    "title": "Sensory Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "The sensory systems in human physiology. The topics covered will be vision, hearing, vestibular mechanisms, taste, smell and touch, including receptor mechanisms and central organization. Prerequisites: PHYSL 212 and 214, or 210 and consent of Department.",
+    "url": "/catalogue/course/physl/405"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 407",
+    "title": "Molecular and Cellular Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "The molecular and cellular aspects of physiological processes. Main areas include the structure and functions of plasma membranes (emphasizing transport processes, their regulation and methods of study) and the mechanism of action of hormones (hormonereceptor interactions, receptor regulation and interactions of intracellular mediators). The physiological significance of these processes will be stressed throughout. Prerequisites: PHYSL 212 and 214, or 210 and consent of Department.",
+    "url": "/catalogue/course/physl/407"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 409",
+    "title": "Homeostatic Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "Advanced principles of regulatory mechanisms in human and mammalian physiology, with in depth analysis of interrelationships between different organ systems in the maintenance of homeostasis. Clinical and physiologic perspectives are highlighted in the demonstration of how organ systems interact in health and the disruption in homeostasis which occurs in disease. Contemporary topics in energy and cardiovascular homeostasis such as the physiological adaptations to pregnancy, exercise, obesity and diabetes will be explored using an integrative, systems physiology approach. Suitable as preparation for careers in medicine, biomedical research and health-related fields. Prerequisites: PHYSL 212 and 214 (or 210), 404 and consent of Department.",
+    "url": "/catalogue/course/physl/409"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 410",
+    "title": "Clinical & Translational Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Innovative online course featuring unique systems approach to learning fundamental concepts in physiology and biomedical research. Real-world cases in clinical medicine highlighting each major organ system are presented in a problem-based learning format. Essential themes in physiology and pathophysiology including complex inter-relationships between organ and control systems are used to unravel each clinical case. Gaps in clinical knowledge and practice are linked to current scientific and translational research strategies. Enriches preparation for careers in medicine, biomedical research and health- related fields. Prerequisites: PHYSL 212 and 214 (or 210) or equivalent and consent of Department. Note: this course is not open to students with credit in the corresponding PHYSL 510.",
+    "url": "/catalogue/course/physl/410"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 412",
+    "title": "Physiology in History and Popular Culture",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SPR/SUM, 3-0-0"
+    },
+    "description": "Key historical scientific/medical discoveries as well as modern socio-cultural phenomena serve as a catalyst for discussion of fundamental concepts in Physiology spanning all body systems. Historical case presentation contrasts ideological, technological and scientific approaches with modern views and advances. Popular culture references initiate in-depth investigation of the physiological basis of modern social phenomena. Highlighted case presentations facilitate application of physiology knowledge through discovery learning approaches to study historical foundations and modern marvels by evoking vivid imagery, curiosity and relatability. Suitable for preparation for careers in medicine, biomedical research and health-related fields; relevant for fields involving knowledge dissemination such as public health promotion and education. Prerequisites: PHYSL 212 and 214 (or 210) or equivalent and consent of Department. Note: this course is not open to students with credit PHYSL 512.",
+    "url": "/catalogue/course/physl/412"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 413",
+    "title": "Fetal Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "The course stresses experimental approaches to understanding fetal physiology as well as the development and function of the fetus from ovulation to birth and adaptation to independent life. This course also deals with maternal physiology during pregnancy, complications of pregnancy, and newborn health. Prerequisites: PHYSL 212 and 214, or 210 and consent of Department. Note: this course is not open to students with credit in PHYSL 513.",
+    "url": "/catalogue/course/physl/413"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 444",
+    "title": "Current Topics in Neuroscience",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "description": "A lecture course emphasizing contemporary aspects of developmental, cellular, systems and cognitive neurophysiology. Topics will include experience-dependent processes in the development of the nervous system, the molecular and cellular mechanisms for learning and memory, the electrophysiology of rhythmic activity in identified brain circuits, the microphysiology of transmitter secretion, and the representation and transformation of information in the nervous system. Students will be expected to demonstrate a thorough understanding of selected readings from current and classical literature. Suitable for honors students in Physiology, Pharmacology, Psychology and Neuroscience. Prerequisites: PMCOL 371 or ZOOL 342, and PHYSL 372 and consent of Department.",
+    "url": "/catalogue/course/physl/444"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 455",
+    "title": "Physiology of Lipids and Lipoproteins",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Advanced course focusing on specific aspects of the physiological regulation of lipid and lipoprotein metabolism. Topics include the transcriptional and post-translational mechanisms governing the synthesis and degradation of important enzymes, lipids, and lipid transport molecules; the role of lipid mediators in signaling pathways and protein modification; the assembly and dynamics of lipoproteins and biological membranes; genetic disruptions of lipid regulatory proteins such as cell surface receptors leading to human disease. Prerequisites: A minimum grade of B- in PHYSL 210 or 212/214 or consent of Department. This course is intended for students in Honors in Physiology. Students in other programs may be admitted subject to availability and with the consent of the Department. Graduate students may not register for credit (see PHYSL 555).",
+    "url": "/catalogue/course/physl/455"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 456",
+    "title": "Advanced Respiratory Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "Focus will be on internal respiration and common acute and chronic respiratory diseases including diagnosis and treatments. Prerequisites: PHYSL 212 and 214, or 210 and consent of Department.",
+    "url": "/catalogue/course/physl/456"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 457",
+    "title": "Exercise Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "Acute and chronic adaptations to various modalities of exercise. Focus will be on metabolism, muscular, cardiovascular, and respiratory systems. An introduction to clinical exercise physiology will also be covered. Prerequisites: PHYSL 212 and 214, or 210 and consent of Department.",
+    "url": "/catalogue/course/physl/457"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 461",
+    "title": "Undergraduate Research Project",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-0-6"
+    },
+    "description": "Individual study, open to Physiology Honours undergraduate students who have identified a supervisor in the Department of Physiology. Co-supervision with Professors from other Departments is possible, provided that a supervisor from the department of Physiology is identified. Students will spend one term in the laboratory of a faculty member and carry out a laboratory physiology research project. Registration package and further information are available on the Physiology Department website. Prerequisites: PHYSL 210 or PHYSL 212/214 and consent from the course coordinator.",
+    "url": "/catalogue/course/physl/461"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 463",
+    "title": "Advanced Topics in Physiology Research I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 0-6S-0"
+    },
+    "description": "Open to undergraduate students in the Honors Physiology program. Students will identify, present, and critically discuss recent advances in Physiology research with classmates and instructors in a journal club-type format. Registration package and further information are available. Prerequisites: PHYSL 210 or PHYSL 212/214 and consent from the course coordinators. Must be taken in conjunction with PHYSL 464.",
+    "url": "/catalogue/course/physl/463"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 464",
+    "title": "Advanced Topics in Physiology Research II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 0-6S-0"
+    },
+    "description": "Taken in conjunction with PHYSL 463, this course is open to undergraduate students in the Honors Physiology program. Students will undertake self-directed research and provide a critical review of recent literature in one specific field of Physiology (to be identified by the student in consultation with the course coordinators). Registration package and further information are available. Prerequisites: PHYSL 210 or PHYSL 212/214, PHYSL 463 and consent from the course coordinators.",
+    "url": "/catalogue/course/physl/464"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 466",
+    "title": "Undergraduate Tutorial",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Individual study. Restricted to students in the Physiology Honors Program. Students will select a faculty member who will guide them through a course of reading at an advanced level on a specialized topic. Successful completion of an oral presentation is required at the conclusion of the project. Credit for this course may be obtained more than once.",
+    "url": "/catalogue/course/physl/466"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 467A",
+    "title": "Undergraduate Research Project",
+    "units": {
+      "credits": 3,
+      "feeIndex": 12,
+      "term": "TWO TERM, 0-0-6"
+    },
+    "description": "Individual study, open to Physiology Honours undergraduate students who have identified a supervisor in the Department of Physiology. Co-supervision with Professors from other Departments is possible, provided that a supervisor from the department of Physiology is identified. Students will spend two terms in the laboratory of a faculty member and carry out a laboratory physiology research project. Registration package and further information are available on the Physiology Department website. Prerequisites: PHYSL 210 or PHYSL 212/214 and consent from the course coordinator.",
+    "url": "/catalogue/course/physl/467a"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 467B",
+    "title": "Undergraduate Research Project",
+    "units": {
+      "credits": 3,
+      "feeIndex": 12,
+      "term": "TWO TERM, 0-0-6"
+    },
+    "description": "Individual study, open to Physiology Honours undergraduate students who have identified a supervisor in the Department of Physiology. Co-supervision with Professors from other Departments is possible, provided that a supervisor from the department of Physiology is identified. Students will spend two terms in the laboratory of a faculty member and carry out a laboratory physiology research project. Registration package and further information are available on the Physiology Department website. Prerequisites: PHYSL 210 or PHYSL 212/214 and consent from the course coordinator.",
+    "url": "/catalogue/course/physl/467b"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 468",
+    "title": "Undergraduate Research Thesis I",
+    "units": {
+      "credits": 6,
+      "feeIndex": 12,
+      "term": "EITHER, 0-0-12"
+    },
+    "description": "Individual study, open to Physiology Honours undergraduate students who have identified a supervisor in the Department of Physiology. Taken in conjunction with PHYSL 469, this 6-credit course is the first part of a 12-credit program in two terms resulting in an honours research thesis in physiology. Students will spend the Fall term in the laboratory of a supervisor and carry out a research project to be continued in the second term as PHYSL 469. Co-supervision with Professors from other Departments is possible, provided that a supervisor from the Department of Physiology is identified. Students will be evaluated on an oral presentation, a written research proposal and performance in the laboratory. Prerequisites: PHYSL 210 or PHYSL 212/214 and consent from the course coordinator.",
+    "url": "/catalogue/course/physl/468"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 469",
+    "title": "Undergraduate Research Thesis II",
+    "units": {
+      "credits": 6,
+      "feeIndex": 12,
+      "term": "EITHER, 0-0-12"
+    },
+    "description": "Taken in conjunction with PHYSL 468, this 6-credit course is the second part of a 12-credit program in two terms resulting in an honours research thesis in Physiology. Upon satisfactory progress in first-term PHYSL 468, students will continue their research and produce an honours thesis on their project. Students will be evaluated on a final oral presentation, a written research Thesis and performance in the laboratory. Prerequisites: PHYSL 210 or PHYSL 212/214 and consent from the course coordinator.",
+    "url": "/catalogue/course/physl/469"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 500",
+    "title": "Reproductive Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "The aim of this course is to describe (i) the causes of infertility, (ii) therapeutic approaches to restore or enhance fertility and (iii) contraceptive approaches to avoid pregnancy. Lectures are the same as PHYSL 400, but with additional assignments and evaluation appropriate to graduate studies. Credit cannot be obtained for both PHYSL 400 and 500. Prerequisites: PHYSL 212 and 214, or 210 and consent of Department.",
+    "url": "/catalogue/course/physl/500"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 501",
+    "title": "Topics in Cardiovascular Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "The goal of PHYSL 501 is to develop critical appraisal and presentation skills in advanced undergraduate and graduate students. Through critical review of controversial topics in modern cardiovascular physiology, the participant will learn to appreciate that literature is a dynamic, changing and fallible source of information. Presentation skills are developed through both oral and written assignments and facility with the use of electronic library resources is encouraged. Course content varies from year to year. Prerequisites: PHYSL 212 and 214, or 210, 404 and consent of Department.",
+    "url": "/catalogue/course/physl/501"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 502",
+    "title": "Problems in Current Research",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-0-6"
+    },
+    "description": "Individual study. Credit for this course may be obtained more than once.",
+    "url": "/catalogue/course/physl/502"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 503",
+    "title": "Neuroendoimmunomodulation",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "description": "The physiological and pathophysiological interrelationships between the nervous, endocrine and immune systems. Prerequisites: consent of Department. Priority given to students registered in a graduate program. Note: this course is not open to students with credit in the corresponding PHYSL 400 level course.",
+    "url": "/catalogue/course/physl/503"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 504",
+    "title": "Cardiovascular Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "description": "General concepts in human cardiovascular physiology: properties of the myocardium, heart function, vascular biology, hemodynamics and control of cardiovascular system. Discussion of cardiovascular pathologies and relevant clinical situations. Prerequisites: consent of Department. Priority given to students registered in a graduate program. Note: this course is not open to students with credit in the corresponding PHYSL 400 level course.",
+    "url": "/catalogue/course/physl/504"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 505",
+    "title": "Sensory Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "The sensory systems in human physiology. The topics covered will be vision, hearing, vestibular mechanisms, taste, smell and touch, including receptor mechanisms and central organization. Prerequisites: consent of Department. Priority given to students registered in a graduate program. Note: this course is not open to students with credit in the corresponding PHYSL 400 level course.",
+    "url": "/catalogue/course/physl/505"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 506",
+    "title": "Tutorial and Seminar Course",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Guided reading course. Credit for this course may be obtained more than once.",
+    "url": "/catalogue/course/physl/506"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 507",
+    "title": "Molecular and Cellular Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "The molecular and cellular aspects of physiological processes. Main areas include the structure and functions of plasma membranes (emphasizing transport processes, their regulation and methods of study) and the mechanism of action of hormones (hormonereceptor interactions, receptor regulation and interactions of intracellular mediators). The physiological significance of these processes will be stressed throughout. Prerequisites: consent of the Department. Priority given to students registered in a graduate program. Note: this course is not open to students with credit in the corresponding PHYSL 400 level course.",
+    "url": "/catalogue/course/physl/507"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 509",
+    "title": "Homeostatic Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "Advanced principles of regulatory mechanisms in human and mammalian physiology, with in depth analysis of interrelationships between different organ systems in the maintenance of homeostasis. Clinical and physiologic perspectives are highlighted in the demonstration of how organ systems interact in health and the disruption in homeostasis which occurs in disease. Contemporary topics in energy and cardiovascular homeostasis such as the physiological adaptations to pregnancy, exercise, obesity and diabetes will be explored using an integrative, systems physiology approach. Suitable as preparation for careers in medicine, biomedical research and health-related fields. Prerequisites: consent of the Department. Priority given to students registered in a graduate program. Note: this course is not open to students with credit in the corresponding PHYSL 400 level course.",
+    "url": "/catalogue/course/physl/509"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 510",
+    "title": "Clinical & Translational Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Innovative online course featuring unique systems approach to learning fundamental concepts in physiology and biomedical research. Real-world cases in clinical medicine highlighting each major organ system are presented in a problem-based learning format. Essential themes in physiology and pathophysiology including complex inter-relationships between organ and control systems are used to unravel each clinical case. Gaps in clinical knowledge and practice are linked to current scientific and translational research strategies. Enriches preparation for careers in medicine, biomedical research and health-related fields. Prerequisites: PHYSL 212 and 214 (or 210) or equivalent and consent of Department. This course may not be taken for credit if credit has already been obtained in PHYSL 410.",
+    "url": "/catalogue/course/physl/510"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 512",
+    "title": "Physiology in History & Popular Culture",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SPR/SUM, 3-0-0"
+    },
+    "description": "Key historical scientific/medical discoveries as well as modern socio-cultural phenomena serve as a catalyst for discussion of fundamental concepts in Physiology spanning all body systems. Historical case presentation contrasts ideological, technological and scientific approaches with modern views and advances. Popular culture references initiate in-depth investigation of the physiological basis of modern social phenomena. Highlighted case presentations facilitate application of physiology knowledge through discovery learning approaches to study historical foundations and modern marvels by evoking vivid imagery, curiosity and relatability. Suitable for preparation for careers in medicine, biomedical research and health-related fields; relevant for fields involving knowledge dissemination such as public health promotion and education. Prerequisites: PHYSL 212 and 214 (or 210) or equivalent and consent of Department. Note: This course may not be taken for credit if credit has already been obtained in PHYSL 412.",
+    "url": "/catalogue/course/physl/512"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 513",
+    "title": "Fetal Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "The course stresses experimental approaches to understanding fetal physiology as well as the development and function of the fetus from ovulation to birth and adaptation to independent life. This course also deals with maternal physiology during pregnancy, complications of pregnancy, and newborn health. Prerequisites: PHYSL 212 and 214, or 210 and consent of Department.",
+    "url": "/catalogue/course/physl/513"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 544",
+    "title": "Current Topics in Neuroscience",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "description": "A lecture course emphasizing contemporary aspects of developmental, cellular, systems and cognitive neurophysiology. Topics will include experience-dependent processes in the development of the nervous system, the molecular and cellular mechanisms for learning and memory, the electrophysiology of rhythmic activity in identified brain circuits, the microphysiology of transmitter secretion, and the representation and transformation of information in the nervous system. Students will be expected to demonstrate a thorough understanding of selected readings from current and classical literature. Suitable for honors students in Physiology, Pharmacology, Psychology and Neuroscience. Prerequisites: consent of Department. Priority given to students registered in a graduate program. Note: this course is not open to students with credit in the corresponding PHYSL 400 level course.",
+    "url": "/catalogue/course/physl/544"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 545",
+    "title": "Physiology of Transport Systems",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "A consideration of transport mechanisms primarily from the physiological rather than biochemical viewpoint. Major models considered are the erythrocyte and a variety of epithelia from vertebrates. Designed for advanced undergraduate and graduate students. Offered in alternate years. Prerequisites: PHYSL 212 and 214, or 210, or ZOOL 241 and 242.",
+    "url": "/catalogue/course/physl/545"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 555",
+    "title": "Physiology of Lipids and Lipoproteins",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Advanced course focusing on specific aspects of the physiological regulation of lipid and lipoprotein metabolism. Topics include the transcriptional and post-translational mechanisms governing the synthesis and degradation of important enzymes, lipids, and lipid transport molecules; the role of lipid mediators in signaling pathways and protein modification; the assembly and dynamics of lipoproteins and biological membranes; genetic disruptions of lipid regulatory proteins such as cell surface receptors leading to human disease. Prerequisites: A minimum grade of B- in PHYSL 210 or 212/214 or consent of Department. Lectures are the same as for PHYSL 455, but with additional assignments and evaluation appropriate to graduate studies. This course may not be taken for credit if credit has already been obtained in PHYSL 455.",
+    "url": "/catalogue/course/physl/555"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 600",
+    "title": "Colloquia in Physiology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "This discussion course will provide an opportunity for Provisional PhD candidates in the Department of Physiology, prior to their candidacy examination, to research, present and critique publications in areas relevant to their research, but not their own research. Graded on a pass/fail basis. Prerequisite: consent of Department. Open to MSc students in the Department of Physiology.",
+    "url": "/catalogue/course/physl/600"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 698",
+    "title": "Undergraduate Research Mentoring",
+    "units": {
+      "credits": null,
+      "feeIndex": null,
+      "term": null
+    },
+    "description": "A credit/no-credit course for graduate students who are actively participating in the mentorship of undergraduate students in a half term research course (e.g. PHYSL 461 or 468) in the Department of Physiology. Mentorship includes activities such as in-lab supervision, training, and help with reports and presentations. Can be taken in any year and Spring/Summer session. Credit may be obtained more than once. Requires the submission of an initial project summary with student learning objectives, monthly progress and final reports. This course cannot be used to satisfy course requirements of the Physiology Graduate Programs. Prerequisite: Consent of the Department of Physiology and the student's supervisor.",
+    "url": "/catalogue/course/physl/698"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 699A",
+    "title": "Undergraduate Research Mentoring",
+    "units": {
+      "credits": null,
+      "feeIndex": null,
+      "term": null
+    },
+    "description": "A credit/no-credit course for graduate students who are actively participating in the mentorship of undergraduate students in a full-term research course (e.g. PHYSL 467; 468/469) in the Department of Physiology. Mentorship includes activities such as in-lab supervision, training, and help with reports and presentations. Can be taken in any year. Credit may be obtained more than once. Requires the submission of an initial project summary with student learning objectives, monthly progress and final reports. This course cannot be used to satisfy course requirements of the Physiology Graduate Programs. Prerequisite: Consent of the Department of Physiology and the student's supervisor.",
+    "url": "/catalogue/course/physl/699a"
+  },
+  {
+    "department": "PHYSL",
+    "courseCode": "PHYSL 699B",
+    "title": "Undergraduate Research Mentoring",
+    "units": {
+      "credits": null,
+      "feeIndex": null,
+      "term": null
+    },
+    "description": "A credit/no-credit course for graduate students who are actively participating in the mentorship of undergraduate students in a full-term research course (e.g. PHYSL 467; 468/469) in the Department of Physiology. Mentorship includes activities such as in-lab supervision, training, and help with reports and presentations. Can be taken in any year. Credit may be obtained more than once. Requires the submission of an initial project summary with student learning objectives, monthly progress and final reports. This course cannot be used to satisfy course requirements of the Physiology Graduate Programs. Prerequisite: Consent of the Department of Physiology and the student's supervisor.",
+    "url": "/catalogue/course/physl/699b"
+  }
+]

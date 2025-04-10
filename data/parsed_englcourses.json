@@ -1,0 +1,2206 @@
+[
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 102",
+    "title": "Introduction to Critical Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, VARIABLE"
+    },
+    "keywords": [
+      "Critical Analysis",
+      "Literature",
+      "English",
+      "Historical Periods",
+      "Cultural Locations"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not to be taken by students with 6 units in approved junior English."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/102",
+    "updatedAt": "2025-04-09T05:48:52.744Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 102A",
+    "title": "Introduction to Critical Analysis",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "EITHER, VARIABLE"
+    },
+    "keywords": [
+      "Critical Analysis",
+      "Literature",
+      "English",
+      "Historical Periods",
+      "Cultural Locations"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not to be taken by students with 6 units in approved junior English."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/102a",
+    "updatedAt": "2025-04-09T05:48:54.806Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 102B",
+    "title": "Introduction to Critical Analysis",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "EITHER, VARIABLE"
+    },
+    "keywords": [
+      "Critical Analysis",
+      "Literature",
+      "English",
+      "Historical Periods",
+      "Cultural Locations"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not to be taken by students with 6 units in approved junior English."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/102b",
+    "updatedAt": "2025-04-09T05:48:57.045Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 103",
+    "title": "Case Studies in Research",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, VARIABLE"
+    },
+    "keywords": [
+      "Literary Research",
+      "Case Studies",
+      "English",
+      "Film Studies",
+      "Course Content"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not to be taken by students with 6 units in approved junior English."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/103",
+    "updatedAt": "2025-04-09T05:48:59.777Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 125",
+    "title": "Indigenous Literatures",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, VARIABLE"
+    },
+    "keywords": [
+      "Indigenous Literatures",
+      "North America",
+      "Oral Forms",
+      "Contemporary Variations",
+      "TYP Program"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not to be taken by students with 6 units in approved junior English. Sections reserved for students in the TYP Program include a 3 hour seminar component in addition to the 3 hour lecture component."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/125",
+    "updatedAt": "2025-04-09T05:49:02.387Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 150",
+    "title": "Introduction to English Studies",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, VARIABLE"
+    },
+    "keywords": [
+      "English Studies",
+      "Literary Studies",
+      "Cultural Studies",
+      "Methodological Approaches",
+      "Social Topics"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not to be taken by students with 6 units in approved junior English. Credit does not fulfill the Arts common English requirement. Restricted to students registered in the Faculty of Arts."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/150",
+    "updatedAt": "2025-04-09T05:49:07.388Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 199",
+    "title": "English for Engineering Students",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Writing Skills",
+      "Communication",
+      "Information Gathering",
+      "Academic Contexts",
+      "Professional Contexts"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Restricted to students in the Faculty of Engineering only."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/199",
+    "updatedAt": "2025-04-09T05:49:09.426Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 206",
+    "title": "How Poems Work: Introduction to Poetry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Poetic Forms",
+      "Techniques",
+      "Theories",
+      "ENGL",
+      "WRS"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/206",
+    "updatedAt": "2025-04-09T05:49:13.009Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 207",
+    "title": "How Stories Work: Introduction to Narrative",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Narrative",
+      "Narrative Theory",
+      "Fiction",
+      "Non-Fiction",
+      "Writing"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "not to be taken by students with credit in ENGL 219."
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/207",
+    "updatedAt": "2025-04-09T05:49:16.902Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 212",
+    "title": "Critical Approaches to the English Language",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "English Language",
+      "Structure",
+      "Social Life",
+      "Junior ENGL",
+      "WRS"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/212",
+    "updatedAt": "2025-04-09T05:49:20.894Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 215",
+    "title": "Reading Literature Across Time",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Literature",
+      "Cultural Change",
+      "Social Change",
+      "History",
+      "Texts"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/215",
+    "updatedAt": "2025-04-09T05:49:27.369Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 216",
+    "title": "Introduction to Indigenous Literary Methods",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Indigenous Literature",
+      "Literary Methods",
+      "Field Formation",
+      "Canon Formation",
+      "Ethics of Reading"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/216",
+    "updatedAt": "2025-04-09T05:49:31.769Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 217",
+    "title": "Introduction to Literary and Critical Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Theoretical Perspectives",
+      "English Studies",
+      "Junior ENGL",
+      "WRS",
+      "Introduction"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/217",
+    "updatedAt": "2025-04-09T05:49:35.741Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 220",
+    "title": "Reading Gender and Sexuality",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Gender",
+      "Sexuality",
+      "Literary Texts",
+      "Cultural Texts",
+      "Critical Concepts"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/220",
+    "updatedAt": "2025-04-09T05:49:40.038Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 221",
+    "title": "Reading Class and Ideology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Dynamics",
+      "Class",
+      "Ideology",
+      "Literary Texts",
+      "Cultural Texts"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/221",
+    "updatedAt": "2025-04-09T05:49:43.672Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 222",
+    "title": "Reading Race and Ethnicity",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Race",
+      "Ethnicity",
+      "Literary Texts",
+      "Cultural Texts",
+      "Critical Concepts"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/222",
+    "updatedAt": "2025-04-09T05:49:47.151Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 223",
+    "title": "Reading Empire and the Postcolonial",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Colonization",
+      "Literary Texts",
+      "Cultural Texts",
+      "Critical Concepts",
+      "Resistance"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/223",
+    "updatedAt": "2025-04-09T05:49:52.159Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 250",
+    "title": "Introduction to Canadian Literatures",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Literature",
+      "Canada",
+      "ENGL",
+      "WRS",
+      "Survey"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/250",
+    "updatedAt": "2025-04-09T05:49:56.486Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 299",
+    "title": "Essay Writing for Education Students",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Essay Writing",
+      "Grammar",
+      "Punctuation",
+      "Prose Style",
+      "Education"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Restricted to students in the Faculty of Education."
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/299",
+    "updatedAt": "2025-04-09T05:50:01.313Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 300",
+    "title": "Social and Cultural History of the English Language",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "English Language",
+      "Historical Development",
+      "Junior ENGL",
+      "WRS",
+      "Credit Restrictions"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "not to be taken by students with credit in former ENGL 311."
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/300",
+    "updatedAt": "2025-04-09T05:50:06.591Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 301",
+    "title": "Topics in Genre",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Prerequisite",
+      "Junior ENGL",
+      "Junior WRS",
+      "Variable Content",
+      "Repeatable"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "variable content course which may be repeated if topics vary."
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/301",
+    "updatedAt": "2025-04-09T05:50:10.010Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 302",
+    "title": "Topics in Literary and Critical Theories",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Prerequisite",
+      "Junior ENGL",
+      "Junior WRS",
+      "Variable Content",
+      "Repeatable"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "variable content course which may be repeated if topics vary."
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/302",
+    "updatedAt": "2025-04-09T05:50:17.269Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 303",
+    "title": "Digital Culture",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Digital Culture",
+      "Literary Practices",
+      "Theories",
+      "Histories",
+      "ENGL"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/303",
+    "updatedAt": "2025-04-09T05:50:21.002Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 305",
+    "title": "Topics in Literature and Religion",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Prerequisite",
+      "Junior ENGL",
+      "Junior WRS",
+      "Variable Content",
+      "Repeatable"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "variable content course which may be repeated if topics vary."
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/305",
+    "updatedAt": "2025-04-09T05:50:24.587Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 306",
+    "title": "Life Writing",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Nonfiction",
+      "Memoir",
+      "Biography",
+      "Digital Representation",
+      "Writing"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/306",
+    "updatedAt": "2025-04-09T05:50:28.582Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 307",
+    "title": "Métis Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Métis Writers",
+      "Intellectual Traditions",
+      "Community Traditions",
+      "ENGL",
+      "WRS"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/307",
+    "updatedAt": "2025-04-09T05:50:33.352Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 308",
+    "title": "Topics in Indigenous Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Prerequisite",
+      "Junior ENGL",
+      "Junior WRS",
+      "Variable Content",
+      "Repeatable"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "variable content course which may be repeated if topics vary."
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/308",
+    "updatedAt": "2025-04-09T05:50:37.840Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 309",
+    "title": "Indigenous Poetics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Indigenous Poetry",
+      "Poetics",
+      "North America",
+      "Literary Movement",
+      "Politics"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/309",
+    "updatedAt": "2025-04-09T05:50:42.095Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 310",
+    "title": "Postcolonial Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Colonialism",
+      "Imperialism",
+      "Literature",
+      "ENGL",
+      "WRS"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/310",
+    "updatedAt": "2025-04-09T05:50:45.988Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 311",
+    "title": "Topics in Postcolonial Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Prerequisite",
+      "Junior ENGL",
+      "Junior WRS",
+      "Variable Content",
+      "Repeatable"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "variable content course which may be repeated if topics vary."
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/311",
+    "updatedAt": "2025-04-09T05:50:49.657Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 312",
+    "title": "African Writing in English",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "African Literature",
+      "Selected Works",
+      "Junior English",
+      "WRS",
+      "Context"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/312",
+    "updatedAt": "2025-04-09T05:50:53.437Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 314",
+    "title": "Irish Writing in English",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Irish Literature",
+      "Junior English",
+      "Selected Works",
+      "Content Variation",
+      "Period Focus"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/314",
+    "updatedAt": "2025-04-09T05:50:59.300Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 315",
+    "title": "South Asian Writing in English",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Indian Context",
+      "Selected Works",
+      "Junior ENGL",
+      "Junior WRS",
+      "Literature"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/315",
+    "updatedAt": "2025-04-09T05:51:03.234Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 316",
+    "title": "Middle-Eastern Writing in English",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Middle-Eastern Literature",
+      "Selected Works",
+      "Junior ENGL",
+      "Junior WRS",
+      "Content Variation"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/316",
+    "updatedAt": "2025-04-09T05:51:06.773Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 325",
+    "title": "Medieval Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Medieval Literature",
+      "English Language",
+      "Junior ENGL",
+      "WRS",
+      "Selected Works"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/325",
+    "updatedAt": "2025-04-09T05:51:10.358Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 327",
+    "title": "Topics in Medieval Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Prerequisite",
+      "Junior ENGL",
+      "Junior WRS",
+      "Variable Content",
+      "Repeatable"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "variable content course which may be repeated if topics vary."
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/327",
+    "updatedAt": "2025-04-09T05:51:15.384Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 336",
+    "title": "Sixteenth-Century Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "English Literature",
+      "Selected Works",
+      "Junior ENGL",
+      "Junior WRS",
+      "Literature Studies"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/336",
+    "updatedAt": "2025-04-09T05:51:19.490Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 337",
+    "title": "Topics in Early Modern Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Prerequisite",
+      "Junior ENGL",
+      "Junior WRS",
+      "Variable Content",
+      "Repeatable"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "variable content course which may be repeated if topics vary."
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/337",
+    "updatedAt": "2025-04-09T05:51:24.055Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 339",
+    "title": "Shakespeare",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Plays",
+      "Literature",
+      "English",
+      "WRS",
+      "Studies"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not to be taken by students with credit in ENGL 338."
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/339",
+    "updatedAt": "2025-04-09T05:51:27.870Z"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 340",
+    "title": "Seventeenth-Century Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "English Literature",
+      "Selected Works",
+      "Junior ENGL",
+      "Junior WRS",
+      "Literature Studies"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "6 units of junior ENGL"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior ENGL"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "3 units of junior WRS"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "6 units of junior ENGL",
+      "3 units of junior ENGL",
+      "3 units of junior WRS"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/engl/340",
+    "updatedAt": "2025-04-09T05:51:31.003Z"
+  }
+]

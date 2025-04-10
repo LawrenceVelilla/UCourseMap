@@ -1,157 +1,179 @@
+// scripts/dataCompiler.ts
 import * as readline from 'readline';
 import { stdin as input, stdout as output } from 'process';
-import { AIparse } from '../utils/collection/parser';
-import { Course, RawCourse, ParsedCourseData } from '@/lib/types';
-import { parseCoursesHTML } from '../utils/collection/scrape-courses'; // Adjust the import path as needed
-import dotenv from 'dotenv';
-import path from 'path';
-dotenv.config({ path: path.resolve(__dirname, '../.env') });
 import fs from 'fs/promises';
+import path from 'path';
 import axios from 'axios';
+import dotenv from 'dotenv';
 
-const DATA_DIR = path.join(__dirname, '../data'); // Directory to save data
+// --- Local Utilities and Types ---
+// Adjust paths based on your project structure
+import { AIparse } from '../utils/collection/parser'; // Assuming AIparse returns keywords
+import { parseCoursesHTML } from '../utils/collection/scrape-courses';
+// Assuming types are defined in lib/types.ts relative to project root
+import type { Course, RawCourse } from '@/lib/types';
+
+// --- Import the specific save function ---
+import { save as saveCoursesToDB } from './saveToDB';
+
+// --- Load Environment Variables (needed for AIparse if it uses API keys) ---
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
+// ----------------------------------------------------------------------
+
+// --- Configuration ---
+const DATA_DIR = path.resolve(__dirname, '../data'); // Data directory relative to scripts/
+
+// --- Helper Functions ---
+
+async function checkFileExists(filePath: string): Promise<boolean> {
+    try {
+        await fs.access(filePath);
+        return true;
+    } catch {
+        return false;
+    }
+}
 
 function getDepartmentInput(): Promise<string> {
-    // Input department name from user
     const rl = readline.createInterface({ input, output });
-
     return new Promise((resolve) => {
-        rl.question('Please enter the department name (lowercase): ', (answer) => {
-            rl.close(); // Close the interface after getting the input
-            resolve(answer.trim()); // Resolve the promise with the trimmed answer
+        rl.question('Please enter the department name (lowercase, e.g., cmput): ', (answer) => {
+            rl.close();
+            resolve(answer.trim().toLowerCase());
         });
     });
 }
 
-function getConfirmationInput(nextPhase: string): Promise<boolean> {
-    // Create a readline interface
+function getConfirmationInput(phase: string): Promise<boolean> {
     const rl = readline.createInterface({ input, output });
     return new Promise((resolve) => {
-        rl.question(`Do you want to continue to ${nextPhase}? (y/n):  `, (answer) => {
-            rl.close(); // Close the interface after getting the input
+        rl.question(`\nDo you want to continue to ${phase}? (y/n): `, (answer) => {
+            rl.close();
             resolve(answer.trim().toLowerCase() === 'y');
         });
     });
-}// Resolve the promise with true if 'yes', false otherwise
+}
 
-function getNum(list: any[]): Promise<number> {
+function getNum(list: any[], action: string = "parse"): Promise<number> {
     const rl = readline.createInterface({ input, output });
+    const total = list.length;
     return new Promise((resolve) => {
-        rl.question(`\nHow many courses do you want to parse?\n
-                    Options:
-                    - a  (all) (default)
-                    - h  (half)
-                    - <value>`, (answer) => {
-            rl.close(); // Close the interface after getting the input
-            const ans = parseInt(answer.trim());
-            
-            if (isNaN(ans)) {
-                if (answer.trim() === 'a') {
-                    resolve(list.length);
-                } else if (answer.trim() === 'h') {
-                    resolve(Math.floor(list.length / 2));
-                } else {
-                    console.error("Invalid input. Please enter a number or 'a' or 'h'.");
-                    resolve(0); // Default to 0 if invalid input
-                }
-            } else {
-                if (ans > list.length) {
-                    console.error("Input exceeds the number of courses available. Defaulting to all.");
-                    resolve(list.length);
-                }
-                else if (ans < 0) {
-                    console.error("Input is negative. Defaulting to all.");
-                    resolve(list.length);
-                }
-                else {
-                    resolve(ans);
-                }
+        rl.question(`\nHow many courses do you want to ${action}? (Total available: ${total})\n` +
+                    ` Options: a (all) | h (half: ${Math.floor(total / 2)}) | <number>: `, (answer) => {
+            rl.close();
+            const trimmedAnswer = answer.trim().toLowerCase();
+            if (trimmedAnswer === 'a' || trimmedAnswer === '') resolve(total);
+            else if (trimmedAnswer === 'h') resolve(Math.floor(total / 2));
+            else {
+                const ans = parseInt(trimmedAnswer);
+                if (isNaN(ans)) { console.warn("Invalid input. Defaulting to all."); resolve(total); }
+                else if (ans < 0) { console.warn("Input negative. Defaulting to all."); resolve(total); }
+                else if (ans > total) { console.warn(`Input > available. Defaulting to all.`); resolve(total); }
+                else resolve(ans);
             }
         });
     });
 }
 
+function getStartNum(list: any[], action: string = "parsing"): Promise<number> {
+    const rl = readline.createInterface({ input, output });
+    const total = list.length;
+    return new Promise((resolve) => {
+        rl.question(`\nWhat is the starting index for ${action}? (0 to ${total - 1}, default: 0): `, (answer) => {
+            rl.close();
+            const ans = parseInt(answer.trim());
+            if (isNaN(ans) || answer.trim() === '') resolve(0);
+            else if (ans < 0) { console.warn("Start index < 0. Defaulting to 0."); resolve(0); }
+            else if (ans >= total) { console.warn(`Start index >= total. Defaulting to 0.`); resolve(0); }
+            else resolve(ans);
+        });
+    });
+}
+// --- End Helper Functions ---
+
+
+/**
+ * Main orchestration function for the data collection pipeline.
+ */
 async function runDataCollection() {
-    let department: string | null = null; // Keep track of the department name
+    let department: string | null = null;
+    let scrapedData: RawCourse[] = [];
+    // Define parsedData type to include keywords and exclude parsedDescription
+    let parsedData: Course[] = [];
+    let ranScraping = false;
+    let ranParsing = false;
 
     try {
-        // 1. Get Department Input from User
         department = await getDepartmentInput();
-        if (!department) {
-            console.error("No department name entered. Exiting.");
-            return;
-        }
-        
+        if (!department) throw new Error("No department name entered.");
 
-        // 2. Scrape Data
-        console.log(`\n---------- Starting data collection for department: ${department.toUpperCase()} -----------\n`);
-        console.log(`Scraping data for ${department}...`);
-        let url = `https://apps.ualberta.ca/catalogue/course/${department}`;
-        console.log(`Scraping URL: ${url}`);
-        let web = await axios.get(url);
-        const scrapedData: RawCourse[] = await parseCoursesHTML(web.data);
-        if (!scrapedData) {
-             console.error(`Scraping failed or returned no data for ${department}.`);
-             return;
-        }
-        fs.writeFile(`${DATA_DIR}/${department}courses.json`, JSON.stringify(scrapedData, null, 2));
+        const rawDataPath = path.join(DATA_DIR, `${department}courses.json`);
+        const parsedDataPath = path.join(DATA_DIR, `parsed_${department}courses.json`);
 
-        // 3. Parse Data with AI
-        console.log(`Successfully scraped ${scrapedData.length} courses!`);
-        console.log(`Please check the ${department}_courses.json file for the raw data.\n`);
-        let confirmation = await getConfirmationInput("AI Parsing");
-        if (!confirmation) {
-            console.log("Skipping AI Parsing.");
-            return;
-        }
-        let paseLimit = await getNum(scrapedData);
-        let dataToParse = scrapedData.slice(0, paseLimit);
+        console.log(`\n---------- Pipeline Start: ${department.toUpperCase()} ----------`);
+        await fs.mkdir(DATA_DIR, { recursive: true });
 
-        console.log(`Starting AI Parsing for ${dataToParse.length} courses...`);
-        const parsedData: Course[] = await AIparse(dataToParse);
-        if (!parsedData) {
-            console.error(`AI Parsing failed or returned no data.`);
-            return;
-        }
-        fs.writeFile(`${DATA_DIR}/parsed_${department}courses.json`, JSON.stringify(parsedData, null, 2));
+        // 1. Scrape Data
+        if (await getConfirmationInput("Scraping")) {
+            ranScraping = true;
+            console.log(`\n[1/3] Scraping data for ${department}...`);
+            const url = `https://apps.ualberta.ca/catalogue/course/${department}`;
+            const { data: htmlContent } = await axios.get(url);
+            scrapedData = await parseCoursesHTML(htmlContent);
+            if (!scrapedData || scrapedData.length === 0) throw new Error(`Scraping failed or returned no data.`);
+            await fs.writeFile(rawDataPath, JSON.stringify(scrapedData, null, 2));
+            console.log(`✅ Scraped ${scrapedData.length} raw courses to ${rawDataPath}`);
+        } else { /* ... load existing logic ... */ }
 
-        console.log(`Successfully parsed ${parsedData.length} courses!`);
-        console.log(`Please check the parsed_${department}courses.json file for the parsed data.\n`);
-        let confirmation2 = await getConfirmationInput("Database Insertion");
-        if (!confirmation2) {
-            console.log("Skipping Database Insertion.");
-            return;
-        }
-        // 4. Insert Data into Database
-        console.log("Starting Database Insertion...");
+        scrapedData = await fs.readFile(rawDataPath, 'utf-8')
+            .then(data => JSON.parse(data) as RawCourse[])
 
+        // 2. Parse Data with AI
+        if (scrapedData.length === 0) { /* ... skip message ... */ }
+        if (await getConfirmationInput("AI Parsing (Keywords, Requirements)")) {
+            ranParsing = true;
+            const limit = await getNum(scrapedData, "parse");
+            const start = await getStartNum(scrapedData, "parsing");
+            const dataToParse = scrapedData.slice(start, start + limit);
 
-        // 5. Display Results
-        console.log("\n--- Data Collection Complete ---");
-        console.log("Department:", department);
-        console.log("Parsed Data:");
-        console.log(JSON.stringify(parsedData.slice(0,10), null, 2)); // Pretty print the JSON
+            if (dataToParse.length === 0) console.log("\nNo courses selected for parsing.");
+            else {
+                console.log(`\n[2/3] AI Parsing ${dataToParse.length} courses (index ${start} to ${start + limit - 1})...`);
+                // AIparse should return ParsedCourseForCompiler[]
+                parsedData = await AIparse(dataToParse);
+                if (!parsedData) throw new Error(`AI Parsing failed.`);
+                parsedData = parsedData.filter(p => p != null);
+                await fs.writeFile(parsedDataPath, JSON.stringify(parsedData, null, 2));
+                console.log(`✅ Parsed ${parsedData.length} courses to ${parsedDataPath}`);
+            }
+        } else { /* ... skip message ... */ }
 
-        // For later: Add saving to DB functionality
+        if (parsedData.length === 0) parsedData = await fs.readFile(parsedDataPath, 'utf-8')
+            .then(data => JSON.parse(data) as Course[]);
 
-      
+        // 3. Insert Data into Database
+        const parsedFileExists = await checkFileExists(parsedDataPath);
+        if (!parsedFileExists) { /* ... skip message ... */ }
+        else if (await getConfirmationInput("Database Insertion")) {
+            console.log(`\n[3/3] Saving data from ${parsedDataPath} to Database...`);
+            const saveResult = await saveCoursesToDB(department); // Call imported function
+            if (!saveResult.success) console.warn(`⚠️ Database save finished with ${saveResult.failed} errors.`);
+            else console.log(`✅ Database save completed successfully.`);
+        } else { /* ... skip message ... */ }
+
+        console.log("\n--- Pipeline Complete ---");
+
     } catch (error) {
-        console.error("\n--- An Error Occurred ---");
-        if (department) {
-            console.error(`Processing failed for department: ${department}`);
-        }
-        if (error instanceof Error) {
-            console.error("Error Message:", error.message);
-            console.error("Stack Trace:", error.stack);
-        } else {
-            console.error("Unknown Error:", error);
-        }
+        console.error("\n--- ❌ Pipeline Error ---");
+        if (department) console.error(`  Department: ${department}`);
+        console.error("  Error:", error instanceof Error ? error.message : error);
     } finally {
-        console.log("\nData collection process finished.");
+        console.log("\nData collection script finished.");
     }
 }
 
-
-(async () => {
-    await runDataCollection();
-})();
+// --- Execute ---
+runDataCollection().catch(e => {
+    console.error("❌ Critical error running data compiler:", e);
+    process.exit(1);
+});

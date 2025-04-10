@@ -43,6 +43,8 @@ interface CourseResultDisplayProps {
     corequisiteForCourses?: Pick<Course, 'id' | 'department' | 'courseCode' | 'title'>[];
 }
 
+const app_url = "https://apps.ualberta.ca"
+
 export function CourseResultDisplay({
     targetCourse,
     graphNodes,
@@ -179,7 +181,7 @@ export function CourseResultDisplay({
                      
                      {targetCourse.url ? (
                          <div>
-                             <Link href={targetCourse.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-[#606c5d] hover:underline">
+                             <Link href={app_url+targetCourse.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-[#606c5d] hover:underline">
                                  View on UAlberta Catalogue <ExternalLink className="ml-1 h-3 w-3" />
                              </Link>
                          </div>

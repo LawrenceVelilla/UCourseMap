@@ -7,14 +7,14 @@ export interface Course {
     courseCode: string;
     title: string;
     units: { // Be more specific if possible
-      credits?: number;
-      feeIndex?: number;
-      term?: string;
-    } | null;
-    parsedDescription: string | null;
-    requirements: RequirementsData | null;
-    flattenedPrerequisites: string[] | null;
-    flattenedCorequisites: string[] | null;
+      credits: number;
+      feeIndex: number;
+      term: string;
+    };
+    keywords: string[];
+    requirements: RequirementsData;
+    flattenedPrerequisites: string[] | [];
+    flattenedCorequisites: string[] | [];
     url: string | null;
     updatedAt: string; // ISO String date
   }
@@ -23,12 +23,12 @@ export interface RawCourse {
     courseCode: string;
     title: string;
     units: { // Be more specific if possible
-      credits?: number;
-      feeIndex?: number;
-      term?: string;
-    } | null;
+      credits: number;
+      feeIndex: number;
+      term: string;
+    };
     description: string | null;
-    url: string | null;
+    url: string;
 }
 
 export function isRequirementsData(req: unknown | null | undefined): req is RequirementsData {
@@ -61,9 +61,37 @@ export interface RequirementCondition {
 }
   
 export interface ParsedCourseData {
-    description: string;
+    keywords: string[];
     requirements: RequirementsData
     flattenedPrerequisites: string[];
     flattenedCorequisites: string[];
   }
 
+// --- Graph Related Types (Optional - can be colocated) ---
+// Data associated with each node in the graph component
+export interface GraphNodeData {
+  label: string;      // Text displayed on the node (course code or requirement text)
+  isCourse: boolean;  // Distinguishes course nodes from text requirement nodes
+  type: 'target' | 'prerequisite' | 'text_requirement'; // For styling/logic
+}
+
+// Structure expected by React Flow for nodes
+export interface InputNode {
+  id: string;              // Unique ID (course code or generated ID for text nodes)
+  type?: string;           // React Flow node type (e.g., 'default', or custom types)
+  data: GraphNodeData;     // The custom data associated with the node
+  position?: { x: number; y: number }; // Optional: Initial position (Dagre usually handles this)
+  style?: React.CSSProperties;         // Optional: Inline styles
+}
+
+// Structure expected by React Flow for edges
+export interface AppEdge {
+  id: string;              // Unique edge ID
+  source: string;          // ID of the source node
+  target: string;          // ID of the target node
+  animated?: boolean;      // Optional: Animate the edge
+  style?: React.CSSProperties; // Optional: Inline styles (e.g., for level coloring)
+  data?: { depth?: number }; // Optional: Data associated with edge (like depth)
+  // Add other React Flow edge props if needed
+}
+// --- End Graph Types ---

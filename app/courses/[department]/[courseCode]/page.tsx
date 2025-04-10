@@ -6,17 +6,10 @@ import { CourseInfoWrapper } from '@/components/courseInfoWrapper'; // Re-use th
 import { CourseInfoSkeleton } from '@/components/ui/courseInfoSkeleton'; // Re-use the skeleton
 
 // Define the expected params shape
-interface CoursePageParams {
-    department: string;
-    courseCode: string;
-  }
-  
+
 
 // Use the correct props interface
-export default async function DedicatedCoursePage({ params }:
-    {
-        params: CoursePageParams; // Expecting department and courseCode in params
-    }) {
+export default async function DedicatedCoursePage({ params }: any) {
     const { department, courseCode } = params;
     const isValidParams = !!department && !!courseCode && typeof department === 'string' && typeof courseCode === 'string';
 

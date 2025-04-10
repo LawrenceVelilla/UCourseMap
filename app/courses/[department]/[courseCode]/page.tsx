@@ -12,17 +12,18 @@ import { CourseInfoSkeleton } from '@/components/ui/courseInfoSkeleton'; // Re-u
 >>>>>>> 2f8510a (Fixed parsing issues, and Implemented new UI version(BENTO))
 
 // Define the expected params shape
-interface DedicatedCoursePageProps {
-    params: {
-        department?: string;
-        courseCode?: string;
-    };
-    // searchParams are not typically used directly on dynamic route pages like this
-}
+interface CoursePageParams {
+    department: string;
+    courseCode: string;
+  }
+  
 
 // Use the correct props interface
-export default async function DedicatedCoursePage({ params }: DedicatedCoursePageProps) {
-    const { department, courseCode } = await params;
+export default async function DedicatedCoursePage({ params }:
+    {
+        params: CoursePageParams; // Expecting department and courseCode in params
+    }) {
+    const { department, courseCode } = params;
     const isValidParams = !!department && !!courseCode && typeof department === 'string' && typeof courseCode === 'string';
 
 <<<<<<< HEAD

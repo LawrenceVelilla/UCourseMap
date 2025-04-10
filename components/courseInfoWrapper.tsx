@@ -79,7 +79,7 @@ export async function CourseInfoWrapper({ department, code }: CourseInfoWrapperP
         return ( <Alert variant="destructive" className="mt-6"> <AlertTitle>Error Fetching Data</AlertTitle> <AlertDescription>{fetchError}</AlertDescription> </Alert> );
     }
     if (notFoundError) {
-         return ( <Alert variant="default" className="mt-6 bg-yellow-100 border-yellow-300 text-yellow-800"> <AlertTitle>Course Not Found</AlertTitle> <AlertDescription>The course {targetCourseCode} could not be found.</AlertDescription> </Alert> );
+         return ( <Alert variant="default" className="mt-6 backdrop-blur-md border-[#283618] text-[#283618] text-center text-wrap"> <AlertTitle>Course Not Found</AlertTitle> <AlertDescription>The course {targetCourseCode} could not be found.</AlertDescription> </Alert> );
     }
     // Ensure we have necessary data after error checks
     if (!displayCourseData?.targetCourse || !recursiveGraphData) {
@@ -164,7 +164,7 @@ export async function CourseInfoWrapper({ department, code }: CourseInfoWrapperP
                         type: 'text_requirement'
                     },
                     // Define style for text nodes (adjust as needed)
-                    style: { background: '#fffbdd', border: '1px dashed #e6db74', fontSize: '12px', fontStyle: 'italic', padding: '8px 12px', textAlign: 'center', minHeight: '45px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '4px' }
+                    style: { background: '#fefae0', border: '1px dashed #bc6c25', fontSize: '12px', fontStyle: 'italic', padding: '8px 12px', textAlign: 'center', minHeight: '45px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '4px' }
                 });
                 addedGraphNodeIds.add(textNodeId); // Track that this text node ID has been added
             }

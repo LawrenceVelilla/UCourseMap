@@ -18,8 +18,8 @@ export function Footer({ className }: FooterProps) {
       <div className="container mx-auto flex flex-col items-center justify-center space-y-4">
         <div>
           <p>© {new Date().getFullYear()} UniPlanner. Created by Lawrence Velilla.</p>
-          <p>All rights reserved. This is a personal project and not affiliated with the University of Alberta.
-          Data collected from the University of Alberta Course Catalogue.</p>
+          <p>This is a personal project and not affiliated with the University of Alberta.
+          Data collected from the University of Alberta Course Catalogue, and all Data rights belong to the UofA.</p>
         </div>
       
         <div className="flex items-center space-x-4">

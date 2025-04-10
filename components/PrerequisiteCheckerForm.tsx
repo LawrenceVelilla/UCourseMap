@@ -1,19 +1,20 @@
-'use client'
+// components/PrerequisiteCheckerForm.tsx
+'use client';
 
-import { useState, FormEvent, useEffect } from 'react';
+import React, { useState, FormEvent, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { HelpCircle } from "lucide-react";
+import { Alert, AlertDescription } from "@/components/ui/alert"; // Simplified Alert usage
+import { HelpCircle, Search } from "lucide-react"; // Added Search icon
 
-// Helper function to parse course code (simple example)
+// Helper function to parse course code string
 function parseCourseCode(input: string): { dept: string; code: string } | null {
     const trimmedInput = input.trim().toUpperCase();
-    // Matches patterns like "CMPUT 272", "MATH 100", "STAT 151A" etc.
+    // Matches patterns like "DEPT 123", "DEPT123", "DEPT 123A", "DEPT123A"
     const match = trimmedInput.match(/^([A-Z]+)\s*(\d+[A-Z]*)$/);
     if (match && match[1] && match[2]) {
-        return { dept: match[1], code: match[2] };
+        return { dept: match[1], code: match[2] }; // Keep case as parsed (uppercase)
     }
     return null;
 }
@@ -21,75 +22,88 @@ function parseCourseCode(input: string): { dept: string; code: string } | null {
 
 export function PrerequisiteCheckerForm() {
     const router = useRouter();
-    const searchParams = useSearchParams(); // Get current search params
+    const searchParams = useSearchParams();
 
-    // Initialize state from URL params if they exist, otherwise empty
-    const initialDept = searchParams.get('dept') || '';
-    const initialCode = searchParams.get('code') || '';
+    // Initialize state from URL params for persistence on reload/navigation
+    const initialDept = searchParams.get('dept');
+    const initialCode = searchParams.get('code');
     const [inputValue, setInputValue] = useState(
         initialDept && initialCode ? `${initialDept.toUpperCase()} ${initialCode}` : ''
     );
     const [parseError, setParseError] = useState<string | null>(null);
 
-    // Effect to update input if URL changes (e.g., browser back/forward)
+    // Effect to update input if URL changes externally (e.g., browser back/forward)
      useEffect(() => {
-        const dept = searchParams.get('dept');
-        const code = searchParams.get('code');
-        setInputValue(dept && code ? `${dept.toUpperCase()} ${code}` : '');
-        setParseError(null); // Clear error on navigation
-    }, [searchParams]);
+        const currentDept = searchParams.get('dept');
+        const currentCode = searchParams.get('code');
+        // Only update input if it differs from URL, prevents overriding user typing
+        const urlValue = currentDept && currentCode ? `${currentDept.toUpperCase()} ${currentCode}` : '';
+        if (inputValue !== urlValue) {
+            setInputValue(urlValue);
+        }
+        setParseError(null); // Clear error on navigation change
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [searchParams]); // Rerun only when searchParams object changes
 
 
     const handleCheck = (event?: FormEvent) => {
-        if (event) event.preventDefault(); // Prevent default form submission if used
-        setParseError(null); // Clear previous errors
+        if (event) event.preventDefault();
+        setParseError(null);
 
         const parsed = parseCourseCode(inputValue);
 
         if (!parsed) {
-            setParseError('Invalid format. Please use format like "DEPT CODE" (e.g., "CMPUT 272").');
+            setParseError('Invalid format. Use "DEPT CODE" (e.g., "CMPUT 272").');
             return;
         }
 
-        // Construct the new URL with search parameters
+        // Construct new search parameters using lowercase dept for URL consistency
         const params = new URLSearchParams();
-        params.set('dept', parsed.dept.toLowerCase()); // Use lowercase for consistency in URL
-        params.set('code', parsed.code);
+        params.set('dept', parsed.dept.toLowerCase());
+        params.set('code', parsed.code); // Use code as parsed (usually number + optional letter)
         const newPath = `/?${params.toString()}`;
 
-        // Use router.push for client-side navigation
+        // Use router.push for client-side navigation which triggers Server Component refetch
         router.push(newPath);
     };
 
+    // Determine if the example tip should be shown (only if no search active)
+    const showExampleTip = !initialDept && !initialCode;
+
     return (
-        <form onSubmit={handleCheck}> {/* Use onSubmit for better accessibility (allows Enter key) */}
-             <div className="space-y-4">
-                <div className="flex gap-2">
-                    <Input
-                        placeholder="Enter course code (e.g., CMPUT 272)"
-                        className="flex-1"
-                        value={inputValue}
-                        onChange={(e) => setInputValue(e.target.value)}
-                        aria-label="Course Code Input"
-                    />
-                    <Button type="submit" className="bg-[#606c5d] hover:bg-[#4a5349]">Check</Button>
-                </div>
-
-                {/* Display parsing error if any */}
-                 {parseError && (
-                    <Alert variant="destructive">
-                         <AlertDescription>{parseError}</AlertDescription>
-                    </Alert>
-                )}
-
-                <Alert className="bg-[#f0f0e8] border-[#606c5d]">
-                    <HelpCircle className="h-4 w-4" />
-                    <AlertTitle>Example Search</AlertTitle>
-                    <AlertDescription>
-                        Try searching for "CMPUT 272" or "MATH 125" to see prerequisite information.
-                    </AlertDescription>
-                </Alert>
+        <form onSubmit={handleCheck} className="space-y-3">
+            {/* Input with integrated button */}
+            <div className="relative flex items-center">
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+                <Input
+                    placeholder="Enter course code (e.g., CMPUT 272)"
+                    className="pl-9 pr-20 h-10 rounded-md border-[#d1d5db] focus-visible:ring-[#606c5d]" // Adjusted styling
+                    value={inputValue}
+                    onChange={(e) => setInputValue(e.target.value)}
+                    aria-label="Course Code Input"
+                />
+                <Button
+                    type="submit"
+                    className="absolute right-1 top-1/2 transform -translate-y-1/2 h-8 rounded-md px-4 bg-[#606c5d] hover:bg-[#4a5349] text-xs font-medium"
+                >
+                    Check
+                </Button>
             </div>
+
+            {/* Display parsing error if any */}
+             {parseError && (
+                <Alert variant="destructive" className="text-xs">
+                     <AlertDescription>{parseError}</AlertDescription>
+                </Alert>
+            )}
+
+            {/* Example Tip (conditionally rendered) */}
+            {showExampleTip && (
+                 <div className="text-xs text-gray-500 flex items-center gap-1.5 mt-1 pl-1">
+                     <HelpCircle className="h-3.5 w-3.5" />
+                     <span>Try searching for "CMPUT 272" or "MATH 125"</span>
+                 </div>
+            )}
         </form>
     );
 }

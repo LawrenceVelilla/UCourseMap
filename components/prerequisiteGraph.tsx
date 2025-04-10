@@ -54,7 +54,7 @@ const prereqNodeStyle: React.CSSProperties = {
     background: '#f0f0e8', color: '#333', border: '1px solid #d1d1c4', borderRadius: '4px', width: nodeWidth, padding: '8px 12px', textAlign: 'center', fontSize: '14px', height: nodeHeight, display: 'flex', alignItems: 'center', justifyContent: 'center'
 };
 const textNodeStyle: React.CSSProperties = {
-    background: '#fffbdd', border: '1px dashed #e6db74', borderRadius: '4px', width: nodeWidth, padding: '8px 12px', textAlign: 'center', fontSize: '12px', fontStyle: 'italic', height: nodeHeight, display: 'flex', alignItems: 'center', justifyContent: 'center' // Fixed height for consistent layout
+    background: '#fefae0d', border: '1px dashed #e6db74', borderRadius: '4px', width: nodeWidth, padding: '8px 12px', textAlign: 'center', fontSize: '12px', fontStyle: 'italic', height: nodeHeight, display: 'flex', alignItems: 'center', justifyContent: 'center' // Fixed height for consistent layout
 };
 
 const defaultEdgeStyle: React.CSSProperties = {

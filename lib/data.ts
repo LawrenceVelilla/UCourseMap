@@ -4,13 +4,12 @@ import { PrismaClient, Prisma } from '@prisma/client';
 // Adjust path as necessary
 import { Course, isRequirementsData, RequirementsData, InputNode, AppEdge } from './types';
 import { cache } from 'react';
+const globalForPrisma = global as unknown as { prisma: PrismaClient };
 
-const prisma = new PrismaClient();
+export const prisma = globalForPrisma.prisma || new PrismaClient();
 
-/**
- * Helper function to parse "DEPT CODE" string into components.
- * Returns null if parsing fails. Case-insensitive.
- */
+if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma;
+
 function parseCourseString(courseString: string): { department: string; codeNumber: string } | null {
     if (!courseString) return null;
     const trimmedInput = courseString.trim().toUpperCase();

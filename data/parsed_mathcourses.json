@@ -2342,7 +2342,9 @@
               "MATH 227",           
               "MATH 228"
             ]
-        },
+          },
+
+      
       "corequisites": {
         "operator": "AND",
         "conditions": []

@@ -8,23 +8,18 @@
       "feeIndex": 6,
       "term": "EITHER, 3-1S-3/2"
     },
-    "parsedDescription": "Atoms and molecules, states of matter, chemistry of the elements.",
+    "keywords": [
+      "Atoms",
+      "Molecules",
+      "States of Matter",
+      "Chemistry",
+      "Elements"
+    ],
     "requirements": {
       "prerequisites": {
-        "operator": "OR",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "Chemistry 30"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "equivalent"
-            ]
-          }
+        "operator": "STANDALONE",
+        "courses": [
+          "Chemistry 30"
         ]
       },
       "corequisites": {
@@ -34,12 +29,11 @@
       "notes": ""
     },
     "flattenedPrerequisites": [
-      "Chemistry 30",
-      "equivalent"
+      "Chemistry 30"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/101",
-    "updatedAt": "2025-04-05T19:44:10.004Z"
+    "updatedAt": "2025-04-09T05:19:29.330Z"
   },
   {
     "department": "CHEM",
@@ -50,7 +44,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-1S-3/2"
     },
-    "parsedDescription": "Rates of reactions, thermodynamics and equilibrium, electro-chemistry, modern applications of chemistry.",
+    "keywords": [
+      "Rates of Reactions",
+      "Thermodynamics",
+      "Equilibrium",
+      "Electro-Chemistry",
+      "Modern Applications"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -81,7 +81,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/102",
-    "updatedAt": "2025-04-05T19:44:12.099Z"
+    "updatedAt": "2025-04-09T05:19:32.047Z"
   },
   {
     "department": "CHEM",
@@ -92,7 +92,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-1S-3/2"
     },
-    "parsedDescription": "Atoms and molecules, states of matter, chemistry of the elements.",
+    "keywords": [
+      "Atoms",
+      "Molecules",
+      "States of Matter",
+      "Chemistry",
+      "Engineering"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -111,7 +117,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/103",
-    "updatedAt": "2025-04-05T19:44:14.194Z"
+    "updatedAt": "2025-04-09T05:19:34.625Z"
   },
   {
     "department": "CHEM",
@@ -122,7 +128,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-3/2"
     },
-    "parsedDescription": "Rates of reactions, thermodynamics and equilibrium, electrochemistry, modern applications of chemistry.",
+    "keywords": [
+      "Rates of Reactions",
+      "Thermodynamics",
+      "Equilibrium",
+      "Electrochemistry",
+      "Modern Applications"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -153,7 +165,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/105",
-    "updatedAt": "2025-04-05T19:44:16.418Z"
+    "updatedAt": "2025-04-09T05:19:38.232Z"
   },
   {
     "department": "CHEM",
@@ -164,7 +176,13 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-4"
     },
-    "parsedDescription": "Principles, methods, and experimental applications emphasizing solution phase equilibria, titrimetry, volumetric laboratory skills, evaluation of experimental data, and applications of electrochemistry to analytical measurements. Includes examples of organic and inorganic analyses.",
+    "keywords": [
+      "Principles",
+      "Methods",
+      "Experimental Applications",
+      "Electrochemistry",
+      "Analytical Measurements"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -183,7 +201,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/211",
-    "updatedAt": "2025-04-05T19:44:18.732Z"
+    "updatedAt": "2025-04-09T05:19:40.377Z"
   },
   {
     "department": "CHEM",
@@ -194,7 +212,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-4"
     },
-    "parsedDescription": "A continuation of CHEM 211 emphasizing the principles, methods, and experimental applications of separation techniques, atomic and molecular optical spectrometry, mass spectrometry, and evaluation of experimental data. Includes examples of organic and inorganic analyses and use of the analytical literature.",
+    "keywords": [
+      "Separation Techniques",
+      "Optical Spectrometry",
+      "Mass Spectrometry",
+      "Experimental Data",
+      "Analytical Literature"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -213,7 +237,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/213",
-    "updatedAt": "2025-04-05T19:44:21.095Z"
+    "updatedAt": "2025-04-09T05:19:45.391Z"
   },
   {
     "department": "CHEM",
@@ -224,7 +248,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-3"
     },
-    "parsedDescription": "The chemistry of main-group elements including a survey of the structure, bonding, and reactivity of their compounds. Transition-metal chemistry will be introduced. The course will include applications in industrial, biochemical, environmental, and materials science.",
+    "keywords": [
+      "Chemistry",
+      "Main-Group Elements",
+      "Transition-Metal Chemistry",
+      "Reactivity",
+      "Applications"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -257,7 +287,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/241",
-    "updatedAt": "2025-04-05T19:44:23.822Z"
+    "updatedAt": "2025-04-09T05:19:50.614Z"
   },
   {
     "department": "CHEM",
@@ -268,24 +298,22 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-3"
     },
-    "parsedDescription": "The correlation of structure and chemical bonding in carbon compounds with the physical properties and chemical reactivity of organic molecules. Discussion will be based on functional groups with emphasis on hydrocarbons and derivatives that contain halogens, oxygen, sulfur, and the hydroxy group. Introduction to stereochemistry, three dimensional structure, reaction mechanisms, especially addition to double bonds, nucleophilic substitution and elimination reactions.",
+    "keywords": [
+      "Organic Chemistry",
+      "Chemical Bonding",
+      "Functional Groups",
+      "Stereochemistry",
+      "Reaction Mechanisms"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "CHEM 101"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
+        "courses": [
+              "CHEM 101",
               "CHEM 103"
             ]
-          }
-        ]
+          
+        
       },
       "corequisites": {
         "operator": "AND",
@@ -299,7 +327,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/261",
-    "updatedAt": "2025-04-05T19:44:27.831Z"
+    "updatedAt": "2025-04-09T05:19:54.095Z"
   },
   {
     "department": "CHEM",
@@ -310,7 +338,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-3"
     },
-    "parsedDescription": "Continuation of the structural and chemical properties of the basic functional groups of organic compounds including alkynes, aromatic compounds, aldehydes, ketones, carboxylic acids and their derivatives and amines. Illustration of these functional groups in natural products such as carbohydrates, amino acids and proteins, nucleic acids and lipids. Discussion of the application of spectroscopic methods for the structure determination in simple organic molecules.",
+    "keywords": [
+      "Organic Compounds",
+      "Functional Groups",
+      "Spectroscopic Methods",
+      "Natural Products",
+      "Structure Determination"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -345,7 +379,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/263",
-    "updatedAt": "2025-04-05T19:44:31.516Z"
+    "updatedAt": "2025-04-09T05:19:59.219Z"
   },
   {
     "department": "CHEM",
@@ -356,23 +390,19 @@
       "feeIndex": 6,
       "term": "EITHER, 3-1.5S-0"
     },
-    "parsedDescription": "A remote delivery offering that emphasizes the correlation of structure and chemical bonding in carbon compounds with the physical properties and chemical reactivity of organic molecules. Discussion will be based on functional groups with emphasis on hydrocarbons and derivatives that contain halogens, oxygen, sulfur, and the hydroxy group. Introduction to stereochemistry, three-dimensional structure, reaction mechanisms, especially addition to double bonds, nucleophilic substitution and elimination reactions. Seminars will emphasize virtual laboratory techniques and online workshops for IR spectroscopy and stereochemistry.",
+    "keywords": [
+      "Organic Chemistry",
+      "Chemical Bonding",
+      "Stereochemistry",
+      "Reaction Mechanisms",
+      "Functional Groups"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "CHEM 101"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "CHEM 103"
-            ]
-          }
+        "courses": [
+          "CHEM 101",
+          "CHEM 103"
         ]
       },
       "corequisites": {
@@ -387,7 +417,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/264",
-    "updatedAt": "2025-04-05T19:44:36.229Z"
+    "updatedAt": "2025-04-09T05:20:02.743Z"
   },
   {
     "department": "CHEM",
@@ -398,24 +428,20 @@
       "feeIndex": 6,
       "term": "EITHER, 3-1.5S-0"
     },
-    "parsedDescription": "A remote delivery offering that is a continuation of the structural and chemical properties of the basic functional groups of organic compounds including alkynes, aromatic compounds, aldehydes, ketones, carboxylic acids and their derivatives and amines. Illustration of these functional groups in natural products such as carbohydrates, amino acids and proteins, nucleic acids and lipids. Discussion of the application of spectroscopic methods for the structure determination in simple organic molecules. Seminars will emphasize the virtual application of laboratory techniques in standard organic reactions, as well as online workshops for NMR and structure determination.",
+    "keywords": [
+      "Organic Compounds",
+      "Functional Groups",
+      "Spectroscopic Methods",
+      "Natural Products",
+      "Laboratory Techniques"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "CHEM 261"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
+        "courses": [
+              "CHEM 261",                              
               "CHEM 264"
-            ]
-          }
-        ]
+            ]                  
       },
       "corequisites": {
         "operator": "AND",
@@ -429,7 +455,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/265",
-    "updatedAt": "2025-04-05T19:44:40.527Z"
+    "updatedAt": "2025-04-09T05:20:05.771Z"
   },
   {
     "department": "CHEM",
@@ -440,24 +466,18 @@
       "feeIndex": null,
       "term": null
     },
-    "parsedDescription": "A credit/no-credit course designed to complement lecture material covered in CHEM 264. This course will emphasize important laboratory skills for the purification and characterization of organic compounds.",
+    "keywords": [
+      "Laboratory Skills",
+      "Organic Compounds",
+      "Purification",
+      "Characterization",
+      "CHEM 264"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "CHEM 101"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "CHEM 103"
-            ]
-          }
-        ]
+        "courses": [
+              "CHEM 101","CHEM 103"]
       },
       "corequisites": {
         "operator": "OR",
@@ -480,7 +500,7 @@
       "CHEM 264"
     ],
     "url": "/catalogue/course/chem/266",
-    "updatedAt": "2025-04-05T19:44:44.419Z"
+    "updatedAt": "2025-04-09T05:20:10.866Z"
   },
   {
     "department": "CHEM",
@@ -491,40 +511,37 @@
       "feeIndex": null,
       "term": null
     },
-    "parsedDescription": "A credit/no-credit course designed to complement lecture material covered in CHEM 265. This course will emphasize synthetic chemistry and practical applications of the laboratory skills learned in CHEM 266, as well as introduce spectroscopic analysis and structure determination.",
+    "keywords": [
+      "Synthetic Chemistry",
+      "Laboratory Skills",
+      "Spectroscopic Analysis",
+      "Structure Determination",
+      "CHEM 265"
+    ],
     "requirements": {
       "prerequisites": {
-        "operator": "AND",
-        "conditions": [
-          {
-            "operator": "OR",
-            "courses": [
-              "CHEM 261",
-              "CHEM 266"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "CHEM 265"
-            ]
-          }
-        ]
+        "operator": "OR",
+        "courses":[
+              "CHEM 261","CHEM 266"
+            ]        
       },
       "corequisites": {
-        "operator": "AND",
-        "conditions": []
+        "operator": "STANDALONE",
+        "courses": [
+          "CHEM 265"
+        ]
       },
       "notes": "(i) CHEM 267 is a requirement for higher level chemistry courses. (ii) Students who have obtained credit for CHEM 263 cannot take CHEM 267 for credit except by department recommendation."
     },
     "flattenedPrerequisites": [
       "CHEM 261",
-      "CHEM 266",
+      "CHEM 266"
+    ],
+    "flattenedCorequisites": [
       "CHEM 265"
     ],
-    "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/267",
-    "updatedAt": "2025-04-05T19:44:48.273Z"
+    "updatedAt": "2025-04-09T05:20:14.884Z"
   },
   {
     "department": "CHEM",
@@ -535,7 +552,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-4"
     },
-    "parsedDescription": "An introduction to the quantum view of nature with applications to atomic and molecular structure. Methods to describe the quantum world are introduced, used to describe the electronic structure of simple model systems, and applied to the hydrogen atom, many-electron atoms, simple diatomic molecules, and polyatomic molecules. The laboratory portion of the course consists of applications enriching and illustrating the lecture material, and incorporates the use of computers in predicting experimental results.",
+    "keywords": [
+      "Quantum Mechanics",
+      "Atomic Structure",
+      "Molecular Structure",
+      "Laboratory Applications",
+      "Computational Methods"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -596,7 +619,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/282",
-    "updatedAt": "2025-04-05T19:44:54.970Z"
+    "updatedAt": "2025-04-09T05:20:22.358Z"
   },
   {
     "department": "CHEM",
@@ -607,16 +630,20 @@
       "feeIndex": 3,
       "term": "EITHER, 0-0-3"
     },
-    "parsedDescription": "A credit/no-credit course for supervised participation in a faculty research project. Normally taken after completion of a minimum of 30 units but not more than 60 units in a program in the Faculty of Science.",
+    "keywords": [
+      "Research Project",
+      "Faculty of Science",
+      "GPA",
+      "CHEM 101",
+      "CHEM 161"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
         "conditions": [
           {
             "operator": "STANDALONE",
-            "courses": [
-              "GPA of 2.5 or higher"
-            ]
+            "description": "GPA of 2.5 or higher"
           },
           {
             "operator": "OR",
@@ -647,7 +674,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/299",
-    "updatedAt": "2025-04-05T19:45:00.859Z"
+    "updatedAt": "2025-04-09T05:20:27.426Z"
   },
   {
     "department": "CHEM",
@@ -658,22 +685,24 @@
       "feeIndex": 3,
       "term": "FIRST, 1.5-0-0"
     },
-    "parsedDescription": "A credit/no-credit course that introduces students to the practices, environment, concepts, and other issues associated with the industrial workplace. Course includes lectures by professionals from the local chemical industry, industrial tours, and professional skills development such as resume writing and interviewing. Normally taken after completion of a minimum of 60 but not more than 90 units of course weight in a program in the Department of Chemistry. The course is offered for students in Chemistry Honors, Specialization, and Major Programs.",
+    "keywords": [
+      "Industrial Workplace",
+      "Chemical Industry",
+      "Professional Skills",
+      "Lectures",
+      "Tours"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
         "conditions": [
           {
             "operator": "STANDALONE",
-            "courses": [
-              "Satisfactory Standing"
-            ]
+            "description": "Satisfactory Standing"
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of Department"
-            ]
+            "description": "Consent of Department"
           }
         ]
       },
@@ -681,15 +710,15 @@
         "operator": "AND",
         "conditions": []
       },
-      "notes": "Other students, contact the department for consent."
+      "notes": "Normally taken after completion of a minimum of 60 but not more than 90 units of course weight in a program in the Department of Chemistry. The course is offered for students in Chemistry Honors, Specialization, and Major Programs. Other students, contact the department for consent."
     },
     "flattenedPrerequisites": [
       "Satisfactory Standing",
-      "consent of Department"
+      "Consent of Department"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/300",
-    "updatedAt": "2025-04-05T19:45:04.328Z"
+    "updatedAt": "2025-04-09T05:20:31.412Z"
   },
   {
     "department": "CHEM",
@@ -700,7 +729,13 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-0"
     },
-    "parsedDescription": "The chemistry of environmental processes. Atmospheric chemistry; thermal and photochemical reactions of atmospheric gases including oxygen, ozone, hydroxy radical, and oxides of nitrogen and sulfur. Aquatic chemistry; characterization, reactions, and equilibria of dissolved species, water purification treatments. Metals and organohalides in the environment. Risk assessment.",
+    "keywords": [
+      "Environmental Chemistry",
+      "Atmospheric Chemistry",
+      "Aquatic Chemistry",
+      "Risk Assessment",
+      "Reactions"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -731,7 +766,7 @@
               "WILDCARD",
               "CH E 243"
             ],
-            "description": "one 200-level CHEM course or CH E 243"
+            "description": "one 200-level CHEM course"
           }
         ]
       },
@@ -751,7 +786,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/303",
-    "updatedAt": "2025-04-05T19:45:10.017Z"
+    "updatedAt": "2025-04-09T05:20:35.482Z"
   },
   {
     "department": "CHEM",
@@ -762,7 +797,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-4"
     },
-    "parsedDescription": "The lecture and laboratory portions of this course will highlight sorption and phase partitioning; hydrolysis reactions; convective/diffusive transport; properties and behaviour of particles, including sedimentation, coagulation, and light scattering; and the significance of particulate matter in the atmosphere. Quantitative calculations will be emphasized. The lecture component will provide theoretical background for experiments and instrumentation used for chemical measurements. The course also includes an independent, student-designed air quality monitoring project.",
+    "keywords": [
+      "Sorption",
+      "Phase Partitioning",
+      "Transport",
+      "Particulate Matter",
+      "Air Quality Monitoring"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -804,7 +845,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/305",
-    "updatedAt": "2025-04-05T19:45:14.368Z"
+    "updatedAt": "2025-04-09T05:20:39.066Z"
   },
   {
     "department": "CHEM",
@@ -815,7 +856,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Introduction to green chemistry. The twelve principles and the metrics of green chemistry; Chemical wastes: their impact on health and the environment, and prevention; Green solvents and alternate methods that use safer chemicals; Catalysis and green catalysts; Renewable resources.",
+    "keywords": [
+      "Green Chemistry",
+      "Chemical Wastes",
+      "Safer Chemicals",
+      "Catalysis",
+      "Renewable Resources"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -834,7 +881,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/306",
-    "updatedAt": "2025-04-05T19:45:17.597Z"
+    "updatedAt": "2025-04-09T05:20:41.181Z"
   },
   {
     "department": "CHEM",
@@ -845,7 +892,13 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-4"
     },
-    "parsedDescription": "A continuation of CHEM 213 delving more deeply into advanced concepts in chemical instrumentation including separations, mass spectrometry, optical spectroscopy and electrochemistry. Concepts of signals, electronics, and data interpretation are also explored and applied in the laboratory.",
+    "keywords": [
+      "Chemical Instrumentation",
+      "Mass Spectrometry",
+      "Optical Spectroscopy",
+      "Electrochemistry",
+      "Data Interpretation"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -878,7 +931,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/313",
-    "updatedAt": "2025-04-05T19:45:23.330Z"
+    "updatedAt": "2025-04-09T05:20:43.558Z"
   },
   {
     "department": "CHEM",
@@ -889,7 +942,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-3"
     },
-    "parsedDescription": "Fundamentals of the synthesis, structure and properties of inorganic solids, thin films, and nanoscale materials, to be complemented with case studies of modern applications of inorganic materials; selected topics such as catalysis, molecular and nanoparticle-based computing, telecommunications, alternative energies, superconductivity, biomedical technologies, and information storage will be discussed. Techniques for characterization and analysis of materials on the nano and atomic level will be introduced.",
+    "keywords": [
+      "Inorganic Solids",
+      "Thin Films",
+      "Nanoscale Materials",
+      "Catalysis",
+      "Biomedical Technologies"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -908,7 +967,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/333",
-    "updatedAt": "2025-04-05T19:45:27.943Z"
+    "updatedAt": "2025-04-09T05:20:46.157Z"
   },
   {
     "department": "CHEM",
@@ -919,7 +978,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-3"
     },
-    "parsedDescription": "An extension of CHEM 241 with emphasis on the bonding, structure, and reactivity of transition-metal elements. The course will include applications in industrial, biochemical, environmental, and materials science.",
+    "keywords": [
+      "Transition-Metal Elements",
+      "Bonding",
+      "Structure",
+      "Reactivity",
+      "Chemistry"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -932,9 +997,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of Department"
-            ]
+            "description": "consent of Department"
           }
         ]
       },
@@ -950,7 +1013,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/343",
-    "updatedAt": "2025-04-05T19:45:32.138Z"
+    "updatedAt": "2025-04-09T05:20:51.031Z"
   },
   {
     "department": "CHEM",
@@ -961,7 +1024,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Introduction to chemical strategies used to analyze and manipulate biochemical systems. Topics may include chemical synthesis of biopolymers, protein-small molecule interactions, chemoenzymatic synthesis, enzyme-inhibitor kinetics, assay design, characterization of bioorganic samples, and various chemical biology methods.",
+    "keywords": [
+      "Chemical Strategies",
+      "Biochemical Systems",
+      "Biopolymers",
+      "Enzyme-Inhibitor Kinetics",
+      "Chemical Biology"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -994,7 +1063,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/351",
-    "updatedAt": "2025-04-05T19:45:40.125Z"
+    "updatedAt": "2025-04-09T05:20:57.768Z"
   },
   {
     "department": "CHEM",
@@ -1005,7 +1074,13 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-4"
     },
-    "parsedDescription": "Mechanisms and reactions of aromatic and aliphatic compounds.",
+    "keywords": [
+      "Aromatic Compounds",
+      "Aliphatic Compounds",
+      "Reactions",
+      "Mechanisms",
+      "Chemistry"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1045,7 +1120,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/361",
-    "updatedAt": "2025-04-05T19:45:42.990Z"
+    "updatedAt": "2025-04-09T05:21:03.290Z"
   },
   {
     "department": "CHEM",
@@ -1056,7 +1131,13 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-3"
     },
-    "parsedDescription": "A study of the implications of the laws of thermodynamics for transformations of matter including phase changes, chemical reactions, and biological processes. Topics include: thermochemistry; entropy change and spontaneity of processes; activity and chemical potential; chemical and phase equilibria; properties of solutions; simple one- and two-component phase diagrams. The conceptual development of thermodynamic principles from both macroscopic and molecular levels, and the application of these principles to systems of interest to chemists, biochemists, and engineers will be emphasized.",
+    "keywords": [
+      "Thermodynamics",
+      "Chemical Reactions",
+      "Phase Changes",
+      "Entropy",
+      "Equilibria"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1084,7 +1165,7 @@
         "operator": "AND",
         "conditions": []
       },
-      "notes": "This course may not be taken for credit if credit has already been received in CHEM 271. Engineering students who take this course will receive 4.5 units."
+      "notes": "This course may not be taken for credit if credit has already been received in CHEM 271."
     },
     "flattenedPrerequisites": [
       "CHEM 102",
@@ -1097,7 +1178,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/371",
-    "updatedAt": "2025-04-05T19:45:49.260Z"
+    "updatedAt": "2025-04-09T05:21:08.131Z"
   },
   {
     "department": "CHEM",
@@ -1108,7 +1189,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-3"
     },
-    "parsedDescription": "A continuation of CHEM 371 in which the physical properties of chemical systems and the dynamics and energetics of chemical processes are discussed. Topics include: colligative properties; electrochemical cells and ion activities, implications for ionic equilibria; kinetic theory and transport properties of gases and liquids; surfaces and colloid chemistry; reaction dynamics, detailed mechanisms of chemical reactions, catalysis. The emphasis will be on the development of principles of physical chemistry and their application to properties and processes of interest to chemists, biochemists, and engineers.",
+    "keywords": [
+      "Physical Chemistry",
+      "Chemical Properties",
+      "Chemical Processes",
+      "Kinetic Theory",
+      "Reaction Dynamics"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -1139,7 +1226,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/373",
-    "updatedAt": "2025-04-05T19:45:54.372Z"
+    "updatedAt": "2025-04-09T05:21:11.923Z"
   },
   {
     "department": "CHEM",
@@ -1150,7 +1237,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-2"
     },
-    "parsedDescription": "An integrated course in the quantitative and more advanced aspects of spectroscopy and its applications in chemistry. The subjects may include: absorption, emission, dichroism, vibrational and rotational spectroscopy of molecules; time-resolved spectroscopy; nuclear magnetic resonance spectroscopy; surface-specific spectroscopies. A virtual molecular spectroscopy laboratory is included that incorporates the use of computers in predicting spectra and interpreting experimental results. Lab meetings will run for 6 - 8 weeks throughout the term.",
+    "keywords": [
+      "Spectroscopy",
+      "Chemistry",
+      "Absorption",
+      "Emission",
+      "Nuclear Magnetic Resonance"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -1169,7 +1262,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/398",
-    "updatedAt": "2025-04-05T19:45:57.227Z"
+    "updatedAt": "2025-04-09T05:21:14.339Z"
   },
   {
     "department": "CHEM",
@@ -1180,7 +1273,13 @@
       "feeIndex": 3,
       "term": "EITHER, 0-0-6"
     },
-    "parsedDescription": "A credit/no-credit course for participation in a research project under the direction of a member of the Department. Students taking CHEM 401 or 403 cannot concurrently take CHEM 399. Credit for this course may be obtained up to four times.",
+    "keywords": [
+      "Research Project",
+      "Chemistry",
+      "Departmental Permission",
+      "Credit",
+      "Participation"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1204,7 +1303,7 @@
         "operator": "AND",
         "conditions": []
       },
-      "notes": ""
+      "notes": "Students taking CHEM 401 or 403 cannot concurrently take CHEM 399. Credit for this course may be obtained up to four times."
     },
     "flattenedPrerequisites": [
       "Departmental permission",
@@ -1213,7 +1312,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/399",
-    "updatedAt": "2025-04-05T19:46:00.195Z"
+    "updatedAt": "2025-04-09T05:21:18.371Z"
   },
   {
     "department": "CHEM",
@@ -1224,7 +1323,13 @@
       "feeIndex": 6,
       "term": "EITHER, 0-1S-8"
     },
-    "parsedDescription": "Introduction to methods of chemical research. Investigational work under the direction of a member of the Department. The results of the research will be submitted to the Department as a report and/or presentation which will be graded. For students in the fourth year of Chemistry Honors, Specialization, or Major Programs. Students should consult with the Course Coordinator four months prior to starting the course.",
+    "keywords": [
+      "Chemical Research",
+      "Investigational Work",
+      "Chemistry Honors",
+      "GPA",
+      "Course Coordinator"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1236,14 +1341,12 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "GPA 3.0"
-            ]
+            "description": "minimum GPA of 3.0 on all courses credited to the degree to date"
           },
           {
             "operator": "STANDALONE",
             "courses": [
-              "consent of the Course Coordinator"
+              "Consent of the Course Coordinator"
             ]
           }
         ]
@@ -1256,12 +1359,12 @@
     },
     "flattenedPrerequisites": [
       "CHEM 3[0-9]{2}",
-      "GPA 3.0",
-      "consent of the Course Coordinator"
+      "minimum GPA of 3.0 on all courses credited to the degree to date",
+      "Consent of the Course Coordinator"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/401",
-    "updatedAt": "2025-04-05T19:46:05.420Z"
+    "updatedAt": "2025-04-09T05:21:23.255Z"
   },
   {
     "department": "CHEM",
@@ -1272,7 +1375,13 @@
       "feeIndex": 6,
       "term": "EITHER, 0-1S-8"
     },
-    "parsedDescription": "Investigational work under the direction of a member of the Department. The results of the research will be submitted to the Department as a report, which will be graded. The student must also make an oral presentation of this work to the Department.",
+    "keywords": [
+      "Investigational Work",
+      "Research",
+      "Department",
+      "Report",
+      "Oral Presentation"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -1291,7 +1400,52 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/403",
-    "updatedAt": "2025-04-05T19:46:07.776Z"
+    "updatedAt": "2025-04-09T05:21:25.487Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 405",
+    "title": "Special Topics in Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "CHEM",
+      "300-level",
+      "Consent",
+      "Instructor",
+      "Course Repetition"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "WILDCARD",
+            "pattern": "CHEM 3[0-9]{2}",
+            "description": "a 300-level CHEM course"
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "consent of Instructor"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "prerequisite courses vary, depending on topic. Course may be repeated for credit, provided there is no duplication of specific topic."
+    },
+    "flattenedPrerequisites": [
+      "CHEM 3[0-9]{2}",
+      "consent of Instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/405",
+    "updatedAt": "2025-04-09T05:21:29.596Z"
   },
   {
     "department": "CHEM",
@@ -1302,7 +1456,13 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-0"
     },
-    "parsedDescription": "Optical spectroscopy and electrochemistry and principles and applications to chemical analysis. Electronic and vibrational spectroscopy for probing and monitoring chemical and biochemical systems. Electrode kinetics, mass transport, and voltammetry for electroanalysis.",
+    "keywords": [
+      "Optical Spectroscopy",
+      "Electrochemistry",
+      "Chemical Analysis",
+      "Electrode Kinetics",
+      "Voltammetry"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -1321,7 +1481,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/424",
-    "updatedAt": "2025-04-05T19:46:13.200Z"
+    "updatedAt": "2025-04-09T05:21:32.098Z"
   },
   {
     "department": "CHEM",
@@ -1332,7 +1492,13 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-0"
     },
-    "parsedDescription": "Concepts and techniques in chromatography, mass spectrometry, and chromatography/MS combinations. Examples of modern instrumentation as well as applications to chemical, biochemical, and biomedical analysis.",
+    "keywords": [
+      "Chromatography",
+      "Mass Spectrometry",
+      "Instrumentation",
+      "Chemical Analysis",
+      "Biochemical Analysis"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -1351,7 +1517,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/425",
-    "updatedAt": "2025-04-05T19:46:15.736Z"
+    "updatedAt": "2025-04-09T05:21:34.190Z"
   },
   {
     "department": "CHEM",
@@ -1362,7 +1528,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "An introduction to structure determination by single-crystal X-ray diffraction methods. Topics include X-ray diffraction, crystal symmetry, experimental methods, structure solution, refinement, crystallographic software, and interpretation of crystal structure data.",
+    "keywords": [
+      "X-ray Diffraction",
+      "Crystal Structure",
+      "Symmetry",
+      "Structure Solution",
+      "Refinement"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -1397,9 +1569,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of the instructor"
-            ]
+            "description": "consent of the instructor"
           }
         ]
       },
@@ -1418,7 +1588,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/434",
-    "updatedAt": "2025-04-05T19:46:23.747Z"
+    "updatedAt": "2025-04-09T05:21:38.650Z"
   },
   {
     "department": "CHEM",
@@ -1429,7 +1599,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Introduction to methods of synthesizing inorganic materials with control of atomic, meso- and micro-structure. Topics include sol-gel chemistry, chemical vapor deposition, solid state reactions, solid-state metathesis and high-temperature self-propagating reactions, template directed syntheses of micro and mesoporous materials, micelles and colloids, synthesis of nanoparticles and nanomaterials. Applications of these synthetic techniques to applications such as photonic materials, heterogeneous catalysts, magnetic data storage media, nanoelectronics, display technologies, alternative energy technologies, and composite materials will be discussed.",
+    "keywords": [
+      "Inorganic Materials",
+      "Synthesis",
+      "Nanoparticles",
+      "Chemical Reactions",
+      "Applications"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -1464,9 +1640,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of the instructor"
-            ]
+            "description": "consent of the instructor"
           }
         ]
       },
@@ -1485,7 +1659,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/436",
-    "updatedAt": "2025-04-05T19:46:29.995Z"
+    "updatedAt": "2025-04-09T05:21:45.714Z"
   },
   {
     "department": "CHEM",
@@ -1496,7 +1670,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "An introduction to organotransition metal chemistry. The course will deal with the synthesis, basic bonding, and reactivity of organotransition metal complexes. Topics to be covered include transition metal complexes of hydrides, phosphines, carbonyls, olefins, alkynes, polyolefins, cyclopentadienyl and related cyclic pi-ligands; metal-carbon sigma- and multiple bonds. The application of these complexes to homogeneous catalysis and to organic synthesis will be discussed when appropriate.",
+    "keywords": [
+      "Organotransition Metal Chemistry",
+      "Synthesis",
+      "Bonding",
+      "Reactivity",
+      "Catalysis"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -1525,9 +1705,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of the instructor"
-            ]
+            "description": "consent of the instructor"
           }
         ]
       },
@@ -1545,7 +1723,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/437",
-    "updatedAt": "2025-04-05T19:46:35.835Z"
+    "updatedAt": "2025-04-09T05:21:54.206Z"
   },
   {
     "department": "CHEM",
@@ -1556,44 +1734,34 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Introduction to the chemistry of extended inorganic solids. The topics covered include synthesis, symmetry, descriptive crystal chemistry, bonding, electronic band structures, characterization techniques, and phase diagrams. The correlation of structure with properties of electronic and magnetic materials will be discussed.",
+    "keywords": [
+      "Inorganic Chemistry",
+      "Synthesis",
+      "Crystal Chemistry",
+      "Bonding",
+      "Electronic Materials"
+    ],
     "requirements": {
       "prerequisites": {
-        "operator": "OR",
+        "operator": "AND",
         "conditions": [
           {
-            "operator": "AND",
-            "conditions": [
-              {
-                "operator": "STANDALONE",
-                "courses": [
-                  "CHEM 243"
-                ]
-              },
-              {
-                "operator": "WILDCARD",
-                "pattern": "CHEM 3[0-9]{2}",
-                "description": "one 300-level CHEM course"
-              }
+            "operator": "STANDALONE",
+            "courses": [
+              "CHEM 243"
             ]
           },
           {
-            "operator": "STANDALONE",
+            "operator": "OR",
             "courses": [
-              "CHEM 343"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
+              "CHEM 343",
               "CHEM 333"
             ]
           },
           {
-            "operator": "STANDALONE",
-            "courses": [
-              "consent of the instructor"
-            ]
+            "operator": "WILDCARD",
+            "pattern": "CHEM 3[0-9]{2}",
+            "description": "one 300-level CHEM course"
           }
         ]
       },
@@ -1605,14 +1773,13 @@
     },
     "flattenedPrerequisites": [
       "CHEM 243",
-      "CHEM 3[0-9]{2}",
       "CHEM 343",
       "CHEM 333",
-      "consent of the instructor"
+      "CHEM 3[0-9]{2}"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/438",
-    "updatedAt": "2025-04-05T19:46:40.570Z"
+    "updatedAt": "2025-04-09T05:22:01.330Z"
   },
   {
     "department": "CHEM",
@@ -1623,7 +1790,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "An introductory course on asymmetric catalysis. Emphasis will be on reactions catalyzed by chiral transition metal complexes, but non-metal catalyzed reactions and heterogeneous catalysis will be covered. Topics include the general principles of catalysis; mechanisms of common steps in catalytic cycles; rapid pre-equilibrium and steady-state kinetic treatments of catalytic rates; the origins of catalytic selection; and the strategies and principles of new catalyst, ligand, and reaction development. The course will include a survey of common enantioselective catalytic reactions and daily examples from ASAP articles that illustrate the principles and theories being taught in the course.",
+    "keywords": [
+      "Asymmetric Catalysis",
+      "Chiral Transition Metal Complexes",
+      "Catalytic Mechanisms",
+      "Enantioselective Reactions",
+      "Organic Chemistry"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1645,7 +1818,7 @@
         "operator": "AND",
         "conditions": []
       },
-      "notes": ""
+      "notes": "Introductory level knowledge of transition metal and organic chemistry is required."
     },
     "flattenedPrerequisites": [
       "CHEM 241",
@@ -1653,7 +1826,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/443",
-    "updatedAt": "2025-04-05T19:46:46.683Z"
+    "updatedAt": "2025-04-09T05:22:06.397Z"
   },
   {
     "department": "CHEM",
@@ -1664,23 +1837,19 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Introduction to techniques in determining the composition and structure of materials on the nanometer scale. Characterization of atomic, meso-, and microstructure of materials including impurities and defects. Major topics will include electron microscopy (transmission, scanning, and Auger) and associated spectroscopies (EDX, EELS), surface sensitive spectroscopies (e.g., XPS, AES, IR) and spectrometry (SIMS), synchrotron techniques, X-ray absorption, fluorescence and emission, and scanned probe microscopies (AFM, STM, etc.). The strengths, weaknesses, and complementarity of the techniques used will be examined via case studies on the characterization of real-world nanotechnologies, such as heterogeneous catalysts, surfaces and interfaces in semiconductor devices, organic monolayers on metals and semiconductors, nanotube- and nanowire-based electronics, and biocompatible materials.",
+    "keywords": [
+      "Nanotechnology",
+      "Materials Characterization",
+      "Electron Microscopy",
+      "Spectroscopy",
+      "Case Studies"
+    ],
     "requirements": {
       "prerequisites": {
-        "operator": "AND",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "4th year standing"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "consent of instructor"
-            ]
-          }
+        "operator": "STANDALONE",
+        "courses": [
+          "4th year standing",
+          "consent of instructor"
         ]
       },
       "corequisites": {
@@ -1695,7 +1864,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/444",
-    "updatedAt": "2025-04-05T19:46:55.165Z"
+    "updatedAt": "2025-04-09T05:22:08.589Z"
   },
   {
     "department": "CHEM",
@@ -1706,7 +1875,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Advanced methods used to analyze and manipulate biological systems using engineered biomolecules and synthetic organic molecules. Topics may include biomolecule structure and function, enzymology, molecular biology, protein engineering, genome engineering, bioinformatic methods, inhibitor design, library screening methods, fluorescent probes, bioorthogonal chemistry, and various chemical biology methods.",
+    "keywords": [
+      "Biological Systems",
+      "Biomolecules",
+      "Enzymology",
+      "Molecular Biology",
+      "Chemical Biology"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1743,7 +1918,7 @@
       "CHEM 361"
     ],
     "url": "/catalogue/course/chem/451",
-    "updatedAt": "2025-04-05T19:46:58.499Z"
+    "updatedAt": "2025-04-09T05:22:11.827Z"
   },
   {
     "department": "CHEM",
@@ -1754,7 +1929,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Discussion of organic reactions to modify or label biopolymers including proteins, carbohydrates, and nucleic acids. Topics will include mechanistic and methodological details of commonly employed reactions used for chemoselective labeling or modification of biomolecules to produce synthetic vaccines, antibody-drug conjugates, and native chemical ligation will be discussed.",
+    "keywords": [
+      "Organic Reactions",
+      "Biopolymers",
+      "Chemoselective Labeling",
+      "Synthetic Vaccines",
+      "Antibody-Drug Conjugates"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1787,7 +1968,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/chem/454",
-    "updatedAt": "2025-04-05T19:47:02.182Z"
+    "updatedAt": "2025-04-09T05:22:14.897Z"
   },
   {
     "department": "CHEM",
@@ -1798,7 +1979,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-4"
     },
-    "parsedDescription": "Modern organic reactions and reactive intermediates. Cations, free radicals, radical ions, carbenes, metallocarbenes, arynes, and transition-metal catalysis. Mechanisms, transition-state conformational analysis and stereoelectronic effects. Diastereoselectivity. The laboratory is focused on multistep organic synthesis, featuring reactions drawn from the lecture topics.",
+    "keywords": [
+      "Organic Reactions",
+      "Reactive Intermediates",
+      "Synthesis",
+      "Mechanisms",
+      "Catalysis"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -1807,6 +1994,1034 @@
             "operator": "STANDALONE",
             "courses": [
               "Chem 361"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "Consent of instructor"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Students with credit for Chem 363 cannot take Chem 460 for credit."
+    },
+    "flattenedPrerequisites": [
+      "Chem 361",
+      "Consent of instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/460",
+    "updatedAt": "2025-04-09T05:22:17.631Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 461",
+    "title": "Qualitative Organic Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-4"
+    },
+    "keywords": [
+      "Organic Chemistry",
+      "Spectrometric Techniques",
+      "NMR Spectroscopy",
+      "Separation",
+      "Purification"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "CHEM 363",
+              "CHEM 460"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "consent of Instructor"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "CHEM 363",
+      "CHEM 460",
+      "consent of Instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/461",
+    "updatedAt": "2025-04-09T05:22:20.426Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 462",
+    "title": "Physical Organic Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Organic Chemistry",
+      "Structural Theories",
+      "Reactions",
+      "Mechanisms",
+      "Interactions"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "CHEM 363",
+              "CHEM 460"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "consent of Instructor"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "CHEM 363",
+      "CHEM 460",
+      "consent of Instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/462",
+    "updatedAt": "2025-04-09T05:22:23.189Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 463",
+    "title": "Organic Synthesis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Chemoselective Reactions",
+      "Organic Compounds",
+      "Synthesis",
+      "Asymmetric Catalysis",
+      "Transition-Metal Catalysis"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "CHEM 363",
+              "CHEM 460"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "consent of Instructor"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "CHEM 363",
+      "CHEM 460",
+      "consent of Instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/463",
+    "updatedAt": "2025-04-09T05:22:26.676Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 477",
+    "title": "Molecular Symmetry and Spectroscopy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Molecular Symmetry",
+      "Group Theory",
+      "Quantum Mechanics",
+      "Spectroscopy",
+      "Vibrational Motion"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "CHEM 282"
+                ]
+              },
+              {
+                "operator": "WILDCARD",
+                "pattern": "CHEM 3[0-9]{2}",
+                "description": "one 300-level Chemistry course"
+              }
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "consent of Instructor"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "CHEM 282",
+      "CHEM 3[0-9]{2}",
+      "consent of Instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/477",
+    "updatedAt": "2025-04-09T05:22:30.323Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 479",
+    "title": "Molecular Kinetics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Rate Laws",
+      "Reaction Mechanisms",
+      "Molecular Dynamics",
+      "Catalysis",
+      "Photochemical Reactions"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "CHEM 273",
+              "CHEM 373"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "MATH 215"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "PHYS 230"
+                ]
+              },
+              {
+                "operator": "WILDCARD",
+                "pattern": "CHEM 3[0-9]{2}",
+                "description": "a 300-level Chemistry course"
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "CHEM 273",
+      "CHEM 373",
+      "MATH 215",
+      "PHYS 230",
+      "CHEM 3[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/479",
+    "updatedAt": "2025-04-09T05:22:36.166Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 493",
+    "title": "Computational Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-2"
+    },
+    "keywords": [
+      "Computational Quantum Chemistry",
+      "GAMESS-US",
+      "UNIX",
+      "Molecular Properties",
+      "Chemical Reactions"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "CHEM 282"
+            ]
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "CHEM 3[0-9]{2}",
+            "description": "one 300-level chemistry course"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "CHEM 282",
+      "CHEM 3[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/493",
+    "updatedAt": "2025-04-09T05:22:38.999Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 495",
+    "title": "Molecular Dynamics and its Applications",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Statistical Mechanics",
+      "Molecular Dynamics",
+      "Monte Carlo Simulation",
+      "Computational Exercises",
+      "Applications"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "CHEM 282"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "CHEM 371"
+                ]
+              }
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "Consent of the instructor"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "CHEM 282",
+      "CHEM 371",
+      "Consent of the instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/495",
+    "updatedAt": "2025-04-09T05:22:41.932Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 499A",
+    "title": "Advanced Chemical Research and Training",
+    "units": {
+      "credits": 3,
+      "feeIndex": 12,
+      "term": "TWO TERM, 0-1S-10"
+    },
+    "keywords": [
+      "Research",
+      "Chemistry",
+      "Professional Development",
+      "Seminar",
+      "Exploratory Research"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "description": "4th-year standing in a Chemistry Honors, Specialization, or Major program"
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "CHEM 3[0-9]{2}",
+            "description": "two 300-level CHEM courses"
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "minimum GPA of 3.0 on all CHEM courses credited to the degree to date"
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "consent of instructor"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Students who have credit in CHEM 401 cannot take CHEM 499 for credit."
+    },
+    "flattenedPrerequisites": [
+      "4th-year standing in a Chemistry Honors, Specialization, or Major program",
+      "CHEM 3[0-9]{2}",
+      "minimum GPA of 3.0 on all CHEM courses credited to the degree to date",
+      "consent of instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/499a",
+    "updatedAt": "2025-04-09T05:22:47.542Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 499B",
+    "title": "Advanced Chemical Research and Training",
+    "units": {
+      "credits": 3,
+      "feeIndex": 12,
+      "term": "TWO TERM, 0-1S-10"
+    },
+    "keywords": [
+      "Research",
+      "Chemistry",
+      "Professional Development",
+      "Seminar",
+      "Exploratory Research"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "description": "4th-year standing in a Chemistry Honors, Specialization, or Major program"
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "CHEM 3[0-9]{2}",
+            "description": "two 300-level CHEM courses"
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "minimum GPA of 3.0 on all CHEM courses credited to the degree to date"
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "consent of instructor"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Students who have credit in CHEM 401 cannot take CHEM 499 for credit."
+    },
+    "flattenedPrerequisites": [
+      "4th-year standing in a Chemistry Honors, Specialization, or Major program",
+      "CHEM 3[0-9]{2}",
+      "minimum GPA of 3.0 on all CHEM courses credited to the degree to date",
+      "consent of instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/499b",
+    "updatedAt": "2025-04-09T05:22:55.093Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 502",
+    "title": "Departmental Research Seminar",
+    "units": {
+      "credits": 1,
+      "feeIndex": 2,
+      "term": "EITHER, 0-2S-0"
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Course may be repeated."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/502",
+    "updatedAt": "2025-04-09T05:22:56.678Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 512",
+    "title": "Optical Spectroscopy",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "FIRST, 3/2-0-0"
+    },
+    "keywords": [
+      "Optical Spectroscopy",
+      "Electromagnetic Spectrum",
+      "Instrumentation",
+      "Atomic Spectroscopy",
+      "Fluorescence"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 424."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/512",
+    "updatedAt": "2025-04-09T05:22:58.523Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 514",
+    "title": "Electrochemistry",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "FIRST, 3/2-0-0"
+    },
+    "keywords": [
+      "Electrochemistry",
+      "Potentials",
+      "Kinetics",
+      "Voltammetry",
+      "Mass Transport"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 424."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/514",
+    "updatedAt": "2025-04-09T05:23:00.761Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 515",
+    "title": "Environmental Analytical Chemistry",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "EITHER, 3/2-0-0"
+    },
+    "keywords": [
+      "Contaminants",
+      "Environmental Matrices",
+      "Analytical Instrumentation",
+      "Sample Preparation",
+      "Quality Control"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 419."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/515",
+    "updatedAt": "2025-04-09T05:23:03.221Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 516",
+    "title": "Separations",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "FIRST, 3/2-0-0"
+    },
+    "keywords": [
+      "Separations",
+      "HPLC",
+      "Intermolecular Forces",
+      "Gradient Elution",
+      "Optimization"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 425."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/516",
+    "updatedAt": "2025-04-09T05:23:05.703Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 518",
+    "title": "Mass Spectrometry",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "FIRST, 3/2-0-0"
+    },
+    "keywords": [
+      "Mass Spectrometry",
+      "Ionization Techniques",
+      "Data Systems",
+      "Applications",
+      "Sample Introduction"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 425."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/518",
+    "updatedAt": "2025-04-09T05:23:07.738Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 519",
+    "title": "Bioanalytical Chemistry",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "EITHER, 3/2-0-0"
+    },
+    "keywords": [
+      "Antibodies",
+      "Immunoassays",
+      "Biosensors",
+      "DNA Sequencing",
+      "Microscopy"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 419."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/519",
+    "updatedAt": "2025-04-09T05:23:09.989Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 534X",
+    "title": "ray Crystallography",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "X-ray Diffraction",
+      "Crystal Structure",
+      "Symmetry",
+      "Structure Solution",
+      "Refinement"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 433 or 434."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/534",
+    "updatedAt": "2025-04-09T05:23:14.087Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 536",
+    "title": "Synthesis and Applications of Inorganic and Nano-materials",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Inorganic Materials",
+      "Synthesis Methods",
+      "Nanoparticles",
+      "Chemical Reactions",
+      "Applications"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 436."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/536",
+    "updatedAt": "2025-04-09T05:23:17.619Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 537",
+    "title": "Transition Metal Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Organotransition Metal Chemistry",
+      "Synthesis",
+      "Bonding",
+      "Reactivity",
+      "Catalysis"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "consent of instructor"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 437."
+    },
+    "flattenedPrerequisites": [
+      "consent of instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/537",
+    "updatedAt": "2025-04-09T05:23:19.966Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 538",
+    "title": "Solid State Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Inorganic Chemistry",
+      "Synthesis",
+      "Crystal Chemistry",
+      "Electronic Materials",
+      "Magnetic Materials"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 438."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/538",
+    "updatedAt": "2025-04-09T05:23:21.868Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 543",
+    "title": "Asymmetric Catalysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Asymmetric Catalysis",
+      "Chiral Transition Metal Complexes",
+      "Catalytic Mechanisms",
+      "Enantioselective Reactions",
+      "Organic Chemistry"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "Introductory level knowledge of transition metal and organic chemistry"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 443 or 533."
+    },
+    "flattenedPrerequisites": [
+      "Introductory level knowledge of transition metal and organic chemistry"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/543",
+    "updatedAt": "2025-04-09T05:23:25.050Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 544",
+    "title": "Characterization Methods in Nanoscience",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Nanotechnology",
+      "Materials Characterization",
+      "Electron Microscopy",
+      "Spectroscopy",
+      "Case Studies"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 444."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/544",
+    "updatedAt": "2025-04-09T05:23:26.992Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 551",
+    "title": "Chemical Biology I",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "EITHER, 3/2-0-0"
+    },
+    "keywords": [
+      "Biological Macromolecules",
+      "Chemical Biology",
+      "Molecular Biology",
+      "Biomolecule Modification",
+      "Structure and Function"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 451."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/551",
+    "updatedAt": "2025-04-09T05:23:29.448Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 553",
+    "title": "Chemical Biology II",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "EITHER, 3/2-0-0"
+    },
+    "keywords": [
+      "Chemical Biology",
+      "Synthetic Organic Molecules",
+      "Biomacromolecules",
+      "Biological Systems",
+      "Methods"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 451."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/553",
+    "updatedAt": "2025-04-09T05:23:31.973Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 554",
+    "title": "Bioconjugate Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Organic Chemistry",
+      "Biopolymers",
+      "Bioconjugates",
+      "Synthetic Vaccines",
+      "Antibody-Drug Conjugates"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "1 year of introductory organic chemistry"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "1 term of biochemistry"
+                ]
+              }
             ]
           },
           {
@@ -1821,14 +3036,560 @@
         "operator": "AND",
         "conditions": []
       },
-      "notes": "Students with credit for Chem 363 cannot take Chem 460 for credit."
+      "notes": "Not open to students with credit in CHEM 464 or 564."
     },
     "flattenedPrerequisites": [
-      "Chem 361",
+      "1 year of introductory organic chemistry",
+      "1 term of biochemistry",
       "consent of instructor"
     ],
     "flattenedCorequisites": [],
-    "url": "/catalogue/course/chem/460",
-    "updatedAt": "2025-04-05T19:47:06.654Z"
+    "url": "/catalogue/course/chem/554",
+    "updatedAt": "2025-04-09T05:23:35.999Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 561",
+    "title": "Qualitative Organic Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-4"
+    },
+    "keywords": [
+      "Organic Chemistry",
+      "Spectrometric Techniques",
+      "NMR Spectroscopy",
+      "Separation",
+      "Purification"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 461."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/561",
+    "updatedAt": "2025-04-09T05:23:37.739Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 562",
+    "title": "Physical Organic Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Organic Chemistry",
+      "Structural Theories",
+      "Reactions",
+      "Mechanisms",
+      "Intermolecular Interactions"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 462 or 465."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/562",
+    "updatedAt": "2025-04-09T05:23:42.137Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 563",
+    "title": "Organic Synthesis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Chemoselective Reactions",
+      "Regioselective Reactions",
+      "Stereoselective Reactions",
+      "Organic Synthesis",
+      "Catalysis"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 463 or 467."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/563",
+    "updatedAt": "2025-04-09T05:23:44.088Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 577",
+    "title": "Molecular Symmetry and Spectroscopy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Molecular Symmetry",
+      "Group Theory",
+      "Quantum Mechanics",
+      "Spectroscopy",
+      "Vibrational Motion"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 477."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/577",
+    "updatedAt": "2025-04-09T05:23:45.829Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 579",
+    "title": "Molecular Kinetics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Rate Laws",
+      "Reaction Mechanisms",
+      "Catalysis",
+      "Molecular Dynamics",
+      "Photochemical Reactions"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 479."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/579",
+    "updatedAt": "2025-04-09T05:23:49.414Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 593",
+    "title": "Computational Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-2"
+    },
+    "keywords": [
+      "Computational Quantum Chemistry",
+      "GAMESS-US",
+      "UNIX",
+      "Molecular Properties",
+      "Chemical Reactions"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 493."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/593",
+    "updatedAt": "2025-04-09T05:23:51.561Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 595",
+    "title": "Molecular Dynamics and its Applications",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Statistical Mechanics",
+      "Molecular Dynamics",
+      "Simulation",
+      "Monte Carlo",
+      "Computational Exercises"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Not open to students with credit in CHEM 495."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/595",
+    "updatedAt": "2025-04-09T05:23:53.283Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 612",
+    "title": "Advanced Optical Spectroscopy",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "SECOND, 3/2-0-0"
+    },
+    "keywords": [
+      "Spectroscopy",
+      "Signal Processing",
+      "Fluorescence",
+      "Interferometers",
+      "Detectors"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "CHEM 512"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "CHEM 512"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/612",
+    "updatedAt": "2025-04-09T05:23:55.106Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 614",
+    "title": "Advanced Electrochemistry",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "SECOND, 3/2-0-0"
+    },
+    "keywords": [
+      "Electrochemistry",
+      "Microelectrode Applications",
+      "Chemical Reactions",
+      "Scanning Probe Microscopy",
+      "Voltammetry"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "CHEM 514"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "CHEM 514"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/614",
+    "updatedAt": "2025-04-09T05:23:58.103Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 616",
+    "title": "Advanced Separations",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "SECOND, 3/2-0-0"
+    },
+    "keywords": [
+      "Multidimensional Separations",
+      "Ion Chromatography",
+      "Biological HPLC",
+      "Sample Preparation",
+      "Techniques"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "CHEM 516"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "CHEM 516"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/616",
+    "updatedAt": "2025-04-09T05:24:00.053Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 618",
+    "title": "Advanced Mass Spectrometry",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "SECOND, 3/2-0-0"
+    },
+    "keywords": [
+      "Mass Analyzers",
+      "Ionization Techniques",
+      "Vacuum Systems",
+      "Mass Spectral Interpretation",
+      "Quantitative MS"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "CHEM 518"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "CHEM 518"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/618",
+    "updatedAt": "2025-04-09T05:24:07.308Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 623",
+    "title": "Special Topics in Advanced Analytical Chemistry",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "EITHER, 3/2-0-0"
+    },
+    "keywords": [
+      "Course Credit",
+      "Repetition",
+      "Specific Topic",
+      "Duplication"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Course may be repeated for credit, provided there is no duplication of specific topic."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/623",
+    "updatedAt": "2025-04-09T05:24:09.699Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 659",
+    "title": "Special Topics in Chemical Biology",
+    "units": {
+      "credits": 5,
+      "feeIndex": 3,
+      "term": "EITHER, 3/2-0-0"
+    },
+    "keywords": [
+      "Chemical Biology",
+      "Advanced Topics",
+      "Discussion",
+      "Credit",
+      "Selected Topics"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Course may be repeated for credit, provided there is no duplication of specific topic."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/659",
+    "updatedAt": "2025-04-09T05:24:11.636Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 667",
+    "title": "Special Topics in Synthetic Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Synthetic Organic Chemistry",
+      "Organic Synthesis",
+      "Carbohydrate Structure",
+      "Organometallic Methodology",
+      "Combinatorial Chemistry"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "CHEM 563"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "Consent of Instructor"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Course may be repeated for credit, provided there is no duplication of specific topic."
+    },
+    "flattenedPrerequisites": [
+      "CHEM 563",
+      "Consent of Instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/667",
+    "updatedAt": "2025-04-09T05:24:15.254Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 669",
+    "title": "Special Topics in Bio-organic Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Bio-organic Chemistry",
+      "Natural Products",
+      "Nucleic Acid Chemistry",
+      "Carbohydrate Chemistry",
+      "Secondary Metabolism"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Course may be repeated for credit, provided there is no duplication of specific topic."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/669",
+    "updatedAt": "2025-04-09T05:24:18.600Z"
+  },
+  {
+    "department": "CHEM",
+    "courseCode": "CHEM 681",
+    "title": "Special Topics in Physical Chemistry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Consent",
+      "Instructor",
+      "Course Repetition",
+      "Credit",
+      "Specific Topic"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "Consent of instructor"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Course may be repeated for credit, provided there is no duplication of specific topic."
+    },
+    "flattenedPrerequisites": [
+      "Consent of instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/chem/681",
+    "updatedAt": "2025-04-09T05:24:20.841Z"
   }
 ]

@@ -1,0 +1,62 @@
+[
+  {
+    "department": "SCI",
+    "courseCode": "SCI 101",
+    "title": "Foundations of Science",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduction to the culture, practice, and ways of thinking in science. This course will (a) emphasize the importance of the scientific approach to understanding and explaining the world, and (b) promote the discovery of the science student's role within the world. Students will engage in active and discovery-based learning. Through lectures, guided activities, and academic and real-world projects, students will gain skills and strategies of broad use in the areas of critical thinking, creative problem solving, and information literacy. Restricted to students who have completed less than 30 units.",
+    "url": "/catalogue/course/sci/101"
+  },
+  {
+    "department": "SCI",
+    "courseCode": "SCI 151A",
+    "title": "InSciTE: Scientific Inquiry and Data Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 12,
+      "term": "TWO TERM, 3-0-3"
+    },
+    "description": "This interdisciplinary science project course, which is rooted in statistical analysis and the scientific process, is the keystone course of the Interdisciplinary Science Threshold Experience (InSciTE). Students will explore connections between scientific disciplines while engaging in individual and group activities in the lecture and laboratory. This course includes both instructor and student directed projects that incorporate concepts and methods in applied statistics such as data collection and presentation, descriptive statistics, probability, sampling distributions, the central limit theorem, point estimation and hypothesis testing, correlation and regression analysis, goodness of fit and contingency table. Prerequisite: Pure Mathematics 30 or Mathematics 30-1. Credit may not be obtained for both SCI 151 and either STAT 151, PEDS 109, or SOC 210. Corequisites: CHEM 101 and MATH 117 or MATH 134 or MATH 144 in the Fall term. Enrollment is by consent of the Faculty of Science and requires formal admission to InSciTE.",
+    "url": "/catalogue/course/sci/151a"
+  },
+  {
+    "department": "SCI",
+    "courseCode": "SCI 151B",
+    "title": "InSciTE: Scientific Inquiry and Data Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 12,
+      "term": "TWO TERM, 3-0-3"
+    },
+    "description": "This interdisciplinary science project course, which is rooted in statistical analysis and the scientific process, is the keystone course of the Interdisciplinary Science Threshold Experience (InSciTE). Students will explore connections between scientific disciplines while engaging in individual and group activities in the lecture and laboratory. This course includes both instructor and student directed projects that incorporate concepts and methods in applied statistics such as data collection and presentation, descriptive statistics, probability, sampling distributions, the central limit theorem, point estimation and hypothesis testing, correlation and regression analysis, goodness of fit and contingency table. Prerequisite: Pure Mathematics 30 or Mathematics 30-1. Credit may not be obtained for both SCI 151 and either STAT 151, PEDS 109, or SOC 210. Corequisites: CHEM 101 and MATH 117 or MATH 134 or MATH 144 in the Fall term. Enrollment is by consent of the Faculty of Science and requires formal admission to InSciTE.",
+    "url": "/catalogue/course/sci/151b"
+  },
+  {
+    "department": "SCI",
+    "courseCode": "SCI 201",
+    "title": "The Scientific Process",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-1S-0"
+    },
+    "description": "This course addresses qualities of competent scientists, research ethics, the multidisciplinary approach to studies in the natural and social sciences, and types of scientific studies. As part of the course, students conduct mini-research projects to practice working through all four phases of the scientific process: planning and preparation, data collection, data analysis and interpretation, and scientific writing and presentation. Prerequisites: A minimum of C- in STAT 151 or STAT 161 and any 100-level science course.",
+    "url": "/catalogue/course/sci/201"
+  },
+  {
+    "department": "SCI",
+    "courseCode": "SCI 299",
+    "title": "Science Citizenship",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Supervised participation in a student-initiated community service learning and citizenship project. In this course, students will work in interdisciplinary groups to research and present the science underlying a global issue, as well as implement a local solution to that global issue. The course will also include a discussion of the possible career paths, ethics, culture and values of scientists. Normally taken after completion of a minimum of 30 units of course weight in a program in the Faculty of Science.",
+    "url": "/catalogue/course/sci/299"
+  }
+]

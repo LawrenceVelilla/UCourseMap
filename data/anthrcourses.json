@@ -1,0 +1,1094 @@
+[
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 101",
+    "title": "Introductory Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduction to past and present anthropological approaches through the study of human diversity.",
+    "url": "/catalogue/course/anthr/101"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 103",
+    "title": "Introductory Topics in Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Consult the department for the specific topics offered. May be repeated if topics vary.",
+    "url": "/catalogue/course/anthr/103"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 110",
+    "title": "Gender, Age, and Culture",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An anthropological review and comparison of cultures in terms of social positions based on differences in sex and age.",
+    "url": "/catalogue/course/anthr/110"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 140",
+    "title": "Anthropology of Death",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Comparative survey of beliefs and customs surrounding death and the dead in past and present human cultures. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/140"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 150",
+    "title": "Race and Racism",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The challenge of racism in modern societies and the response of anthropology, including the history of  how the 'race' concept has been used to explain human variation.",
+    "url": "/catalogue/course/anthr/150"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 206",
+    "title": "Introduction to Archaeology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 2-0-1"
+    },
+    "description": "Introduction to the nature, purposes, theory and methods of anthropological archaeology. Emphasis on principles of reconstruction of past societies from archaeological evidence and the explanation of cultural evolution.",
+    "url": "/catalogue/course/anthr/206"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 207",
+    "title": "Introduction to Social and Cultural Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 2-1S-0"
+    },
+    "description": "Comparative study of human society and culture, particularly non-Western communities, with special attention to the family, social structure, economics and political institutions, and religion; processes of change.",
+    "url": "/catalogue/course/anthr/207"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 208",
+    "title": "Introduction to Linguistic Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The anthropological study of language and communication. A brief survey of field and analytical methods and the theory of linguistic anthropology.",
+    "url": "/catalogue/course/anthr/208"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 209",
+    "title": "Introduction to Biological Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 2-0-1"
+    },
+    "description": "Survey of theory and basic data in human evolution and human variation. Topics include primatology, osteology, hominoid paleontology, variation in modern populations.",
+    "url": "/catalogue/course/anthr/209"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 219",
+    "title": "World Prehistory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A survey of the archaeological evidence for human cultural evolution.",
+    "url": "/catalogue/course/anthr/219"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 230",
+    "title": "Anthropology of Science, Technology, and Environment",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Science as a cultural practice, cultural effects and globalization of technology, changing views of nature, gender and science, traditional ecological knowledge, and the evolution of technology.",
+    "url": "/catalogue/course/anthr/230"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 235",
+    "title": "Anthropology of Disability",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Cultural variations in experiences and understandings of disability, as well as anthropological ways of analyzing and discussing disability. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/235"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 256",
+    "title": "Alberta Archaeology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduction to Alberta's past as reconstructed by archaeology.",
+    "url": "/catalogue/course/anthr/256"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 286",
+    "title": "Topics in Regional Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Consult the Department and/or the schedule of classes for the specific topics offered. Variable content course which may be repeated if topic(s) vary.",
+    "url": "/catalogue/course/anthr/286"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 287",
+    "title": "Topics in Asian Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Consult the Department and/or the schedule of classes for the specific topics offered. Variable content course which may be repeated if topic(s) vary.",
+    "url": "/catalogue/course/anthr/287"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 301",
+    "title": "Introduction to Ethnographic Methods",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Examination and practice of ethnographic research methods, including observation and interviewing, and forms of ethnographic writing. Prerequisite: ANTHR 207 (or ANTHE 207) or ANTHR 208 (or ANTHE 208) or consent of Department. Not open to students with credit in ANTHR 401.",
+    "url": "/catalogue/course/anthr/301"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 302",
+    "title": "History of Anthropological Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Major theoretical trends in social and cultural anthropology in the nineteenth and twentieth centuries. Prerequisites: ANTHR 207 or 208 (or ANTHE 207 or 208) or consent of Department. Not open to students with credit in ANTHR 415.",
+    "url": "/catalogue/course/anthr/302"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 303",
+    "title": "History of Anthropological Archaeology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A survey of the development of theory and method in anthropological archaeology. Prerequisites: ANTHR 206 or consent of Department. Offered in alternate years. Note: Not open to students with credit in ANTHR 481.",
+    "url": "/catalogue/course/anthr/303"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 304",
+    "title": "History of Biological Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A survey of the development of theory and method in biological anthropology. Prerequisites: ANTHR 209 or consent of Department. Offered in alternate years. Not open to students with credit in ANTHR 498.",
+    "url": "/catalogue/course/anthr/304"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 310",
+    "title": "The Anthropology of Gender",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A comparative cross-cultural, and cross-species perspective on biological and social aspects of sex and gender differences. Prerequisites: ANTHR 110 or 207 (or ANTHE 207) or 209 or consent of Department. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/310"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 311",
+    "title": "Archaeology of Indigenous North America",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "This course provides an archaeological perspective on the deep Indigenous histories of the lands currently known as North America and discusses how archaeology can respectfully engage with Indigenous peoples in ways that move toward decolonization. Prerequisite: ANTHR 206 or consent of Department.",
+    "url": "/catalogue/course/anthr/311"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 312",
+    "title": "Lower Palaeolithic Prehistory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Development of prehistoric culture in Europe, Africa and Asia during the Lower Palaeolithic. Prerequisite: ANTHR 206 or consent of Department. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/312"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 313",
+    "title": "Middle and Upper Palaeolithic Prehistory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Development of prehistoric culture in Europe, Africa, and Asia during the Middle and Upper Palaeolithic. Prerequisite: ANTHR 206 or consent of Department. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/313"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 318",
+    "title": "Political Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduction to modern political anthropology with emphasis on origins of state structure, relations between non-state and state societies, and problems of pluralism and stratification. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/318"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 320",
+    "title": "Anthropology of Religion",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Survey of anthropological approaches to religions and related phenomena including magic, taboo, shamanism and witchcraft. Emphasis on the connection between religious ideas and practices and other aspects of social life in a variety of cultures. Prerequisite: ANTHR 207 (or ANTHE 207) or consent of Department.",
+    "url": "/catalogue/course/anthr/320"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 321",
+    "title": "Religions of China in Practice",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Contemporary Chinese religious culture as practices in the family, community, voluntary associations, and the political sphere. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/321"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 322",
+    "title": "Anthropological Perspectives on Discursive Practices",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Cultural constructions of narrative and discourse; interethnic communication, including discourse in the courtroom, classroom, and work settings; code choice; and communication via electronic media. Prerequisite: ANTHR 208 (or ANTHE 208) or consent of Department. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/322"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 324",
+    "title": "Economic Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduction to the literature and controversies within the field, emphasizing systems of exchange. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/324"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 325",
+    "title": "Anthropology of Japan",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Exploration of anthropological writing on Japan as a case study in history of ideas and sociology of knowledge. Prerequisite: Any 200-level Anthropology course or consent of Department.",
+    "url": "/catalogue/course/anthr/325"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 332",
+    "title": "Anthropology of Science",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Contemporary views of the nature of science, including debates about science's universalism, objectives, and culture-bound epistemologies. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/332"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 333",
+    "title": "Anthropology of Time and Space",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Study of classical debates on the social/cultural inflections of time and contemporary concerns with temporalities of industrial and post-industrial ages. Prerequisite: ANTHR 207 or consent of Department.",
+    "url": "/catalogue/course/anthr/333"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 350",
+    "title": "Kinship and Social Structure",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Anthropological approaches to kinship systems and other concepts of social organization, emphasizing non-western societies. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/350"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 372",
+    "title": "Anthropology of Food",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Examination of the relationship between food and culture through historical and cross-cultural analysis of foodways. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/372"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 385",
+    "title": "Topics in Social Cultural Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Consult the Department for the specific topics offered and any recommended courses to be completed prior to registering.",
+    "url": "/catalogue/course/anthr/385"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 386",
+    "title": "Topics in Biological Anthropology or Archaeology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Consult the Department for the specific topics offered and any recommended courses to be completed prior to registering.",
+    "url": "/catalogue/course/anthr/386"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 390",
+    "title": "Human Osteology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-3"
+    },
+    "description": "Lecture and laboratory study of human skeletal biology, emphasizing the identification of bones and an understanding of human functional anatomy. Prerequisite: ANTHR 209 or consent of Department.",
+    "url": "/catalogue/course/anthr/390"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 391",
+    "title": "Hominid Evolution",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A survey of the fossil evidence for human evolution. Prerequisite: ANTHR 209 or consent of Department.",
+    "url": "/catalogue/course/anthr/391"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 393",
+    "title": "Health and Healing",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A cross-cultural study through time of the beliefs and social activities associated with health, illness and healing.",
+    "url": "/catalogue/course/anthr/393"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 396",
+    "title": "Archaeological Field Training",
+    "units": {
+      "credits": 6,
+      "feeIndex": 12,
+      "term": "SPR/SUM, 3-0-3"
+    },
+    "description": "Instruction in all practical aspects of archaeological field techniques, including excavation, survey, recording, photography, and conservation. This course can be applied to the Canadian content requirement when held at a Canadian site. Prerequisites: ANTHR 206 or equivalent, and consent of Department. Requires payment of additional student instructional support fees. Refer to the Tuition and Fees page in the University Regulations section of the Calendar.",
+    "url": "/catalogue/course/anthr/396"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 397",
+    "title": "Anthropological Field Training",
+    "units": {
+      "credits": 6,
+      "feeIndex": 12,
+      "term": "SPR/SUM, 3-0-3"
+    },
+    "description": "Practical aspects of field training in socio-cultural anthropology. Prerequisite: ANTHR 207 or equivalent, and consent of Department. Requires payment of additional student instructional support fees. Refer to the Tuition and Fees page in the University Regulations section of the Calendar.",
+    "url": "/catalogue/course/anthr/397"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 404",
+    "title": "Mortuary Archaeology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Theory and method applied to the interpretation of treatment of the dead in prehistoric and historic contexts. Prerequisite: ANTHR 206 or 209, or consent of Department.",
+    "url": "/catalogue/course/anthr/404"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 407",
+    "title": "Paleopathology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 2-0-1"
+    },
+    "description": "A detailed survey of disease processes in antiquity as expressed in skeletal and preserved tissues. Prerequisite: ANTHR 390 or consent of Department. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/407"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 411",
+    "title": "Ethnographic Field Methods",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Study of methods used in ethnographic research, with a focus on addressing methodological challenges, developing a research project, and writing a proposal. Prerequisite: ANTHR 207 (or ANTHE 207) or consent of Department.",
+    "url": "/catalogue/course/anthr/411"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 417",
+    "title": "Anthropology of Modernity",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "The course investigates recent works that theorize modernity (globalization, transnationalism, the impact of new technologies) from an ethnographic perspective. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/417"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 420",
+    "title": "Anthropology and the Twentieth Century",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The relationship between the development of anthropological theory across the twentieth century and the emergence of new social movement organized around anti-colonialism, anti-racism, feminism, ethnicity, the environment, gender, sexuality, disability, and identity. Prerequisite: ANTHR 207 (or ANTHE 207) or consent of Department. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/420"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 423",
+    "title": "Anthropological Approaches to Verbal Performance",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Attention to figurative language and rhetorics in everyday life as well as narrative forms, inlcuding myth, folklore and oral history, and to ritual language, inlcuding oratory and prayer. Prerequisite: ANTHR 207 or 208 or consent of Department.",
+    "url": "/catalogue/course/anthr/423"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 424",
+    "title": "Visual Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Introduction to visual media and visualization in the creation, reproduction and comprehension of culture over time, and the use of imagery in describing the anthropological subject. Prerequisite: consent of Department. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/424"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 425",
+    "title": "Anthropology of Art",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Review of both classical and contemporary anthropological studies of artistic expression worldwide and questions concerning art as a cultural system, its function(s) and social position. Prerequisite: Consent of Department.",
+    "url": "/catalogue/course/anthr/425"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 443",
+    "title": "Juvenile Osteology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 2-0-1"
+    },
+    "description": "Study of the juvenile skeleton, treating development and identification of juvenile skeletal elements. Other topics include the theory and practice of determining juvenile age at death and the study of juvenile health and childrearing practices in past populations using skeletal remains. Prerequisite: ANTHR 390, or consent of Department. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/443"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 464",
+    "title": "Chemical Analysis of Bone",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Survey of current research on the stable isotope and aDNA analysis of archaeological human and faunal remains. Prerequisite: ANTHR 390, or consent of Department. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/464"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 468",
+    "title": "Fundamentals of Archaeological Mapping",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Archaeological mapping and spatial analysis, including non-digital and digital forms. Students will learn the theoretical foundations of mapping as well as learn how to use mapping technology and software. Offered in alternate years. Prerequisite: ANTHR 206 or consent of Department.",
+    "url": "/catalogue/course/anthr/468"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 469",
+    "title": "Dental Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Exploration of methodological and theoretical issues in dental anthropology through study of human teeth from archaeological contexts. Offered in alternate years. Prerequisite: ANTHR 390 or consent of Department.",
+    "url": "/catalogue/course/anthr/469"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 471",
+    "title": "Readings in Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Individual research project conducted under the direction of a Department faculty member. Prerequisite: consent of Department.",
+    "url": "/catalogue/course/anthr/471"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 472",
+    "title": "Independent Research",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-0-3"
+    },
+    "description": "Individual research project involving significant laboratory work conducted under the direction of a Department faculty member. Prerequisite: consent of Department.",
+    "url": "/catalogue/course/anthr/472"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 474",
+    "title": "Northwest Coast Societies from an Anthropological Perspective",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "A survey of the cultures of the Northwest Coast from Yakutat Bay to the Columbia River. Cultures will be examined from the perspectives of the ethnographic present, historical change, and current developments. Focal areas include social structure, kinship, economic systems, material culture, ethnoaesthetics, winter dance ceremonial complexes, and language. Prerequisite: ANTHR 207 (or ANTHE 207) or 250 or consent of Department. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/474"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 476",
+    "title": "Palaeodietary Reconstruction",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Survey of methods used to reconstruct past human diets, with an emphasis on those that involve the study of human remains. Prerequisite: ANTHR 206 or 209 or consent of Department. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/476"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 480",
+    "title": "Zooarchaeology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 2-0-1"
+    },
+    "description": "Exploration of methodological and theoretical issues in zooarchaeology through the study of animal remains from archaeological contexts. Prerequisite: ANTHR 206 or consent of Department. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/480"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 484",
+    "title": "Topics in Archaeology and/or Biological Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Consult the Department for the specific topics offered and any recommended courses to be completed prior to registering.",
+    "url": "/catalogue/course/anthr/484"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 485",
+    "title": "Topics in Social, Cultural and/or Linguistic Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Consult the Department for the specific topics offered and any recommended courses to be completed prior to registering.",
+    "url": "/catalogue/course/anthr/485"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 486",
+    "title": "Seminar in Archaeology and/or Biological Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Consult the Department for the specific topics offered and any recommended courses to be completed prior to registering.",
+    "url": "/catalogue/course/anthr/486"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 487",
+    "title": "Seminar in Social, Cultural and/or Linguistic Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Consult the Department for the specific topics offered and any recommended courses to be completed prior to registering.",
+    "url": "/catalogue/course/anthr/487"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 490",
+    "title": "Human Osteoarchaeology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The analysis and interpretation of data obtained from human skeletal and dental remains from archaeological sites. Prerequisite: ANTHR 390 or consent of Department. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/490"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 491",
+    "title": "Stone Tools",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A methodological and theoretical introduction to the analysis of stone tools. Prerequisites: ANTHR 206 or consent of Department. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/491"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 494",
+    "title": "Forensic Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Human skeletal individualization and its application to human death investigation. Prerequisite: ANTHR 390 or consent of Department.",
+    "url": "/catalogue/course/anthr/494"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 495",
+    "title": "Archaeological Methods",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The application of archaeological theory and methods to field and laboratory problems. Prerequisites: ANTHR 206 or consent of Department. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/495"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 499A",
+    "title": "Honors Seminar and Research Project",
+    "units": {
+      "credits": 3,
+      "feeIndex": 12,
+      "term": "TWO TERM, 0-3S-0"
+    },
+    "description": "A review and discussion of contemporary issues in Anthropology leading to the conception, preparation, and completion of the BA Honors essay under the supervision of an individual faculty member.",
+    "url": "/catalogue/course/anthr/499a"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 499B",
+    "title": "Honors Seminar and Research Project",
+    "units": {
+      "credits": 3,
+      "feeIndex": 12,
+      "term": "TWO TERM, 0-3S-0"
+    },
+    "description": "A review and discussion of contemporary issues in Anthropology leading to the conception, preparation, and completion of the BA Honors essay under the supervision of an individual faculty member.",
+    "url": "/catalogue/course/anthr/499b"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 500",
+    "title": "MA Thesis Prospectus",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Preparation of a research proposal leading to the MA thesis. The prospectus will state the proposed research problem, and demonstrate the theoretical and methodological knowledge required to complete the research. Closed to web registration. Department consent required.",
+    "url": "/catalogue/course/anthr/500"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 501",
+    "title": "MA Colloquium",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 0-3S-0"
+    },
+    "description": "Readings, presentations, and discussions of staff research, recent advances and current issues in the four fields of anthropology. Limited to new MA students",
+    "url": "/catalogue/course/anthr/501"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 507",
+    "title": "Advanced Paleopathology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 2-0-1"
+    },
+    "description": "A detailed survey of disease processes in antiquity as expressed in skeletal and preserved tissues. Prerequisite: consent of Department. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/507"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 511",
+    "title": "Ethnographic Field Methods",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Not open to students with credit in ANTHR 401 or 505. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/511"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 517",
+    "title": "Anthropology of Modernity",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Investigates recent works that theorize modernity (globalization, transnationalism, the impact of new  technologies) from an ethnographic perspective. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/517"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 520",
+    "title": "Anthropology and the Twentieth Century",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The relationship between the development of anthropological theory across the twentieth century and the emergence of new social movements organized around anti-colonialism, anti-racism, feminism, ethnicity, the environment, gender, sexuality, disability, and identity. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/520"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 524",
+    "title": "Visual Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Introduction to visual media and visualization in the creation, reproduction and comprehension of culture over time, and the use of imagery in describing the anthropological subject. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/524"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 543",
+    "title": "Advanced Juvenile Osteology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 2-0-1"
+    },
+    "description": "Study of the juvenile skeleton, treating development and identification of juvenile skeletal elements. Other topics include the theory and practice of determining juvenile age at death and the study of juvenile health and childrearing practices in past populations using skeletal remains. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/543"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 564",
+    "title": "Advanced Chemical Analysis of Bone",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Survey of current research on the stable isotope and aDNA analysis of archaeological human and faunal remains. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/564"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 568",
+    "title": "Advanced Fundamentals of Archaeological Mapping",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "This course covers the basics of archaeological mapping and spatial analysis, including non-digital and digital forms. Students will learn the theoretical foundations of mapping as well as learn how to use mapping technology and software. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/568"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 569",
+    "title": "Advanced Dental Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Exploration of methodological and theoretical issues in dental anthropology through study of human teeth from archaeological contexts. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/569"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 571",
+    "title": "Advanced Readings in Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Individual research project conducted under the direction of a Department faculty member. Closed to web registration. Department consent required.",
+    "url": "/catalogue/course/anthr/571"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 572",
+    "title": "Independent Research",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-0-3"
+    },
+    "description": "Individual research project involving significant laboratory or field work conducted under the supervision of a Department faculty member. Closed to web registration. Department consent required.",
+    "url": "/catalogue/course/anthr/572"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 573",
+    "title": "Advanced Field Training",
+    "units": {
+      "credits": 6,
+      "feeIndex": 12,
+      "term": "SPR/SUM, 3-0-3"
+    },
+    "description": "Aspects of fieldwork in anthropology. Prerequisite: consent of Department. Requires payment of additional student instructional support fees. Refer to the Tuition and Fees page in the University Regulations section of the Calendar.",
+    "url": "/catalogue/course/anthr/573"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 576",
+    "title": "Advanced Palaeodietary Reconstruction",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Advanced survey of methods used to reconstruct past human diets, with an emphasis on those that involve the study of human remains. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/576"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 580",
+    "title": "Advanced Zooarchaeology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 2-0-1"
+    },
+    "description": "Exploration of methodological and theoretical issues in zooarchaeology through the study of animal remains from archaeological contexts. Offered in alternate years.",
+    "url": "/catalogue/course/anthr/580"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 584",
+    "title": "Advanced Topics in Archaeology and/or Biological Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Consult the Department and/or the schedule of classes for the specific topics offered.",
+    "url": "/catalogue/course/anthr/584"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 585",
+    "title": "Advanced Topics in Social, Cultural and/or Linguistic Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Consult the Department and/or the University timetable for the specific topics offered.",
+    "url": "/catalogue/course/anthr/585"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 586",
+    "title": "Advanced Seminar in Archaeology and/or Biological Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Consult the Department and/or the schedule of classes for the specific topics offered.",
+    "url": "/catalogue/course/anthr/586"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 587",
+    "title": "Advanced Seminar in Social, Cultural and/or Linguistic Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Consult the Department and/or the University timetable for the specific topics offered.",
+    "url": "/catalogue/course/anthr/587"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 589",
+    "title": "Advanced Seminar in Linguistic Anthropology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Consult the Department and/or the University timetable for the specific topics offered.",
+    "url": "/catalogue/course/anthr/589"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 598",
+    "title": "Landscape and Culture",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Cultural experiences and representations of landscape.",
+    "url": "/catalogue/course/anthr/598"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 600",
+    "title": "PhD Thesis Prospectus",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Preparation of a research proposal leading to the PhD thesis. The prospectus states the proposed research problem, and demonstrates the theoretical and methodological knowledge required to complete the research. Closed to web registration. Department consent required.",
+    "url": "/catalogue/course/anthr/600"
+  },
+  {
+    "department": "ANTHR",
+    "courseCode": "ANTHR 601",
+    "title": "PhD Colloquium",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 0-3S-0"
+    },
+    "description": "Readings, presentations, and discussions of staff research, recent advances and current issues in the four fields of anthropology. Limited to new PhD students. Optional for students with credit in ANTHR 501",
+    "url": "/catalogue/course/anthr/601"
+  }
+]

@@ -1,0 +1,1454 @@
+[
+  {
+    "department": "ECON",
+    "courseCode": "ECON 101",
+    "title": "Introduction to Microeconomics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "How markets and governments determine which products are produced and how income is distributed in the Canadian economy. Not open to students with credit in ECON 204.",
+    "url": "/catalogue/course/econ/101"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 102",
+    "title": "Introduction to Macroeconomics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Employment, inflation, international payments, monetary policy, and fiscal policy, all in the Canadian economy. Prerequisite: ECON 101 or consent of Department. Not open to students with credit in ECON 204.",
+    "url": "/catalogue/course/econ/102"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 109",
+    "title": "Basic Writing in Economics I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "The course will introduce students to basic writing in the economics discipline. The focus is on developing the ability to write clearly on economic concepts, as well as illustrating results of data analysis. ECON 109 is a prerequisite for all ECON courses at the 300- and 400-level. ECON 109 will be waived as a prerequisite upon completion of the Assessment of Reading, Comprehension, and Writing in Economics. Students who have successfully completed the Assessment of Reading, Comprehension, and Writing in Economics will not be permitted to enroll/receive credit in ECON 109. Students can contact the Department of Economics for more information about the Assessment. Prerequisite: ECON 101.",
+    "url": "/catalogue/course/econ/109"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 203",
+    "title": "Selected Topics in Economics I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Content varies from year to year. Topics announced prior to registration period. Prerequisite: ECON 101. Additional prerequisites may be required; consult the Department for further information.",
+    "url": "/catalogue/course/econ/203"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 204",
+    "title": "Principles of Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to economic principles as applied to business organization and finance; price determination; enterprise costs and output optimization; commercial and central banking; national income analysis. For students enrolled in the Faculty of Engineering only. Not open to students with credit in ECON 101 and/or 102.",
+    "url": "/catalogue/course/econ/204"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 211",
+    "title": "Chinese Economic Development",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A survey of the characteristics of and recent developments in the Chinese economy emphasizing the nature and consequences of China's economic reforms and Canada's economic relations with China. Prerequisite: ECON 101 or equivalent.",
+    "url": "/catalogue/course/econ/211"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 213",
+    "title": "An Introduction to the Economics of Developing Countries",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A survey of the major approaches to and problems of economic development in the less developed countries with particular emphasis on issues relating to savings and investment, income distribution, employment and population growth, and trade and aid. Prerequisite: ECON 101 and 102 or equivalent. Note: Not open to students with credit or enrolled in ECON 414.",
+    "url": "/catalogue/course/econ/213"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 222",
+    "title": "Technology, Institutions and Economic Growth",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Differences in technology and institutions are used to explain why some countries are richer than others; why economic growth rates differ across time and jurisdictions; and causes of convergence/divergence in cross-country growth rates. Prerequisite: ECON 101 or equivalent.",
+    "url": "/catalogue/course/econ/222"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 223",
+    "title": "Economics of Globalization",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A survey of the evolution, governance, and current state of economic globalization, including trade of goods and services, foreign direct investment, and immigration, with special attention to its relationship to global poverty reduction, inequality, environment, and populism. Prerequisite: ECON 101. Not open to students with credit or enrolled in ECON 323, ECON 421, or ECON 422.",
+    "url": "/catalogue/course/econ/223"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 225",
+    "title": "History of Economic Thought I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The development of economic thought in social and political context. Major schools of thought from Greek philosophers up to the Marxist, Classical, and Neoclassical doctrines. Prerequisites: ECON 109, ECON 101 and ECON 102.",
+    "url": "/catalogue/course/econ/225"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 226",
+    "title": "History of Economic Thought II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Analysis of the development of economic thought in the context of the social and political environments in which these doctrines developed. This analysis begins with the rise of Marginalism and the contributions of Alfred Marshall and the Neoclassicalist School. It covers Keynes and the Keynesians, the New Classicalism of Milton Friedman. The course will also examine the work of the Institutionalists such as Galbraith and the work of Walras, Hicks, and others in formalizing economics. Prerequisites: ECON 109, ECON 101 and ECON 102.",
+    "url": "/catalogue/course/econ/226"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 241",
+    "title": "Money",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Money is more than a means of exchange; its use and misuse has political, psychological, and sociological consequences. This course explores the role of money in human development through time and space. Prerequisites: ECON 101 and 102.",
+    "url": "/catalogue/course/econ/241"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 251",
+    "title": "Indigenous Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A survey of the issues in Indigenous economies and an introduction to an economics framework for evaluating social policies that address inequality. Prerequisite: ECON 101.",
+    "url": "/catalogue/course/econ/251"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 252",
+    "title": "Economics of Religion",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Critical evaluation of the rational choice model of Economics used to explain religious phenomena. Investigation of the demand and supply factors that explain extremism, the distinction between competition and regulation towards curbing religious cults, the role of club theory in explaining rigid rituals, and the impact of religion on economic development. Prerequisite ECON 101.",
+    "url": "/catalogue/course/econ/252"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 259",
+    "title": "Principles of Behavioural Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Principles of behavioural economics and its theories of decision making. The course focuses on economic experiments, including the study of traditional economic assumptions to explain and predict behaviour and to provide policy prescriptions. Prerequisite: ECON 101.",
+    "url": "/catalogue/course/econ/259"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 269",
+    "title": "Economics of the Environment",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Economic growth and the deterioration of the environment; types, causes, theory, policy, and measurement, and current Canadian environmental topics. Prerequisite: ECON 101 or equivalent. Students may not receive credit for both ECON 269 and BUEC 464. Not open to students with credit or enrolled in ECON 467.",
+    "url": "/catalogue/course/econ/269"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 273",
+    "title": "Introduction to Game Theory and Strategy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to the theory of games and strategic decision making. Examples include applications in economics and other disciplines. Emphasis is on developing an intuitive understanding of concepts and the ability to apply them in various settings of strategic interaction. Prerequisite: ECON 101. Not open to students with credit in, or enrolled in, ECON 473 or ECON 484.",
+    "url": "/catalogue/course/econ/273"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 281",
+    "title": "Intermediate Microeconomic Theory I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The theory of consumer behavior; theory of production and cost; price and output determination under competition, monopoly and other market structures. Prerequisite: ECON 101 or equivalent.",
+    "url": "/catalogue/course/econ/281"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 282",
+    "title": "Intermediate Macroeconomic Theory I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Models of price, interest rate, output, and employment determination; the impact of fiscal, monetary, and supply shocks; open economy macroeconomics with fixed and flexible exchange rates, and prices as well as international capital mobility. Prerequisite: ECON 101 and 102 or consent of Department.",
+    "url": "/catalogue/course/econ/282"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 299",
+    "title": "Quantitative Methods in Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-1"
+    },
+    "description": "Introduction to the use of statistical methods in economics with computer applications. Prerequisites: ECON 101 and 102, STAT 161 or equivalent, and MATH 154 or equivalent.",
+    "url": "/catalogue/course/econ/299"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 303",
+    "title": "Selected Topics in Economics II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Content varies from year to year. Topics announced prior to registration period. Prerequisites: ECON 109 and ECON 281. Additional prerequisites may be required; consult the department for further information.",
+    "url": "/catalogue/course/econ/303"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 323",
+    "title": "International Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A survey of the principles of international economics and the applications to economic policy. Topics include international trade in goods and financial assets, trade policy and exchange rate determination. Prerequisites: ECON 109 and ECON 281. Note: Not open to students with credit in or enrolled in ECON 421 or 422.",
+    "url": "/catalogue/course/econ/323"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 331",
+    "title": "Introduction to Labor Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduction to labor economics, supply and demand for labor, labor market equilibrium, human capital investments, compensating wage differentials, inequality, incentive pay, unemployment, and job search. Not open to students with credit in or enrolled in ECON 431. Prerequisites: ECON 109 and ECON 281.",
+    "url": "/catalogue/course/econ/331"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 334",
+    "title": "Personnel Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Microeconomic approach to personnel economics. Topics covered include selection, recruitment and training of new workers, optimal job design, and optimal compensation design. Prerequisites: ECON 109 and ECON 281.",
+    "url": "/catalogue/course/econ/334"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 341",
+    "title": "Money and Banking",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Financial intermediation, commercial banking, central banking, securities markets, and regulation of the banking and financial sectors, the money supply process and monetary control. Prerequisites: ECON 109 and ECON 282. Students may not receive credit for both ECON 341 and FIN 414.",
+    "url": "/catalogue/course/econ/341"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 350",
+    "title": "The Economics of Public Expenditures",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Analysis of public sector expenditures in Canada. The rationale for government spending and the problems in the provision of public services. Prerequisites: ECON 109 and ECON 281.",
+    "url": "/catalogue/course/econ/350"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 353",
+    "title": "Taxation Policy and Structure",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Analysis of the Canadian tax structure and its role in attaining certain goals of society; requirements for an optimal tax structure. Prerequisites: ECON 109 and ECON 281.",
+    "url": "/catalogue/course/econ/353"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 357",
+    "title": "Health Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Resource allocation and public policy in health care, including determinants of health status, market structures, incentives and the effects of imperfect information. Prerequisites: ECON 109 and ECON 281.",
+    "url": "/catalogue/course/econ/357"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 359",
+    "title": "Behavioural and Experimental Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduction to experimental methods in economics, with focus on laboratory studies of economic behaviour. Prerequisites: ECON 109, ECON 281 and 299 or equivalent.",
+    "url": "/catalogue/course/econ/359"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 365",
+    "title": "Resource Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Issues in the production of exhaustible and renewable natural resources, including exploration, extraction, and taxation; scarcity and pricing; contemporary Canadian resource policy issues. Prerequisites: ECON 109 and ECON 281. Students may not receive credit for both ECON 365 and AREC 365.",
+    "url": "/catalogue/course/econ/365"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 366",
+    "title": "Energy Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The economics of producing and consuming energy: pricing, role in economic growth; energy sources and markets; the role of government; regulation and other energy policy issues. Prerequisites: ECON 109 and ECON 281.",
+    "url": "/catalogue/course/econ/366"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 373",
+    "title": "Industrial Organization",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A survey of the behavior and performance of firms in different market structures and discussion of public policy toward the different structures. Prerequisites: ECON 109 and ECON 281. Note: Not open to students with credit in ECON 471 or 472.",
+    "url": "/catalogue/course/econ/373"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 378",
+    "title": "Law and Economics: Common Law and Economic Incentives",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Economic implications of common law: property, contract, and tort; economic logic underlying different doctrines within the law, and illustrations of the law as an economic institution; externality, risk and deterrence, and other leading issues. Prerequisites: ECON 109 and ECON 281.",
+    "url": "/catalogue/course/econ/378"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 384",
+    "title": "Intermediate Microeconomic Theory II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Designed for majors and Honors students in Economics. Extensions and applications of microeconomic theory: intertemporal choice, risk, uncertainty and expected utility; oligopoly and game theory; externalities, public goods, adverse selection, moral hazard, and asymmetric information; general equilibrium. Prerequisites: ECON 109, ECON 281 and 299 or equivalent, and MATH 156 or equivalent.",
+    "url": "/catalogue/course/econ/384"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 385",
+    "title": "Intermediate Macroeconomic Theory II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Designed for majors and Honors students in Economics. Theories of stabilization policy; expectations; the government budget constraint; inflation and unemployment; business cycles and growth; theories of aggregate consumption, investment, money demand, and money supply. Prerequisites: ECON 109, ECON 281, 282 and 299 or equivalent, and MATH 156 or equivalent.",
+    "url": "/catalogue/course/econ/385"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 386",
+    "title": "Applications of Mathematics to Economics I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Elements of logic and set theory, linear algebra, differential calculus and their conjunction, as used in classical and modern economic analysis. Prerequisites: ECON 109, ECON 281, and ECON 282 or equivalent, MATH 125 or equivalent, and MATH 156 or equivalent.",
+    "url": "/catalogue/course/econ/386"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 387",
+    "title": "Applications of Mathematics to Economics II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Difference and differential equations, linear inequalities, convexity, programming; assorted theorems of special use in modern economic analysis. Prerequisites: ECON 109 and ECON 386.",
+    "url": "/catalogue/course/econ/387"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 389",
+    "title": "Analyzing Macroeconomic Data",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Accessing publicly available macroeconomic data for Canada, the U.S. and many other countries; adapting, visualizing, and communicating macroeconomic statistics through simple plots and tables; organizing, managing and calculating macro statistics; using intuitive models to make sense of the data. Prerequisites: ECON 109, ECON 282 and 299 or equivalent.",
+    "url": "/catalogue/course/econ/389"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 399",
+    "title": "Introductory Econometrics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-1"
+    },
+    "description": "An elementary treatment of the major topics in econometrics with emphasis on applied regression methods. Prerequisites: ECON 109, ECON 281, 282 and 299 or equivalent, and MATH 156 or equivalent. Note: Not open to students with credit in AREC 313.",
+    "url": "/catalogue/course/econ/399"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 400",
+    "title": "Honors Essay: Fourth-Year Honors Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Required for fourth-year honors students choosing the honors essay route. Prerequisite: consent of Department. Only open to students registered in the Economics Honors Essay Route. Credit will not be granted for both ECON 497 and ECON 400.",
+    "url": "/catalogue/course/econ/400"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 403",
+    "title": "Selected Topics in Economics III",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Content varies from year to year. Topics announced prior to registration period. Prerequisites: ECON 109 and ECON 281. Additional prerequisites may be required; consult the department for further information.",
+    "url": "/catalogue/course/econ/403"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 404",
+    "title": "Applied Economics Projects",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "This is an applied projects course in which you will be interacting directly with a partner organization in industry, government, or the non-profit sector, with an Economics faculty member to provide guidance and supervision. No in-class meeting pattern; group meetings and advisor meetings will be scheduled throughout the term as needed. Prerequisite: ECON 109 and consent of Department. ECON 399 recommended.",
+    "url": "/catalogue/course/econ/404"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 409",
+    "title": "Economic Forecasting",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Methods for modeling and forecasting time series data. Topics may include time series regression, forecast evaluation, ARIMA models, seasonality, dynamic regression, vector autoregressions, and conditional heteroskedasticity. Prerequisite: ECON 399 or equivalent.",
+    "url": "/catalogue/course/econ/409"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 410",
+    "title": "Pacific Rim Economic Development",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Analyzes the role of particular markets and institutions in selected Pacific Rim economies. Special emphasis is given to either China or Japan; students should consult the Department of Economics to find which country is being emphasized in a given year. Prerequisites: ECON 109 and ECON 281.",
+    "url": "/catalogue/course/econ/410"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 412",
+    "title": "European Economic Development",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The application of economic theory and research methodology to selected topics in European economic development. Prerequisites: ECON 109 and ECON 281.",
+    "url": "/catalogue/course/econ/412"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 414",
+    "title": "Economics of Developing Countries",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to models of growth and development; the role of agriculture, industry, finance, and trade in structural transformation of developing countries; approaches to development planning. Prerequisites: ECON 109 and ECON 281.",
+    "url": "/catalogue/course/econ/414"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 415",
+    "title": "Economics of Social Mobility",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A survey and critical analysis of long-lasting and multi-generational economic outcomes. Topics include: intergenerational mobility, comparative economic development, and economic geography. Case studies will highlight issues ranging from the perpetuation of gender roles to the enduring consequences of slavery, forced labour, and colonial economic policy. Prerequisites: ECON 109, ECON 281, STAT 161 or equivalent, and MATH 154 or equivalent. ECON 299 or equivalent is recommended.",
+    "url": "/catalogue/course/econ/415"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 418",
+    "title": "Topics in Canadian Economic Development",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: ECON 109 and ECON 281.",
+    "url": "/catalogue/course/econ/418"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 421",
+    "title": "International Trade",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Nature and relevance of international trade; early trade doctrines; the theory of comparative advantage, classical and modern approaches and empirical evidence for them; new approaches to the pure theory of international trade; economic growth and international trade; market imperfections and trade; commercial policy; economic integration and the gains from trade. Prerequisites: ECON 109, ECON 281 and MATH 156 or equivalent.",
+    "url": "/catalogue/course/econ/421"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 422",
+    "title": "International Payments",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Types of international transactions, macroeconomics in an open economy, exchange rates, balance of payments adjustments, and other issues in the international monetary system. Prerequisites: ECON 109, ECON 281, 282 and MATH 154 or equivalent.",
+    "url": "/catalogue/course/econ/422"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 423",
+    "title": "Topics in International Trade and Development in India",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "International trade and economic development from the perspective of India. Emphasis given to trade policy, poverty, inequality, productivity, and labor markets in India. Prerequisites: ECON 109, ECON 281 and 299 or equivalent.",
+    "url": "/catalogue/course/econ/423"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 431",
+    "title": "Labor Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Empirical labor economics literature on selected topics, including labor markets, job attributes, schooling, labor mobility, wage differentials, compensation strategies, wage structures, and unemployment. Prerequisites: ECON 109, ECON 281, and ECON 399 or equivalent.",
+    "url": "/catalogue/course/econ/431"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 432",
+    "title": "Economics of Education",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The analysis of education from the perspective of quantitative and theoretical economics, with a focus on human capital development from preschool to university, the effect of education on the economy, and education policy. Prerequisites: ECON 109, ECON 384 and 399.",
+    "url": "/catalogue/course/econ/432"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 440",
+    "title": "Monetary Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Factors influencing inflation dynamics, money demand, interest rates and exchange rates in the long and short run. Analysis of the objectives, instruments, transmission channels and policy tradeoffs faced by central banks of Canada and other nations. Prerequisite: ECON 385.",
+    "url": "/catalogue/course/econ/440"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 442",
+    "title": "The Economics of Financial Markets",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The measurement of risk; portfolio analysis; hedging and speculation; market microstructure; asset pricing and market equilibrium. Prerequisites: ECON 109, ECON 281, STAT 161 or equivalent, and MATH 154 or equivalent. Students may not receive credit for both ECON 442 and FIN 412.",
+    "url": "/catalogue/course/econ/442"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 450",
+    "title": "Topics in Public Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Possibilities and limitations of efficiency and equity of markets and government intervention. Prerequisites: ECON 109, ECON 281, and MATH 154 or equivalent.",
+    "url": "/catalogue/course/econ/450"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 451",
+    "title": "Indigenous Economic Development",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An examination of the economic development challenges faced by Indigenous communities with a particular focus on Indigenous communities in Canada. Application of economic development theory and tools to Indigenous contexts. Prerequisites: ECON 109, ECON 384 and 399.",
+    "url": "/catalogue/course/econ/451"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 452",
+    "title": "Political Economy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Economic analysis of incentives facing citizens, politicians and policymakers, how these incentives are shaped by institutions, and the resulting effects on economic outcomes and policy. Prerequisites: ECON 109, ECON 281 and 299 or equivalent.",
+    "url": "/catalogue/course/econ/452"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 455",
+    "title": "Cost Benefit Analysis in Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Public sector investments (and policies) can create value or destroy value - the focus of this course is on the body of methods to determine which, covering both theory and practice. Examples may include transportation, environment, health care, and others. Topics include microeconomic foundations, discount rates, and valuation of non-market goods. Prerequisites: ECON 109, ECON 281, and MATH 156 or equivalent.",
+    "url": "/catalogue/course/econ/455"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 462",
+    "title": "Urban Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Urban spatial structure, residential land use, firm location decisions, housing, transportation, and urban public finance. Prerequisites: ECON 109, ECON 281, and MATH 154 or equivalent.",
+    "url": "/catalogue/course/econ/462"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 467",
+    "title": "Environmental and Natural Resource Policy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Environmental and natural resource law; domestic and global policy issues related to renewable and non-renewable resources. Prerequisites: ECON 109, ECON 281, and MATH 154 or equivalent. Not open to students with credit in ECON 466 or ENCS 473.",
+    "url": "/catalogue/course/econ/467"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 471",
+    "title": "Strategic Behavior of the Firm",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Oligopoly theory, cartel formation, product differentiation and advertising, entry into markets and strategic entry deterrence, and research and development. Prerequisites: ECON 109 and ECON 384.",
+    "url": "/catalogue/course/econ/471"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 472",
+    "title": "Market Power: Theory and Policy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Market definition and measurement of market power. Competition policy, including mergers, predation, abuse of dominance, price discrimination, tie-in sales, exclusive dealing, resale price maintenance, collusion and bid rigging. Regulation of natural monopolies. Prerequisites: ECON 109 and ECON 384.",
+    "url": "/catalogue/course/econ/472"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 473",
+    "title": "Game Theory and Economic Applications",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Analysis of structure and equilibrium of games. Applications to economic problems such as bargaining, auctions and collusion. Prerequisite: ECON 384. Not open to students with credit in ECON 484.",
+    "url": "/catalogue/course/econ/473"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 481",
+    "title": "Advanced Microeconomic Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Consumer and producer theory, and selected topics. Prerequisites: ECON 109, ECON 384 and 386 or equivalent.",
+    "url": "/catalogue/course/econ/481"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 482",
+    "title": "Advanced Macroeconomic Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Business cycle theory, microfoundations of macro models, government budget constraints, expectations formation, the open economy, and representative agent optimizing models. Prerequisites: ECON 109, ECON 385 and 386 or equivalent.",
+    "url": "/catalogue/course/econ/482"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 484",
+    "title": "Game Theory and Economic Applications",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Analysis of structure and equilibrium of games. Applications to economic problems such as bargaining, auctions and collusion. Prerequisites: ECON 109, ECON 384 and 299 or equivalent.",
+    "url": "/catalogue/course/econ/484"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 485",
+    "title": "Macroeconomic Policy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Analysis of the objectives, instruments and methods of macroeconomics policy using contemporary macroeconomics theory and examples from the policy experience of Canada and other nations. Prerequisites: ECON 109 and ECON 385.",
+    "url": "/catalogue/course/econ/485"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 486",
+    "title": "Macroeconomics and Asset Pricing",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The course explores the intersection of macroeconomics and financial economics, using growth, business-cycle and asset pricing theories to motivate a series of data projects that cover the long run and short run determinants of interest rates, equity premium, cyclical patterns of bond and equity returns, monetary policy, CAPM and other factor models. Prerequisites: ECON 282, ECON 299, MATH 156 or equivalent, and ECON 109.",
+    "url": "/catalogue/course/econ/486"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 489",
+    "title": "Central Banking: Models and Computation",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Examples of empirical macroeconomic models using latest computer programming and estimation techniques. Models used by the Bank of Canada and other central banks to quantitatively and empirically evaluate macroeconomic models using current data from Canada and other countries. Introduces students to applied dynamic, stochastic general equilibrium modelling techniques that are used in empirical macroeconomic models. Prerequisites: ECON 109 and ECON 385.",
+    "url": "/catalogue/course/econ/489"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 493",
+    "title": "Economic Forecasting",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Methods for modeling and forecasting economic data. Topics may include regression models, cross-validation, machine learning methods, classification, predictive analytics, and forecasting with time series data. Prerequisites: ECON 109 and 399 or equivalent.",
+    "url": "/catalogue/course/econ/493"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 494",
+    "title": "Economic Data Analysis I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Computer programming for the statistical analysis and econometric modelling of data in economics. The statistical programs introduced and used in the course include SAS, R, Python or similar computer programming languages. Prerequisites: ECON 109 and ECON 299 or equivalent.",
+    "url": "/catalogue/course/econ/494"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 497",
+    "title": "Econometric Methods",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Econometric problems and techniques with emphasis on regression methods and hypothesis testing. Single equation techniques and introduction to simultaneous equation systems. Matrix algebra is used extensively. Prerequisites: ECON 109, ECON 386, 387 and 399 or equivalent. Prerequisite or Corequisite: ECON 481 and 482. Credit will not be granted for both ECON 497 and 400.",
+    "url": "/catalogue/course/econ/497"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 500",
+    "title": "Selected Topics in Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Content varies from year to year. Topics announced prior to registration period. Additional prerequisites may be required; consult the department for further information.",
+    "url": "/catalogue/course/econ/500"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 503",
+    "title": "MA Microeconomic Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to graduate-level microeconomic tools. Topics covered may include producer and consumer behavior, partial equilibrium models of markets, Walrasian general equilibrium, choice under uncertainty, and game theory.",
+    "url": "/catalogue/course/econ/503"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 504",
+    "title": "Applied Economics Projects II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "This is an applied projects course in which you will be interacting directly with a partner organization in industry, government, or the non-profit sector, with an Economics faculty member to provide guidance and supervision. No in-class meeting pattern; group meetings and advisor meetings will be scheduled throughout the term as needed.",
+    "url": "/catalogue/course/econ/504"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 509",
+    "title": "Time Series Methods in Financial Econometrics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Topics may include ARIMA modelling, spectral analysis, state-space models and the Kalman filter, nonstationary analysis, vector autoregressions, conditional heteroskedasticity and nonlinear models. Prerequisites: ECON 407 and 408 or equivalent.",
+    "url": "/catalogue/course/econ/509"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 512",
+    "title": "Economic Development I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The techniques of development planning; qualitative and quantitative problems associated with the drafting and implementation of plans and programs; assessment of internal and external resources available for development and problems of measurement and mobilization of resources.",
+    "url": "/catalogue/course/econ/512"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 513",
+    "title": "Economic Development II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Economic policy alternatives in a context of growth and development; problems of inflation, balance of payments, disequilibrium, concentration of growth effects; the role of international aid and other external measures.",
+    "url": "/catalogue/course/econ/513"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 515",
+    "title": "Economics of Social Mobility",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A survey and critical analysis of long-lasting and multi-generational economic outcomes with special attention given to empirical methods. Topics include intergenerational mobility, comparative economic development, economic geography, historical record linking, and spatial autocorrelation.",
+    "url": "/catalogue/course/econ/515"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 521",
+    "title": "International Economics I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: ECON 481 and 482, ECON 421 and 422 recommended.",
+    "url": "/catalogue/course/econ/521"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 522",
+    "title": "International Economics II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/econ/522"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 531",
+    "title": "Labor Economics I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Factors influencing the supply of, and demand for, labor services and the process of relative wage determination in the long and short run. Determination of money wage levels, aggregate labor-force participation, and the level and structure of aggregate employment and unemployment.",
+    "url": "/catalogue/course/econ/531"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 540",
+    "title": "Monetary Economics I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: ECON 481 and 482.",
+    "url": "/catalogue/course/econ/540"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 542",
+    "title": "Economics of Financial Markets",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The course surveys Asset Pricing Theory with an emphasis on the utility-based discount-factor approach. The discount factor provides a unifying framework for the evaluation of most classes of assets including stocks, bonds, and derivatives. In particular, the course reviews mean- variance analysis, factor pricing, discrete time models, and classical results in continuous time, such as the Black and Scholes option Pricing Formula. These theoretical models are also illustrated by empirical applications.",
+    "url": "/catalogue/course/econ/542"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 550",
+    "title": "Public Expenditure",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The theory of the role of the public sector in a market economy; market failures, income redistribution, public choice, and fiscal federalism.",
+    "url": "/catalogue/course/econ/550"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 551",
+    "title": "Indigenous Economic Development II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An examination of the economic development challenges faced by Indigenous communities with a particular focus on Indigenous communities in Canada. Application of economic development theory and tools to Indigenous contexts.",
+    "url": "/catalogue/course/econ/551"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 552",
+    "title": "Political Economy II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Economic analysis of incentives facing citizens, politicians and policymakers, how these incentives are shaped by institutions, and the resulting effects on economic outcomes and policy.",
+    "url": "/catalogue/course/econ/552"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 557",
+    "title": "Health Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Theoretical and applied issues in the determination of health models and a survey of contemporary health economic policy issues.",
+    "url": "/catalogue/course/econ/557"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 562",
+    "title": "Urban Economics II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Urban spatial structure, residential land use, firm location decisions, housing, transportation, and urban public finance.",
+    "url": "/catalogue/course/econ/562"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 566",
+    "title": "Environmental Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Economic theory and policy relating to environmental problems; welfare and public policy issues in environmental decision making. Environmental law; transboundary pollution; economic instruments for pollution control.",
+    "url": "/catalogue/course/econ/566"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 567",
+    "title": "The Economics of Exhaustible Resources",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Theoretical, empirical, and policy studies in the following areas: supply and pricing under various market structures, the demand for exhaustible resources, exploration, resource extraction under price and technological uncertainty, taxation of exhaustible resources, exhaustible resources and the macro economy. Not open to students with credit in ECON 565.",
+    "url": "/catalogue/course/econ/567"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 570",
+    "title": "Strategic Behavior of the Firm",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Game theory; oligopoly theory; dynamic price competition; cartel formation; product differentiation; and advertising; entry and strategic entry deterrence; research and development.",
+    "url": "/catalogue/course/econ/570"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 571",
+    "title": "Market Power: Theory and Policy",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Market definition and measurement of market power. Principles of competition policy, including merger, predation, abuse of dominance, price discrimination, vertical market restrictions, collusion and bid rigging.",
+    "url": "/catalogue/course/econ/571"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 572",
+    "title": "The Economics of Regulation: Theory and Applications",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Economic foundations of regulation. This course covers problems of natural monopoly, incentive regulation, deregulation, environmental regulation, insurance and financial regulation, universal service obligation, network access pricing, and product quality regulation.",
+    "url": "/catalogue/course/econ/572"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 581",
+    "title": "MA Macroeconomic Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A graduate-level examination of the core topics in macroeconomic theory: determinants of growth, business cycles and stabilization policy.",
+    "url": "/catalogue/course/econ/581"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 586",
+    "title": "Macroeconomics and Asset Pricing",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The course explores the intersection of macroeconomics and financial economics, using growth, business-cycle and asset pricing theories to motivate a series of data projects that cover the long run and short run determinants of interest rates, equity  premium, cyclical patterns of bond and equity returns, monetary policy, CAPM and other factor models.",
+    "url": "/catalogue/course/econ/586"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 589",
+    "title": "Empirical Macroeconomics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Introduction to applied structural dynamic stochastic general equilibrium (DSGE) modeling, employing various DSGE models with a focus on estimation and testing for inference. Advanced solution techniques for stochastic difference equations and general modeling setup.",
+    "url": "/catalogue/course/econ/589"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 591",
+    "title": "Graduate Research Workshop I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The course will aid students in identifying and developing a research topic, and develop skills in the writing and presentation of research. Students will be expected to present, write critiques of, and participate in discussions of published articles or working papers.",
+    "url": "/catalogue/course/econ/591"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 591A",
+    "title": "Graduate Research Workshop I",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The course will aid students in identifying and developing a research topic, and develop skills in the writing and presentation of research. Students will be expected to present, write critiques of, and participate in discussions of published articles or working papers.",
+    "url": "/catalogue/course/econ/591a"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 591B",
+    "title": "Graduate Research Workshop I",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The course will aid students in identifying and developing a research topic, and develop skills in the writing and presentation of research. Students will be expected to present, write critiques of, and participate in discussions of published articles or working papers.",
+    "url": "/catalogue/course/econ/591b"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 593",
+    "title": "Prediction and Machine Learning for Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Statistical methods for modeling and forecasting economic data. Topics may include data wrangling and exploration, visualization, cross-validation, regression models, machine learning methods, classification, predictive analytics, and forecasting with time series data.",
+    "url": "/catalogue/course/econ/593"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 594",
+    "title": "Economic Data Analysis II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Computer programming for the statistical analysis and econometric modelling of data in economics. The statistical programs introduced and used in the course include SAS, R, Python or similar computer programming languages.",
+    "url": "/catalogue/course/econ/594"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 595",
+    "title": "Bayesian Econometrics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The course introduces computational methods for Bayesian inference, with a special focus on empirical applications in economics and related fields such as finance and marketing. Students will be taught Markov chain Monte Carlo (MCMC) algorithms. The course covers applications such as demand estimation and macroeconomic forecasting.",
+    "url": "/catalogue/course/econ/595"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 596",
+    "title": "Causal Inference",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "This course introduces research topics in causal inference with applications in economics and in social science. Topics include potential outcomes and counterfactuals, measures of treatment effects, causal graphical models, confounding adjustment, and instrumental variables.",
+    "url": "/catalogue/course/econ/596"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 598",
+    "title": "Econometric Theory and Applications",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Advanced treatment of estimation, inference and econometric problems and techniques, including the use of matrix operations and statistical distribution theory, with an emphasis on applied econometric analysis. Prerequisites: ECON 481 and 482 or equivalent, and an advanced undergraduate level course in econometrics. Note: Not open to students with credit in ECON 506.",
+    "url": "/catalogue/course/econ/598"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 599",
+    "title": "Applied Econometrics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The role of economic theory in the process of specification and estimation of models. Interpretation and critical evaluation of applied work by means of selected topics in economics and econometrics. Prerequisite: ECON 598 or equivalent.",
+    "url": "/catalogue/course/econ/599"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 603",
+    "title": "Selected Topics in Economics IV",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Content varies from year to year. Topics announced prior to registration period.",
+    "url": "/catalogue/course/econ/603"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 604",
+    "title": "PhD Microeconomic Theory I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The course covers classical microeconomics topics including producer and consumer behavior, partial equilibrium models of perfectly competitive and monopolistic markets, Walrasian general equilibrium, welfare economics, and choice under uncertainty.",
+    "url": "/catalogue/course/econ/604"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 605",
+    "title": "PhD Microeconomic Theory II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Topics include noncooperative game theory, models of imperfect competition, and the economics of information. Prerequisite: ECON 604 or equivalent.",
+    "url": "/catalogue/course/econ/605"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 608",
+    "title": "Topics in Econometrics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/econ/608"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 612",
+    "title": "Topics in Economic Development",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/econ/612"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 640",
+    "title": "Topics in Monetary Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/econ/640"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 681",
+    "title": "PhD Macroeconomic Theory I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Material covered will include an introduction to dynamic mathematics, with applications to optimal and endogenous growth theories, and real business cycles.",
+    "url": "/catalogue/course/econ/681"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 682",
+    "title": "PhD Macroeconomic Theory II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The course extends the methods and analyses in ECON 681 and topics covered may include New Keynesian theories of the business cycle, as well as models of search, consumption theory, and the economics of incomplete markets. Prerequisite: ECON 681 or equivalent.",
+    "url": "/catalogue/course/econ/682"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 699",
+    "title": "Selected Research Topics in Economics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/econ/699"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 900A",
+    "title": "Directed Research Project",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "VAR, UNASSIGNED"
+    },
+    "description": "",
+    "url": "/catalogue/course/econ/900a"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 900B",
+    "title": "Directed Research Project",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "VAR, UNASSIGNED"
+    },
+    "description": "",
+    "url": "/catalogue/course/econ/900b"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 903",
+    "title": "Independent Study I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, VARIABLE"
+    },
+    "description": "Individual study under the supervision of a faculty member. Note: may be taken more than once if the topic is different. Consent of Department required.",
+    "url": "/catalogue/course/econ/903"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 906",
+    "title": "Independent Study II",
+    "units": {
+      "credits": 6,
+      "feeIndex": 12,
+      "term": "EITHER, VARIABLE"
+    },
+    "description": "Individual study under the supervision of a faculty member. Consent of Department required. Note: may be taken more than once if the topic is different. Consent of Department required.",
+    "url": "/catalogue/course/econ/906"
+  },
+  {
+    "department": "ECON",
+    "courseCode": "ECON 999",
+    "title": "Directed Research Project",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SPR/SUM, 3-0-0"
+    },
+    "description": "Prerequisites: ECON 503, 581, 598, and 599.",
+    "url": "/catalogue/course/econ/999"
+  }
+]

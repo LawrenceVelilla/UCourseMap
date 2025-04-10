@@ -8,24 +8,18 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-3"
     },
-    "parsedDescription": "An introduction to cell structure and function. Major topics include the molecules and structures that comprise prokaryotic and eukaryotic cells, the mechanisms by which energy is harvested and used by cells, how cells reproduce, and how information is stored and used within a cell via the processes of DNA replication, transcription, and translation.",
+    "keywords": [
+      "Cell Structure",
+      "Function",
+      "Prokaryotic Cells",
+      "Eukaryotic Cells",
+      "DNA Processes"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "Biology 30"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "Chemistry 30"
-            ]
-          }
-        ]
+        "courses": [
+              "Biology 30","Chemistry 30"]
       },
       "corequisites": {
         "operator": "AND",
@@ -39,7 +33,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/107",
-    "updatedAt": "2025-04-06T02:53:52.332Z"
+    "updatedAt": "2025-04-09T05:29:44.653Z"
   },
   {
     "department": "BIOL",
@@ -50,7 +44,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-3"
     },
-    "parsedDescription": "Examines the major lineages of life on Earth. Overview of evolutionary principles and classification, the history of life, and the key adaptations of prokaryotes, protists, fungi, plants, and animals. Laboratories survey the diversity of biological form and function, and introduce students to data collection and scientific writing.",
+    "keywords": [
+      "Evolutionary Principles",
+      "Classification",
+      "Biological Diversity",
+      "Data Collection",
+      "Scientific Writing"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -69,7 +69,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/108",
-    "updatedAt": "2025-04-06T02:53:54.891Z"
+    "updatedAt": "2025-04-09T05:29:48.302Z"
   },
   {
     "department": "BIOL",
@@ -80,22 +80,33 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "A structural and functional dissection of a eukaryotic cell. Detection of specific molecules at the ultrastructural level; plasma membrane structure and function; cytoskeleton involvement in intracellular transport, mitosis, and cytokinesis; the endomembrane system, protein targeting, exocytosis and endocytosis; nuclear structure and function; cell cycle control and cancer.",
+    "keywords": [
+      "Eukaryotic Cell",
+      "Cell Structure",
+      "Cytoskeleton",
+      "Cell Cycle",
+      "Cancer"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
         "conditions": [
           {
-            "operator": "STANDALONE",
-            "courses": [
-              "BIOL 107"
-            ]
-          },
-          {
-            "operator": "OR",
-            "courses": [
-              "100-level Chemistry course",
-              "SCI 100"
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "BIOL 107"
+                ]
+              },
+              {
+                "operator": "OR",
+                "courses": [
+                  "100-level Chemistry course",
+                  "SCI 100"
+                ]
+              }
             ]
           }
         ]
@@ -113,7 +124,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/201",
-    "updatedAt": "2025-04-06T02:53:57.757Z"
+    "updatedAt": "2025-04-09T05:29:51.992Z"
   },
   {
     "department": "BIOL",
@@ -124,24 +135,18 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-3"
     },
-    "parsedDescription": "The chromosomal and molecular basis for the transmission and function of genes. The construction of genetic and physical maps of genes and genomes. Strategies for the isolation of specific genes. Examples of regulatory mechanisms for the expression of the genetic material in both prokaryotes and eukaryotes.",
+    "keywords": [
+      "Genetics",
+      "Molecular Biology",
+      "Gene Transmission",
+      "Gene Mapping",
+      "Regulatory Mechanisms"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "BIOL 107"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "SCI 100"
-            ]
-          }
-        ]
+        "courses": [
+              "BIOL 107","SCI 100"]                
       },
       "corequisites": {
         "operator": "AND",
@@ -155,7 +160,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/207",
-    "updatedAt": "2025-04-06T02:54:00.110Z"
+    "updatedAt": "2025-04-09T05:29:56.662Z"
   },
   {
     "department": "BIOL",
@@ -166,24 +171,22 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-3"
     },
-    "parsedDescription": "Ecology is the scientific study of interactions between organisms and their environment in a hierarchy of levels of organization: individuals, populations, communities, and ecosystems. Provides a comprehensive survey of general concepts that can stand alone or serve as preparation for advanced courses in ecology. Labs emphasize collection, analysis, and interpretation of data from ecological experiments and field studies to illustrate and complement lecture material. Examples are drawn from a broad range of organisms and systems.",
+    "keywords": [
+      "Ecology",
+      "Organisms",
+      "Environment",
+      "Data Analysis",
+      "Field Studies"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "BIOL 108"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
+        "courses": [
+              "BIOL 108",
               "SCI 100"
             ]
-          }
-        ]
+          
+        
       },
       "corequisites": {
         "operator": "AND",
@@ -197,7 +200,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/208",
-    "updatedAt": "2025-04-06T02:54:04.410Z"
+    "updatedAt": "2025-04-09T05:30:01.413Z"
   },
   {
     "department": "BIOL",
@@ -208,7 +211,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-0"
     },
-    "parsedDescription": "Discusses the major features of the evolutionary process, including the fossil record, basic population genetics, variation, natural selection, adaptation, and speciation.",
+    "keywords": [
+      "Evolutionary Process",
+      "Fossil Record",
+      "Population Genetics",
+      "Natural Selection",
+      "Adaptation"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -241,7 +250,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/221",
-    "updatedAt": "2025-04-06T02:54:06.868Z"
+    "updatedAt": "2025-04-09T05:30:07.478Z"
   },
   {
     "department": "BIOL",
@@ -252,20 +261,21 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-3"
     },
-    "parsedDescription": "An introduction to the process of scientific research including the different approaches to research within biology, formulating research questions, hands-on skill development, experimental design, data collection and analysis, critical thinking, communication of findings, ethics, and career opportunities. Students will attend lectures and selected seminars, and participate in biological research under the supervision of an academic staff member in the Department of Biological Sciences.",
+    "keywords": [
+      "Scientific Research",
+      "Biology",
+      "Experimental Design",
+      "Data Collection",
+      "Critical Thinking"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
         "conditions": [
           {
-            "operator": "STANDALONE",
+            "operator": "OR",
             "courses": [
-              "BIOL 107"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
+              "BIOL 107",
               "BIOL 108"
             ]
           },
@@ -290,7 +300,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/298",
-    "updatedAt": "2025-04-06T02:54:10.572Z"
+    "updatedAt": "2025-04-09T05:30:11.853Z"
   },
   {
     "department": "BIOL",
@@ -301,16 +311,20 @@
       "feeIndex": 3,
       "term": "EITHER, 0-0-3"
     },
-    "parsedDescription": "A credit/no-credit course designed to give students a hands-on introduction to research under the supervision of an academic member of the Department of Biological Sciences.",
+    "keywords": [
+      "Research",
+      "Biological Sciences",
+      "Hands-on Introduction",
+      "GPA",
+      "Credit"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
         "conditions": [
           {
             "operator": "STANDALONE",
-            "courses": [
-              "Minimum GPA of 2.3"
-            ]
+            "description": "Minimum GPA of 2.3"
           },
           {
             "operator": "OR",
@@ -328,13 +342,13 @@
       "notes": "Recommended for students who have completed a minimum of 30 units but not more than 60 units in a program in the Faculty of Science. Credit may be obtained twice."
     },
     "flattenedPrerequisites": [
-      "Minimum GPA of 2.3",
+      "GPA of 2.3",
       "BIOL 107",
       "BIOL 108"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/299",
-    "updatedAt": "2025-04-06T02:54:14.653Z"
+    "updatedAt": "2025-04-09T05:30:16.767Z"
   },
   {
     "department": "BIOL",
@@ -345,25 +359,21 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-0"
     },
-    "parsedDescription": "Biological aging is a complex process that involves the progressive deterioration of an organism over time. This course covers the aging process at the molecular, tissue and organismal levels. Topics for discussion include assessment of animal models of aging, mechanisms of aging, healthy aging, age-associated disease and interventions.",
+    "keywords": [
+      "Biological Aging",
+      "Molecular Aging",
+      "Healthy Aging",
+      "Age-Associated Disease",
+      "Interventions"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "BIOL 201"
-            ]
-          },
-          {
-            "operator": "OR",
-            "courses": [
+        "courses": [
+              "BIOL 201",
               "ZOOL 241",
               "ZOOL 242"
             ]
-          }
-        ]
       },
       "corequisites": {
         "operator": "AND",
@@ -378,7 +388,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/310",
-    "updatedAt": "2025-04-06T02:54:18.440Z"
+    "updatedAt": "2025-04-09T05:30:19.940Z"
   },
   {
     "department": "BIOL",
@@ -389,7 +399,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-0"
     },
-    "parsedDescription": "An outline of the scientific foundations of biological discovery. Students must have a sophisticated understanding of modern concepts in biology, be prepared to write a major essay on a focused topic, deliver an oral presentation and participate actively in class discussion.",
+    "keywords": [
+      "Biological Discovery",
+      "Biology",
+      "Essay Writing",
+      "Oral Presentation",
+      "Class Discussion"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -408,7 +424,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/315",
-    "updatedAt": "2025-04-06T02:54:20.971Z"
+    "updatedAt": "2025-04-09T05:30:23.212Z"
   },
   {
     "department": "BIOL",
@@ -419,7 +435,13 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-0"
     },
-    "parsedDescription": "The diversity of microscopic life forms, both prokaryotic (bacteria and archaea) and eukaryotic (protists, fungi, phytoplankton), will be explored. The evolutionary forces responsible for this diversity will be described in detail and contrasted to those at work in macroscopic eukaryotes. Students will learn about the molecular methods used to identify and classify both culturable and non-culturable microbes, and genetically characterize entire populations.",
+    "keywords": [
+      "Microscopic Life",
+      "Prokaryotic",
+      "Eukaryotic",
+      "Evolutionary Forces",
+      "Molecular Methods"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -458,7 +480,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/322",
-    "updatedAt": "2025-04-06T02:54:24.275Z"
+    "updatedAt": "2025-04-09T05:30:28.116Z"
   },
   {
     "department": "BIOL",
@@ -469,7 +491,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-3"
     },
-    "parsedDescription": "Expands on prior introductions to the scientific method and examines the steps involved in the planning, collection, organization, analysis and presentation of biological data. Classes will explore the types of data used to answer a variety of biological questions and will review several different sampling designs, assess the benefits and limitations of various data types for scientific inference, and integrate the statistical methods that are common to other introductory courses. Labs will teach students how spreadsheets and relational databases can be used to manipulate, analyze, and present the results of scientific research.",
+    "keywords": [
+      "Scientific Method",
+      "Biological Data",
+      "Data Analysis",
+      "Sampling Designs",
+      "Statistical Methods"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -502,7 +530,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/330",
-    "updatedAt": "2025-04-06T02:54:27.246Z"
+    "updatedAt": "2025-04-09T05:30:31.327Z"
   },
   {
     "department": "BIOL",
@@ -513,7 +541,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-3S-0"
     },
-    "parsedDescription": "Principles of community ecology, applied to plants and animals. The nature of communities, functional groups and rarity; niche theory and competition; disturbance and other alternatives to competition; food webs (predation, herbivory and disease); diversity (determinants, functional consequences and gradients); island communities.",
+    "keywords": [
+      "Community Ecology",
+      "Plants",
+      "Animals",
+      "Diversity",
+      "Food Webs"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -563,7 +597,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/332",
-    "updatedAt": "2025-04-06T02:54:30.677Z"
+    "updatedAt": "2025-04-09T05:30:35.712Z"
   },
   {
     "department": "BIOL",
@@ -574,30 +608,23 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-3"
     },
-    "parsedDescription": "The course includes an introduction to the hydrology, biogeochemistry and ecology of wetland ecosystems. Topics covered include classification, geomorphic setting, distribution, functions and ecosystem services of wetlands. Human use, alteration and management of wetlands are examined. An emphasis is placed on wetlands and wetland management in Western Canada, including boreal peatlands and prairie marshes. A full day field trip on a Saturday is required.",
+    "keywords": [
+      "Hydrology",
+      "Biogeochemistry",
+      "Ecology",
+      "Wetland Ecosystems",
+      "Management"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "BIOL 208"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "REN R 250"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
+        "courses": [
+              "BIOL 208",
+              "REN R 250",
               "EAS 201"
             ]
-          }
-        ]
+          
+        
       },
       "corequisites": {
         "operator": "AND",
@@ -612,7 +639,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/333",
-    "updatedAt": "2025-04-06T02:54:34.457Z"
+    "updatedAt": "2025-04-09T05:30:39.500Z"
   },
   {
     "department": "BIOL",
@@ -623,7 +650,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-1S-0"
     },
-    "parsedDescription": "An introduction to the principles, methods, and applications of biological systematics, including reconstruction of phylogenies, creation of classifications, historical biogeography, and applications in evolutionary biology. Each student will analyze phylogenetic data and write a description of a species and its relationships.",
+    "keywords": [
+      "Biological Systematics",
+      "Phylogenies",
+      "Classifications",
+      "Biogeography",
+      "Evolutionary Biology"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -655,7 +688,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/335",
-    "updatedAt": "2025-04-06T02:54:38.000Z"
+    "updatedAt": "2025-04-09T05:30:47.803Z"
   },
   {
     "department": "BIOL",
@@ -666,7 +699,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "An overview of the adverse effects of chemicals or physical agents on biological systems in an ecological context. This course takes a multidisciplinary approach to understanding biological effects and their assessment.",
+    "keywords": [
+      "Ecological Context",
+      "Biological Systems",
+      "Chemical Effects",
+      "Multidisciplinary Approach",
+      "Biological Assessment"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -710,7 +749,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/341",
-    "updatedAt": "2025-04-06T02:54:40.510Z"
+    "updatedAt": "2025-04-09T05:30:53.234Z"
   },
   {
     "department": "BIOL",
@@ -721,30 +760,18 @@
       "feeIndex": 6,
       "term": "SECOND, 0-0-6"
     },
-    "parsedDescription": "Critical discussion and use of techniques for characterizing macromolecules from prokaryotic and eukaryotic systems. This course provides the theoretical and hands-on experience required to use classic and cutting-edge technologies to characterize the properties of these macromolecules.",
+    "keywords": [
+      "Macromolecules",
+      "Prokaryotic Systems",
+      "Eukaryotic Systems",
+      "Characterization Techniques",
+      "Biology"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "BIOL 207"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "BIOL 391"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "BIOCH 200"
-            ]
-          }
-        ]
+        "courses": [
+              "BIOL 207","BIOL 391","BIOCH 200"]
       },
       "corequisites": {
         "operator": "AND",
@@ -759,7 +786,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/343",
-    "updatedAt": "2025-04-06T02:54:44.576Z"
+    "updatedAt": "2025-04-09T05:30:55.992Z"
   },
   {
     "department": "BIOL",
@@ -770,24 +797,18 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-0"
     },
-    "parsedDescription": "An introduction to marine science and marine biology including history of marine exploration, essential features of the physical marine environment, a survey of major marine communities and adaptations of the organisms that live in each, overviews of selected groups of marine organisms (e.g., marine mammals), and human impact on the oceans. Recommended as preparation for courses offered through the Bamfield Marine Station (see courses listed under MA SC).",
+    "keywords": [
+      "Marine Science",
+      "Marine Biology",
+      "Marine Environment",
+      "Marine Communities",
+      "Human Impact"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "ZOOL 250"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "BIOL 208"
-            ]
-          }
-        ]
+        "courses": [
+              "ZOOL 250","BIOL 208"]        
       },
       "corequisites": {
         "operator": "AND",
@@ -801,7 +822,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/361",
-    "updatedAt": "2025-04-06T02:54:47.958Z"
+    "updatedAt": "2025-04-09T05:30:58.351Z"
   },
   {
     "department": "BIOL",
@@ -812,7 +833,13 @@
       "feeIndex": 6,
       "term": "FIRST, 3-1S-0"
     },
-    "parsedDescription": "An introduction to the ecology of freshwater ecosystems. Lectures will examine the roles of biota in ecological patterns and processes in lakes, ponds, rivers, and streams, emphasizing north-temperate and boreal regions. Seminars will focus on recent papers from the primary literature. Designed to stand-alone or to provide a biological complement to BIOL 464.",
+    "keywords": [
+      "Ecology",
+      "Freshwater Ecosystems",
+      "Biota",
+      "Lakes",
+      "Rivers"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -824,14 +851,14 @@
         "operator": "AND",
         "conditions": []
       },
-      "notes": ""
+      "notes": "Designed to stand-alone or to provide a biological complement to BIOL 464."
     },
     "flattenedPrerequisites": [
       "BIOL 208"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/364",
-    "updatedAt": "2025-04-06T02:54:50.180Z"
+    "updatedAt": "2025-04-09T05:31:00.791Z"
   },
   {
     "department": "BIOL",
@@ -842,38 +869,42 @@
       "feeIndex": 6,
       "term": "FIRST, 1-0-3"
     },
-    "parsedDescription": "A practical course introducing students to techniques used in the field and lab to biomonitor lakes and streams. Topics covered will include plankton production and composition, fish and benthos community structure, herbivory and predation, and paleolimnology. The laboratory component includes field trips and independent research projects.",
+    "keywords": [
+      "Biomonitoring",
+      "Lakes",
+      "Streams",
+      "Plankton",
+      "Paleolimnology"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "OR",
         "conditions": [
           {
-            "operator": "OR",
+            "operator": "STANDALONE",
             "courses": [
               "BIOL 364"
             ]
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "permission of instructor"
-            ]
+            "description": "permission of instructor"
           }
         ]
       },
-      "corequisites": {
-        "operator": "AND",
-        "conditions": []
-      },
       "notes": ""
     },
-    "flattenedPrerequisites": [
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [
       "BIOL 364",
       "permission of instructor"
     ],
-    "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/365",
-    "updatedAt": "2025-04-06T02:54:52.803Z"
+    "updatedAt": "2025-04-09T05:31:04.247Z"
   },
   {
     "department": "BIOL",
@@ -884,7 +915,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-0"
     },
-    "parsedDescription": "Examines the ecology of boreal and arctic ecosystems, including postglacial history, climate, geology, nutrient cycling and energy flow in forests, wetlands, lakes and marine systems, animal and plant adaptations to cold and current human impacts.",
+    "keywords": [
+      "Ecology",
+      "Boreal Ecosystems",
+      "Arctic Ecosystems",
+      "Nutrient Cycling",
+      "Energy Flow"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -903,7 +940,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/366",
-    "updatedAt": "2025-04-06T02:54:55.562Z"
+    "updatedAt": "2025-04-09T05:31:06.682Z"
   },
   {
     "department": "BIOL",
@@ -914,7 +951,13 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-0"
     },
-    "parsedDescription": "This course introduces the principles of conservation biology with an emphasis on ecological processes operating at population, community and ecosystem levels of organization. Threats to biological diversity, ranging from species introductions to habitat destruction will be discussed along with conservation solutions ranging from the design of protected areas through conservation legislation.",
+    "keywords": [
+      "Conservation Biology",
+      "Ecological Processes",
+      "Biodiversity",
+      "Habitat Destruction",
+      "Conservation Solutions"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -933,7 +976,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/367",
-    "updatedAt": "2025-04-06T02:54:57.821Z"
+    "updatedAt": "2025-04-09T05:31:10.062Z"
   },
   {
     "department": "BIOL",
@@ -944,7 +987,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-1S-0"
     },
-    "parsedDescription": "Application of molecular biology to the study of systematics, structure of natural populations, mating systems, and forensics. Among the topics discussed are molecular techniques used to detect genetic variation in natural populations, methods to construct phylogenies using molecular data, mathematical models of population structure, paternity analysis, and DNA fingerprinting.",
+    "keywords": [
+      "Molecular Biology",
+      "Systematics",
+      "Genetic Variation",
+      "Phylogenies",
+      "Forensics"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -963,7 +1012,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/380",
-    "updatedAt": "2025-04-06T02:54:59.708Z"
+    "updatedAt": "2025-04-09T05:31:12.665Z"
   },
   {
     "department": "BIOL",
@@ -974,7 +1023,13 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-0"
     },
-    "parsedDescription": "This course examines how humankind's collective activities, including altering the climate, have significantly affected the natural planetary balance. We will discuss human population growth and unsustainable resource use; the movement of pollutants through the atmosphere, hydrosphere and biosphere; the impacts these stressors have on ecosystem services and human health; and how certain impacts have been and can be mitigated by environmental policies and laws.",
+    "keywords": [
+      "Environmental Science",
+      "Climate Change",
+      "Ecosystem Services",
+      "Human Health",
+      "Pollution"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -993,7 +1048,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/381",
-    "updatedAt": "2025-04-06T02:55:01.858Z"
+    "updatedAt": "2025-04-09T05:31:15.033Z"
   },
   {
     "department": "BIOL",
@@ -1004,18 +1059,17 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-0"
     },
-    "parsedDescription": "Ecological impacts of climate change and large-scale human activities on terrestrial and aquatic ecosystems. The focus of this course is to learn to write brief technical summaries of current environment issues, in a fashion that can be understood by an educated citizen. Topics such as climate change, water management projects, invasion of exotic species and national parks management are presented as the forum to evaluate options, trade-offs and solutions to environmental social issues.",
+    "keywords": [
+      "Ecological Impacts",
+      "Climate Change",
+      "Ecosystems",
+      "Environmental Issues",
+      "Water Management"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "BIOL 208"
-            ]
-          }
-        ]
+        "courses": ["BIOL 208"]
       },
       "corequisites": {
         "operator": "AND",
@@ -1028,7 +1082,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/384",
-    "updatedAt": "2025-04-06T02:55:04.622Z"
+    "updatedAt": "2025-04-09T05:31:17.288Z"
   },
   {
     "department": "BIOL",
@@ -1039,7 +1093,13 @@
       "feeIndex": 6,
       "term": "EITHER, 0-0-6"
     },
-    "parsedDescription": "A review of the scientific literature on a biological topic, done under the supervision of an academic member of the Department of Biological Sciences. A co-supervisor, who may be outside the Department, may be involved at the supervisor's discretion. Completion of this course requires a written report on the information gleaned from the literature.",
+    "keywords": [
+      "Biological Sciences",
+      "Literature Review",
+      "Research",
+      "Written Report",
+      "Supervision"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1051,9 +1111,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of Department"
-            ]
+            "description": "Consent of Department"
           }
         ]
       },
@@ -1065,11 +1123,11 @@
     },
     "flattenedPrerequisites": [
       "BIOL 2[0-9]{2}",
-      "consent of Department"
+      "Consent of Department"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/390",
-    "updatedAt": "2025-04-06T02:55:09.949Z"
+    "updatedAt": "2025-04-09T05:31:24.500Z"
   },
   {
     "department": "BIOL",
@@ -1080,7 +1138,13 @@
       "feeIndex": 6,
       "term": "EITHER, 0-1S-6"
     },
-    "parsedDescription": "A laboratory course introducing students to techniques in gene manipulation, protein expression and bioinformatics by following a gene through a thematic series of molecular manipulations.",
+    "keywords": [
+      "Gene Manipulation",
+      "Protein Expression",
+      "Bioinformatics",
+      "Molecular Manipulations",
+      "Laboratory Course"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1113,7 +1177,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/391",
-    "updatedAt": "2025-04-06T02:55:16.093Z"
+    "updatedAt": "2025-04-09T05:31:28.420Z"
   },
   {
     "department": "BIOL",
@@ -1124,24 +1188,18 @@
       "feeIndex": 6,
       "term": "SECOND, 0-1S-6"
     },
-    "parsedDescription": "A laboratory course introducing students to current molecular biology techniques and associated analyses used to study population genetics, systematics, and evolutionary biology in natural populations. Students will develop microsatellite marker systems and use them to examine the genetic structure of a natural population. A comparative bioinformatic approach will be used to generate sequence data to investigate the use of single nucleotide polymorphisms in candidate gene analysis and in phylogenetic inference.",
+    "keywords": [
+      "Molecular Biology",
+      "Population Genetics",
+      "Bioinformatics",
+      "Evolutionary Biology",
+      "Microsatellite Markers"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "BIOL 207"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "BIOL 208"
-            ]
-          }
-        ]
+        "courses": [
+              "BIOL 207","BIOL 208"]
       },
       "corequisites": {
         "operator": "STANDALONE",
@@ -1159,7 +1217,7 @@
       "BIOL 380"
     ],
     "url": "/catalogue/course/biol/392",
-    "updatedAt": "2025-04-06T02:55:19.305Z"
+    "updatedAt": "2025-04-09T05:31:32.191Z"
   },
   {
     "department": "BIOL",
@@ -1170,7 +1228,13 @@
       "feeIndex": 6,
       "term": "EITHER, VARIABLE"
     },
-    "parsedDescription": "Covers special topics of current interest in biology pertaining specifically to field opportunities. This course may be held outside of Edmonton at one or more off-campus locations either domestically or internationally, and may require additional on-campus coursework. This course requires payment of additional miscellaneous fees. Refer to the Tuition and Fees page in the University Regulations section of the Calendar. See departmental website for BIOL 395 offered sections.",
+    "keywords": [
+      "Biology",
+      "Field Opportunities",
+      "Off-Campus",
+      "Biological Sciences",
+      "Instructor Permission"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1182,9 +1246,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "permission of instructor"
-            ]
+            "description": "permission of instructor"
           }
         ]
       },
@@ -1200,7 +1262,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/395",
-    "updatedAt": "2025-04-06T02:55:22.198Z"
+    "updatedAt": "2025-04-09T05:31:35.581Z"
   },
   {
     "department": "BIOL",
@@ -1211,7 +1273,13 @@
       "feeIndex": 6,
       "term": "EITHER, 0-0-6"
     },
-    "parsedDescription": "Directed research done under the supervision of an academic member of the Department of Biological Sciences. Normally for students in their third year of study. Successful completion of this course requires a written report on the research project.",
+    "keywords": [
+      "Directed Research",
+      "Biological Sciences",
+      "Academic Supervision",
+      "Written Report",
+      "Third Year"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1223,9 +1291,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of the Associate Chair, Undergraduate Studies"
-            ]
+            "description": "Consent of the Associate Chair, Undergraduate Studies"
           }
         ]
       },
@@ -1237,11 +1303,11 @@
     },
     "flattenedPrerequisites": [
       "BIOL 2[0-9]{2}",
-      "consent of the Associate Chair, Undergraduate Studies"
+      "Consent of the Associate Chair, Undergraduate Studies"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/398",
-    "updatedAt": "2025-04-06T02:55:24.594Z"
+    "updatedAt": "2025-04-09T05:31:38.558Z"
   },
   {
     "department": "BIOL",
@@ -1252,7 +1318,13 @@
       "feeIndex": 12,
       "term": "TWO TERM, 0-0-6"
     },
-    "parsedDescription": "Directed research done under the supervision of an academic member of the Department of Biological Sciences. Normally for students in their third year of study. Successful completion of this course requires a written report on the research project.",
+    "keywords": [
+      "Directed Research",
+      "Biological Sciences",
+      "Academic Supervision",
+      "Written Report",
+      "Third Year"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1264,9 +1336,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of the Associate Chair, Undergraduate Studies"
-            ]
+            "description": "Consent of the Associate Chair, Undergraduate Studies"
           }
         ]
       },
@@ -1278,11 +1348,11 @@
     },
     "flattenedPrerequisites": [
       "BIOL 2[0-9]{2}",
-      "consent of the Associate Chair, Undergraduate Studies"
+      "Consent of the Associate Chair, Undergraduate Studies"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/399a",
-    "updatedAt": "2025-04-06T02:55:28.072Z"
+    "updatedAt": "2025-04-09T05:31:43.223Z"
   },
   {
     "department": "BIOL",
@@ -1293,7 +1363,13 @@
       "feeIndex": 12,
       "term": "TWO TERM, 0-0-6"
     },
-    "parsedDescription": "Directed research done under the supervision of an academic member of the Department of Biological Sciences. Normally for students in their third year of study. Successful completion of this course requires a written report on the research project.",
+    "keywords": [
+      "Directed Research",
+      "Biological Sciences",
+      "Academic Supervision",
+      "Written Report",
+      "Third Year"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1305,9 +1381,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of the Associate Chair, Undergraduate Studies"
-            ]
+            "description": "Consent of the Associate Chair, Undergraduate Studies"
           }
         ]
       },
@@ -1319,11 +1393,11 @@
     },
     "flattenedPrerequisites": [
       "BIOL 2[0-9]{2}",
-      "consent of the Associate Chair, Undergraduate Studies"
+      "Consent of the Associate Chair, Undergraduate Studies"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/399b",
-    "updatedAt": "2025-04-06T02:55:31.246Z"
+    "updatedAt": "2025-04-09T05:31:49.745Z"
   },
   {
     "department": "BIOL",
@@ -1334,7 +1408,13 @@
       "feeIndex": 6,
       "term": "FIRST, 0-3S-0"
     },
-    "parsedDescription": "This course will use a combination of approaches to evaluate the origins and modern usage of foundational ideas and studies in ecology. Topics may include diversity gradients, niche theory, life-histories & strategies, multi-trophic networks and ecological stability.",
+    "keywords": [
+      "Ecology",
+      "Diversity Gradients",
+      "Niche Theory",
+      "Life Histories",
+      "Ecological Stability"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1364,7 +1444,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/408",
-    "updatedAt": "2025-04-06T02:55:34.421Z"
+    "updatedAt": "2025-04-09T05:31:54.205Z"
   },
   {
     "department": "BIOL",
@@ -1375,36 +1455,23 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-0"
     },
-    "parsedDescription": "This course will examine the biology of zoonotic agents and the implication of host-pathogen interactions to disease susceptibility and resistance. Students will apply these basic concepts towards the understanding of issues governing pathogenesis, pathology, epidemiology, control and surveillance of zoonotic diseases. Focus will be placed on zoonotic agents currently having a significant impact on animal and public health. Lectures will be followed by active discussion of selected readings.",
+    "keywords": [
+      "Zoonotic Agents",
+      "Host-Pathogen Interactions",
+      "Disease Susceptibility",
+      "Epidemiology",
+      "Public Health"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "IMIN 200"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "ZOOL 352"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "ZOOL 354"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
+        "courses": [
+              "IMIN 200",
+              "ZOOL 352",
+              "ZOOL 354",
               "ENT 392"
             ]
-          }
-        ]
+          
       },
       "corequisites": {
         "operator": "AND",
@@ -1420,7 +1487,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/409",
-    "updatedAt": "2025-04-06T02:55:37.013Z"
+    "updatedAt": "2025-04-09T05:31:57.223Z"
   },
   {
     "department": "BIOL",
@@ -1431,30 +1498,18 @@
       "feeIndex": 6,
       "term": "FIRST, 0-3S-0"
     },
-    "parsedDescription": "This course surveys the application of genomic approaches to problems of ecology and organismal evolution. It combines explanation of methodological and conceptual approaches with presentation and discussion of case studies. Topics include adaptation, speciation, genome evolution, metagenomics, population genomics, and functional genomics.",
+    "keywords": [
+      "Genomics",
+      "Ecology",
+      "Evolution",
+      "Adaptation",
+      "Speciation"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "BIOL 207"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "BIOL 208"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "BIOL 221"
-            ]
-          }
-        ]
+        "courses":[
+              "BIOL 207","BIOL 208","BIOL 221"]
       },
       "corequisites": {
         "operator": "AND",
@@ -1469,7 +1524,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/411",
-    "updatedAt": "2025-04-06T02:55:39.543Z"
+    "updatedAt": "2025-04-09T05:32:01.233Z"
   },
   {
     "department": "BIOL",
@@ -1480,7 +1535,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-3"
     },
-    "parsedDescription": "Methods for inferring evolutionary trees and their applications to the fields of comparative biology, molecular evolution, and systematics. Topics to be covered include phylogenetic inference, molecular evolution integrated at the organismal and population level, and evolutionary developmental genetics. Labs emphasize practical experience in data analysis.",
+    "keywords": [
+      "Evolutionary Trees",
+      "Comparative Biology",
+      "Molecular Evolution",
+      "Phylogenetic Inference",
+      "Data Analysis"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -1493,9 +1554,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of Department"
-            ]
+            "description": "Consent of Department"
           }
         ]
       },
@@ -1507,11 +1566,11 @@
     },
     "flattenedPrerequisites": [
       "BIOL 335",
-      "consent of Department"
+      "Consent of Department"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/421",
-    "updatedAt": "2025-04-06T02:55:42.124Z"
+    "updatedAt": "2025-04-09T05:32:04.363Z"
   },
   {
     "department": "BIOL",
@@ -1522,7 +1581,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-3"
     },
-    "parsedDescription": "Emphasis is on the design of experiments and analysis of data collected from field and laboratory studies in Biology.",
+    "keywords": [
+      "Design of Experiments",
+      "Data Analysis",
+      "Biology",
+      "Field Studies",
+      "Laboratory Studies"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1545,6 +1610,10 @@
             "operator": "WILDCARD",
             "pattern": "BIOL 3[0-9]{2}",
             "description": "an additional 300-level Biological Sciences course"
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "consent of Department"
           }
         ]
       },
@@ -1559,11 +1628,12 @@
       "STAT 161",
       "SCI 151",
       "BIOL 330",
-      "BIOL 3[0-9]{2}"
+      "BIOL 3[0-9]{2}",
+      "consent of Department"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/430",
-    "updatedAt": "2025-04-06T02:55:45.482Z"
+    "updatedAt": "2025-04-09T05:32:12.662Z"
   },
   {
     "department": "BIOL",
@@ -1574,7 +1644,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-3"
     },
-    "parsedDescription": "Principles of population ecology as they apply to plants and animals; population consequences of variation among individuals; habitat structure and population structure; habitat selection and foraging theory; life tables, demography, and the evolution of life history patterns; population dynamics; interactions among organisms (predation, competition, mutualism, parasites/disease); harvesting; and population regulation.",
+    "keywords": [
+      "Population Ecology",
+      "Demography",
+      "Habitat Structure",
+      "Population Dynamics",
+      "Interactions"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1629,7 +1705,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/431",
-    "updatedAt": "2025-04-06T02:55:50.378Z"
+    "updatedAt": "2025-04-09T05:32:23.536Z"
   },
   {
     "department": "BIOL",
@@ -1640,7 +1716,13 @@
       "feeIndex": 6,
       "term": "FIRST, 0-0-6"
     },
-    "parsedDescription": "Design, execution, analysis, and presentation of problems in behavioral, population, and community ecology in a field environment. Field exercises, demonstration of techniques, and data collection for independent projects will take place during the two weeks preceding the Fall term at a field station off the main campus. Final reports are due in the last week of September.",
+    "keywords": [
+      "Ecology",
+      "Field Exercises",
+      "Data Collection",
+      "Independent Projects",
+      "Statistics"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1683,7 +1765,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/432",
-    "updatedAt": "2025-04-06T02:55:54.594Z"
+    "updatedAt": "2025-04-09T05:32:28.320Z"
   },
   {
     "department": "BIOL",
@@ -1694,32 +1776,28 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Plants and animals are engaged in a diversity of ecological interactions, with implications for evolutionary trajectories, species coexistence, and the delivery of ecosystem services. This course requires active engagement, which may include discussion and debate. Lecture content will include a diversity of advanced topics in ecology and evolutionary biology with a focus on species interactions.",
+    "keywords": [
+      "Ecology",
+      "Evolutionary Biology",
+      "Species Interactions",
+      "Ecosystem Services",
+      "Advanced Topics"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
         "conditions": [
           {
-            "operator": "STANDALONE",
+            "operator": "OR",
             "courses": [
-              "BIOL 331"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
+              "BIOL 331",
               "BIOL 332"
             ]
           },
           {
-            "operator": "STANDALONE",
+            "operator": "OR",
             "courses": [
-              "BOT 332"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
+              "BOT 332",
               "ZOOL 371"
             ]
           }
@@ -1739,7 +1817,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/433",
-    "updatedAt": "2025-04-06T02:55:57.331Z"
+    "updatedAt": "2025-04-09T05:32:31.701Z"
   },
   {
     "department": "BIOL",
@@ -1750,7 +1828,13 @@
       "feeIndex": 6,
       "term": "EITHER, 0-3S-0"
     },
-    "parsedDescription": "An introduction to the broad field of Chemical Ecology through survey, discussion and analysis of current and historical literature. Topics include a wide array of chemically-mediated ecological interactions in a variety of taxa. Studies that analyze the importance of the use of chemical signals for habitat selection, resource acquisition, reproduction, defense and social interactions are discussed. Students research topics in Chemical Ecology and present their findings in oral and written formats.",
+    "keywords": [
+      "Chemical Ecology",
+      "Ecological Interactions",
+      "Chemical Signals",
+      "Research",
+      "Literature Analysis"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -1769,7 +1853,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/434",
-    "updatedAt": "2025-04-06T02:55:59.816Z"
+    "updatedAt": "2025-04-09T05:32:34.496Z"
   },
   {
     "department": "BIOL",
@@ -1780,7 +1864,13 @@
       "feeIndex": 6,
       "term": "SECOND, 0-3S-0"
     },
-    "parsedDescription": "The course will introduce students to theory and techniques employed in the analysis of physical, hydrological, chemical, and ecological properties of ecosystems using a watershed (catchment) approach. Focus will be on landscape interactions or linkages between upland, wetland/riparian, and surface-water in the study of the natural ecohydrologic function and response to disturbance of watershed ecosystems. Emphasis will be placed on Boreal Alberta. Topics are covered through reading the literature and group discussions.",
+    "keywords": [
+      "Ecosystems",
+      "Hydrology",
+      "Ecology",
+      "Watershed",
+      "Boreal Alberta"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -1797,9 +1887,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of the Department"
-            ]
+            "description": "consent of the Department"
           }
         ]
       },
@@ -1819,7 +1907,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/440",
-    "updatedAt": "2025-04-06T02:56:04.424Z"
+    "updatedAt": "2025-04-09T05:32:41.414Z"
   },
   {
     "department": "BIOL",
@@ -1830,7 +1918,13 @@
       "feeIndex": 6,
       "term": "SECOND, 0-3S-0"
     },
-    "parsedDescription": "This course explores the intersecting biological, chemical, and geological processes and reactions governing the cycling of elements that control our environment. Course discussions will include consideration of the atmosphere, lithosphere, hydrosphere and biosphere, and will be framed by our understanding that elemental cycling on Earth is fundamentally altered by organisms. Coursework will incorporate current topics in anthropogenic alteration of the natural cycles critical for organismal and planetary function.",
+    "keywords": [
+      "Biological Processes",
+      "Chemical Processes",
+      "Geological Processes",
+      "Elemental Cycling",
+      "Anthropogenic Alteration"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1861,7 +1955,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/442",
-    "updatedAt": "2025-04-06T02:56:11.489Z"
+    "updatedAt": "2025-04-09T05:32:44.590Z"
   },
   {
     "department": "BIOL",
@@ -1872,10 +1966,16 @@
       "feeIndex": 6,
       "term": "FIRST, 0-3S-0"
     },
-    "parsedDescription": "Survey, discussion and evaluation of literature dealing with current advances and selected topics in animal and cell physiology.",
+    "keywords": [
+      "Animal Physiology",
+      "Cell Physiology",
+      "Literature Evaluation",
+      "Current Advances",
+      "Discussion"
+    ],
     "requirements": {
       "prerequisites": {
-        "operator": "AND",
+        "operator": "OR",
         "conditions": [
           {
             "operator": "OR",
@@ -1886,9 +1986,18 @@
             ]
           },
           {
-            "operator": "STANDALONE",
-            "courses": [
-              "PHYSL 372"
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "PHYSL 372"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "description": "Consent of instructor"
+              }
             ]
           }
         ]
@@ -1903,11 +2012,12 @@
       "ZOOL 340",
       "ZOOL 342",
       "ZOOL 343",
-      "PHYSL 372"
+      "PHYSL 372",
+      "Consent of instructor"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/445",
-    "updatedAt": "2025-04-06T02:56:17.941Z"
+    "updatedAt": "2025-04-09T05:32:48.711Z"
   },
   {
     "department": "BIOL",
@@ -1918,28 +2028,27 @@
       "feeIndex": 6,
       "term": "SECOND, 0-3S-0"
     },
-    "parsedDescription": "Seminar and reading course addressing current topics in conservation biology.",
+    "keywords": [
+      "Conservation Biology",
+      "Seminar",
+      "Current Topics",
+      "Reading Course",
+      "BIOL 367"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
         "conditions": [
           {
-            "operator": "STANDALONE",
+            "operator": "OR",
             "courses": [
-              "BIOL 367"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
+              "BIOL 367",
               "REN R 364"
             ]
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of instructor"
-            ]
+            "description": "consent of instructor"
           }
         ]
       },
@@ -1956,7 +2065,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/468",
-    "updatedAt": "2025-04-06T02:56:20.882Z"
+    "updatedAt": "2025-04-09T05:32:51.495Z"
   },
   {
     "department": "BIOL",
@@ -1967,7 +2076,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-3"
     },
-    "parsedDescription": "Landscapes are holistic entities whose patterns influence ecological processes. Topics highlighted in this course include landscape components, morphology and dynamics; detecting spatial/temporal change in landscapes; issues of scales; movements of organisms, disturbances, and nutrients across landscape mosaics; and restoration, planning and management in a landscape context. Labs emphasize GIS applications to characterizing landscape patterns and heterogeneity in space and time, distributing and moving organisms across landscapes, and restoring or planning landscapes for conservation objectives.",
+    "keywords": [
+      "Landscapes",
+      "Ecological Processes",
+      "GIS Applications",
+      "Landscape Patterns",
+      "Conservation"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -2013,7 +2128,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/471",
-    "updatedAt": "2025-04-06T02:56:25.110Z"
+    "updatedAt": "2025-04-09T05:32:55.740Z"
   },
   {
     "department": "BIOL",
@@ -2024,7 +2139,13 @@
       "feeIndex": 6,
       "term": "EITHER, 0-0-6"
     },
-    "parsedDescription": "Registration will be contingent on the student's having made prior arrangements with a faculty member willing to supervise the program. Credit may be obtained more than once.",
+    "keywords": [
+      "Biological Sciences",
+      "Supervision",
+      "Consent",
+      "Undergraduate Studies",
+      "Credit"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -2036,9 +2157,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of the Associate Chair, Undergraduate Studies"
-            ]
+            "description": "Consent of the Associate Chair, Undergraduate Studies"
           }
         ]
       },
@@ -2046,15 +2165,15 @@
         "operator": "AND",
         "conditions": []
       },
-      "notes": ""
+      "notes": "Credit may be obtained more than once."
     },
     "flattenedPrerequisites": [
       "BIOL 3[0-9]{2}",
-      "consent of the Associate Chair, Undergraduate Studies"
+      "Consent of the Associate Chair, Undergraduate Studies"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/490",
-    "updatedAt": "2025-04-06T02:56:27.642Z"
+    "updatedAt": "2025-04-09T05:32:59.585Z"
   },
   {
     "department": "BIOL",
@@ -2065,7 +2184,13 @@
       "feeIndex": 6,
       "term": "EITHER, 0-3S-0"
     },
-    "parsedDescription": "Covers specialized topics of current interest to advanced undergraduates in Biological Sciences. Consult the Department for details about current offerings.",
+    "keywords": [
+      "Biological Sciences",
+      "Advanced Topics",
+      "Consent of Instructor",
+      "Current Offerings",
+      "Credit"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2084,7 +2209,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/495",
-    "updatedAt": "2025-04-06T02:56:29.765Z"
+    "updatedAt": "2025-04-09T05:33:01.948Z"
   },
   {
     "department": "BIOL",
@@ -2095,7 +2220,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-3"
     },
-    "parsedDescription": "Covers specialized topics of current interest to advanced undergraduates in Biological Sciences. Consult the Department for details about current offerings.",
+    "keywords": [
+      "Biological Sciences",
+      "Advanced Topics",
+      "Consent of Instructor",
+      "Current Offerings",
+      "Credit"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2114,7 +2245,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/496",
-    "updatedAt": "2025-04-06T02:56:31.457Z"
+    "updatedAt": "2025-04-09T05:33:04.482Z"
   },
   {
     "department": "BIOL",
@@ -2125,7 +2256,13 @@
       "feeIndex": 6,
       "term": "EITHER, 0-1S-6"
     },
-    "parsedDescription": "Covers specialized topics of current interest to advanced undergraduates in Biological Sciences. Consult the Department for details about current offerings.",
+    "keywords": [
+      "Biological Sciences",
+      "Advanced Topics",
+      "Current Interest",
+      "Consent of Instructor",
+      "Credit"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2144,7 +2281,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/497",
-    "updatedAt": "2025-04-06T02:56:33.301Z"
+    "updatedAt": "2025-04-09T05:33:06.742Z"
   },
   {
     "department": "BIOL",
@@ -2155,21 +2292,25 @@
       "feeIndex": 6,
       "term": "EITHER, 0-0-6"
     },
-    "parsedDescription": "Directed research done under the supervision of an academic member of the Department of Biological Sciences. Normally for students in their fourth year of study. Successful completion of this course requires a written report on the research project. Credit may be obtained more than once.",
+    "keywords": [
+      "Directed Research",
+      "Biological Sciences",
+      "Fourth Year",
+      "Written Report",
+      "Consent"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
         "conditions": [
           {
             "operator": "WILDCARD",
-            "pattern": "BIO 3[0-9]{2}",
+            "pattern": "BIOL 3[0-9]{2}",
             "description": "A 300-level Biological Sciences course"
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of the Associate Chair, Undergraduate Studies"
-            ]
+            "description": "Consent of the Associate Chair, Undergraduate Studies"
           }
         ]
       },
@@ -2177,15 +2318,15 @@
         "operator": "AND",
         "conditions": []
       },
-      "notes": ""
+      "notes": "Credit may be obtained more than once."
     },
     "flattenedPrerequisites": [
-      "BIO 3[0-9]{2}",
-      "consent of the Associate Chair, Undergraduate Studies"
+      "BIOL 3[0-9]{2}",
+      "Consent of the Associate Chair, Undergraduate Studies"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/498",
-    "updatedAt": "2025-04-06T02:56:35.882Z"
+    "updatedAt": "2025-04-09T05:33:10.260Z"
   },
   {
     "department": "BIOL",
@@ -2196,7 +2337,13 @@
       "feeIndex": 12,
       "term": "TWO TERM, 0-0-6"
     },
-    "parsedDescription": "Directed research done under the supervision of an academic member of the Department of Biological Sciences. Normally for students in their fourth year of study. Successful completion of this course requires an oral presentation and a written report on the research project.",
+    "keywords": [
+      "Directed Research",
+      "Biological Sciences",
+      "Oral Presentation",
+      "Written Report",
+      "Fourth Year"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -2208,9 +2355,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of the Associate Chair, Undergraduate Studies"
-            ]
+            "description": "Consent of the Associate Chair, Undergraduate Studies"
           }
         ]
       },
@@ -2222,11 +2367,11 @@
     },
     "flattenedPrerequisites": [
       "BIOL 3[0-9]{2}",
-      "consent of the Associate Chair, Undergraduate Studies"
+      "Consent of the Associate Chair, Undergraduate Studies"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/499a",
-    "updatedAt": "2025-04-06T02:56:38.446Z"
+    "updatedAt": "2025-04-09T05:33:13.270Z"
   },
   {
     "department": "BIOL",
@@ -2237,7 +2382,13 @@
       "feeIndex": 12,
       "term": "TWO TERM, 0-0-6"
     },
-    "parsedDescription": "Directed research done under the supervision of an academic member of the Department of Biological Sciences. Normally for students in their fourth year of study. Successful completion of this course requires an oral presentation and a written report on the research project.",
+    "keywords": [
+      "Directed Research",
+      "Biological Sciences",
+      "Oral Presentation",
+      "Written Report",
+      "Fourth Year"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -2249,9 +2400,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of the Associate Chair, Undergraduate Studies"
-            ]
+            "description": "Consent of the Associate Chair, Undergraduate Studies"
           }
         ]
       },
@@ -2263,11 +2412,11 @@
     },
     "flattenedPrerequisites": [
       "BIOL 3[0-9]{2}",
-      "consent of the Associate Chair, Undergraduate Studies"
+      "Consent of the Associate Chair, Undergraduate Studies"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/499b",
-    "updatedAt": "2025-04-06T02:56:41.391Z"
+    "updatedAt": "2025-04-09T05:33:20.578Z"
   },
   {
     "department": "BIOL",
@@ -2278,13 +2427,17 @@
       "feeIndex": 6,
       "term": "FIRST, 3-1S-0"
     },
-    "parsedDescription": "Discussion of computational tools and databases used in the analysis of data from high-throughput molecular biology studies. Students will use existing tools, learn the underlying algorithms and their limitations, and will be required to complete an individual research project.",
+    "keywords": [
+      "Computational Tools",
+      "Databases",
+      "Molecular Biology",
+      "Data Analysis",
+      "Research Project"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
-        "courses": [
-          "consent of instructor"
-        ]
+        "description": "consent of instructor"
       },
       "corequisites": {
         "operator": "AND",
@@ -2297,7 +2450,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/501",
-    "updatedAt": "2025-04-06T02:56:43.443Z"
+    "updatedAt": "2025-04-09T05:33:25.633Z"
   },
   {
     "department": "BIOL",
@@ -2308,7 +2461,13 @@
       "feeIndex": 4,
       "term": "EITHER, 1-1S-0"
     },
-    "parsedDescription": "Lectures and discussions on a variety of subjects in systematics and evolutionary biology by graduate students, staff, and visiting speakers. Credit may be obtained more than once.",
+    "keywords": [
+      "Systematics",
+      "Evolutionary Biology",
+      "Graduate Program",
+      "Lectures",
+      "Discussions"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2320,14 +2479,14 @@
         "operator": "AND",
         "conditions": []
       },
-      "notes": ""
+      "notes": "Credit may be obtained more than once."
     },
     "flattenedPrerequisites": [
       "consent of instructors for students not registered in the systematics and evolution graduate program"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/506",
-    "updatedAt": "2025-04-06T02:56:45.589Z"
+    "updatedAt": "2025-04-09T05:33:28.667Z"
   },
   {
     "department": "BIOL",
@@ -2338,7 +2497,13 @@
       "feeIndex": 6,
       "term": "FIRST, 0-3S-0"
     },
-    "parsedDescription": "This course will use a combination of approaches to evaluate the origins and modern usage of foundational ideas and studies in ecology. Topics may include diversity gradients, niche theory, life-histories & strategies, multi-trophic networks and ecological stability. Seminars are the same as for BIOL 408 but with additional assignments and evaluations appropriate for graduate studies.",
+    "keywords": [
+      "Ecology",
+      "Diversity Gradients",
+      "Niche Theory",
+      "Life Histories",
+      "Ecological Stability"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2357,7 +2522,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/508",
-    "updatedAt": "2025-04-06T02:56:47.945Z"
+    "updatedAt": "2025-04-09T05:33:31.657Z"
   },
   {
     "department": "BIOL",
@@ -2368,7 +2533,13 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-0"
     },
-    "parsedDescription": "This course will examine the biology of zoonotic agents and the implication of host-pathogen interactions to disease susceptibility and resistance. Students will apply these basic concepts towards the understanding of issues governing pathogenesis, pathology, epidemiology, control and surveillance of zoonotic diseases. Focus will be placed on zoonotic agents currently having a significant impact on animal and public health. Lectures will be followed by active discussion of selected readings. Scheduled classes are the same as for BIOL 409, but with additional assignments and evaluation appropriate to graduate studies.",
+    "keywords": [
+      "Zoonotic Agents",
+      "Host-Pathogen Interactions",
+      "Disease Susceptibility",
+      "Epidemiology",
+      "Public Health"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2387,7 +2558,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/509",
-    "updatedAt": "2025-04-06T02:56:50.506Z"
+    "updatedAt": "2025-04-09T05:33:34.882Z"
   },
   {
     "department": "BIOL",
@@ -2398,7 +2569,13 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-0"
     },
-    "parsedDescription": "Biological aging is a complex process that involves the progressive deterioration of an organism over time. This course covers the aging process at the molecular, tissue and organismal levels. Topics for discussion include assessment of animal models of aging, mechanisms of aging, healthy aging, age-associated disease and interventions. Lectures are the same as BIOL 310, but with additional assignments and evaluation appropriate to graduate studies.",
+    "keywords": [
+      "Biological Aging",
+      "Molecular Aging",
+      "Healthy Aging",
+      "Age-Associated Disease",
+      "Animal Models"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2417,7 +2594,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/510",
-    "updatedAt": "2025-04-06T02:56:54.603Z"
+    "updatedAt": "2025-04-09T05:33:37.474Z"
   },
   {
     "department": "BIOL",
@@ -2428,7 +2605,13 @@
       "feeIndex": 6,
       "term": "FIRST, 0-3S-0"
     },
-    "parsedDescription": "This course surveys the application of genomic approaches to problems of ecology and organismal evolution. It combines the explanation of methodological and conceptual approaches with presentation and discussion of case studies. Topics include adaptation, speciation, genome evolution, metagenomics, population genomics, and functional genomics. Seminars are the same as for BIOL 411 but with additional assignments and evaluations appropriate for graduate studies.",
+    "keywords": [
+      "Genomics",
+      "Ecology",
+      "Organismal Evolution",
+      "Adaptation",
+      "Speciation"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2447,7 +2630,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/511",
-    "updatedAt": "2025-04-06T02:56:57.413Z"
+    "updatedAt": "2025-04-09T05:33:40.465Z"
   },
   {
     "department": "BIOL",
@@ -2458,7 +2641,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-0"
     },
-    "parsedDescription": "Students will use their own thesis research area of molecular and cellular biology for writing for different readers, and for visualizing data in various ways to emphasize critical concepts or facts. They will perform peer review of selected assignments. Students will present a final summary of their assignments to the class.",
+    "keywords": [
+      "Thesis Research",
+      "Molecular Biology",
+      "Cellular Biology",
+      "Data Visualization",
+      "Peer Review"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -2473,7 +2662,7 @@
     "flattenedPrerequisites": [],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/514",
-    "updatedAt": "2025-04-06T02:56:59.211Z"
+    "updatedAt": "2025-04-09T05:33:44.025Z"
   },
   {
     "department": "BIOL",
@@ -2484,7 +2673,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-3"
     },
-    "parsedDescription": "Methods for inferring evolutionary trees and their applications to the fields of comparative biology, molecular evolution, and systematics. Topics to be covered include phylogenetic inference, molecular evolution integrated at the organismal and population level, and evolutionary developmental genetics. Labs emphasize practical experience in data analysis. Lectures and labs are the same as BIOL 421, but with additional assignments and evaluation appropriate to graduate studies.",
+    "keywords": [
+      "Evolutionary Trees",
+      "Comparative Biology",
+      "Molecular Evolution",
+      "Phylogenetic Inference",
+      "Data Analysis"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2503,7 +2698,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/521",
-    "updatedAt": "2025-04-06T02:57:03.407Z"
+    "updatedAt": "2025-04-09T05:33:46.533Z"
   },
   {
     "department": "BIOL",
@@ -2514,7 +2709,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-3"
     },
-    "parsedDescription": "Emphasis is on the design of experiments and analysis of data collected from field and laboratory studies in Biology. Lectures and labs are the same as BIOL 430, but with additional assignments and evaluations appropriate to graduate studies.",
+    "keywords": [
+      "Design of Experiments",
+      "Data Analysis",
+      "Biology",
+      "Graduate Studies",
+      "Laboratory Studies"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2533,7 +2734,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/530",
-    "updatedAt": "2025-04-06T02:57:05.867Z"
+    "updatedAt": "2025-04-09T05:33:50.137Z"
   },
   {
     "department": "BIOL",
@@ -2544,7 +2745,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-3"
     },
-    "parsedDescription": "Principles of population ecology as they apply to plants and animals; population consequences of variation among individuals; habitat structure and population structure; habitat selection and foraging theory; life tables, demography, life history patterns; population dynamics; interactions among organisms (predation, competition, mutualism, parasites/disease); harvesting; and population regulation. Highly quantitative content.",
+    "keywords": [
+      "Population Ecology",
+      "Demography",
+      "Population Dynamics",
+      "Habitat Selection",
+      "Quantitative Analysis"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -2596,7 +2803,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/531",
-    "updatedAt": "2025-04-06T02:57:12.702Z"
+    "updatedAt": "2025-04-09T05:33:54.113Z"
   },
   {
     "department": "BIOL",
@@ -2607,7 +2814,13 @@
       "feeIndex": 6,
       "term": "EITHER, 0-3S-0"
     },
-    "parsedDescription": "An introduction to the broad field of Chemical Ecology through survey, discussion and analysis of current and historical literature. Topics include a wide array of chemically-mediated ecological interactions in a variety of taxa. Studies that analyze the importance of the use of chemical signals for habitat selection, resource acquisition, reproduction, defense and social interactions are discussed. Students research topics in Chemical Ecology and present their findings in oral and written formats. Graduate students complete an additional assignment and evaluation appropriate to graduate studies.",
+    "keywords": [
+      "Chemical Ecology",
+      "Ecological Interactions",
+      "Chemical Signals",
+      "Research",
+      "Graduate Studies"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2626,7 +2839,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/534",
-    "updatedAt": "2025-04-06T02:57:15.491Z"
+    "updatedAt": "2025-04-09T05:33:55.917Z"
   },
   {
     "department": "BIOL",
@@ -2637,7 +2850,13 @@
       "feeIndex": 6,
       "term": "SECOND, 0-3S-0"
     },
-    "parsedDescription": "The course will introduce students to theory and techniques employed in the analysis of physical, hydrological, chemical, and ecological properties of ecosystems using a watershed (catchment) approach. Focus will be on landscape approaches relating interactions or linkages between upland, wetland/riparian, and surface-water in the study of the natural ecohydrologic function and response to disturbance of watershed ecosystems. Emphasis will be placed on Boreal Alberta. Topics are covered through reading the literature and group discussions. Seminars are the same as for BIOL 440, but with additional assignments and evaluation appropriate to graduate studies.",
+    "keywords": [
+      "Ecosystems",
+      "Hydrology",
+      "Ecology",
+      "Watershed",
+      "Boreal Alberta"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2656,7 +2875,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/540",
-    "updatedAt": "2025-04-06T02:57:19.793Z"
+    "updatedAt": "2025-04-09T05:33:58.596Z"
   },
   {
     "department": "BIOL",
@@ -2667,7 +2886,13 @@
       "feeIndex": 6,
       "term": "EITHER, 0-3S-0"
     },
-    "parsedDescription": "This course explores the intersecting biological, chemical, and geological processes and reactions governing the cycling of elements that control our environment. Course discussions will include consideration of the atmosphere, lithosphere, hydrosphere and biosphere, and will be framed by our understanding that elemental cycling on Earth is fundamentally altered by organisms. Coursework will incorporate current topics in anthropogenic alteration of the natural cycles critical for organismal and planetary function. Seminars are the same as for BIOL 442, but with additional assignments and evaluation appropriate to graduate studies.",
+    "keywords": [
+      "Biological Processes",
+      "Chemical Processes",
+      "Geological Processes",
+      "Elemental Cycling",
+      "Anthropogenic Alteration"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2686,7 +2911,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/542",
-    "updatedAt": "2025-04-06T02:57:22.587Z"
+    "updatedAt": "2025-04-09T05:34:03.743Z"
   },
   {
     "department": "BIOL",
@@ -2697,7 +2922,13 @@
       "feeIndex": 6,
       "term": "SECOND, 0-0-6"
     },
-    "parsedDescription": "Critical discussion and use of techniques for characterizing macromolecules from prokaryotic and eukaryotic systems. This course provides the theoretical and hands-on experience required to use classic and cutting-edge technologies to characterize the properties of these macromolecules.",
+    "keywords": [
+      "Macromolecules",
+      "Prokaryotic",
+      "Eukaryotic",
+      "Characterization",
+      "Techniques"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2716,7 +2947,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/543",
-    "updatedAt": "2025-04-06T02:57:25.013Z"
+    "updatedAt": "2025-04-09T05:34:06.548Z"
   },
   {
     "department": "BIOL",
@@ -2727,7 +2958,13 @@
       "feeIndex": 6,
       "term": "FIRST, 0-3S-0"
     },
-    "parsedDescription": "Survey, discussion and evaluation of literature dealing with current advances and selected topics in animal and cell physiology. Credit may be obtained more than once. Discussions are the same as for BIOL 445, but with additional assignments and evaluation appropriate to graduate studies. Enrolment of students by consent of instructor. Offered in alternate years.",
+    "keywords": [
+      "Animal Physiology",
+      "Cell Physiology",
+      "Literature Evaluation",
+      "Graduate Studies",
+      "Current Advances"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -2737,12 +2974,12 @@
         "operator": "AND",
         "conditions": []
       },
-      "notes": "Credit may be obtained more than once. Enrolment of students by consent of instructor. Offered in alternate years."
+      "notes": "Credit may be obtained more than once. Discussions are the same as for BIOL 445, but with additional assignments and evaluation appropriate to graduate studies. Enrolment of students by consent of instructor. Offered in alternate years."
     },
     "flattenedPrerequisites": [],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/545",
-    "updatedAt": "2025-04-06T02:57:27.648Z"
+    "updatedAt": "2025-04-09T05:34:09.330Z"
   },
   {
     "department": "BIOL",
@@ -2753,25 +2990,30 @@
       "feeIndex": 6,
       "term": "EITHER, 0-3S-0"
     },
-    "parsedDescription": "Seminar and reading on current problems concerning selected aspects of ecology. More than one section may be available and topics change from year to year. Please consult the Department for current information. Credit for this course may be obtained more than once.",
+    "keywords": [
+      "Ecology",
+      "Seminar",
+      "Current Problems",
+      "Reading",
+      "Topics"
+    ],
     "requirements": {
       "prerequisites": {
-        "operator": "WILDCARD",
-        "pattern": "ECOL 4[0-9]{2}",
+        "operator": "STANDALONE",
         "description": "at least one 400-level ecology course"
       },
       "corequisites": {
         "operator": "AND",
         "conditions": []
       },
-      "notes": ""
+      "notes": "Credit for this course may be obtained more than once. Please consult the Department for current information."
     },
     "flattenedPrerequisites": [
-      "ECOL 4[0-9]{2}"
+      "at least one 400-level ecology course"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/560",
-    "updatedAt": "2025-04-06T02:57:30.032Z"
+    "updatedAt": "2025-04-09T05:34:14.984Z"
   },
   {
     "department": "BIOL",
@@ -2782,7 +3024,13 @@
       "feeIndex": 6,
       "term": "SECOND, 0-3S-1"
     },
-    "parsedDescription": "Formulation, analysis, parameterization, and validation of quantitative models for ecological processes. Applications include population dynamics, species interactions, movement, and spatial processes. Approaches include classical hypothesis testing, computer simulation, differential equations, individual-based models, least squares, likelihood, matrix equations, Markov processes, multiple working hypotheses, and stochastic processes. The lab covers computer simulation methods.",
+    "keywords": [
+      "Ecological Processes",
+      "Quantitative Models",
+      "Population Dynamics",
+      "Computer Simulation",
+      "Statistical Methods"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2801,7 +3049,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/570",
-    "updatedAt": "2025-04-06T02:57:32.730Z"
+    "updatedAt": "2025-04-09T05:34:16.997Z"
   },
   {
     "department": "BIOL",
@@ -2812,7 +3060,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-3"
     },
-    "parsedDescription": "Landscapes are holistic entities whose patterns influence ecological processes. Topics highlighted in this course include landscape components, morphology and dynamics; detecting spatial/temporal change in landscapes; issues of scales; movements of organisms, disturbances, and nutrients across landscape mosaics; and restoration, planning and management in a landscape context. Labs emphasize GIS applications to characterizing landscape patterns and heterogeneity in space and time, distributing and moving organisms across landscapes, and restoring or planning landscapes for conservation objectives. Lectures and labs are the same as for BIOL 471, but with an additional research project and evaluation appropriate to graduate studies.",
+    "keywords": [
+      "Landscapes",
+      "Ecological Processes",
+      "GIS Applications",
+      "Conservation",
+      "Landscape Management"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2831,7 +3085,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/571",
-    "updatedAt": "2025-04-06T02:57:35.872Z"
+    "updatedAt": "2025-04-09T05:34:19.152Z"
   },
   {
     "department": "BIOL",
@@ -2842,17 +3096,18 @@
       "feeIndex": 6,
       "term": "SECOND, 0-1S-6"
     },
-    "parsedDescription": "A laboratory course introducing students to current molecular biology techniques and associated analyses used to study population genetics, systematics, and evolutionary biology in natural populations. Students will develop microsatellite marker systems and use them to examine the genetic structure of a natural population. A comparative bioinformatic approach will be used to generate sequence data to investigate the use of single nucleotide polymorphisms in candidate gene analysis and in phylogenetic inference. Labs are the same as BIOL 392, but with additional assignments and evaluation appropriate to graduate studies.",
+    "keywords": [
+      "Molecular Biology",
+      "Population Genetics",
+      "Bioinformatics",
+      "Microsatellite Markers",
+      "Phylogenetic Inference"
+    ],
     "requirements": {
       "prerequisites": {
-        "operator": "AND",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "consent of instructor"
-            ]
-          }
+        "operator": "STANDALONE",
+        "courses": [
+          "consent of instructor"
         ]
       },
       "corequisites": {
@@ -2870,7 +3125,7 @@
       "BIOL 380"
     ],
     "url": "/catalogue/course/biol/592",
-    "updatedAt": "2025-04-06T02:57:38.982Z"
+    "updatedAt": "2025-04-09T05:34:23.263Z"
   },
   {
     "department": "BIOL",
@@ -2881,7 +3136,13 @@
       "feeIndex": 6,
       "term": "EITHER, 0-3S-0"
     },
-    "parsedDescription": "Covers specialized topics of current interest to graduate students in Biological Sciences. Consult the Department for details about current offerings.",
+    "keywords": [
+      "Biological Sciences",
+      "Graduate Students",
+      "Specialized Topics",
+      "Current Offerings",
+      "Consent of Instructor"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2900,7 +3161,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/595",
-    "updatedAt": "2025-04-06T02:57:40.783Z"
+    "updatedAt": "2025-04-09T05:34:26.323Z"
   },
   {
     "department": "BIOL",
@@ -2911,7 +3172,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-3"
     },
-    "parsedDescription": "Covers specialized topics of current interest to graduate students in Biological Sciences. Consult the Department for details about current offerings.",
+    "keywords": [
+      "Biological Sciences",
+      "Graduate Students",
+      "Specialized Topics",
+      "Current Offerings",
+      "Consent of Instructor"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2930,7 +3197,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/596",
-    "updatedAt": "2025-04-06T02:57:42.598Z"
+    "updatedAt": "2025-04-09T05:34:28.206Z"
   },
   {
     "department": "BIOL",
@@ -2941,12 +3208,18 @@
       "feeIndex": 6,
       "term": "EITHER, 0-1S-6"
     },
-    "parsedDescription": "Covers specialized topics of current interest to graduate students in Biological Sciences. Consult the Department for details about current offerings.",
+    "keywords": [
+      "Biological Sciences",
+      "Graduate Students",
+      "Specialized Topics",
+      "Current Offerings",
+      "Consent of Instructor"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
         "courses": [
-          "consent of instructor"
+          "Consent of Instructor"
         ]
       },
       "corequisites": {
@@ -2956,11 +3229,11 @@
       "notes": "Credit for this course may be obtained more than once."
     },
     "flattenedPrerequisites": [
-      "consent of instructor"
+      "Consent of Instructor"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/597",
-    "updatedAt": "2025-04-06T02:57:44.716Z"
+    "updatedAt": "2025-04-09T05:34:31.030Z"
   },
   {
     "department": "BIOL",
@@ -2971,7 +3244,13 @@
       "feeIndex": 6,
       "term": "EITHER, 0-3S-0"
     },
-    "parsedDescription": "Designed for new graduate students in environmental biology to foster critical thinking and discussion and to introduce them to issues of experimental design and analysis and different approaches to ecology. The course involves student discussion of papers, lectures by faculty members on their research, seminars by students and a written assignment.",
+    "keywords": [
+      "Graduate Students",
+      "Environmental Biology",
+      "Experimental Design",
+      "Ecology",
+      "Critical Thinking"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2990,7 +3269,33 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/603",
-    "updatedAt": "2025-04-06T02:57:48.361Z"
+    "updatedAt": "2025-04-09T05:34:38.119Z"
+  },
+  {
+    "department": "BIOL",
+    "courseCode": "BIOL 631",
+    "title": "Seminar in Ecology and Evolution",
+    "units": {
+      "credits": null,
+      "feeIndex": null,
+      "term": null
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Credit may be obtained more than once."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/biol/631",
+    "updatedAt": "2025-04-09T05:34:39.938Z"
   },
   {
     "department": "BIOL",
@@ -3001,12 +3306,18 @@
       "feeIndex": null,
       "term": null
     },
-    "parsedDescription": "This course will cover specialized topics of current interest to graduate students in Biological Sciences with an emphasis on learning new research skills.",
+    "keywords": [
+      "Biological Sciences",
+      "Graduate Students",
+      "Research Skills",
+      "Specialized Topics",
+      "Consent of Instructor"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
         "courses": [
-          "consent of Instructor"
+          "Consent of Instructor"
         ]
       },
       "corequisites": {
@@ -3016,11 +3327,37 @@
       "notes": "Credit for this course may be obtained more than once."
     },
     "flattenedPrerequisites": [
-      "consent of Instructor"
+      "Consent of Instructor"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/633",
-    "updatedAt": "2025-04-06T02:57:51.843Z"
+    "updatedAt": "2025-04-09T05:34:42.935Z"
+  },
+  {
+    "department": "BIOL",
+    "courseCode": "BIOL 642",
+    "title": "Seminars in Physiology, Cell and Developmental Biology",
+    "units": {
+      "credits": null,
+      "feeIndex": null,
+      "term": null
+    },
+    "keywords": [],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Credit may be obtained more than once."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/biol/642",
+    "updatedAt": "2025-04-09T05:34:44.752Z"
   },
   {
     "department": "BIOL",
@@ -3031,7 +3368,13 @@
       "feeIndex": null,
       "term": null
     },
-    "parsedDescription": "A credit/no-credit course for graduate students who are mentoring undergraduates in a research course (BIOL 398, 490 and 498) under the supervision of an academic member of the Department of Biological Sciences. Mentorship includes activities such as in lab or field supervision, training, and help with reports and presentations.",
+    "keywords": [
+      "Mentoring",
+      "Research",
+      "Biological Sciences",
+      "Graduate Students",
+      "Undergraduates"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -3046,7 +3389,7 @@
     "flattenedPrerequisites": [],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/698",
-    "updatedAt": "2025-04-06T02:57:55.836Z"
+    "updatedAt": "2025-04-09T05:34:47.069Z"
   },
   {
     "department": "BIOL",
@@ -3057,22 +3400,49 @@
       "feeIndex": null,
       "term": null
     },
-    "parsedDescription": "A credit/no-credit course for graduate students who are mentoring undergraduates in a research course (BIOL 399 and 499) under the supervision of an academic member of the Department of Biological Sciences. Mentorship includes activities such as in lab or field supervision, training, and help with reports and presentations.",
+    "keywords": [
+      "Mentorship",
+      "Research",
+      "Biological Sciences",
+      "Graduate Students",
+      "Undergraduates"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
-        "conditions": []
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "BIOL 399"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "BIOL 499"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "Consent of Department of Biological Sciences required"
+          }
+        ]
       },
       "corequisites": {
         "operator": "AND",
         "conditions": []
       },
-      "notes": "Consent of Department of Biological Sciences required. Can be taken in any year. Credit may be obtained more than once."
+      "notes": "Can be taken in any year. Credit may be obtained more than once."
     },
-    "flattenedPrerequisites": [],
+    "flattenedPrerequisites": [
+      "BIOL 399",
+      "BIOL 499",
+      "Consent of Department of Biological Sciences required"
+    ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/699a",
-    "updatedAt": "2025-04-06T02:57:58.110Z"
+    "updatedAt": "2025-04-09T05:34:50.197Z"
   },
   {
     "department": "BIOL",
@@ -3083,21 +3453,48 @@
       "feeIndex": null,
       "term": null
     },
-    "parsedDescription": "A credit/no-credit course for graduate students who are mentoring undergraduates in a research course (BIOL 399 and 499) under the supervision of an academic member of the Department of Biological Sciences. Mentorship includes activities such as in lab or field supervision, training, and help with reports and presentations.",
+    "keywords": [
+      "Mentorship",
+      "Research",
+      "Biological Sciences",
+      "Graduate Students",
+      "Undergraduates"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
-        "conditions": []
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "BIOL 399"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "BIOL 499"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "Consent of Department of Biological Sciences required"
+          }
+        ]
       },
       "corequisites": {
         "operator": "AND",
         "conditions": []
       },
-      "notes": "Consent of Department of Biological Sciences required. Can be taken in any year. Credit may be obtained more than once."
+      "notes": "Can be taken in any year. Credit may be obtained more than once."
     },
-    "flattenedPrerequisites": [],
+    "flattenedPrerequisites": [
+      "BIOL 399",
+      "BIOL 499",
+      "Consent of Department of Biological Sciences required"
+    ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/biol/699b",
-    "updatedAt": "2025-04-06T02:58:01.329Z"
+    "updatedAt": "2025-04-09T05:34:54.467Z"
   }
 ]

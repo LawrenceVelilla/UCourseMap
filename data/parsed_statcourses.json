@@ -8,7 +8,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Data collection and presentation, descriptive statistics. Probability distributions, sampling distributions and the central limit theorem. Point estimation and hypothesis testing. Correlation and regression analysis. Goodness of fit and contingency table.",
+    "keywords": [
+      "Data Collection",
+      "Descriptive Statistics",
+      "Probability Distributions",
+      "Hypothesis Testing",
+      "Regression Analysis"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -16,7 +22,6 @@
           "Mathematics 30-1",
           "Mathematics 30-2"
         ]
-        
       },
       "corequisites": {
         "operator": "AND",
@@ -30,7 +35,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/stat/151",
-    "updatedAt": "2025-04-05T18:14:04.577Z"
+    "updatedAt": "2025-04-09T04:42:36.710Z"
   },
   {
     "department": "STAT",
@@ -41,30 +46,26 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Data collection and presentation, descriptive statistics. Probability distributions, sampling distributions and the central limit theorem. Point estimation and hypothesis testing. Correlation and regression analysis. Goodness of fit and contingency table. Use of a microcomputer software package for statistical analyses in business and economics.",
+    "keywords": [
+      "Data Collection",
+      "Descriptive Statistics",
+      "Probability Distributions",
+      "Hypothesis Testing",
+      "Regression Analysis"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "Mathematics 30-1"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "Mathematics 30-2"
-            ]
-          }
+        "courses": [
+          "Mathematics 30-1",
+          "Mathematics 30-2"
         ]
       },
       "corequisites": {
         "operator": "AND",
         "conditions": []
       },
-      "notes": "(1) Credit can be obtained in at most one of STAT 151, STAT 161, and STAT 235. (2) This course may not be taken for credit if credit has been obtained in obtained in STAT 222, STAT 266, STAT 276, KIN 109, PEDS 109, PSYCH 211, PTHER 352, SCI 151 or SOC 210."
+      "notes": "(1) Credit can be obtained in at most one of STAT 151, STAT 161, and STAT 235. (2) This course may not be taken for credit if credit has been obtained in STAT 222, STAT 266, STAT 276, KIN 109, PEDS 109, PSYCH 211, PTHER 352, SCI 151 or SOC 210."
     },
     "flattenedPrerequisites": [
       "Mathematics 30-1",
@@ -72,7 +73,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/stat/161",
-    "updatedAt": "2025-04-05T18:14:16.556Z"
+    "updatedAt": "2025-04-09T04:42:40.698Z"
   },
   {
     "department": "STAT",
@@ -83,59 +84,30 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Induction; principles of counting, multinomial coefficients, negative binomial distribution; maximum likelihood estimation, probability axioms; conditional probability, Bayes' rule; independence; probability mass, distribution, and moment generating functions; strong law of large numbers; conditional expectation estimators; gambler's ruin; transience and recurrence; compound processes; applications.",
+    "keywords": [
+      "Induction",
+      "Probability",
+      "Estimation",
+      "Bayes' Rule",
+      "Applications"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "MATH 125"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "MATH 127"
-            ]
-          }
-        ]
+        "courses": [        
+            "MATH 125",
+            "MATH 127"
+          ]         
       },
       "corequisites": {
-        "operator": "OR",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "MATH 101"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "MATH 118"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "MATH 136"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "MATH 146"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "MATH 156"
-            ]
-          }
-        ]
+        "operator": "OR",            
+          "courses": [
+            "MATH 101",
+            "MATH 118",
+            "MATH 136",
+            "MATH 146",
+            "MATH 156"
+          ]                  
       },
       "notes": "(1) Credit can be obtained in at most two of STAT 181, STAT 265, or STAT 281. (2) Credit cannot be obtained in STAT 181 if credit has already been obtained in MATH 181."
     },
@@ -151,7 +123,7 @@
       "MATH 156"
     ],
     "url": "/catalogue/course/stat/181",
-    "updatedAt": "2025-04-05T18:14:23.484Z"
+    "updatedAt": "2025-04-09T04:42:44.444Z"
   },
   {
     "department": "STAT",
@@ -162,7 +134,13 @@
       "feeIndex": 6,
       "term": "EITH/SP/SU, 3-0-1.5"
     },
-    "parsedDescription": "Descriptive data analysis. Calculus of Probability. Binomial, multinomial, Poisson, normal, beta, exponential, gamma, hypergeometric, and Weibull distributions. Sampling distributions. Estimation, testing hypotheses, goodness-of-fit tests, and one-way analysis of variance. Linear correlation and regression. Sampling. Quality control. Use of a microcomputer software package for statistical analyses in engineering applications.",
+    "keywords": [
+      "Descriptive Data Analysis",
+      "Probability",
+      "Statistical Distributions",
+      "Hypothesis Testing",
+      "Quality Control"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -176,7 +154,7 @@
           "MATH 101"
         ]
       },
-      "notes": "(1) This course may not be taken for credit if credit has already been obtained in one of STAT 151, 161, 222, 265, 266, 276, 281; KIN 109, PEDS 109, PSYCH 211, PTHER 352, SCI 151 or SOC 210. (2) Intended for Engineering students. (2) Intended for Engineering students. Other students who take this course will receive 3.0 units."
+      "notes": "(1) This course may not be taken for credit if credit has already been obtained in one of STAT 151, 161, 222, 265, 266, 276, 281; KIN 109, PEDS 109, PSYCH 211, PTHER 352, SCI 151 or SOC 210. (2) Intended for Engineering students. Other students who take this course will receive 3.0 units."
     },
     "flattenedPrerequisites": [
       "MATH 100"
@@ -185,7 +163,7 @@
       "MATH 101"
     ],
     "url": "/catalogue/course/stat/235",
-    "updatedAt": "2025-04-05T18:14:30.284Z"
+    "updatedAt": "2025-04-09T04:42:47.659Z"
   },
   {
     "department": "STAT",
@@ -196,7 +174,13 @@
       "feeIndex": 6,
       "term": "EITH/SP/SU, 3-0-1.5"
     },
-    "parsedDescription": "Descriptive data analysis. Calculus of Probability. Binomial, multinomial, Poisson, normal, beta, exponential, gamma, hypergeometric, and Weibull distributions. Sampling distributions. Estimation, testing hypotheses, goodness-of-fit tests, and one-way analysis of variance. Linear correlation and regression. Sampling. Quality control. Use of a microcomputer software package for statistical analyses in engineering applications.",
+    "keywords": [
+      "Descriptive Data Analysis",
+      "Probability",
+      "Statistical Distributions",
+      "Hypothesis Testing",
+      "Quality Control"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -210,7 +194,7 @@
           "MATH 101"
         ]
       },
-      "notes": "(1) This course may not be taken for credit if credit has already been obtained in one of STAT 151, 161, 222, 265, 266, 276, 281; KIN 109, PEDS 109, PSYCH 211, PTHER 352, SCI 151 or SOC 210. (2) Intended for Engineering students. (2) Intended for Engineering students. Other students who take this course will receive 3.0 units."
+      "notes": "(1) This course may not be taken for credit if credit has already been obtained in one of STAT 151, 161, 222, 265, 266, 276, 281; KIN 109, PEDS 109, PSYCH 211, PTHER 352, SCI 151 or SOC 210. (2) Intended for Engineering students. Other students who take this course will receive 3.0 units."
     },
     "flattenedPrerequisites": [
       "MATH 100"
@@ -219,7 +203,7 @@
       "MATH 101"
     ],
     "url": "/catalogue/course/stat/235a",
-    "updatedAt": "2025-04-05T18:14:36.316Z"
+    "updatedAt": "2025-04-09T04:42:51.345Z"
   },
   {
     "department": "STAT",
@@ -230,7 +214,13 @@
       "feeIndex": 6,
       "term": "EITH/SP/SU, 3-0-1.5"
     },
-    "parsedDescription": "Descriptive data analysis. Calculus of Probability. Binomial, multinomial, Poisson, normal, beta, exponential, gamma, hypergeometric, and Weibull distributions. Sampling distributions. Estimation, testing hypotheses, goodness-of-fit tests, and one-way analysis of variance. Linear correlation and regression. Sampling. Quality control. Use of a microcomputer software package for statistical analyses in engineering applications.",
+    "keywords": [
+      "Descriptive Data Analysis",
+      "Probability",
+      "Statistical Distributions",
+      "Hypothesis Testing",
+      "Quality Control"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -244,7 +234,7 @@
           "MATH 101"
         ]
       },
-      "notes": "(1) This course may not be taken for credit if credit has already been obtained in one of STAT 151, 161, 222, 265, 266, 276, 281; KIN 109, PEDS 109, PSYCH 211, PTHER 352, SCI 151 or SOC 210. (2) Intended for Engineering students. (2) Intended for Engineering students. Other students who take this course will receive 3.0 units."
+      "notes": "(1) This course may not be taken for credit if credit has already been obtained in one of STAT 151, 161, 222, 265, 266, 276, 281; KIN 109, PEDS 109, PSYCH 211, PTHER 352, SCI 151 or SOC 210. (2) Intended for Engineering students. Other students who take this course will receive 3.0 units."
     },
     "flattenedPrerequisites": [
       "MATH 100"
@@ -253,7 +243,7 @@
       "MATH 101"
     ],
     "url": "/catalogue/course/stat/235b",
-    "updatedAt": "2025-04-05T18:14:41.638Z"
+    "updatedAt": "2025-04-09T04:42:54.626Z"
   },
   {
     "department": "STAT",
@@ -264,22 +254,23 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Methods in applied statistics including regression techniques, analysis of variance and covariance, and methods of data analysis. Applications are taken from Biological, Physical and Social Sciences, and Business.",
+    "keywords": [
+      "Applied Statistics",
+      "Regression Techniques",
+      "Analysis of Variance",
+      "Data Analysis",
+      "Applications"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
-        "conditions": [
-          {
-            "operator": "OR",
-            "courses": [
-              "STAT 141",
-              "STAT 151",
-              "STAT 161",
-              "STAT 235",
-              "SCI 151"
-            ]
-          }
-        ]
+          "courses": [
+            "STAT 141",
+            "STAT 151",
+            "STAT 161",
+            "STAT 235",
+            "SCI 151"
+          ]                  
       },
       "corequisites": {
         "operator": "AND",
@@ -296,7 +287,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/stat/252",
-    "updatedAt": "2025-04-05T18:14:45.137Z"
+    "updatedAt": "2025-04-09T04:42:57.755Z"
   },
   {
     "department": "STAT",
@@ -307,7 +298,13 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-0"
     },
-    "parsedDescription": "Sample space, events, combinatorial probability, conditional probability, independent events, Bayes Theorem, random variables, discrete random variables, expected values, moment generating function, inequalities, continuous distributions, multivariate distributions, independence.",
+    "keywords": [
+      "Probability",
+      "Random Variables",
+      "Distributions",
+      "Bayes Theorem",
+      "Combinatorial Probability"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -315,11 +312,11 @@
       },
       "corequisites": {
         "operator": "OR",
-        "courses": [
-          "MATH 209",
-          "MATH 214",
-          "MATH 217"
-        ]
+          "courses": [
+            "MATH 209",
+            "MATH 214",
+            "MATH 217"
+          ]                  
       },
       "notes": "Credit can be obtained in at most two of MATH 181, MATH 281, or STAT 265."
     },
@@ -330,7 +327,7 @@
       "MATH 217"
     ],
     "url": "/catalogue/course/stat/265",
-    "updatedAt": "2025-04-05T18:14:48.414Z"
+    "updatedAt": "2025-04-09T04:43:00.537Z"
   },
   {
     "department": "STAT",
@@ -341,7 +338,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-0"
     },
-    "parsedDescription": "Functions of random variables, sampling distributions, Central Limit Theorem, law of large numbers, statistical models for the data, likelihood, parameters and their interpretation, objectives of statistical inference, point and interval estimation, method of moments, basic notions of testing of hypotheses, errors of the first and second kind, significance level, power, p-value.",
+    "keywords": [
+      "Random Variables",
+      "Statistical Inference",
+      "Sampling Distributions",
+      "Hypothesis Testing",
+      "Statistical Models"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -365,10 +368,10 @@
       },
       "corequisites": {
         "operator": "OR",
-        "courses": [
-          "MATH 225",
-          "MATH 227"
-        ]
+          "courses": [
+            "MATH 225",
+            "MATH 227"
+          ]                  
       },
       "notes": "Credit can only be obtained in one of STAT 266 or STAT 276."
     },
@@ -384,7 +387,7 @@
       "MATH 227"
     ],
     "url": "/catalogue/course/stat/266",
-    "updatedAt": "2025-04-05T18:14:55.308Z"
+    "updatedAt": "2025-04-09T04:43:03.852Z"
   },
   {
     "department": "STAT",
@@ -395,24 +398,20 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Fundamental principles of statistical learning and inference for data science Understanding of types of analytics, probability, variability, relationship between variables, probability distributions, law of large numbers, Central Limit Theorem, hypothesis testing and statistical significance, and elementary theory of regression.",
+    "keywords": [
+      "Statistical Learning",
+      "Inference",
+      "Data Science",
+      "Probability",
+      "Regression"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "MATH 281"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "STAT 265"
-            ]
-          }
-        ]
+          "courses": [
+            "MATH 281",
+            "STAT 265"
+          ]                  
       },
       "corequisites": {
         "operator": "AND",
@@ -444,6 +443,1788 @@
       "MATH 216"
     ],
     "url": "/catalogue/course/stat/276",
-    "updatedAt": "2025-04-05T18:14:59.519Z"
+    "updatedAt": "2025-04-09T04:43:06.807Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 281",
+    "title": "Probability by Counting and Queuing",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Probability",
+      "Random Variables",
+      "Stochastic Processes",
+      "Markov Queues",
+      "Applications"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "OR",
+          "courses": [
+            "MATH 209",
+            "MATH 214",
+            "MATH 217"
+          ]                  
+      },
+      "notes": "(1) Credit can be obtained in at most two of STAT 181, STAT 265, or STAT 281. (2) Credit cannot be obtained in STAT 281 if credit has already been obtained in STAT 371."
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [
+      "MATH 209",
+      "MATH 214",
+      "MATH 217"
+    ],
+    "url": "/catalogue/course/stat/281",
+    "updatedAt": "2025-04-09T04:43:09.350Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 337",
+    "title": "Biostatistics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-2"
+    },
+    "keywords": [
+      "Data Analysis",
+      "Biostatistics",
+      "Regression",
+      "Life Sciences",
+      "Computer Applications"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "STAT 151",
+              "STAT 161",
+              "SCI 151"
+            ]
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "BIO 2[0-9]{2}",
+            "description": "a 200-level Biological Science course"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "(1) Credit can be obtained in at most one of STAT 252, STAT 337, and AREC 313. (2) This course may not be taken for credit if credit has already been obtained in STAT 368 or 378."
+    },
+    "flattenedPrerequisites": [
+      "STAT 151",
+      "STAT 161",
+      "SCI 151",
+      "BIO 2[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/337",
+    "updatedAt": "2025-04-09T04:43:19.196Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 353",
+    "title": "Life Contingencies I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Random Variables",
+      "Insurances",
+      "Annuities",
+      "Net Premiums",
+      "Reserves"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 253"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "STAT 265",
+              "MATH 281"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "MATH 253",
+      "STAT 265",
+      "MATH 281"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/353",
+    "updatedAt": "2025-04-09T04:43:21.479Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 361",
+    "title": "Sampling Techniques",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Sampling",
+      "Regression Estimators",
+      "Stratified Sampling",
+      "Cluster Sampling",
+      "Finite Populations"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "STAT 266",
+              "STAT 276"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "STAT 235"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "description": "Consent of the Department"
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "This course may only be offered in alternate years."
+    },
+    "flattenedPrerequisites": [
+      "STAT 266",
+      "STAT 276",
+      "STAT 235"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/361",
+    "updatedAt": "2025-04-09T04:43:24.678Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 368",
+    "title": "Introduction to Design and Analysis of Experiments",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Experimental Design",
+      "ANOVA",
+      "ANCOVA",
+      "Factorial Experiments",
+      "Multiple Comparisons"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "STAT 266",
+              "STAT 276"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "STAT 235"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "description": "Consent of the Department"
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "STAT 266",
+      "STAT 276",
+      "STAT 235"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/368",
+    "updatedAt": "2025-04-09T04:43:27.697Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 371",
+    "title": "Probability and Stochastic Processes",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Probability",
+      "Random Walk",
+      "Markov Chains",
+      "Branching Processes",
+      "Problem Solving"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "STAT 265"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Credit can be obtained in at most one of MATH 281 or STAT 371."
+    },
+    "flattenedPrerequisites": [
+      "STAT 265"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/371",
+    "updatedAt": "2025-04-09T04:43:29.943Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 372",
+    "title": "Mathematical Statistics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Large Numbers",
+      "Convergence",
+      "Estimation",
+      "Bayesian Inference",
+      "Nonparametric Methods"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 266"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 276"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "STAT 266",
+      "STAT 276"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/372",
+    "updatedAt": "2025-04-09T04:43:32.359Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 378",
+    "title": "Applied Regression Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Linear Regression",
+      "Multiple Regression",
+      "Inference",
+      "Residual Analysis",
+      "Non-linear Regression"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "STAT 266",
+              "STAT 276"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "STAT 235"
+                ]
+              },
+              {
+                "operator": "STANDALONE",
+                "description": "Consent of the Department"
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "STAT 266",
+      "STAT 276",
+      "STAT 235"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/378",
+    "updatedAt": "2025-04-09T04:43:35.376Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 413",
+    "title": "Computing for Data Science",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "keywords": [
+      "Statistics",
+      "Data Science",
+      "Monte Carlo Methods",
+      "Numerical Integration",
+      "Optimization"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "STAT 265",
+              "MATH 281"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "consent of the Department"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "STAT 265",
+      "MATH 281",
+      "consent of the Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/413",
+    "updatedAt": "2025-04-09T04:43:38.411Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 432",
+    "title": "Survival Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Survival Models",
+      "Model Estimation",
+      "Parametric Models",
+      "Life Tables",
+      "Data Samples"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 372"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 378"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "STAT 372",
+      "STAT 378"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/432",
+    "updatedAt": "2025-04-09T04:43:41.724Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 437",
+    "title": "Applied Statistical Methods",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Data Analysis",
+      "Applied Research",
+      "Regression",
+      "Survival Analysis",
+      "Multivariate Techniques"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "STAT 252",
+              "STAT 337"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "consent of the instructor"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "STAT 252",
+      "STAT 337",
+      "consent of the instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/437",
+    "updatedAt": "2025-04-09T04:43:46.520Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 441",
+    "title": "Statistical Methods for Learning and Data Mining",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Regression",
+      "Generalized Linear Models",
+      "Dimension Reduction",
+      "Classification",
+      "Machine Learning"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "STAT 378"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "STAT 378"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/441",
+    "updatedAt": "2025-04-09T04:43:49.628Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 453",
+    "title": "Risk Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Ruin Theory",
+      "Risk Models",
+      "Loss Severity",
+      "Probability",
+      "Moment Generating Functions"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+          "courses": [
+            "STAT 371",
+            "MATH 281"
+          ]                  
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "STAT 371",
+      "MATH 281"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/453",
+    "updatedAt": "2025-04-09T04:43:52.162Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 471",
+    "title": "Probability I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Probability",
+      "Combinatorial Analysis",
+      "Random Variables",
+      "Distributions",
+      "Limit Theorems"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+          "courses": [
+            "STAT 371",
+            "MATH 281"
+          ]                  
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "STAT 371",
+      "MATH 281"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/471",
+    "updatedAt": "2025-04-09T04:43:54.983Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 479",
+    "title": "Time Series Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Stationary Series",
+      "Spectral Analysis",
+      "Time Series",
+      "ARMA",
+      "ARIMA"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "courses": [
+          "STAT 372",
+          "STAT 378"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "This course may only be offered in alternate years."
+    },
+    "flattenedPrerequisites": [
+      "STAT 372",
+      "STAT 378"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/479",
+    "updatedAt": "2025-04-09T04:43:57.472Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 497",
+    "title": "Reading in Statistics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Independent Study",
+      "Reading Program",
+      "Supervision",
+      "Honors Committee",
+      "Examination"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "WILDCARD"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "This course may be taken in Fall or Winter and may be taken any number of times, subject always to the approval mentioned above."
+    },
+    "flattenedPrerequisites": [
+      "Any 300-level STAT course"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/497",
+    "updatedAt": "2025-04-09T04:44:00.467Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 498",
+    "title": "Statistical Topics in Data Science",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Topics Course",
+      "STAT 266",
+      "STAT 276",
+      "New Offerings",
+      "Credit"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+          "courses": [
+            "STAT 266",
+            "STAT 276"
+          ]                  
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Credit for this course may be obtained more than once."
+    },
+    "flattenedPrerequisites": [
+      "STAT 266",
+      "STAT 276"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/498",
+    "updatedAt": "2025-04-09T04:44:03.433Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 499",
+    "title": "Research Project",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-1S-6"
+    },
+    "keywords": [
+      "Research",
+      "Statistics",
+      "Oral Presentation",
+      "Written Report",
+      "Specialization"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "WILDCARD",
+            "pattern": "STAT 3[0-9]{2}",
+            "description": "a 300-level STAT course"
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "consent of the course coordinator"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Credit for this course may be obtained more than once. Students interested in taking this course should contact the course coordinator two months in advance."
+    },
+    "flattenedPrerequisites": [
+      "STAT 3[0-9]{2}",
+      "consent of the course coordinator"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/499",
+    "updatedAt": "2025-04-09T04:44:06.727Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 501",
+    "title": "Directed Study I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Experimental Design",
+      "ANOVA",
+      "ANCOVA",
+      "Factorial Experiments",
+      "Statistical Methods"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "STAT 252",
+              "STAT 337"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "Linear Algebra"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Cannot be used for credit towards a graduate program in Statistics."
+    },
+    "flattenedPrerequisites": [
+      "STAT 252",
+      "STAT 337",
+      "Linear Algebra"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/501",
+    "updatedAt": "2025-04-09T04:44:09.885Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 502",
+    "title": "Directed Study II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Linear Regression",
+      "Multiple Regression",
+      "Statistical Methods",
+      "Residual Analysis",
+      "Prediction Intervals"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "STAT 337"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "a course in linear algebra"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Cannot be used for credit towards a graduate program in Statistics."
+    },
+    "flattenedPrerequisites": [
+      "STAT 337",
+      "a course in linear algebra"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/502",
+    "updatedAt": "2025-04-09T04:44:13.732Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 503",
+    "title": "Directed Study III",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Time Series",
+      "Modelling",
+      "Stationarity",
+      "Autocorrelation",
+      "Statistical Methods"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "courses": [
+          "STAT 372",
+          "STAT 378"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "consent of Instructor"
+    },
+    "flattenedPrerequisites": [
+      "STAT 372",
+      "STAT 378"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/503",
+    "updatedAt": "2025-04-09T04:44:16.965Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 504",
+    "title": "Directed Study IV",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Sampling Schemes",
+      "Statistical Inference",
+      "Finite Populations",
+      "Estimators",
+      "Cluster Sampling"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "WILDCARD",
+            "pattern": "STAT 3[0-9]{2}",
+            "description": "A course in Statistical Inference at the 300 level"
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "Permission from the instructor"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Cannot be used for credit towards a graduate program in Statistics."
+    },
+    "flattenedPrerequisites": [
+      "STAT 3[0-9]{2}",
+      "Permission from the instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/504",
+    "updatedAt": "2025-04-09T04:44:20.429Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 505",
+    "title": "Directed Study V",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Statistical Model Building",
+      "Linear Models",
+      "Generalized Linear Models",
+      "Multivariate Methods",
+      "Classification"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 501"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 502"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "equivalent"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Cannot be used for credit towards a thesis-based graduate program in Statistics."
+    },
+    "flattenedPrerequisites": [
+      "STAT 501",
+      "STAT 502",
+      "equivalent"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/505",
+    "updatedAt": "2025-04-09T04:44:23.314Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 512",
+    "title": "Techniques of Mathematics for Statistics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Mathematical Techniques",
+      "Statistics",
+      "Diagonalization",
+      "Multivariable Calculus",
+      "Estimation"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "consent of Department"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/512",
+    "updatedAt": "2025-04-09T04:44:25.049Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 513",
+    "title": "Statistical Computing",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Computational Culture",
+      "Monte Carlo Methods",
+      "Optimization",
+      "Statistical Simulations",
+      "Convex Optimization"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "consent of the instructor"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "consent of the instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/513",
+    "updatedAt": "2025-04-09T04:44:27.102Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 514",
+    "title": "Statistics for Clinical Trials I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "keywords": [
+      "Statistical Knowledge",
+      "Clinical Trials",
+      "Design",
+      "Analysis",
+      "Randomization"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "consent of the instructor"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Students outside of the course-based MSc with a specialization in Biostatistics need permission from the Department to enroll in this course. Thesis-based graduate students in Mathematical and Statistical Sciences cannot take this course for credit."
+    },
+    "flattenedPrerequisites": [
+      "consent of the instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/514",
+    "updatedAt": "2025-04-09T04:44:29.119Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 515",
+    "title": "Statistics for Clinical Trials II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "keywords": [
+      "Statistics",
+      "Clinical Trials",
+      "Statistical Computation",
+      "Data Analysis",
+      "R and SAS"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "STAT 514"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Students outside of the course-based MSc with a specialization in Biostatistics need permission from the Department to enroll in this course. Thesis-based graduate students in Mathematical and Statistical Sciences cannot take this course for credit."
+    },
+    "flattenedPrerequisites": [
+      "STAT 514"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/515",
+    "updatedAt": "2025-04-09T04:44:35.281Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 532",
+    "title": "Survival Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Survival Analysis",
+      "Hazard Functions",
+      "Censoring",
+      "Kaplan-Meier",
+      "Cox's Proportional Hazards Model"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 372"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "consent of Department"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "STAT 372",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/532",
+    "updatedAt": "2025-04-09T04:44:37.864Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 537",
+    "title": "Statistical Methods for Applied Research II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Statistics",
+      "Inference",
+      "Regression",
+      "Analysis of Variance",
+      "Case Studies"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 437 equivalent"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "consent of the instructor"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "STAT 437 equivalent",
+      "consent of the instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/537",
+    "updatedAt": "2025-04-09T04:44:40.075Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 541",
+    "title": "Statistics for Learning",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Statistical Learning",
+      "Supervised Classification",
+      "Machine Learning",
+      "Decision Theory",
+      "Model Building"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "Consent of the instructor"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "Consent of the instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/541",
+    "updatedAt": "2025-04-09T04:44:41.837Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 553",
+    "title": "Risk Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Ruin Theory",
+      "Risk Models",
+      "Loss Severity",
+      "Probability",
+      "Statistical Models"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 371"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "equivalent"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Cannot be used for credit towards a thesis-based graduate program in the Department of Mathematical and Statistical Sciences."
+    },
+    "flattenedPrerequisites": [
+      "STAT 371",
+      "equivalent"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/553",
+    "updatedAt": "2025-04-09T04:44:45.750Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 561",
+    "title": "Sample Survey Methodology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Sampling Schemes",
+      "Estimation",
+      "Regression Analysis",
+      "Variance Estimation",
+      "Survey Data"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "courses":[
+          "STAT 361",
+          "STAT 372",
+          "STAT 471"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "STAT 361",
+      "STAT 372",
+      "STAT 471"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/561",
+    "updatedAt": "2025-04-09T04:44:49.018Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 562",
+    "title": "Discrete Data Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Sampling Models",
+      "Inference",
+      "Discrete Data",
+      "Maximum Likelihood Estimation",
+      "Chi-square Tests"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "courses":[
+          "STAT 372",
+          "STAT 471"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "STAT 372",
+      "STAT 471"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/562",
+    "updatedAt": "2025-04-09T04:44:54.581Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 566",
+    "title": "Methods of Statistical Inference",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Statistical Inference",
+      "Exponential Families",
+      "General Linear Models",
+      "Bayesian Methods",
+      "Estimation"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 471"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "consent of Department"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "STAT 471",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/566",
+    "updatedAt": "2025-04-09T04:44:57.403Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 568",
+    "title": "Design and Analysis of Experiments",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Linear Model",
+      "Designs",
+      "Factorial Designs",
+      "Analysis of Covariance",
+      "Response Surface Methodology"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 368"
+            ]
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "STAT 4[0-9]{2}",
+            "description": "a 400-level STAT course"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "STAT 368",
+      "STAT 4[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/568",
+    "updatedAt": "2025-04-09T04:45:00.777Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 571",
+    "title": "Probability and Measure",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Measure",
+      "Integration",
+      "Probability",
+      "Laws of Large Numbers",
+      "Convergence"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 471"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "STAT 512",
+              "equivalents"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "STAT 471",
+      "STAT 512",
+      "equivalents"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/571",
+    "updatedAt": "2025-04-09T04:45:03.725Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 575",
+    "title": "Multivariate Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Multivariate Normal Distribution",
+      "Regression",
+      "Analysis of Variance",
+      "Classification",
+      "Factor Analysis"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 372"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 512"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "STAT 372",
+      "STAT 512"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/575",
+    "updatedAt": "2025-04-09T04:45:08.764Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 578",
+    "title": "Regression Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Linear Regression",
+      "Least Squares",
+      "Correlation",
+      "Model Building",
+      "Nonlinear Regression"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 378"
+            ]
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "STAT 4[0-9]{2}",
+            "description": "a 400-level statistics course"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "STAT 378",
+      "STAT 4[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/578",
+    "updatedAt": "2025-04-09T04:45:11.505Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 580",
+    "title": "Stochastic Processes",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Stochastic Processes",
+      "Markov Chains",
+      "Brownian Motion",
+      "Branching Processes",
+      "Statistical Analysis"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 471"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "consent of Instructor"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "STAT 471",
+      "consent of Instructor"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/stat/580",
+    "updatedAt": "2025-04-09T04:45:13.672Z"
+  },
+  {
+    "department": "STAT",
+    "courseCode": "STAT 590",
+    "title": "Statistical Consulting",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Data Analysis",
+      "Problem Solving",
+      "Oral Communication",
+      "Consulting",
+      "Report Writing"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 568"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 578"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "STAT 568",
+              "STAT 578"
+            ]
+          }
+        ]
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [
+      "STAT 568",
+      "STAT 578"
+    ],
+    "url": "/catalogue/course/stat/590",
+    "updatedAt": "2025-04-09T04:45:16.164Z"
   }
 ]

@@ -1,0 +1,1490 @@
+[
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 102",
+    "title": "Introduction to Critical Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, VARIABLE"
+    },
+    "description": "Introduces methods of critical analysis through a range of literature written in English, broadly conceived, from different historical periods and cultural locations. Note: Not to be taken by students with 6 units in approved junior English.",
+    "url": "/catalogue/course/engl/102"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 102A",
+    "title": "Introduction to Critical Analysis",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "EITHER, VARIABLE"
+    },
+    "description": "Introduces methods of critical analysis through a range of literature written in English, broadly conceived, from different historical periods and cultural locations. Note: Not to be taken by students with 6 units in approved junior English.",
+    "url": "/catalogue/course/engl/102a"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 102B",
+    "title": "Introduction to Critical Analysis",
+    "units": {
+      "credits": 5,
+      "feeIndex": 6,
+      "term": "EITHER, VARIABLE"
+    },
+    "description": "Introduces methods of critical analysis through a range of literature written in English, broadly conceived, from different historical periods and cultural locations. Note: Not to be taken by students with 6 units in approved junior English.",
+    "url": "/catalogue/course/engl/102b"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 103",
+    "title": "Case Studies in Research",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, VARIABLE"
+    },
+    "description": "This variable content course introduces methods of literary research as an in-depth process through one or more case studies. Refer to the Class Schedule and the Department of English and Film Studies website for specific topics. This course cannot be repeated for credit. Note: Not to be taken by students with 6 units in approved junior English.",
+    "url": "/catalogue/course/engl/103"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 125",
+    "title": "Indigenous Literatures",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, VARIABLE"
+    },
+    "description": "An introduction to Indigenous literatures in North America, from their earliest oral forms to their contemporary variations. Note: Not to be taken by students with 6 units in approved junior English. Sections reserved for students in the TYP Program include a 3 hour seminar component in addition to the 3 hour lecture component.",
+    "url": "/catalogue/course/engl/125"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 150",
+    "title": "Introduction to English Studies",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, VARIABLE"
+    },
+    "description": "An introduction to studies in the discipline recommended for students considering a major, minor, or Honors degree in English. Students will be introduced to a variety of methodological approaches while learning about literary, cultural and media studies, with special attention to topics such as race, Indigeneity, ethnicity, gender, sexuality, and class. NOTES: Not to be taken by students with 6 units in approved junior English. Credit does not fulfill the Arts common English requirement. Restricted to students registered in the Faculty of Arts.",
+    "url": "/catalogue/course/engl/150"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 199",
+    "title": "English for Engineering Students",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "This course aims to develop the student's ability to provide effective written and oral information. It will focus on instruction in fundamental writing skills, including building effective sentences and paragraphs, and on learning to communicate clearly across a range of genres and media used in academic and professional contexts, including correspondence and presentations. Students will be introduced to the principles of information gathering, analysis, and citation. Note: Restricted to students in the Faculty of Engineering only.",
+    "url": "/catalogue/course/engl/199"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 206",
+    "title": "How Poems Work: Introduction to Poetry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to a range of poetic forms, techniques and theories. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/206"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 207",
+    "title": "How Stories Work: Introduction to Narrative",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to narrative and narrative theory through a range of fictional and non-fictional writing. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: not to be taken by students with credit in ENGL 219.",
+    "url": "/catalogue/course/engl/207"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 212",
+    "title": "Critical Approaches to the English Language",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Studies in the structure and social life of the English language. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/212"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 215",
+    "title": "Reading Literature Across Time",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to the history of literature by reading a wide range of texts across 800 years with a focus on cultural and social change. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/215"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 216",
+    "title": "Introduction to Indigenous Literary Methods",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A landscape of Indigenous literary methods addressing field and canon formations, shifts, debates, and the ethics of reading. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/216"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 217",
+    "title": "Introduction to Literary and Critical Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to the breadth of theoretical perspectives for the study of English. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/217"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 220",
+    "title": "Reading Gender and Sexuality",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to dynamics of gender and sexuality in literary and other cultural texts, and to the critical concepts and methods key to their study. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/220"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 221",
+    "title": "Reading Class and Ideology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to dynamics of class and ideology in literary and other cultural texts, and to the critical concepts and methods key to their study. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/221"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 222",
+    "title": "Reading Race and Ethnicity",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to dynamics of race and ethnicity in literary and other cultural texts, and to the critical concepts and methods key to their study. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/222"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 223",
+    "title": "Reading Empire and the Postcolonial",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An introduction to dynamics of colonization and its resistances in literary and other cultural texts, and to the critical concepts and methods key to their study. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/223"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 250",
+    "title": "Introduction to Canadian Literatures",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A survey of literatures in what is now Canada. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/250"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 299",
+    "title": "Essay Writing for Education Students",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "This course, designed to increase the student's ability to write effective essays, emphasizes the study of grammar, punctuation, and sentence and paragraph structure. The study of models of prose style is integrated with frequent practice in writing. ENGL 299 is not a remedial course. Note: Restricted to students in the Faculty of Education. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/299"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 300",
+    "title": "Social and Cultural History of the English Language",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Studies in the historical development of the English Language. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: not to be taken by students with credit in former ENGL 311.",
+    "url": "/catalogue/course/engl/300"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 301",
+    "title": "Topics in Genre",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: variable content course which may be repeated if topics vary.",
+    "url": "/catalogue/course/engl/301"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 302",
+    "title": "Topics in Literary and Critical Theories",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: variable content course which may be repeated if topics vary.",
+    "url": "/catalogue/course/engl/302"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 303",
+    "title": "Digital Culture",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Studies in the theories, histories, and literary practices introduced by digital culture. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/303"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 305",
+    "title": "Topics in Literature and Religion",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: variable content course which may be repeated if topics vary.",
+    "url": "/catalogue/course/engl/305"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 306",
+    "title": "Life Writing",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Nonfictional writing and representation in memoir, biography, diaries, letters and digital modes of representing the self. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/306"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 307",
+    "title": "Métis Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Studies of the contributions of Métis writers to the formation of their intellectual and community traditions. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/307"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 308",
+    "title": "Topics in Indigenous Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: variable content course which may be repeated if topics vary.",
+    "url": "/catalogue/course/engl/308"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 309",
+    "title": "Indigenous Poetics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Indigenous poetry and poetics in North America, including the study of the contemporary literary movement and its politics. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/309"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 310",
+    "title": "Postcolonial Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "An examination of the range of literature produced under and in the aftermath of colonialism and imperialism. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/310"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 311",
+    "title": "Topics in Postcolonial Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: variable content course which may be repeated if topics vary.",
+    "url": "/catalogue/course/engl/311"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 312",
+    "title": "African Writing in English",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Selected works from the African context. Content and period focus may vary. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/312"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 314",
+    "title": "Irish Writing in English",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Selected works from the Irish context. Content and period focus may vary. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/314"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 315",
+    "title": "South Asian Writing in English",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Selected works from the Indian context. Content and period focus may vary. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/315"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 316",
+    "title": "Middle-Eastern Writing in English",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Selected works from the Middle-Eastern context. Content and period focus may vary. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/316"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 325",
+    "title": "Medieval Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Selected works in the English language from the medieval period. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/325"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 327",
+    "title": "Topics in Medieval Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: variable content course which may be repeated if topics vary.",
+    "url": "/catalogue/course/engl/327"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 336",
+    "title": "Sixteenth-Century Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Selected works written in English. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/336"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 337",
+    "title": "Topics in Early Modern Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: variable content course which may be repeated if topics vary.",
+    "url": "/catalogue/course/engl/337"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 339",
+    "title": "Shakespeare",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Studies in a selection of plays. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: Not to be taken by students with credit in ENGL 338.",
+    "url": "/catalogue/course/engl/339"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 340",
+    "title": "Seventeenth-Century Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Selected works written in English. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/340"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 341",
+    "title": "Eighteenth-Century Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Selected works written in English. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/341"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 343",
+    "title": "Topics in Eighteenth-Century Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: variable content course which may be repeated if topics vary.",
+    "url": "/catalogue/course/engl/343"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 350",
+    "title": "Romanticism",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Selected works in English from 1789 to 1830. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/350"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 352",
+    "title": "Nineteenth-Century British Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Selected works from 1830 to 1900. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/352"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 353",
+    "title": "Topics in Nineteenth-Century Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: variable content course which may be repeated if topics vary.",
+    "url": "/catalogue/course/engl/353"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 357",
+    "title": "Topics in American Studies",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: variable content course which may be repeated if topics vary.",
+    "url": "/catalogue/course/engl/357"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 358",
+    "title": "American Texts to 1900",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Studies in selected American literary and cultural texts (film, media, material objects) to 1900. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/358"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 359",
+    "title": "American Literature and Culture: Reading American Origins",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Studies in issues and problems of origination in works from the American context. Content and period focus may vary. Prerequisite:  6 units of junior English, or 3 units of junior English plus WRS 101.",
+    "url": "/catalogue/course/engl/359"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 360",
+    "title": "Race in American Texts",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Studies in issues and problems of racialization in American literary and cultural texts (film, media, material objects). Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/360"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 361",
+    "title": "Topics in Transnational American Texts",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: variable content course which may be repeated if topics vary.",
+    "url": "/catalogue/course/engl/361"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 362",
+    "title": "American Texts After 1900",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Studies in selected American literary and cultural texts (film, media, material objects) from 1900 until the present. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/362"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 363",
+    "title": "Modernist Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Studies in high, low and late modernism, and the avant-garde from 1900 to 1950. Note: not to be taken by students with credit in former ENGL 370. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/363"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 367",
+    "title": "Topics in Contemporary Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: variable content course which may be repeated if topics vary.",
+    "url": "/catalogue/course/engl/367"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 372",
+    "title": "Publishing Canadian Literatures",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Addresses issues of production, circulation, and consumption in Canadian literary culture. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/372"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 373",
+    "title": "Colonialism and Canadian Literatures",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "A consideration of literature's role in and responses to settler colonialism; material includes both pre- and post-1900 texts. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/373"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 374",
+    "title": "Topics in Twentieth-Century Canadian Literary Movements",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: variable content course which may be repeated if topics vary.",
+    "url": "/catalogue/course/engl/374"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 375",
+    "title": "Writers, Institutions and the Canadian Literature Centre",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Considers Indigenous, marginalized, and mainstream writings and their complicated relationship to the institutions of CanLit. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/375"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 376",
+    "title": "Topics in Canadian Literatures",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: variable content course which may be repeated if topics vary.",
+    "url": "/catalogue/course/engl/376"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 377",
+    "title": "Canadian Literature and Culture: Canadian Drama and Performance",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Selected works by Canadian dramatists and performance artists. Content and period focus may vary. Prerequisite:  6 units of junior English, or 3 units of junior English plus WRS 101.",
+    "url": "/catalogue/course/engl/377"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 378",
+    "title": "Contemporary Canadian Literatures",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Selected works from literatures produced after 2000. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/378"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 380",
+    "title": "Writing from Here",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Selected works from the Amiskwacîwâskahikan / Edmonton area and the prairies. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/380"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 385",
+    "title": "Topics in Popular Culture",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: variable content course which may be repeated if topics vary.",
+    "url": "/catalogue/course/engl/385"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 387",
+    "title": "Youth Cultures",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "The study of the cultures of young people which may include literature, television, digital cultures, and other media formats. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/387"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 388",
+    "title": "Children's Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Studies in print and oral texts, including picture books, historical, critical and theoretical approaches to literature for young people. Content and period focus may vary. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/388"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 391",
+    "title": "Topics in Women's Writing",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: variable content course which may be repeated if topics vary.",
+    "url": "/catalogue/course/engl/391"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 392",
+    "title": "Queer and Trans Studies",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Studies in the cultures, politics, forms, and theories of queer and trans life across a range of texts and formats. Content and period focus may vary. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/392"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 393",
+    "title": "Topics in Literature and the Environment",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: variable content course which may be repeated if topics vary.",
+    "url": "/catalogue/course/engl/393"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 394",
+    "title": "Race, Capitalism and Culture",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Studies in the cultural formations and contradictions of racial capitalism. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/394"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 395",
+    "title": "Topics in Print Culture and Media Studies",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: variable content course which may be repeated if topics vary .",
+    "url": "/catalogue/course/engl/395"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 396",
+    "title": "Aesthetics and Politics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Studies in the relation between aesthetics and politics across a variety of cultural forms and contexts. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS.",
+    "url": "/catalogue/course/engl/396"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 397",
+    "title": "History of the Book",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Studies in the social and cultural history of the material text, and to the critical concepts and methods key to its study, that emphasizes the relationship between the production of books and the production of culture. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: not to be taken by students with credit in ENGL 208.",
+    "url": "/catalogue/course/engl/397"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 398",
+    "title": "Histories of Reading",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Studies in the social and cultural histories of reading, and to the critical concepts and methods key to its study, that emphasizes the relationship between reading and the production of culture. Prerequisite: 6 units of junior ENGL, or 3 units of junior ENGL and 3 units of junior WRS. Note: not to be taken by students with credit in ENGL 209.",
+    "url": "/catalogue/course/engl/398"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 401",
+    "title": "Studies in Authors",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: 12 units of senior ENGL with a minimum of 6 units at the 300 level. Note: variable content course which may be repeated.",
+    "url": "/catalogue/course/engl/401"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 402",
+    "title": "Studies in Genres",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: 12 units of senior ENGL with a minimum of 6 units at the 300 level. Note: variable content course which may be repeated.",
+    "url": "/catalogue/course/engl/402"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 405",
+    "title": "Studies in Poetry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: 12 units of senior ENGL with a minimum of 6 units at the 300 level.  Note: variable content course which may be repeated.",
+    "url": "/catalogue/course/engl/405"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 407",
+    "title": "Studies in Texts and Cultures",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: 12 units of senior ENGL with a minimum of 6 units at the 300 level. . Note: variable content course which may be repeated.",
+    "url": "/catalogue/course/engl/407"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 409",
+    "title": "Studies in Literary Periods and Cultural Movements",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: 12 units of senior ENGL with a minimum of 6 units at the 300 level.  Note: variable content course which may be repeated.",
+    "url": "/catalogue/course/engl/409"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 425",
+    "title": "Studies in the History of Reading",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: 12 units of senior ENGL with a minimum of 6 units at the 300 level.  Note: variable content course which may be repeated.",
+    "url": "/catalogue/course/engl/425"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 426",
+    "title": "Studies in Literary and Cultural Histories",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: 12 units of senior ENGL with a minimum of 6 units at the 300 level.  Note: variable content course which may be repeated.",
+    "url": "/catalogue/course/engl/426"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 430",
+    "title": "Studies in Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: 12 units of senior ENGL with a minimum of 6 units at the 300 level.  Note: variable content course which may be repeated.",
+    "url": "/catalogue/course/engl/430"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 465",
+    "title": "Studies in Gender and Sexualities",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: 12 units of senior ENGL with a minimum of 6 units at the 300 level.  Note: variable content course which may be repeated.",
+    "url": "/catalogue/course/engl/465"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 467",
+    "title": "Studies in Race and Ethnicity",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: 12 units of senior ENGL with a minimum of 6 units at the 300 level.  Note: variable content course which may be repeated.",
+    "url": "/catalogue/course/engl/467"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 481",
+    "title": "Studies in Empire and the Postcolonial",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: 12 units of senior ENGL with a minimum of 6 units at the 300 level. Note: variable content course which may be repeated.",
+    "url": "/catalogue/course/engl/481"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 482",
+    "title": "Studies in Drama and Performance",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: 6 units of junior English or 3 units of junior English plus WRS 101; and 12 units of senior-level English, 6 units of which must be at the 300 level. Note: variable content course which may be repeated.",
+    "url": "/catalogue/course/engl/482"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 483",
+    "title": "Studies in Popular Culture",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: 12 units of senior ENGL with a minimum of 6 units at the 300 level.  Note: variable content course which may be repeated.",
+    "url": "/catalogue/course/engl/483"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 484",
+    "title": "Studies in Literature and Film",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: 12 units of senior ENGL with a minimum of 6 units at the 300 level.  Note: variable content course which may be repeated.",
+    "url": "/catalogue/course/engl/484"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 485",
+    "title": "Topics in Media Studies",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: 12 units of senior ENGL with a minimum of 6 units at the 300 level.  Note: variable content course which may be repeated.",
+    "url": "/catalogue/course/engl/485"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 487",
+    "title": "Studies in Children's Literature",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Prerequisites: 12 units of senior ENGL with a minimum of 6 units at the 300 level.  Note: variable content course which may be repeated.",
+    "url": "/catalogue/course/engl/487"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 498",
+    "title": "Honors Essay",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-3S-0"
+    },
+    "description": "Required of all Honors students. Students will initiate discussion of their essays with the Advisor in the preceding term. In their final year, students will be required to participate in a peer workshop and consult with a faculty member on their essay.",
+    "url": "/catalogue/course/engl/498"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 533",
+    "title": "Directed Reading in Fourth-Year Honors English",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "Note: Students may take this directed-reading course no more than once during their program.",
+    "url": "/catalogue/course/engl/533"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 553A",
+    "title": "Directed Reading",
+    "units": {
+      "credits": 3,
+      "feeIndex": 12,
+      "term": "TWO TERM, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/553a"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 553B",
+    "title": "Directed Reading",
+    "units": {
+      "credits": 3,
+      "feeIndex": 12,
+      "term": "TWO TERM, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/553b"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 554",
+    "title": "Directed Reading",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/554"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 555",
+    "title": "Directed Reading",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/555"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 567",
+    "title": "Literary History",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/567"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 569",
+    "title": "Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/569"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 574",
+    "title": "Creative Writing",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/574"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 575",
+    "title": "Digital Humanities",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/575"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 578",
+    "title": "Film Studies",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/578"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 579",
+    "title": "Gender Studies",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/579"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 580",
+    "title": "Queer Studies",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/580"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 581",
+    "title": "Women's Texts",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/581"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 582",
+    "title": "Issues in the Discipline",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/582"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 583",
+    "title": "Cultural Studies",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/583"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 585",
+    "title": "Indigenous Texts",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/585"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 586",
+    "title": "American Texts",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/586"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 591",
+    "title": "Canadian Texts",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/591"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 615",
+    "title": "Medieval Texts",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/615"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 635",
+    "title": "Early Modern Texts",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/635"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 647",
+    "title": "17th-Century Texts",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/647"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 659",
+    "title": "Restoration and 18th-Century Texts",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/659"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 665",
+    "title": "Romantic Texts",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/665"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 673",
+    "title": "Victorian Texts",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/673"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 679",
+    "title": "20th-Century Texts",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/679"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 680",
+    "title": "Post-Colonial Texts",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/680"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 681",
+    "title": "Contemporary Texts",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/681"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 687",
+    "title": "Children's Texts",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/687"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 693",
+    "title": "Literary Genres",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/693"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 694",
+    "title": "Literary Techniques",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/694"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 695",
+    "title": "Literary Themes",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/695"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 696",
+    "title": "Individual Authors",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/696"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 800",
+    "title": "PhD Colloquium",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/800"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 801",
+    "title": "PhD Colloquium",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/801"
+  },
+  {
+    "department": "ENGL",
+    "courseCode": "ENGL 900",
+    "title": "Directed Research Project",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, UNASSIGNED"
+    },
+    "description": "",
+    "url": "/catalogue/course/engl/900"
+  }
+]

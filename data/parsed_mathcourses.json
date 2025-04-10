@@ -8,7 +8,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-1"
     },
-    "parsedDescription": "Review of numbers, inequalities, functions, analytic geometry; limits, continuity; derivatives and applications, Taylor polynomials; log, exp, and inverse trig functions. Integration, fundamental theorem of calculus substitution, trapezoidal and Simpson's rules.",
+    "keywords": [
+      "Calculus",
+      "Functions",
+      "Derivatives",
+      "Integration",
+      "Engineering"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -39,7 +45,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/100",
-    "updatedAt": "2025-04-05T19:51:57.985Z"
+    "updatedAt": "2025-04-09T05:10:15.946Z"
   },
   {
     "department": "MATH",
@@ -50,7 +56,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-1"
     },
-    "parsedDescription": "Area between curves, techniques of integration. Applications of integration to planar areas and lengths, volumes and masses. First order ordinary differential equations: separable, linear, direction fields, Euler's method, applications. Infinite series, power series, Taylor expansions with remainder terms. Polar coordinates. Rectangular, spherical and cylindrical coordinates in 3-dimensional space. Parametric curves in the plane and space: graphing, arc length, curvature; normal binormal, tangent plane in 3-dimensional space. Volumes and surface areas of rotation.",
+    "keywords": [
+      "Integration",
+      "Differential Equations",
+      "Infinite Series",
+      "Polar Coordinates",
+      "Parametric Curves"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -69,7 +81,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/101",
-    "updatedAt": "2025-04-05T19:52:03.506Z"
+    "updatedAt": "2025-04-09T05:10:18.909Z"
   },
   {
     "department": "MATH",
@@ -80,31 +92,36 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-1"
     },
-    "parsedDescription": "Vectors and matrices, solution of linear equations, equations of lines and planes, determinants, matrix algebra, orthogonality and applications (Gram-Schmidt), eigenvalues and eigenvectors and applications, complex numbers.",
+    "keywords": [
+      "Vectors",
+      "Matrices",
+      "Linear Equations",
+      "Eigenvalues",
+      "Complex Numbers"
+    ],
     "requirements": {
       "prerequisites": {
-        "operator": "OR",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "MATH 100"
-            ]
-          }
+        "operator": "STANDALONE",
+        "courses": [
+          "MATH 100"
         ]
       },
       "corequisites": {
-        "operator": "AND",
-        "conditions": []
+        "operator": "STANDALONE",
+        "courses": [
+          "MATH 100"
+        ]
       },
       "notes": "(1) Credit can be obtained in at most one of MATH 102, 125, or 127. (2) Students in all sections of this course will write a common final examination. (3) Restricted to Engineering students. Non-Engineering students who take this course will receive 3 units."
     },
     "flattenedPrerequisites": [
       "MATH 100"
     ],
-    "flattenedCorequisites": [],
+    "flattenedCorequisites": [
+      "MATH 100"
+    ],
     "url": "/catalogue/course/math/102",
-    "updatedAt": "2025-04-05T19:52:07.483Z"
+    "updatedAt": "2025-04-09T05:10:22.288Z"
   },
   {
     "department": "MATH",
@@ -115,7 +132,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "A problem-solving approach to discrete mathematics, covering secret codes, public-key codes, error-correcting codes, enumeration, recurrence relations, induction, graph theory, graph algorithms and parallel algorithms.",
+    "keywords": [
+      "Discrete Mathematics",
+      "Graph Theory",
+      "Algorithms",
+      "Enumeration",
+      "Induction"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -134,9 +157,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "equivalent"
-            ]
+            "description": "equivalent"
           }
         ]
       },
@@ -153,7 +174,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/111",
-    "updatedAt": "2025-04-05T19:52:10.891Z"
+    "updatedAt": "2025-04-09T05:10:26.282Z"
   },
   {
     "department": "MATH",
@@ -164,7 +185,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Review of analytic geometry. Differentiation of elementary, trigonometric, exponential, and logarithmic functions. Applications of the derivative. Integration. Fundamental Theorem of Calculus.",
+    "keywords": [
+      "Analytic Geometry",
+      "Differentiation",
+      "Integration",
+      "Calculus",
+      "Mathematics"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -183,9 +210,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "equivalent"
-            ]
+            "description": "equivalent"
           }
         ]
       },
@@ -202,7 +227,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/114",
-    "updatedAt": "2025-04-05T19:52:16.213Z"
+    "updatedAt": "2025-04-09T05:10:29.395Z"
   },
   {
     "department": "MATH",
@@ -213,7 +238,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Inverse trigonometric functions. Techniques of integration. Improper integrals. Applications of the definite integral. Introduction to differential equations.",
+    "keywords": [
+      "Inverse Trigonometric Functions",
+      "Integration Techniques",
+      "Improper Integrals",
+      "Differential Equations",
+      "Definite Integral Applications"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -249,7 +280,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/115",
-    "updatedAt": "2025-04-05T19:52:20.821Z"
+    "updatedAt": "2025-04-09T05:10:33.437Z"
   },
   {
     "department": "MATH",
@@ -260,7 +291,13 @@
       "feeIndex": 6,
       "term": "FIRST, 4-0-0"
     },
-    "parsedDescription": "Functions, continuity, and the derivative. Applications of the derivative. Extended limits and L'Hospital's rule.",
+    "keywords": [
+      "Functions",
+      "Continuity",
+      "Derivative",
+      "Applications",
+      "Mathematics"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -284,9 +321,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of the Department"
-            ]
+            "description": "Consent of the Department"
           }
         ]
       },
@@ -299,11 +334,11 @@
     "flattenedPrerequisites": [
       "Mathematics 30-1",
       "Mathematics 31",
-      "consent of the Department"
+      "Consent of the Department"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/117",
-    "updatedAt": "2025-04-05T19:52:25.458Z"
+    "updatedAt": "2025-04-09T05:10:41.229Z"
   },
   {
     "department": "MATH",
@@ -314,7 +349,13 @@
       "feeIndex": 6,
       "term": "SECOND, 4-0-0"
     },
-    "parsedDescription": "Integration and the Fundamental Theorem. Techniques and applications of integration. Derivatives and integrals of the exponential, and trigonometric functions. Introduction to infinite series. Introduction to partial derivatives.",
+    "keywords": [
+      "Integration",
+      "Fundamental Theorem",
+      "Exponential Functions",
+      "Trigonometric Functions",
+      "Infinite Series"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -333,7 +374,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/118",
-    "updatedAt": "2025-04-05T19:52:29.119Z"
+    "updatedAt": "2025-04-09T05:10:43.967Z"
   },
   {
     "department": "MATH",
@@ -344,7 +385,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Systems of linear equations. Vectors in n-space, vector equations of lines and planes. Matrix algebra, inverses and invertibility. Introduction to linear transformations. Subspaces of n-space. Determinants. Introduction to eigenvalues and eigenvectors. Complex numbers. Dot product, cross product and orthogonality. Applications in a variety of fields.",
+    "keywords": [
+      "Linear Equations",
+      "Matrix Algebra",
+      "Eigenvalues",
+      "Vectors",
+      "Determinants"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -363,7 +410,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/125",
-    "updatedAt": "2025-04-05T19:52:32.087Z"
+    "updatedAt": "2025-04-09T05:10:45.922Z"
   },
   {
     "department": "MATH",
@@ -374,7 +421,13 @@
       "feeIndex": 6,
       "term": "FIRST, 4-0-0"
     },
-    "parsedDescription": "Linear equations; Euclidean spaces, matrices. Complex numbers and fields. Vector spaces : basis, dimension, linear transformations. Introductions to groups and rings; permutation groups. Determinants. Eigenvalues and Eigenvectors.",
+    "keywords": [
+      "Linear Equations",
+      "Matrices",
+      "Vector Spaces",
+      "Eigenvalues",
+      "Groups"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -393,7 +446,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/127",
-    "updatedAt": "2025-04-05T19:52:35.361Z"
+    "updatedAt": "2025-04-09T05:10:48.138Z"
   },
   {
     "department": "MATH",
@@ -404,7 +457,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "The derivative as a rate of change. Differentiation of elementary, trigonometric, exponential, and logarithmic functions. The definite integral as a summation. Integration. The Fundamental Theorem of Calculus. Applications in the context of the life sciences.",
+    "keywords": [
+      "Derivative",
+      "Differentiation",
+      "Integration",
+      "Fundamental Theorem of Calculus",
+      "Life Sciences"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -423,7 +482,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/134",
-    "updatedAt": "2025-04-05T19:52:38.230Z"
+    "updatedAt": "2025-04-09T05:10:50.330Z"
   },
   {
     "department": "MATH",
@@ -434,7 +493,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Techniques and applications of integration. Improper integrals. Differential equations and mathematical modelling. Partial differentiation. Applications in the context of the life sciences.",
+    "keywords": [
+      "Integration",
+      "Differential Equations",
+      "Mathematical Modelling",
+      "Partial Differentiation",
+      "Life Sciences"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -470,7 +535,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/136",
-    "updatedAt": "2025-04-05T19:52:42.405Z"
+    "updatedAt": "2025-04-09T05:10:53.416Z"
   },
   {
     "department": "MATH",
@@ -481,7 +546,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "The derivative as a rate of change. Differentiation of elementary, trigonometric, exponential, and logarithmic functions. The definite integral as a summation. Integration. The Fundamental Theorem of Calculus. Taylor polynomials. Applications in the context of the physical sciences.",
+    "keywords": [
+      "Derivative",
+      "Differentiation",
+      "Integration",
+      "Fundamental Theorem of Calculus",
+      "Applications"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -500,7 +571,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/144",
-    "updatedAt": "2025-04-05T19:52:46.521Z"
+    "updatedAt": "2025-04-09T05:10:55.569Z"
   },
   {
     "department": "MATH",
@@ -511,7 +582,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Techniques and applications of integration. Improper integrals. Introduction to differential equations. Partial differentiation. Applications in the context of the physical sciences.",
+    "keywords": [
+      "Integration",
+      "Differential Equations",
+      "Partial Differentiation",
+      "Physical Sciences",
+      "Applications"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -547,7 +624,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/146",
-    "updatedAt": "2025-04-05T19:52:53.628Z"
+    "updatedAt": "2025-04-09T05:10:58.536Z"
   },
   {
     "department": "MATH",
@@ -558,7 +635,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "The derivative as a rate of change. Differentiation of elementary, trigonometric, exponential, and logarithmic functions. The definite integral as a summation. Integration. The Fundamental Theorem of Calculus. Optimization. Applications in the context of business and economics.",
+    "keywords": [
+      "Derivative",
+      "Differentiation",
+      "Integration",
+      "Calculus",
+      "Optimization"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -577,7 +660,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/154",
-    "updatedAt": "2025-04-05T19:52:56.230Z"
+    "updatedAt": "2025-04-09T05:11:01.406Z"
   },
   {
     "department": "MATH",
@@ -588,7 +671,13 @@
       "feeIndex": 6,
       "term": "TWO TERM, 3-0-0"
     },
-    "parsedDescription": "The derivative as a rate of change. Differentiation of elementary, trigonometric, exponential, and logarithmic functions. The definite integral as a summation. Integration. The Fundamental Theorem of Calculus. Optimization. Applications in the context of business and economics.",
+    "keywords": [
+      "Derivative",
+      "Differentiation",
+      "Integration",
+      "Calculus",
+      "Optimization"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -607,7 +696,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/154a",
-    "updatedAt": "2025-04-05T19:52:59.863Z"
+    "updatedAt": "2025-04-09T05:11:03.965Z"
   },
   {
     "department": "MATH",
@@ -618,7 +707,13 @@
       "feeIndex": 6,
       "term": "TWO TERM, 3-0-0"
     },
-    "parsedDescription": "The derivative as a rate of change. Differentiation of elementary, trigonometric, exponential, and logarithmic functions. The definite integral as a summation. Integration. The Fundamental Theorem of Calculus. Optimization. Applications in the context of business and economics.",
+    "keywords": [
+      "Derivative",
+      "Differentiation",
+      "Integration",
+      "Calculus",
+      "Optimization"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -637,7 +732,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/154b",
-    "updatedAt": "2025-04-05T19:53:02.701Z"
+    "updatedAt": "2025-04-09T05:11:06.179Z"
   },
   {
     "department": "MATH",
@@ -648,7 +743,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Techniques and applications of integration. Improper integrals. Partial differentiation. Multivariate optimization. Probability and calculus. Applications in the context of business and economics.",
+    "keywords": [
+      "Integration",
+      "Multivariate Optimization",
+      "Probability",
+      "Calculus",
+      "Business Applications"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -684,7 +785,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/156",
-    "updatedAt": "2025-04-05T19:53:06.673Z"
+    "updatedAt": "2025-04-09T05:11:11.077Z"
   },
   {
     "department": "MATH",
@@ -695,7 +796,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Elementary Number Theory, Numeration Systems, Number Systems and Elementary Probability Theory. Math Fair.",
+    "keywords": [
+      "Number Theory",
+      "Probability Theory",
+      "Numeration Systems",
+      "Elementary Education",
+      "Mathematics"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -714,9 +821,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of Department"
-            ]
+            "description": "consent of Department"
           }
         ]
       },
@@ -733,7 +838,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/160",
-    "updatedAt": "2025-04-05T19:53:11.283Z"
+    "updatedAt": "2025-04-09T05:11:14.883Z"
   },
   {
     "department": "MATH",
@@ -744,7 +849,13 @@
       "feeIndex": 6,
       "term": "EITH/SP/SU, 3-0-1"
     },
-    "parsedDescription": "First-order equations; second-order linear equations: reduction of order, variation of parameters; Laplace transform; linear systems; power series; solution by series; separation of variables for PDEs.",
+    "keywords": [
+      "First-order equations",
+      "Second-order linear equations",
+      "Laplace transform",
+      "Linear systems",
+      "Partial differential equations"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -775,7 +886,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/201",
-    "updatedAt": "2025-04-05T19:53:16.126Z"
+    "updatedAt": "2025-04-09T05:11:18.308Z"
   },
   {
     "department": "MATH",
@@ -786,7 +897,13 @@
       "feeIndex": 6,
       "term": "EITH/SP/SU, 3-0-1"
     },
-    "parsedDescription": "First-order equations; second-order linear equations: reduction of order, variation of parameters; Laplace transform; linear systems; power series; solution by series; separation of variables for PDEs.",
+    "keywords": [
+      "First-order equations",
+      "Second-order linear equations",
+      "Laplace transform",
+      "Linear systems",
+      "Partial differential equations"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -817,7 +934,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/201a",
-    "updatedAt": "2025-04-05T19:53:20.726Z"
+    "updatedAt": "2025-04-09T05:11:22.657Z"
   },
   {
     "department": "MATH",
@@ -828,7 +945,13 @@
       "feeIndex": 6,
       "term": "EITH/SP/SU, 3-0-1"
     },
-    "parsedDescription": "First-order equations; second-order linear equations: reduction of order, variation of parameters; Laplace transform; linear systems; power series; solution by series; separation of variables for PDEs.",
+    "keywords": [
+      "First-order Equations",
+      "Second-order Linear Equations",
+      "Laplace Transform",
+      "Linear Systems",
+      "Partial Differential Equations"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -859,7 +982,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/201b",
-    "updatedAt": "2025-04-05T19:53:25.325Z"
+    "updatedAt": "2025-04-09T05:11:27.517Z"
   },
   {
     "department": "MATH",
@@ -870,7 +993,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-1"
     },
-    "parsedDescription": "Partial differentiation, derivatives of integrals. Multiple integration using rectangular, cylindrical, and spherical coordinates. Vector Field Theory.",
+    "keywords": [
+      "Partial Differentiation",
+      "Multiple Integration",
+      "Vector Field Theory",
+      "Engineering",
+      "Calculus"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -901,7 +1030,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/209",
-    "updatedAt": "2025-04-05T19:53:28.813Z"
+    "updatedAt": "2025-04-09T05:11:30.727Z"
   },
   {
     "department": "MATH",
@@ -912,18 +1041,26 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Sequences and series, convergence tests, and Taylor series. Curves, tangent vectors, and arc length. Applications of partial differentiation. Polar, cylindrical, and spherical coordinates. Multiple integration.",
+    "keywords": [
+      "Sequences",
+      "Series",
+      "Partial Differentiation",
+      "Multiple Integration",
+      "Taylor Series"
+    ],
     "requirements": {
       "prerequisites": {
-        "operator": "OR",
-        "courses": [
-              "MATH 101",
-              "MATH 115",
-              "MATH 118",
-              "MATH 136",
-              "MATH 146",
-              "MATH 156"                      
-        ]
+        "operator": "OR",                           
+          "courses": [
+            "MATH 101",
+            "MATH 115",
+            "MATH 118",
+            "MATH 136",
+            "MATH 146",
+            "MATH 156"
+          ]
+          
+        
       },
       "corequisites": {
         "operator": "AND",
@@ -941,7 +1078,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/214",
-    "updatedAt": "2025-04-05T19:53:33.936Z"
+    "updatedAt": "2025-04-09T05:11:34.955Z"
   },
   {
     "department": "MATH",
@@ -952,22 +1089,28 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Sets and functions. Induction. Axiomatic introduction of the real numbers. Sequences and series. Continuity and properties of continuous functions. Differentiation. Riemann integral.",
+    "keywords": [
+      "Sets",
+      "Functions",
+      "Real Numbers",
+      "Differentiation",
+      "Riemann Integral"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
         "conditions": []
       },
       "corequisites": {
-        "operator": "OR",
-        "courses": [
-          "MATH 101",
-          "MATH 115",
-          "MATH 136",
-          "MATH 146",
-          "MATH 156",
-          "SCI 100"
-        ]
+        "operator": "OR",                            
+          "courses": [
+            "MATH 101",
+            "MATH 115",
+            "MATH 136",
+            "MATH 146",
+            "MATH 156",
+            "SCI 100"
+          ]                
       },
       "notes": "This course may not be taken for credit if credit has already been obtained in MATH 117. Credit can only be obtained in one of MATH 216 or MATH 314."
     },
@@ -981,7 +1124,7 @@
       "SCI 100"
     ],
     "url": "/catalogue/course/math/216",
-    "updatedAt": "2025-04-05T19:53:37.389Z"
+    "updatedAt": "2025-04-09T05:11:38.174Z"
   },
   {
     "department": "MATH",
@@ -992,7 +1135,13 @@
       "feeIndex": 6,
       "term": "FIRST, 4-0-0"
     },
-    "parsedDescription": "Axiomatic development of the real number system. Topology of Rn. Sequences, limits and continuity. Multi-variable calculus: differentiation and integration, including integration in spherical and polar coordinates. The differential and the chain rule. Taylor's Formula, maxima and minima. Introduction to vector field theory.",
+    "keywords": [
+      "Real Number System",
+      "Topology",
+      "Multi-variable Calculus",
+      "Vector Field Theory",
+      "Differentiation"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1029,7 +1178,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/217",
-    "updatedAt": "2025-04-05T19:53:41.872Z"
+    "updatedAt": "2025-04-09T05:11:43.938Z"
   },
   {
     "department": "MATH",
@@ -1040,7 +1189,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Vector spaces. Inner product spaces. Examples of n-space and the space of continuous functions. Gram-Schmidt process, QR factorization of a matrix and least squares. Linear transformations, change of basis, similarity and diagonalization. Orthogonal diagonalization, quadratic forms. Applications in a variety of fields.",
+    "keywords": [
+      "Vector Spaces",
+      "Linear Transformations",
+      "Gram-Schmidt Process",
+      "Diagonalization",
+      "Applications"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1089,7 +1244,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/225",
-    "updatedAt": "2025-04-05T19:53:45.709Z"
+    "updatedAt": "2025-04-09T05:11:48.566Z"
   },
   {
     "department": "MATH",
@@ -1100,7 +1255,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Groups and their homomorphisms; commutative rings and modules; fields and vector spaces; subgroups and quotient groups, permutation groups; modules, submodules, quotient modules; polynomials rings and their ideals, modules over polynomial rings.",
+    "keywords": [
+      "Groups",
+      "Homomorphisms",
+      "Rings",
+      "Modules",
+      "Fields"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -1119,7 +1280,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/226",
-    "updatedAt": "2025-04-05T19:53:48.588Z"
+    "updatedAt": "2025-04-09T05:11:50.339Z"
   },
   {
     "department": "MATH",
@@ -1130,7 +1291,13 @@
       "feeIndex": 6,
       "term": "SECOND, 4-0-0"
     },
-    "parsedDescription": "Quotients and direct sums. Cayley-Hamilton. Canonical Forms (diagonal and Jordan). Real and Complex inner product spaces: orthogonality, singular value decomposition. Introduction to abstract algebra: groups, rings, and modules. Homomorphisms.",
+    "keywords": [
+      "Quotients",
+      "Cayley-Hamilton",
+      "Canonical Forms",
+      "Abstract Algebra",
+      "Inner Product Spaces"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1163,7 +1330,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/227",
-    "updatedAt": "2025-04-05T19:53:51.971Z"
+    "updatedAt": "2025-04-09T05:11:54.600Z"
   },
   {
     "department": "MATH",
@@ -1174,26 +1341,22 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Integers. Mathematical induction. Equivalence relations. Commutative rings, including the integers mod n, complex numbers and polynomials. The Chinese remainder theorem. Fields and integral domains. Euclidean domains, principal ideal domains and unique factorization. Quotient rings and homomorphisms. Construction of finite fields. Applications such as public domain encryption, Latin squares and designs, polynomial error detecting codes, and/or addition and multiplication of large integers.",
+    "keywords": [
+      "Integers",
+      "Mathematical Induction",
+      "Commutative Rings",
+      "Fields",
+      "Applications"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
         "conditions": [
           {
-            "operator": "STANDALONE",
+            "operator": "OR",
             "courses": [
-              "MATH 102"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "MATH 125"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
+              "MATH 102",
+              "MATH 125",
               "MATH 127"
             ]
           }
@@ -1212,7 +1375,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/228",
-    "updatedAt": "2025-04-05T19:53:56.158Z"
+    "updatedAt": "2025-04-09T05:11:57.322Z"
   },
   {
     "department": "MATH",
@@ -1223,7 +1386,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Basic Euclidean geometry, congruence, parallelism, area, and similarity. Sound axiomatic development with emphasis on problem solving. Constructions and loci, inequalities, maxima and minima, circles, isometries, and additional topics.",
+    "keywords": [
+      "Euclidean Geometry",
+      "Congruence",
+      "Parallelism",
+      "Problem Solving",
+      "Constructions"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -1253,7 +1422,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/241",
-    "updatedAt": "2025-04-05T19:53:58.878Z"
+    "updatedAt": "2025-04-09T05:12:00.453Z"
   },
   {
     "department": "MATH",
@@ -1264,7 +1433,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-0"
     },
-    "parsedDescription": "Transformation geometry, isometry and homothety, applications in Euclidean geometry; the algebra of transformations, the Classification Theorem, frieze patterns and wall-paper groups.",
+    "keywords": [
+      "Transformation Geometry",
+      "Isometry",
+      "Homothety",
+      "Euclidean Geometry",
+      "Algebra of Transformations"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -1283,7 +1458,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/243",
-    "updatedAt": "2025-04-05T19:54:00.661Z"
+    "updatedAt": "2025-04-09T05:12:02.436Z"
   },
   {
     "department": "MATH",
@@ -1294,7 +1469,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Accumulation and amount functions, effective, nominal, simple, and compound rates, force of interest and discount, simple and general annuities certain, variable annuities and perpetuities, amortization schedules and sinking funds, bonds and other securities, applications, installment loans, depreciation, depletion, capitalized cost.",
+    "keywords": [
+      "Accumulation Functions",
+      "Annuities",
+      "Amortization",
+      "Bonds",
+      "Interest Rates"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -1307,7 +1488,12 @@
               "MATH 118",
               "MATH 136",
               "MATH 146",
-              "MATH 156",
+              "MATH 156"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
               "SCI 100"
             ]
           }
@@ -1317,9 +1503,14 @@
         "operator": "OR",
         "conditions": [
           {
-            "operator": "OR",
+            "operator": "STANDALONE",
             "courses": [
-              "MATH 209",
+              "MATH 209"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
               "MATH 214"
             ]
           }
@@ -1341,7 +1532,7 @@
       "MATH 214"
     ],
     "url": "/catalogue/course/math/253",
-    "updatedAt": "2025-04-05T19:54:08.545Z"
+    "updatedAt": "2025-04-09T05:12:06.230Z"
   },
   {
     "department": "MATH",
@@ -1352,7 +1543,13 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-0"
     },
-    "parsedDescription": "Divisibility, prime numbers, congruences, quadratic residues, quadratic reciprocity, arithmetic functions and diophantine equations; sums of squares.",
+    "keywords": [
+      "Divisibility",
+      "Prime Numbers",
+      "Congruences",
+      "Quadratic Residues",
+      "Diophantine Equations"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -1378,7 +1575,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/256",
-    "updatedAt": "2025-04-05T19:54:11.420Z"
+    "updatedAt": "2025-04-09T05:12:14.416Z"
   },
   {
     "department": "MATH",
@@ -1389,7 +1586,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Reasoning and problem solving in the context of logic, algebra, geometry, and combinatorics.",
+    "keywords": [
+      "Reasoning",
+      "Problem Solving",
+      "Logic",
+      "Algebra",
+      "Geometry"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -1402,9 +1605,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of Department"
-            ]
+            "description": "Consent of Department"
           }
         ]
       },
@@ -1416,11 +1617,11 @@
     },
     "flattenedPrerequisites": [
       "MATH 160",
-      "consent of Department"
+      "Consent of Department"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/260",
-    "updatedAt": "2025-04-05T19:54:14.282Z"
+    "updatedAt": "2025-04-09T05:12:18.205Z"
   },
   {
     "department": "MATH",
@@ -1431,7 +1632,13 @@
       "feeIndex": null,
       "term": null
     },
-    "parsedDescription": "Problem solving techniques (pigeonhole principle, invariants, extremal principle, etc.) and survey of problems from various branches of mathematics: calculus, number theory, algebra, combinatorics, probability, geometry, etc. This credit/no-credit course is intended for students interested in mathematics contests and participation in the Putnam Mathematical Competition will be required.",
+    "keywords": [
+      "Problem Solving",
+      "Mathematics",
+      "Contests",
+      "Putnam Competition",
+      "Techniques"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -1450,7 +1657,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/298",
-    "updatedAt": "2025-04-05T19:54:19.296Z"
+    "updatedAt": "2025-04-09T05:12:20.823Z"
   },
   {
     "department": "MATH",
@@ -1461,7 +1668,13 @@
       "feeIndex": 6,
       "term": "EITH/SP/SU, 3-0-0"
     },
-    "parsedDescription": "Derivation of the classical partial differential equations of applied mathematics, solutions using separation of variables. Fourier expansions and their applications to boundary value problems. Introduction to Fourier Transforms. Emphasis on building an appropriate mathematical model from a physical problem, solving the mathematical problem, and carefully interpreting the mathematical results in the context of the original physical problem.",
+    "keywords": [
+      "Partial Differential Equations",
+      "Fourier Expansions",
+      "Boundary Value Problems",
+      "Mathematical Modeling",
+      "Physical Problems"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1492,7 +1705,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/300",
-    "updatedAt": "2025-04-05T19:54:26.874Z"
+    "updatedAt": "2025-04-09T05:12:24.658Z"
   },
   {
     "department": "MATH",
@@ -1503,7 +1716,13 @@
       "feeIndex": 6,
       "term": "EITH/SP/SU, 3-0-0"
     },
-    "parsedDescription": "Derivation of the classical partial differential equations of applied mathematics, solutions using separation of variables. Fourier expansions and their applications to boundary value problems. Introduction to Fourier Transforms. Emphasis on building an appropriate mathematical model from a physical problem, solving the mathematical problem, and carefully interpreting the mathematical results in the context of the original physical problem.",
+    "keywords": [
+      "Partial Differential Equations",
+      "Fourier Expansions",
+      "Boundary Value Problems",
+      "Mathematical Modeling",
+      "Physical Problems"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1534,7 +1753,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/300a",
-    "updatedAt": "2025-04-05T19:54:31.936Z"
+    "updatedAt": "2025-04-09T05:12:31.086Z"
   },
   {
     "department": "MATH",
@@ -1545,7 +1764,13 @@
       "feeIndex": 6,
       "term": "EITH/SP/SU, 3-0-0"
     },
-    "parsedDescription": "Derivation of the classical partial differential equations of applied mathematics, solutions using separation of variables. Fourier expansions and their applications to boundary value problems. Introduction to Fourier Transforms. Emphasis on building an appropriate mathematical model from a physical problem, solving the mathematical problem, and carefully interpreting the mathematical results in the context of the original physical problem.",
+    "keywords": [
+      "Partial Differential Equations",
+      "Fourier Expansions",
+      "Boundary Value Problems",
+      "Mathematical Modeling",
+      "Physical Problems"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1576,7 +1801,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/300b",
-    "updatedAt": "2025-04-05T19:54:36.391Z"
+    "updatedAt": "2025-04-09T05:12:34.809Z"
   },
   {
     "department": "MATH",
@@ -1587,7 +1812,13 @@
       "feeIndex": 6,
       "term": "1 TRM S/S, 3-0-0"
     },
-    "parsedDescription": "Complex numbers, analytic functions, Cauchy-Riemann equation, Cauchy Theorem, power series and Laurent expansions, residues, inverse Laplace transform. Complex inner product spaces, orthogonal expansions, Gram-Schmidt orthogonalization completeness, Fourier expansions applied to signals, Parseval's relation and Bessel's inequality.",
+    "keywords": [
+      "Complex Numbers",
+      "Analytic Functions",
+      "Fourier Expansions",
+      "Cauchy Theorem",
+      "Orthogonalization"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -1606,7 +1837,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/309",
-    "updatedAt": "2025-04-05T19:54:40.468Z"
+    "updatedAt": "2025-04-09T05:12:37.417Z"
   },
   {
     "department": "MATH",
@@ -1617,7 +1848,13 @@
       "feeIndex": 6,
       "term": "1 TRM S/S, 3-0-0"
     },
-    "parsedDescription": "Complex numbers, analytic functions, Cauchy-Riemann equation, Cauchy Theorem, power series and Laurent expansions, residues, inverse Laplace transform. Complex inner product spaces, orthogonal expansions, Gram-Schmidt orthogonalization completeness, Fourier expansions applied to signals, Parseval's relation and Bessel's inequality.",
+    "keywords": [
+      "Complex Numbers",
+      "Analytic Functions",
+      "Fourier Expansions",
+      "Cauchy Theorem",
+      "Orthogonalization"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -1636,7 +1873,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/309a",
-    "updatedAt": "2025-04-05T19:54:43.593Z"
+    "updatedAt": "2025-04-09T05:12:40.837Z"
   },
   {
     "department": "MATH",
@@ -1647,7 +1884,13 @@
       "feeIndex": 6,
       "term": "1 TRM S/S, 3-0-0"
     },
-    "parsedDescription": "Complex numbers, analytic functions, Cauchy-Riemann equation, Cauchy Theorem, power series and Laurent expansions, residues, inverse Laplace transform. Complex inner product spaces, orthogonal expansions, Gram-Schmidt orthogonalization completeness, Fourier expansions applied to signals, Parseval's relation and Bessel's inequality.",
+    "keywords": [
+      "Complex Numbers",
+      "Analytic Functions",
+      "Fourier Expansions",
+      "Cauchy Theorem",
+      "Orthogonalization"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -1666,7 +1909,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/309b",
-    "updatedAt": "2025-04-05T19:54:46.283Z"
+    "updatedAt": "2025-04-09T05:12:43.088Z"
   },
   {
     "department": "MATH",
@@ -1677,7 +1920,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Complex numbers. Complex series. Functions of a complex variable. Cauchy's theorem and contour integration. Residue Theorem and its applications.",
+    "keywords": [
+      "Complex Numbers",
+      "Complex Functions",
+      "Cauchy's Theorem",
+      "Contour Integration",
+      "Residue Theorem"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1685,11 +1934,16 @@
       },
       "corequisites": {
         "operator": "OR",
-        "courses": [
-          "MATH 215",
-          "MATH 315",
-          "MATH 317",
-          "MA PH 351"
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "MATH 215",
+              "MATH 315",
+              "MATH 317",
+              "MA PH 351"
+            ]
+          }
         ]
       },
       "notes": "This course may not be taken for credit if credit has already been obtained in MATH 309 or 411."
@@ -1702,7 +1956,7 @@
       "MA PH 351"
     ],
     "url": "/catalogue/course/math/311",
-    "updatedAt": "2025-04-05T19:54:49.301Z"
+    "updatedAt": "2025-04-09T05:12:46.227Z"
   },
   {
     "department": "MATH",
@@ -1713,27 +1967,22 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-0"
     },
-    "parsedDescription": "Construction of real numbers, Heine-Borel and related theorems, differentiation and Riemann integral of functions, topological concepts in metric spaces, sequences, continuous maps, contraction maps, and applications.",
+    "keywords": [
+      "Real Numbers",
+      "Differentiation",
+      "Riemann Integral",
+      "Metric Spaces",
+      "Continuous Maps"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
         "conditions": [
           {
-            "operator": "STANDALONE",
+            "operator": "OR",
             "courses": [
-              "MATH 209"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
+              "MATH 209",
               "MATH 215"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "equivalent"
             ]
           }
         ]
@@ -1746,12 +1995,11 @@
     },
     "flattenedPrerequisites": [
       "MATH 209",
-      "MATH 215",
-      "equivalent"
+      "MATH 215"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/314",
-    "updatedAt": "2025-04-05T19:54:54.473Z"
+    "updatedAt": "2025-04-09T05:12:49.526Z"
   },
   {
     "department": "MATH",
@@ -1762,7 +2010,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Vector calculus. Line and surface integrals. The divergence, Green's, and Stokes' theorems. Differential forms.",
+    "keywords": [
+      "Vector Calculus",
+      "Line Integrals",
+      "Surface Integrals",
+      "Differential Forms",
+      "Theorems"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1799,7 +2053,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/315",
-    "updatedAt": "2025-04-05T19:54:58.889Z"
+    "updatedAt": "2025-04-09T05:12:54.275Z"
   },
   {
     "department": "MATH",
@@ -1810,7 +2064,13 @@
       "feeIndex": 6,
       "term": "SECOND, 4-0-0"
     },
-    "parsedDescription": "Implicit function theorem. Proof of the Change of Variables Theorem. Line integrals. Theorems of Green, Gauss and Stokes in their classical form. Differential forms and Stokes' Theorem in their context. Sequences and series of functions. Uniform convergence.",
+    "keywords": [
+      "Implicit Function Theorem",
+      "Line Integrals",
+      "Green's Theorem",
+      "Gauss's Theorem",
+      "Stokes' Theorem"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -1829,7 +2089,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/317",
-    "updatedAt": "2025-04-05T19:55:01.692Z"
+    "updatedAt": "2025-04-09T05:12:56.770Z"
   },
   {
     "department": "MATH",
@@ -1840,7 +2100,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Graphs, paths and cycles, trees, planarity and duality, coloring problems, digraphs, matching problems, matroid theory.",
+    "keywords": [
+      "Graphs",
+      "Trees",
+      "Planarity",
+      "Coloring Problems",
+      "Matroid Theory"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -1874,7 +2140,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/322",
-    "updatedAt": "2025-04-05T19:55:04.666Z"
+    "updatedAt": "2025-04-09T05:13:00.005Z"
   },
   {
     "department": "MATH",
@@ -1885,20 +2151,21 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-0"
     },
-    "parsedDescription": "Divisibility, prime numbers, congruences, quadratic residues, quadratic reciprocity, arithmetic functions and diophantine equations; sums of squares.",
+    "keywords": [
+      "Divisibility",
+      "Prime Numbers",
+      "Congruences",
+      "Quadratic Residues",
+      "Diophantine Equations"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
         "conditions": [
           {
-            "operator": "STANDALONE",
+            "operator": "OR",
             "courses": [
-              "MATH 227"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
+              "MATH 227",
               "MATH 228"
             ]
           }
@@ -1916,7 +2183,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/324",
-    "updatedAt": "2025-04-05T19:55:07.425Z"
+    "updatedAt": "2025-04-09T05:13:03.567Z"
   },
   {
     "department": "MATH",
@@ -1927,7 +2194,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-0"
     },
-    "parsedDescription": "Hermitian and unitary matrices, spectral theorem. Jordan canonical form. Cayley-Hamilton Theorem. Bilinear forms, positive-definiteness, Sylvester's Law of inertia, geometric lattices. Numerical methods. Application to discrete system evolution, matrix exponentials and differential equations.",
+    "keywords": [
+      "Hermitian Matrices",
+      "Unitary Matrices",
+      "Spectral Theorem",
+      "Numerical Methods",
+      "Differential Equations"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -1946,7 +2219,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/325",
-    "updatedAt": "2025-04-05T19:55:11.215Z"
+    "updatedAt": "2025-04-09T05:13:06.947Z"
   },
   {
     "department": "MATH",
@@ -1957,7 +2230,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Rings, fields, polynomials, algebras. Homomorphisms, ideals, quotients. Ring extensions, field extensions, construction of finite fields. Integral domains: Euclidean, principal ideal, unique factorization. Chain conditions. Introduction to modules. Modules over a principal ideal domain, finitely generated abelian groups, matrix canonical forms.",
+    "keywords": [
+      "Rings",
+      "Fields",
+      "Polynomials",
+      "Algebras",
+      "Modules"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -2000,7 +2279,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/326",
-    "updatedAt": "2025-04-05T19:55:17.601Z"
+    "updatedAt": "2025-04-09T05:13:11.231Z"
   },
   {
     "department": "MATH",
@@ -2011,24 +2290,20 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-0"
     },
-    "parsedDescription": "Basic group theory: Groups, subgroups, normal subgroups, homomorphisms, quotient groups, coset decomposition, Example: Permutation group and general linear group; basic (commutative) ring theory: Rings, subrings, homomorphisms, ideals, quotient rings, modules over rings, submodules and quotient modules, fraction field; further group theory: Groups operating on a set, Sylow theorems.",
+    "keywords": [
+      "Group Theory",
+      "Ring Theory",
+      "Homomorphisms",
+      "Subgroups",
+      "Ideals"
+    ],
     "requirements": {
       "prerequisites": {
-        "operator": "OR",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "MATH 226"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "MATH 227"
-            ]
-          }
-        ]
+        "operator": "OR",        
+          "courses": [
+            "MATH 226",
+            "MATH 227"
+          ]                  
       },
       "corequisites": {
         "operator": "AND",
@@ -2042,7 +2317,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/327",
-    "updatedAt": "2025-04-05T19:55:22.995Z"
+    "updatedAt": "2025-04-09T05:13:13.640Z"
   },
   {
     "department": "MATH",
@@ -2053,25 +2328,21 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Groups, subgroups, homomorphisms. Symmetry groups. Matrix groups. Permutations, symmetric group, Cayley's Theorem. Group actions. Cosets and Lagrange's Theorem. Normal subgroups, quotient groups, isomorphism theorems. Direct and semidirect products. Finite Abelian groups.",
+    "keywords": [
+      "Groups",
+      "Homomorphisms",
+      "Symmetry",
+      "Matrix Groups",
+      "Abelian Groups"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
-        "conditions": [
-          {
-            "operator": "STANDALONE",
-            "courses": [
-              "MATH 227"
-            ]
-          },
-          {
-            "operator": "STANDALONE",
-            "courses": [
+        "courses": [
+              "MATH 227",           
               "MATH 228"
             ]
-          }
-        ]
-      },
+        },
       "corequisites": {
         "operator": "AND",
         "conditions": []
@@ -2084,7 +2355,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/328",
-    "updatedAt": "2025-04-05T19:55:27.988Z"
+    "updatedAt": "2025-04-09T05:13:18.566Z"
   },
   {
     "department": "MATH",
@@ -2095,7 +2366,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-0"
     },
-    "parsedDescription": "Factorial rings and principal ideal domains; Noetherian rings and modules, Hilbert basis theorem; field extensions, separable and normal extensions; finite Galois theory; solvable groups and equations, construction by ruler and compass, solution by radicals.",
+    "keywords": [
+      "Factorial Rings",
+      "Ideal Domains",
+      "Noetherian Rings",
+      "Field Extensions",
+      "Galois Theory"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2114,7 +2391,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/329",
-    "updatedAt": "2025-04-05T19:55:33.744Z"
+    "updatedAt": "2025-04-09T05:13:20.732Z"
   },
   {
     "department": "MATH",
@@ -2125,7 +2402,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "First order equations, linear equations of higher order. Power series solution. Laplace transform methods. Introduction to special functions. Introduction to linear systems.",
+    "keywords": [
+      "First Order Equations",
+      "Linear Equations",
+      "Laplace Transform",
+      "Special Functions",
+      "Linear Systems"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -2164,7 +2447,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/334",
-    "updatedAt": "2025-04-05T19:55:37.736Z"
+    "updatedAt": "2025-04-09T05:13:24.972Z"
   },
   {
     "department": "MATH",
@@ -2175,7 +2458,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "First order differential equations. Linear systems of differential equations and linear differential equations of higher order. Stability and qualitative theory of 2-dimensional linear and non-linear systems. Laplace transform methods. Existences and uniqueness theorems.",
+    "keywords": [
+      "Differential Equations",
+      "Linear Systems",
+      "Stability",
+      "Laplace Transform",
+      "Existence Theorems"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -2216,7 +2505,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/336",
-    "updatedAt": "2025-04-05T19:55:41.835Z"
+    "updatedAt": "2025-04-09T05:13:28.802Z"
   },
   {
     "department": "MATH",
@@ -2227,7 +2516,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Boundary value problems of classical Math Physics, orthogonal expansions, classical special functions. Advanced transform techniques.",
+    "keywords": [
+      "Boundary Value Problems",
+      "Math Physics",
+      "Orthogonal Expansions",
+      "Transform Techniques",
+      "Special Functions"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -2272,7 +2567,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/337",
-    "updatedAt": "2025-04-05T19:55:45.726Z"
+    "updatedAt": "2025-04-09T05:13:34.392Z"
   },
   {
     "department": "MATH",
@@ -2283,7 +2578,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-0"
     },
-    "parsedDescription": "Combinatorial geometry and topology, convex sets, sets with constant width, Helly-type problems, extremal problems.",
+    "keywords": [
+      "Combinatorial Geometry",
+      "Topology",
+      "Convex Sets",
+      "Helly-type Problems",
+      "Extremal Problems"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -2315,7 +2616,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/341",
-    "updatedAt": "2025-04-05T19:55:48.796Z"
+    "updatedAt": "2025-04-09T05:13:39.511Z"
   },
   {
     "department": "MATH",
@@ -2326,7 +2627,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-0"
     },
-    "parsedDescription": "Projective geometry, Poncelet-Steiner constructions, inverse geometry, Mohr-Mascheroni constructions, Principle of Duality, conic sections.",
+    "keywords": [
+      "Projective Geometry",
+      "Conic Sections",
+      "Poncelet-Steiner",
+      "Inverse Geometry",
+      "Duality"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "STANDALONE",
@@ -2345,7 +2652,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/343",
-    "updatedAt": "2025-04-05T19:55:50.537Z"
+    "updatedAt": "2025-04-09T05:13:41.496Z"
   },
   {
     "department": "MATH",
@@ -2356,7 +2663,13 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-0"
     },
-    "parsedDescription": "Frenet-Seret theory of curves in the plane and in 3-space, examples; local theory of surfaces in 3-space: first and second fundamental forms, Gauss map and Gauss curvature, geodesics and parallel transport, theorema egregium, mean curvature and minimal surfaces.",
+    "keywords": [
+      "Frenet-Seret Theory",
+      "Curves",
+      "Surfaces",
+      "Gauss Curvature",
+      "Geodesics"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -2399,7 +2712,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/348",
-    "updatedAt": "2025-04-05T19:55:55.044Z"
+    "updatedAt": "2025-04-09T05:13:44.835Z"
   },
   {
     "department": "MATH",
@@ -2410,7 +2723,13 @@
       "feeIndex": 6,
       "term": "FIRST, 3-0-0"
     },
-    "parsedDescription": "Simple Market Model: one-step binomial model, basic notions and assumptions. Risk-Free Assets: simple interest, zero-coupon bonds, money market account. Risky Assets: dynamic of stock prices, binomial tree model, trinomial tree model. Discrete time market model: stock and money market model, extended models. Portfolio management: risk, two securities, capital asset pricing model.",
+    "keywords": [
+      "Market Model",
+      "Risk-Free Assets",
+      "Risky Assets",
+      "Portfolio Management",
+      "Capital Asset Pricing Model"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -2430,9 +2749,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of the Department"
-            ]
+            "description": "consent of the Department"
           }
         ]
       },
@@ -2450,7 +2767,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/356",
-    "updatedAt": "2025-04-05T19:55:58.725Z"
+    "updatedAt": "2025-04-09T05:13:48.727Z"
   },
   {
     "department": "MATH",
@@ -2461,7 +2778,13 @@
       "feeIndex": 6,
       "term": "SECOND, 3-0-0"
     },
-    "parsedDescription": "Forward and futures contracts: forward and futures prices, hedging with futures. Options: put-call parity, bounds on option prices, time value of options. Option pricing: European and American options in the binomial tree model, Black-Scholes formula. Financial engineering: hedging option positions, hedging business risk. Variable interest rates: maturity-independent yields, general term structure. Stochastic interest rates: arbitrage pricing of bonds, interest rate derivative securities.",
+    "keywords": [
+      "Forward Contracts",
+      "Futures Contracts",
+      "Options",
+      "Financial Engineering",
+      "Interest Rates"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -2474,9 +2797,7 @@
           },
           {
             "operator": "STANDALONE",
-            "courses": [
-              "consent of the Department"
-            ]
+            "description": "Consent of the Department"
           }
         ]
       },
@@ -2488,11 +2809,11 @@
     },
     "flattenedPrerequisites": [
       "MATH 356",
-      "consent of the Department"
+      "Consent of the Department"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/357",
-    "updatedAt": "2025-04-05T19:56:02.108Z"
+    "updatedAt": "2025-04-09T05:13:52.082Z"
   },
   {
     "department": "MATH",
@@ -2503,7 +2824,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Model development, computation, and analysis for problems in the life sciences. Models include differential equations, difference equations and stochastic formulations. Model evaluation and prediction. Applications are chosen from epidemiology, ecology, population biology, physiology and medicine.",
+    "keywords": [
+      "Model Development",
+      "Life Sciences",
+      "Differential Equations",
+      "Epidemiology",
+      "Ecology"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -2542,7 +2869,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/371",
-    "updatedAt": "2025-04-05T19:56:05.693Z"
+    "updatedAt": "2025-04-09T05:13:55.281Z"
   },
   {
     "department": "MATH",
@@ -2553,7 +2880,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "This course is designed to develop the students' problem-solving abilities along heuristic lines and to illustrate the processes of Applied Mathematics. Students will be encouraged to recognize and formulate problems in mathematical terms, solve the resulting mathematical problems and interpret the solution in real world terms. Typical problems considered include nonlinear programming, optimization problems, diffusion models.",
+    "keywords": [
+      "Applied Mathematics",
+      "Problem Solving",
+      "Heuristic",
+      "Nonlinear Programming",
+      "Optimization"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -2592,7 +2925,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/372",
-    "updatedAt": "2025-04-05T19:56:09.483Z"
+    "updatedAt": "2025-04-09T05:13:59.684Z"
   },
   {
     "department": "MATH",
@@ -2603,7 +2936,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Introduction to optimization. Problem formulation. Linear programming. The simplex method and its variants (revised Simplex method, dual simplex method). Extreme points of polyhedral sets. Theory of linear inequalities (Farkas Lemma). Complementary slackness and duality. Post-optimality analysis. Interior point methods. Applications (elementary games, transportation problems, networks, etc.).",
+    "keywords": [
+      "Optimization",
+      "Linear Programming",
+      "Simplex Method",
+      "Duality",
+      "Applications"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -2642,7 +2981,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/373",
-    "updatedAt": "2025-04-05T19:56:15.010Z"
+    "updatedAt": "2025-04-09T05:14:03.779Z"
   },
   {
     "department": "MATH",
@@ -2653,7 +2992,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-1"
     },
-    "parsedDescription": "Approximation of functions by Taylor series, Newton's formulae, Lagrange and Hermite interpolation. Splines. Orthogonal polynomials and least-squares approximation of functions. Direct and iterative methods for solving linear systems. Methods for solving non-linear equations and systems of non-linear equations. Introduction to computer programming.",
+    "keywords": [
+      "Approximation",
+      "Interpolation",
+      "Linear Systems",
+      "Non-linear Equations",
+      "Computer Programming"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "AND",
@@ -2692,7 +3037,7 @@
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/381",
-    "updatedAt": "2025-04-05T19:56:19.326Z"
+    "updatedAt": "2025-04-09T05:14:10.027Z"
   },
   {
     "department": "MATH",
@@ -2703,7 +3048,13 @@
       "feeIndex": 6,
       "term": "EITHER, 3-0-0"
     },
-    "parsedDescription": "Principles of Monte Carlo methods. Essentials of stochastics. Introduction to financial derivatives pricing. Generating random variables. Simulating stochastic differential equations. Application to financial derivatives pricing and interest rate models. Variance reduction techniques.",
+    "keywords": [
+      "Monte Carlo Methods",
+      "Stochastics",
+      "Financial Derivatives",
+      "Random Variables",
+      "Simulation"
+    ],
     "requirements": {
       "prerequisites": {
         "operator": "OR",
@@ -2725,9 +3076,7 @@
               },
               {
                 "operator": "STANDALONE",
-                "courses": [
-                  "consent of the Department"
-                ]
+                "description": "Consent of the Department"
               }
             ]
           }
@@ -2742,10 +3091,1572 @@
     "flattenedPrerequisites": [
       "STAT 471",
       "E E 387",
-      "consent of the Department"
+      "Consent of the Department"
     ],
     "flattenedCorequisites": [],
     "url": "/catalogue/course/math/408",
-    "updatedAt": "2025-04-05T19:56:24.327Z"
+    "updatedAt": "2025-04-09T05:14:13.791Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 411",
+    "title": "Honors Complex Variables",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "keywords": [
+      "Complex Numbers",
+      "Analytic Functions",
+      "Cauchy's Theorem",
+      "Residue Theorem",
+      "Harmonic Functions"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 314"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 317"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "(1) This course is primarily for Honors students in Mathematics or Physics. (2) Offered in alternate years. It may be offered in intervening years if demand is sufficient."
+    },
+    "flattenedPrerequisites": [
+      "MATH 314",
+      "MATH 317"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/411",
+    "updatedAt": "2025-04-09T05:14:16.892Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 412",
+    "title": "Algebraic Number Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Valuations",
+      "Algebraic Number Fields",
+      "Ideals",
+      "Divisors",
+      "Class Number"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 326"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "equivalent"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "MATH 326",
+      "equivalent"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/412",
+    "updatedAt": "2025-04-09T05:14:19.755Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 414",
+    "title": "Analysis II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "keywords": [
+      "Differentiation",
+      "Integration",
+      "Functions",
+      "Theorems",
+      "Sequences"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "MATH 314"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "This course may not be taken for credit if credit has already been obtained in MATH 317."
+    },
+    "flattenedPrerequisites": [
+      "MATH 314"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/414",
+    "updatedAt": "2025-04-09T05:14:22.394Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 415",
+    "title": "Mathematical Finance I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Probability",
+      "Financial Analysis",
+      "Martingales",
+      "Options",
+      "Arbitrage"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 471"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "Consent of the Department"
+          }
+        ]
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [
+      "STAT 471",
+      "Consent of the Department"
+    ],
+    "url": "/catalogue/course/math/415",
+    "updatedAt": "2025-04-09T05:14:24.913Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 417",
+    "title": "Real Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Measure Theory",
+      "Integration Theory",
+      "Lebesgue Measure",
+      "Countable Sets",
+      "Functions of Bounded Variation"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 317"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 414"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "MATH 317",
+      "MATH 414"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/417",
+    "updatedAt": "2025-04-09T05:14:27.435Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 418",
+    "title": "Linear Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Banach Spaces",
+      "Hilbert Spaces",
+      "Spectral Theory",
+      "Compact Operators",
+      "Theorems"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "MATH 417"
+        ]
+      },
+      "corequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "MATH 447"
+        ]
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "MATH 417"
+    ],
+    "flattenedCorequisites": [
+      "MATH 447"
+    ],
+    "url": "/catalogue/course/math/418",
+    "updatedAt": "2025-04-09T05:14:29.132Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 421",
+    "title": "Combinatorics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "keywords": [
+      "Permutations",
+      "Combinations",
+      "Binomial Theorem",
+      "Recurrence Relations",
+      "Boolean Algebra"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "MATH 326",
+              "MATH 111",
+              "MATH 228"
+            ]
+          },
+          {
+            "operator": "WILDCARD",
+            "pattern": "MATH 3[0-9]{2}",
+            "description": "a 300-level MATH course (MATH 322 recommended)"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "MATH 326",
+      "MATH 111",
+      "MATH 228",
+      "MATH 3[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/421",
+    "updatedAt": "2025-04-09T05:14:33.580Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 422",
+    "title": "Coding Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "keywords": [
+      "Group Theory",
+      "Cosets",
+      "Lagrange's Theorem",
+      "Error Correcting Codes",
+      "Finite Field Theory"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 227"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "MATH 228"
+                ]
+              },
+              {
+                "operator": "WILDCARD",
+                "pattern": "MATH 3[0-9]{2}",
+                "description": "a 300-level MATH course"
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "MATH 227",
+      "MATH 228",
+      "MATH 3[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/422",
+    "updatedAt": "2025-04-09T05:14:40.365Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 424",
+    "title": "Algebra: Groups and Fields",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Field Extensions",
+      "Galois Theory",
+      "Finite Fields",
+      "Solvable Groups",
+      "Ruler and Compass Construction"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 326"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "MATH 228",
+              "MATH 328"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "This course cannot be taken for credit if credit has already been obtained in MATH 427 or 329."
+    },
+    "flattenedPrerequisites": [
+      "MATH 326",
+      "MATH 228",
+      "MATH 328"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/424",
+    "updatedAt": "2025-04-09T05:14:45.402Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 428",
+    "title": "Advanced Ring Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Commutative Algebra",
+      "Algebraic Geometry",
+      "Homological Algebra",
+      "Mathematics",
+      "Department Consent"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 326"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "consent of Department"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "MATH 326",
+      "consent of Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/428",
+    "updatedAt": "2025-04-09T05:14:48.963Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 429",
+    "title": "Advanced Group Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Group Actions",
+      "Sylow Theory",
+      "Solvable Groups",
+      "Nilpotent Groups",
+      "Galois Theory"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 328"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "Consent of the Department"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "MATH 328",
+      "Consent of the Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/429",
+    "updatedAt": "2025-04-09T05:14:52.100Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 432",
+    "title": "Intermediate Differential Equations",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Existence Theorems",
+      "Uniqueness Theorems",
+      "Numerical Methods",
+      "Phase Plane Analysis",
+      "Stability"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "MATH 201",
+              "MATH 334",
+              "MATH 336",
+              "MA PH 251"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "MATH 201",
+      "MATH 334",
+      "MATH 336",
+      "MA PH 251"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/432",
+    "updatedAt": "2025-04-09T05:14:55.289Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 436",
+    "title": "Intermediate Partial Differential Equations",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "keywords": [
+      "Partial Differential Equations",
+      "Generalized Functions",
+      "Linear Equations",
+      "Hamilton-Jacobi Equation",
+      "Shock Formation"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 300"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 337"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "MATH 300",
+      "MATH 337"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/436",
+    "updatedAt": "2025-04-09T05:14:58.157Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 447",
+    "title": "Elementary Topology",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Topology",
+      "Compactness",
+      "Metric Spaces",
+      "Homotopy Theory",
+      "Fundamental Group"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "MATH 216",
+              "MATH 217"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "MATH 328",
+              "MA PH 464"
+            ]
+          }
+        ]
+      },
+      "notes": "Offered in alternate years. It may be offered in intervening years if demand is sufficient."
+    },
+    "flattenedPrerequisites": [
+      "MATH 216",
+      "MATH 217"
+    ],
+    "flattenedCorequisites": [
+      "MATH 328",
+      "MA PH 464"
+    ],
+    "url": "/catalogue/course/math/447",
+    "updatedAt": "2025-04-09T05:15:01.214Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 448",
+    "title": "Introduction to Differential Geometry",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Riemannian Geometry",
+      "Metric Tensors",
+      "Curvature",
+      "Covariant Differentiation",
+      "Geodesics"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 348"
+            ]
+          },
+          {
+            "operator": "AND",
+            "conditions": [
+              {
+                "operator": "STANDALONE",
+                "courses": [
+                  "MATH 217"
+                ]
+              },
+              {
+                "operator": "OR",
+                "courses": [
+                  "MATH 225",
+                  "MATH 227"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Offered in alternate years. It may be offered in intervening years if demand is sufficient."
+    },
+    "flattenedPrerequisites": [
+      "MATH 348",
+      "MATH 217",
+      "MATH 225",
+      "MATH 227"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/448",
+    "updatedAt": "2025-04-09T05:15:06.423Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 471",
+    "title": "Markov Models",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Birth-Death Processes",
+      "Markov Chains",
+      "Stochastic Differential Equations",
+      "Martingales",
+      "Particle Filtering"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 281"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 371"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Credit cannot be obtained in MATH 471 if credit has already been in STAT 471."
+    },
+    "flattenedPrerequisites": [
+      "STAT 281",
+      "STAT 371"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/471",
+    "updatedAt": "2025-04-09T05:15:13.591Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 483",
+    "title": "Topics in Algebra",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Advanced Algebra",
+      "Mathematics",
+      "In-depth Topics",
+      "Curriculum",
+      "Credit"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "MATH 326",
+              "MATH 327",
+              "MATH 328",
+              "MATH 329"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "equivalent"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Upon approval by the Department of Mathematical and Statistical Sciences, this course may be taken for credit multiple times."
+    },
+    "flattenedPrerequisites": [
+      "MATH 326",
+      "MATH 327",
+      "MATH 328",
+      "MATH 329",
+      "equivalent"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/483",
+    "updatedAt": "2025-04-09T05:15:17.302Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 497",
+    "title": "Reading in Mathematics",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Independent Study",
+      "Reading Program",
+      "Mature Students",
+      "Supervision",
+      "Honors Committee"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "MATH 3[0-9]{2}"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "This course may be taken in Fall or Winter and may be taken any number of times, subject always to the approval mentioned above."
+    },
+    "flattenedPrerequisites": [
+      "MATH 3[0-9]{2}"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/497",
+    "updatedAt": "2025-04-09T05:15:20.014Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 498",
+    "title": "Mathematical Topics in Data Science",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Topics Course",
+      "Mathematics",
+      "New Offerings",
+      "Prerequisites",
+      "Credit"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "MATH 209",
+              "MATH 214",
+              "MATH 217"
+            ]
+          },
+          {
+            "operator": "OR",
+            "courses": [
+              "MATH 225",
+              "MATH 227"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Credit for this course may be obtained more than once."
+    },
+    "flattenedPrerequisites": [
+      "MATH 209",
+      "MATH 214",
+      "MATH 217",
+      "MATH 225",
+      "MATH 227"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/498",
+    "updatedAt": "2025-04-09T05:15:22.937Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 499",
+    "title": "Research Project",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 0-1S-6"
+    },
+    "keywords": [
+      "Research",
+      "Mathematics",
+      "Oral Presentation",
+      "Written Report",
+      "Specialization"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": [
+          {
+            "operator": "WILDCARD",
+            "pattern": "MATH 3[0-9]{2}",
+            "description": "a 300-level MATH course"
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "consent of the course coordinator"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "Credit for this course may be obtained more than once. Students interested in taking this course should contact the course coordinator two months in advance."
+    },
+    "flattenedPrerequisites": [
+      "MATH 3[0-9]{2}",
+      "consent of the course coordinator"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/499",
+    "updatedAt": "2025-04-09T05:15:32.459Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 505",
+    "title": "Stochastic Analysis I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "FIRST, 3-0-0"
+    },
+    "keywords": [
+      "Stochastic Analysis",
+      "Probability Measures",
+      "Martingales",
+      "Brownian Motion",
+      "Integration"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 471"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "Consent of the Department"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "STAT 471",
+      "Consent of the Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/505",
+    "updatedAt": "2025-04-09T05:15:36.248Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 506",
+    "title": "Complex Variables",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Complex Analysis",
+      "Holomorphicity",
+      "Theorems",
+      "Complex Manifolds",
+      "Analytic Subvarieties"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "MATH 411"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "MATH 411"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/506",
+    "updatedAt": "2025-04-09T05:15:38.809Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 508",
+    "title": "Computational Finance",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Monte Carlo Methods",
+      "Stochastics",
+      "Financial Derivatives",
+      "Random Variables",
+      "Simulation"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "STAT 471",
+              "FIN 654",
+              "ECON 598"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "consent of the Department"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "This course may not be taken for credit if credit has already been obtained in MATH 408."
+    },
+    "flattenedPrerequisites": [
+      "STAT 471",
+      "FIN 654",
+      "ECON 598",
+      "consent of the Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/508",
+    "updatedAt": "2025-04-09T05:15:42.439Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 509",
+    "title": "Data Structures and Platforms",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Data Analysis",
+      "R",
+      "SAS",
+      "Python",
+      "Cloud Computing"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/509",
+    "updatedAt": "2025-04-09T05:15:45.838Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 510",
+    "title": "Stochastic Analysis II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "SECOND, 3-0-0"
+    },
+    "keywords": [
+      "Semimartingales",
+      "Stochastic Integrals",
+      "Ito's Formula",
+      "Martingale Representation",
+      "Stochastic Differential Equations"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 505"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "Consent of the Department"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "MATH 505",
+      "Consent of the Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/510",
+    "updatedAt": "2025-04-09T05:15:49.150Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 512",
+    "title": "Algebraic Number Theory",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Valuations",
+      "Algebraic Number Fields",
+      "Ideals",
+      "Divisors",
+      "Class Number"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 326"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "equivalent"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "MATH 326",
+      "equivalent"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/512",
+    "updatedAt": "2025-04-09T05:15:51.718Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 514",
+    "title": "Measure Theory I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Measure Theory",
+      "Integration Theory",
+      "Lebesgue Measure",
+      "Countable Sets",
+      "Functions of Bounded Variation"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "Math 317"
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "Math 317"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/514",
+    "updatedAt": "2025-04-09T05:15:53.970Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 515",
+    "title": "Mathematical Finance I",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Probability",
+      "Financial Analysis",
+      "Martingales",
+      "Options",
+      "Contingent Claims"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "STAT 471"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "Consent of the Department"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": "This course may not be taken for credit if credit has already been obtained in MATH 415."
+    },
+    "flattenedPrerequisites": [
+      "STAT 471",
+      "Consent of the Department"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/515",
+    "updatedAt": "2025-04-09T05:16:01.543Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 516",
+    "title": "Linear Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Banach Spaces",
+      "Hilbert Spaces",
+      "Spectral Theory",
+      "Compact Operators",
+      "Theorems"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "MATH 417"
+        ]
+      },
+      "corequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "MATH 447"
+        ]
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "MATH 417"
+    ],
+    "flattenedCorequisites": [
+      "MATH 447"
+    ],
+    "url": "/catalogue/course/math/516",
+    "updatedAt": "2025-04-09T05:16:04.308Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 518",
+    "title": "Functional Analysis",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Convex Spaces",
+      "Weak Topologies",
+      "Banach Spaces",
+      "Compactness",
+      "Geometry"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "MATH 516"
+        ]
+      },
+      "corequisites": {
+        "operator": "OR",
+        "courses": [
+          "MATH 447",
+          "consent of Department"
+        ]
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "MATH 516"
+    ],
+    "flattenedCorequisites": [
+      "MATH 447",
+      "consent of Department"
+    ],
+    "url": "/catalogue/course/math/518",
+    "updatedAt": "2025-04-09T05:16:07.480Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 519",
+    "title": "Introduction to Operator Algebras",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Banach Algebras",
+      "Spectral Theory",
+      "Operators",
+      "C*-Algebras",
+      "Von Neumann Algebra"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "MATH 516"
+        ]
+      },
+      "corequisites": {
+        "operator": "OR",
+        "courses": [
+          "MATH 447",
+          "consent of Department"
+        ]
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "MATH 516"
+    ],
+    "flattenedCorequisites": [
+      "MATH 447",
+      "consent of Department"
+    ],
+    "url": "/catalogue/course/math/519",
+    "updatedAt": "2025-04-09T05:16:10.349Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 520",
+    "title": "Mathematical Finance II",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Financial Markets",
+      "Arbitrage",
+      "Option Pricing",
+      "Portfolio Optimization",
+      "Consumption-Investment"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "STANDALONE",
+        "courses": [
+          "MATH 515"
+        ]
+      },
+      "corequisites": {
+        "operator": "OR",
+        "courses": [
+          "MATH 510",
+          "consent of the Department"
+        ]
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "MATH 515"
+    ],
+    "flattenedCorequisites": [
+      "MATH 510",
+      "consent of the Department"
+    ],
+    "url": "/catalogue/course/math/520",
+    "updatedAt": "2025-04-09T05:16:13.272Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 521",
+    "title": "Differential Manifolds",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Manifolds",
+      "Differential Geometry",
+      "Lie Groups",
+      "Tensor Analysis",
+      "Riemannian Metrics"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 446"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "courses": [
+              "MATH 448"
+            ]
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "MATH 446",
+      "MATH 448"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/521",
+    "updatedAt": "2025-04-09T05:16:17.206Z"
+  },
+  {
+    "department": "MATH",
+    "courseCode": "MATH 524",
+    "title": "Ordinary Differential Equations IIA",
+    "units": {
+      "credits": 3,
+      "feeIndex": 6,
+      "term": "EITHER, 3-0-0"
+    },
+    "keywords": [
+      "Existence Theorems",
+      "Uniqueness Theorems",
+      "Linear Systems",
+      "Nonlinear Systems",
+      "Bifurcations"
+    ],
+    "requirements": {
+      "prerequisites": {
+        "operator": "OR",
+        "conditions": [
+          {
+            "operator": "OR",
+            "courses": [
+              "MATH 334",
+              "MATH 336"
+            ]
+          },
+          {
+            "operator": "STANDALONE",
+            "description": "equivalent"
+          }
+        ]
+      },
+      "corequisites": {
+        "operator": "AND",
+        "conditions": []
+      },
+      "notes": ""
+    },
+    "flattenedPrerequisites": [
+      "MATH 334",
+      "MATH 336",
+      "equivalent"
+    ],
+    "flattenedCorequisites": [],
+    "url": "/catalogue/course/math/524",
+    "updatedAt": "2025-04-09T05:16:21.728Z"
   }
 ]

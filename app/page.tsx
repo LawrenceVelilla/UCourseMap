@@ -94,6 +94,7 @@ import { CourseInfoSkeleton } from '@/components/ui/courseInfoSkeleton';
 // This page uses searchParams to determine which course to display
 export default async function PrerequisitesPage({
     searchParams
+<<<<<<< HEAD
 }: {
     searchParams?: {
         dept?: string;
@@ -102,6 +103,10 @@ export default async function PrerequisitesPage({
     }
 }) {
     const params = await searchParams;
+=======
+}: any) {
+    const params = searchParams
+>>>>>>> 97db37b (More any clauses for param --> Fix later please)
     const dept = params?.dept || '';
     const code = params?.code || '';
 

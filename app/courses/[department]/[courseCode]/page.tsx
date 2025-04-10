@@ -12,17 +12,22 @@ import { CourseInfoSkeleton } from '@/components/ui/courseInfoSkeleton'; // Re-u
 >>>>>>> 2f8510a (Fixed parsing issues, and Implemented new UI version(BENTO))
 
 // Define the expected params shape
-interface CoursePageParams {
-    department: string;
-    courseCode: string;
-  }
-  
 
+
+<<<<<<< HEAD
 // Use the correct props interface
+<<<<<<< HEAD
 export default async function DedicatedCoursePage({ params }:
     {
         params: CoursePageParams; // Expecting department and courseCode in params
     }) {
+=======
+// FIX THIS LATER< THIS CAMT BE ANY
+export default async function DedicatedCoursePage({ params }: any) { 
+>>>>>>> 97db37b (More any clauses for param --> Fix later please)
+=======
+export default async function DedicatedCoursePage({ params }: any) {
+>>>>>>> cfed15e (Page Params in /[]/[]/page.tsx fix later)
     const { department, courseCode } = params;
     const isValidParams = !!department && !!courseCode && typeof department === 'string' && typeof courseCode === 'string';
 

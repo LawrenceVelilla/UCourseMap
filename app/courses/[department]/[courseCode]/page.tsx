@@ -8,8 +8,8 @@ import { CourseInfoSkeleton } from '@/components/ui/courseInfoSkeleton'; // Re-u
 // Define the expected params shape
 
 
-// Use the correct props interface
-export default async function DedicatedCoursePage({ params }: any) {
+// FIX THIS LATER< THIS CAMT BE ANY
+export default async function DedicatedCoursePage({ params }: any) { 
     const { department, courseCode } = params;
     const isValidParams = !!department && !!courseCode && typeof department === 'string' && typeof courseCode === 'string';
 

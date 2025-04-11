@@ -202,7 +202,7 @@ export function CourseResultDisplay({
                                     <CardDescription>Courses or conditions required before enrollment.</CardDescription>
                                 </CardHeader>
                                 <CardContent>
-                                <h4 className="font-medium text-base">Prerequisites:</h4>
+                                
                              {(targetCourse.requirements?.prerequisites && (targetCourse.requirements.prerequisites.courses?.length || targetCourse.requirements.prerequisites.conditions?.length))
                                  ? (<RequirementConditionDisplay condition={targetCourse.requirements.prerequisites} />)
                                  : (<p className="text-sm text-gray-500">None listed.</p>)
@@ -220,7 +220,7 @@ export function CourseResultDisplay({
                                     <CardDescription>Courses or conditions that can be taken concurrently.</CardDescription>
                                 </CardHeader>
                                 <CardContent>
-                                    <h4 className="font-medium text-base">Corequisites:</h4>
+                                    
                                     {(targetCourse.requirements?.corequisites && (targetCourse.requirements.corequisites.courses?.length || targetCourse.requirements.corequisites.conditions?.length))
                                         ? (<RequirementConditionDisplay condition={targetCourse.requirements.corequisites} />)
                                         : (<p className="text-sm text-gray-500">None listed.</p>)

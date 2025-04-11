@@ -1,4 +1,3 @@
-// components/component/course-link-list.tsx
 'use client';
 
 import Link from 'next/link';

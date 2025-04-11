@@ -35,7 +35,15 @@ if (!directDbUrl) {
   process.exit(1);
 }
 
-const prisma = new PrismaClient();
+const prisma = new PrismaClient(
+  {
+    datasources: {
+      db: {
+        url: directDbUrl,
+      },
+    },
+  }
+);
 // --------------------------------------------------
 
 /**

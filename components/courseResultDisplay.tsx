@@ -92,70 +92,8 @@ export function CourseResultDisplay({
         // Bento Grid Container 
         // 3 columns on medium screens and up, 1 column on small screens
         <div ref={bentoContainerRef} className="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-            {/* Card 1: Graph Card */}
+            {/* Card 1: Details/Keywords/Requirements Card */}
             <Card className="bento-card md:col-span-2"> {/* Spans 2 columns */}
-                <CardHeader>
-                    <CardTitle className="text-3xl">Dependency Graph</CardTitle>
-                    <CardDescription>Visual representation of prerequisites.</CardDescription>
-                </CardHeader>
-                <CardContent>
-                     <p className="text-xs text-gray-500 mb-4 italic">Note: Graph shows dependencies but not detailed AND/OR logic.</p>
-                     {graphNodes.length > 0 || graphEdges.length > 0 ? (
-                        <div className="min-h-[300px] md:min-h-[400px]"> {/* Ensure minimum height */}
-                            <PrerequisiteGraphWrapper
-                                key={targetCourse.id || targetCourse.courseCode} // Key for re-rendering
-                                initialNodes={graphNodes}
-                                initialEdges={graphEdges}
-                            />
-                        </div>
-                     ) : (
-                         <div className="p-4 text-center min-h-[200px] flex items-center justify-center">
-                             <p className="text-sm text-gray-500">No prerequisite dependencies found to display.</p>
-                         </div>
-                     )}
-                 </CardContent>
-             </Card>
-            
-
-             {/* Card 2: "Needed For" Placeholder Card */}
-             {/*
-
-                TODO: only show a certain amount fo courses in the list
-                        then add a "show more" button to expand the list
-                        then move to the bottom
-
-
-             */}
-             <Card className="bento-card md:col-span-1">
-                 <CardHeader>
-                     <CardTitle className='text-3xl'>Needed For</CardTitle>
-                     <CardDescription>Courses that require this course.</CardDescription>
-                 </CardHeader>
-                 <CardContent>
-                     <Tabs defaultValue="required-by" className="w-full">
-                         <TabsList className="grid w-full grid-cols-2 mb-4">
-                             <TabsTrigger value="required-by">Required By</TabsTrigger>
-                             <TabsTrigger value="corequisite-for">Corequisite For</TabsTrigger>
-                         </TabsList>
-                         <TabsContent value="required-by">
-                             <CourseLinkList
-                                courses={requiredByCourses || []}
-                                emptyMessage="No courses found that require this as a prerequisite."
-                             />
-                         </TabsContent>
-                         <TabsContent value="corequisite-for">
-                              <CourseLinkList
-                                courses={corequisiteForCourses || []}
-                                emptyMessage="No courses found that require this as a corequisite."
-                             />
-                         </TabsContent>
-                     </Tabs>
-                 </CardContent>
-             </Card>
-
-            {/* Card 3: Details/Keywords/Requirements Card */}
-             <Card className="bento-card md:col-span-2"> {/* Spans 2 columns */}
                  <CardHeader>
                      {/* Course Code and Title */}
                      <CardTitle className="text-3xl">{targetCourse.courseCode}: {targetCourse.title}</CardTitle>
@@ -231,6 +169,70 @@ export function CourseResultDisplay({
                      </div>
                  </CardContent>
              </Card>
+
+             {/* Card 2: "Needed For" Placeholder Card */}
+             {/*
+
+                TODO: only show a certain amount fo courses in the list
+                        then add a "show more" button to expand the list
+                        then move to the bottom
+
+
+             */}
+             <Card className="bento-card md:col-span-1">
+                 <CardHeader>
+                     <CardTitle className='text-3xl'>Needed For</CardTitle>
+                     <CardDescription>Courses that require this course.</CardDescription>
+                 </CardHeader>
+                 <CardContent>
+                     <Tabs defaultValue="required-by" className="w-full">
+                         <TabsList className="grid w-full grid-cols-2 mb-4">
+                             <TabsTrigger value="required-by">Required By</TabsTrigger>
+                             <TabsTrigger value="corequisite-for">Corequisite For</TabsTrigger>
+                         </TabsList>
+                         <TabsContent value="required-by">
+                             <CourseLinkList
+                                courses={requiredByCourses || []}
+                                emptyMessage="No courses found that require this as a prerequisite."
+                             />
+                         </TabsContent>
+                         <TabsContent value="corequisite-for">
+                              <CourseLinkList
+                                courses={corequisiteForCourses || []}
+                                emptyMessage="No courses found that require this as a corequisite."
+                             />
+                         </TabsContent>
+                     </Tabs>
+                 </CardContent>
+             </Card>
+
+            {/* Card 3: Graph Card */}
+            <Card className="bento-card md:col-span-2"> {/* Spans 2 columns */}
+                <CardHeader>
+                    <CardTitle className="text-3xl">Dependency Graph</CardTitle>
+                    <CardDescription>Visual representation of prerequisites.</CardDescription>
+                </CardHeader>
+                <CardContent>
+                     <p className="text-xs text-gray-500 mb-4 italic">Note: Graph shows dependencies but not detailed AND/OR logic.</p>
+                     {graphNodes.length > 0 || graphEdges.length > 0 ? (
+                        <div className="min-h-[300px] md:min-h-[400px]"> {/* Ensure minimum height */}
+                            <PrerequisiteGraphWrapper
+                                key={targetCourse.id || targetCourse.courseCode} // Key for re-rendering
+                                initialNodes={graphNodes}
+                                initialEdges={graphEdges}
+                            />
+                        </div>
+                     ) : (
+                         <div className="p-4 text-center min-h-[200px] flex items-center justify-center">
+                             <p className="text-sm text-gray-500">No prerequisite dependencies found to display.</p>
+                         </div>
+                     )}
+                 </CardContent>
+             </Card>
+            
+
+
+            
 
             {/* Card 4: "Extra Info" Placeholder Card */}
             {/* Placeholder for Profs, etc. */}

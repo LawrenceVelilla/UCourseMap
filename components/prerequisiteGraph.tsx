@@ -39,6 +39,7 @@ export interface PrerequisiteGraphProps {
 }
 
 
+// To-DO: Remember to update the component rendering the graph to use edge.data.depth for styling.
 
 // dagre
 const dagreGraph = new dagre.graphlib.Graph({ compound: false });

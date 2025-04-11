@@ -1,4 +1,3 @@
-// components/PrerequisiteCheckerForm.tsx
 'use client';
 
 import React, { useState, FormEvent, useEffect } from 'react';

@@ -18,7 +18,7 @@ export function Footer({ className }: FooterProps) {
         <div>
           <p>© {new Date().getFullYear()} UniPlanner. Created by Lawrence Velilla.</p>
           <p>This is a personal project and not affiliated with the University of Alberta.
-          Data collected from the University of Alberta Course Catalogue, and all Data rights belong to the UofA.</p>
+          Data collected from the University of Alberta Course Catalogue, and all rights belong to the University of Alberta.</p>
         </div>
       
         <div className="flex items-center space-x-4">

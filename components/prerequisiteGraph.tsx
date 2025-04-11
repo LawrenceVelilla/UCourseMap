@@ -40,12 +40,13 @@ export interface PrerequisiteGraphProps {
 
 
 // To-DO: Remember to update the component rendering the graph to use edge.data.depth for styling.
+//       - Use edge.data.depth to determine color difference for the edges so we can see which is actually a direct prerequisite.
 
 // dagre
 const dagreGraph = new dagre.graphlib.Graph({ compound: false });
 dagreGraph.setDefaultEdgeLabel(() => ({}));
-const nodeWidth = 180; // Standard width for course nodes
-const nodeHeight = 45; // Slightly shorter height for course code only
+const nodeWidth = 180; 
+const nodeHeight = 45; 
 
 // Default styles defined outside for reuse
 const targetNodeStyle: React.CSSProperties = {
@@ -163,13 +164,10 @@ const getLayoutedElements = (
 // Renders the graph using calculated layout; accepts props from the wrapper
 const PrerequisiteGraphLayout = ({ initialNodes, initialEdges }: PrerequisiteGraphProps) => {
   const { fitView } = useReactFlow();
-  // State hooks correctly typed with AppNode and AppEdge
   const [nodes, setNodes, onNodesChange] = useNodesState<Node<GraphNodeData>>([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState<AppEdge>([]);
 
-  // Effect to process input props and apply layout
   useEffect(() => {
-      // Validate incoming props
       if (!Array.isArray(initialNodes) || !Array.isArray(initialEdges)) {
          setNodes([]); setEdges([]); return;
       }
@@ -179,12 +177,11 @@ const PrerequisiteGraphLayout = ({ initialNodes, initialEdges }: PrerequisiteGra
       const transformedNodes: Node<GraphNodeData>[] = initialNodes.map(n => ({
           id: n.id,
           data: n.data,
-          position: { x: 0, y: 0 }, // Initial temporary position
-          width: nodeWidth,         // Standard width
-          height: nodeHeight,       // Standard height (even for text nodes for consistent layout)
+          position: { x: 0, y: 0 }, 
+          width: nodeWidth,         
+          height: nodeHeight,       
           type: n.type ?? 'default',
           style: n.style,
-          // Add defaults for other base Node properties
           selected: false, dragging: false, selectable: true, draggable: false, hidden: false, resizing: false, focusable: true
       }));
 
@@ -212,7 +209,8 @@ const PrerequisiteGraphLayout = ({ initialNodes, initialEdges }: PrerequisiteGra
               }
           });
       } else {
-          // Clear state if input nodes array was empty after transformation
+        // If we get here, usually means no nodes were passed
+          // Clear nodes and edges to avoid rendering empty graph
           setNodes([]);
           setEdges([]);
       }
@@ -225,16 +223,16 @@ const PrerequisiteGraphLayout = ({ initialNodes, initialEdges }: PrerequisiteGra
         <ReactFlow
             nodes={nodes}
             edges={edges}
-            onNodesChange={onNodesChange} // Pass handlers from hooks
+            onNodesChange={onNodesChange} 
             onEdgesChange={onEdgesChange}
-            nodesDraggable={false}        // Disable user interaction
+            nodesDraggable={false}       
             nodesConnectable={false}
             style={{ backgroundColor: '#f9f9f7' }}
-            proOptions={{ hideAttribution: true }} // Hide "React Flow" logo
+            proOptions={{ hideAttribution: true }} 
             minZoom={0.5}
             // fitView // Let useEffect handle fitting the view
         >
-            <Controls /> {/* Zoom/Pan controls */}
+            <Controls /> 
             <Background color="#ddd" gap={16} variant={BackgroundVariant.Dots} />
         </ReactFlow>
     </div>

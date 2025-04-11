@@ -21,8 +21,8 @@ and additional information.
 'use client'; 
 
 import React, { useEffect, useRef } from 'react';
-import { animate, stagger } from 'animejs'; // Anime.js v4+ imports
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"; // For tabs
+import { animate, stagger } from 'animejs'; 
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"; 
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { RequirementConditionDisplay } from '@/components/requirementConditionDisplay'; 
@@ -30,10 +30,9 @@ import PrerequisiteGraphWrapper, { InputNode, AppEdge } from '@/components/prere
 import { CourseLinkList } from './courseLinkList'; 
 import { Course } from "@/lib/types"; 
 import Link from 'next/link';
-import { ExternalLink, AlertCircle } from "lucide-react"; // Icons
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"; // For error display
+import { ExternalLink, AlertCircle } from "lucide-react"; 
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"; 
 
-// Define the props expected from the server component
 interface CourseResultDisplayProps {
     targetCourse: Course;
     graphNodes: InputNode[];
@@ -72,12 +71,11 @@ export function CourseResultDisplay({
                     }
                  );
             }
-            // Consider adding graph animations here if needed
+            // Todo: Add graph animations here
         }
         // Rerun animation if the target course changes
     }, [targetCourse]);
 
-    // Basic check in case props aren't passed correctly (unlikely with server fetching)
     if (!targetCourse) {
         return (
              <Alert variant="destructive">

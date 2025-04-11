@@ -25,12 +25,11 @@ interface CourseInfoWrapperProps {
 }
 
 export async function CourseInfoWrapper({ department, code }: CourseInfoWrapperProps) {
-    // --- State Variables ---
     // Removed displayCourseData - data will come from CTE result
     let recursiveGraphData: Awaited<ReturnType<typeof getRecursivePrerequisitesCTE>> | null = null;
     let requiredByCourses: Pick<Course, 'id' | 'department' | 'courseCode' | 'title'>[] = [];
     let corequisiteForCourses: Pick<Course, 'id' | 'department' | 'courseCode' | 'title'>[] = [];
-    let targetCourseNode: Course | undefined | null = null; // Store the extracted target course
+    let targetCourseNode: Course | undefined | null = null; 
     let fetchError: string | null = null;
     // Removed notFoundError - will be inferred if targetCourseNode is null after fetch
 
@@ -38,7 +37,7 @@ export async function CourseInfoWrapper({ department, code }: CourseInfoWrapperP
     const targetCodeUpper = code.toUpperCase();
     const targetCourseCode = `${targetDeptUpper} ${targetCodeUpper}`; // Use uppercase internally
 
-    // Optional: Add artificial delay for testing skeleton visibility
+    // Testing --> Add artificial delay to check skeleton display
     // console.log("[Wrapper] Adding artificial delay...");
     // await new Promise(resolve => setTimeout(resolve, 1500));
 
@@ -49,29 +48,28 @@ export async function CourseInfoWrapper({ department, code }: CourseInfoWrapperP
             throw new Error("Invalid course format received.");
         }
 
-        // --- Optimized Data Fetching ---
-        // Fetch graph data (which includes target course) AND reverse lookups concurrently
+        // Optimized Data Fetching 
+        // Fetch graph data (which includes target course) AND reverse lookups ("Needed for") concurrently
         const [graphResult, requiredByResult, coreqForResult] = await Promise.all([
             getRecursivePrerequisitesCTE(department, code), // Fetch graph data (includes target node)
             getCoursesRequiring(targetCourseCode),        // Fetch "Required By" list
             getCoursesHavingCorequisite(targetCourseCode) // Fetch "Corequisite For" list
         ]);
 
-        // --- Process Results ---
-        recursiveGraphData = graphResult; // Store the full graph data
+        // Process Results 
+        recursiveGraphData = graphResult; // For the graph
         requiredByCourses = requiredByResult;
         corequisiteForCourses = coreqForResult;
 
         // Extract the target course data specifically from the CTE results
         targetCourseNode = recursiveGraphData.nodes.find(
-            (node): node is Course => // Type guard to ensure we find a Course object
+            (node): node is Course => 
                 'courseCode' in node && node.courseCode.toUpperCase() === targetCourseCode
         );
 
         if (!targetCourseNode) {
             // If the target course wasn't even found as the root of the CTE, it doesn't exist
              console.log(`[Wrapper] Target course ${targetCourseCode} not found within CTE results.`);
-             // Setting targetCourseNode to null handles the "Not Found" case below
         } else {
             console.log(`[Wrapper] Data fetched successfully.`);
         }
@@ -81,7 +79,7 @@ export async function CourseInfoWrapper({ department, code }: CourseInfoWrapperP
         fetchError = error instanceof Error ? error.message : "An unknown error occurred during data fetching.";
     }
 
-    // --- Handle Error States ---
+    
     if (fetchError) {
         return ( <Alert variant="destructive" className="mt-6"> <AlertTitle>Error Fetching Data</AlertTitle> <AlertDescription>{fetchError}</AlertDescription> </Alert> );
     }
@@ -96,7 +94,6 @@ export async function CourseInfoWrapper({ department, code }: CourseInfoWrapperP
     }
 
     // --- Prepare Graph Input Data (with Filtering and Mapping) ---
-    // (Keep this graph preparation logic exactly as it was, it uses recursiveGraphData)
     console.log("[Wrapper] Preparing graph data...");
     const graphInputNodes: InputNode[] = [];
     const graphInputEdges: AppEdge[] = [];
@@ -114,7 +111,7 @@ export async function CourseInfoWrapper({ department, code }: CourseInfoWrapperP
             if (!shouldExcludeGraphNode(nodeCodeUpper)) {
                 graphInputNodes.push({
                     id: nodeCodeUpper,
-                    type: 'default', // Or your custom node type
+                    type: 'default',
                     data: {
                         label: node.courseCode,
                         isCourse: true,
@@ -126,8 +123,6 @@ export async function CourseInfoWrapper({ department, code }: CourseInfoWrapperP
                  // console.log(`[Graph Prep] Excluding course node: ${node.courseCode}`);
             }
         }
-        // Note: We handle the 'InputNode' types (text nodes) from CTE results in step 2 if needed,
-        // but the current logic rebuilds text nodes based on edges, which is also fine.
     });
 
     // 2. Process Edges, Create Text Nodes if needed
@@ -177,13 +172,12 @@ export async function CourseInfoWrapper({ department, code }: CourseInfoWrapperP
         }
     });
     console.log(`[Graph Prep] Prepared ${graphInputNodes.length} nodes and ${graphInputEdges.length} edges for the graph.`);
-    // --- End Graph Prep ---
+    
 
 
-    // --- Render the Client Component with Processed Data ---
+    // Render Client Component
     return (
         <CourseResultDisplay
-            // Pass the target course extracted from the CTE results
             targetCourse={targetCourseNode}
             graphNodes={graphInputNodes}
             graphEdges={graphInputEdges}

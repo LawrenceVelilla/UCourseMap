@@ -28,9 +28,6 @@ function parseCourseString(courseString: string): { department: string; codeNumb
    return null;
 }
 
-
-// --- Main Data Fetching Functions ---
-
 /**
  * Fetches full details for a single course by department and code number.
  * Uses React Cache for memoization within a single request lifecycle.
@@ -129,7 +126,8 @@ const highSchoolPatterns = new Set([
   "PHYSICS 30",
   "CHEMISTRY 30",
   "BIOLOGY 30",
-  "ENGLISH LANGUAGE ARTS 30-1", "ELA 30-1"
+  "ENGLISH LANGUAGE ARTS 30-1", "ELA 30-1",
+  "EQUIVALENT", "MATHEMATICS 30-2"
 ]);
 const isHighSchoolPrereq = (text: string): boolean => {
   return highSchoolPatterns.has(text.toUpperCase().trim());
@@ -198,7 +196,7 @@ function processCourseNodes(
   }
 }
 
-// --- Helper for Pass 2: Process missing (text) prerequisites ---
+
 function processTextPrerequisites(
   courseNodesMap: Map<string, Course>,
   nodeDepths: Map<string, number>,
@@ -247,7 +245,8 @@ function processTextPrerequisites(
   return textNodesMap;
 }
 
-// --- Main Improved CTE Function ---
+// Recursive CTE function
+// Imporoved version from past Recursive Funtion
 export const getRecursivePrerequisitesCTE = cache(
   async (
     departmentCode: string,
@@ -262,7 +261,7 @@ export const getRecursivePrerequisitesCTE = cache(
       console.log(`[DataCTE] Fetching recursive prerequisites for: ${fullCourseCode} up to depth ${maxDepth}`);
     }
 
-    // --- The Recursive CTE SQL Query ---
+    // Recursive CTE SQL Query
     const sql = Prisma.sql`
       WITH RECURSIVE PrereqGraph AS (
           SELECT
@@ -294,11 +293,10 @@ export const getRecursivePrerequisitesCTE = cache(
     `;
 
     try {
-      // Execute the recursive CTE query
       const rawResults = await prisma.$queryRaw<unknown[]>(sql);
       const validatedResults = z.array(RawCteResultSchema).parse(rawResults);
 
-      // --- Post-Processing: Modularized in two passes ---
+
       const courseNodesMap = new Map<string, Course>();
       const nodeDepths = new Map<string, number>();
       const finalEdges: AppEdge[] = [];
@@ -390,43 +388,40 @@ export const getCoursesHavingCorequisite = cache(
 
 
 // --- DEPRECATED / REMOVED FUNCTIONS ---
-// The original `getRecursivePrerequisites` (N+1 version) has been removed.
-// The `getCourseAndPrerequisiteData` might be less useful now with the CTE providing
-// full recursive data, but can be kept if simple direct prereq lists are needed elsewhere.
 
-/**
- * Orchestrator: Fetches target course details + basic details of its *direct* prerequisites.
- * Less critical now with CTE, but kept for potential simpler use cases or reference.
- * Uses React Cache.
- */
- export const getCourseAndPrerequisiteData = cache(
-     async (departmentCode: string, courseCodeNumber: string) => {
-         const targetCourse = await getCourseDetails(departmentCode, courseCodeNumber);
+// /**
+//  * Orchestrator: Fetches target course details + basic details of its *direct* prerequisites.
+//  * Less critical now with CTE, but kept for potential simpler use cases or reference.
+//  * Uses React Cache.
+//  */
+//  export const getCourseAndPrerequisiteData = cache(
+//      async (departmentCode: string, courseCodeNumber: string) => {
+//          const targetCourse = await getCourseDetails(departmentCode, courseCodeNumber);
 
-         if (!targetCourse) {
-             return { targetCourse: null, prerequisiteCourses: [] };
-         }
+//          if (!targetCourse) {
+//              return { targetCourse: null, prerequisiteCourses: [] };
+//          }
 
-         let prerequisiteCourses: Pick<Course, 'id' | 'department' | 'courseCode' | 'title'>[] = [];
-         // Check if flattenedPrerequisites is an array and has items
-         if (Array.isArray(targetCourse.flattenedPrerequisites) && targetCourse.flattenedPrerequisites.length > 0) {
-             // Filter out non-course strings *before* fetching details
-             const prereqCourseCodes = targetCourse.flattenedPrerequisites
-     .map(req => {
-         const parsed = parseCourseString(req);
-         // Create the full course code if parsing succeeded
-         return parsed ? `${parsed.department} ${parsed.codeNumber}` : null;
-     })
-     .filter((code): code is string => !!code);
+//          let prerequisiteCourses: Pick<Course, 'id' | 'department' | 'courseCode' | 'title'>[] = [];
+//          // Check if flattenedPrerequisites is an array and has items
+//          if (Array.isArray(targetCourse.flattenedPrerequisites) && targetCourse.flattenedPrerequisites.length > 0) {
+//              // Filter out non-course strings *before* fetching details
+//              const prereqCourseCodes = targetCourse.flattenedPrerequisites
+//      .map(req => {
+//          const parsed = parseCourseString(req);
+//          // Create the full course code if parsing succeeded
+//          return parsed ? `${parsed.department} ${parsed.codeNumber}` : null;
+//      })
+//      .filter((code): code is string => !!code);
 
-             if (prereqCourseCodes.length > 0) {
-                 prerequisiteCourses = await getMultipleCourseDetails(prereqCourseCodes);
-             }
-         }
+//              if (prereqCourseCodes.length > 0) {
+//                  prerequisiteCourses = await getMultipleCourseDetails(prereqCourseCodes);
+//              }
+//          }
 
-         return { targetCourse, prerequisiteCourses };
-     }
-);
+//          return { targetCourse, prerequisiteCourses };
+//      }
+// );
 
 // Note: The original `getRecursivePrerequisites` function (the one with N+1 problem) has been removed
 // and replaced by `getRecursivePrerequisitesCTE`. If you need the old one for comparison,

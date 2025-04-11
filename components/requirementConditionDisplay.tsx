@@ -26,19 +26,19 @@ function looksLikeCourseCode(text: string): boolean {
 
 export function RequirementConditionDisplay({ condition }: { condition: RequirementCondition }) {
 
-    // --- Handle nodes that are purely descriptive (description or pattern) ---
+    // Text nodes handled here
     const descriptiveText = condition.description?.trim() || condition.pattern?.trim();
     if (descriptiveText) {
         // Render descriptive text directly. Parent LI provides bullet context.
         return ( <span style={{ fontStyle: 'italic', color: '#333' }}>{descriptiveText}</span> );
     }
 
-    // --- Determine Operator Text (only for AND/OR) ---
+    // Operator text for AND/OR conditions
     const operatorText = condition.operator === 'AND'
       ? 'ALL of:'
       : (condition.operator === 'OR' ? 'ONE of:' : null);
 
-    // --- Determine if this node requires its own UL structure ---
+    // Determine if this condition needs its own UL
     // Needs UL if it has an operator (AND/OR) OR if it has nested conditions.
     const needsOwnUl = !!operatorText || (condition.conditions && condition.conditions.length > 0);
     const hasDirectCourses = condition.courses && condition.courses.length > 0;
@@ -89,7 +89,7 @@ export function RequirementConditionDisplay({ condition }: { condition: Requirem
                         // Render course/text without LI/UL - parent handles list structure
                         return (
                            <div key={itemText} style={{ marginBottom: '3px' /* Or maybe no div needed, just span/Link? */ }}>
-                               {isCourse && parsedLinkData ? ( <Link href={`/prerequisites?dept=${parsedLinkData.dept.toLowerCase()}&code=${parsedLinkData.code}`} className="text-[#283618] hover:underline" title={`Check prerequisites for ${itemText}`}> {itemText} </Link> )
+                               {isCourse && parsedLinkData ? ( <Link href={`/?dept=${parsedLinkData.dept.toLowerCase()}&code=${parsedLinkData.code}`} className="text-[#283618] hover:underline" title={`Check prerequisites for ${itemText}`}> {itemText} </Link> )
                                 : ( <span style={{ fontStyle: 'italic', color: '#333' }}>{itemText}</span> )}
                            </div>
                        );

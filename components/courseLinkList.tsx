@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import type { Course } from '@/lib/types'; // Adjust path if needed
+import type { Course } from '@/lib/types';
 
 interface CourseLinkListProps {
     courses: Array<Pick<Course, 'id' | 'department' | 'courseCode' | 'title'>>;

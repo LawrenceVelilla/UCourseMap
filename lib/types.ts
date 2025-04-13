@@ -10,8 +10,8 @@ export interface Course {
     };
     keywords: string[];
     requirements: RequirementsData;
-    flattenedPrerequisites: string[] | [];
-    flattenedCorequisites: string[] | [];
+    flattenedPrerequisites: string[];
+    flattenedCorequisites: string[];
     url: string | null;
     updatedAt: string; // ISO String date
   }

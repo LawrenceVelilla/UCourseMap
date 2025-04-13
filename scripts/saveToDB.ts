@@ -35,15 +35,20 @@ if (!directDbUrl) {
   process.exit(1);
 }
 
-const prisma = new PrismaClient(
-  {
-    datasources: {
-      db: {
-        url: directDbUrl,
-      },
-    },
+const prisma = new PrismaClient();
+
+function fixDuplicatedDepartmentInCourseCode(course: CourseJsonData): CourseJsonData {
+  const dept = course.department.trim().toUpperCase();
+  
+  // Check if course code has department repeated
+  if (course.courseCode.startsWith(`${dept} ${dept}`)) {
+    // Fix by removing the duplicate
+    course.courseCode = course.courseCode.replace(`${dept} ${dept}`, dept);
+    console.log(`[SaveDB] Fixed duplicated department in course code: ${course.courseCode}`);
   }
-);
+  
+  return course;
+}
 // --------------------------------------------------
 
 /**
@@ -95,9 +100,10 @@ export async function save(department: string) { // <-- EXPORTED
     console.log(`[SaveDB] Processing Batch ${batchNumber} (${batch.length} courses)...`);
 
     const upsertPromises = batch.map(async (course) => {
+      let fixedCourse = fixDuplicatedDepartmentInCourseCode(course);
       let processedData: Prisma.CourseCreateInput | null = null;
-      const courseIdentifier = course.courseCode?.trim() || 'UNKNOWN_CODE';
-      const departmentIdentifier = course.department?.trim() || 'UNKNOWN_DEPT';
+      const courseIdentifier = fixedCourse.courseCode?.trim() || 'UNKNOWN_CODE';
+      const departmentIdentifier = fixedCourse.department?.trim() || 'UNKNOWN_DEPT';
 
       try {
         // --- Prepare Data for Upsert ---

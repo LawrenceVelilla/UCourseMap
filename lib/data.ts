@@ -3,10 +3,12 @@ import { PrismaClient, Prisma } from '@prisma/client';
 import { Course, RequirementsData, InputNode, AppEdge, isRequirementsData } from './types';
 import { cache } from 'react';
 import { z } from 'zod'; 
-
+import dotenv from 'dotenv';
+dotenv.config(); // Load environment variables from .env file
 
 const globalForPrisma = global as unknown as { prisma: PrismaClient };
 export const prisma = globalForPrisma.prisma || new PrismaClient({
+   datasourceUrl: process.env.DATABASE_URL,
 });
 if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma;
 
@@ -21,6 +23,12 @@ function parseCourseString(courseString: string): { department: string; codeNumb
     const trimmedInput = courseString.trim().toUpperCase();
     // Regex to capture standard UAlberta course format
     const match = trimmedInput.match(/^([A-Z]+)\s*(\d+[A-Z]*)$/);
+    // For special cases like INT D 301 where are two spaces
+    
+
+
+
+
     if (match && match[1] && match[2]) {
         // Return consistent uppercase department and code number
         return { department: match[1], codeNumber: match[2] };

@@ -32,6 +32,7 @@ import { Course } from "@/lib/types";
 import Link from 'next/link';
 import { ExternalLink, AlertCircle } from "lucide-react"; 
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"; 
+import { ExpandableCardContent } from './expandableCard';
 
 interface CourseResultDisplayProps {
     targetCourse: Course;
@@ -91,7 +92,10 @@ export function CourseResultDisplay({
         // 3 columns on medium screens and up, 1 column on small screens
         <div ref={bentoContainerRef} className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1: Details/Keywords/Requirements Card */}
-            <Card className="bento-card md:col-span-2"> {/* Spans 2 columns */}
+            <Card className="
+            bento-card md:col-span-2 shadow-md border border-gray-200
+            dark:border-neutral-800  dark:bg-transparent dark:frosted
+            "> {/* Spans 2 columns */}
                  <CardHeader>
                      {/* Course Code and Title */}
                      <CardTitle className="text-3xl">{targetCourse.courseCode}: {targetCourse.title}</CardTitle>
@@ -125,24 +129,29 @@ export function CourseResultDisplay({
                          <p className="text-sm text-muted-foreground italic">No official link available.</p>
                      )}
 
-                     <hr />
+                     <hr/>
 
                      {/* Internal Grid for Side-by-Side Requirements */}
                      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
 
                          {/* Prerequisite Section */}
                          <div className="prereq-section space-y-2">
-                            <Card className="h-auto shadow-md border border-gray-200">
+                            <Card className="h-auto shadow-md border border-gray-200
+                                dark:border-neutral-800 dark:bg-transparent dark:frosted">
                                 <CardHeader>
                                     <CardTitle className="text-3xl">Prerequisites</CardTitle>
-                                    <CardDescription>Courses or conditions required before enrollment.</CardDescription>
+                                    <hr/>
+                                    <CardDescription>Courses or conditions required before enrollment. <span className='font-extrabold'>Click on a course to check its prerequisites.</span></CardDescription>
                                 </CardHeader>
                                 <CardContent>
-                                
-                             {(targetCourse.requirements?.prerequisites && (targetCourse.requirements.prerequisites.courses?.length || targetCourse.requirements.prerequisites.conditions?.length))
-                                 ? (<RequirementConditionDisplay condition={targetCourse.requirements.prerequisites} />)
-                                 : (<p className="text-sm text-gray-500">None listed.</p>)
-                             }
+                                    <ExpandableCardContent collapsedHeight={150}>
+                                        {(targetCourse.requirements?.prerequisites &&
+                                        (targetCourse.requirements.prerequisites.courses?.length ||
+                                        targetCourse.requirements.prerequisites.conditions?.length))
+                                        ? (<RequirementConditionDisplay condition={targetCourse.requirements.prerequisites} />)
+                                        : (<p className="text-sm text-gray-500">None listed.</p>)
+                                        }
+                                    </ExpandableCardContent>
                                 </CardContent>
                              
                              </Card>
@@ -150,17 +159,22 @@ export function CourseResultDisplay({
                     
                          {/* Corequisite Section */}
                          <div className="coreq-section space-y-2">
-                            <Card className="h-max shadow-md border border-gray-200">
+                            <Card className="h-max shadow-md border-2 border-gray-200
+                                dark:border-neutral-800 dark:bg-transparent dark:frosted">
                                 <CardHeader>
                                     <CardTitle className="text-3xl">Corequisites</CardTitle>
-                                    <CardDescription>Courses or conditions that can be taken concurrently.</CardDescription>
+                                    <hr/>
+                                    <CardDescription>Courses or conditions that can be taken concurrently. <span className='font-bold'>Click on a course to check its corequisites.</span></CardDescription>
                                 </CardHeader>
                                 <CardContent>
-                                    
-                                    {(targetCourse.requirements?.corequisites && (targetCourse.requirements.corequisites.courses?.length || targetCourse.requirements.corequisites.conditions?.length))
+                                <ExpandableCardContent collapsedHeight={150}>
+                                        {(targetCourse.requirements?.corequisites &&
+                                        (targetCourse.requirements.corequisites.courses?.length ||
+                                        targetCourse.requirements.corequisites.conditions?.length))
                                         ? (<RequirementConditionDisplay condition={targetCourse.requirements.corequisites} />)
                                         : (<p className="text-sm text-gray-500">None listed.</p>)
-                                    }
+                                        }
+                                    </ExpandableCardContent> 
                                 </CardContent>
                             </Card> 
                          </div>
@@ -177,10 +191,12 @@ export function CourseResultDisplay({
 
 
              */}
-             <Card className="bento-card md:col-span-1">
+             <Card className="bento-card md:col-span-1
+             shadow-md border border-gray-200
+             dark:border-neutral-800  dark:bg-transparent dark:frosted"> {/* Spans 1 column */}
                  <CardHeader>
                      <CardTitle className='text-3xl'>Needed For</CardTitle>
-                     <CardDescription>Courses that require this course.</CardDescription>
+                     <CardDescription>Courses that require this course. <span className='font-bold'>Click on a course to check its prerequisites.</span></CardDescription>
                  </CardHeader>
                  <CardContent>
                      <Tabs defaultValue="required-by" className="w-full">
@@ -205,7 +221,8 @@ export function CourseResultDisplay({
              </Card>
 
             {/* Card 3: Graph Card */}
-            <Card className="bento-card md:col-span-2"> {/* Spans 2 columns */}
+            <Card className="bento-card md:col-span-3
+            border border-gray-200 dark:border-neutral-800 dark:bg-transparent dark:frosted"> {/* Spans 2 columns */}
                 <CardHeader>
                     <CardTitle className="text-3xl">Dependency Graph</CardTitle>
                     <CardDescription>Visual representation of prerequisites.</CardDescription>
@@ -234,7 +251,9 @@ export function CourseResultDisplay({
 
             {/* Card 4: "Extra Info" Placeholder Card */}
             {/* Placeholder for Profs, etc. */}
-            <Card className="bento-card md:col-span-1"> {/* Spans 1 column */}
+            <Card className="bento-card md:col-span-1
+            border border-gray-200 dark:border-neutral-800 dark:bg-transparent dark:frosted
+            "> {/* Spans 1 column */}
                 <CardHeader>
                     <CardTitle>Extra Info</CardTitle>
                     <CardDescription>Additional course insights.</CardDescription>

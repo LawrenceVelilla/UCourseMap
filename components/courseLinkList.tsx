@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import type { Course } from '@/lib/types';
-
+import { Card, CardContent, CardDescription } from './ui/card';
 interface CourseLinkListProps {
     courses: Array<Pick<Course, 'id' | 'department' | 'courseCode' | 'title'>>;
     emptyMessage?: string;
@@ -15,7 +15,8 @@ export function CourseLinkList({ courses, emptyMessage = "None found." }: Course
     }
 
     return (
-        <ul className="space-y-2 list-disc list-inside">
+        
+        <ul className="space-y-1 list-disc list-inside">
             {courses.map((course) => {
                 
                 const searchParams = new URLSearchParams({
@@ -26,12 +27,13 @@ export function CourseLinkList({ courses, emptyMessage = "None found." }: Course
 
                 return (
                     <li key={course.id || course.courseCode}>
-                         <Link href={href} className="text-sm text-[#344E41] hover:transform hover:scale-105 transition-transform duration-200">
+                         <Link href={href} className="text-sm rounded-md text-[#588157] transition-colors hover:bg-[#606c5d] hover:text-[#fefae0] duration-200">
                              {course.courseCode}: {course.title}
                          </Link>
                     </li>
                 );
             })}
         </ul>
+
     );
 }

@@ -70,12 +70,15 @@ export function ExpandableCardContent({
         </div>
         {/* Toggle button appears only if the content is taller than the collapsedHeight */}
         {fullHeight > collapsedHeight && (
+          <div className="flex justify-center">
           <button
             onClick={toggleExpand}
-            className="mt-2 text-sm text-center text-[#588157] hover:underline"
+            className="bg-[#606c5d] text-white shadow-md hover:text-[#344E41] hover:bg-transparent duration-200 transition-colors
+            rounded-full pr-5 pl-5 text-sm text-center"
           >
             {expanded ? 'Show Less' : 'Show More'}
           </button>
+          </div>
         )}
       </div>
     );

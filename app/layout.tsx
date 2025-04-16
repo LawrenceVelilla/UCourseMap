@@ -44,6 +44,10 @@ export const metadata = {
       alt: "UniPlanner - University of Alberta Course Planner",
       }
     ]
+  },
+  icons: {
+    icon: "/icons/uniplannerplannerlogo.svg",
+    shortcut: "/icons/uniplannerplannerlogo.svg",
   }
 }
 

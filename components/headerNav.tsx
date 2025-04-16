@@ -49,7 +49,7 @@ export function HeaderNav() {
       >
         <User size={16} />
         <span>Sign in</span>
-      </Link>
+      </Link> 
     </nav>
   );
 }

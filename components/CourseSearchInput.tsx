@@ -4,23 +4,23 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useQuery, keepPreviousData } from '@tanstack/react-query';
 import { useRouter, useSearchParams } from 'next/navigation';
 import useDebounce from '@/hooks/useDebounce';
-import { Check, Loader2 } from "lucide-react"; // Import icons
+import { Check, Loader2 } from "lucide-react"; 
 
 // Shadcn UI Components
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input"; // Use Input component
+import { Input } from "@/components/ui/input"; 
 import {
   Command,
   CommandEmpty,
   CommandGroup,
   CommandItem,
   CommandList,
-} from "@/components/ui/command"; // Still use Command structure for list
+} from "@/components/ui/command"; 
 import {
   Popover,
   PopoverContent,
-  PopoverTrigger, // Use PopoverTrigger again
+  PopoverTrigger,
 } from "@/components/ui/popover";
 
 // Define the expected shape of the API response items

@@ -101,7 +101,7 @@ export async function GET(request: NextRequest) {
       orderBy: [ // Prioritize matches starting with the term
         // The following _relevance block might require enabling the 'fullTextSearch'
         // preview feature in your schema.prisma, especially if not using PostgreSQL.
-        // If it causes errors, you might need to remove it or configure full-text indexing.
+        // cosider using a full-text search index for better performance.
         // {
         //    _relevance: {
         //      fields: ['courseCode', 'title'],

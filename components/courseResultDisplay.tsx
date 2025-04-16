@@ -20,9 +20,15 @@ and additional information.
 
 'use client'; 
 
+<<<<<<< HEAD
 import React, { useEffect, useRef } from 'react';
 import { animate, stagger } from 'animejs'; // Anime.js v4+ imports
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"; // For tabs
+=======
+import React, { useEffect, useRef, useState } from 'react';
+import { animate, stagger } from 'animejs'; 
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"; 
+>>>>>>> a6bced1 (Edited show more button to be more obvious)
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { RequirementConditionDisplay } from '@/components/requirementConditionDisplay'; 
@@ -36,8 +42,12 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"; // 
 =======
 import { ExternalLink, AlertCircle } from "lucide-react"; 
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"; 
+<<<<<<< HEAD
 import { ExpandableCardContent } from './expandableCard';
 >>>>>>> 80cc526 (Added auto-complete suggestions, added ReactQuery and CSF, aded rate limitting)
+=======
+import { ExpandableCardContent } from './expandableCardContent';
+>>>>>>> a6bced1 (Edited show more button to be more obvious)
 
 // Define the props expected from the server component
 interface CourseResultDisplayProps {
@@ -60,7 +70,7 @@ export function CourseResultDisplay({
 }: CourseResultDisplayProps) {
 
     const bentoContainerRef = useRef<HTMLDivElement>(null); // Ref for the grid container
-
+   
     // Effect for animating cards on load/change --> Anime js
     useEffect(() => {
         if (targetCourse && bentoContainerRef.current) {
@@ -102,7 +112,8 @@ export function CourseResultDisplay({
             <Card className="
             bento-card md:col-span-2 shadow-md border border-gray-200
             dark:border-neutral-800  dark:bg-transparent dark:frosted
-            "> {/* Spans 2 columns */}
+            "
+            > {/* Spans 2 columns */}
                  <CardHeader>
                      {/* Course Code and Title */}
                      <CardTitle className="text-3xl">{targetCourse.courseCode}: {targetCourse.title}</CardTitle>
@@ -211,35 +222,40 @@ export function CourseResultDisplay({
 
 
              */}
-             <Card className="bento-card md:col-span-1
-             shadow-md border border-gray-200
-             dark:border-neutral-800  dark:bg-transparent dark:frosted"> {/* Spans 1 column */}
-                 <CardHeader>
-                     <CardTitle className='text-3xl'>Needed For</CardTitle>
-                     <CardDescription>Courses that require this course. <span className='font-bold'>Click on a course to check its prerequisites.</span></CardDescription>
-                 </CardHeader>
-                 <CardContent>
-                     <Tabs defaultValue="required-by" className="w-full">
-                         <TabsList className="grid w-full grid-cols-2 mb-4">
-                             <TabsTrigger value="required-by">Required By</TabsTrigger>
-                             <TabsTrigger value="corequisite-for">Corequisite For</TabsTrigger>
-                         </TabsList>
-                         <TabsContent value="required-by">
-                             <CourseLinkList
-                                courses={requiredByCourses || []}
-                                emptyMessage="No courses found that require this as a prerequisite."
-                             />
-                         </TabsContent>
-                         <TabsContent value="corequisite-for">
-                              <CourseLinkList
-                                courses={corequisiteForCourses || []}
-                                emptyMessage="No courses found that require this as a corequisite."
-                             />
-                         </TabsContent>
-                     </Tabs>
-                 </CardContent>
-             </Card>
-
+              <Card className="bento-card md:col-span-1 shadow-md border border-gray-200
+                           dark:border-neutral-800 dark:bg-transparent dark:frosted">
+                <CardHeader>
+                    <CardTitle className='text-3xl'>Needed For</CardTitle>
+                    <CardDescription>
+                        Courses that require this course. 
+                        <span className='font-bold'>Click on a course to check its prerequisites.</span>
+                    </CardDescription>
+                </CardHeader>
+                <CardContent>
+                    <Tabs defaultValue="required-by" className="w-full">
+                        <TabsList className="grid w-full grid-cols-2 mb-4">
+                            <TabsTrigger value="required-by">Required By</TabsTrigger>
+                            <TabsTrigger value="corequisite-for">Corequisite For</TabsTrigger>
+                        </TabsList>
+                        <TabsContent value="required-by">
+ 
+                            <CourseLinkList
+                            courses={requiredByCourses || []}
+                            emptyMessage="No courses found that require this as a prerequisite."
+                            />
+                        
+                        </TabsContent>
+                        <TabsContent value="corequisite-for">
+                        
+                            <CourseLinkList
+                            courses={corequisiteForCourses || []}
+                            emptyMessage="No courses found that require this as a corequisite."
+                            />
+                        
+                        </TabsContent>
+                    </Tabs>
+                </CardContent>
+            </Card>
             {/* Card 3: Graph Card */}
             <Card className="bento-card md:col-span-3
             border border-gray-200 dark:border-neutral-800 dark:bg-transparent dark:frosted"> {/* Spans 2 columns */}

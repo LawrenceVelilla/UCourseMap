@@ -118,12 +118,6 @@ export default async function PrerequisitesPage({
         // This component focuses on the main content area
         <div className="flex-1 bg-[#f5f5f0] flex flex-col"> {/* Main content area styling */}
 
-            {/* Mobile Header (Optional - can be part of RootLayout instead) */}
-            <header className="md:hidden bg-[#606c5d] text-white p-4 flex items-center justify-between sticky top-0 z-10">
-                <h1 className="text-xl font-bold">UniPlanner</h1>
-                <Button variant="ghost" size="icon" className="text-white"><BookOpen size={20} /></Button>
-            </header>
-
             {/* Scrollable Main Content Area */}
             <main className="flex-1 overflow-y-auto container mx-auto py-8 px-4">
 

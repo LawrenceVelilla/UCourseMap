@@ -1,4 +1,3 @@
-
 // Main Page: Displays search form and conditionally shows results via CourseInfoWrapper
 
 import { Suspense } from 'react'; 
@@ -87,9 +86,9 @@ export default async function PrerequisitesPage({ searchParams }: { searchParams
         }
 =======
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { PrerequisiteCheckerForm } from '@/components/PrerequisiteCheckerForm'; 
 import { CourseInfoWrapper } from '@/components/courseInfoWrapper'; 
 import { CourseInfoSkeleton } from '@/components/ui/courseInfoSkeleton'; 
+import CourseSearchInput from '@/components/CourseSearchInput'; // Import the new component
 
 // This page uses searchParams to determine which course to display
 export default async function PrerequisitesPage({
@@ -141,8 +140,9 @@ export default async function PrerequisitesPage({
                                 Enter a course code (e.g., "CMPUT 272") to find its prerequisites.
                             </CardDescription>
                         </CardHeader>
-                        <CardContent>
-                            <PrerequisiteCheckerForm />
+                        <CardContent className="space-y-4"> {/* Add space-y for spacing */}
+                            {/* Keep the enhanced search input component */}
+                            <CourseSearchInput />
                         </CardContent>
                     </Card>
                 </div>

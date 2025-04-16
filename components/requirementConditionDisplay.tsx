@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { RequirementCondition } from '@/lib/types';
+import { cn } from '@/lib/utils';
+
 
 // --- HELPER FUNCTIONS --- (Move to utils so it looks clean)
 function parseCourseCodeForLink(input: string): { dept: string; code: string } | null {
@@ -30,7 +32,7 @@ export function RequirementConditionDisplay({ condition }: { condition: Requirem
     const descriptiveText = condition.description?.trim() || condition.pattern?.trim();
     if (descriptiveText) {
         // Render descriptive text directly. Parent LI provides bullet context.
-        return ( <span style={{ fontStyle: 'italic', color: '#333' }}>{descriptiveText}</span> );
+        return ( <span className="font-italic text-[#333]">{descriptiveText}</span> );
     }
 
     // --- Determine Operator Text (only for AND/OR) ---
@@ -48,7 +50,8 @@ export function RequirementConditionDisplay({ condition }: { condition: Requirem
         <>
             {/* 1. Display Operator Text (if applicable) */}
             {operatorText && (
-                 <p style={{ margin: '0 0 5px 0', fontWeight: '500', fontStyle: 'italic', fontSize: '0.9em' }}>
+                 <p 
+                 className='ml-2 font-medium italic text-sm text-size-sm'>
                      {operatorText}
                  </p>
             )}
@@ -56,16 +59,18 @@ export function RequirementConditionDisplay({ condition }: { condition: Requirem
             {/* 2. Render Content (either within a UL or directly) */}
             {needsOwnUl ? (
                 // CASE A: This node needs its own UL (has operator or nested conditions)
-                <ul style={{ listStyle: 'disc', paddingLeft: '20px', margin: operatorText ? '5px 0 0 0' : '0' }}>
-
+                <ul className={cn('list-disc list-inside pl-4', operatorText ? 'mt-2' : 'mt-0')} >
                     {/* Render Direct Courses (if any) as LIs within this UL */}
                     {hasDirectCourses && condition.courses!.map(itemText => {
                         const isCourse = looksLikeCourseCode(itemText);
                         const parsedLinkData = isCourse ? parseCourseCodeForLink(itemText) : null;
                         return (
-                             <li key={itemText} style={{ marginBottom: '3px' }}>
-                                 {isCourse && parsedLinkData ? ( <Link href={`/?dept=${parsedLinkData.dept.toLowerCase()}&code=${parsedLinkData.code}`} className="text-[#283618] hover:underline" title={`Check prerequisites for ${itemText}`}> {itemText} </Link> )
-                                  : ( <span style={{ fontStyle: 'italic', color: '#333' }}>{itemText}</span> )}
+                            
+                             <li key={itemText} className='m-1'>
+                            
+                                 {isCourse && parsedLinkData ? ( <Link href={`/?dept=${parsedLinkData.dept.toLowerCase()}&code=${parsedLinkData.code}`} 
+                                 className="p-px rounded-md broder-2 text-[#588157] transition-colors duration-200 hover:bg-[#606c5d] hover:text-[#DAD7CD]" title={`Check prerequisites for ${itemText}`}> {itemText} </Link> )
+                                  : ( <span className="text-[#588157] font-italic">{itemText}</span> )}
                              </li>
                           );
                     })}
@@ -73,7 +78,9 @@ export function RequirementConditionDisplay({ condition }: { condition: Requirem
                     {/* Render Nested Conditions as LIs within this UL */}
                     {hasNestedConditions && condition.conditions!.map((subCondition, index) => (
                         // Each sub-condition gets an LI wrapper
-                        <li key={`${subCondition.operator || 'complex'}-${index}`} style={{ marginBottom: '5px' }}>
+                        <li 
+                        className='m-1'
+                        key={`${subCondition.operator || 'complex'}-${index}`}>
                             {/* Recursive call renders content INSIDE the LI */}
                             <RequirementConditionDisplay condition={subCondition} />
                         </li>
@@ -89,8 +96,13 @@ export function RequirementConditionDisplay({ condition }: { condition: Requirem
                         // Render course/text without LI/UL - parent handles list structure
                         return (
                            <div key={itemText} style={{ marginBottom: '3px' /* Or maybe no div needed, just span/Link? */ }}>
+<<<<<<< HEAD
                                {isCourse && parsedLinkData ? ( <Link href={`/prerequisites?dept=${parsedLinkData.dept.toLowerCase()}&code=${parsedLinkData.code}`} className="text-[#283618] hover:underline" title={`Check prerequisites for ${itemText}`}> {itemText} </Link> )
                                 : ( <span style={{ fontStyle: 'italic', color: '#333' }}>{itemText}</span> )}
+=======
+                               {isCourse && parsedLinkData ? ( <Link href={`/?dept=${parsedLinkData.dept.toLowerCase()}&code=${parsedLinkData.code}`} className="text-[#588157] transition-colors duration-200 hover:bg-[#606c5d] hover:text-[#fefae0]" title={`Check prerequisites for ${itemText}`}> {itemText} </Link> )
+                                : ( <span className='font-italic text-[#588157]'>{itemText}</span> )}
+>>>>>>> 80cc526 (Added auto-complete suggestions, added ReactQuery and CSF, aded rate limitting)
                            </div>
                        );
                    })}
@@ -99,7 +111,8 @@ export function RequirementConditionDisplay({ condition }: { condition: Requirem
 
              {/* Handle completely empty nodes (that weren't descriptive) */}
              {!descriptiveText && !hasDirectCourses && !hasNestedConditions && (
-                  <p style={{ fontStyle: 'italic', color: '#888', margin: '0' }}>(No specific conditions listed here)</p>
+                  <p 
+                  className='font-italic text-[#588157] m-0'>(No specific conditions listed here)</p>
               )}
         </>
     );

@@ -2,15 +2,16 @@
 import { NextResponse, NextRequest } from 'next/server';
 import { getCoursesByDepartment } from '@/lib/data'; // Adjust path if needed
 
-interface Params {
-  department: string;
-}
+// interface Params { // No longer strictly needed with 'any'
+//   department: string;
+// }
 
 export async function GET(
   request: NextRequest,
-  context: { params: Params }
+  context: any // Use 'any' for the context parameter
 ) {
-  const departmentCode = context.params.department;
+  // Access params via the context object (assuming structure)
+  const departmentCode = context?.params?.department;
 
   if (!departmentCode) {
     return NextResponse.json({ message: 'Department code is required' }, { status: 400 });

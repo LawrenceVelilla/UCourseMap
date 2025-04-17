@@ -95,25 +95,12 @@ export function RequirementConditionDisplay({ condition }: { condition: Requirem
                         const parsedLinkData = isCourse ? parseCourseCodeForLink(itemText) : null;
                         // Render course/text without LI/UL - parent handles list structure
                         return (
-<<<<<<< HEAD
-                           <div key={itemText} style={{ marginBottom: '3px' /* Or maybe no div needed, just span/Link? */ }}>
-<<<<<<< HEAD
-                               {isCourse && parsedLinkData ? ( <Link href={`/prerequisites?dept=${parsedLinkData.dept.toLowerCase()}&code=${parsedLinkData.code}`} className="text-[#283618] hover:underline" title={`Check prerequisites for ${itemText}`}> {itemText} </Link> )
-                                : ( <span style={{ fontStyle: 'italic', color: '#333' }}>{itemText}</span> )}
-=======
-=======
+
                            <div 
                            className="m-1"
                            
                            key={itemText}>
-<<<<<<< HEAD
->>>>>>> a6bced1 (Edited show more button to be more obvious)
-                               {isCourse && parsedLinkData ? ( <Link href={`/?dept=${parsedLinkData.dept.toLowerCase()}&code=${parsedLinkData.code}`} className="text-[#588157] transition-colors duration-200 hover:bg-[#606c5d] hover:text-[#fefae0]" title={`Check prerequisites for ${itemText}`}> {itemText} </Link> )
-=======
-                               {isCourse && parsedLinkData ? ( <Link href={`/?dept=${parsedLinkData.dept.toLowerCase()}&code=${parsedLinkData.code}`} className="text-[#588157] rounded-md transition-colors duration-200 hover:bg-[#606c5d] hover:text-white" title={`Check prerequisites for ${itemText}`}> {itemText} </Link> )
->>>>>>> 310c86d (Added clearer comments/Added node interactivity/Made it so you can press the course in suggestion list now)
-                                : ( <span className='font-italic text-[#588157]'>{itemText}</span> )}
->>>>>>> 80cc526 (Added auto-complete suggestions, added ReactQuery and CSF, aded rate limitting)
+
                            </div>
                        );
                    })}

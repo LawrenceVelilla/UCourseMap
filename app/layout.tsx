@@ -5,7 +5,8 @@ import { Afacad, Caveat, Libre_Baskerville } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Footer } from "@/components/footer"
 import { HeaderNav } from "@/components/headerNav"
-import { Link } from "lucide-react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import QueryProvider from "@/components/QueryProvider"
@@ -31,8 +32,6 @@ const caveat = Caveat({
 export const metadata = {
   title: "UniPlanner - University of Alberta Course Planner",
   description: "Plan your University of Alberta courses and check prerequisites",
-<<<<<<< HEAD
-=======
   openGraph: {
     title: "UniPlanner - University of Alberta Course Planner",
     description: "Plan your University of Alberta courses and check prerequisites",
@@ -45,8 +44,11 @@ export const metadata = {
       alt: "UniPlanner - University of Alberta Course Planner",
       }
     ]
+  },
+  icons: {
+    icon: "/icons/uniplannerplannerlogo.svg",
+    shortcut: "/icons/uniplannerplannerlogo.svg",
   }
->>>>>>> a8480d6 (Initializign auto complete CSF feature)
 }
 
 export default function RootLayout({
@@ -75,14 +77,6 @@ export default function RootLayout({
               {/* --- End Site Header --- */}
 
 
-<<<<<<< HEAD
-            {/* --- Main Content Area --- */}
-            {/* flex-1 makes this grow to fill space between header and footer */}
-            <main className="flex-1">
-              {children} {/* Your page content renders here */}
-            </main>
-            {/* --- End Main Content Area --- */}
-=======
               {/* --- Main Content Area --- */}
               {/* flex-1 makes this grow to fill space between header and footer */}
               <main className="flex-1">
@@ -91,7 +85,6 @@ export default function RootLayout({
                 <Analytics />
               </main>
               {/* --- End Main Content Area --- */}
->>>>>>> a8480d6 (Initializign auto complete CSF feature)
 
 
               {/* --- Footer --- */}

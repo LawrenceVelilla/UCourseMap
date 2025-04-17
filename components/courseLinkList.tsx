@@ -2,13 +2,10 @@
 'use client';
 
 import Link from 'next/link';
-<<<<<<< HEAD
+
 import type { Course } from '@/lib/types'; // Adjust path if needed
 
-=======
-import type { Course } from '@/lib/types';
-import { Card, CardContent, CardDescription } from './ui/card';
->>>>>>> 80cc526 (Added auto-complete suggestions, added ReactQuery and CSF, aded rate limitting)
+
 interface CourseLinkListProps {
     courses: Array<Pick<Course, 'id' | 'department' | 'courseCode' | 'title'>>;
     emptyMessage?: string;

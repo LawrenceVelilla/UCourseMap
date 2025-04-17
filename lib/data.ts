@@ -442,7 +442,7 @@ export const getCoursesHavingCorequisite = cache(
      }
 );
 
-<<<<<<< HEAD
+
 /**
 >>>>>>> 5dc1d31 (Fixed parser and data pipeline to remove parsed description and use keywords instead to avoid any ToS violations)
  * Interface for the data structure returned by the recursive fetcher.
@@ -452,11 +452,6 @@ interface RecursiveData {
     nodes: Course[]; // Store *full* course details for nodes
     edges: { source: string; target: string }[]; // Simple source->target edges using courseCode
 }
-=======
-// Note: The original `getRecursivePrerequisites` function (the one with N+1 problem) has been removed
-// and replaced by `getRecursivePrerequisitesCTE`. If you need the old one for comparison,
-// you can keep it commented out or rename it.
->>>>>>> 3d6741f (Implemented the RecursiveCTE to solve N+1 problem)
 
 /*
 export const getRecursivePrerequisites = cache(

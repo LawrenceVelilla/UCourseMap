@@ -2,121 +2,17 @@ import { Suspense } from 'react';
 import { ArrowLeft } from "lucide-react"; 
 import Link from "next/link"; 
 import { Button } from "@/components/ui/button";
-<<<<<<< HEAD
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Sidebar } from "@/components/sidebar"; // Assuming Sidebar is part of layout now?
-=======
 import { CourseInfoWrapper } from '@/components/courseInfoWrapper'; // Re-use the wrapper
 import { CourseInfoSkeleton } from '@/components/ui/courseInfoSkeleton'; // Re-use the skeleton
->>>>>>> 2f8510a (Fixed parsing issues, and Implemented new UI version(BENTO))
 
 // Define the expected params shape
 
 
-<<<<<<< HEAD
-// Use the correct props interface
-<<<<<<< HEAD
-export default async function DedicatedCoursePage({ params }:
-    {
-        params: CoursePageParams; // Expecting department and courseCode in params
-    }) {
-=======
 // FIX THIS LATER< THIS CAMT BE ANY
 export default async function DedicatedCoursePage({ params }: any) { 
->>>>>>> 97db37b (More any clauses for param --> Fix later please)
-=======
-export default async function DedicatedCoursePage({ params }: any) {
->>>>>>> cfed15e (Page Params in /[]/[]/page.tsx fix later)
     const { department, courseCode } = params;
     const isValidParams = !!department && !!courseCode && typeof department === 'string' && typeof courseCode === 'string';
 
-<<<<<<< HEAD
-
-
-// --- Main Server Component for the Dedicated Course Page ---
-// Use the Corrected Props Interface
-<<<<<<< HEAD
-export default async function DedicatedCoursePage({ 
-    params,
-    searchParams 
-  }: {
-    params: { department: string; courseCode: string };
-    searchParams: Record<string, string | string[] | undefined>;
-  }) {
-    // Destructure department and course code from 'params' NOT 'searchParams'
-    const { department: deptParam, courseCode: codeParam } = params;
-=======
-export default async function DedicatedCoursePage({ params, searchParams }: Record<string, any>) {
-    // Type assertion inside the function if needed
-    const { department: deptParam, courseCode: codeParam } = params as { 
-      department: string; 
-      courseCode: string 
-    }; 
-
->>>>>>> fa9b03f (Trying to bypass type limitations for now)
-
-    // Normalize for fetching (lowercase dept, ensure code is string)
-    const dept = deptParam?.toLowerCase();
-    const code = typeof codeParam === 'string' ? codeParam : undefined;
-
-    // --- State Variables ---
-    let displayCourseData: Awaited<ReturnType<typeof getCourseAndPrerequisiteData>> | null = null;
-    let recursiveGraphData: Awaited<ReturnType<typeof getRecursivePrerequisites>> | null = null;
-    let fetchError: string | null = null;
-    let notFoundError: boolean = false;
-    const targetCourseCode = dept && code ? `${dept.toUpperCase()} ${code}` : null;
-
-    // --- Fetch Data (based on URL params) ---
-    if (dept && code && targetCourseCode) {
-        console.log(`Fetching data for dedicated page: ${targetCourseCode}...`);
-        try {
-            // No need to validate format here as much, Next.js routing handles it somewhat
-            // Fetch recursive data first
-            recursiveGraphData = await getRecursivePrerequisites(dept, code);
-            const targetNodeExists = recursiveGraphData?.nodes.some(node => node.courseCode === targetCourseCode);
-
-            if (!targetNodeExists) {
-                notFoundError = true;
-            } else {
-                // Fetch simple display data
-                 displayCourseData = await getCourseAndPrerequisiteData(dept, code);
-                 if (!displayCourseData?.targetCourse) {
-                     notFoundError = true; // Or set fetchError
-                 }
-            }
-        } catch (error) {
-            console.error(`Error fetching course data for ${targetCourseCode}:`, error);
-            fetchError = error instanceof Error ? error.message : "An unknown error occurred.";
-        }
-    } else {
-        // Handle cases where params might be missing/invalid (though routing usually prevents this)
-        fetchError = "Invalid course parameters in URL.";
-    }
-
-    // --- Prepare Graph Input Data ---
-    // (Logic remains the same as before, using recursiveGraphData)
-    const graphInputNodes: InputNode[] = [];
-    const graphInputEdges: AppEdge[] = [];
-    // ... (populate graphInputNodes and graphInputEdges based on recursiveGraphData) ...
-     const allCourseNodeIds = new Set(recursiveGraphData?.nodes.map(n => n.courseCode) ?? []);
-     if (recursiveGraphData) {
-         recursiveGraphData.nodes.forEach(node => graphInputNodes.push({ id: node.courseCode, type: 'default', data: { label: node.courseCode, isCourse: true, type: (node.courseCode === targetCourseCode) ? 'target' : 'prerequisite' } }));
-         recursiveGraphData.edges.forEach((edge, index) => { /* ... handle text nodes and add to graphInputEdges ... */
-            const targetIsCourse = allCourseNodeIds.has(edge.target);
-             if (targetIsCourse) { graphInputEdges.push({ id: `edge-${edge.source}-${edge.target}-${index}`, source: edge.source, target: edge.target }); }
-             else {
-                 const textNodeId = `text-${edge.target}`;
-                 if (!graphInputNodes.some(n => n.id === textNodeId)) { graphInputNodes.push({ id: textNodeId, type: 'default', data: { label: edge.target, isCourse: false, type: 'text_requirement'}, style: { background: '#fffbdd', border: '1px dashed #e6db74', fontSize: '12px', fontStyle: 'italic', padding: '8px 12px', textAlign: 'center', height: 60, width: 180 } }); }
-                 graphInputEdges.push({ id: `edge-${edge.source}-${textNodeId}-${index}`, source: edge.source, target: textNodeId });
-             }
-         });
-     }
-
-
-    // --- Render Page UI ---
-=======
->>>>>>> 2f8510a (Fixed parsing issues, and Implemented new UI version(BENTO))
     return (
         // Main content area styling for this specific page layout
         <div className="flex-1 bg-[#f5f5f0] flex flex-col">

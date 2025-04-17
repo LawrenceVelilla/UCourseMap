@@ -3,88 +3,6 @@
 import { Suspense } from 'react'; 
 import { BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
-<<<<<<< HEAD
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { getCourseAndPrerequisiteData, getRecursivePrerequisites } from '@/lib/data'; // Import both fetchers
-import { Course, RequirementCondition } from '@/lib/types';
-import { PrerequisiteCheckerForm } from '@/components/PrerequisiteCheckerForm';
-import { RequirementConditionDisplay } from '@/components/requirementConditionDisplay';
-import PrerequisiteGraphWrapper, {
-    type InputNode, 
-    type AppEdge,   
-    type GraphNodeData 
-} from '@/components/prerequisiteGraph'; 
-<<<<<<< HEAD
-interface PrerequisitesPageProps {
-    searchParams?: {
-        dept?: string;
-        code?: string;
-    };
-}
-export default async function PrerequisitesPage({ searchParams }: PrerequisitesPageProps) {
-=======
-
-
-
-
-// TODDOOO:
-// ADD coures/[department]/[courseCode]/route.ts back so I can use it for the CSF stuff like dynamic rendering and autocomplete
-
-
-
-
-
-
-
-// interface PrerequisitesPageProps {
-//     searchParams?: {
-//         dept?: string;
-//         code?: string;
-//     };
-// }
-export default async function PrerequisitesPage({ searchParams }: { searchParams?: Record<string, any> }) {
->>>>>>> fa9b03f (Trying to bypass type limitations for now)
-    const param = await searchParams
-    
-    const dept = param?.dept;
-    const code = param?.code;
-
-    // State variables
-    let displayCourseData: Awaited<ReturnType<typeof getCourseAndPrerequisiteData>> | null = null;
-    let recursiveGraphData: Awaited<ReturnType<typeof getRecursivePrerequisites>> | null = null;
-    let fetchError: string | null = null;
-    let notFoundError: boolean = false;
-    const targetCourseCode = dept && code ? `${dept.toUpperCase()} ${code}` : null; // Store full code
-
-    // --- Fetch Data ---
-    if (dept && code && targetCourseCode) {
-        console.log(`Fetching data for ${targetCourseCode}...`);
-        try {
-            if (!/^[a-z]+$/.test(dept) || !/^\d+[a-z]*$/.test(code)) { throw new Error("Invalid URL format."); }
-
-            // Fetch recursive data for the graph
-            recursiveGraphData = await getRecursivePrerequisites(dept, code);
-
-            const targetNodeExists = recursiveGraphData?.nodes.some(node => node.courseCode === targetCourseCode);
-
-            if (!targetNodeExists) {
-                console.log(`Target course ${targetCourseCode} not found via recursive search.`);
-                notFoundError = true;
-            } else {
-                console.log(`Recursive data fetched: ${recursiveGraphData.nodes.length} nodes, ${recursiveGraphData.edges.length} edges`);
-                // Also fetch simple display data for the list view
-                 displayCourseData = await getCourseAndPrerequisiteData(dept, code);
-                 if (!displayCourseData?.targetCourse) {
-                     console.warn("Target course found recursively but not via direct fetch?");
-                     fetchError = "Inconsistent data found for target course."; // Handle potential inconsistency
-                 }
-            }
-        } catch (error) {
-            console.error(`Error fetching course data for ${targetCourseCode}:`, error);
-            fetchError = error instanceof Error ? error.message : "An unknown error occurred.";
-        }
-=======
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { CourseInfoWrapper } from '@/components/courseInfoWrapper'; 
 import { CourseInfoSkeleton } from '@/components/ui/courseInfoSkeleton'; 
@@ -93,19 +11,8 @@ import CourseSearchInput from '@/components/CourseSearchInput'; // Import the ne
 // This page uses searchParams to determine which course to display
 export default async function PrerequisitesPage({
     searchParams
-<<<<<<< HEAD
-}: {
-    searchParams?: {
-        dept?: string;
-        code?: string;
->>>>>>> 2f8510a (Fixed parsing issues, and Implemented new UI version(BENTO))
-    }
-}) {
-    const params = await searchParams;
-=======
 }: any) {
     const params = searchParams
->>>>>>> 97db37b (More any clauses for param --> Fix later please)
     const dept = params?.dept || '';
     const code = params?.code || '';
 

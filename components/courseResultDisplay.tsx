@@ -20,15 +20,9 @@ and additional information.
 
 'use client'; 
 
-<<<<<<< HEAD
-import React, { useEffect, useRef } from 'react';
-import { animate, stagger } from 'animejs'; // Anime.js v4+ imports
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"; // For tabs
-=======
 import React, { useEffect, useRef, useState } from 'react';
 import { animate, stagger } from 'animejs'; 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"; 
->>>>>>> a6bced1 (Edited show more button to be more obvious)
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { RequirementConditionDisplay } from '@/components/requirementConditionDisplay'; 
@@ -36,20 +30,10 @@ import PrerequisiteGraphWrapper, { InputNode, AppEdge, levelColors } from '@/com
 import { CourseLinkList } from './courseLinkList'; 
 import { Course } from "@/lib/types"; 
 import Link from 'next/link';
-<<<<<<< HEAD
-import { ExternalLink, AlertCircle } from "lucide-react"; // Icons
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"; // For error display
-=======
 import { ExternalLink, AlertCircle } from "lucide-react"; 
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"; 
-<<<<<<< HEAD
-import { ExpandableCardContent } from './expandableCard';
->>>>>>> 80cc526 (Added auto-complete suggestions, added ReactQuery and CSF, aded rate limitting)
-=======
 import { ExpandableCardContent } from './expandableCardContent';
->>>>>>> a6bced1 (Edited show more button to be more obvious)
 
-// Define the props expected from the server component
 interface CourseResultDisplayProps {
     targetCourse: Course;
     graphNodes: InputNode[];
@@ -88,14 +72,11 @@ export function CourseResultDisplay({
                     }
                  );
             }
-            // Consider adding graph animations here if needed
+            // Todo: Add graph animations here
         }
         // Rerun animation if the target course changes
     }, [targetCourse]);
 
-<<<<<<< HEAD
-    // Basic check in case props aren't passed correctly (unlikely with server fetching)
-=======
     // Function to determine text color (black/white) based on background hex
     const getContrastColor = (hexColor: string): string => {
         if (!hexColor) return '#000000'; // Default to black if color is invalid
@@ -108,7 +89,6 @@ export function CourseResultDisplay({
         return luminance >= 128 ? '#000000' : '#FFFFFF'; // Black for light bg, White for dark bg
     };
 
->>>>>>> 310c86d (Added clearer comments/Added node interactivity/Made it so you can press the course in suggestion list now)
     if (!targetCourse) {
         return (
              <Alert variant="destructive">
@@ -177,13 +157,6 @@ export function CourseResultDisplay({
                                     <CardDescription>Courses or conditions required before enrollment. <span className='font-extrabold'>Click on a course to check its prerequisites.</span></CardDescription>
                                 </CardHeader>
                                 <CardContent>
-<<<<<<< HEAD
-                                <h4 className="font-medium text-base">Prerequisites:</h4>
-                             {(targetCourse.requirements?.prerequisites && (targetCourse.requirements.prerequisites.courses?.length || targetCourse.requirements.prerequisites.conditions?.length))
-                                 ? (<RequirementConditionDisplay condition={targetCourse.requirements.prerequisites} />)
-                                 : (<p className="text-sm text-gray-500">None listed.</p>)
-                             }
-=======
                                     <ExpandableCardContent collapsedHeight={150}>
                                         {(targetCourse.requirements?.prerequisites &&
                                         (targetCourse.requirements.prerequisites.courses?.length ||
@@ -192,7 +165,6 @@ export function CourseResultDisplay({
                                         : (<p className="text-sm text-gray-500">None listed.</p>)
                                         }
                                     </ExpandableCardContent>
->>>>>>> 80cc526 (Added auto-complete suggestions, added ReactQuery and CSF, aded rate limitting)
                                 </CardContent>
                              
                              </Card>
@@ -208,15 +180,10 @@ export function CourseResultDisplay({
                                     <CardDescription>Courses or conditions that can be taken concurrently. <span className='font-bold'>Click on a course to check its corequisites.</span></CardDescription>
                                 </CardHeader>
                                 <CardContent>
-<<<<<<< HEAD
-                                    <h4 className="font-medium text-base">Corequisites:</h4>
-                                    {(targetCourse.requirements?.corequisites && (targetCourse.requirements.corequisites.courses?.length || targetCourse.requirements.corequisites.conditions?.length))
-=======
                                 <ExpandableCardContent collapsedHeight={150}>
                                         {(targetCourse.requirements?.corequisites &&
                                         (targetCourse.requirements.corequisites.courses?.length ||
                                         targetCourse.requirements.corequisites.conditions?.length))
->>>>>>> 80cc526 (Added auto-complete suggestions, added ReactQuery and CSF, aded rate limitting)
                                         ? (<RequirementConditionDisplay condition={targetCourse.requirements.corequisites} />)
                                         : (<p className="text-sm text-gray-500">None listed.</p>)
                                         }

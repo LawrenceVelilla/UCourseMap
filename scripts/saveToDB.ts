@@ -36,8 +36,6 @@ if (!directDbUrl) {
 }
 
 const prisma = new PrismaClient();
-<<<<<<< HEAD
-=======
 
 function fixDuplicatedDepartmentInCourseCode(course: CourseJsonData): CourseJsonData {
   const dept = course.department.trim().toUpperCase();
@@ -51,7 +49,6 @@ function fixDuplicatedDepartmentInCourseCode(course: CourseJsonData): CourseJson
   
   return course;
 }
->>>>>>> da93e10 (New script)
 // --------------------------------------------------
 
 /**

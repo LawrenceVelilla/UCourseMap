@@ -49,27 +49,17 @@ export interface PrerequisiteGraphProps {
 
 // --- Configuration & Styling ---
 
-<<<<<<< HEAD
-// To-DO: Remember to update the component rendering the graph to use edge.data.depth for styling.
-=======
 // TODO: This comment relates to an old approach, edge colors are now based on depth.
 // // To-DO: Remember to update the component rendering the graph to use edge.data.depth for styling.
 // //       - Use edge.data.depth to determine color difference for the edges so we can see which is actually a direct prerequisite.
->>>>>>> 310c86d (Added clearer comments/Added node interactivity/Made it so you can press the course in suggestion list now)
 
 // Initialize Dagre graph for layout calculations.
 const dagreGraph = new dagre.graphlib.Graph({ compound: false });
-<<<<<<< HEAD
-dagreGraph.setDefaultEdgeLabel(() => ({}));
-const nodeWidth = 180; // Standard width for course nodes
-const nodeHeight = 45; // Slightly shorter height for course code only
-=======
 dagreGraph.setDefaultEdgeLabel(() => ({})); // Default empty label for edges.
 
 // Standard dimensions for graph nodes.
 const nodeWidth = 180; 
 const nodeHeight = 45; 
->>>>>>> 310c86d (Added clearer comments/Added node interactivity/Made it so you can press the course in suggestion list now)
 
 // Base styles for different node types.
 const targetNodeStyle: React.CSSProperties = {
@@ -247,15 +237,6 @@ const getLayoutedElements = (
  */
 const PrerequisiteGraphLayout = ({ initialNodes, initialEdges }: PrerequisiteGraphProps) => {
   const { fitView } = useReactFlow();
-<<<<<<< HEAD
-  // State hooks correctly typed with AppNode and AppEdge
-  const [nodes, setNodes, onNodesChange] = useNodesState<Node<GraphNodeData>>([]);
-  const [edges, setEdges, onEdgesChange] = useEdgesState<AppEdge>([]);
-
-  // Effect to process input props and apply layout
-  useEffect(() => {
-      // Validate incoming props
-=======
   const router = useRouter(); // Hook for programmatic navigation.
   // State management for nodes and edges within React Flow.
   const [nodes, setNodes, onNodesChange] = useNodesState<Node<GraphNodeData>>([]);
@@ -291,7 +272,6 @@ const PrerequisiteGraphLayout = ({ initialNodes, initialEdges }: PrerequisiteGra
   // Effect to process nodes/edges and run layout when props change.
   useEffect(() => {
       // Basic validation: Ensure props are arrays.
->>>>>>> 310c86d (Added clearer comments/Added node interactivity/Made it so you can press the course in suggestion list now)
       if (!Array.isArray(initialNodes) || !Array.isArray(initialEdges)) {
          console.warn("Graph received invalid initialNodes or initialEdges.");
          setNodes([]); setEdges([]); return;
@@ -303,21 +283,12 @@ const PrerequisiteGraphLayout = ({ initialNodes, initialEdges }: PrerequisiteGra
       const transformedNodes: Node<GraphNodeData>[] = initialNodes.map(n => ({
           id: n.id,
           data: n.data,
-<<<<<<< HEAD
-          position: { x: 0, y: 0 }, // Initial temporary position
-          width: nodeWidth,         // Standard width
-          height: nodeHeight,       // Standard height (even for text nodes for consistent layout)
-          type: n.type ?? 'default',
-          style: n.style,
-          // Add defaults for other base Node properties
-=======
           position: { x: 0, y: 0 }, // Initial position (will be overwritten by layout).
           width: nodeWidth,         // Standard width for layout.
           height: nodeHeight,       // Standard height for layout.
           type: n.type ?? 'default',
           style: n.style,
           // Set default React Flow node properties.
->>>>>>> 310c86d (Added clearer comments/Added node interactivity/Made it so you can press the course in suggestion list now)
           selected: false, dragging: false, selectable: true, draggable: false, hidden: false, resizing: false, focusable: true
       }));
 
@@ -348,11 +319,7 @@ const PrerequisiteGraphLayout = ({ initialNodes, initialEdges }: PrerequisiteGra
               }
           });
       } else {
-<<<<<<< HEAD
-          // Clear state if input nodes array was empty after transformation
-=======
           // Handle the case where no nodes were passed in props.
->>>>>>> 310c86d (Added clearer comments/Added node interactivity/Made it so you can press the course in suggestion list now)
           setNodes([]);
           setEdges([]);
       }
@@ -366,14 +333,6 @@ const PrerequisiteGraphLayout = ({ initialNodes, initialEdges }: PrerequisiteGra
         <ReactFlow
             nodes={nodes}
             edges={edges}
-<<<<<<< HEAD
-            onNodesChange={onNodesChange} // Pass handlers from hooks
-            onEdgesChange={onEdgesChange}
-            nodesDraggable={false}        // Disable user interaction
-            nodesConnectable={false}
-            style={{ backgroundColor: '#f9f9f7' }}
-            proOptions={{ hideAttribution: true }} // Hide "React Flow" logo
-=======
             onNodesChange={onNodesChange} // Handles node movement/selection state.
             onEdgesChange={onEdgesChange} // Handles edge selection/connection state.
             onNodeClick={handleNodeClick} // Handles node clicks for navigation.
@@ -381,17 +340,11 @@ const PrerequisiteGraphLayout = ({ initialNodes, initialEdges }: PrerequisiteGra
             nodesConnectable={false}   // Prevent users from creating new edges.
             style={{ backgroundColor: '#f9f9f7' }} // Set graph background color.
             proOptions={{ hideAttribution: true }} // Hide React Flow attribution mark.
->>>>>>> 310c86d (Added clearer comments/Added node interactivity/Made it so you can press the course in suggestion list now)
             minZoom={0.5}
             // fitView // fitView is now called within useEffect after layout.
         >
-<<<<<<< HEAD
-            <Controls /> {/* Zoom/Pan controls */}
-            <Background color="#ddd" gap={16} variant={BackgroundVariant.Dots} />
-=======
             <Controls /> {/* Add zoom/pan controls.*/}
             <Background color="#ddd" gap={16} variant={BackgroundVariant.Dots} /> {/* Add a dotted background.*/}
->>>>>>> 310c86d (Added clearer comments/Added node interactivity/Made it so you can press the course in suggestion list now)
         </ReactFlow>
     </div>
   );

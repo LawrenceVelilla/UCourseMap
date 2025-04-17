@@ -135,7 +135,18 @@ export default function CourseSearchInput() {
     setInputValue(result.courseCode); // Set input to the selected course code
     setSelectedValue(result);        // Mark as selected
     setOpen(false);                  // Close popover
-    inputRef.current?.focus();       // Keep focus on input after selection
+    
+    // Automatically trigger prerequisite check when a suggestion is selected
+    const dept = result.department;
+    const codeMatch = result.courseCode.match(/\d+[A-Z]*/);
+    const code = codeMatch ? codeMatch[0] : '';
+    
+    if (dept && code) {
+      setIsCheckingPrereqs(true);
+      // Store what we are submitting before pushing
+      lastSubmittedCourseRef.current = { dept, code };
+      router.push(`/?dept=${encodeURIComponent(dept)}&code=${encodeURIComponent(code)}`);
+    }
   };
 
   // Handle manual input changes in CommandInput
@@ -234,16 +245,21 @@ export default function CourseSearchInput() {
                       <CommandItem
                         key={result.id}
                         value={result.courseCode}
-                        onSelect={() => handleSelect(result)}
-                        className="cursor-pointer px-4"
+                        onSelect={() => handleSelect(result)} 
+                        className="cursor-pointer px-4 hover:bg-[#f0f0e8] group"
                         onMouseDown={(e) => e.preventDefault()}
                       >
-                        <div>
-                          <span className="font-medium">{result.courseCode}</span>
-                          <span className="text-muted-foreground ml-2">{result.title}</span>
+                        <div className="flex justify-between items-center w-full">
+                          <div>
+                            <span className="font-medium">{result.courseCode}</span>
+                            <span className="text-muted-foreground ml-2">{result.title}</span>
+                          </div>
+                          <span className="text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity">
+                            Search &rarr;
+                          </span>
                         </div>
                       </CommandItem>
-                  ))}
+                    ))}
                   </CommandGroup>
               )}
             </CommandList>

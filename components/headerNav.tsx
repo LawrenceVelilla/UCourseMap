@@ -35,7 +35,7 @@ export function HeaderNav() {
           )}
         >
           <item.icon size={16} /> {/* Slightly smaller icon */}
-          <span>{item.label}</span>
+          <span className="hidden lg:inline">{item.label}</span>
         </Link>
       ))}
 
@@ -48,7 +48,7 @@ export function HeaderNav() {
           )}
       >
         <User size={16} />
-        <span>Sign in</span>
+        <span className="hidden lg:inline">Sign in</span>
       </Link> 
     </nav>
   );

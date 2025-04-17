@@ -69,7 +69,7 @@ export function RequirementConditionDisplay({ condition }: { condition: Requirem
                              <li key={itemText} className='m-1'>
                             
                                  {isCourse && parsedLinkData ? ( <Link href={`/?dept=${parsedLinkData.dept.toLowerCase()}&code=${parsedLinkData.code}`} 
-                                 className="p-px rounded-md broder-2 text-[#588157] transition-colors duration-200 hover:bg-[#606c5d] hover:text-[#DAD7CD]" title={`Check prerequisites for ${itemText}`}> {itemText} </Link> )
+                                 className="p-px rounded-md text-[#588157] transition-colors duration-200 hover:bg-[#606c5d] hover:text-white" title={`Check prerequisites for ${itemText}`}> {itemText} </Link> )
                                   : ( <span className="text-[#588157] font-italic">{itemText}</span> )}
                              </li>
                           );
@@ -99,7 +99,7 @@ export function RequirementConditionDisplay({ condition }: { condition: Requirem
                            className="m-1"
                            
                            key={itemText}>
-                               {isCourse && parsedLinkData ? ( <Link href={`/?dept=${parsedLinkData.dept.toLowerCase()}&code=${parsedLinkData.code}`} className="text-[#588157] transition-colors duration-200 hover:bg-[#606c5d] hover:text-[#fefae0]" title={`Check prerequisites for ${itemText}`}> {itemText} </Link> )
+                               {isCourse && parsedLinkData ? ( <Link href={`/?dept=${parsedLinkData.dept.toLowerCase()}&code=${parsedLinkData.code}`} className="text-[#588157] rounded-md transition-colors duration-200 hover:bg-[#606c5d] hover:text-white" title={`Check prerequisites for ${itemText}`}> {itemText} </Link> )
                                 : ( <span className='font-italic text-[#588157]'>{itemText}</span> )}
                            </div>
                        );

@@ -26,7 +26,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { RequirementConditionDisplay } from '@/components/requirementConditionDisplay'; 
-import PrerequisiteGraphWrapper, { InputNode, AppEdge } from '@/components/prerequisiteGraph'; 
+import PrerequisiteGraphWrapper, { InputNode, AppEdge, levelColors } from '@/components/prerequisiteGraph'; 
 import { CourseLinkList } from './courseLinkList'; 
 import { Course } from "@/lib/types"; 
 import Link from 'next/link';
@@ -76,6 +76,18 @@ export function CourseResultDisplay({
         }
         // Rerun animation if the target course changes
     }, [targetCourse]);
+
+    // Function to determine text color (black/white) based on background hex
+    const getContrastColor = (hexColor: string): string => {
+        if (!hexColor) return '#000000'; // Default to black if color is invalid
+        const hex = hexColor.replace('#', '');
+        const r = parseInt(hex.substring(0, 2), 16);
+        const g = parseInt(hex.substring(2, 4), 16);
+        const b = parseInt(hex.substring(4, 6), 16);
+        // Formula for luminance (YIQ equation)
+        const luminance = (r * 299 + g * 587 + b * 114) / 1000;
+        return luminance >= 128 ? '#000000' : '#FFFFFF'; // Black for light bg, White for dark bg
+    };
 
     if (!targetCourse) {
         return (
@@ -235,6 +247,27 @@ export function CourseResultDisplay({
                 </CardHeader>
                 <CardContent>
                      <p className="text-xs text-gray-500 mb-4 italic">Note: Graph shows dependencies but not detailed AND/OR logic.</p>
+                     
+                     {/* Legend for Edge Colors */}
+                     {graphNodes.length > 0 && (
+                        <div className="flex flex-wrap gap-2 mb-4">
+                            <span className="text-sm font-medium mr-2 self-center">Legend:</span>
+                            {levelColors.map((color, index) => (
+                                <Badge
+                                    key={index}
+                                    variant="outline" // Use outline variant to prevent default bg
+                                    className="border border-gray-300 dark:border-gray-700 px-3 py-1 text-xs font-semibold"
+                                    style={{
+                                        backgroundColor: color,
+                                        color: getContrastColor(color),
+                                    }}
+                                >
+                                    Level {index + 1}
+                                </Badge>
+                            ))}
+                        </div>
+                     )}
+
                      {graphNodes.length > 0 || graphEdges.length > 0 ? (
                         <div className="min-h-[300px] md:min-h-[400px]"> {/* Ensure minimum height */}
                             <PrerequisiteGraphWrapper

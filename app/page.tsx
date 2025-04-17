@@ -21,23 +21,23 @@ export default async function PrerequisitesPage({
     const shouldFetchData = !!dept && !!code && typeof dept === 'string' && typeof code === 'string';
 
     return (
-        // Using flex-col min-h-screen structure from RootLayout often handles overall height
-        // This component focuses on the main content area
-        <div className="flex-1 bg-[#f5f5f0] flex flex-col"> {/* Main content area styling */}
+        // Remove explicit background classes from this div
+        // Let the background from the body (via CSS variables) show through
+        <div className="flex-1 flex flex-col"> 
 
             {/* Scrollable Main Content Area */}
             <main className="flex-1 overflow-y-auto container mx-auto py-8 px-4">
 
                 {/* Top Section: Title and Search Form */}
                 <div className="md:w-2/3 lg:w-1/2 mx-auto mb-8"> {/* Constrain width and center */}
-                    <h1 className="text-4xl md:text-5xl font-bold mb-2 text-center text-gray-800">Uni Planner</h1>
-                    <h2 className="text-xl md:text-2xl font-bold mb-6 text-gray-600 text-center">Prerequisite Checker</h2>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-2 text-center text-gray-800 dark:text-gray-200">Uni Planner</h1>
+                    <h2 className="text-xl md:text-2xl font-bold mb-6 text-gray-600 dark:text-gray-400 text-center">Prerequisite Checker</h2>
 
                     {/* Dedicated Card for the Search Form */}
-                    <Card className="shadow-md border border-gray-200">
+                    <Card className="shadow-lg border-2 frosted border-border dark:border-border">
                         <CardHeader>
                             <CardTitle>Check Course Requirements</CardTitle>
-                            <CardDescription>
+                            <CardDescription className='text-muted-foreground dark:text-muted-foreground'>
                                 Enter a course code (e.g., "CMPUT 272") to find its prerequisites.
                             </CardDescription>
                         </CardHeader>
@@ -60,7 +60,7 @@ export default async function PrerequisitesPage({
                         </Suspense>
                     ) : (
                         // If no search params, show initial prompt message
-                        <div className="p-6 border rounded-md bg-white text-center md:w-2/3 lg:w-1/2 mx-auto shadow-sm">
+                        <div className="p-6 border rounded-md bg-card border-border frosted text-center md:w-2/3 lg:w-1/2 mx-auto shadow-sm">
                             <p className="text-muted-foreground">
                                 Enter a course code above to check its prerequisites and view related information.
                             </p>

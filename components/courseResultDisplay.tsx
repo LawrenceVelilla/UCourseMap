@@ -124,7 +124,9 @@ export function CourseResultDisplay({
                      {(targetCourse.keywords && targetCourse.keywords.length > 0) ? (
                          <div className="flex flex-wrap gap-2">
                              {targetCourse.keywords.map((keyword, index) => (
-                                 <Badge key={index} variant="secondary" className="bg-[#606c5d] text-[#DAD7CD] shadow-md hover:text-[#344E41] ">{keyword}</Badge>
+                                 <Badge key={index} variant="secondary" className="bg-[#606c5d] text-[#DAD7CD] shadow-md hover:text-[#344E41] dark:bg;white 
+                                 dark:text-secondary-foreground dark:hover:bg-white dark:hover:text-black
+                                 ">{keyword}</Badge>
                              ))}
                          </div>
                      ) : (

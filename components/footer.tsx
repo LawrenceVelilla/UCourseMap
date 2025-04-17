@@ -13,7 +13,7 @@ export function Footer({ className }: FooterProps) {
   const emailAddress = "vel.lawrence04@gmail.com"; 
 
   return (
-    <footer className={cn("bg-[#f0f0e8] py-6 px-6 border-t text-sm text-gray-600", className)}>
+    <footer className={cn("py-6 px-6 border-t text-sm text-gray-600", className)}>
       <div className="container mx-auto flex flex-col items-center justify-center space-y-4">
         <div>
           <p>© {new Date().getFullYear()} UniPlanner. Created by Lawrence Velilla.</p>

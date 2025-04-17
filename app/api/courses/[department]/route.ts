@@ -1,5 +1,5 @@
 // app/api/courses/[department]/route.ts
-import { NextResponse } from 'next/server';
+import { NextResponse, NextRequest } from 'next/server';
 import { getCoursesByDepartment } from '@/lib/data'; // Adjust path if needed
 
 interface Params {
@@ -7,10 +7,10 @@ interface Params {
 }
 
 export async function GET(
-  request: Request,
-  { params }: { params: Params }
+  request: NextRequest,
+  context: { params: Params }
 ) {
-  const departmentCode = params.department;
+  const departmentCode = context.params.department;
 
   if (!departmentCode) {
     return NextResponse.json({ message: 'Department code is required' }, { status: 400 });

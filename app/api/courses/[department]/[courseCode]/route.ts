@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+import { NextResponse, NextRequest } from 'next/server';
 import { getCourseDetails } from '@/lib/data';
 
 interface Params {
@@ -7,11 +7,11 @@ interface Params {
 }
 
 export async function GET(
-  request: Request,
-  { params }: { params: Params }
+  request: NextRequest,
+  context: { params: Params }
 ) {
-  const departmentCode = params.department;
-  const courseCodeNumber = params.courseCode; 
+  const departmentCode = context.params.department;
+  const courseCodeNumber = context.params.courseCode; 
 
   if (!departmentCode || !courseCodeNumber) {
     return NextResponse.json({ message: 'Department and Course Code are required' }, { status: 400 });

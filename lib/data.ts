@@ -40,14 +40,7 @@ function parseCourseString(courseString: string): { department: string; codeNumb
 // --- Main Data Fetching Functions ---
 
 /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
  * Fetches full details for a single course and maps it to the Course type.
-=======
- * Fetches full details for a single course by department and code number.
- * Uses React Cache for memoization within a single request lifecycle.
->>>>>>> 3d6741f (Implemented the RecursiveCTE to solve N+1 problem)
  */
 export const getCourseDetails = cache(
     async (departmentCode: string, courseCodeNumber: string): Promise<Course | null> => {
@@ -121,6 +114,33 @@ export const getMultipleCourseDetails = cache(
             return courses;
         } catch (error) {
             console.error(`[Data] Error fetching multiple course details:`, error);
+            return []; // Return empty array on error
+        }
+    }
+);
+
+/**
+ * Fetches basic details (id, code, title, dept) for all courses in a given department.
+ * Optimized for list displays.
+ * Uses React Cache.
+ */
+export const getCoursesByDepartment = cache(
+    async (departmentCode: string): Promise<Pick<Course, 'id' | 'department' | 'courseCode' | 'title'>[]> => {
+        if (!departmentCode) return [];
+        const upperDept = departmentCode.toUpperCase().trim();
+        if (process.env.NODE_ENV === 'development') {
+             console.log(`[Data] Fetching basic details for courses in department: ${upperDept}`);
+        }
+        try {
+            const courses = await prisma.course.findMany({
+                where: { department: upperDept },
+                // Select only necessary fields for list display
+                select: { id: true, department: true, courseCode: true, title: true },
+                orderBy: { courseCode: 'asc' }, // Consistent ordering
+            });
+            return courses;
+        } catch (error) {
+            console.error(`[Data] Error fetching courses for department ${upperDept}:`, error);
             return []; // Return empty array on error
         }
     }
@@ -442,16 +462,6 @@ export const getCoursesHavingCorequisite = cache(
      }
 );
 
-
-/**
->>>>>>> 5dc1d31 (Fixed parser and data pipeline to remove parsed description and use keywords instead to avoid any ToS violations)
- * Interface for the data structure returned by the recursive fetcher.
- * NOTE: Edge does NOT include depth yet.
- */
-interface RecursiveData {
-    nodes: Course[]; // Store *full* course details for nodes
-    edges: { source: string; target: string }[]; // Simple source->target edges using courseCode
-}
 
 /*
 export const getRecursivePrerequisites = cache(

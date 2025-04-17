@@ -1,9 +1,8 @@
 import Link from 'next/link';
-import { RequirementCondition } from '@/lib/types';
-import { cn } from '@/lib/utils';
+import { RequirementCondition } from '@/lib/types'; 
+import { cn } from '@/lib/utils'; 
 
-
-// --- HELPER FUNCTIONS --- (Move to utils so it looks clean)
+// --- HELPER FUNCTIONS ---
 function parseCourseCodeForLink(input: string): { dept: string; code: string } | null {
     if (!input) return null;
     const trimmedInput = input.trim().toUpperCase();
@@ -24,7 +23,7 @@ function looksLikeCourseCode(text: string): boolean {
     return parseCourseCodeForLink(text) !== null;
 }
 
-
+// --- COMPONENT ---
 
 export function RequirementConditionDisplay({ condition }: { condition: RequirementCondition }) {
 
@@ -32,7 +31,7 @@ export function RequirementConditionDisplay({ condition }: { condition: Requirem
     const descriptiveText = condition.description?.trim() || condition.pattern?.trim();
     if (descriptiveText) {
         // Render descriptive text directly. Parent LI provides bullet context.
-        return ( <span className="font-italic text-[#333]">{descriptiveText}</span> );
+        return ( <span className="font-italic text-[#333] dark:text-[#fefae0]">{descriptiveText}</span> );
     }
 
     // --- Determine Operator Text (only for AND/OR) ---
@@ -48,29 +47,39 @@ export function RequirementConditionDisplay({ condition }: { condition: Requirem
 
     return (
         <>
-            {/* 1. Display Operator Text (if applicable) */}
+            {/* 1. Display Operator Text (if applicable) - Changed <p> to <span> */}
             {operatorText && (
-                 <p 
-                 className='ml-1 font-medium italic text-sm text-size-sm'>
+                 <span // <-- Use span with inline-block to avoid block behavior causing line break after bullet
+                 className='ml-1 mr-1 font-medium italic text-sm text-size-sm inline-block align-baseline'> {/* Added inline-block, align-baseline, mr-1 */}
                      {operatorText}
-                 </p>
+                 </span>
             )}
 
             {/* 2. Render Content (either within a UL or directly) */}
             {needsOwnUl ? (
                 // CASE A: This node needs its own UL (has operator or nested conditions)
-                <ul className={cn('list-disc list-inside pl-4', operatorText ? 'mt-1' : 'mt-0')} >
+                <ul className={cn(
+                    'list-disc list-inside pl-4',
+                    // inline-block operator might need less/no top margin on UL
+                    // Keep mt-0 or adjust slightly if needed for visual spacing
+                    operatorText ? 'mt-0' : 'mt-0'
+                    )}
+                >
                     {/* Render Direct Courses (if any) as LIs within this UL */}
                     {hasDirectCourses && condition.courses!.map(itemText => {
                         const isCourse = looksLikeCourseCode(itemText);
                         const parsedLinkData = isCourse ? parseCourseCodeForLink(itemText) : null;
                         return (
-                            
-                             <li key={itemText} className='m-1'>
-                            
-                                 {isCourse && parsedLinkData ? ( <Link href={`/?dept=${parsedLinkData.dept.toLowerCase()}&code=${parsedLinkData.code}`} 
-                                 className="p-px rounded-md text-[#588157] transition-colors duration-200 hover:bg-[#606c5d] hover:text-white" title={`Check prerequisites for ${itemText}`}> {itemText} </Link> )
-                                  : ( <span className="text-[#588157] font-italic">{itemText}</span> )}
+                             <li key={itemText} className='m-1'> {/* List item wrapper */}
+                                 {isCourse && parsedLinkData ? (
+                                     <Link href={`/?dept=${parsedLinkData.dept.toLowerCase()}&code=${parsedLinkData.code}`}
+                                           className="p-px rounded-md text-[#588157] transition-colors duration-200 hover:bg-[#606c5d] hover:text-white"
+                                           title={`Check prerequisites for ${itemText}`}>
+                                         {itemText}
+                                     </Link>
+                                 ) : (
+                                     <span className="font-italic dark:text-[#fefae0]">{itemText}</span>
+                                 )}
                              </li>
                           );
                     })}
@@ -78,9 +87,9 @@ export function RequirementConditionDisplay({ condition }: { condition: Requirem
                     {/* Render Nested Conditions as LIs within this UL */}
                     {hasNestedConditions && condition.conditions!.map((subCondition, index) => (
                         // Each sub-condition gets an LI wrapper
-                        <li 
-                        className='m-1'
-                        key={`${subCondition.operator || 'complex'}-${index}`}>
+                        <li
+                            className='m-1' // List item wrapper for nested condition
+                            key={`${subCondition.operator || 'complex'}-${index}`}>
                             {/* Recursive call renders content INSIDE the LI */}
                             <RequirementConditionDisplay condition={subCondition} />
                         </li>
@@ -94,13 +103,18 @@ export function RequirementConditionDisplay({ condition }: { condition: Requirem
                         const isCourse = looksLikeCourseCode(itemText);
                         const parsedLinkData = isCourse ? parseCourseCodeForLink(itemText) : null;
                         // Render course/text without LI/UL - parent handles list structure
+                        // Use a div or span for key and potential margin/styling if needed
                         return (
-
-                           <div 
-                           className="m-1"
-                           
-                           key={itemText}>
-
+                           <div className="m-1 inline-block" key={itemText}> {/* Wrap in div/span if needed for key/styling */}
+                                {isCourse && parsedLinkData ? (
+                                    <Link href={`/?dept=${parsedLinkData.dept.toLowerCase()}&code=${parsedLinkData.code}`}
+                                          className="p-px rounded-md text-[#588157] transition-colors duration-200 hover:bg-[#606c5d] hover:text-white"
+                                          title={`Check prerequisites for ${itemText}`}>
+                                        {itemText}
+                                    </Link>
+                                ) : (
+                                    <span className="font-italic dark:text-[#fefae0]">{itemText}</span>
+                                )}
                            </div>
                        );
                    })}
@@ -109,8 +123,8 @@ export function RequirementConditionDisplay({ condition }: { condition: Requirem
 
              {/* Handle completely empty nodes (that weren't descriptive) */}
              {!descriptiveText && !hasDirectCourses && !hasNestedConditions && (
-                  <p 
-                  className='font-italic text-[#588157] m-1'>(No specific conditions listed here)</p>
+                  // Use span here too, as it's likely inside an LI
+                  <span className='font-italic text-[#588157] m-1'>(No specific conditions listed here)</span>
               )}
         </>
     );

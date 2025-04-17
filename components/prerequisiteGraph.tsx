@@ -1,6 +1,8 @@
+
 'use client'
 import React, { useEffect, useMemo } from 'react';
 import dagre from 'dagre'; 
+import { useTheme } from 'next-themes';
 import {
     ReactFlow,
     Controls,
@@ -47,6 +49,11 @@ export interface PrerequisiteGraphProps {
   initialEdges: AppEdge[];   // Edges received from the parent wrapper.
 }
 
+// Add theme to props
+export interface PrerequisiteGraphLayoutProps extends PrerequisiteGraphProps {
+    theme?: string; // Add theme prop (optional)
+}
+
 // --- Configuration & Styling ---
 
 // TODO: This comment relates to an old approach, edge colors are now based on depth.
@@ -61,17 +68,32 @@ dagreGraph.setDefaultEdgeLabel(() => ({})); // Default empty label for edges.
 const nodeWidth = 180; 
 const nodeHeight = 45; 
 
-// Base styles for different node types.
-const targetNodeStyle: React.CSSProperties = {
-    background: '#606c5d', color: '#fff', border: '1px solid #3a4139', borderRadius: '4px', width: nodeWidth, padding: '8px 12px', textAlign: 'center', fontSize: '14px', fontWeight: 'bold', height: nodeHeight, display: 'flex', alignItems: 'center', justifyContent: 'center',
-    cursor: 'pointer' // Indicates the node is clickable.
-};
-const prereqNodeStyle: React.CSSProperties = {
-    background: '#f0f0e8', color: '#333', border: '1px solid #d1d1c4', borderRadius: '4px', width: nodeWidth, padding: '8px 12px', textAlign: 'center', fontSize: '14px', height: nodeHeight, display: 'flex', alignItems: 'center', justifyContent: 'center',
-    cursor: 'pointer' // Indicates the node is clickable.
-};
-const textNodeStyle: React.CSSProperties = {
-    background: '#fefae0d', border: '1px dashed #e6db74', borderRadius: '4px', width: nodeWidth, padding: '8px 12px', textAlign: 'center', fontSize: '12px', fontStyle: 'italic', height: nodeHeight, display: 'flex', alignItems: 'center', justifyContent: 'center' // Fixed height for consistent layout
+// Function to get styles based on theme
+const getNodeStyles = (theme?: string) => {
+    const isDark = theme === 'dark';
+
+    const targetNodeStyle: React.CSSProperties = {
+        background: isDark ? 'hsl(var(--primary))' : '#606c5d', // Use primary for dark target
+        color: isDark ? 'hsl(var(--primary-foreground))' : '#fff',
+        border: `1px solid ${isDark ? 'hsl(var(--border))' : '#3a4139'}`,
+        borderRadius: '4px', width: nodeWidth, padding: '8px 12px', textAlign: 'center', fontSize: '14px', fontWeight: 'bold', height: nodeHeight, display: 'flex', alignItems: 'center', justifyContent: 'center',
+        cursor: 'pointer'
+    };
+    const prereqNodeStyle: React.CSSProperties = {
+        background: isDark ? 'hsl(var(--secondary))' : '#f0f0e8', // Use secondary for dark prereq
+        color: isDark ? 'hsl(var(--secondary-foreground))' : '#333',
+        border: `1px solid ${isDark ? 'hsl(var(--border))' : '#d1d1c4'}`,
+        borderRadius: '4px', width: nodeWidth, padding: '8px 12px', textAlign: 'center', fontSize: '14px', height: nodeHeight, display: 'flex', alignItems: 'center', justifyContent: 'center',
+        cursor: 'pointer'
+    };
+    const textNodeStyle: React.CSSProperties = {
+        background: isDark ? 'hsl(var(--muted))' : '#fefae0d', // Use muted for dark text
+        color: '#283618', // Define a dark text color if needed
+        border: `1px dashed ${isDark ? 'hsl(var(--muted-foreground))' : '#e6db74'}`,
+        borderRadius: '4px', width: nodeWidth, padding: '8px 12px', textAlign: 'center', fontSize: '12px', fontStyle: 'italic', height: nodeHeight, display: 'flex', alignItems: 'center', justifyContent: 'center'
+    };
+
+    return { targetNodeStyle, prereqNodeStyle, textNodeStyle };
 };
 
 // Base style for edges (stroke color is applied dynamically).
@@ -108,8 +130,12 @@ type LayoutDirection = 'TB' | 'LR';
 const getLayoutedElements = (
     nodesToLayout: Node<GraphNodeData>[], 
     edgesToLayout: Edge[],
-    direction: LayoutDirection
+    direction: LayoutDirection,
+    theme?: string // Add theme parameter
 ): { nodes: AppNode[]; edges: AppEdge[] } => {
+
+    // Get theme-based styles
+    const { targetNodeStyle, prereqNodeStyle, textNodeStyle } = getNodeStyles(theme);
 
     // Configure Dagre graph settings.
     dagreGraph.setGraph({ rankdir: direction, nodesep: 60, ranksep: 60, marginx: 20, marginy: 20 });
@@ -148,7 +174,7 @@ const getLayoutedElements = (
         const targetPosition = node.targetPosition ?? (isHorizontal ? Position.Left : Position.Top);
         const sourcePosition = node.sourcePosition ?? (isHorizontal ? Position.Right : Position.Bottom);
 
-        // Select base style based on node type.
+        // Select base style based on node type USING THEME-AWARE STYLES
         let baseStyle: React.CSSProperties;
         if (!node.data.isCourse) {
             baseStyle = textNodeStyle;
@@ -235,7 +261,7 @@ const getLayoutedElements = (
 /**
  * Internal component that renders the React Flow graph and handles interactions.
  */
-const PrerequisiteGraphLayout = ({ initialNodes, initialEdges }: PrerequisiteGraphProps) => {
+const PrerequisiteGraphLayout = ({ initialNodes, initialEdges, theme }: PrerequisiteGraphLayoutProps) => {
   const { fitView } = useReactFlow();
   const router = useRouter(); // Hook for programmatic navigation.
   // State management for nodes and edges within React Flow.
@@ -269,17 +295,17 @@ const PrerequisiteGraphLayout = ({ initialNodes, initialEdges }: PrerequisiteGra
       }
   };
 
-  // Effect to process nodes/edges and run layout when props change.
-  useEffect(() => {
+  // Update layout when nodes, edges, or theme change
+  const { nodes: layoutedNodes, edges: layoutedEdges } = useMemo(() => {
+      console.log("[Layout Update] Theme:", theme); // Debug log
+
       // Basic validation: Ensure props are arrays.
       if (!Array.isArray(initialNodes) || !Array.isArray(initialEdges)) {
          console.warn("Graph received invalid initialNodes or initialEdges.");
-         setNodes([]); setEdges([]); return;
+         return { nodes: [], edges: [] }; // Return empty layout
       }
 
-      // 1. Prepare nodes for the layout function.
-      //    The `InputNode` type (from props) lacks position/dimensions required by Dagre.
-      //    We add default position and dimensions here.
+      // 1. Transform InputNodes to Nodes with position/dimensions for layout
       const transformedNodes: Node<GraphNodeData>[] = initialNodes.map(n => ({
           id: n.id,
           data: n.data,
@@ -295,56 +321,48 @@ const PrerequisiteGraphLayout = ({ initialNodes, initialEdges }: PrerequisiteGra
       // 2. Prepare edges (usually requires less transformation).
       const transformedEdges: AppEdge[] = initialEdges.map(e => ({ ...e }));
 
-      // 3. Calculate layout and update state only if there are nodes.
-      if (transformedNodes.length > 0) {
-          const direction = 'TB' as LayoutDirection; // Use Top-to-Bottom layout.
-          
-          // Calculate positions and apply dynamic edge styles.
-          const { nodes: layoutedNodes, edges: layoutedEdges } = getLayoutedElements(
-              transformedNodes,
-              transformedEdges,
-              direction
-          );
-
-          // Update React Flow state with the processed nodes and edges.
-          setNodes(layoutedNodes);
-          setEdges(layoutedEdges);
-
-          // Adjust the view to fit the graph after layout calculation.
-          // Use requestAnimationFrame to ensure state update has likely occurred.
-          window.requestAnimationFrame(() => {
-              // Check again in case state updates were async or nodes became empty.
-              if (layoutedNodes.length > 0) { 
-                   fitView({ padding: 0.2, duration: 300, includeHiddenNodes: false });
-              }
-          });
-      } else {
-          // Handle the case where no nodes were passed in props.
-          setNodes([]);
-          setEdges([]);
+      // 3. Calculate layout if there are nodes.
+      if (transformedNodes.length === 0) {
+          return { nodes: [], edges: [] };
       }
-      
-    // Dependencies: Rerun layout if the input nodes/edges change, or if fitView changes.
-  }, [initialNodes, initialEdges, fitView, setNodes, setEdges]);
+
+      return getLayoutedElements(transformedNodes, transformedEdges, 'TB', theme); // Pass theme here
+
+  }, [initialNodes, initialEdges, theme]); // Add theme to dependencies
+
+  // Effect to update React Flow state when layouted elements change
+  useEffect(() => {
+      setNodes(layoutedNodes);
+      setEdges(layoutedEdges);
+      // Optional: Recenter view after layout possibly changes node positions drastically
+      // requestAnimationFrame(() => fitView({ padding: 0.1 }));
+  }, [layoutedNodes, layoutedEdges, setNodes, setEdges, fitView]);
 
   // Render the React Flow component.
   return (
-    <div style={{ height: '500px', width: '100%', border: '1px solid #d1d1c4', borderRadius: '4px' }}>
+    <div style={{ height: '500px', width: '100%', border: '1px solid #d1d1c4', borderRadius: '5px' }}>
         <ReactFlow
             nodes={nodes}
             edges={edges}
-            onNodesChange={onNodesChange} // Handles node movement/selection state.
-            onEdgesChange={onEdgesChange} // Handles edge selection/connection state.
-            onNodeClick={handleNodeClick} // Handles node clicks for navigation.
+            onNodesChange={onNodesChange}
+            onEdgesChange={onEdgesChange}
+            onNodeClick={handleNodeClick}
+            className="bg-background"
             nodesDraggable={false}       // Prevent users from dragging nodes.
             nodesConnectable={false}   // Prevent users from creating new edges.
-            style={{ backgroundColor: '#f9f9f7' }} // Set graph background color.
+            style={theme === 'dark' ? { backgroundColor: '#1a1a1a' } : {backgroundColor: '#ede8e8'}} // Set graph background color.
             proOptions={{ hideAttribution: true }} // Hide React Flow attribution mark.
             minZoom={0.5}
-            // fitView // fitView is now called within useEffect after layout.
+            fitView
+            attributionPosition="top-right"
         >
-            <Controls /> {/* Add zoom/pan controls.*/}
-            <Background color="#ddd" gap={16} variant={BackgroundVariant.Dots} /> {/* Add a dotted background.*/}
+            
+            <Background 
+              variant={BackgroundVariant.Dots} 
+              gap={12} 
+              size={1} 
+              color={theme === 'dark' ? '#1a1a1a' : '#ddd'}
+            />
         </ReactFlow>
     </div>
   );
@@ -357,9 +375,12 @@ const PrerequisiteGraphLayout = ({ initialNodes, initialEdges }: PrerequisiteGra
  * This provider is necessary for React Flow hooks (like useReactFlow) to work.
  */
 export default function PrerequisiteGraphWrapper(props: PrerequisiteGraphProps) {    
+    const { resolvedTheme } = useTheme(); // Get the currently resolved theme
+
     return (
         <ReactFlowProvider>
-             <PrerequisiteGraphLayout {...props} />
+             {/* Pass the theme to the layout component */}
+            <PrerequisiteGraphLayout {...props} theme={resolvedTheme} />
         </ReactFlowProvider>
     );
 }

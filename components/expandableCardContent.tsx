@@ -17,6 +17,7 @@ export function ExpandableCardContent({
     const [expanded, setExpanded] = useState(false);
     const [fullHeight, setFullHeight] = useState<number>(0);
     const [isOverflowing, setIsOverflowing] = useState(false);
+    const [hasMounted, setHasMounted] = useState(false);
   
     // Reset to collapsed state whenever children change
     useEffect(() => {
@@ -32,7 +33,8 @@ export function ExpandableCardContent({
         setFullHeight(measuredHeight);
         
         // Check if content overflows collapsed height
-        setIsOverflowing(measuredHeight > collapsedHeight);
+        const overflowing = measuredHeight > collapsedHeight;
+        setIsOverflowing(overflowing);
         
         // Reset to collapsed state if not expanded
         if (!expanded) {
@@ -43,6 +45,8 @@ export function ExpandableCardContent({
           containerRef.current.style.height = 'auto';
           containerRef.current.style.overflow = 'visible';
         }
+
+        setHasMounted(true);
       }
     }, [children, expanded, collapsedHeight]);
   
@@ -83,21 +87,24 @@ export function ExpandableCardContent({
       <div>
         {/* Wrapping element with relative positioning to position the fade overlay */}
         <div className="relative">
-          <div ref={containerRef}>
+          <div ref={containerRef} style={{ height: collapsedHeight, overflow: 'hidden' }}>
             {children}
-            {/* Fade overlay, only show when not expanded and content exceeds the collapsed height */}
-            {!expanded && isOverflowing && (
-              <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-white to-transparent" />
+            {/* Only render overlay if needed AND mounted */}
+            {hasMounted && !expanded && isOverflowing && (
+              <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white dark:from-black to-transparent" />
             )}
           </div>
         </div>
-        {/* Toggle button appears only if the content is taller than the collapsedHeight */}
-        {isOverflowing && (
-          <div className="flex justify-center">
+        {/* Only render button if needed AND mounted */}
+        {hasMounted && isOverflowing && (
+          <div className="flex justify-center mt-3">
             <button
               onClick={toggleExpand}
-              className="bg-[#606c5d] text-white shadow-md hover:text-[#344E41] hover:bg-transparent duration-200 transition-colors
-              rounded-full pr-5 pl-5 text-sm text-center"
+              className="
+                px-3 p-px rounded-full shadow-md text-sm text-center transition-colors duration-200 
+                bg-[#606c5d] text-white hover:bg-[#4f594c]
+                dark:text-secondary-foreground dark:hover:bg-white dark:hover:text-black
+              "
             >
               {expanded ? 'Show Less' : 'Show More'}
             </button>

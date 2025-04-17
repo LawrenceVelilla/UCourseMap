@@ -1,9 +1,9 @@
-
 'use client'
 import Link from "next/link";
 import { usePathname } from "next/navigation"; 
 import { BookOpen, Calendar, GraduationCap, Home, User } from "lucide-react";
 import { cn } from "@/lib/utils"; // Utility for conditional classes
+import { ThemeSwitcher } from "./theme-switcher"; // Import the theme switcher
 
 export function HeaderNav() {
   const pathname = usePathname(); 
@@ -27,11 +27,11 @@ export function HeaderNav() {
           href={item.href}
           // Apply base styling + conditional active styling
           className={cn(
-            "flex items-center gap-1.5 px-3 py-2 rounded-md text-sm font-medium transition-colors",
-            "hover:bg-[#4a5349] hover:text-[#fefae0]", // Hover effect
+            "flex items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium transition-colors",
+            "hover:text-primary", // Use theme primary color on hover
             pathname === item.href
-              ? "bg-[#4a5349] text-[#fefae0]" // Active state styling
-              : "text-[#DAD7CD] hover:bg-opacity-75" // Default state styling
+              ? "text-foreground" // Active state uses main foreground color
+              : "text-muted-foreground" // Default state uses muted foreground
           )}
         >
           <item.icon size={16} /> {/* Slightly smaller icon */}
@@ -43,13 +43,19 @@ export function HeaderNav() {
       <Link
         href="/signin" 
         className={cn(
-            "flex items-center gap-1.5 px-3 py-2 rounded-md text-sm font-medium transition-colors",
-            "text-[#DAD7CD] hover:bg-[#4a5349] hover:text-[#fefae0] hover:bg-opacity-75" 
+            "flex items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium transition-colors",
+            "text-muted-foreground hover:text-primary" // Consistent styling for sign in link
           )}
       >
         <User size={16} />
         <span className="hidden lg:inline">Sign in</span>
       </Link> 
+
+      {/* Add Theme Switcher button */} 
+      <div className="ml-auto"> {/* Pushes switcher to the right if needed, or adjust spacing */} 
+        <ThemeSwitcher />
+      </div>
+
     </nav>
   );
 }

@@ -57,41 +57,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // Add suppressHydrationWarning if using next-themes
     <html lang="en" suppressHydrationWarning>
-      <body className={cn("min-h-screen bg-background font-sans antialiased", afacad.variable, libreBaskerville.variable, caveat.variable)}>
-        {/* Theme Provider wraps everything */}
+      <body className={cn("min-h-screen font-sans antialiased", afacad.variable, libreBaskerville.variable, caveat.variable)}>
         <ThemeProvider
             attribute="class"
-            defaultTheme="light" // Or your preferred default
+            defaultTheme="light"
             enableSystem
-            // disableTransitionOnChange
         >
-          {/* Wrap the main layout structure with QueryProvider */}
           <QueryProvider>
-            {/* Main Layout Structure: Header, Content, Footer */}
-            <div className="relative flex min-h-screen flex-col bg-[#f5f5f0]"> 
-              <header className="top-0 justify-end sticky z-50 w-full p-2 border-b border-[#4a5349] bg-[#38432b] text-[#DAD7CD] backdrop-blur-md"> 
+            <div className="relative flex min-h-screen flex-col">
+              <header className="sticky top-0 z-50 w-full border-b border-border bg-card p-2 text-card-foreground backdrop-blur-md">
                   <HeaderNav />
               </header>
-              {/* --- End Site Header --- */}
-
-
-              {/* --- Main Content Area --- */}
-              {/* flex-1 makes this grow to fill space between header and footer */}
               <main className="flex-1">
-                {children} {/* Your page content renders here */}
+                {children}
                 <SpeedInsights />
                 <Analytics />
               </main>
-              {/* --- End Main Content Area --- */}
-
-
-              {/* --- Footer --- */}
-              {/* Kept at the bottom */}
-              <Footer className="bg-[#f0f0e8] py-4 px-6 border-t text-center text-sm text-gray-600" />
-              {/* --- End Footer --- */}
-
+              <Footer className="border-t py-4 px-6 text-center text-sm text-muted-foreground" />
             </div>
           </QueryProvider>
         </ThemeProvider>

@@ -81,5 +81,69 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Reverted: Default link color with underline on hover */
+  a {
+    @apply text-primary;
+  }
 }
 
+@layer utilities {
+  .dark a {
+    @apply text-[#fefae0]; /* Specific link color for dark mode */
+  }
+}
+
+@layer components {
+  /* Requirement List System - Restored custom styles */
+  .requirement-condition {
+    @apply w-full;
+  }
+
+  .operator-text {
+    @apply ml-[1.1rem] text-current;
+  }
+
+  .requirement-list {
+    @apply list-none pl-6;
+  }
+
+  .requirement-item {
+    @apply relative pl-6;
+  }
+
+  .requirement-item::before {
+    @apply absolute left-1.5 top-[0.65rem] h-1.5 w-1.5 rounded-full bg-current;
+    content: '';
+  }
+
+  .standalone-item {
+    @apply relative pl-6 ml-[1.1rem];
+  }
+
+  .standalone-item::before {
+    @apply absolute left-1.5 top-[0.65rem] h-1.5 w-1.5 rounded-full bg-current;
+    content: '';
+  }
+
+  .course-text {
+    @apply italic text-current;
+  }
+
+  .empty-condition {
+    @apply italic text-[#588157] ml-6 dark:text-[#a3b18a];
+  }
+
+  /* Keep custom course link styling */
+  .course-link {
+    @apply p-px rounded-md text-[#588157] transition-colors duration-200 hover:bg-[#606c5d] hover:text-white dark:text-[#a3b18a] dark:hover:bg-[#588157];
+  }
+
+  /* Restored Chrome-specific fixes */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .requirement-item::before,
+    .standalone-item::before {
+      top: 0.55rem;
+    }
+  }
+}

@@ -76,14 +76,14 @@ export function PrerequisiteCheckerForm() {
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
                 <Input
                     placeholder="Enter course code (e.g., CMPUT 272)"
-                    className="pl-9 pr-20 h-10 rounded-md border-[#d1d5db] focus-visible:ring-[#606c5d]" // Adjusted styling
+                    className="pl-9 pr-20 h-10 rounded-md focus-visible:ring-[#606c5d]" // Adjusted styling
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
                     aria-label="Course Code Input"
                 />
                 <Button
                     type="submit"
-                    className="absolute right-1 top-1/2 transform -translate-y-1/2 h-8 rounded-md px-4 bg-[#606c5d] hover:bg-[#4a5349] text-xs font-medium"
+                    className="absolute text-whiteright-1 top-1/2 transform -translate-y-1/2 h-8 rounded-md px-4 bg-[#606c5d] hover:bg-[#4a5349] text-xs font-medium"
                 >
                     Check
                 </Button>

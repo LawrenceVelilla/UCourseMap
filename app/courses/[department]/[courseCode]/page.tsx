@@ -15,7 +15,7 @@ export default async function DedicatedCoursePage({ params }: any) {
 
     return (
         // Main content area styling for this specific page layout
-        <div className="flex-1 bg-[#f5f5f0] flex flex-col">
+        <div className="flex-1 flex flex-col">
             {/* No mobile header needed here unless desired */}
             <main className="flex-1 overflow-y-auto container mx-auto py-8 px-4">
                 {/* Back Button */}

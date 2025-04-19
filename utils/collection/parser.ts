@@ -1,9 +1,9 @@
-import { OpenAI } from 'openai'; 
-import { Course, RawCourse, RequirementsData, ParsedCourseData } from '../../lib/types'; 
-import path from 'path';
-import * as dotenv from 'dotenv';
+import { OpenAI } from "openai";
+import { Course, RawCourse, RequirementsData, ParsedCourseData } from "../../lib/types";
+import path from "path";
+import * as dotenv from "dotenv";
 
-dotenv.config({ path: path.resolve(__dirname, '../../.env.local') });
+dotenv.config({ path: path.resolve(__dirname, "../../.env.local") });
 
 // TODO:
 // 1. Add caching to avoid repeated API calls for the same course.
@@ -14,9 +14,6 @@ dotenv.config({ path: path.resolve(__dirname, '../../.env.local') });
 // 6. Add unit tests for the parsing logic.
 // 7. Consider using a more structured approach for the OpenAI API calls, such as a wrapper class.
 // 8. Add a fallback mechanism in case OpenAI API is down or slow.
-
-
-
 
 // --- Refined Base Prompt ---
 const BASEPROMPT = `
@@ -139,47 +136,54 @@ Output:
 Here is the input description:
 `;
 
-
-
 export async function parseCourseDescription(
   rawDescription: string
-): Promise<ParsedCourseData | null> { // Return null on failure
+): Promise<ParsedCourseData | null> {
+  // Return null on failure
   const prompt = `${BASEPROMPT}\n${rawDescription}`;
 
   try {
     const openai = new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY!});
+      apiKey: process.env.OPENAI_API_KEY!,
+    });
     const response = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
-      messages: [{ role: 'user', content: prompt }, {role: 'system', content: 'You are a helpful assistant that extracts structured course information from university course catalog descriptions.'}],
+      model: "gpt-4o-mini",
+      messages: [
+        { role: "user", content: prompt },
+        {
+          role: "system",
+          content:
+            "You are a helpful assistant that extracts structured course information from university course catalog descriptions.",
+        },
+      ],
       temperature: 0, // No creativity needed
-      response_format: { type: 'json_object' }
+      response_format: { type: "json_object" },
     });
 
     const content = response.choices[0]?.message?.content;
 
     if (!content) {
-      console.error('OpenAI response content is empty.');
+      console.error("OpenAI response content is empty.");
       return null;
     }
 
     // Safely parse the JSON output
     const parsedData = JSON.parse(content) as ParsedCourseData;
     return parsedData;
-
   } catch (error: any) {
-    console.error(`Failed to parse description with OpenAI for input: "${rawDescription.substring(0, 100)}..."`, error);
+    console.error(
+      `Failed to parse description with OpenAI for input: "${rawDescription.substring(0, 100)}..."`,
+      error
+    );
     if (error.response) {
-      console.error('OpenAI API Error Status:', error.response.status);
-      console.error('OpenAI API Error Data:', error.response.data);
+      console.error("OpenAI API Error Status:", error.response.status);
+      console.error("OpenAI API Error Data:", error.response.data);
     }
     return null; // Indicate failure
   }
 }
 
-export async function processRawCourseData(
-  rawCourse: RawCourse
-): Promise<Course | null> {
+export async function processRawCourseData(rawCourse: RawCourse): Promise<Course | null> {
   if (!rawCourse.description) {
     console.error(`No description found for course: ${rawCourse.courseCode}`);
     return null;
@@ -211,9 +215,7 @@ export async function processRawCourseData(
   }
 }
 
-export async function AIparse(
-  rawCourses: RawCourse[]
-): Promise<Course[]> {
+export async function AIparse(rawCourses: RawCourse[]): Promise<Course[]> {
   const parsedCourses: Course[] = [];
   console.log(`Parsing ${rawCourses.length} ${rawCourses[0].department} courses...`);
   let courseCount = 0;

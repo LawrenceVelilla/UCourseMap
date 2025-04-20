@@ -1,0 +1,479 @@
+{
+  "programName": "Honors in Computing Science - Software Practice Option Requirements",
+  "blocks": [
+    {
+      "title": "Foundation Courses",
+      "groups": [
+        {
+          "groupTitle": "Foundation Courses",
+          "description": [],
+          "courses": [
+            {
+              "courseCode": "CMPUT 174",
+              "title": "Introduction to the Foundations of Computation I",
+              "department": "CMPUT",
+              "note": "(See Note 1)"
+            },
+            {
+              "courseCode": "CMPUT 175",
+              "title": "Introduction to the Foundations of Computation II",
+              "department": "CMPUT",
+              "note": "(See Note 1)"
+            }
+          ]
+        }
+      ],
+      "notesList": [],
+      "order": 0,
+      "blockType": "category"
+    },
+    {
+      "title": "3 units from:",
+      "groups": [
+        {
+          "groupTitle": "3 units from:",
+          "description": [],
+          "courses": [
+            {
+              "courseCode": "MATH 117",
+              "title": "Honors Calculus I",
+              "department": "MATH",
+              "note": null
+            },
+            {
+              "courseCode": "MATH 134",
+              "title": "Calculus for the Life Sciences I",
+              "department": "MATH",
+              "note": null
+            },
+            {
+              "courseCode": "MATH 144",
+              "title": "Calculus for the Mathematical and Physical Sciences I",
+              "department": "MATH",
+              "note": null
+            },
+            {
+              "courseCode": "MATH 154",
+              "title": "Calculus for Business and Economics I",
+              "department": "MATH",
+              "note": null
+            }
+          ]
+        }
+      ],
+      "notesList": [],
+      "order": 1,
+      "category": "Foundation Courses",
+      "unitsRequired": 3,
+      "blockType": "option"
+    },
+    {
+      "title": "3 units from:",
+      "groups": [
+        {
+          "groupTitle": "3 units from:",
+          "description": [],
+          "courses": [
+            {
+              "courseCode": "MATH 118",
+              "title": "Honors Calculus II",
+              "department": "MATH",
+              "note": null
+            },
+            {
+              "courseCode": "MATH 136",
+              "title": "Calculus for the Life Sciences II",
+              "department": "MATH",
+              "note": null
+            },
+            {
+              "courseCode": "MATH 146",
+              "title": "Calculus for the Mathematical and Physical Sciences II",
+              "department": "MATH",
+              "note": null
+            },
+            {
+              "courseCode": "MATH 156",
+              "title": "Calculus for Business and Economics II",
+              "department": "MATH",
+              "note": null
+            }
+          ]
+        }
+      ],
+      "notesList": [],
+      "order": 2,
+      "category": "Foundation Courses",
+      "unitsRequired": 3,
+      "blockType": "option"
+    },
+    {
+      "title": "3 units from:",
+      "groups": [
+        {
+          "groupTitle": "3 units from:",
+          "description": [],
+          "courses": [
+            {
+              "courseCode": "MATH 125",
+              "title": "Linear Algebra I",
+              "department": "MATH",
+              "note": null
+            },
+            {
+              "courseCode": "MATH 127",
+              "title": "Honors Linear Algebra I",
+              "department": "MATH",
+              "note": null
+            }
+          ]
+        }
+      ],
+      "notesList": [],
+      "order": 3,
+      "category": "Foundation Courses",
+      "unitsRequired": 3,
+      "blockType": "option"
+    },
+    {
+      "title": "3 units from:",
+      "groups": [
+        {
+          "groupTitle": "3 units from:",
+          "description": [],
+          "courses": [
+            {
+              "courseCode": "STAT 151",
+              "title": "Introduction to Applied Statistics I",
+              "department": "STAT",
+              "note": null
+            },
+            {
+              "courseCode": "STAT 235",
+              "title": "Introductory Statistics for Engineering",
+              "department": "STAT",
+              "note": null
+            },
+            {
+              "courseCode": "STAT 265",
+              "title": "Probability and Statistics I",
+              "department": "STAT",
+              "note": null
+            }
+          ]
+        }
+      ],
+      "notesList": [],
+      "order": 4,
+      "category": "Foundation Courses",
+      "unitsRequired": 3,
+      "blockType": "option"
+    },
+    {
+      "title": "Senior Courses",
+      "groups": [
+        {
+          "groupTitle": "Senior Courses",
+          "description": [],
+          "courses": [
+            {
+              "courseCode": "CMPUT 201",
+              "title": "Practical Programming Methodology",
+              "department": "CMPUT",
+              "note": "(See Note 1)"
+            },
+            {
+              "courseCode": "CMPUT 204",
+              "title": "Algorithms I",
+              "department": "CMPUT",
+              "note": null
+            },
+            {
+              "courseCode": "CMPUT 229",
+              "title": "Computer Organization and Architecture I",
+              "department": "CMPUT",
+              "note": null
+            },
+            {
+              "courseCode": "CMPUT 272",
+              "title": "Formal Systems and Logic in Computing Science",
+              "department": "CMPUT",
+              "note": null
+            },
+            {
+              "courseCode": "CMPUT 291",
+              "title": "Introduction to File and Database Management",
+              "department": "CMPUT",
+              "note": null
+            },
+            {
+              "courseCode": "CMPUT 301",
+              "title": "Introduction to Software Engineering",
+              "department": "CMPUT",
+              "note": null
+            },
+            {
+              "courseCode": "CMPUT 325",
+              "title": "Non-Procedural Programming Languages",
+              "department": "CMPUT",
+              "note": null
+            },
+            {
+              "courseCode": "CMPUT 379",
+              "title": "Operating System Concepts",
+              "department": "CMPUT",
+              "note": null
+            },
+            {
+              "courseCode": "CMPUT 401",
+              "title": "Software Process and Product Management",
+              "department": "CMPUT",
+              "note": null
+            },
+            {
+              "courseCode": "CMPUT 402",
+              "title": "Software Quality",
+              "department": "CMPUT",
+              "note": null
+            }
+          ]
+        }
+      ],
+      "notesList": [],
+      "order": 5,
+      "blockType": "category"
+    },
+    {
+      "title": "3 units from:",
+      "groups": [
+        {
+          "groupTitle": "3 units from:",
+          "description": [],
+          "courses": [
+            {
+              "courseCode": "STAT 252",
+              "title": "Introduction to Applied Statistics II",
+              "department": "STAT",
+              "note": null
+            },
+            {
+              "courseCode": "STAT 266",
+              "title": "Probability and Statistics II",
+              "department": "STAT",
+              "note": null
+            }
+          ]
+        }
+      ],
+      "notesList": [],
+      "order": 6,
+      "category": "Senior Courses",
+      "unitsRequired": 3,
+      "blockType": "option"
+    },
+    {
+      "title": "3 units from:",
+      "groups": [
+        {
+          "groupTitle": "3 units from:",
+          "description": [],
+          "courses": [
+            {
+              "courseCode": "CMPUT 200",
+              "title": "Ethics of Data Science and Artificial Intelligence",
+              "department": "CMPUT",
+              "note": null
+            },
+            {
+              "courseCode": "CMPUT 300",
+              "title": "Computers and Society",
+              "department": "CMPUT",
+              "note": null
+            }
+          ]
+        }
+      ],
+      "notesList": [],
+      "order": 7,
+      "category": "Senior Courses",
+      "unitsRequired": 3,
+      "blockType": "option"
+    },
+    {
+      "title": "3 units from:",
+      "groups": [
+        {
+          "groupTitle": "3 units from:",
+          "description": [],
+          "courses": [
+            {
+              "courseCode": "CMPUT 304",
+              "title": "Algorithms II",
+              "department": "CMPUT",
+              "note": "(See Note 2)"
+            },
+            {
+              "courseCode": "CMPUT 340",
+              "title": "Introduction to Numerical Methods",
+              "department": "CMPUT",
+              "note": "(See Note 2)"
+            },
+            {
+              "courseCode": "CMPUT 474",
+              "title": "Formal Languages, Automata, and Computability",
+              "department": "CMPUT",
+              "note": null
+            }
+          ]
+        }
+      ],
+      "notesList": [],
+      "order": 8,
+      "category": "Senior Courses",
+      "unitsRequired": 3,
+      "blockType": "option"
+    },
+    {
+      "title": "3 units from:",
+      "groups": [
+        {
+          "groupTitle": "3 units from:",
+          "description": [],
+          "courses": [
+            {
+              "courseCode": "CMPUT 399",
+              "title": "Topics in Computing Science",
+              "department": "CMPUT",
+              "note": "(See Note 2)"
+            },
+            {
+              "courseCode": "CMPUT 469",
+              "title": "Artificial Intelligence Capstone",
+              "department": "CMPUT",
+              "note": null
+            },
+            {
+              "courseCode": "CMPUT 499",
+              "title": "Topics in Computing Science",
+              "department": "CMPUT",
+              "note": null
+            }
+          ]
+        }
+      ],
+      "notesList": [],
+      "order": 9,
+      "category": "Senior Courses",
+      "unitsRequired": 3,
+      "blockType": "option"
+    },
+    {
+      "title": "12 units from:",
+      "groups": [
+        {
+          "groupTitle": "12 units from:",
+          "description": ["any 300- and 400-level CMPUT course"],
+          "courses": []
+        }
+      ],
+      "notesList": [],
+      "order": 10,
+      "category": "Senior Courses",
+      "unitsRequired": 12,
+      "blockType": "option"
+    },
+    {
+      "title": "9 units from:",
+      "groups": [
+        {
+          "groupTitle": "9 units from:",
+          "description": ["any 400-level CMPUT course"],
+          "courses": []
+        }
+      ],
+      "notesList": [],
+      "order": 11,
+      "category": "Senior Courses",
+      "unitsRequired": 9,
+      "blockType": "option"
+    },
+    {
+      "title": "12 units from:",
+      "groups": [
+        {
+          "groupTitle": "12 units from:",
+          "description": [
+            "Any course offered by the Faculty of Business (with the exception of BTM 211 , BTM 415 , BTM 419 , and MGTSC 212 ); must include 6 units in courses with the following course designators:",
+            "BTM",
+            "MGTSC",
+            "OM"
+          ],
+          "courses": []
+        }
+      ],
+      "notesList": [],
+      "order": 12,
+      "category": "Senior Courses",
+      "unitsRequired": 12,
+      "blockType": "option"
+    },
+    {
+      "title": "8-, 12-, or 16-month Science Internship (SIP)",
+      "groups": [
+        {
+          "groupTitle": "8-, 12-, or 16-month Science Internship (SIP)",
+          "description": [
+            "Students who fail to complete a placement in the SIP must withdraw from the program and reapply to continue in the Honors in Computing Science or Major in Computing Science programs.",
+            "See Science Internship Program for more information."
+          ],
+          "courses": []
+        }
+      ],
+      "notesList": [],
+      "order": 13,
+      "category": "Senior Courses",
+      "blockType": "requirement"
+    },
+    {
+      "title": "Notes",
+      "groups": [
+        {
+          "groupTitle": "Notes",
+          "description": [],
+          "courses": []
+        }
+      ],
+      "notesList": [
+        "Students may replace CMPUT 174  with CMPUT 274 , and CMPUT 175  with CMPUT 275 . Students who take CMPUT 275  cannot take CMPUT 201  for credit, and must replace CMPUT 201  with another CMPUT course at the 200-level or above.",
+        "At least 18 CMPUT units must be taken at the 400-level.",
+        "Upper level CMPUT courses may require specific CMPUT, MATH or STAT courses as prerequisites. These prerequisites must be considered when choosing Science options."
+      ],
+      "order": 14,
+      "category": "Senior Courses",
+      "blockType": "note"
+    }
+  ],
+  "categories": [
+    {
+      "id": "category-foundation-courses",
+      "name": "Foundation Courses",
+      "blocks": ["block-0", "block-1", "block-2", "block-3", "block-4"]
+    },
+    {
+      "id": "category-senior-courses",
+      "name": "Senior Courses",
+      "blocks": [
+        "block-5",
+        "block-6",
+        "block-7",
+        "block-8",
+        "block-9",
+        "block-10",
+        "block-11",
+        "block-12",
+        "block-13",
+        "block-14"
+      ]
+    }
+  ]
+}

@@ -1,43 +1,18 @@
-import 'server-only'; 
-import { PrismaClient, Prisma } from '@prisma/client';
-import { Course, RequirementsData, InputNode, AppEdge, isRequirementsData } from './types';
-import { cache } from 'react';
-import { z } from 'zod'; 
-import dotenv from 'dotenv';
-dotenv.config(); // Load environment variables from .env file
+import "server-only";
+import { PrismaClient, Prisma } from "@prisma/client";
+import { Course, RequirementsData, InputNode, AppEdge, isRequirementsData } from "./types";
+import { cache } from "react";
+import { z } from "zod";
+import dotenv from "dotenv";
+dotenv.config();
 
 const globalForPrisma = global as unknown as { prisma: PrismaClient };
-export const prisma = globalForPrisma.prisma || new PrismaClient({
-   datasourceUrl: process.env.DATABASE_URL,
-});
-if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma;
-
-// --- Helper Functions ---
-
-/**
- * Parses a course string (e.g., "CMPUT 17") into department and code number.
- * Returns null if the format is invalid.
- */
-function parseCourseString(courseString: string): { department: string; codeNumber: string } | null {
-    if (!courseString) return null;
-    const trimmedInput = courseString.trim().toUpperCase();
-    // Regex to capture standard UAlberta course format
-    const match = trimmedInput.match(/^([A-Z]+)\s*(\d+[A-Z]*)$/);
-    // For special cases like INT D 301 where are two spaces
-    
-
-
-
-
-    if (match && match[1] && match[2]) {
-        // Return consistent uppercase department and code number
-        return { department: match[1], codeNumber: match[2] };
-    }
-   return null;
-}
-
-
-// --- Main Data Fetching Functions ---
+export const prisma =
+  globalForPrisma.prisma ||
+  new PrismaClient({
+    datasourceUrl: process.env.DATABASE_URL,
+  });
+if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
 
 /**
 <<<<<<< HEAD
@@ -50,51 +25,50 @@ function parseCourseString(courseString: string): { department: string; codeNumb
 >>>>>>> 3d6741f (Implemented the RecursiveCTE to solve N+1 problem)
  */
 export const getCourseDetails = cache(
-    async (departmentCode: string, courseCodeNumber: string): Promise<Course | null> => {
-        const upperDept = departmentCode.toUpperCase();
-        const codeNumUpper = courseCodeNumber.toUpperCase();
-        const fullCourseCode = `${upperDept} ${codeNumUpper}`;
-        // Limit logging in production for performance/security
-        if (process.env.NODE_ENV === 'development') {
-            console.log(`[Data] Fetching details for: ${fullCourseCode}`);
-        }
-        try {
-            const dbCourse = await prisma.course.findUnique({
-                where: {
-                    department_courseCode_unique: {
-                        department: upperDept,
-                        courseCode: fullCourseCode,
-                    }
-                }
-            });
-
-            if (!dbCourse) {
-                console.warn(`[Data] Course not found: ${fullCourseCode}`);
-                return null;
-            }
-
-            // Map database result to application's Course type
-            // Perform runtime validation/parsing for JSON fields if necessary
-            const mappedCourse: Course = {
-                id: dbCourse.id, 
-                department: dbCourse.department,
-                courseCode: dbCourse.courseCode,
-                title: dbCourse.title,
-                units: dbCourse.units as Course['units'], // Adding Zod parsing here
-                keywords: dbCourse.keywords,
-                requirements: dbCourse.requirements as RequirementsData, // Adding Zod parsing here
-                flattenedPrerequisites: dbCourse.flattenedPrerequisites,
-                flattenedCorequisites: dbCourse.flattenedCorequisites,
-                url: dbCourse.url,
-                updatedAt: dbCourse.updatedAt.toISOString(), 
-            };
-            return mappedCourse;
-
-        } catch (error) {
-            console.error(`[Data] Error in getCourseDetails for ${fullCourseCode}:`, error);
-            return null; 
-        }
+  async (departmentCode: string, courseCodeNumber: string): Promise<Course | null> => {
+    const upperDept = departmentCode.toUpperCase();
+    const codeNumUpper = courseCodeNumber.toUpperCase();
+    const fullCourseCode = `${upperDept} ${codeNumUpper}`;
+    // Limit logging in production for performance/security
+    if (process.env.NODE_ENV === "development") {
+      console.log(`[Data] Fetching details for: ${fullCourseCode}`);
     }
+    try {
+      const dbCourse = await prisma.course.findUnique({
+        where: {
+          department_courseCode_unique: {
+            department: upperDept,
+            courseCode: fullCourseCode,
+          },
+        },
+      });
+
+      if (!dbCourse) {
+        console.warn(`[Data] Course not found: ${fullCourseCode}`);
+        return null;
+      }
+
+      // Map database result to application's Course type
+      // Perform runtime validation/parsing for JSON fields if necessary
+      const mappedCourse: Course = {
+        id: dbCourse.id,
+        department: dbCourse.department,
+        courseCode: dbCourse.courseCode,
+        title: dbCourse.title,
+        units: dbCourse.units as Course["units"], // Adding Zod parsing here
+        keywords: dbCourse.keywords,
+        requirements: dbCourse.requirements as RequirementsData, // Adding Zod parsing here
+        flattenedPrerequisites: dbCourse.flattenedPrerequisites,
+        flattenedCorequisites: dbCourse.flattenedCorequisites,
+        url: dbCourse.url,
+        updatedAt: dbCourse.updatedAt.toISOString(),
+      };
+      return mappedCourse;
+    } catch (error) {
+      console.error(`[Data] Error in getCourseDetails for ${fullCourseCode}:`, error);
+      return null;
+    }
+  }
 );
 
 /**
@@ -103,37 +77,70 @@ export const getCourseDetails = cache(
  * Uses React Cache.
  */
 export const getMultipleCourseDetails = cache(
-    async (courseCodes: string[]): Promise<Pick<Course, 'id' | 'department' | 'courseCode' | 'title'>[]> => {
-        if (!courseCodes || courseCodes.length === 0) return [];
+  async (
+    courseCodes: string[]
+  ): Promise<Pick<Course, "id" | "department" | "courseCode" | "title">[]> => {
+    if (!courseCodes || courseCodes.length === 0) return [];
 
-        // Ensure consistent casing if necessary, though Prisma handles it well
-        const upperCaseCodes = courseCodes.map(code => code.toUpperCase().trim());
-        if (process.env.NODE_ENV === 'development') {
-             console.log(`[Data] Fetching basic details for ${courseCodes.length} courses.`);
-        }
-        try {
-            const courses = await prisma.course.findMany({
-                where: { courseCode: { in: upperCaseCodes } },
-                // Select only the absolutely necessary fields for the list display
-                select: { id: true, department: true, courseCode: true, title: true },
-            });
-            // Direct return as selected fields match the desired Pick<...> type
-            return courses;
-        } catch (error) {
-            console.error(`[Data] Error fetching multiple course details:`, error);
-            return []; // Return empty array on error
-        }
+    // Ensure consistent casing if necessary, though Prisma handles it well
+    const upperCaseCodes = courseCodes.map((code) => code.toUpperCase().trim());
+    if (process.env.NODE_ENV === "development") {
+      console.log(`[Data] Fetching basic details for ${courseCodes.length} courses.`);
     }
+    try {
+      const courses = await prisma.course.findMany({
+        where: { courseCode: { in: upperCaseCodes } },
+        // Select only the absolutely necessary fields for the list display
+        select: { id: true, department: true, courseCode: true, title: true },
+      });
+      // Direct return as selected fields match the desired Pick<...> type
+      return courses;
+    } catch (error) {
+      console.error(`[Data] Error fetching multiple course details:`, error);
+      return []; // Return empty array on error
+    }
+  }
 );
 
 /**
+<<<<<<< HEAD
+=======
+ * Fetches basic details (id, code, title, dept) for all courses in a given department.
+ * Optimized for list displays.
+ * Uses React Cache.
+ */
+export const getCoursesByDepartment = cache(
+  async (
+    departmentCode: string
+  ): Promise<Pick<Course, "id" | "department" | "courseCode" | "title">[]> => {
+    if (!departmentCode) return [];
+    const upperDept = departmentCode.toUpperCase().trim();
+    if (process.env.NODE_ENV === "development") {
+      console.log(`[Data] Fetching basic details for courses in department: ${upperDept}`);
+    }
+    try {
+      const courses = await prisma.course.findMany({
+        where: { department: upperDept },
+        // Select only necessary fields for list display
+        select: { id: true, department: true, courseCode: true, title: true },
+        orderBy: { courseCode: "asc" }, // Consistent ordering
+      });
+      return courses;
+    } catch (error) {
+      console.error(`[Data] Error fetching courses for department ${upperDept}:`, error);
+      return []; // Return empty array on error
+    }
+  }
+);
+
+/**
+>>>>>>> 6f6aa09 (feat: Implemented a 'search mode' where users can either search by title, or by course code. Also added zod validation on data collection functions)
  * Recursively fetches prerequisite courses using a PostgreSQL Recursive CTE.
  * Returns structured data including nodes (both Course objects and InputNode for text requirements)
  * and edges (AppEdge with depth information). Filters out high school requirements.
  * Uses Zod for runtime validation of raw SQL query results.
  * Uses React Cache.
  */
-
 
 const highSchoolPatterns = new Set([
   "MATHEMATICS 30-1",
@@ -143,7 +150,8 @@ const highSchoolPatterns = new Set([
   "PHYSICS 30",
   "CHEMISTRY 30",
   "BIOLOGY 30",
-  "ENGLISH LANGUAGE ARTS 30-1", "ELA 30-1"
+  "ENGLISH LANGUAGE ARTS 30-1",
+  "ELA 30-1",
 ]);
 const isHighSchoolPrereq = (text: string): boolean => {
   return highSchoolPatterns.has(text.toUpperCase().trim());
@@ -188,7 +196,7 @@ function processCourseNodes(
         department: row.department,
         courseCode: courseCode,
         title: row.title,
-        units: row.units as Course['units'],
+        units: row.units as Course["units"],
         keywords: row.keywords,
         requirements: row.requirements as RequirementsData,
         flattenedPrerequisites: row.flattenedPrerequisites,
@@ -237,7 +245,7 @@ function processTextPrerequisites(
               data: {
                 label: prereqString,
                 isCourse: false,
-                type: 'text_requirement',
+                type: "text_requirement",
               },
               // Position will be handled by layout
             };
@@ -246,7 +254,7 @@ function processTextPrerequisites(
           // Create edge from current course node to this text node
           const targetDepth = sourceDepth + 1;
           const edgeId = `edge-${courseCode}-to-${normalizedPrereq}-depth-${targetDepth}`;
-          if (!finalEdges.some(e => e.id === edgeId)) {
+          if (!finalEdges.some((e) => e.id === edgeId)) {
             finalEdges.push({
               id: edgeId,
               source: courseCode,
@@ -267,13 +275,31 @@ export const getRecursivePrerequisitesCTE = cache(
     departmentCode: string,
     courseCodeNumber: string,
     maxDepth: number = 6
-  ): Promise<{ nodes: (Course | InputNode)[], edges: AppEdge[] }> => {
+  ): Promise<{ nodes: (Course | InputNode)[]; edges: AppEdge[] }> => {
     const deptUpper = departmentCode.toUpperCase();
     const codeNumUpper = courseCodeNumber.toUpperCase();
     const fullCourseCode = `${deptUpper} ${codeNumUpper}`;
 
-    if (process.env.NODE_ENV === 'development') {
-      console.log(`[DataCTE] Fetching recursive prerequisites for: ${fullCourseCode} up to depth ${maxDepth}`);
+    // --- Input Validation ---
+    try {
+      CourseCodeSchema.parse(fullCourseCode); // Use the existing schema
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        console.error(`[DataCTE] Invalid course code format for ${fullCourseCode}:`, error);
+        // Re-throw the ZodError to be handled by the caller (consistent with getCoursesByDependency)
+        throw error;
+      } else {
+        // Handle unexpected errors during validation (should be rare)
+        console.error(`[DataCTE] Unexpected error during validation for ${fullCourseCode}:`, error);
+        throw new Error("Unexpected validation error"); // Throw a generic error
+      }
+    }
+    // --- End Input Validation ---
+
+    if (process.env.NODE_ENV === "development") {
+      console.log(
+        `[DataCTE] Fetching recursive prerequisites for: ${fullCourseCode} up to depth ${maxDepth}`
+      );
     }
 
     // --- The Recursive CTE SQL Query ---
@@ -326,122 +352,123 @@ export const getRecursivePrerequisitesCTE = cache(
       // Combine course nodes and text nodes into a single nodes array
       const finalNodes: (Course | InputNode)[] = [
         ...Array.from(courseNodesMap.values()),
-        ...Array.from(textNodesMap.values())
+        ...Array.from(textNodesMap.values()),
       ];
 
-      if (process.env.NODE_ENV === 'development') {
-        console.log(`[DataCTE] Found ${courseNodesMap.size} course nodes, ${textNodesMap.size} text nodes, and ${finalEdges.length} total edges.`);
+      if (process.env.NODE_ENV === "development") {
+        console.log(
+          `[DataCTE] Found ${courseNodesMap.size} course nodes, ${textNodesMap.size} text nodes, and ${finalEdges.length} total edges.`
+        );
       }
 
       return { nodes: finalNodes, edges: finalEdges };
-
     } catch (error) {
       if (error instanceof z.ZodError) {
         console.error("[DataCTE] Zod validation failed:", JSON.stringify(error.errors, null, 2));
       } else {
-        console.error(`[DataCTE] Error fetching recursive prerequisites for ${fullCourseCode}:`, error);
+        console.error(
+          `[DataCTE] Error fetching recursive prerequisites for ${fullCourseCode}:`,
+          error
+        );
       }
       return { nodes: [], edges: [] };
     }
   }
 );
 
+const CourseCodeSchema = z
+  .string()
+  .trim()
+  .toUpperCase()
+  .regex(
+    /^[A-Z]{2,6}\s\d{3}$/,
+    'Invalid course code format, expected "DEPT 123" format with 2-6 letters and 3 digits'
+  );
 
+async function getCoursesByDependency(
+  field: "flattenedPrerequisites" | "flattenedCorequisites",
+  rawCourseCode: string,
+  options?: { take?: number; skip?: number }
+): Promise<Pick<Course, "id" | "department" | "courseCode" | "title">[]> {
+  // 2.a Validate & normalize
+  const courseCode = CourseCodeSchema.parse(rawCourseCode);
+
+  try {
+    // 2.b Build findMany args with optional pagination
+    const findManyArgs: Parameters<typeof prisma.course.findMany>[0] = {
+      where: { [field]: { has: courseCode } },
+      select: { id: true, department: true, courseCode: true, title: true },
+      orderBy: { courseCode: "asc" as const },
+      ...(options?.take !== undefined ? { take: options.take } : {}),
+      ...(options?.skip !== undefined ? { skip: options.skip } : {}),
+    };
+
+    if (process.env.NODE_ENV === "development") {
+      console.log(`[Data] Fetching courses where ${field} has ${courseCode}`, options);
+    }
+
+    return await prisma.course.findMany(findManyArgs);
+  } catch (err) {
+    // 2.c Surface errors so you can monitor/fail tests
+    console.error(`[Data] Error in getCoursesByDependency(${field}, ${courseCode}):`, err);
+    throw err;
+  }
+}
 
 /**
- * Fetches courses that list the target course code in their flattenedPrerequisites.
- * Returns basic details suitable for list displays ("Required By").
- * Uses React Cache.
+ * "What classes has this as a prerequisite?"
  */
 export const getCoursesRequiring = cache(
-    async (targetCourseCode: string): Promise<Pick<Course, 'id' | 'department' | 'courseCode' | 'title'>[]> => {
-        if (!targetCourseCode) return [];
-        const upperTargetCode = targetCourseCode.toUpperCase().trim();
-         if (process.env.NODE_ENV === 'development') {
-            console.log(`[Data] Fetching courses requiring prerequisite: ${upperTargetCode}`);
-        }
-        try {
-            const courses = await prisma.course.findMany({
-                // Use Prisma's efficient array 'has' filter for text[] columns
-                where: { flattenedPrerequisites: { has: upperTargetCode } },
-                select: { id: true, department: true, courseCode: true, title: true },
-                orderBy: { courseCode: 'asc' }, // Consistent ordering
-            });
-            return courses;
-        } catch (error) {
-            console.error(`[Data] Error fetching courses requiring ${upperTargetCode}:`, error);
-            return [];
-        }
-    }
+  async (targetCourseCode: string, options?: { take?: number; skip?: number }) => {
+    return getCoursesByDependency("flattenedPrerequisites", targetCourseCode, options);
+  }
 );
 
 /**
- * Fetches courses that list the target course code in their flattenedCorequisites.
- * Returns basic details suitable for list displays ("Corequisite For").
- * Uses React Cache.
+ * "What classes has this as a corequisite?"
  */
 export const getCoursesHavingCorequisite = cache(
-    async (targetCourseCode: string): Promise<Pick<Course, 'id' | 'department' | 'courseCode' | 'title'>[]> => {
-        if (!targetCourseCode) return [];
-        const upperTargetCode = targetCourseCode.toUpperCase().trim();
-         if (process.env.NODE_ENV === 'development') {
-            console.log(`[Data] Fetching courses having corequisite: ${upperTargetCode}`);
-        }
-        try {
-            const courses = await prisma.course.findMany({
-                // Use Prisma's efficient array 'has' filter for text[] columns
-                where: { flattenedCorequisites: { has: upperTargetCode } },
-                select: { id: true, department: true, courseCode: true, title: true },
-                orderBy: { courseCode: 'asc' }, // Consistent ordering
-            });
-            return courses;
-        } catch (error) {
-            console.error(`[Data] Error fetching courses having ${upperTargetCode}:`, error);
-            return [];
-        }
-    }
+  async (targetCourseCode: string, options?: { take?: number; skip?: number }) => {
+    return getCoursesByDependency("flattenedCorequisites", targetCourseCode, options);
+  }
 );
-
 
 // --- DEPRECATED / REMOVED FUNCTIONS ---
 // The original `getRecursivePrerequisites` (N+1 version) has been removed.
 // The `getCourseAndPrerequisiteData` might be less useful now with the CTE providing
-// full recursive data, but can be kept if simple direct prereq lists are needed elsewhere.
+// full recursive data, but can be kept if simple direct prereq lists are needed elsewhere
 
-/**
- * Orchestrator: Fetches target course details + basic details of its *direct* prerequisites.
- * Less critical now with CTE, but kept for potential simpler use cases or reference.
- * Uses React Cache.
- */
- export const getCourseAndPrerequisiteData = cache(
-     async (departmentCode: string, courseCodeNumber: string) => {
-         const targetCourse = await getCourseDetails(departmentCode, courseCodeNumber);
+// export const getCourseAndPrerequisiteData = cache(
+//   async (departmentCode: string, courseCodeNumber: string) => {
+//     const targetCourse = await getCourseDetails(departmentCode, courseCodeNumber);
 
-         if (!targetCourse) {
-             return { targetCourse: null, prerequisiteCourses: [] };
-         }
+//     if (!targetCourse) {
+//       return { targetCourse: null, prerequisiteCourses: [] };
+//     }
 
-         let prerequisiteCourses: Pick<Course, 'id' | 'department' | 'courseCode' | 'title'>[] = [];
-         // Check if flattenedPrerequisites is an array and has items
-         if (Array.isArray(targetCourse.flattenedPrerequisites) && targetCourse.flattenedPrerequisites.length > 0) {
-             // Filter out non-course strings *before* fetching details
-             const prereqCourseCodes = targetCourse.flattenedPrerequisites
-     .map(req => {
-         const parsed = parseCourseString(req);
-         // Create the full course code if parsing succeeded
-         return parsed ? `${parsed.department} ${parsed.codeNumber}` : null;
-     })
-     .filter((code): code is string => !!code);
+//     let prerequisiteCourses: Pick<Course, "id" | "department" | "courseCode" | "title">[] = [];
+//     // Check if flattenedPrerequisites is an array and has items
+//     if (
+//       Array.isArray(targetCourse.flattenedPrerequisites) &&
+//       targetCourse.flattenedPrerequisites.length > 0
+//     ) {
+//       // Filter out non-course strings *before* fetching details
+//       const prereqCourseCodes = targetCourse.flattenedPrerequisites
+//         .map((req) => {
+//           const parsed = parseCourseString(req);
+//           // Create the full course code if parsing succeeded
+//           return parsed ? `${parsed.department} ${parsed.codeNumber}` : null;
+//         })
+//         .filter((code): code is string => !!code);
 
-             if (prereqCourseCodes.length > 0) {
-                 prerequisiteCourses = await getMultipleCourseDetails(prereqCourseCodes);
-             }
-         }
+//       if (prereqCourseCodes.length > 0) {
+//         prerequisiteCourses = await getMultipleCourseDetails(prereqCourseCodes);
+//       }
+//     }
 
-         return { targetCourse, prerequisiteCourses };
-     }
-);
-
+//     return { targetCourse, prerequisiteCourses };
+//   }
+// );
 
 /**
 >>>>>>> 5dc1d31 (Fixed parser and data pipeline to remove parsed description and use keywords instead to avoid any ToS violations)

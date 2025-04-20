@@ -58,12 +58,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+<<<<<<< HEAD
       <body className={cn("min-h-screen font-sans antialiased", afacad.variable, libreBaskerville.variable, caveat.variable)}>
         <ThemeProvider
             attribute="class"
             defaultTheme="light"
             enableSystem
         >
+=======
+      <body
+        className={cn(
+          "min-h-screen font-sans antialiased",
+          afacad.variable,
+          libreBaskerville.variable,
+          caveat.variable
+        )}
+      >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+>>>>>>> 3dd7bed (feat: Added a feeback card where people can submit feedback and course requests)
           <QueryProvider>
             <div className="relative flex min-h-screen flex-col">
               <header className="sticky top-0 z-50 w-full border-b border-border bg-card p-2 text-card-foreground backdrop-blur-md">

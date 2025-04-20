@@ -321,12 +321,12 @@ export default function CourseSearchInput() {
           onClick={() => setSearchMode("code")}
           className={cn(
             "cursor-pointer select-none",
-            "ring-2 ring-transparent",
-            "focus:outline-none focus:ring-ring focus:ring-offset-0",
+            "ring-2",
+            searchMode === "code" ? "ring-ring scale-105" : "ring-transparent",
+            "focus:outline-none focus:ring focus:ring-offset-0",
             "focus:border-transparent",
             "transition-all duration-200 ease-in-out",
-            "hover:scale-105 focus:scale-105",
-            searchMode !== "code" && "hover:bg-accent"
+            searchMode !== "code" && "hover:bg-accent hover:scale-105"
           )}
           data-search-mode-badge="true"
           aria-pressed={searchMode === "code"}
@@ -343,12 +343,12 @@ export default function CourseSearchInput() {
           onClick={() => setSearchMode("title")}
           className={cn(
             "cursor-pointer select-none",
-            "ring-2 ring-transparent",
-            "focus:outline-none focus:ring-ring focus:ring-offset-0",
+            "ring-2",
+            searchMode === "title" ? "ring-ring scale-105" : "ring-transparent",
+            "focus:outline-none focus:ring focus:ring-offset-0",
             "focus:border-transparent",
             "transition-all duration-200 ease-in-out",
-            "hover:scale-105 focus:scale-105",
-            searchMode !== "title" && "hover:bg-accent"
+            searchMode !== "title" && "hover:bg-accent hover:scale-105"
           )}
           data-search-mode-badge="true"
           aria-pressed={searchMode === "title"}

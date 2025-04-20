@@ -1,42 +1,38 @@
-// components/component/course-link-list.tsx
-'use client';
+"use client";
 
-import Link from 'next/link';
+import Link from "next/link";
 
-import type { Course } from '@/lib/types'; // Adjust path if needed
-
+import type { Course } from "@/lib/types";
 
 interface CourseLinkListProps {
-    courses: Array<Pick<Course, 'id' | 'department' | 'courseCode' | 'title'>>;
-    emptyMessage?: string;
+  courses: Array<Pick<Course, "id" | "department" | "courseCode" | "title">>;
+  emptyMessage?: string;
 }
 
 export function CourseLinkList({ courses, emptyMessage = "None found." }: CourseLinkListProps) {
+  if (!courses || courses.length === 0) {
+    return <p className="text-sm text-muted-foreground italic">{emptyMessage}</p>;
+  }
 
-    if (!courses || courses.length === 0) {
-        return <p className="text-sm text-muted-foreground italic">{emptyMessage}</p>;
-    }
+  return (
+    <ul className="space-y-1 list-disc list-inside">
+      {courses.map((course) => {
+        const searchParams = new URLSearchParams({
+          dept: course.department.toLowerCase(),
+          code: course.courseCode.split(" ")[1] || "", // Extract code number after space
+        });
+        const href = `/?${searchParams.toString()}`;
 
-    return (
-        
-        <ul className="space-y-1 list-disc list-inside">
-            {courses.map((course) => {
-                
-                const searchParams = new URLSearchParams({
-                     dept: course.department.toLowerCase(),
-                     code: course.courseCode.split(' ')[1] || '' // Extract code number after space
-                 });
-                 const href = `/?${searchParams.toString()}`;
-
-                return (
-                    <li key={course.id || course.courseCode}>
-                         <Link href={href} className="text-sm rounded-md text-[#588157] transition-colors hover:bg-[#606c5d] hover:text-[#fefae0] duration-200">
-                             {course.courseCode}: {course.title}
-                         </Link>
-                    </li>
-                );
-            })}
-        </ul>
-
-    );
+        return (
+          <li key={course.id || course.courseCode}>
+            <span className="group pl-1 pr-1 rounded-md transition-colors duration-200 hover:bg-[#606c5d]">
+              <Link href={href} className="text-sm text-[#588157] group-hover:text-white">
+                {course.courseCode}: {course.title}
+              </Link>
+            </span>
+          </li>
+        );
+      })}
+    </ul>
+  );
 }

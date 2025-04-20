@@ -39,7 +39,11 @@ export default async function PrerequisitesPage({ searchParams }: any) {
             <CardHeader>
               <CardTitle>Check Course Requirements</CardTitle>
               <CardDescription className="text-muted-foreground dark:text-muted-foreground">
-                Enter a course code (e.g., &quot;CMPUT 272&quot;) to find its prerequisites.
+                <span className="font-bold">
+                  Note: The suggestion bar only displays the first 10 results
+                </span>{" "}
+                so if you don&apos;t see the class you&apos;re looking for, please make your search
+                more specific.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -68,6 +72,30 @@ export default async function PrerequisitesPage({ searchParams }: any) {
               </p>
             </div>
           )}
+        </div>
+
+        {/* {{ Feedback Section }} */}
+        <div className="mt-12 pt-8 border-t border-border/40 flex justify-center">
+          <Card className="w-full max-w-2xl shadow-sm border-border/60 frosted">
+            <CardHeader>
+              <CardTitle className="text-lg text-center">Missing Data or Feedback?</CardTitle>
+            </CardHeader>
+            <CardContent className="text-center space-y-4">
+              <p className="text-sm text-muted-foreground">
+                No info for your department/class? Please let me know by filling out this form!
+                Also, feel free to give me some feedback and features you&apos;d like to see!
+              </p>
+              <Button asChild variant="outline">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdx5Gnh4yrNRxSBEBRQAnmGVX1biHqYag-ZZyg58zRTFEI5Sg/viewform?usp=header"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Provide Feedback / Request Course
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
         </div>
       </main>
     </div>

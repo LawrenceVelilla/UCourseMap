@@ -66,7 +66,7 @@ export default function RootLayout({
           caveat.variable
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <QueryProvider>
             <div className="relative flex min-h-screen flex-col">
               <header className="sticky top-0 z-50 w-full border-b border-border bg-card p-2 text-card-foreground backdrop-blur-md">

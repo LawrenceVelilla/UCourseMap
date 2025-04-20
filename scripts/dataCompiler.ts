@@ -1,208 +1,209 @@
-// scripts/saveToDB.ts
-import { PrismaClient, Prisma } from '@prisma/client';
-import * as fs from 'fs/promises'; // Use promises API
-import * as path from 'path';
-import * as readline from 'readline';
-import { stdin as input, stdout as output } from 'process';
-import dotenv from 'dotenv';
+// scripts/dataCompiler.ts
+import * as readline from "readline";
+import { stdin as input, stdout as output } from "process";
+import fs from "fs/promises";
+import path from "path";
+import axios from "axios";
+import dotenv from "dotenv";
 
-// --- Load Environment Variables ---
-// Assumes script is run from project root, loads .env from root
-dotenv.config({ path: path.resolve(__dirname, '../.env') });
-// ---------------------------------
+// --- Local Utilities and Types ---
+// Adjust paths based on your project structure
+import { AIparse } from "../utils/collection/parser"; // Assuming AIparse returns keywords
+import { parseCoursesHTML } from "../utils/collection/scrape-courses";
+// Assuming types are defined in lib/types.ts relative to project root
+import type { Course, RawCourse } from "@/lib/types";
 
-// Interface matching the expected structure in the parsed JSON file
-interface CourseJsonData {
-  department: string;
-  courseCode: string;
-  title: string;
-  units: Prisma.JsonValue;
-  keywords: string[]; // Keywords field from AIParse
-  requirements: Prisma.JsonValue;
-  flattenedPrerequisites: string[] | [];
-  flattenedCorequisites: string[] | [];
-  url: string;
-  
-  // Removed parsedDescription
-  // Add other fields like rawDescription, parsingStatus, lastParsedAt if your JSON and Schema include them
-}
+// --- Import the specific save function ---
+import { save as saveCoursesToDB } from "./saveToDB";
 
-// --- Prisma Client Instantiation with Direct URL ---
-const directDbUrl = process.env.DIRECT_URL;
-if (!directDbUrl) {
-  console.error("\n❌ Error: DIRECT_DATABASE_URL environment variable is not set.");
-  console.error("   Please ensure it's defined in your .env file for this script.\n");
-  process.exit(1);
-}
+// --- Load Environment Variables (needed for AIparse if it uses API keys) ---
+dotenv.config({ path: path.resolve(__dirname, "../.env") });
+// ----------------------------------------------------------------------
 
-const prisma = new PrismaClient();
+// --- Configuration ---
+const DATA_DIR = path.resolve(__dirname, "../data"); // Data directory relative to scripts/
 
-function fixDuplicatedDepartmentInCourseCode(course: CourseJsonData): CourseJsonData {
-  const dept = course.department.trim().toUpperCase();
-  
-  // Check if course code has department repeated
-  if (course.courseCode.startsWith(`${dept} ${dept}`)) {
-    // Fix by removing the duplicate
-    course.courseCode = course.courseCode.replace(`${dept} ${dept}`, dept);
-    console.log(`[SaveDB] Fixed duplicated department in course code: ${course.courseCode}`);
-  }
-  
-  return course;
-}
-// --------------------------------------------------
+// --- Helper Functions ---
 
-/**
- * Reads parsed course data from JSON and upserts it into the database.
- * Designed to be callable by other scripts.
- * @param department - The department code (lowercase) to process.
- * @returns Summary object { success, total, upserted, failed }
- */
-export async function save(department: string) { // <-- EXPORTED
-  let coursesJson: CourseJsonData[];
-  // Path assumes script is in 'scripts/' and data is in sibling 'data/' directory
-  const jsonFilePath = path.resolve(__dirname, '../data', `parsed_${department}courses.json`);
-  const BATCH_SIZE = 50; // Adjust batch size as needed
-
-  let summary = { success: false, total: 0, upserted: 0, failed: 0 };
-
+async function checkFileExists(filePath: string): Promise<boolean> {
   try {
-    console.log(`[SaveDB] Reading data from: ${jsonFilePath}`);
-    const fileContent = await fs.readFile(jsonFilePath, 'utf-8');
-    if (!fileContent.trim()) {
-      throw new Error(`JSON file is empty or contains only whitespace: ${jsonFilePath}`);
-    }
-    coursesJson = JSON.parse(fileContent);
-    console.log(`[SaveDB] Parsed JSON data successfully.`);
-  } catch (error: any) {
-    console.error(`[SaveDB] ❌ Error reading or parsing JSON file (${jsonFilePath}): ${error.message}`);
-    return summary; // Return default summary on file read error
+    await fs.access(filePath);
+    return true;
+  } catch {
+    return false;
   }
-
-  if (!Array.isArray(coursesJson)) {
-    console.error("[SaveDB] ❌ JSON data is not an array. Expected format: [ {course1}, {course2}, ... ]");
-    return summary;
-  }
-
-  summary.total = coursesJson.length;
-  console.log(`[SaveDB] Found ${summary.total} courses in JSON file.`);
-  if (summary.total === 0) {
-    console.log("[SaveDB] No courses to load.");
-    summary.success = true;
-    return summary;
-  }
-
-  console.log(`[SaveDB] Starting upsert process in batches of ${BATCH_SIZE}...`);
-  let coursesProcessed = 0;
-
-  for (let i = 0; i < summary.total; i += BATCH_SIZE) {
-    const batch = coursesJson.slice(i, i + BATCH_SIZE);
-    const batchNumber = Math.floor(i / BATCH_SIZE) + 1;
-    console.log(`[SaveDB] Processing Batch ${batchNumber} (${batch.length} courses)...`);
-
-    const upsertPromises = batch.map(async (course) => {
-      let fixedCourse = fixDuplicatedDepartmentInCourseCode(course);
-      let processedData: Prisma.CourseCreateInput | null = null;
-      const courseIdentifier = fixedCourse.courseCode?.trim() || 'UNKNOWN_CODE';
-      const departmentIdentifier = fixedCourse.department?.trim() || 'UNKNOWN_DEPT';
-
-      try {
-        // --- Prepare Data for Upsert ---
-        processedData = {
-          department: departmentIdentifier.toUpperCase(), // Store department uppercase
-          courseCode: courseIdentifier.toUpperCase(), // Store course code uppercase
-          title: course.title?.trim() || 'Untitled Course',
-          units: course.units ?? Prisma.JsonNull,
-          keywords: course.keywords ?? [], // Use keywords, default to empty array
-          requirements: course.requirements ?? Prisma.JsonNull,
-          flattenedPrerequisites: course.flattenedPrerequisites ?? [],
-          flattenedCorequisites: course.flattenedCorequisites ?? [],
-          url: course.url ?? null,
-          
-          // Removed parsedDescription
-          // Add other fields here if they exist in your JSON and Prisma Schema
-          // rawDescription: course.rawDescription ?? null,
-        };
-
-        if (processedData.department === 'UNKNOWN_DEPT' || processedData.courseCode === 'UNKNOWN_CODE') {
-            throw new Error(`Missing required department or courseCode for entry: ${JSON.stringify(course)}`);
-        }
-
-        await prisma.course.upsert({
-          where: {
-            department_courseCode_unique: {
-              department: processedData.department,
-              courseCode: processedData.courseCode,
-            },
-          },
-          update: { ...processedData,
-            updatedAt: new Date(), // Update timestamp on upsert
-           },
-          create: processedData,
-        });
-        summary.upserted++;
-      } catch (error: any) {
-        console.error(`[SaveDB] ❌ Failed Batch ${batchNumber}: Course ${departmentIdentifier} ${courseIdentifier}. Error: ${error.message}`);
-        summary.failed++;
-      } finally {
-        coursesProcessed++;
-      }
-    });
-
-    await Promise.all(upsertPromises);
-    console.log(`[SaveDB] Batch ${batchNumber} processed. Status - Upserted: ${summary.upserted}, Failed: ${summary.failed}, Total Processed: ${coursesProcessed}/${summary.total}`);
-  }
-
-  console.log("[SaveDB] ----------------------------------------");
-  console.log("[SaveDB] Data loading summary:");
-  console.log(`  Total courses in JSON: ${summary.total}`);
-  console.log(`  Successfully upserted: ${summary.upserted}`);
-  console.log(`  Failed to upsert:      ${summary.failed}`);
-  console.log("[SaveDB] ----------------------------------------");
-
-  summary.success = summary.failed === 0;
-  return summary;
 }
 
-// --- Standalone Script Execution Logic ---
 function getDepartmentInput(): Promise<string> {
   const rl = readline.createInterface({ input, output });
   return new Promise((resolve) => {
-      rl.question('[SaveDB] Please enter the department name (lowercase, e.g., cmput, math): ', (answer) => {
-          rl.close(); // Close interface!
-          resolve(answer.trim().toLowerCase());
-      });
+    rl.question("Please enter the department name (lowercase, e.g., cmput): ", (answer) => {
+      rl.close();
+      resolve(answer.trim().toLowerCase());
+    });
   });
 }
 
-async function runStandaloneImport() {
-  console.log("\n[SaveDB] Starting Standalone Database Save Script...");
-  const department = await getDepartmentInput();
-  if (!department) {
-    console.error("[SaveDB] ❌ No department name entered. Exiting.");
-    return;
-  }
+function getConfirmationInput(phase: string): Promise<boolean> {
+  const rl = readline.createInterface({ input, output });
+  return new Promise((resolve) => {
+    rl.question(`\nDo you want to continue to ${phase}? (y/n): `, (answer) => {
+      rl.close();
+      resolve(answer.trim().toLowerCase() === "y");
+    });
+  });
+}
+
+function getNum(list: any[], action: string = "parse"): Promise<number> {
+  const rl = readline.createInterface({ input, output });
+  const total = list.length;
+  return new Promise((resolve) => {
+    rl.question(
+      `\nHow many courses do you want to ${action}? (Total available: ${total})\n` +
+        ` Options: a (all) | h (half: ${Math.floor(total / 2)}) | <number>: `,
+      (answer) => {
+        rl.close();
+        const trimmedAnswer = answer.trim().toLowerCase();
+        if (trimmedAnswer === "a" || trimmedAnswer === "") resolve(total);
+        else if (trimmedAnswer === "h") resolve(Math.floor(total / 2));
+        else {
+          const ans = parseInt(trimmedAnswer);
+          if (isNaN(ans)) {
+            console.warn("Invalid input. Defaulting to all.");
+            resolve(total);
+          } else if (ans < 0) {
+            console.warn("Input negative. Defaulting to all.");
+            resolve(total);
+          } else if (ans > total) {
+            console.warn(`Input > available. Defaulting to all.`);
+            resolve(total);
+          } else resolve(ans);
+        }
+      }
+    );
+  });
+}
+
+function getStartNum(list: any[], action: string = "parsing"): Promise<number> {
+  const rl = readline.createInterface({ input, output });
+  const total = list.length;
+  return new Promise((resolve) => {
+    rl.question(
+      `\nWhat is the starting index for ${action}? (0 to ${total - 1}, default: 0): `,
+      (answer) => {
+        rl.close();
+        const ans = parseInt(answer.trim());
+        if (isNaN(ans) || answer.trim() === "") resolve(0);
+        else if (ans < 0) {
+          console.warn("Start index < 0. Defaulting to 0.");
+          resolve(0);
+        } else if (ans >= total) {
+          console.warn(`Start index >= total. Defaulting to 0.`);
+          resolve(0);
+        } else resolve(ans);
+      }
+    );
+  });
+}
+// --- End Helper Functions ---
+
+/**
+ * Main orchestration function for the data collection pipeline.
+ */
+async function runDataCollection() {
+  let department: string | null = null;
+  let scrapedData: RawCourse[] = [];
+  // Define parsedData type to include keywords and exclude parsedDescription
+  let parsedData: Course[] = [];
+  let ranScraping = false;
+  let ranParsing = false;
 
   try {
-    console.log(`[SaveDB] Starting data import for department: ${department}`);
-    await save(department); // Call the exported save function
-    console.log(`[SaveDB] ✅ Data import process finished for department: ${department}.`);
-  } catch (error) {
-    console.error(`[SaveDB] ❌ An unexpected error occurred during standalone import for ${department}:`, error);
-  } finally {
-    try {
-        await prisma.$disconnect();
-        console.log("[SaveDB] Prisma client disconnected successfully.");
-    } catch (disconnectError) {
-        console.error("[SaveDB] ❌ Error disconnecting Prisma client:", disconnectError);
+    department = await getDepartmentInput();
+    if (!department) throw new Error("No department name entered.");
+
+    const rawDataPath = path.join(DATA_DIR, `${department}courses.json`);
+    const parsedDataPath = path.join(DATA_DIR, `parsed_${department}courses.json`);
+
+    console.log(`\n---------- Pipeline Start: ${department.toUpperCase()} ----------`);
+    await fs.mkdir(DATA_DIR, { recursive: true });
+
+    // 1. Scrape Data
+    if (await getConfirmationInput("Scraping")) {
+      ranScraping = true;
+      console.log(`\n[1/3] Scraping data for ${department}...`);
+      const url = `https://apps.ualberta.ca/catalogue/course/${department}`;
+      const { data: htmlContent } = await axios.get(url);
+      scrapedData = await parseCoursesHTML(htmlContent);
+      if (!scrapedData || scrapedData.length === 0)
+        throw new Error(`Scraping failed or returned no data.`);
+      await fs.writeFile(rawDataPath, JSON.stringify(scrapedData, null, 2));
+      console.log(`✅ Scraped ${scrapedData.length} raw courses to ${rawDataPath}`);
+    } else {
+      /* ... load existing logic ... */
     }
+
+    scrapedData = await fs
+      .readFile(rawDataPath, "utf-8")
+      .then((data) => JSON.parse(data) as RawCourse[]);
+
+    // 2. Parse Data with AI
+    if (scrapedData.length === 0) {
+      /* ... skip message ... */
+    }
+    if (await getConfirmationInput("AI Parsing (Keywords, Requirements)")) {
+      ranParsing = true;
+      const limit = await getNum(scrapedData, "parse");
+      const start = await getStartNum(scrapedData, "parsing");
+      const dataToParse = scrapedData.slice(start, start + limit);
+
+      if (dataToParse.length === 0) console.log("\nNo courses selected for parsing.");
+      else {
+        console.log(
+          `\n[2/3] AI Parsing ${dataToParse.length} courses (index ${start} to ${start + limit - 1})...`
+        );
+        // AIparse should return ParsedCourseForCompiler[]
+        parsedData = await AIparse(dataToParse);
+        if (!parsedData) throw new Error(`AI Parsing failed.`);
+        parsedData = parsedData.filter((p) => p != null);
+        await fs.writeFile(parsedDataPath, JSON.stringify(parsedData, null, 2));
+        console.log(`✅ Parsed ${parsedData.length} courses to ${parsedDataPath}`);
+      }
+    } else {
+      /* ... skip message ... */
+    }
+
+    if (parsedData.length === 0)
+      parsedData = await fs
+        .readFile(parsedDataPath, "utf-8")
+        .then((data) => JSON.parse(data) as Course[]);
+
+    // 3. Insert Data into Database
+    const parsedFileExists = await checkFileExists(parsedDataPath);
+    if (!parsedFileExists) {
+      /* ... skip message ... */
+    } else if (await getConfirmationInput("Database Insertion")) {
+      console.log(`\n[3/3] Saving data from ${parsedDataPath} to Database...`);
+      const saveResult = await saveCoursesToDB(department); // Call imported function
+      if (!saveResult.success)
+        console.warn(`⚠️ Database save finished with ${saveResult.failed} errors.`);
+      else console.log(`✅ Database save completed successfully.`);
+    } else {
+      /* ... skip message ... */
+    }
+
+    console.log("\n--- Pipeline Complete ---");
+  } catch (error) {
+    console.error("\n--- ❌ Pipeline Error ---");
+    if (department) console.error(`  Department: ${department}`);
+    console.error("  Error:", error instanceof Error ? error.message : error);
+  } finally {
+    console.log("\nData collection script finished.");
   }
 }
 
-// Run standalone logic ONLY if this script is executed directly
-if (require.main === module) {
-  runStandaloneImport().catch(e => {
-    console.error("[SaveDB] ❌ A critical error occurred in standalone execution:", e);
-    process.exit(1);
-  });
-}
-// --- End Standalone Logic ---
+// --- Execute ---
+runDataCollection().catch((e) => {
+  console.error("❌ Critical error running data compiler:", e);
+  process.exit(1);
+});

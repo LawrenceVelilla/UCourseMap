@@ -28,7 +28,7 @@ function parseCourseString(courseString: string) {
   const m = courseString
     .trim()
     .toUpperCase()
-    .match(/^([A-Z]+)\s*(\d+[A-Z]*)$/);
+    .match(/^([A-Z]+(?:\s[A-Z]+)*)\s*(\d+[A-Z]*)$/);
   return m ? { department: m[1], codeNumber: m[2] } : null;
 }
 
@@ -302,7 +302,7 @@ export default function CourseSearchInput() {
           onClick={doCheck}
           disabled={isChecking || (!selectedValue && !parseCourseString(inputValue))}
           aria-label="View course details"
-          className="min-w-[80px]"
+          className="min-w-[80px] mt-3"
         >
           {isChecking ? (
             <div className="flex items-center space-x-1">

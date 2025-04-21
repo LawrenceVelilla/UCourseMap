@@ -25,8 +25,8 @@ export function CourseLinkList({ courses, emptyMessage = "None found." }: Course
 
         return (
           <li key={course.id || course.courseCode}>
-            <span className="group pl-1 pr-1 rounded-md transition-colors duration-200 hover:bg-[#606c5d]">
-              <Link href={href} className="text-sm text-[#588157] group-hover:text-white">
+            <span className="group pl-2 pr-2 rounded-md transition-colors duration-200 hover:bg-[#606c5d]">
+              <Link href={href} className="text-[#588157] group-hover:text-white">
                 {course.courseCode}: {course.title}
               </Link>
             </span>

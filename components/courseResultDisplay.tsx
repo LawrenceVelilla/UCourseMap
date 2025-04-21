@@ -267,6 +267,19 @@ export function CourseResultDisplay({
           </Tabs>
         </CardContent>
       </Card>
+
+      {targetCourse.requirements?.notes && (
+        <Card
+          className="bento-card md:col-span-3 shadow-md border border-gray-200
+            dark:border-neutral-800 dark:bg-transparent dark:frosted"
+        >
+          <CardHeader>
+            <CardTitle className="text-3xl">Requirement Notes</CardTitle>
+            <CardDescription>{targetCourse.requirements.notes}</CardDescription>
+          </CardHeader>
+        </Card>
+      )}
+
       {/* Card 3: Graph Card */}
       <Card
         className="bento-card md:col-span-3

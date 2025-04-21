@@ -371,8 +371,8 @@ const CourseCodeSchema = z
   .trim()
   .toUpperCase()
   .regex(
-    /^[A-Z]{2,6}\s\d{3}$/,
-    'Invalid course code format, expected "DEPT 123" format with 2-6 letters and 3 digits'
+    /^([A-Z]{2,6})(?:\s([A-Z]+))?\s(\d{3})$/,
+    'Invalid course code format, expected "DEPT 123" or "DEPT X 123" format'
   );
 
 async function getCoursesByDependency(

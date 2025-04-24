@@ -10,11 +10,27 @@ import { HelpCircle, Search } from "lucide-react"; // Added Search icon
 // Helper function to parse course code string
 function parseCourseCode(input: string): { dept: string; code: string } | null {
   const trimmedInput = input.trim().toUpperCase();
-  // Matches patterns like "DEPT 123", "DEPT123", "DEPT 123A", "DEPT123A"
-  const match = trimmedInput.match(/^([A-Z]+)\s*(\d+[A-Z]*)$/);
-  if (match && match[1] && match[2]) {
-    return { dept: match[1], code: match[2] }; // Keep case as parsed (uppercase)
+
+  // First try to match departments with spaces like "INT D 461"
+  // This regex matches patterns like "INT D 461", where the department has a space
+  const spacedDeptMatch = trimmedInput.match(/^([A-Z]+\s+[A-Z])\s+(\d+[A-Z]*)$/);
+  if (spacedDeptMatch && spacedDeptMatch[1] && spacedDeptMatch[2]) {
+    return { dept: spacedDeptMatch[1], code: spacedDeptMatch[2] };
   }
+
+  // Try matching with more than two characters in the second part of department (e.g., "INT D1")
+  const spacedDeptMatch2 = trimmedInput.match(/^([A-Z]+\s+[A-Z]+)\s+(\d+[A-Z]*)$/);
+  if (spacedDeptMatch2 && spacedDeptMatch2[1] && spacedDeptMatch2[2]) {
+    return { dept: spacedDeptMatch2[1], code: spacedDeptMatch2[2] };
+  }
+
+  // Then try the original pattern for regular departments like "CMPUT 272"
+  // Matches patterns like "DEPT 123", "DEPT123", "DEPT 123A", "DEPT123A"
+  const standardMatch = trimmedInput.match(/^([A-Z]+)\s*(\d+[A-Z]*)$/);
+  if (standardMatch && standardMatch[1] && standardMatch[2]) {
+    return { dept: standardMatch[1], code: standardMatch[2] };
+  }
+
   return null;
 }
 
@@ -26,7 +42,7 @@ export function PrerequisiteCheckerForm() {
   const initialDept = searchParams.get("dept");
   const initialCode = searchParams.get("code");
   const [inputValue, setInputValue] = useState(
-    initialDept && initialCode ? `${initialDept.toUpperCase()} ${initialCode}` : ""
+    initialDept && initialCode ? `${initialDept.toUpperCase()} ${initialCode}` : "",
   );
   const [parseError, setParseError] = useState<string | null>(null);
 
@@ -99,7 +115,9 @@ export function PrerequisiteCheckerForm() {
       {showExampleTip && (
         <div className="text-xs text-gray-500 flex items-center gap-1.5 mt-1 pl-1">
           <HelpCircle className="h-3.5 w-3.5" />
-          <span>Try searching for &quot;CMPUT 272&quot; or &quot;MATH 125&quot;</span>
+          <span>
+            Try searching for &quot;CMPUT 272&quot;, &quot;MATH 125&quot;, or &quot;INT D 100&quot;
+          </span>
         </div>
       )}
     </form>

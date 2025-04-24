@@ -144,3 +144,36 @@
     }
   }
 }
+
+/* Add some global helper classes for mobile optimization */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Mobile touch optimization */
+@media (max-width: 768px) {
+  .touch-area {
+    min-height: 44px; /* Apple's recommended minimum touch target size */
+  }
+
+  /* Improve touch targets on links and buttons */
+  a,
+  button {
+    padding: 0.5rem;
+    touch-action: manipulation;
+  }
+}
+
+/* Force horizontal scrolling containers to snap */
+.snap-x-container {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.snap-x-container > * {
+  scroll-snap-align: start;
+}

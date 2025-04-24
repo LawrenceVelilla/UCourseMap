@@ -24,17 +24,16 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { RequirementConditionDisplay } from "@/components/requirementConditionDisplay";
-import PrerequisiteGraphWrapper, {
-  InputNode,
-  AppEdge,
-  levelColors,
-} from "@/components/prerequisiteGraph";
 import { CourseLinkList } from "./courseLinkList";
 import { Course } from "@/lib/types";
 import Link from "next/link";
 import { ExternalLink, AlertCircle } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { ExpandableCardContent } from "./expandableCardContent";
+import dynamic from "next/dynamic";
+// Import types and constants separately
+import type { InputNode, AppEdge } from "@/components/prerequisiteGraph";
+import { levelColors } from "@/components/prerequisiteGraph";
 
 interface CourseResultDisplayProps {
   targetCourse: Course;
@@ -46,6 +45,16 @@ interface CourseResultDisplayProps {
 }
 
 const app_url = "https://apps.ualberta.ca";
+
+// Dynamically import PrerequisiteGraphWrapper with SSR turned off
+const PrerequisiteGraphWrapper = dynamic(() => import("@/components/prerequisiteGraph"), {
+  ssr: false,
+  loading: () => (
+    <div className="p-4 text-center min-h-[200px] flex items-center justify-center">
+      <p>Loading graph...</p>
+    </div>
+  ), // Optional loading indicator
+});
 
 export function CourseResultDisplay({
   targetCourse,

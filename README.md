@@ -1,8 +1,7 @@
 # UniPlanner - University of Alberta Course Planning Tool 🎓
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![CI/CD Pipeline](https://github.com/yourusername/uni-planner-sup/actions/workflows/test.yml/badge.svg)](https://github.com/yourusername/uni-planner-sup/actions/workflows/test.yml)
-[![codecov](https://codecov.io/gh/yourusername/uni-planner-sup/branch/main/graph/badge.svg)](https://codecov.io/gh/yourusername/uni-planner-sup)
+[![CI/CD Pipeline](https://github.com/LawrenceVelilla/Uni-Planner-UCourseMap-/actions/workflows/test.yml/badge.svg)](https://github.com/LawrenceVelilla/Uni-Planner-UCourseMap-/actions/workflows/test.yml)
 
 **An intelligent web application designed to help University of Alberta students navigate course selection, visualize prerequisites, build schedules, and stay on track with their degree requirements.**
 

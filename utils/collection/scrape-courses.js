@@ -25,7 +25,7 @@ export async function parseCoursesHTML(html) {
     const courseUrl = $course.find("h2 a").attr("href");
 
     // Parse course code and title
-    const codeTitleMatch = headerText.match(/^([A-Z]+\s\d+)\s*[-–—]?\s*(.*)/);
+    const codeTitleMatch = headerText.match(/^([A-Z]+(?:\s[A-Z]+)?\s+\d+)\s*[-–—]?\s*(.*)/);
     let courseCode = codeTitleMatch ? codeTitleMatch[1] : "";
     let title = codeTitleMatch ? codeTitleMatch[2] : headerText;
 
@@ -37,8 +37,12 @@ export async function parseCoursesHTML(html) {
       title = sectionMatch[2].trim();
     }
 
-    // Ectract department
-    const department = courseCode.split(" ")[0];
+    // Extract department - handle multi-word departments
+    let department = "";
+    const deptMatch = courseCode.match(/^([A-Z]+(?:\s[A-Z]+)?)/); // Match letters at the start, possibly including one space
+    if (deptMatch) {
+      department = deptMatch[1];
+    }
 
     // Extract units
     const unitsText = $course.find("b").text().trim();

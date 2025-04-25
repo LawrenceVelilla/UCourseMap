@@ -8,7 +8,7 @@ import { getCourseDetails } from "@/lib/data";
 
 export async function GET(
   request: NextRequest,
-  context: any // Use 'any' for the context parameter
+  context: any, // Use 'any' for the context parameter
 ) {
   // Access params via the context object (assuming structure)
   const departmentCode = context?.params?.department;
@@ -17,7 +17,7 @@ export async function GET(
   if (!departmentCode || !courseCodeNumber) {
     return NextResponse.json(
       { message: "Department and Course Code are required" },
-      { status: 400 }
+      { status: 400 },
     );
   }
 
@@ -29,7 +29,7 @@ export async function GET(
       // Data function returned null, meaning not found
       return NextResponse.json(
         { message: `Course ${departmentCode.toUpperCase()} ${courseCodeNumber} not found` },
-        { status: 404 }
+        { status: 404 },
       );
     }
 

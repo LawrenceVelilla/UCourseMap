@@ -1,6 +1,5 @@
 import type React from "react";
 import "@/app/globals.css";
-import { Inter } from "next/font/google";
 import { Afacad, Caveat, Libre_Baskerville } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Footer } from "@/components/footer";
@@ -9,8 +8,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import { cn } from "@/lib/utils";
 import QueryProvider from "@/components/QueryProvider";
-
-const inter = Inter({ subsets: ["latin"] });
 
 const afacad = Afacad({
   subsets: ["latin"],

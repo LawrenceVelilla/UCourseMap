@@ -76,9 +76,9 @@ export async function CourseInfoWrapper({ department, code }: CourseInfoWrapperP
     // The CTE query should always include the starting node.
     targetCourseNode = recursiveGraphData.nodes.find(
       (
-        node
+        node,
       ): node is Course => // Type guard to ensure we are checking a Course object
-        "courseCode" in node && node.courseCode.toUpperCase() === targetCourseCode
+        "courseCode" in node && node.courseCode.toUpperCase() === targetCourseCode,
     );
 
     // Handle case where the target course itself wasn't found (should be rare if validation passed).
@@ -142,13 +142,6 @@ export async function CourseInfoWrapper({ department, code }: CourseInfoWrapperP
   console.log("[Wrapper] Preparing graph data...");
   const graphInputNodes: InputNode[] = []; // Nodes to pass to the graph component.
   const graphInputEdges: AppEdge[] = []; // Edges to pass to the graph component.
-
-  // Create a set of all valid course codes fetched for quick lookups.
-  const allFetchedCourseNodeCodes = new Set(
-    recursiveGraphData.nodes
-      .filter((n): n is Course => "courseCode" in n) // Only consider actual Course objects.
-      .map((n) => n.courseCode.toUpperCase())
-  );
   // Keep track of nodes actually added to the graph to avoid duplicate text nodes.
   const addedGraphNodeIds = new Set<string>();
 
@@ -244,7 +237,7 @@ export async function CourseInfoWrapper({ department, code }: CourseInfoWrapperP
     }
   });
   console.log(
-    `[Graph Prep] Prepared ${graphInputNodes.length} nodes and ${graphInputEdges.length} edges for the graph.`
+    `[Graph Prep] Prepared ${graphInputNodes.length} nodes and ${graphInputEdges.length} edges for the graph.`,
   );
 
   // --- Render Client Component with Prepared Data ---

@@ -45,7 +45,7 @@ export async function GET(request: NextRequest) {
       .join("; ");
     return NextResponse.json(
       { error: `Invalid query parameters: ${errorMessage}` },
-      { status: 400 }
+      { status: 400 },
     );
   }
 

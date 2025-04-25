@@ -4,9 +4,6 @@ import dagre from "dagre";
 import { useTheme } from "next-themes";
 import {
   ReactFlow,
-  Controls,
-  Background,
-  BackgroundVariant,
   useNodesState,
   useEdgesState,
   useReactFlow,
@@ -172,7 +169,7 @@ const getLayoutedElements = (
   nodesToLayout: Node<GraphNodeData>[],
   edgesToLayout: Edge[],
   direction: LayoutDirection,
-  theme?: string // Add theme parameter
+  theme?: string, // Add theme parameter
 ): { nodes: AppNode[]; edges: AppEdge[] } => {
   // Get theme-based styles
   const { targetNodeStyle, prereqNodeStyle, textNodeStyle } = getNodeStyles(theme);
@@ -185,14 +182,14 @@ const getLayoutedElements = (
     try {
       dagreGraph.removeNode(nodeId);
     } catch (e) {
-      /* Ignore if node not found */
+      console.error("Dagre removeNode failed:", e);
     }
   });
   dagreGraph.edges().forEach((edge) => {
     try {
       dagreGraph.removeEdge(edge.v, edge.w);
     } catch (e) {
-      /* Ignore if edge not found */
+      console.error("Dagre removeEdge failed:", e);
     }
   });
 
@@ -421,7 +418,13 @@ const PrerequisiteGraphLayout = ({
   // Render the React Flow component.
   return (
     <div
-      style={{ height: "500px", width: "100%", border: "1px solid #d1d1c4", borderRadius: "5px" }}
+      style={{
+        height: "min(500px, 70vh)", // Responsive height based on viewport
+        width: "100%",
+        border: "1px solid #d1d1c4",
+        borderRadius: "5px",
+      }}
+      className="touch-manipulation" // Improves touch behavior on mobile
     >
       <ReactFlow
         nodes={nodes}
@@ -430,21 +433,23 @@ const PrerequisiteGraphLayout = ({
         onEdgesChange={onEdgesChange}
         onNodeClick={handleNodeClick}
         className="bg-background"
-        nodesDraggable={false} // Prevent users from dragging nodes.
-        nodesConnectable={false} // Prevent users from creating new edges.
-        style={theme === "dark" ? { backgroundColor: "#1a1a1a" } : { backgroundColor: "#FFFFFF" }} // Set graph background color.
-        proOptions={{ hideAttribution: true }} // Hide React Flow attribution mark.
-        minZoom={0.5}
+        nodesDraggable={false}
+        nodesConnectable={false}
+        style={theme === "dark" ? { backgroundColor: "#1a1a1a" } : { backgroundColor: "#FFFFFF" }}
+        proOptions={{ hideAttribution: true }}
+        minZoom={0.25} // Lower minimum zoom for mobile
+        maxZoom={2.5} // Higher maximum zoom for pinch-to-zoom
         fitView
+        fitViewOptions={{
+          padding: 0.2, // More padding around the graph
+          includeHiddenNodes: false,
+        }}
         attributionPosition="top-right"
-      >
-        {/* <Background 
-              variant={BackgroundVariant.Dots} 
-              gap={12} 
-              size={1} 
-              color={theme === 'dark' ? '#000000' : '#000000'}
-            /> */}
-      </ReactFlow>
+        zoomOnScroll={true}
+        panOnScroll={true} // Enable pan with scroll for better mobile interaction
+        zoomOnPinch={true} // Enable pinch-to-zoom on mobile
+        panOnDrag={true}
+      ></ReactFlow>
     </div>
   );
 };

@@ -8,7 +8,7 @@ import { getCoursesByDepartment } from "@/lib/data"; // Adjust path if needed
 
 export async function GET(
   request: NextRequest,
-  context: any // Use 'any' for the context parameter
+  context: any, // Use 'any' for the context parameter
 ) {
   // Access params via the context object (assuming structure)
   const departmentCode = context?.params?.department;

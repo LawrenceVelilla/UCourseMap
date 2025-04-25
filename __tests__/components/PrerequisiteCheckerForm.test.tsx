@@ -158,7 +158,7 @@ describe("PrerequisiteCheckerForm", () => {
     expect(mockPush).toHaveBeenCalledWith("/?dept=int+d&code=100");
   });
 
-  // Let's skip this problematic test for now and focus on improving test coverage elsewhere
+  // Skip this problematic test for now and focus on improving test coverage elsewhere
   test.skip("updates input when searchParams change", async () => {
     // This test is problematic because it's difficult to simulate how React's useEffect
     // behaves with the useSearchParams hook in a test environment

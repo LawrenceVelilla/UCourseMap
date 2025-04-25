@@ -12,8 +12,13 @@ interface Params {
 }
 
 export async function GET(
+<<<<<<< HEAD
   request: Request,
   { params }: { params: Params }
+=======
+  request: NextRequest,
+  context: any, // Use 'any' for the context parameter
+>>>>>>> 2189e6d (feat: Implement Intial MVP for the Plan Builder and Program Planner)
 ) {
   const departmentCode = params.department;
 

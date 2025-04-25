@@ -3,8 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BookOpen, Calendar, GraduationCap, Home, User } from "lucide-react";
 import { cn } from "@/lib/utils"; // Utility for conditional classes
-import { ThemeSwitcher } from "./theme-switcher"; // Import the theme switcher
-import { Button } from "@/components/ui/button";
+import { ThemeSwitcher } from "./theme-switcher"; // Import the theme switchermport { Button } from "@/components/ui/button";
 
 export function HeaderNav() {
   const pathname = usePathname();
@@ -13,9 +12,9 @@ export function HeaderNav() {
   const navItems = [
     { href: "/", label: "Home", icon: Home },
     // { href: "/classes", label: "Classes", icon: BookOpen },
-    { href: "/planner", label: "Planner", icon: Calendar },
+    { href: "/program-planner", label: "Planner", icon: Calendar },
     { href: "/", label: "Prereq Checker", icon: GraduationCap },
-    { href: "/programs", label: "Programs", icon: BookOpen },
+    { href: "/planner", label: "Programs", icon: BookOpen },
   ];
 
   return (
@@ -24,7 +23,7 @@ export function HeaderNav() {
         <nav className="flex-1 flex items-center">
           <Link href="/" className="mr-3 sm:mr-6 flex items-center space-x-2">
             {/* You can add an icon or logo here if you like */}
-            <span className="font-bold text-sm sm:text-base whitespace-nowrap">Uni Planner</span>
+            <span className="font-bold text-sm sm:text-base whitespace-nowrap">UCourse Map</span>
           </Link>
           <div className="flex items-center justify-between space-x-1 sm:space-x-2 md:space-x-4 overflow-x-auto hide-scrollbar">
             {navItems.map((item) => (

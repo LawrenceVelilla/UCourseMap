@@ -1,24 +1,65 @@
-'use client';
+"use client";
 
-import Link from "next/link";
+import { useState, useEffect } from "react";
+import ProgramViewer from "@/components/ProgramViewer";
+import PlanBuilder from "@/components/PlanBuilder";
+import { useProgramPlanStore } from "@/utils/store/programPlanStore";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
 
-export default function SignInPage() {
+// TODO: Replace with dynamic program selection later
+const PROGRAM_FILE_IDENTIFIER = "program_requirements_structured.json";
+
+export default function PlannerPage() {
+  const [activeTab, setActiveTab] = useState<"viewer" | "builder">("viewer");
+  const loadProgramData = useProgramPlanStore((state) => state.loadProgramData);
+  const program = useProgramPlanStore((state) => state.program);
+  const resetState = useProgramPlanStore((state) => state.resetState);
+
+  // Load the default program when the component mounts
+  useEffect(() => {
+    console.log(`PlannerPage: Loading program data using identifier: ${PROGRAM_FILE_IDENTIFIER}`);
+    resetState();
+    void loadProgramData(PROGRAM_FILE_IDENTIFIER);
+
+    // Optional: Cleanup function to reset state when leaving the page
+    return () => {
+      console.log("PlannerPage: Unmounting, resetting state.");
+      resetState();
+    };
+  }, [loadProgramData, resetState]); // Dependencies
+
   return (
-    <div className="min-h-[70vh] flex flex-col items-center justify-center bg-red-500/4 border-2 border-red-200 text-red-800 p-5 rounded-lg mx-auto my-5 max-w-3xl shadow-lg">
-      <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Page on the way!</h1>
-      <p className="text-xl md:text-2xl mb-12 text-center">Please head back to the main page</p>
-      
-      <Link href="/" passHref>
-        <Button 
-          size="lg"
-          className="flex items-center gap-2 bg-transparent text-red-800 hover:bg-gray-100 border-2 shadow-md frosted"
+    <div className="container mx-auto py-8 px-4">
+      <h1 className="text-3xl font-bold mb-6">
+        Program Planner {program ? `- ${program.programName}` : ""}
+      </h1>
+
+      {/* Tab Buttons */}
+      <div className="mb-6 flex space-x-2 border-b">
+        <Button
+          variant={activeTab === "viewer" ? "secondary" : "ghost"}
+          onClick={() => setActiveTab("viewer")}
+          className={`pb-2 rounded-none border-b-2 ${activeTab === "viewer" ? "border-primary" : "border-transparent"} hover:border-muted-foreground/50`}
         >
-          <ArrowLeft size={20} />
-          Return Home
+          Program Requirements
         </Button>
-      </Link>
+        <Button
+          variant={activeTab === "builder" ? "secondary" : "ghost"}
+          onClick={() => setActiveTab("builder")}
+          className={`pb-2 rounded-none border-b-2 ${activeTab === "builder" ? "border-primary" : "border-transparent"} hover:border-muted-foreground/50`}
+        >
+          My Plan Builder
+        </Button>
+      </div>
+
+      {/* Content Area */}
+      <div className="tab-content">
+        {activeTab === "viewer" && (
+          // ProgramViewer reads the program from the store, no need for initialProgram prop here
+          <ProgramViewer />
+        )}
+        {activeTab === "builder" && <PlanBuilder />}
+      </div>
     </div>
   );
 }

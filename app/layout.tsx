@@ -14,7 +14,6 @@ import QueryProvider from "@/components/QueryProvider"
 =======
 import type React from "react";
 import "@/app/globals.css";
-import { Inter } from "next/font/google";
 import { Afacad, Caveat, Libre_Baskerville } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Footer } from "@/components/footer";
@@ -25,8 +24,11 @@ import { cn } from "@/lib/utils";
 import QueryProvider from "@/components/QueryProvider";
 >>>>>>> 2a52df9 (fix: Optimized headerNav for mobile UI so that there is no overfill. Added unit testing thru jest)
 
+<<<<<<< HEAD
 const inter = Inter({ subsets: ["latin"] })
 
+=======
+>>>>>>> 2189e6d (feat: Implement Intial MVP for the Plan Builder and Program Planner)
 const afacad = Afacad({
   subsets: ["latin"],
   weight: "400",

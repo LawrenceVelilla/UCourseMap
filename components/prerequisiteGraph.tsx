@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+=======
+"use client";
+import React, { useEffect, useMemo } from "react";
+import dagre from "dagre";
+import { useTheme } from "next-themes";
+import {
+  ReactFlow,
+  useNodesState,
+  useEdgesState,
+  useReactFlow,
+  Node,
+  Edge,
+  Position,
+  MarkerType,
+  ReactFlowProvider,
+} from "@xyflow/react";
+import { useRouter } from "next/navigation";
+>>>>>>> 2189e6d (feat: Implement Intial MVP for the Plan Builder and Program Planner)
 
 'use client'
 import React, { useEffect, useMemo } from 'react';
@@ -128,15 +147,23 @@ type LayoutDirection = 'TB' | 'LR';
  * @returns An object containing nodes with calculated positions and styled edges.
  */
 const getLayoutedElements = (
+<<<<<<< HEAD
     nodesToLayout: Node<GraphNodeData>[], 
     edgesToLayout: Edge[],
     direction: LayoutDirection,
     theme?: string // Add theme parameter
+=======
+  nodesToLayout: Node<GraphNodeData>[],
+  edgesToLayout: Edge[],
+  direction: LayoutDirection,
+  theme?: string, // Add theme parameter
+>>>>>>> 2189e6d (feat: Implement Intial MVP for the Plan Builder and Program Planner)
 ): { nodes: AppNode[]; edges: AppEdge[] } => {
 
     // Get theme-based styles
     const { targetNodeStyle, prereqNodeStyle, textNodeStyle } = getNodeStyles(theme);
 
+<<<<<<< HEAD
     // Configure Dagre graph settings.
     dagreGraph.setGraph({ rankdir: direction, nodesep: 60, ranksep: 60, marginx: 20, marginy: 20 });
 
@@ -158,6 +185,23 @@ const getLayoutedElements = (
         // Fallback: Return nodes with original (likely 0,0) positions if layout fails.
         return { nodes: nodesToLayout.map(n => ({...n, position: n.position ?? { x: 0, y: 0 } })), edges: edgesToLayout };
     }
+=======
+  // Clear previous graph elements to prevent errors on re-layout.
+  dagreGraph.nodes().forEach((nodeId: string) => {
+    try {
+      dagreGraph.removeNode(nodeId);
+    } catch (e) {
+      console.error("Dagre removeNode failed:", e);
+    }
+  });
+  dagreGraph.edges().forEach((edge) => {
+    try {
+      dagreGraph.removeEdge(edge.v, edge.w);
+    } catch (e) {
+      console.error("Dagre removeEdge failed:", e);
+    }
+  });
+>>>>>>> 2189e6d (feat: Implement Intial MVP for the Plan Builder and Program Planner)
 
     // Process layout results and map back to React Flow node structure.
     const finalNodes: AppNode[] = nodesToLayout.map((node) => {
@@ -340,6 +384,7 @@ const PrerequisiteGraphLayout = ({ initialNodes, initialEdges, theme }: Prerequi
 
   // Render the React Flow component.
   return (
+<<<<<<< HEAD
     <div style={{ height: '500px', width: '100%', border: '1px solid #d1d1c4', borderRadius: '5px' }}>
         <ReactFlow
             nodes={nodes}
@@ -364,6 +409,41 @@ const PrerequisiteGraphLayout = ({ initialNodes, initialEdges, theme }: Prerequi
               color={theme === 'dark' ? '#1a1a1a' : '#ddd'}
             />
         </ReactFlow>
+=======
+    <div
+      style={{
+        height: "min(500px, 70vh)", // Responsive height based on viewport
+        width: "100%",
+        border: "1px solid #d1d1c4",
+        borderRadius: "5px",
+      }}
+      className="touch-manipulation" // Improves touch behavior on mobile
+    >
+      <ReactFlow
+        nodes={nodes}
+        edges={edges}
+        onNodesChange={onNodesChange}
+        onEdgesChange={onEdgesChange}
+        onNodeClick={handleNodeClick}
+        className="bg-background"
+        nodesDraggable={false}
+        nodesConnectable={false}
+        style={theme === "dark" ? { backgroundColor: "#1a1a1a" } : { backgroundColor: "#FFFFFF" }}
+        proOptions={{ hideAttribution: true }}
+        minZoom={0.25} // Lower minimum zoom for mobile
+        maxZoom={2.5} // Higher maximum zoom for pinch-to-zoom
+        fitView
+        fitViewOptions={{
+          padding: 0.2, // More padding around the graph
+          includeHiddenNodes: false,
+        }}
+        attributionPosition="top-right"
+        zoomOnScroll={true}
+        panOnScroll={true} // Enable pan with scroll for better mobile interaction
+        zoomOnPinch={true} // Enable pinch-to-zoom on mobile
+        panOnDrag={true}
+      ></ReactFlow>
+>>>>>>> 2189e6d (feat: Implement Intial MVP for the Plan Builder and Program Planner)
     </div>
   );
 };

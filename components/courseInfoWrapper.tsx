@@ -92,12 +92,37 @@ export async function CourseInfoWrapper({ department, code }: CourseInfoWrapperP
         fetchError = error instanceof Error ? error.message : "An unknown error occurred during data fetching.";
     }
 
+<<<<<<< HEAD
     // --- Render Error or Not Found States ---
     if (fetchError) {
         // Display a generic error message if any fetch operation failed.
         return ( <Alert variant="destructive" className="mt-6"> <AlertTitle>Error Fetching Data</AlertTitle> <AlertDescription>{fetchError}</AlertDescription> </Alert> );
     }
     // Check specifically if the target course wasn't found after successful fetch attempt.
+=======
+    // Fetch primary graph data and reverse lookups concurrently for efficiency.
+    const [graphResult, requiredByResult, coreqForResult] = await Promise.all([
+      getRecursivePrerequisitesCTE(department, code), // Fetches target course + all prerequisites.
+      getCoursesRequiring(targetCourseCode), // Fetches courses needing this one ("Required By").
+      getCoursesHavingCorequisite(targetCourseCode), // Fetches courses needing this one as coreq.
+    ]);
+
+    // Assign results to state variables.
+    recursiveGraphData = graphResult;
+    requiredByCourses = requiredByResult;
+    corequisiteForCourses = coreqForResult;
+
+    // Attempt to find the main target course within the graph data nodes.
+    // The CTE query should always include the starting node.
+    targetCourseNode = recursiveGraphData.nodes.find(
+      (
+        node,
+      ): node is Course => // Type guard to ensure we are checking a Course object
+        "courseCode" in node && node.courseCode.toUpperCase() === targetCourseCode,
+    );
+
+    // Handle case where the target course itself wasn't found (should be rare if validation passed).
+>>>>>>> 2189e6d (feat: Implement Intial MVP for the Plan Builder and Program Planner)
     if (!targetCourseNode) {
          return ( <Alert variant="default" className="mt-6 backdrop-blur-md border-[#283618] text-[#283618] text-center text-wrap"> <AlertTitle>Course Not Found</AlertTitle> <AlertDescription>The course {targetCourseCode} could not be found.</AlertDescription> </Alert> );
     }
@@ -212,4 +237,134 @@ export async function CourseInfoWrapper({ department, code }: CourseInfoWrapperP
             corequisiteForCourses={corequisiteForCourses} // Pass the reverse lookup data.
         />
     );
+<<<<<<< HEAD
 }
+=======
+  }
+  // Safety check: Ensure graph data is available if the target course was found.
+  if (!recursiveGraphData) {
+    return (
+      <Alert variant="destructive" className="mt-6">
+        {" "}
+        <AlertTitle>Error</AlertTitle>{" "}
+        <AlertDescription>
+          Inconsistent state: Graph data unavailable but target course exists.
+        </AlertDescription>{" "}
+      </Alert>
+    );
+  }
+
+  // --- Prepare Graph Input Data (Nodes and Edges) ---
+  console.log("[Wrapper] Preparing graph data...");
+  const graphInputNodes: InputNode[] = []; // Nodes to pass to the graph component.
+  const graphInputEdges: AppEdge[] = []; // Edges to pass to the graph component.
+  // Keep track of nodes actually added to the graph to avoid duplicate text nodes.
+  const addedGraphNodeIds = new Set<string>();
+
+  // 1. Process Course Nodes from CTE results:
+  recursiveGraphData.nodes.forEach((node) => {
+    // Ensure it's a course object (not a text requirement string from the raw data).
+    if ("courseCode" in node) {
+      const nodeCodeUpper = node.courseCode.toUpperCase();
+      // Check if this course should be included in the graph.
+      if (!shouldExcludeGraphNode(nodeCodeUpper)) {
+        graphInputNodes.push({
+          id: nodeCodeUpper, // Use standardized code as ID.
+          type: "default", // Standard React Flow node type.
+          data: {
+            label: node.courseCode, // Display original case.
+            isCourse: true,
+            // Set type for specific styling (target vs. prerequisite).
+            type: nodeCodeUpper === targetCourseCode ? "target" : "prerequisite",
+          },
+        });
+        addedGraphNodeIds.add(nodeCodeUpper); // Mark this node as added.
+      } else {
+        // console.log(`[Graph Prep] Excluding course node: ${node.courseCode}`);
+      }
+    }
+  });
+
+  // 2. Process Edges from CTE results and create Text Nodes if necessary:
+  recursiveGraphData.edges.forEach((edge, index) => {
+    const sourceId = edge.source.toUpperCase(); // Standardize source ID.
+    const targetIdOrPattern = edge.target; // Target might be a course code or a text pattern.
+
+    // Skip edges originating from an excluded node, or edges pointing to an excluded node.
+    if (!addedGraphNodeIds.has(sourceId) || shouldExcludeGraphNode(targetIdOrPattern)) {
+      return;
+    }
+
+    const targetUpper = targetIdOrPattern.toUpperCase();
+    // Check if the target is another course that was included in our graph nodes.
+    const targetIsIncludedCourse = addedGraphNodeIds.has(targetUpper);
+
+    if (targetIsIncludedCourse) {
+      // Create a standard edge between two course nodes.
+      graphInputEdges.push({
+        // Generate a unique edge ID.
+        id: `edge-${sourceId}-${targetUpper}-${index}`,
+        source: sourceId,
+        target: targetUpper,
+        data: edge.data, // Pass along data from CTE (contains depth).
+      });
+    } else {
+      // The target is a text requirement (e.g., "Min. grade C-", "MATH 1XX").
+      // Create a descriptive label for the text node.
+      const textNodeLabel = mapRequirementPatternToDescription(targetIdOrPattern);
+      // Create a unique ID for this text requirement node.
+      const textNodeIdUpper = `text-${targetUpper}`;
+
+      // Only create the text node if it hasn't been added already.
+      if (!addedGraphNodeIds.has(textNodeIdUpper)) {
+        graphInputNodes.push({
+          id: textNodeIdUpper,
+          type: "default",
+          data: {
+            label: textNodeLabel,
+            isCourse: false, // Mark as not a course.
+            type: "text_requirement", // Specific type for styling.
+          },
+          // Apply specific styles for text nodes.
+          style: {
+            background: "#fefae0",
+            border: "1px dashed #bc6c25",
+            fontSize: "12px",
+            fontStyle: "italic",
+            padding: "8px 12px",
+            textAlign: "center",
+            minHeight: "45px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: "4px",
+          },
+        });
+        addedGraphNodeIds.add(textNodeIdUpper); // Mark text node as added.
+      }
+
+      // Create an edge from the source course to the text requirement node.
+      graphInputEdges.push({
+        id: `edge-${sourceId}-${textNodeIdUpper}-${index}`,
+        source: sourceId,
+        target: textNodeIdUpper,
+        data: edge.data, // Pass along data from CTE (contains depth).
+      });
+    }
+  });
+  console.log(
+    `[Graph Prep] Prepared ${graphInputNodes.length} nodes and ${graphInputEdges.length} edges for the graph.`,
+  );
+
+  // --- Render Client Component with Prepared Data ---
+  return (
+    <CourseResultDisplay
+      targetCourse={targetCourseNode} // Pass the fetched target course details.
+      graphNodes={graphInputNodes} // Pass the prepared nodes for the graph.
+      graphEdges={graphInputEdges} // Pass the prepared edges for the graph.
+      requiredByCourses={requiredByCourses} // Pass the reverse lookup data.
+      corequisiteForCourses={corequisiteForCourses} // Pass the reverse lookup data.
+    />
+  );
+}
+>>>>>>> 2189e6d (feat: Implement Intial MVP for the Plan Builder and Program Planner)

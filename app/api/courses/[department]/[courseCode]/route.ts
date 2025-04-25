@@ -12,8 +12,13 @@ interface Params {
 }
 
 export async function GET(
+<<<<<<< HEAD
   request: Request,
   { params }: { params: Params }
+=======
+  request: NextRequest,
+  context: any, // Use 'any' for the context parameter
+>>>>>>> 2189e6d (feat: Implement Intial MVP for the Plan Builder and Program Planner)
 ) {
 <<<<<<< HEAD
   const departmentCode = params.department;
@@ -27,7 +32,7 @@ export async function GET(
   if (!departmentCode || !courseCodeNumber) {
     return NextResponse.json(
       { message: "Department and Course Code are required" },
-      { status: 400 }
+      { status: 400 },
     );
   }
 
@@ -39,7 +44,7 @@ export async function GET(
       // Data function returned null, meaning not found
       return NextResponse.json(
         { message: `Course ${departmentCode.toUpperCase()} ${courseCodeNumber} not found` },
-        { status: 404 }
+        { status: 404 },
       );
     }
 

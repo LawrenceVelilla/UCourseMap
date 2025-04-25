@@ -1,7 +1,11 @@
 // Main Page: Displays search form and conditionally shows results via CourseInfoWrapper
 
+<<<<<<< HEAD
 import { Suspense } from 'react'; 
 import { BookOpen } from "lucide-react";
+=======
+import { Suspense } from "react";
+>>>>>>> 2189e6d (feat: Implement Intial MVP for the Plan Builder and Program Planner)
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { CourseInfoWrapper } from '@/components/courseInfoWrapper'; 
@@ -84,7 +88,7 @@ export default async function PrerequisitesPage({
           {" "}
           {/* Constrain width and center */}
           <h1 className="text-4xl md:text-5xl font-bold mb-2 text-center text-gray-800 dark:text-gray-200">
-            Uni Planner
+            UCourse Map
           </h1>
           <h2 className="text-xl md:text-2xl font-bold mb-6 text-gray-600 dark:text-gray-400 text-center">
             Prerequisite Checker

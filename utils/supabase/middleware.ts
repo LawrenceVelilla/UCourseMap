@@ -26,11 +26,11 @@ export const updateSession = async (request: NextRequest) => {
               request,
             });
             cookiesToSet.forEach(({ name, value, options }) =>
-              response.cookies.set(name, value, options)
+              response.cookies.set(name, value, options),
             );
           },
         },
-      }
+      },
     );
 
     // This will refresh session if expired - required for Server Components

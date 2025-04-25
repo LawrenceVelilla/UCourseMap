@@ -84,7 +84,7 @@ async function scrapeTargetProgram() {
             $child
               .text()
               .trim()
-              .replace(/\u00A0/g, " ")
+              .replace(/\u00A0/g, " "),
           );
         } else if ($child.is("ul")) {
           // Process list items for the current group
@@ -104,7 +104,7 @@ async function scrapeTargetProgram() {
                 $li
                   .text()
                   .trim()
-                  .replace(/\u00A0/g, " ")
+                  .replace(/\u00A0/g, " "),
               );
             }
           });
@@ -119,7 +119,7 @@ async function scrapeTargetProgram() {
           $(li)
             .text()
             .trim()
-            .replace(/\u00A0/g, " ")
+            .replace(/\u00A0/g, " "),
         )
         .get();
 

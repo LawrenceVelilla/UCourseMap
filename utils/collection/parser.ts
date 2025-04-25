@@ -137,7 +137,7 @@ Here is the input description:
 `;
 
 export async function parseCourseDescription(
-  rawDescription: string
+  rawDescription: string,
 ): Promise<ParsedCourseData | null> {
   // Return null on failure
   const prompt = `${BASEPROMPT}\n${rawDescription}`;
@@ -173,7 +173,7 @@ export async function parseCourseDescription(
   } catch (error: any) {
     console.error(
       `Failed to parse description with OpenAI for input: "${rawDescription.substring(0, 100)}..."`,
-      error
+      error,
     );
     if (error.response) {
       console.error("OpenAI API Error Status:", error.response.status);

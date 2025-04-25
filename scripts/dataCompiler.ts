@@ -79,7 +79,7 @@ function getNum(list: any[], action: string = "parse"): Promise<number> {
             resolve(total);
           } else resolve(ans);
         }
-      }
+      },
     );
   });
 }
@@ -101,7 +101,7 @@ function getStartNum(list: any[], action: string = "parsing"): Promise<number> {
           console.warn(`Start index >= total. Defaulting to 0.`);
           resolve(0);
         } else resolve(ans);
-      }
+      },
     );
   });
 }
@@ -160,7 +160,7 @@ async function runDataCollection() {
       if (dataToParse.length === 0) console.log("\nNo courses selected for parsing.");
       else {
         console.log(
-          `\n[2/3] AI Parsing ${dataToParse.length} courses (index ${start} to ${start + limit - 1})...`
+          `\n[2/3] AI Parsing ${dataToParse.length} courses (index ${start} to ${start + limit - 1})...`,
         );
         // AIparse should return ParsedCourseForCompiler[]
         parsedData = await AIparse(dataToParse);

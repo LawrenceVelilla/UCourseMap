@@ -1,5 +1,6 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
+import { ProgramBlock } from "./types"; // Assuming ProgramBlock is defined here
 
 /**
  * Maps known requirement patterns (strings that are NOT standard course codes)
@@ -107,6 +108,57 @@ export function shouldExcludeGraphNode(nodeIdentifier: string): boolean {
 
   return false;
 }
+
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
+}
+
+export function isCategoryBlock(block: ProgramBlock): boolean {
+  // Patterns that indicate category blocks
+  const categoryPatterns = [
+    /Foundation Courses/i,
+    /Senior Courses/i,
+    /Required Courses/i,
+    /Program Core/i,
+    /Major Requirements/i,
+    /Option Requirements/i,
+    /Capstone/i,
+  ];
+
+  // Check if block title matches any category pattern
+  if (block.title) {
+    return categoryPatterns.some((pattern) => pattern.test(block.title as string));
+  }
+
+  return false;
+}
+
+/**
+ * Detects if a block is a unit choice block (e.g., "3 units from:")
+ *
+ * @param block - Program block to analyze
+ * @returns Units required or 0 if not a unit choice block
+ */
+export function getUnitRequirement(block: ProgramBlock): number {
+  if (!block.title) return 0;
+
+  // Check if title matches the pattern (e.g., "3 units from:")
+  const unitMatch = block.title.match(/(\d+)\s+units\s+from/i);
+  if (unitMatch && unitMatch[1]) {
+    return parseInt(unitMatch[1], 10);
+  }
+
+  // Check if title is ONLY a number (representing units)
+  const numberOnlyMatch = block.title.match(/^(\d+)$/);
+  if (numberOnlyMatch && numberOnlyMatch[1]) {
+    return parseInt(numberOnlyMatch[1], 10);
+  }
+
+  // Check for patterns like "X units"
+  const simpleUnitsMatch = block.title.match(/(\d+)\s+units/i);
+  if (simpleUnitsMatch && simpleUnitsMatch[1]) {
+    return parseInt(simpleUnitsMatch[1], 10);
+  }
+
+  return 0;
 }

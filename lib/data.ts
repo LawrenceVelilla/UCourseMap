@@ -1,6 +1,6 @@
 import "server-only";
 import { PrismaClient, Prisma } from "@prisma/client";
-import { Course, RequirementsData, InputNode, AppEdge, isRequirementsData } from "./types";
+import { Course, RequirementsData, InputNode, AppEdge } from "./types";
 import { cache } from "react";
 import { z } from "zod";
 import dotenv from "dotenv";
@@ -68,7 +68,7 @@ export const getCourseDetails = cache(
       console.error(`[Data] Error in getCourseDetails for ${fullCourseCode}:`, error);
       return null;
     }
-  }
+  },
 );
 
 /**
@@ -78,7 +78,7 @@ export const getCourseDetails = cache(
  */
 export const getMultipleCourseDetails = cache(
   async (
-    courseCodes: string[]
+    courseCodes: string[],
   ): Promise<Pick<Course, "id" | "department" | "courseCode" | "title">[]> => {
     if (!courseCodes || courseCodes.length === 0) return [];
 
@@ -99,7 +99,7 @@ export const getMultipleCourseDetails = cache(
       console.error(`[Data] Error fetching multiple course details:`, error);
       return []; // Return empty array on error
     }
-  }
+  },
 );
 
 /**
@@ -111,7 +111,7 @@ export const getMultipleCourseDetails = cache(
  */
 export const getCoursesByDepartment = cache(
   async (
-    departmentCode: string
+    departmentCode: string,
   ): Promise<Pick<Course, "id" | "department" | "courseCode" | "title">[]> => {
     if (!departmentCode) return [];
     const upperDept = departmentCode.toUpperCase().trim();
@@ -130,7 +130,7 @@ export const getCoursesByDepartment = cache(
       console.error(`[Data] Error fetching courses for department ${upperDept}:`, error);
       return []; // Return empty array on error
     }
-  }
+  },
 );
 
 /**
@@ -180,7 +180,7 @@ function processCourseNodes(
   validatedResults: RawCteResult[],
   courseNodesMap: Map<string, Course>,
   nodeDepths: Map<string, number>,
-  finalEdges: AppEdge[]
+  finalEdges: AppEdge[],
 ): void {
   for (const row of validatedResults) {
     // Record course code in the known courses set via the map key.
@@ -224,7 +224,7 @@ function processCourseNodes(
 function processTextPrerequisites(
   courseNodesMap: Map<string, Course>,
   nodeDepths: Map<string, number>,
-  finalEdges: AppEdge[]
+  finalEdges: AppEdge[],
 ): Map<string, InputNode> {
   const textNodesMap = new Map<string, InputNode>();
 
@@ -274,7 +274,7 @@ export const getRecursivePrerequisitesCTE = cache(
   async (
     departmentCode: string,
     courseCodeNumber: string,
-    maxDepth: number = 6
+    maxDepth: number = 6,
   ): Promise<{ nodes: (Course | InputNode)[]; edges: AppEdge[] }> => {
     const deptUpper = departmentCode.toUpperCase();
     const codeNumUpper = courseCodeNumber.toUpperCase();
@@ -298,7 +298,7 @@ export const getRecursivePrerequisitesCTE = cache(
 
     if (process.env.NODE_ENV === "development") {
       console.log(
-        `[DataCTE] Fetching recursive prerequisites for: ${fullCourseCode} up to depth ${maxDepth}`
+        `[DataCTE] Fetching recursive prerequisites for: ${fullCourseCode} up to depth ${maxDepth}`,
       );
     }
 
@@ -357,7 +357,7 @@ export const getRecursivePrerequisitesCTE = cache(
 
       if (process.env.NODE_ENV === "development") {
         console.log(
-          `[DataCTE] Found ${courseNodesMap.size} course nodes, ${textNodesMap.size} text nodes, and ${finalEdges.length} total edges.`
+          `[DataCTE] Found ${courseNodesMap.size} course nodes, ${textNodesMap.size} text nodes, and ${finalEdges.length} total edges.`,
         );
       }
 
@@ -368,12 +368,12 @@ export const getRecursivePrerequisitesCTE = cache(
       } else {
         console.error(
           `[DataCTE] Error fetching recursive prerequisites for ${fullCourseCode}:`,
-          error
+          error,
         );
       }
       return { nodes: [], edges: [] };
     }
-  }
+  },
 );
 
 const CourseCodeSchema = z
@@ -381,14 +381,19 @@ const CourseCodeSchema = z
   .trim()
   .toUpperCase()
   .regex(
+<<<<<<< HEAD
     /^[A-Z]{2,6}\s\d{3}$/,
     'Invalid course code format, expected "DEPT 123" format with 2-6 letters and 3 digits'
+=======
+    /^([A-Z]{2,6})(?:\s([A-Z]+))?\s(\d{3}[A-Z]?)$/,
+    'Invalid course code format, expected formats like "DEPT 123" or "DEPT 123A"',
+>>>>>>> 88bad5c (feat: Added a Zustan for the actual program planner state management)
   );
 
 async function getCoursesByDependency(
   field: "flattenedPrerequisites" | "flattenedCorequisites",
   rawCourseCode: string,
-  options?: { take?: number; skip?: number }
+  options?: { take?: number; skip?: number },
 ): Promise<Pick<Course, "id" | "department" | "courseCode" | "title">[]> {
   // 2.a Validate & normalize
   const courseCode = CourseCodeSchema.parse(rawCourseCode);
@@ -421,7 +426,7 @@ async function getCoursesByDependency(
 export const getCoursesRequiring = cache(
   async (targetCourseCode: string, options?: { take?: number; skip?: number }) => {
     return getCoursesByDependency("flattenedPrerequisites", targetCourseCode, options);
-  }
+  },
 );
 
 /**
@@ -430,7 +435,7 @@ export const getCoursesRequiring = cache(
 export const getCoursesHavingCorequisite = cache(
   async (targetCourseCode: string, options?: { take?: number; skip?: number }) => {
     return getCoursesByDependency("flattenedCorequisites", targetCourseCode, options);
-  }
+  },
 );
 
 // --- DEPRECATED / REMOVED FUNCTIONS ---

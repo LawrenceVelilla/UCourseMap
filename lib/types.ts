@@ -1,4 +1,5 @@
-import { Prisma } from "@prisma/client";
+// import { Prisma } from "@prisma/client"; // Commented out or deleted
+import React from "react";
 
 export interface Course {
   id?: string; // Assuming UUID
@@ -95,3 +96,114 @@ export interface AppEdge {
   // Add other React Flow edge props if needed
 }
 // --- End Graph Types ---
+
+export interface ProgramCourse {
+  courseCode: string;
+  title: string;
+  department: string;
+  note: string | null;
+}
+
+export interface ProgramGroup {
+  groupTitle: string | null;
+  description: string[];
+  courses: ProgramCourse[];
+  unitsRequired?: number; // For "3 units from:" type groups
+  categoryId?: string; // For linking related groups under a category
+}
+
+export interface ProgramBlock {
+  title: string | null;
+  groups: ProgramGroup[];
+  notesList: string[];
+  category?: string; // Category this block belongs to (e.g., "Foundation Courses")
+  parentBlockId?: string; // For hierarchical relationships
+  blockType?: "requirement" | "option" | "note" | "category";
+  unitsRequired?: number; // Total units required for this block
+  order?: number; // For maintaining the original sequence
+}
+
+export interface Program {
+  programName: string;
+  blocks: ProgramBlock[];
+  categories?: {
+    // Optional categorization of blocks
+    id: string;
+    name: string;
+    blocks: string[]; // IDs of blocks in this category
+  }[];
+}
+
+// --- Plan Validation Types ---
+export interface RequirementValidationResult {
+  requirementId: string; // Unique ID (e.g., categoryId, blockId, groupId + index)
+  description: string; // Human-readable description (e.g., Category Name, Block Title, Group Title)
+  status: "met" | "partially-met" | "unmet" | "overfilled"; // Status of the requirement
+  achievedUnits: number;
+  requiredUnits: number;
+  relevantCourses: {
+    // Courses selected by the user relevant to this requirement
+    courseCode: string;
+    status: "planned" | "completed" | "in-progress" | "not-started";
+    units: number;
+  }[];
+}
+// --- End Plan Validation Types ---
+
+// Interface for the state stored in Zustand
+// (Consider moving store-specific types to the store file)
+export interface CourseStatus {
+  status: "planned" | "completed" | "in-progress" | "not-started";
+  term?: string;
+  year?: number;
+  grade?: string;
+}
+
+// You might want to define the full Zustand state shape here or keep it in the store file
+// export interface ProgramPlanState { ... }
+
+// For GraphView component
+export interface NodeData {
+  label: string;
+  isCourse: boolean;
+  type: string;
+  // Add other relevant data for nodes
+}
+
+export interface EdgeData {
+  depth: number;
+  // Add other relevant data for edges
+}
+
+// React Flow requires explicit types for nodes and edges
+// export type InputNode = Node<NodeData>; // Original - might cause issues if Node type isn't correctly imported
+// export type AppEdge = Edge<EdgeData>;
+
+export interface GraphData {
+  nodes: InputNode[];
+  edges: AppEdge[];
+}
+
+// --- Component Prop Types ---
+
+// Example props for a component displaying course details
+export interface CourseDetailProps {
+  course: Course;
+  // other props...
+}
+
+// Props for the PrerequisiteGraph component
+export interface PrerequisiteGraphProps {
+  courseCode: string;
+  className?: string;
+}
+
+// Props for components using ReactNode
+export interface SomeComponentProps {
+  children: React.ReactNode; // Ensure React is imported
+}
+
+export interface AnotherComponentProps {
+  header: React.ReactNode; // Ensure React is imported
+  content: string;
+}

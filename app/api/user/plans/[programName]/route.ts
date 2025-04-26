@@ -11,10 +11,10 @@ import { NextResponse } from "next/server";
 // Replace with DB or proper singleton service.
 import { userPlansStore as userPlans } from "../route";
 
-export function GET(request: Request, { params }: { params: { programName: string } }) {
+export function GET(request: Request, context: any) {
   try {
     // Decode the program name from the URL parameter
-    const programName = decodeURIComponent(params.programName);
+    const programName = decodeURIComponent(context?.params?.programName);
 
     if (!programName) {
       return NextResponse.json({ message: "Program name parameter is required." }, { status: 400 });

@@ -102,8 +102,30 @@ export function PrerequisiteCheckerForm() {
         router.push(newPath);
     };
 
+<<<<<<< HEAD
     // Determine if the example tip should be shown (only if no search active)
     const showExampleTip = !initialDept && !initialCode;
+=======
+  return (
+    <form onSubmit={handleCheck} className="space-y-3">
+      {/* Input with integrated button */}
+      <div className="relative flex items-center">
+        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+        <Input
+          placeholder="Enter course code (e.g., CMPUT 272)"
+          className="pl-9 pr-20 h-10 rounded-md focus-visible:ring-[#606c5d]" // Adjusted styling
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          aria-label="Course Code Input"
+        />
+        <Button
+          type="submit"
+          className="absolute right-1 top-1/2 transform -translate-y-1/2 h-8 rounded-md px-4 bg-[#606c5d] hover:bg-[#4a5349] text-xs font-medium text-white"
+        >
+          Check
+        </Button>
+      </div>
+>>>>>>> f9b07a9 (feat: Implemented a &apos;Detailed&apos; Graph that displays prerequisites INCLUDING the AND/OR logic -- Also fixed indentation issues)
 
     return (
         <form onSubmit={handleCheck} className="space-y-3">

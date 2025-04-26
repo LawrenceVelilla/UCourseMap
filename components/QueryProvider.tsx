@@ -1,7 +1,7 @@
-'use client'; // This component needs to be a client component
+"use client"; // This component needs to be a client component
 
-import React from 'react';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import React from "react";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 // Optional: If you want React Query DevTools
 // import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
@@ -22,7 +22,7 @@ function makeQueryClient() {
 let browserQueryClient: QueryClient | undefined = undefined;
 
 function getQueryClient() {
-  if (typeof window === 'undefined') {
+  if (typeof window === "undefined") {
     // Server: always make a new query client
     return makeQueryClient();
   } else {
@@ -49,4 +49,4 @@ export default function QueryProvider({ children }: { children: React.ReactNode 
       {/* <ReactQueryDevtools initialIsOpen={false} /> */}
     </QueryClientProvider>
   );
-} 
+}

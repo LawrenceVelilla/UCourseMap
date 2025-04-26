@@ -6,7 +6,9 @@
     "start": "next start",
     "db:load": "ts-node ./scripts/loadCourses.ts",
     "prepare": "husky",
-    "lint": "next lint",
+    "lint": "next lint --dir . --fix",
+    "lint:strict": "next lint --dir . --max-warnings=0",
+    "lint:routes": "next lint --dir app/api",
     "format": "prettier --write .",
     "gather": "tsx ./scripts/dataCompiler.ts",
     "test": "jest",
@@ -88,8 +90,11 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
+      "next lint --file",
       "prettier --write"
+    ],
+    "app/api/**/*.{js,jsx,ts,tsx}": [
+      "next lint --file"
     ],
     "*.{json,css,md}": [
       "prettier --write"

@@ -1,11 +1,6 @@
 import { NextResponse } from "next/server";
-import { CourseStatus } from "../../../../lib/types"; // Adjust path as necessary
-
-// IMPORTANT: In-memory store for demonstration ONLY.
-// Replace with a database (e.g., Prisma + PostgreSQL) for persistence.
-// Exporting this directly is generally bad practice for shared mutable state,
-// especially in serverless environments, but necessary for this demo hack.
-export const userPlansStore: Record<string, Record<string, CourseStatus>> = {}; // { programName: { courseCode: CourseStatus } }
+import { CourseStatus } from "../../../../lib/types";
+import userPlansStore from "../plansStore";
 
 interface SavePlanRequestBody {
   programName: string;

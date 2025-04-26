@@ -99,5 +99,10 @@
     "*.{json,css,md}": [
       "prettier --write"
     ]
+  },
+  "overrides": {
+    "glob": "^9.0.0",
+    "rimraf": "^4.0.0",
+    "eslint": "^9.0.0"
   }
 }

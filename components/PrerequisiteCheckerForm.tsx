@@ -98,7 +98,7 @@ export function PrerequisiteCheckerForm() {
         />
         <Button
           type="submit"
-          className="absolute text-whiteright-1 top-1/2 transform -translate-y-1/2 h-8 rounded-md px-4 bg-[#606c5d] hover:bg-[#4a5349] text-xs font-medium"
+          className="absolute right-1 top-1/2 transform -translate-y-1/2 h-8 rounded-md px-4 bg-[#606c5d] hover:bg-[#4a5349] text-xs font-medium text-white"
         >
           Check
         </Button>

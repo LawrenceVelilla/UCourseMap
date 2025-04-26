@@ -18,7 +18,7 @@ and additional information.
 
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { animate, stagger } from "animejs";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
@@ -27,19 +27,27 @@ import { RequirementConditionDisplay } from "@/components/requirementConditionDi
 import { CourseLinkList } from "./courseLinkList";
 import { Course } from "@/lib/types";
 import Link from "next/link";
-import { ExternalLink, AlertCircle } from "lucide-react";
+import { ExternalLink, AlertCircle, Loader2 } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { ExpandableCardContent } from "./expandableCardContent";
 import dynamic from "next/dynamic";
 // Import types and constants separately
-import type { InputNode, AppEdge } from "@/components/prerequisiteGraph";
-import { levelColors } from "@/components/prerequisiteGraph";
+import type {
+  InputNode as DetailedInputNode,
+  AppEdge as DetailedAppEdge,
+} from "@/components/DetailedPrerequisiteGraph";
+import type {
+  InputNode as SimpleInputNode,
+  AppEdge as SimpleAppEdge,
+} from "@/components/SimplePrerequisiteGraphDisplay";
+import { levelColors } from "@/components/DetailedPrerequisiteGraph";
 
 interface CourseResultDisplayProps {
   targetCourse: Course;
-  graphNodes: InputNode[];
-  graphEdges: AppEdge[];
-  // TODO: Add props for requiredByCourses / corequisiteForCourses later when implemented
+  simpleGraphNodes: SimpleInputNode[];
+  simpleGraphEdges: SimpleAppEdge[];
+  department: string;
+  code: string;
   requiredByCourses?: Pick<Course, "id" | "department" | "courseCode" | "title">[];
   corequisiteForCourses?: Pick<Course, "id" | "department" | "courseCode" | "title">[];
 }
@@ -47,23 +55,99 @@ interface CourseResultDisplayProps {
 const app_url = "https://apps.ualberta.ca";
 
 // Dynamically import PrerequisiteGraphWrapper with SSR turned off
-const PrerequisiteGraphWrapper = dynamic(() => import("@/components/prerequisiteGraph"), {
-  ssr: false,
-  loading: () => (
-    <div className="p-4 text-center min-h-[200px] flex items-center justify-center">
-      <p>Loading graph...</p>
-    </div>
-  ), // Optional loading indicator
-});
+const DetailedPrerequisiteGraphWrapper = dynamic(
+  () => import("@/components/DetailedPrerequisiteGraph"),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="p-4 text-center min-h-[200px] flex items-center justify-center">
+        <p>Loading graph...</p>
+      </div>
+    ),
+  },
+);
+
+// Dynamically import SimplePrerequisiteGraphDisplay with SSR turned off
+const SimplePrerequisiteGraphWrapper = dynamic(
+  () => import("@/components/SimplePrerequisiteGraphDisplay"),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="p-4 text-center min-h-[200px] flex items-center justify-center">
+        <p>Loading graph...</p>
+      </div>
+    ),
+  },
+);
 
 export function CourseResultDisplay({
   targetCourse,
-  graphNodes,
-  graphEdges,
+  simpleGraphNodes,
+  simpleGraphEdges,
+  department,
+  code,
   requiredByCourses,
   corequisiteForCourses,
 }: CourseResultDisplayProps) {
   const bentoContainerRef = useRef<HTMLDivElement>(null); // Ref for the grid container
+  const [graphView, setGraphView] = useState<"detailed" | "simple">("simple"); // Default to simple view
+  const [detailedGraphNodes, setDetailedGraphNodes] = useState<DetailedInputNode[]>([]);
+  const [detailedGraphEdges, setDetailedGraphEdges] = useState<DetailedAppEdge[]>([]);
+  const [isLoadingDetailedGraph, setIsLoadingDetailedGraph] = useState<boolean>(false);
+  const [detailedGraphError, setDetailedGraphError] = useState<string | null>(null);
+  const [detailedGraphLoaded, setDetailedGraphLoaded] = useState<boolean>(false);
+
+  // Reset view preference when course changes
+  useEffect(() => {
+    // Reset to simple view whenever a new course is loaded
+    setGraphView("simple");
+    // Reset detailed graph data states
+    setDetailedGraphNodes([]);
+    setDetailedGraphEdges([]);
+    setDetailedGraphLoaded(false);
+    setDetailedGraphError(null);
+  }, [targetCourse.id, targetCourse.courseCode]); // Depend on course identifiers
+
+  // Function to fetch detailed graph data
+  const fetchDetailedGraphData = async () => {
+    if (detailedGraphLoaded) return; // Don't fetch if already loaded
+
+    setIsLoadingDetailedGraph(true);
+    setDetailedGraphError(null);
+
+    try {
+      const response = await fetch(`/api/courses/${department}/${code}/detailed-graph`);
+
+      if (!response.ok) {
+        throw new Error(
+          `Failed to fetch detailed graph: ${response.status} ${response.statusText}`,
+        );
+      }
+
+      const data = await response.json();
+
+      setDetailedGraphNodes(data.nodes || []);
+      setDetailedGraphEdges(data.edges || []);
+      setDetailedGraphLoaded(true);
+    } catch (error) {
+      console.error("Error fetching detailed graph data:", error);
+      setDetailedGraphError(
+        error instanceof Error ? error.message : "Failed to load detailed graph",
+      );
+    } finally {
+      setIsLoadingDetailedGraph(false);
+    }
+  };
+
+  // Handle view toggle with data fetching
+  const handleViewToggle = (view: "detailed" | "simple") => {
+    // If switching to detailed view and data not loaded yet, fetch it
+    if (view === "detailed" && !detailedGraphLoaded && !isLoadingDetailedGraph) {
+      fetchDetailedGraphData();
+    }
+
+    setGraphView(view);
+  };
 
   // Effect for animating cards on load/change --> Anime js
   useEffect(() => {
@@ -295,18 +379,37 @@ export function CourseResultDisplay({
             border border-gray-200 dark:border-neutral-800 dark:bg-transparent dark:frosted"
       >
         {" "}
-        {/* Spans 2 columns */}
-        <CardHeader>
-          <CardTitle className="text-3xl">Dependency Graph</CardTitle>
-          <CardDescription>Visual representation of prerequisites.</CardDescription>
+        {/* Spans 3 columns */}
+        <CardHeader className="flex flex-row items-center justify-between">
+          <div>
+            <CardTitle className="text-3xl">Dependency Graph</CardTitle>
+            <CardDescription>Visual representation of prerequisites.</CardDescription>
+          </div>
+          <div className="flex items-center gap-2">
+            <Badge
+              variant={graphView === "simple" ? "default" : "outline"}
+              onClick={() => handleViewToggle("simple")}
+              className="cursor-pointer"
+            >
+              Simple
+            </Badge>
+            <Badge
+              variant={graphView === "detailed" ? "default" : "outline"}
+              onClick={() => handleViewToggle("detailed")}
+              className="cursor-pointer"
+            >
+              Detailed
+            </Badge>
+          </div>
         </CardHeader>
         <CardContent>
           <p className="text-xs text-gray-500 mb-4 italic">
             Note: Graph shows dependencies but not detailed AND/OR logic.
           </p>
 
-          {/* Legend for Edge Colors */}
-          {graphNodes.length > 0 && (
+          {/* Legend for Edge Colors - shown for both graph types */}
+          {(graphView === "detailed" && detailedGraphNodes.length > 0) ||
+          (graphView === "simple" && simpleGraphNodes.length > 0) ? (
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="text-sm font-medium mr-2 self-center">Legend:</span>
               {levelColors.map((color, index) => (
@@ -323,17 +426,49 @@ export function CourseResultDisplay({
                 </Badge>
               ))}
             </div>
-          )}
+          ) : null}
 
-          {graphNodes.length > 0 || graphEdges.length > 0 ? (
+          {detailedGraphNodes.length > 0 ||
+          detailedGraphEdges.length > 0 ||
+          simpleGraphNodes.length > 0 ||
+          simpleGraphEdges.length > 0 ? (
             <div className="min-h-[300px] md:min-h-[400px]">
-              {" "}
-              {/* Ensure minimum height */}
-              <PrerequisiteGraphWrapper
-                key={targetCourse.id || targetCourse.courseCode} // Key for re-rendering
-                initialNodes={graphNodes}
-                initialEdges={graphEdges}
-              />
+              {graphView === "detailed" ? (
+                isLoadingDetailedGraph ? (
+                  <div className="flex items-center justify-center h-full min-h-[300px]">
+                    <div className="flex flex-col items-center space-y-4">
+                      <Loader2 className="h-10 w-10 animate-spin text-primary" />
+                      <p>Loading detailed graph...</p>
+                    </div>
+                  </div>
+                ) : detailedGraphError ? (
+                  <div className="flex items-center justify-center h-full min-h-[300px]">
+                    <Alert variant="destructive" className="max-w-md">
+                      <AlertCircle className="h-4 w-4" />
+                      <AlertTitle>Error</AlertTitle>
+                      <AlertDescription>{detailedGraphError}</AlertDescription>
+                    </Alert>
+                  </div>
+                ) : detailedGraphNodes.length > 0 ? (
+                  <DetailedPrerequisiteGraphWrapper
+                    key={`detailed-${targetCourse.id || targetCourse.courseCode}`}
+                    initialNodes={detailedGraphNodes}
+                    initialEdges={detailedGraphEdges}
+                  />
+                ) : (
+                  <div className="flex items-center justify-center h-full min-h-[300px]">
+                    <p className="text-sm text-gray-500">
+                      No detailed prerequisite data available.
+                    </p>
+                  </div>
+                )
+              ) : (
+                <SimplePrerequisiteGraphWrapper
+                  key={`simple-${targetCourse.id || targetCourse.courseCode}`}
+                  initialNodes={simpleGraphNodes}
+                  initialEdges={simpleGraphEdges}
+                />
+              )}
             </div>
           ) : (
             <div className="p-4 text-center min-h-[200px] flex items-center justify-center">

@@ -112,7 +112,7 @@ export default function CourseSearchInput() {
     setOpen(false);
     lastSubmittedRef.current = { dept: parsed.department, code: parsed.codeNumber };
     router.push(
-      `/?dept=${encodeURIComponent(parsed.department)}&code=${encodeURIComponent(parsed.codeNumber)}`
+      `/?dept=${encodeURIComponent(parsed.department)}&code=${encodeURIComponent(parsed.codeNumber)}`,
     );
   }, [inputValue, selectedValue, router, isChecking]);
 
@@ -124,7 +124,7 @@ export default function CourseSearchInput() {
     const codeNumber = r.courseCode.match(/\d+[A-Z]*/)?.[0] ?? "";
     lastSubmittedRef.current = { dept: r.department, code: codeNumber };
     router.push(
-      `/?dept=${encodeURIComponent(r.department)}&code=${encodeURIComponent(codeNumber)}`
+      `/?dept=${encodeURIComponent(r.department)}&code=${encodeURIComponent(codeNumber)}`,
     );
   };
 
@@ -229,6 +229,9 @@ export default function CourseSearchInput() {
             className="w-[--radix-popover-trigger-width] p-0"
             side="bottom"
             align="start"
+            sideOffset={4}
+            avoidCollisions={false}
+            sticky="always"
             onOpenAutoFocus={(e) => e.preventDefault()}
             onCloseAutoFocus={(e) => e.preventDefault()}
             onInteractOutside={(e) => {
@@ -284,7 +287,7 @@ export default function CourseSearchInput() {
                       aria-selected={highlightedIndex === i}
                       className={cn(
                         "cursor-pointer px-3 py-2 text-sm hover:bg-accent",
-                        highlightedIndex === i ? "bg-accent" : ""
+                        highlightedIndex === i ? "bg-accent" : "",
                       )}
                       onClick={() => onSelect(r)}
                       onMouseEnter={() => setHighlightedIndex(i)}
@@ -302,7 +305,7 @@ export default function CourseSearchInput() {
           onClick={doCheck}
           disabled={isChecking || (!selectedValue && !parseCourseString(inputValue))}
           aria-label="View course details"
-          className="min-w-[80px] mt-3"
+          className="min-w-[80px]"
         >
           {isChecking ? (
             <div className="flex items-center space-x-1">
@@ -326,7 +329,7 @@ export default function CourseSearchInput() {
             "focus:outline-none focus:ring focus:ring-offset-0",
             "focus:border-transparent",
             "transition-all duration-200 ease-in-out",
-            searchMode !== "code" && "hover:bg-accent hover:scale-105"
+            searchMode !== "code" && "hover:bg-accent hover:scale-105",
           )}
           data-search-mode-badge="true"
           aria-pressed={searchMode === "code"}
@@ -348,7 +351,7 @@ export default function CourseSearchInput() {
             "focus:outline-none focus:ring focus:ring-offset-0",
             "focus:border-transparent",
             "transition-all duration-200 ease-in-out",
-            searchMode !== "title" && "hover:bg-accent hover:scale-105"
+            searchMode !== "title" && "hover:bg-accent hover:scale-105",
           )}
           data-search-mode-badge="true"
           aria-pressed={searchMode === "title"}

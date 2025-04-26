@@ -9,7 +9,7 @@ import { NextResponse } from "next/server";
 // HACK: Accessing the store defined in the other route file.
 // This relies on Node module caching to share the instance. Bad practice!
 // Replace with DB or proper singleton service.
-import { userPlansStore as userPlans } from "../route";
+import userPlansStore from "../../plansStore"; // Adjust the import path as necessary
 
 export function GET(request: Request, context: any) {
   try {
@@ -21,7 +21,7 @@ export function GET(request: Request, context: any) {
     }
 
     // Access the (hopefully) shared store
-    const plan = userPlans[programName];
+    const plan = userPlansStore[programName];
 
     if (!plan) {
       // If no plan exists, return an empty object instead of 404,

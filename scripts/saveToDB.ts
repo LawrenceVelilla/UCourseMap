@@ -1,5 +1,5 @@
 import { PrismaClient, Prisma } from "@prisma/client";
-import * as fs from "fs/promises"; // Use promises API
+import * as fs from "fs/promises";
 import * as path from "path";
 import * as readline from "readline";
 import { stdin as input, stdout as output } from "process";
@@ -12,17 +12,15 @@ interface CourseJsonData {
   courseCode: string;
   title: string;
   units: Prisma.JsonValue;
-  keywords: string[]; // Keywords field from AIParse
+  keywords: string[];
   requirements: Prisma.JsonValue;
   flattenedPrerequisites: string[] | [];
   flattenedCorequisites: string[] | [];
   url: string;
 
   // Removed parsedDescription
-  // Add other fields like rawDescription, parsingStatus, lastParsedAt if your JSON and Schema include them
 }
 
-// --- Prisma Client Instantiation with Direct URL ---
 const directDbUrl = process.env.DIRECT_URL;
 if (!directDbUrl) {
   console.error("\n❌ Error: DIRECT_DATABASE_URL environment variable is not set.");
@@ -35,29 +33,18 @@ const prisma = new PrismaClient();
 function fixDuplicatedDepartmentInCourseCode(course: CourseJsonData): CourseJsonData {
   const dept = course.department.trim().toUpperCase();
 
-  // Check if course code has department repeated
   if (course.courseCode.startsWith(`${dept} ${dept}`)) {
-    // Fix by removing the duplicate
     course.courseCode = course.courseCode.replace(`${dept} ${dept}`, dept);
     console.log(`[SaveDB] Fixed duplicated department in course code: ${course.courseCode}`);
   }
 
   return course;
 }
-// --------------------------------------------------
 
-/**
- * Reads parsed course data from JSON and upserts it into the database.
- * Designed to be callable by other scripts.
- * @param department - The department code (lowercase) to process.
- * @returns Summary object { success, total, upserted, failed }
- */
 export async function save(department: string) {
-  // <-- EXPORTED
   let coursesJson: CourseJsonData[];
-  // Path assumes script is in 'scripts/' and data is in sibling 'data/' directory
   const jsonFilePath = path.resolve(__dirname, "../data", `parsed_${department}courses.json`);
-  const BATCH_SIZE = 50; // Adjust batch size as needed
+  const BATCH_SIZE = 50;
 
   const summary = { success: false, total: 0, upserted: 0, failed: 0 };
 
@@ -73,7 +60,7 @@ export async function save(department: string) {
     console.error(
       `[SaveDB] ❌ Error reading or parsing JSON file (${jsonFilePath}): ${error.message}`,
     );
-    return summary; // Return default summary on file read error
+    return summary;
   }
 
   if (!Array.isArray(coursesJson)) {
@@ -106,21 +93,20 @@ export async function save(department: string) {
       const departmentIdentifier = fixedCourse.department?.trim() || "UNKNOWN_DEPT";
 
       try {
-        // --- Prepare Data for Upsert ---
         processedData = {
-          department: departmentIdentifier.toUpperCase(), // Store department uppercase
-          courseCode: courseIdentifier.toUpperCase(), // Store course code uppercase
+          department: departmentIdentifier.toUpperCase(),
+          courseCode: courseIdentifier.toUpperCase(),
           title: course.title?.trim() || "Untitled Course",
           units: course.units ?? Prisma.JsonNull,
-          keywords: course.keywords ?? [], // Use keywords, default to empty array
+          keywords: course.keywords ?? [],
           requirements: course.requirements ?? Prisma.JsonNull,
           flattenedPrerequisites: course.flattenedPrerequisites ?? [],
           flattenedCorequisites: course.flattenedCorequisites ?? [],
           url: course.url ?? null,
 
           // Removed parsedDescription
-          // Add other fields here if they exist in your JSON and Prisma Schema
-          // rawDescription: course.rawDescription ?? null,
+
+          // rawDestiption: course.description ?? null,
         };
 
         if (
@@ -141,7 +127,7 @@ export async function save(department: string) {
           },
           update: {
             ...processedData,
-            updatedAt: new Date(), // Update timestamp on upsert
+            updatedAt: new Date(),
           },
           create: processedData,
         });
@@ -173,14 +159,13 @@ export async function save(department: string) {
   return summary;
 }
 
-// --- Standalone Script Execution Logic ---
 function getDepartmentInput(): Promise<string> {
   const rl = readline.createInterface({ input, output });
   return new Promise((resolve) => {
     rl.question(
       "[SaveDB] Please enter the department name (lowercase, e.g., cmput, math): ",
       (answer) => {
-        rl.close(); // Close interface!
+        rl.close();
         resolve(answer.trim().toLowerCase());
       },
     );
@@ -214,11 +199,9 @@ async function runStandaloneImport() {
   }
 }
 
-// Run standalone logic ONLY if this script is executed directly
 if (require.main === module) {
   runStandaloneImport().catch((e) => {
     console.error("[SaveDB] ❌ A critical error occurred in standalone execution:", e);
     process.exit(1);
   });
 }
-// --- End Standalone Logic ---

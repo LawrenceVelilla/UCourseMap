@@ -14,22 +14,19 @@ import {
   ReactFlowProvider,
 } from "@xyflow/react";
 import { useRouter } from "next/navigation";
-
 import "@xyflow/react/dist/style.css";
 
-// --- Type Definitions ---
-
-// Data shape for graph nodes, used within this component.
+//Type Definitions
 export interface GraphNodeData extends Record<string, unknown> {
-  label: string; // Display text (e.g., "MATH 101", "AND", "OR", "Min. grade C-")
-  nodeType: "course" | "and" | "or" | "text_requirement"; // The type of entity this node represents.
-  isTarget?: boolean; // Optional: True if this is the main course the graph is for.
+  label: string;
+  nodeType: "course" | "and" | "or" | "text_requirement";
+  isTarget?: boolean;
 }
 
 // Specific React Flow Node type used internally by hooks and components.
 export type AppNode = Node<GraphNodeData>;
 
-// Specific React Flow Edge type (can be extended later if needed).
+// Specific React Flow Edge type (extend later).
 export type AppEdge = Edge;
 
 // Simplified node type used for props passed *into* the graph component.
@@ -40,7 +37,7 @@ export interface InputNode
     | "position"
     | "width"
     | "height"
-    // | "style" // Keep style optional
+    // | "style" // optional
     | "selected"
     | "dragging"
     | "selectable"
@@ -50,41 +47,32 @@ export interface InputNode
     | "focusable"
     | "sourcePosition"
     | "targetPosition"
-    | "nodeType" // Ensure nodeType is part of data
-    | "isTarget" // Ensure isTarget is part of data
+    | "nodeType"
+    | "isTarget"
   > {
-  data: GraphNodeData; // Explicitly require data matching the new structure
-  style?: React.CSSProperties; // Allow optional style overrides from the parent.
+  data: GraphNodeData;
+  style?: React.CSSProperties;
 }
-
-// Props definition for the main graph component.
 export interface PrerequisiteGraphProps {
-  initialNodes: InputNode[]; // Nodes received from the parent wrapper.
-  initialEdges: AppEdge[]; // Edges received from the parent wrapper.
+  initialNodes: InputNode[];
+  initialEdges: AppEdge[];
 }
-
-// Add theme to props
 export interface PrerequisiteGraphLayoutProps extends PrerequisiteGraphProps {
-  theme?: string; // Add theme prop (optional)
+  theme?: string;
 }
 
-// --- Configuration & Styling ---
-
-// Initialize Dagre graph for layout calculations.
+// Configuration & Styling
 const dagreGraph = new dagre.graphlib.Graph({ compound: false });
 dagreGraph.setDefaultEdgeLabel(() => ({})); // Default empty label for edges.
 
-// Standard dimensions for graph nodes.
 const nodeWidth = 180;
 const nodeHeight = 45;
-const operatorNodeWidth = 60; // Smaller width for AND/OR
-const operatorNodeHeight = 40; // Smaller height for AND/OR
+const operatorNodeWidth = 60;
+const operatorNodeHeight = 40;
 
-// Function to get styles based on theme
 const getNodeStyles = (theme?: string) => {
   const isDark = theme === "dark";
 
-  // Shared properties
   const baseNodeStyle: React.CSSProperties = {
     borderRadius: "4px",
     padding: "8px 12px",
@@ -92,7 +80,7 @@ const getNodeStyles = (theme?: string) => {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    border: `1px solid ${isDark ? "hsl(var(--border))" : "#ccc"}`, // Consistent border base
+    border: `1px solid ${isDark ? "hsl(var(--border))" : "#ccc"}`,
   };
 
   const courseNodeBase: React.CSSProperties = {

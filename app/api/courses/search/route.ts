@@ -1,4 +1,3 @@
-// app/api/courses/search/route.ts
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/data";
 import { z } from "zod";
@@ -39,7 +38,6 @@ export async function GET(request: NextRequest) {
   // Validate using schema (handles both q and mode)
   const parse = SearchQuerySchema.safeParse({ q, mode });
   if (!parse.success) {
-    // Combine Zod errors into a readable message
     const errorMessage = parse.error.errors
       .map((e) => `${e.path.join(".")}: ${e.message}`)
       .join("; ");
@@ -53,7 +51,6 @@ export async function GET(request: NextRequest) {
   const searchMode = parse.data.mode;
 
   try {
-    // Build the WHERE clause dynamically based on search mode
     let whereClause: Prisma.CourseWhereInput;
     if (searchMode === "title") {
       whereClause = {
@@ -64,19 +61,19 @@ export async function GET(request: NextRequest) {
       // Attempt to parse for specific code search, fallback to broader search
       const codeParts = term.match(/^([A-Z]+)[\s]*(\d+[A-Z]*)$/);
       if (codeParts && codeParts[1] && codeParts[2]) {
-        // More specific search if format matches DEPT NUM
+        // Specific course code search
         whereClause = {
           AND: [
             { department: { startsWith: codeParts[1], mode: "insensitive" } },
-            { courseCode: { contains: codeParts[2], mode: "insensitive" } }, // Contains allows for suffixes like 101A
+            { courseCode: { contains: codeParts[2], mode: "insensitive" } },
           ],
         };
       } else {
-        // Broader search across code and department if format is ambiguous
+        // General search for course code or department
         whereClause = {
           OR: [
             { courseCode: { contains: term, mode: "insensitive" } },
-            { department: { contains: term, mode: "insensitive" } }, // Include department search for terms like 'CMPUT'
+            { department: { contains: term, mode: "insensitive" } },
           ],
         };
       }
@@ -94,15 +91,3 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: "Internal server error." }, { status: 500 });
   }
 }
-
-// Optional: Define CORS headers if your frontend is on a different domain/port during development
-// export async function OPTIONS(request: NextRequest) {
-//   return new Response(null, {
-//     status: 204,
-//     headers: {
-//       'Access-Control-Allow-Origin': '*', // Adjust for production
-//       'Access-Control-Allow-Methods': 'GET, OPTIONS',
-//       'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-//     },
-//   });
-// }

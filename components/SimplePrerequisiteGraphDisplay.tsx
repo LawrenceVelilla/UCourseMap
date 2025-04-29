@@ -4,9 +4,6 @@ import dagre from "dagre";
 import { useTheme } from "next-themes";
 import {
   ReactFlow,
-  Controls,
-  Background,
-  BackgroundVariant,
   useNodesState,
   useEdgesState,
   useReactFlow,
@@ -19,25 +16,16 @@ import {
 import { useRouter } from "next/navigation";
 
 import "@xyflow/react/dist/style.css";
-
-// --- Type Definitions ---
-// TODO: Consider moving these types to a dedicated ./lib/types.ts file
-
+// TODO: moving these types to a dedicated ./lib/types.ts file
 // Data shape for graph nodes, used within this component.
 export interface GraphNodeData extends Record<string, unknown> {
-  label: string; // Display text (e.g., "MATH 101" or "Min. grade C-")
-  isCourse: boolean; // True if the node represents a course, false for text requirements.
-  type?: "target" | "prerequisite" | "text_requirement"; // Helps differentiate node roles for styling or logic.
+  label: string;
+  isCourse: boolean;
+  type?: "target" | "prerequisite" | "text_requirement";
 }
 
-// Specific React Flow Node type used internally by hooks and components.
 export type AppNode = Node<GraphNodeData>;
-
-// Specific React Flow Edge type (can be extended later if needed).
 export type AppEdge = Edge;
-
-// Simplified node type used for props passed *into* the graph component.
-// Omits properties automatically handled by React Flow or layout.
 export interface InputNode
   extends Omit<
     AppNode,
@@ -55,40 +43,32 @@ export interface InputNode
     | "sourcePosition"
     | "targetPosition"
   > {
-  style?: React.CSSProperties; // Allow optional style overrides from the parent.
+  style?: React.CSSProperties;
 }
-
-// Props definition for the main graph component.
 export interface PrerequisiteGraphProps {
-  initialNodes: InputNode[]; // Nodes received from the parent wrapper.
-  initialEdges: AppEdge[]; // Edges received from the parent wrapper.
+  initialNodes: InputNode[];
+  initialEdges: AppEdge[];
 }
-
-// Add theme to props
 export interface PrerequisiteGraphLayoutProps extends PrerequisiteGraphProps {
-  theme?: string; // Add theme prop (optional)
+  theme?: string; // OPtional
 }
 
-// --- Configuration & Styling ---
+// Configuration & Styling
 
 // TODO: This comment relates to an old approach, edge colors are now based on depth.
 // // To-DO: Remember to update the component rendering the graph to use edge.data.depth for styling.
 // //       - Use edge.data.depth to determine color difference for the edges so we can see which is actually a direct prerequisite.
 
-// Initialize Dagre graph for layout calculations.
 const dagreGraph = new dagre.graphlib.Graph({ compound: false });
-dagreGraph.setDefaultEdgeLabel(() => ({})); // Default empty label for edges.
-
-// Standard dimensions for graph nodes.
+dagreGraph.setDefaultEdgeLabel(() => ({}));
 const nodeWidth = 180;
 const nodeHeight = 45;
 
-// Function to get styles based on theme
 const getNodeStyles = (theme?: string) => {
   const isDark = theme === "dark";
 
   const targetNodeStyle: React.CSSProperties = {
-    background: isDark ? "hsl(var(--primary))" : "#606c5d", // Use primary for dark target
+    background: isDark ? "hsl(var(--primary))" : "#606c5d",
     color: isDark ? "hsl(var(--primary-foreground))" : "#fff",
     border: `1px solid ${isDark ? "hsl(var(--border))" : "#3a4139"}`,
     borderRadius: "4px",
@@ -104,7 +84,7 @@ const getNodeStyles = (theme?: string) => {
     cursor: "pointer",
   };
   const prereqNodeStyle: React.CSSProperties = {
-    background: isDark ? "hsl(var(--secondary))" : "#f0f0e8", // Use secondary for dark prereq
+    background: isDark ? "hsl(var(--secondary))" : "#f0f0e8",
     color: isDark ? "hsl(var(--secondary-foreground))" : "#333",
     border: `1px solid ${isDark ? "hsl(var(--border))" : "#d1d1c4"}`,
     borderRadius: "4px",
@@ -119,8 +99,8 @@ const getNodeStyles = (theme?: string) => {
     cursor: "pointer",
   };
   const textNodeStyle: React.CSSProperties = {
-    background: "#fefae0", // Use muted for dark text, cream color for light
-    color: "#283618", // Define a dark text color if needed
+    background: "#fefae0",
+    color: "#283618",
     border: `1px dashed ${isDark ? "hsl(var(--muted-foreground))" : "#e6db74"}`,
     borderRadius: "4px",
     width: nodeWidth,
@@ -137,13 +117,12 @@ const getNodeStyles = (theme?: string) => {
   return { targetNodeStyle, prereqNodeStyle, textNodeStyle };
 };
 
-// Base style for edges (stroke color is applied dynamically).
+// Default styles for edges and markers.
 const defaultEdgeStyle: React.CSSProperties = {
   strokeWidth: 1.5,
   // stroke: '#7d8a70', // REMOVED - Color is now set dynamically based on level.
 };
 
-// Base style for edge markers (arrowheads). Color is applied dynamically.
 const defaultMarkerEnd = {
   type: MarkerType.ArrowClosed,
   // color: '#7d8a70', // REMOVED - Color is now set dynamically based on level.
@@ -153,13 +132,9 @@ const defaultMarkerEnd = {
 
 // Color palette for different prerequisite levels (depth).
 export const levelColors = ["#283618", "#dda15e", "#a3b18a", "#dad7cd"];
-// Fallback color used if depth is missing or exceeds palette size.
 const defaultEdgeColor = levelColors[levelColors.length - 1];
 
-// Type for specifying layout orientation.
 type LayoutDirection = "TB" | "LR";
-
-// --- Layout Function ---
 
 /**
  * Calculates node positions using Dagre layout algorithm.
@@ -174,17 +149,15 @@ const getLayoutedElements = (
   direction: LayoutDirection,
   theme?: string, // Add theme parameter
 ): { nodes: AppNode[]; edges: AppEdge[] } => {
-  // Get theme-based styles
   const { targetNodeStyle, prereqNodeStyle, textNodeStyle } = getNodeStyles(theme);
 
-  // Configure Dagre graph settings.
   dagreGraph.setGraph({ rankdir: direction, nodesep: 60, ranksep: 60, marginx: 20, marginy: 20 });
 
-  // Clear previous graph elements to prevent errors on re-layout.
   dagreGraph.nodes().forEach((nodeId: string) => {
     try {
       dagreGraph.removeNode(nodeId);
     } catch (e) {
+      console.log("Dagre removeNode failed:", e);
       /* Ignore if node not found */
     }
   });
@@ -192,6 +165,7 @@ const getLayoutedElements = (
     try {
       dagreGraph.removeEdge(edge.v, edge.w);
     } catch (e) {
+      console.log("Dagre removeEdge failed:", e);
       /* Ignore if edge not found */
     }
   });
@@ -218,7 +192,6 @@ const getLayoutedElements = (
     dagre.layout(dagreGraph);
   } catch (layoutError) {
     console.error("Dagre layout failed:", layoutError);
-    // Fallback: Return nodes with original (likely 0,0) positions if layout fails.
     return {
       nodes: nodesToLayout.map((n) => ({ ...n, position: n.position ?? { x: 0, y: 0 } })),
       edges: edgesToLayout,
@@ -228,19 +201,16 @@ const getLayoutedElements = (
   // Process layout results and map back to React Flow node structure.
   const finalNodes: AppNode[] = nodesToLayout.map((node) => {
     const dagreNode = dagreGraph.node(node.id);
-    const heightForLayout = node.height ?? nodeHeight; // Consistent height value.
+    const heightForLayout = node.height ?? nodeHeight;
 
-    // Calculate position based on Dagre output, centered adjusted by node dimensions.
     const calculatedPosition = dagreNode
       ? { x: dagreNode.x - (node.width ?? nodeWidth) / 2, y: dagreNode.y - heightForLayout / 2 }
-      : node.position; // Fallback to original position if node layout failed.
+      : node.position;
 
-    // Determine source/target handle positions based on layout direction.
     const isHorizontal = direction === "LR";
     const targetPosition = node.targetPosition ?? (isHorizontal ? Position.Left : Position.Top);
     const sourcePosition = node.sourcePosition ?? (isHorizontal ? Position.Right : Position.Bottom);
 
-    // Select base style based on node type USING THEME-AWARE STYLES
     let baseStyle: React.CSSProperties;
     if (!node.data.isCourse) {
       baseStyle = textNodeStyle;
@@ -255,15 +225,14 @@ const getLayoutedElements = (
     // Build the final React Flow node object with all required properties.
     const finalNode: AppNode = {
       id: node.id,
-      position: calculatedPosition!, // Assert non-null as we have fallbacks.
+      position: calculatedPosition!,
       data: node.data,
-      type: node.type ?? "default", // Default React Flow node type.
+      type: node.type ?? "default",
       style: finalStyle,
       width: nodeWidth,
-      height: nodeHeight, // Use standard height for rendering consistency.
+      height: nodeHeight,
       sourcePosition: sourcePosition,
       targetPosition: targetPosition,
-      // Include default values for base properties expected by React Flow.
       selected: node.selected ?? false,
       dragging: node.dragging ?? false,
       selectable: node.selectable ?? true,
@@ -277,47 +246,39 @@ const getLayoutedElements = (
 
   // Process edges, applying level-based coloring.
   const finalEdges: AppEdge[] = edgesToLayout.map((edge) => {
-    // --- DEBUGGING: Log edge data to check depth ---
     // console.log('[Edge Data Check] ID:', edge.id, 'Data:', edge.data);
-    // ------------------------------------------------
 
-    // Determine edge color based on the 'depth' property from edge.data.
-    // Assumes depth is 1-indexed (direct prerequisites are level 1).
     const depth = edge.data?.depth;
-    let edgeColor = defaultEdgeColor; // Start with the fallback color.
+    let edgeColor = defaultEdgeColor;
 
     if (typeof depth === "number" && depth >= 1 && depth <= levelColors.length) {
-      edgeColor = levelColors[depth - 1]; // Select color from palette based on depth.
+      edgeColor = levelColors[depth - 1];
     } else if (typeof depth === "number" && depth > levelColors.length) {
-      edgeColor = levelColors[levelColors.length - 1]; // Use the last color for depths beyond the palette size.
+      edgeColor = levelColors[levelColors.length - 1]; // last color
     }
-    // If depth is missing or not a number, the fallback color remains.
 
-    // --- DEBUGGING: Log calculated color ---
     // console.log('[Edge Data Check] ID:', edge.id, 'Depth:', depth, 'Calculated Color:', edgeColor);
-    // ---------------------------------------
-
     // Build the final React Flow edge object.
     const finalEdge: AppEdge = {
       id: edge.id,
       source: edge.source,
       target: edge.target,
-      type: edge.type ?? "smoothstep", // Use smoothstep for nice curved edges.
+      type: edge.type ?? "smoothstep",
       style: {
-        ...defaultEdgeStyle, // Include base styles like strokeWidth.
-        stroke: edgeColor, // Apply the calculated level-based color.
-        ...edge.style, // Allow specific edge style overrides from props.
+        ...defaultEdgeStyle,
+        stroke: edgeColor,
+        ...edge.style,
       },
       markerEnd: {
-        ...defaultMarkerEnd, // Include base marker styles like type and size.
-        color: edgeColor, // Apply the level-based color to the arrowhead.
-        ...(typeof edge.markerEnd === "object" ? edge.markerEnd : {}), // Allow specific marker style overrides from props.
+        ...defaultMarkerEnd,
+        color: edgeColor,
+        ...(typeof edge.markerEnd === "object" ? edge.markerEnd : {}),
       },
-      // Include default values for base properties expected by React Flow.
+
       animated: edge.animated ?? false,
       selected: edge.selected ?? false,
       hidden: edge.hidden ?? false,
-      // Keep original data, optionally add calculated color for debugging/state trigger.
+
       data: { ...edge.data, calculatedColor: edgeColor },
     };
     return finalEdge;
@@ -327,11 +288,6 @@ const getLayoutedElements = (
   return { nodes: finalNodes, edges: finalEdges };
 };
 
-// --- React Flow Component ---
-
-/**
- * Internal component that renders the React Flow graph and handles interactions.
- */
 const PrerequisiteGraphLayout = ({
   initialNodes,
   initialEdges,
@@ -343,53 +299,41 @@ const PrerequisiteGraphLayout = ({
   const [nodes, setNodes, onNodesChange] = useNodesState<Node<GraphNodeData>>([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState<AppEdge>([]);
 
-  /**
-   * Handles clicks on graph nodes.
-   * If a course node is clicked, navigates to that course's page.
-   */
   const handleNodeClick = (_event: React.MouseEvent, node: Node<GraphNodeData>) => {
-    // Only act on clicks if it's a course node (not a text requirement).
     if (node.data && node.data.isCourse) {
-      const courseCodeFull = node.id; // Node ID is expected to be the full code (e.g., "MATH 101").
-      // Attempt to parse department and code using regex.
+      const courseCodeFull = node.id;
       const match = courseCodeFull.match(/^([a-zA-Z]+)\s*(\d+[a-zA-Z]*)$/);
 
       if (match) {
         const department = match[1].toLowerCase();
         const code = match[2].toLowerCase();
         const url = `/courses/${department}/${code}`; // Construct the internal URL.
-        // console.log(`Navigating to: ${url}`); // Debugging log.
+        // console.log(`Navigating to: ${url}`);
         router.push(url); // Navigate to the course page.
       } else {
-        // Log a warning if parsing fails (shouldn't happen with valid course codes).
         console.warn(`Could not parse course code from node ID: ${courseCodeFull}`);
       }
     } else {
-      // Optional: Log clicks on non-course nodes for debugging.
       // console.log('Clicked non-course node:', node);
     }
   };
 
-  // Update layout when nodes, edges, or theme change
   const { nodes: layoutedNodes, edges: layoutedEdges } = useMemo(() => {
     console.log("[Layout Update] Theme:", theme); // Debug log
-
-    // Basic validation: Ensure props are arrays.
     if (!Array.isArray(initialNodes) || !Array.isArray(initialEdges)) {
       console.warn("Graph received invalid initialNodes or initialEdges.");
-      return { nodes: [], edges: [] }; // Return empty layout
+      return { nodes: [], edges: [] };
     }
 
-    // 1. Transform InputNodes to Nodes with position/dimensions for layout
+    // Transform nodes to match React Flow's expected structure.
     const transformedNodes: Node<GraphNodeData>[] = initialNodes.map((n) => ({
       id: n.id,
       data: n.data,
-      position: { x: 0, y: 0 }, // Initial position (will be overwritten by layout).
-      width: nodeWidth, // Standard width for layout.
-      height: nodeHeight, // Standard height for layout.
+      position: { x: 0, y: 0 },
+      width: nodeWidth,
+      height: nodeHeight,
       type: n.type ?? "default",
       style: n.style,
-      // Set default React Flow node properties.
       selected: false,
       dragging: false,
       selectable: true,
@@ -399,32 +343,29 @@ const PrerequisiteGraphLayout = ({
       focusable: true,
     }));
 
-    // 2. Prepare edges (usually requires less transformation).
+    // Prepare edges (usually requires less transformation).
     const transformedEdges: AppEdge[] = initialEdges.map((e) => ({ ...e }));
 
-    // 3. Calculate layout if there are nodes.
+    // Calculate layout if there are nodes.
     if (transformedNodes.length === 0) {
       return { nodes: [], edges: [] };
     }
 
-    return getLayoutedElements(transformedNodes, transformedEdges, "TB", theme); // Pass theme here
-  }, [initialNodes, initialEdges, theme]); // Add theme to dependencies
+    return getLayoutedElements(transformedNodes, transformedEdges, "TB", theme);
+  }, [initialNodes, initialEdges, theme]);
 
-  // Effect to update React Flow state when layouted elements change
   useEffect(() => {
     setNodes(layoutedNodes);
     setEdges(layoutedEdges);
-    // Optional: Recenter view after layout possibly changes node positions drastically
     // requestAnimationFrame(() => fitView({ padding: 0.1 }));
   }, [layoutedNodes, layoutedEdges, setNodes, setEdges, fitView]);
 
-  // Render the React Flow component.
   return (
     <div
       style={{
         height: "min(500px, 70vh)",
         width: "100%",
-        border: `1px solid ${theme === "dark" ? "hsl(var(--border))" : "#d1d1c4"}`, // Theme-aware border
+        border: `1px solid ${theme === "dark" ? "hsl(var(--border))" : "#d1d1c4"}`,
         borderRadius: "5px",
       }}
       className="touch-manipulation"
@@ -436,10 +377,10 @@ const PrerequisiteGraphLayout = ({
         onEdgesChange={onEdgesChange}
         onNodeClick={handleNodeClick}
         className="bg-background"
-        nodesDraggable={false} // Prevent users from dragging nodes.
-        nodesConnectable={false} // Prevent users from creating new edges.
-        style={theme === "dark" ? { backgroundColor: "#1a1a1a" } : { backgroundColor: "#FFFFFF" }} // Set graph background color.
-        proOptions={{ hideAttribution: true }} // Hide React Flow attribution mark.
+        nodesDraggable={false}
+        nodesConnectable={false}
+        style={theme === "dark" ? { backgroundColor: "#1a1a1a" } : { backgroundColor: "#FFFFFF" }}
+        proOptions={{ hideAttribution: true }}
         minZoom={0.5}
         fitView
         attributionPosition="top-right"
@@ -455,18 +396,11 @@ const PrerequisiteGraphLayout = ({
   );
 };
 
-// --- Wrapper Component ---
-
-/**
- * Wraps the PrerequisiteGraphLayout with ReactFlowProvider.
- * This provider is necessary for React Flow hooks (like useReactFlow) to work.
- */
 export default function PrerequisiteGraphWrapper(props: PrerequisiteGraphProps) {
-  const { resolvedTheme } = useTheme(); // Get the currently resolved theme
+  const { resolvedTheme } = useTheme();
 
   return (
     <ReactFlowProvider>
-      {/* Pass the theme to the layout component */}
       <PrerequisiteGraphLayout {...props} theme={resolvedTheme} />
     </ReactFlowProvider>
   );

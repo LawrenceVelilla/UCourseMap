@@ -15,14 +15,7 @@ export const prisma =
 if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
 
 /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
  * Fetches full details for a single course and maps it to the Course type.
-=======
- * Fetches full details for a single course by department and code number.
- * Uses React Cache for memoization within a single request lifecycle.
->>>>>>> 3d6741f (Implemented the RecursiveCTE to solve N+1 problem)
  */
 export const getCourseDetails = cache(
   async (departmentCode: string, courseCodeNumber: string): Promise<Course | null> => {
@@ -47,9 +40,6 @@ export const getCourseDetails = cache(
         console.warn(`[Data] Course not found: ${fullCourseCode}`);
         return null;
       }
-
-      // Map database result to application's Course type
-      // Perform runtime validation/parsing for JSON fields if necessary
       const mappedCourse: Course = {
         id: dbCourse.id,
         department: dbCourse.department,
@@ -90,10 +80,8 @@ export const getMultipleCourseDetails = cache(
     try {
       const courses = await prisma.course.findMany({
         where: { courseCode: { in: upperCaseCodes } },
-        // Select only the absolutely necessary fields for the list display
         select: { id: true, department: true, courseCode: true, title: true },
       });
-      // Direct return as selected fields match the desired Pick<...> type
       return courses;
     } catch (error) {
       console.error(`[Data] Error fetching multiple course details:`, error);
@@ -103,8 +91,6 @@ export const getMultipleCourseDetails = cache(
 );
 
 /**
-<<<<<<< HEAD
-=======
  * Fetches basic details (id, code, title, dept) for all courses in a given department.
  * Optimized for list displays.
  * Uses React Cache.
@@ -121,20 +107,18 @@ export const getCoursesByDepartment = cache(
     try {
       const courses = await prisma.course.findMany({
         where: { department: upperDept },
-        // Select only necessary fields for list display
         select: { id: true, department: true, courseCode: true, title: true },
-        orderBy: { courseCode: "asc" }, // Consistent ordering
+        orderBy: { courseCode: "asc" },
       });
       return courses;
     } catch (error) {
       console.error(`[Data] Error fetching courses for department ${upperDept}:`, error);
-      return []; // Return empty array on error
+      return [];
     }
   },
 );
 
 /**
->>>>>>> 6f6aa09 (feat: Implemented a 'search mode' where users can either search by title, or by course code. Also added zod validation on data collection functions)
  * Recursively fetches prerequisite courses using a PostgreSQL Recursive CTE.
  * Returns structured data including nodes (both Course objects and InputNode for text requirements)
  * and edges (AppEdge with depth information). Filters out high school requirements.
@@ -157,7 +141,6 @@ const isHighSchoolPrereq = (text: string): boolean => {
   return highSchoolPatterns.has(text.toUpperCase().trim());
 };
 
-// --- Zod Schema for validating raw CTE results ---
 const RawCteResultSchema = z.object({
   id: z.string().uuid(),
   department: z.string(),
@@ -175,7 +158,6 @@ const RawCteResultSchema = z.object({
 });
 type RawCteResult = z.infer<typeof RawCteResultSchema>;
 
-// --- Helper for Pass 1: Process CTE rows into Course Nodes and Course–Course Edges ---
 function processCourseNodes(
   validatedResults: RawCteResult[],
   courseNodesMap: Map<string, Course>,
@@ -185,7 +167,6 @@ function processCourseNodes(
   for (const row of validatedResults) {
     // Record course code in the known courses set via the map key.
     const courseCode = row.courseCode;
-    // Update node depth: keep the minimum depth seen.
     const currentMin = nodeDepths.get(courseCode) ?? Infinity;
     nodeDepths.set(courseCode, Math.min(currentMin, row.depth));
 
@@ -220,7 +201,7 @@ function processCourseNodes(
   }
 }
 
-// --- Helper for Pass 2: Process missing (text) prerequisites ---
+// Function for processing text-based prerequisites
 function processTextPrerequisites(
   courseNodesMap: Map<string, Course>,
   nodeDepths: Map<string, number>,
@@ -232,7 +213,6 @@ function processTextPrerequisites(
     const sourceDepth = nodeDepths.get(courseCode);
     if (sourceDepth === undefined) continue;
 
-    // Check each prerequisite in the flattened list
     if (courseNode.flattenedPrerequisites) {
       for (const prereqString of courseNode.flattenedPrerequisites) {
         const normalizedPrereq = prereqString.toUpperCase().trim();
@@ -247,11 +227,10 @@ function processTextPrerequisites(
                 isCourse: false,
                 type: "text_requirement",
               },
-              // Position will be handled by layout
             };
             textNodesMap.set(normalizedPrereq, textNode);
           }
-          // Create edge from current course node to this text node
+
           const targetDepth = sourceDepth + 1;
           const edgeId = `edge-${courseCode}-to-${normalizedPrereq}-depth-${targetDepth}`;
           if (!finalEdges.some((e) => e.id === edgeId)) {
@@ -269,7 +248,7 @@ function processTextPrerequisites(
   return textNodesMap;
 }
 
-// --- Main Improved CTE Function ---
+// Main function to fetch recursive prerequisites using CTE
 export const getRecursivePrerequisitesCTE = cache(
   async (
     departmentCode: string,
@@ -280,9 +259,9 @@ export const getRecursivePrerequisitesCTE = cache(
     const codeNumUpper = courseCodeNumber.toUpperCase();
     const fullCourseCode = `${deptUpper} ${codeNumUpper}`;
 
-    // --- Input Validation ---
+    // Validate and normalize input
     try {
-      CourseCodeSchema.parse(fullCourseCode); // Use the existing schema
+      CourseCodeSchema.parse(fullCourseCode); // Use schema
     } catch (error) {
       if (error instanceof z.ZodError) {
         console.error(`[DataCTE] Invalid course code format for ${fullCourseCode}:`, error);
@@ -294,15 +273,12 @@ export const getRecursivePrerequisitesCTE = cache(
         throw new Error("Unexpected validation error"); // Throw a generic error
       }
     }
-    // --- End Input Validation ---
-
     if (process.env.NODE_ENV === "development") {
       console.log(
         `[DataCTE] Fetching recursive prerequisites for: ${fullCourseCode} up to depth ${maxDepth}`,
       );
     }
 
-    // --- The Recursive CTE SQL Query ---
     const sql = Prisma.sql`
       WITH RECURSIVE PrereqGraph AS (
           SELECT
@@ -334,11 +310,10 @@ export const getRecursivePrerequisitesCTE = cache(
     `;
 
     try {
-      // Execute the recursive CTE query
       const rawResults = await prisma.$queryRaw<unknown[]>(sql);
       const validatedResults = z.array(RawCteResultSchema).parse(rawResults);
 
-      // --- Post-Processing: Modularized in two passes ---
+      // Initialize maps for course nodes and edges
       const courseNodesMap = new Map<string, Course>();
       const nodeDepths = new Map<string, number>();
       const finalEdges: AppEdge[] = [];
@@ -381,13 +356,8 @@ const CourseCodeSchema = z
   .trim()
   .toUpperCase()
   .regex(
-<<<<<<< HEAD
-    /^[A-Z]{2,6}\s\d{3}$/,
-    'Invalid course code format, expected "DEPT 123" format with 2-6 letters and 3 digits'
-=======
     /^([A-Z]{2,6})(?:\s([A-Z]+))?\s(\d{3}[A-Z]?)$/,
     'Invalid course code format, expected formats like "DEPT 123" or "DEPT 123A"',
->>>>>>> 88bad5c (feat: Added a Zustan for the actual program planner state management)
   );
 
 async function getCoursesByDependency(
@@ -438,7 +408,6 @@ export const getCoursesHavingCorequisite = cache(
   },
 );
 
-// --- DEPRECATED / REMOVED FUNCTIONS ---
 // The original `getRecursivePrerequisites` (N+1 version) has been removed.
 // The `getCourseAndPrerequisiteData` might be less useful now with the CTE providing
 // full recursive data, but can be kept if simple direct prereq lists are needed elsewhere
@@ -474,16 +443,6 @@ export const getCoursesHavingCorequisite = cache(
 //     return { targetCourse, prerequisiteCourses };
 //   }
 // );
-
-/**
->>>>>>> 5dc1d31 (Fixed parser and data pipeline to remove parsed description and use keywords instead to avoid any ToS violations)
- * Interface for the data structure returned by the recursive fetcher.
- * NOTE: Edge does NOT include depth yet.
- */
-interface RecursiveData {
-    nodes: Course[]; // Store *full* course details for nodes
-    edges: { source: string; target: string }[]; // Simple source->target edges using courseCode
-}
 
 /*
 export const getRecursivePrerequisites = cache(

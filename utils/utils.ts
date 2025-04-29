@@ -12,13 +12,6 @@ export function encodedRedirect(type: "error" | "success", path: string, message
   return redirect(`${path}?${type}=${encodeURIComponent(message)}`);
 }
 
-/**
- * Organizes program blocks into logical categories.
- * This function identifies parent-child relationships and assigns category information.
- *
- * @param program - Raw program data with flat block structure
- * @returns - Restructured program with hierarchical organization
- */
 export function organizeProgram(program: Program): Program {
   const organizedProgram: Program = {
     programName: program.programName,
@@ -109,14 +102,6 @@ export function organizeProgram(program: Program): Program {
 
   return organizedProgram;
 }
-
-/**
- * Finds all courses in a program that match a given prefix
- *
- * @param program - Program data
- * @param prefix - Course prefix (e.g., "CMPUT")
- * @returns - Array of course codes matching the prefix
- */
 export function findCoursesByPrefix(program: Program, prefix: string): string[] {
   const courses: string[] = [];
 
@@ -154,37 +139,26 @@ export function findPrerequisitePaths(allCourses: Map<string, Course>, targetCou
     if (visited.has(course) || depth > 10) return;
     visited.add(course);
 
-    // Add course to current path
     const newPath = [...currentPath, course];
-
-    // Get course data
     const courseData = allCourses.get(course);
     if (!courseData) return;
-
-    // Get prerequisites
     const prereqs = courseData.flattenedPrerequisites || [];
-
-    // Store in dependency map
     dependencyMap.set(course, [...prereqs]);
 
-    // If no prerequisites, this is a root path
     if (prereqs.length === 0 && course === targetCourse) {
       paths.push(newPath);
       return;
     }
 
-    // Recursively process prerequisites
     for (const prereq of prereqs) {
       buildPaths(prereq, newPath, depth + 1);
     }
 
-    // If this is a terminal node (no prereqs), add the path
     if (prereqs.length === 0) {
       paths.push(newPath);
     }
   }
 
-  // Start building paths from the target course
   buildPaths(targetCourse);
 
   return {

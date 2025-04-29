@@ -2,13 +2,11 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BookOpen, Calendar, GraduationCap, Home, User } from "lucide-react";
-import { cn } from "@/lib/utils"; // Utility for conditional classes
-import { ThemeSwitcher } from "./theme-switcher"; // Import the theme switchermport { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { ThemeSwitcher } from "./theme-switcher";
 
 export function HeaderNav() {
   const pathname = usePathname();
-
-  // Define navigation items for easier mapping
   const navItems = [
     { href: "/", label: "Home", icon: Home },
     // { href: "/classes", label: "Classes", icon: BookOpen },
@@ -30,14 +28,11 @@ export function HeaderNav() {
               <Link
                 key={item.label}
                 href={item.href}
-                // Apply base styling + conditional active styling
                 className={cn(
                   "flex items-center justify-center gap-1 rounded-md px-2 py-2 text-sm font-medium transition-colors",
-                  "hover:text-primary", // Use theme primary color on hover
+                  "hover:text-primary",
                   "min-w-[40px] sm:min-w-[auto]", // Prevent squishing on small screens
-                  pathname === item.href
-                    ? "text-foreground" // Active state uses main foreground color
-                    : "text-muted-foreground", // Default state uses muted foreground
+                  pathname === item.href ? "text-foreground" : "text-muted-foreground",
                 )}
                 aria-label={item.label}
               >
@@ -53,7 +48,7 @@ export function HeaderNav() {
             href="/signin"
             className={cn(
               "flex items-center gap-1 rounded-md px-2 py-2 text-sm font-medium transition-colors",
-              "text-muted-foreground hover:text-primary", // Consistent styling for sign in link
+              "text-muted-foreground hover:text-primary",
             )}
             aria-label="Sign in"
           >

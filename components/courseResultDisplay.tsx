@@ -106,9 +106,8 @@ export function CourseResultDisplay({
     setDetailedGraphEdges([]);
     setDetailedGraphLoaded(false);
     setDetailedGraphError(null);
-  }, [targetCourse.id, targetCourse.courseCode]); // Depend on course identifiers
+  }, [targetCourse.id, targetCourse.courseCode]);
 
-  // Function to fetch detailed graph data
   const fetchDetailedGraphData = async () => {
     if (detailedGraphLoaded) return; // Don't fetch if already loaded
 
@@ -139,9 +138,7 @@ export function CourseResultDisplay({
     }
   };
 
-  // Handle view toggle with data fetching
   const handleViewToggle = (view: "detailed" | "simple") => {
-    // If switching to detailed view and data not loaded yet, fetch it
     if (view === "detailed" && !detailedGraphLoaded && !isLoadingDetailedGraph) {
       fetchDetailedGraphData();
     }
@@ -149,10 +146,8 @@ export function CourseResultDisplay({
     setGraphView(view);
   };
 
-  // Effect for animating cards on load/change --> Anime js
   useEffect(() => {
     if (targetCourse && bentoContainerRef.current) {
-      // Ensure animation targets exist before animating
       const cards = bentoContainerRef.current.querySelectorAll(".bento-card");
       if (cards.length > 0) {
         animate(cards, {
@@ -168,16 +163,15 @@ export function CourseResultDisplay({
     // Rerun animation if the target course changes
   }, [targetCourse]);
 
-  // Function to determine text color (black/white) based on background hex
   const getContrastColor = (hexColor: string): string => {
-    if (!hexColor) return "#000000"; // Default to black if color is invalid
+    if (!hexColor) return "#000000";
     const hex = hexColor.replace("#", "");
     const r = parseInt(hex.substring(0, 2), 16);
     const g = parseInt(hex.substring(2, 4), 16);
     const b = parseInt(hex.substring(4, 6), 16);
     // Formula for luminance (YIQ equation)
     const luminance = (r * 299 + g * 587 + b * 114) / 1000;
-    return luminance >= 128 ? "#000000" : "#FFFFFF"; // Black for light bg, White for dark bg
+    return luminance >= 128 ? "#000000" : "#FFFFFF";
   };
 
   if (!targetCourse) {

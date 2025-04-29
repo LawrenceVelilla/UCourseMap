@@ -328,12 +328,8 @@ export default function CourseSearchInput() {
             "focus:outline-none focus:ring-ring focus:ring-offset-0",
             "focus:border-transparent",
             "transition-all duration-200 ease-in-out",
-<<<<<<< HEAD
             "hover:scale-105 focus:scale-105",
-            searchMode !== "code" && "hover:bg-accent"
-=======
-            searchMode !== "code" && "hover:bg-accent hover:scale-105",
->>>>>>> f9b07a9 (feat: Implemented a &apos;Detailed&apos; Graph that displays prerequisites INCLUDING the AND/OR logic -- Also fixed indentation issues)
+            searchMode !== "code" && "hover:bg-accent",
           )}
           data-search-mode-badge="true"
           aria-pressed={searchMode === "code"}
@@ -354,12 +350,8 @@ export default function CourseSearchInput() {
             "focus:outline-none focus:ring-ring focus:ring-offset-0",
             "focus:border-transparent",
             "transition-all duration-200 ease-in-out",
-<<<<<<< HEAD
             "hover:scale-105 focus:scale-105",
-            searchMode !== "title" && "hover:bg-accent"
-=======
-            searchMode !== "title" && "hover:bg-accent hover:scale-105",
->>>>>>> f9b07a9 (feat: Implemented a &apos;Detailed&apos; Graph that displays prerequisites INCLUDING the AND/OR logic -- Also fixed indentation issues)
+            searchMode !== "title" && "hover:bg-accent",
           )}
           data-search-mode-badge="true"
           aria-pressed={searchMode === "title"}

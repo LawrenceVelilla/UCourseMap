@@ -2,25 +2,21 @@ import { NextResponse } from "next/server";
 
 // IMPORTANT: In-memory store for demonstration ONLY.
 // Needs access to the SAME store as the POST route.
-// In a real app with a DB, this wouldn't be an issue.
-// A better approach for in-memory might be a singleton service.
-// We'll simulate shared access for now.
+// Not an issue for real implementation with a database. THIS IS JUST A SIMULATION FOR DEMO.
 
 // HACK: Accessing the store defined in the other route file.
 // This relies on Node module caching to share the instance. Bad practice!
 // Replace with DB or proper singleton service.
-import userPlansStore from "../../plansStore"; // Adjust the import path as necessary
+import userPlansStore from "../../plansStore";
 
 export function GET(request: Request, context: any) {
   try {
-    // Decode the program name from the URL parameter
     const programName = decodeURIComponent(context?.params?.programName);
 
     if (!programName) {
       return NextResponse.json({ message: "Program name parameter is required." }, { status: 400 });
     }
 
-    // Access the (hopefully) shared store
     const plan = userPlansStore[programName];
 
     if (!plan) {
@@ -28,11 +24,10 @@ export function GET(request: Request, context: any) {
       // so the client can handle it gracefully (e.g., start a new plan).
       console.log(`No plan found for program: ${programName}. Returning empty plan.`);
       return NextResponse.json({}, { status: 200 });
-      // Or return 404 if that's preferred:
       // return NextResponse.json({ message: `No plan found for program: ${programName}` }, { status: 404 });
     }
 
-    // In a real app, fetch from a database:
+    // Fetch from db in real implementation
     // const planRecord = await prisma.userPlan.findUnique({
     //   where: { userId_programName: { userId: 'currentUser', programName: programName } },
     // });

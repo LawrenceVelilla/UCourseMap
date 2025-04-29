@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { Course } from "../../../../lib/types";
 
-// --- Placeholder Course Data ---
+// Placeholder data for demonstration purposes
 // IMPORTANT: Replace this with actual database fetching (e.g., Prisma)
 const placeholderCourses: Course[] = [
   {
@@ -12,8 +12,8 @@ const placeholderCourses: Course[] = [
     units: { credits: 3, feeIndex: 1, term: "both" },
     keywords: ["programming", "python", "introductory"],
     requirements: {
-      prerequisites: undefined, // Changed from null
-      corequisites: undefined, // Changed from null
+      prerequisites: undefined,
+      corequisites: undefined,
       notes: "Recommended for students with little or no programming background.",
     },
     flattenedPrerequisites: [],
@@ -33,8 +33,8 @@ const placeholderCourses: Course[] = [
         operator: "AND",
         courses: ["CMPUT 174"],
       },
-      corequisites: undefined, // Changed from null
-      notes: undefined, // Changed from null
+      corequisites: undefined,
+      notes: undefined,
     },
     flattenedPrerequisites: ["CMPUT 174"],
     flattenedCorequisites: [],
@@ -50,15 +50,14 @@ const placeholderCourses: Course[] = [
     keywords: ["math", "linear algebra", "vectors", "matrices"],
     requirements: {
       prerequisites: {
-        // Example: Math 30-1 OR Pure Math 30
         operator: "OR",
         courses: ["MATHEMATICS 30-1", "PURE MATHEMATICS 30"],
         description: "One of Mathematics 30-1 or Pure Mathematics 30",
       },
-      corequisites: undefined, // Changed from null
+      corequisites: undefined,
       notes: "Credit may be obtained for only one of MATH 102, 125, 127.",
     },
-    flattenedPrerequisites: ["MATHEMATICS 30-1", "PURE MATHEMATICS 30"], // Simplified for example
+    flattenedPrerequisites: ["MATHEMATICS 30-1", "PURE MATHEMATICS 30"],
     flattenedCorequisites: [],
     url: "https://apps.ualberta.ca/catalogue/course/math/125",
     updatedAt: new Date().toISOString(),
@@ -72,13 +71,12 @@ const placeholderCourses: Course[] = [
     keywords: ["statistics", "probability", "data analysis"],
     requirements: {
       prerequisites: {
-        // Example: Math 30-1 OR Math 30-2
         operator: "OR",
         courses: ["MATHEMATICS 30-1", "MATHEMATICS 30-2"],
         description: "Mathematics 30-1 or 30-2.",
       },
-      corequisites: undefined, // Changed from null
-      notes: undefined, // Changed from null
+      corequisites: undefined,
+      notes: undefined,
     },
     flattenedPrerequisites: ["MATHEMATICS 30-1", "MATHEMATICS 30-2"],
     flattenedCorequisites: [],
@@ -97,20 +95,19 @@ const placeholderCourses: Course[] = [
         // Example: (CMPUT 175 OR CMPUT 274) AND MATH 125
         operator: "AND",
         conditions: [
-          { operator: "OR", courses: ["CMPUT 175", "CMPUT 274"] }, // Assumes CMPUT 274 exists
-          { operator: "AND", courses: ["MATH 125"] }, // Could just be courses: ['MATH 125']
+          { operator: "OR", courses: ["CMPUT 175", "CMPUT 274"] },
+          { operator: "AND", courses: ["MATH 125"] },
         ],
         description: "One of CMPUT 175 or 274, and MATH 125.",
       },
-      corequisites: undefined, // Changed from null
-      notes: undefined, // Changed from null
+      corequisites: undefined,
+      notes: undefined,
     },
-    flattenedPrerequisites: ["CMPUT 175", "CMPUT 274", "MATH 125"], // Simplified
+    flattenedPrerequisites: ["CMPUT 175", "CMPUT 274", "MATH 125"],
     flattenedCorequisites: [],
     url: "https://apps.ualberta.ca/catalogue/course/cmput/272",
     updatedAt: new Date().toISOString(),
   },
-  // Add more courses as needed for testing
 ];
 
 interface BatchCourseRequestBody {

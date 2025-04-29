@@ -26,12 +26,10 @@ export async function POST(request: Request) {
     }
 
     console.log(`Saving plan for program: ${programName}`);
-    // Basic validation could be added here for selectedCourses structure
 
-    // Store the plan (overwrites existing plan for this program)
     userPlansStore[programName] = selectedCourses;
 
-    // In a real app, you'd save to a database here:
+    // Use prisma database for actual implementation
     // await prisma.userPlan.upsert({
     //   where: { userId_programName: { userId: 'currentUser', programName: programName } }, // Assuming user auth
     //   update: { planData: selectedCourses },
@@ -52,7 +50,6 @@ export async function POST(request: Request) {
   }
 }
 
-// Optional: Add a GET handler here if you want to list all stored plans (for debugging)
 export async function GET() {
   return NextResponse.json({
     message: "Current in-memory plans (for debugging)",

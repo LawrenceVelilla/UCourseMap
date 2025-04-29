@@ -1,44 +1,14 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-import { NextResponse } from 'next/server';
-import { getCourseDetails } from '@/lib/data';
-=======
-import { NextResponse, NextRequest } from "next/server";
-import { getCourseDetails } from "@/lib/data";
->>>>>>> 6f6aa09 (feat: Implemented a 'search mode' where users can either search by title, or by course code. Also added zod validation on data collection functions)
-=======
 import { NextResponse } from "next/server";
 import { getCourseDetails } from "@/lib/data";
->>>>>>> e3bf9f3 (chore: Rebase broke a coouple of GET endpoints along with leaving some merge headers)
 
 interface Params {
   department: string;
   courseCode: string;
 }
 
-<<<<<<< HEAD
-export async function GET(
-<<<<<<< HEAD
-  request: Request,
-  { params }: { params: Params }
-=======
-  request: NextRequest,
-  context: any, // Use 'any' for the context parameter
->>>>>>> 2189e6d (feat: Implement Intial MVP for the Plan Builder and Program Planner)
-) {
-<<<<<<< HEAD
-  const departmentCode = params.department;
-  const courseCodeNumber = params.courseCode; 
-=======
-  // Access params via the context object (assuming structure)
-  const departmentCode = context?.params?.department;
-  const courseCodeNumber = context?.params?.courseCode;
->>>>>>> 6f6aa09 (feat: Implemented a 'search mode' where users can either search by title, or by course code. Also added zod validation on data collection functions)
-=======
 export async function GET(request: Request, context: any) {
   const departmentCode = context.params.department;
   const courseCodeNumber = context.params.courseCode;
->>>>>>> e3bf9f3 (chore: Rebase broke a coouple of GET endpoints along with leaving some merge headers)
 
   if (!departmentCode || !courseCodeNumber) {
     return NextResponse.json(

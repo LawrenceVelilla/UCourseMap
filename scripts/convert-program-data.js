@@ -6,11 +6,9 @@
 const fs = require("fs");
 const path = require("path");
 
-// Paths
 const INPUT_FILE = path.join(process.cwd(), "public/program_requirements.json");
 const OUTPUT_FILE = path.join(process.cwd(), "public/program_requirements_structured.json");
 
-// Patterns to identify category blocks
 const CATEGORY_PATTERNS = [
   /Foundation Courses/i,
   /Senior Courses/i,
@@ -49,7 +47,6 @@ function processProgram(rawProgram) {
   const categoryMap = new Map();
   const blockIdMap = new Map();
 
-  // Current active category
   let currentCategory = "";
 
   // Process each block
@@ -120,15 +117,12 @@ function processProgram(rawProgram) {
 
 async function convertProgram() {
   try {
-    // Read input file
     console.log(`Reading program data from: ${INPUT_FILE}`);
     const rawData = fs.readFileSync(INPUT_FILE, "utf8");
     const rawProgram = JSON.parse(rawData);
 
-    // Process program data
     const structuredProgram = processProgram(rawProgram);
 
-    // Write output file
     console.log(`Writing structured program data to: ${OUTPUT_FILE}`);
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(structuredProgram, null, 2), "utf8");
 
@@ -136,7 +130,6 @@ async function convertProgram() {
     console.log(`Categories found: ${structuredProgram.categories.length}`);
     console.log(`Total blocks: ${structuredProgram.blocks.length}`);
 
-    // Print category summary
     console.log("\nCategory summary:");
     structuredProgram.categories.forEach((category) => {
       console.log(`- ${category.name}: ${category.blocks.length} blocks`);

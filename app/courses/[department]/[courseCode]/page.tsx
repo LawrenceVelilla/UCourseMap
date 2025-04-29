@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { CourseInfoWrapper } from "@/components/courseInfoWrapper"; // Re-use the wrapper
+import { CourseInfoWrapper } from "@/components/courseInfoWrapper"; // Re-use the wrappe
 import { CourseInfoSkeleton } from "@/components/ui/courseInfoSkeleton"; // Re-use the skeleton
 
 // Define the expected params shape

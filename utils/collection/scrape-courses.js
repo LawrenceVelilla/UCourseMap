@@ -1,7 +1,5 @@
 const cheerio = require("cheerio");
 const axios = require("axios");
-const fs = require("fs");
-import { RawCourse, Course } from "../../lib/types";
 
 export async function scrapeCourses(url) {
   try {
@@ -20,26 +18,22 @@ export async function parseCoursesHTML(html) {
   $(".course.first").each((_, element) => {
     const $course = $(element);
 
-    // Extract course header info
     const headerText = $course.find("h2 a").text().trim();
     const courseUrl = $course.find("h2 a").attr("href");
 
-    // Parse course code and title
     const codeTitleMatch = headerText.match(/^([A-Z]+(?:\s[A-Z]+)?\s+\d+)\s*[-–—]?\s*(.*)/);
     let courseCode = codeTitleMatch ? codeTitleMatch[1] : "";
     let title = codeTitleMatch ? codeTitleMatch[2] : headerText;
 
     const sectionMatch = title.match(/^([A-Z])\s*-\s*(.*)/);
     if (sectionMatch) {
-      // Add the section to the course code (no space between number and section)
       courseCode = courseCode + sectionMatch[1];
-      // Clean up the title by removing the section prefix
       title = sectionMatch[2].trim();
     }
 
     // Extract department - handle multi-word departments
     let department = "";
-    const deptMatch = courseCode.match(/^([A-Z]+(?:\s[A-Z]+)?)/); // Match letters at the start, possibly including one space
+    const deptMatch = courseCode.match(/^([A-Z]+(?:\s[A-Z]+)?)/);
     if (deptMatch) {
       department = deptMatch[1];
     }
@@ -53,11 +47,8 @@ export async function parseCoursesHTML(html) {
       term: unitsMatch ? unitsMatch[3] : null,
     };
 
-    // Extract description
     let description = $course.find("p").text().trim();
-    // Clean up description (remove the debugging info at the end)
     description = description.replace(/"\s*==\s*\$\d+$/, "").trim();
-    // Remove surrounding quotes if present
     description = description.replace(/^"(.+)"$/, "$1");
 
     courses.push({

@@ -1,6 +1,6 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
-import { ProgramBlock } from "./types"; // Assuming ProgramBlock is defined here
+import { ProgramBlock } from "./types";
 
 /**
  * Maps known requirement patterns (strings that are NOT standard course codes)
@@ -10,40 +10,31 @@ import { ProgramBlock } from "./types"; // Assuming ProgramBlock is defined here
  */
 export function mapRequirementPatternToDescription(pattern: string): string {
   if (!pattern || typeof pattern !== "string") {
-    return pattern || ""; // Return empty/original if input is invalid
+    return pattern || "";
   }
 
   const trimmedPattern = pattern.trim();
   const upperPattern = trimmedPattern.toUpperCase();
 
-  // --- STEP 1: Check if it looks like a STANDARD course code ---
-  // This regex matches formats like: DEPT 123, DEPT123, DEPT 123A, DEPT123A
+  // Check if it looks like a STANDARD course code
   const standardCourseCodeRegex = /^[A-Z]+\s*\d+[A-Z]*$/;
   if (standardCourseCodeRegex.test(upperPattern)) {
-    // It looks like a standard course code, assume it is one.
-    // Return the original trimmed string without mapping.
+    // If it looks like a standard course code, return it as is.
     return trimmedPattern;
   }
-  // ------------------------------------------------------------
 
-  // --- STEP 2: Check for your SPECIFIC regex pattern ---
-  // Matches "DEPT L[0-9]{N}" format (case-insensitive)
-  const levelPatternRegex = /^([A-Z]+)\s+([1-9])\[0-9\]\{(\d+)\}$/i; // Ensure Level digit is 1-9
+  // Check for your SPECIFIC regex pattern (case sensitive)
+  const levelPatternRegex = /^([A-Z]+)\s+([1-9])\[0-9\]\{(\d+)\}$/i;
   const levelMatch = trimmedPattern.match(levelPatternRegex);
 
   if (levelMatch) {
-    const department = levelMatch[1].toUpperCase(); // Use uppercase for consistency
+    const department = levelMatch[1].toUpperCase();
     const hundredDigit = parseInt(levelMatch[2], 10);
-    // Assuming the quantifier {N} means N digits *after* the first one.
-    // E.g., 2[0-9]{2} -> 200-level (hundredDigit = 2)
-    // E.g., 1[0-9]{2} -> 100-level (hundredDigit = 1)
     const level = hundredDigit * 100;
-    return `Any ${level}-level ${department} course`; // Added hyphen
+    return `Any ${level}-level ${department} course`;
   }
-  // ----------------------------------------------------
 
-  // --- STEP 3: Check for OTHER known non-course patterns (LEVEL, High School, etc.) ---
-  // Using the previous structure for flexibility
+  // Check for OTHER known non-course patterns (LEVEL, High School, etc.)
   const otherPatternMatchers: Array<{
     regex: RegExp;
     handler: (match: RegExpMatchArray) => string;
@@ -58,7 +49,6 @@ export function mapRequirementPatternToDescription(pattern: string): string {
       regex: /^(\d)\*\s+([A-Z\s]+)$/i,
       handler: (match) => `A ${match[1]}00-level ${match[2].trim().toUpperCase()} course or higher`,
     },
-    // Add more specific non-course regex patterns here
   ];
 
   for (const matcher of otherPatternMatchers) {
@@ -68,19 +58,18 @@ export function mapRequirementPatternToDescription(pattern: string): string {
     }
   }
 
-  // --- STEP 4: Check for EXACT non-course strings (High School, etc.) ---
+  // Check for EXACT non-course strings (High School, etc.)
   const exactMappings: { [key: string]: string } = {
     "MATHEMATICS 30-1": "Mathematics 30-1",
     "MATH 30-1": "Mathematics 30-1",
-    // ... Add more highschool classes here. But maybe not needed?
+
     // I can still display them for more info and stuff.
   };
   if (exactMappings[upperPattern]) {
     return exactMappings[upperPattern];
   }
-  // ----------------------------------------------------------------------
 
-  // --- STEP 5: Fallback ---
+  // Fallback
   // If it didn't look like a standard course code in Step 1,
   // and didn't match any specific patterns/mappings in Steps 2-4,
   // return the original trimmed string. It might be other text like "Consent of department".
@@ -125,7 +114,6 @@ export function isCategoryBlock(block: ProgramBlock): boolean {
     /Capstone/i,
   ];
 
-  // Check if block title matches any category pattern
   if (block.title) {
     return categoryPatterns.some((pattern) => pattern.test(block.title as string));
   }
@@ -133,16 +121,9 @@ export function isCategoryBlock(block: ProgramBlock): boolean {
   return false;
 }
 
-/**
- * Detects if a block is a unit choice block (e.g., "3 units from:")
- *
- * @param block - Program block to analyze
- * @returns Units required or 0 if not a unit choice block
- */
 export function getUnitRequirement(block: ProgramBlock): number {
   if (!block.title) return 0;
 
-  // Check if title matches the pattern (e.g., "3 units from:")
   const unitMatch = block.title.match(/(\d+)\s+units\s+from/i);
   if (unitMatch && unitMatch[1]) {
     return parseInt(unitMatch[1], 10);

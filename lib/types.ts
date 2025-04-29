@@ -1,13 +1,11 @@
-// import { Prisma } from "@prisma/client"; // Commented out or deleted
 import React from "react";
 
 export interface Course {
-  id?: string; // Assuming UUID
+  id?: string;
   department: string;
   courseCode: string;
   title: string;
   units: {
-    // Be more specific if possible
     credits: number;
     feeIndex: number;
     term: string;
@@ -24,7 +22,6 @@ export interface RawCourse {
   courseCode: string;
   title: string;
   units: {
-    // Be more specific if possible
     credits: number;
     feeIndex: number;
     term: string;
@@ -54,11 +51,11 @@ export interface RequirementsData {
 
 export interface RequirementCondition {
   // Operator might need more values if you use 'STANDALONE', 'WILDCARD', etc.
-  operator: "AND" | "OR" | "STANDALONE" | "WILDCARD" | string; // Make string if more ops exist
-  conditions?: RequirementCondition[]; // Nested conditions
-  courses?: string[]; // List of course codes OR descriptive text
-  pattern?: string; // Optional pattern (e.g., regex)
-  description?: string; // Optional human-readable description <--- ADD THIS LINE
+  operator: "AND" | "OR" | "STANDALONE" | "WILDCARD" | string;
+  conditions?: RequirementCondition[];
+  courses?: string[];
+  pattern?: string;
+  description?: string;
 }
 
 export interface ParsedCourseData {
@@ -68,34 +65,32 @@ export interface ParsedCourseData {
   flattenedCorequisites: string[];
 }
 
-// --- Graph Related Types (Optional - can be colocated) ---
+// Graph Related Types (Optional - can be colocated)
 // Data associated with each node in the graph component
 export interface GraphNodeData {
-  label: string; // Text displayed on the node (course code or requirement text)
-  isCourse: boolean; // Distinguishes course nodes from text requirement nodes
-  type: "target" | "prerequisite" | "text_requirement"; // For styling/logic
+  label: string;
+  isCourse: boolean;
+  type: "target" | "prerequisite" | "text_requirement";
 }
 
 // Structure expected by React Flow for nodes
 export interface InputNode {
-  id: string; // Unique ID (course code or generated ID for text nodes)
-  type?: string; // React Flow node type (e.g., 'default', or custom types)
-  data: GraphNodeData; // The custom data associated with the node
-  position?: { x: number; y: number }; // Optional: Initial position (Dagre usually handles this)
-  style?: React.CSSProperties; // Optional: Inline styles
+  id: string;
+  type?: string;
+  data: GraphNodeData;
+  position?: { x: number; y: number };
+  style?: React.CSSProperties;
 }
 
 // Structure expected by React Flow for edges
 export interface AppEdge {
-  id: string; // Unique edge ID
-  source: string; // ID of the source node
-  target: string; // ID of the target node
-  animated?: boolean; // Optional: Animate the edge
-  style?: React.CSSProperties; // Optional: Inline styles (e.g., for level coloring)
-  data?: { depth?: number }; // Optional: Data associated with edge (like depth)
-  // Add other React Flow edge props if needed
+  id: string;
+  source: string;
+  target: string;
+  animated?: boolean;
+  style?: React.CSSProperties;
+  data?: { depth?: number };
 }
-// --- End Graph Types ---
 
 export interface ProgramCourse {
   courseCode: string;
@@ -109,7 +104,7 @@ export interface ProgramGroup {
   description: string[];
   courses: ProgramCourse[];
   unitsRequired?: number; // For "3 units from:" type groups
-  categoryId?: string; // For linking related groups under a category
+  categoryId?: string;
 }
 
 export interface ProgramBlock {
@@ -119,36 +114,32 @@ export interface ProgramBlock {
   category?: string; // Category this block belongs to (e.g., "Foundation Courses")
   parentBlockId?: string; // For hierarchical relationships
   blockType?: "requirement" | "option" | "note" | "category";
-  unitsRequired?: number; // Total units required for this block
-  order?: number; // For maintaining the original sequence
+  unitsRequired?: number;
+  order?: number;
 }
 
 export interface Program {
   programName: string;
   blocks: ProgramBlock[];
   categories?: {
-    // Optional categorization of blocks
     id: string;
     name: string;
-    blocks: string[]; // IDs of blocks in this category
+    blocks: string[];
   }[];
 }
 
-// --- Plan Validation Types ---
 export interface RequirementValidationResult {
   requirementId: string; // Unique ID (e.g., categoryId, blockId, groupId + index)
-  description: string; // Human-readable description (e.g., Category Name, Block Title, Group Title)
-  status: "met" | "partially-met" | "unmet" | "overfilled"; // Status of the requirement
+  description: string;
+  status: "met" | "partially-met" | "unmet" | "overfilled";
   achievedUnits: number;
   requiredUnits: number;
   relevantCourses: {
-    // Courses selected by the user relevant to this requirement
     courseCode: string;
     status: "planned" | "completed" | "in-progress" | "not-started";
     units: number;
   }[];
 }
-// --- End Plan Validation Types ---
 
 // Interface for the state stored in Zustand
 // (Consider moving store-specific types to the store file)
@@ -159,7 +150,7 @@ export interface CourseStatus {
   grade?: string;
 }
 
-// You might want to define the full Zustand state shape here or keep it in the store file
+// TODO: Make a full Zustand state shape here or keep it in the store file
 // export interface ProgramPlanState { ... }
 
 // For GraphView component
@@ -167,12 +158,10 @@ export interface NodeData {
   label: string;
   isCourse: boolean;
   type: string;
-  // Add other relevant data for nodes
 }
 
 export interface EdgeData {
   depth: number;
-  // Add other relevant data for edges
 }
 
 // React Flow requires explicit types for nodes and edges
@@ -184,12 +173,11 @@ export interface GraphData {
   edges: AppEdge[];
 }
 
-// --- Component Prop Types ---
+// Component Prop Types
 
 // Example props for a component displaying course details
 export interface CourseDetailProps {
   course: Course;
-  // other props...
 }
 
 // Props for the PrerequisiteGraph component
@@ -200,10 +188,10 @@ export interface PrerequisiteGraphProps {
 
 // Props for components using ReactNode
 export interface SomeComponentProps {
-  children: React.ReactNode; // Ensure React is imported
+  children: React.ReactNode;
 }
 
 export interface AnotherComponentProps {
-  header: React.ReactNode; // Ensure React is imported
+  header: React.ReactNode;
   content: string;
 }

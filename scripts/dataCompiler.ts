@@ -1,29 +1,16 @@
-// scripts/dataCompiler.ts
 import * as readline from "readline";
 import { stdin as input, stdout as output } from "process";
 import fs from "fs/promises";
 import path from "path";
 import axios from "axios";
 import dotenv from "dotenv";
-
-// --- Local Utilities and Types ---
-// Adjust paths based on your project structure
-import { AIparse } from "../utils/collection/parser"; // Assuming AIparse returns keywords
+import { AIparse } from "../utils/collection/parser";
 import { parseCoursesHTML } from "../utils/collection/scrape-courses";
-// Assuming types are defined in lib/types.ts relative to project root
 import type { Course, RawCourse } from "@/lib/types";
-
-// --- Import the specific save function ---
 import { save as saveCoursesToDB } from "./saveToDB";
 
-// --- Load Environment Variables (needed for AIparse if it uses API keys) ---
 dotenv.config({ path: path.resolve(__dirname, "../.env") });
-// ----------------------------------------------------------------------
-
-// --- Configuration ---
-const DATA_DIR = path.resolve(__dirname, "../data"); // Data directory relative to scripts/
-
-// --- Helper Functions ---
+const DATA_DIR = path.resolve(__dirname, "../data");
 
 async function checkFileExists(filePath: string): Promise<boolean> {
   try {
@@ -105,11 +92,7 @@ function getStartNum(list: any[], action: string = "parsing"): Promise<number> {
     );
   });
 }
-// --- End Helper Functions ---
 
-/**
- * Main orchestration function for the data collection pipeline.
- */
 async function runDataCollection() {
   let department: string | null = null;
   let scrapedData: RawCourse[] = [];
@@ -140,17 +123,21 @@ async function runDataCollection() {
       await fs.writeFile(rawDataPath, JSON.stringify(scrapedData, null, 2));
       console.log(`✅ Scraped ${scrapedData.length} raw courses to ${rawDataPath}`);
     } else {
-      /* ... load existing logic ... */
-    }
+      console.log(
+        `\n[1/3] Skipping scraping. Data will be loaded from ${rawDataPath}.\n` +
+          `If you want to scrape again, delete the file and rerun the script.`,
+      );
+      scrapedData = await fs
+        .readFile(rawDataPath, "utf-8")
+        .then((data) => JSON.parse(data) as RawCourse[]);
 
-    scrapedData = await fs
-      .readFile(rawDataPath, "utf-8")
-      .then((data) => JSON.parse(data) as RawCourse[]);
+      if (scrapedData.length === 0) {
+        console.log(`\n[1/3] No data to parse. Please scrape data first or check ${rawDataPath}.`);
+        return;
+      }
+    }
 
     // 2. Parse Data with AI
-    if (scrapedData.length === 0) {
-      /* ... skip message ... */
-    }
     if (await getConfirmationInput("AI Parsing (Keywords, Requirements)")) {
       ranParsing = true;
       const limit = await getNum(scrapedData, "parse");
@@ -170,7 +157,19 @@ async function runDataCollection() {
         console.log(`✅ Parsed ${parsedData.length} courses to ${parsedDataPath}`);
       }
     } else {
-      /* ... skip message ... */
+      console.log(
+        `\n[2/3] Skipping AI parsing. Data will be loaded from ${parsedDataPath}.\n` +
+          `If you want to parse again, delete the file and rerun the script.`,
+      );
+      parsedData = await fs
+        .readFile(parsedDataPath, "utf-8")
+        .then((data) => JSON.parse(data) as Course[]);
+      if (parsedData.length === 0) {
+        console.log(
+          `\n[2/3] No data to parse. Please scrape data first or check ${parsedDataPath}.`,
+        );
+        return;
+      }
     }
 
     if (parsedData.length === 0)
@@ -189,7 +188,10 @@ async function runDataCollection() {
         console.warn(`⚠️ Database save finished with ${saveResult.failed} errors.`);
       else console.log(`✅ Database save completed successfully.`);
     } else {
-      /* ... skip message ... */
+      console.log(
+        `\n[3/3] Skipping database insertion. Data saved to ${parsedDataPath}.\n` +
+          `You can manually insert the data into the database using the saveToDB script.`,
+      );
     }
 
     console.log("\n--- Pipeline Complete ---");
@@ -202,7 +204,6 @@ async function runDataCollection() {
   }
 }
 
-// --- Execute ---
 runDataCollection().catch((e) => {
   console.error("❌ Critical error running data compiler:", e);
   process.exit(1);

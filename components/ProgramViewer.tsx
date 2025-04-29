@@ -8,11 +8,11 @@ interface ProgramViewerProps {
   initialProgram?: Program;
 }
 
-// Helper function to determine course item classes based on status
+// Class status styling
 const getCourseClasses = (status: string | undefined) => {
   switch (status) {
     case "completed":
-      return "bg-[#283618] text-white border-[#283618]"; // Ensure text is readable on dark background
+      return "bg-[#283618] text-white border-[#283618]";
     case "in-progress":
       return "bg-[#dda15e] border-[#dda15e]";
     case "planned":
@@ -36,14 +36,12 @@ export default function ProgramViewer({ initialProgram }: ProgramViewerProps) {
     remainingUnits,
   } = useProgramPlanStore();
 
-  // Set initial program if provided
   useState(() => {
     if (initialProgram) {
       setProgram(initialProgram);
     }
   });
 
-  // If no program is loaded yet
   if (!program) {
     return (
       <div className="p-4 bg-gray-100 rounded-lg">

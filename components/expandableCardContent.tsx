@@ -27,7 +27,6 @@ export function ExpandableCardContent({
   // Measure full content height when mounted or children change
   useEffect(() => {
     if (containerRef.current) {
-      // Temporarily set height to auto to measure full height
       containerRef.current.style.height = "auto";
       const measuredHeight = containerRef.current.scrollHeight;
       setFullHeight(measuredHeight);
@@ -36,12 +35,10 @@ export function ExpandableCardContent({
       const overflowing = measuredHeight > collapsedHeight;
       setIsOverflowing(overflowing);
 
-      // Reset to collapsed state if not expanded
       if (!expanded) {
         containerRef.current.style.height = `${collapsedHeight}px`;
         containerRef.current.style.overflow = "hidden";
       } else {
-        // If expanded, still need to update height in case content changed
         containerRef.current.style.height = "auto";
         containerRef.current.style.overflow = "visible";
       }
@@ -50,12 +47,10 @@ export function ExpandableCardContent({
     }
   }, [children, expanded, collapsedHeight]);
 
-  // Toggle expand / collapse state with a smooth height animation
   const toggleExpand = () => {
     if (!containerRef.current) return;
 
     if (expanded) {
-      // Animate from full height back to collapsed height
       animate(containerRef.current, {
         height: collapsedHeight,
         duration: 300,
@@ -68,7 +63,6 @@ export function ExpandableCardContent({
         },
       });
     } else {
-      // Animate from collapsed height to full content height
       animate(containerRef.current, {
         height: fullHeight,
         duration: 300,
@@ -85,7 +79,6 @@ export function ExpandableCardContent({
 
   return (
     <div>
-      {/* Wrapping element with relative positioning to position the fade overlay */}
       <div className="relative">
         <div ref={containerRef} style={{ height: collapsedHeight, overflow: "hidden" }}>
           {children}
@@ -95,7 +88,6 @@ export function ExpandableCardContent({
           )}
         </div>
       </div>
-      {/* Only render button if needed AND mounted */}
       {hasMounted && isOverflowing && (
         <div className="flex justify-center mt-3">
           <button

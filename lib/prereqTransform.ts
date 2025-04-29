@@ -1,19 +1,14 @@
 import { RequirementCondition } from "@/lib/types";
 import { InputNode, AppEdge, GraphNodeData } from "@/components/DetailedPrerequisiteGraph";
 
-// --- STEP 1: AST Definition ---
-
+// Define the structure of the prerequisite AST
 export type PrereqNode =
   | { type: "course"; id: string; label: string } // Store label here too for easy graph node creation
   | { type: "text_requirement"; id: string; label: string } // For descriptive nodes
   | { type: "and"; children: PrereqNode[] }
   | { type: "or"; children: PrereqNode[] };
 
-// --- STEP 2: Convert RequirementCondition to Prereq AST ---
-
-/**
- * Converts a RequirementCondition (from your existing data) into a PrereqNode AST.
- */
+// Convert RequirementCondition to Prereq AST
 export function conditionToAst(
   condition: RequirementCondition,
   conditionIdPrefix: string = "cond",
@@ -48,7 +43,6 @@ export function conditionToAst(
           label: courseText.trim().toUpperCase(),
         });
       } else {
-        // Create a unique ID for these text requirements as well
         const textId = `${conditionIdPrefix}_inlineText_${courseText.substring(0, 10).replace(/\s+/g, "_")}`;
         children.push({ type: "text_requirement", id: textId, label: courseText });
       }
@@ -69,7 +63,7 @@ export function conditionToAst(
   const operator = condition.operator; // Should be 'AND' or 'OR'
 
   if (children.length === 0) {
-    return null; // No relevant content to represent
+    return null;
   }
 
   if (children.length === 1) {
@@ -78,28 +72,22 @@ export function conditionToAst(
     if (operator === "AND" || operator === "OR") {
       return { type: operator === "AND" ? "and" : "or", children: children };
     }
-    // Otherwise, just return the single child
     return children[0];
   }
 
-  // Default to OR if no operator specified and multiple children? Or handle as error?
-  // For now, assuming valid input where multiple children imply an operator.
+  // Default to OR if no operator specified
   if (operator === "AND") {
     return { type: "and", children: children };
   } else if (operator === "OR") {
     return { type: "or", children: children };
   } else {
-    // If no explicit operator but multiple children, default to OR?
-    // Or maybe assume AND? Let's default to OR as it's often "One of..."
     // console.warn("Condition with multiple children but no explicit AND/OR operator, defaulting to OR:", condition);
-    return { type: "or", children: children }; // Defaulting to OR
-    // Alternatively, throw an error or handle based on your data specifics
+    return { type: "or", children: children }; // Default to OR
     // return null;
   }
 }
 
-// --- STEP 3: Convert Prereq AST to Graph Nodes/Edges ---
-
+// Convert Prereq AST to Graph Nodes/Edges
 let nextOpId = 1;
 function freshOp(type: "and" | "or"): string {
   // Reset counter for each graph generation maybe? Or keep it global?
@@ -108,9 +96,6 @@ function freshOp(type: "and" | "or"): string {
   return `${type.toUpperCase()}_${nextOpId++}`;
 }
 
-/**
- * Converts a PrereqNode AST into React Flow nodes and edges, calculating depth.
- */
 export function astToGraph(
   rootAstNode: PrereqNode | null,
   targetCourseId: string,
@@ -154,12 +139,10 @@ export function astToGraph(
           type: "default",
         });
       }
-      // Add edge with depth information
       edgesSet.add(`${astNode.id}->${parentGraphId}:${depth}`); // Store depth with edge string
     } else {
       // 'and' or 'or'
       const opId = freshOp(astNode.type);
-      // Add the operator node
       if (!nodesMap.has(opId)) {
         // Ensure operator node isn't duplicated if structure allows
         nodesMap.set(opId, {
@@ -168,9 +151,7 @@ export function astToGraph(
           type: "default",
         });
       }
-      // Add edge from operator to its parent with depth
       edgesSet.add(`${opId}->${parentGraphId}:${depth}`);
-      // Visit children, connecting them to the new operator node, INCREMENT depth
       astNode.children.forEach((child) => visit(child, opId, depth + 1));
     }
   }
@@ -185,14 +166,14 @@ export function astToGraph(
   // Convert map/set back to arrays
   const finalNodes = Array.from(nodesMap.values());
   const finalEdges = Array.from(edgesSet).map((edgeString) => {
-    const [edgePart, depthPart] = edgeString.split(":"); // Split edge and depth
+    const [edgePart, depthPart] = edgeString.split(":");
     const [source, target] = edgePart.split("->");
-    const depth = parseInt(depthPart, 10) || 1; // Parse depth, default to 1 if error
+    const depth = parseInt(depthPart, 10) || 1;
     return {
-      id: `e_${source}-${target}`, // Simple edge ID
+      id: `e_${source}-${target}`,
       source,
       target,
-      data: { depth }, // Assign calculated depth here
+      data: { depth },
     };
   });
 

@@ -2,8 +2,6 @@ import { create } from "zustand";
 import {
   Program,
   Course,
-  ProgramBlock,
-  ProgramGroup,
   RequirementValidationResult,
   CourseStatus,
   RequirementCondition,
@@ -64,7 +62,6 @@ const getCourseUnits = (course: Course | undefined): number => {
 };
 
 export const useProgramPlanStore = create<ProgramPlanState>((set, get) => ({
-  // Initial state
   program: null,
   selectedCourses: new Map(),
   courseDataMap: new Map(),
@@ -94,7 +91,6 @@ export const useProgramPlanStore = create<ProgramPlanState>((set, get) => ({
   },
 
   loadProgramData: async (programName: string) => {
-    // --- TEMPORARY: Load from public JSON file ---
     console.log(
       `Attempting to load program from public/program_requirements_structured.json (ignoring input: ${programName})`,
     );
@@ -127,7 +123,6 @@ export const useProgramPlanStore = create<ProgramPlanState>((set, get) => ({
       get().setProgram(programData);
 
       // Optional: Trigger prerequisite fetching for initially selected courses if any
-      // (This part remains the same)
     } catch (error) {
       set((state) => ({
         alerts: [
@@ -141,9 +136,8 @@ export const useProgramPlanStore = create<ProgramPlanState>((set, get) => ({
       // Ensure program state is null if loading fails
       set({ program: null });
     }
-    // --- END TEMPORARY ---
 
-    /* --- ORIGINAL API Fetch Logic (Keep commented out for now) ---
+    /* ORIGINAL API Fetch Logic 
       try {
          const programRes = await fetch(`/api/programs/${encodeURIComponent(programName)}`);
          // ... rest of original API logic ...
@@ -205,7 +199,6 @@ export const useProgramPlanStore = create<ProgramPlanState>((set, get) => ({
           };
 
           newCourseDataMap.set(code, placeholderCourse);
-          // Also set prerequisite info to null (no prerequisites)
           newPrerequisiteInfo.set(code, null);
         });
 

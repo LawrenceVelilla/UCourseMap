@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import { useProgramPlanStore } from "../utils/store/programPlanStore";
 import { RequirementValidationResult, RequirementCondition } from "../lib/types";
 
-// Helper function (can be shared or moved later)
+// Helper function ( move later)
 const getCourseStatusText = (status: string | undefined) => {
   switch (status) {
     case "completed":
@@ -46,10 +46,9 @@ const getRequirementStatusBadge = (status: RequirementValidationResult["status"]
   }
 };
 
-// --- Prerequisite Rendering Component ---
+// Prerequisite Rendering Component
 const RenderCondition: React.FC<{ condition: RequirementCondition }> = ({ condition }) => {
   console.log("RenderCondition received:", condition);
-  // Basic rendering, can be enhanced with styling, icons etc.
   return (
     <div className="ml-4 border-l pl-4 my-1">
       {condition.description && (
@@ -79,9 +78,7 @@ const RenderCondition: React.FC<{ condition: RequirementCondition }> = ({ condit
     </div>
   );
 };
-// --- End Prerequisite Rendering Component ---
-
-// Helper function to recursively extract prerequisite course codes from a condition
+// Function to extract course codes from a requirement condition
 const extractPrereqCodes = (condition: RequirementCondition | null | undefined): string[] => {
   if (!condition) return [];
 
@@ -114,16 +111,13 @@ export default function PlanBuilder() {
     fetchPrerequisitesForCourse,
   } = useProgramPlanStore();
 
-  // Convert Map to Array for easier rendering
   const selectedCoursesArray = Array.from(selectedCourses.entries());
 
-  // --- Create a stable dependency for the effect ---
   const selectedCourseKeys = selectedCoursesArray
     .map(([key]) => key)
     .sort()
     .join(",");
 
-  // --- Effect to fetch prerequisites ---
   useEffect(() => {
     console.log("PlanBuilder useEffect triggered. selectedCourses keys:", selectedCourseKeys);
     const keysToFetch = selectedCourseKeys ? selectedCourseKeys.split(",") : [];
@@ -136,16 +130,14 @@ export default function PlanBuilder() {
       }
     });
   }, [selectedCourseKeys, fetchPrerequisitesForCourse, prerequisiteInfo]);
-  // --- End Effect ---
 
-  // --- Calculate unique prerequisites for the new display ---
+  // Calculate unique prerequisites for the new display
   const allPrereqCodes = selectedCoursesArray.reduce((acc, [courseCode]) => {
     const prereqs = prerequisiteInfo.get(courseCode);
     return acc.concat(extractPrereqCodes(prereqs));
   }, [] as string[]);
 
   const uniquePrereqCodes = Array.from(new Set(allPrereqCodes)).sort();
-  // --- End Calculation ---
 
   // Log prerequisiteInfo state before rendering
   console.log("PlanBuilder rendering. prerequisiteInfo state:", prerequisiteInfo);
@@ -228,7 +220,7 @@ export default function PlanBuilder() {
         )}
       </div>
 
-      {/* --- Requirement Validation Section --- */}
+      {/* Requirement Validation Section */}
       <div className="requirement-validation mt-8">
         <h2 className="text-xl font-semibold mb-4">Requirement Check</h2>
         {requirementStatus.length === 0 ? (
@@ -276,9 +268,7 @@ export default function PlanBuilder() {
           </ul>
         )}
       </div>
-      {/* --- End Requirement Validation Section --- */}
 
-      {/* --- MODIFIED Prerequisite Visualization Section --- */}
       <div className="prerequisite-view mt-8">
         <h2 className="text-xl font-semibold mb-4">Unique Prerequisites Needed</h2>
         {selectedCoursesArray.length === 0 ? (
@@ -295,7 +285,6 @@ export default function PlanBuilder() {
           </div>
         )}
       </div>
-      {/* --- End MODIFIED Prerequisite Visualization Section --- */}
     </div>
   );
 }

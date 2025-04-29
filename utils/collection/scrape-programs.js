@@ -30,14 +30,12 @@ function parseCourseLi($, li) {
   const courseTitle = parts.length > 1 ? parts.slice(1).join(" - ") : null;
   const deptMatch = fullCode ? fullCode.match(/^([A-Za-z]+)/) : null;
   const department = deptMatch ? deptMatch[1] : null;
-  // Return only if fullCode is truthy
   return fullCode
     ? { courseCode: fullCode, title: courseTitle, department: department, note: note }
     : null;
 }
 
 async function scrapeTargetProgram() {
-  // … your existing fetch / cheerio setup here …
   const { data: html } = await axios.get(url);
   const $ = cheerio.load(html);
   const contentOuter = $("td.block_content_outer");

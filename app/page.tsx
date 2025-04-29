@@ -31,9 +31,6 @@ export default async function PrerequisitesPage({ searchParams }: any) {
           <Card className="shadow-lg border-2 frosted border-border dark:border-border">
             <CardHeader>
               <CardTitle>Check Course Requirements</CardTitle>
-              <CardDescription className="text-muted-foreground dark:text-muted-foreground">
-                Enter a course code (e.g., &quot;CMPUT 272&quote;) to find its prerequisites.
-              </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               {" "}

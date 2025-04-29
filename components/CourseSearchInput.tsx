@@ -305,7 +305,7 @@ export default function CourseSearchInput() {
           onClick={doCheck}
           disabled={isChecking || (!selectedValue && !parseCourseString(inputValue))}
           aria-label="View course details"
-          className="min-w-[80px]"
+          className="min-w-[80px] bg-[#606c5d]"
         >
           {isChecking ? (
             <div className="flex items-center space-x-1">
@@ -329,7 +329,9 @@ export default function CourseSearchInput() {
             "focus:border-transparent",
             "transition-all duration-200 ease-in-out",
             "hover:scale-105 focus:scale-105",
-            searchMode !== "code" && "hover:bg-accent",
+            searchMode !== "code" && "hover:bg-none",
+            searchMode === "code" &&
+              "bg-[#606c5d] hover:bg-none text-white hover:text-black dark:hover:text-white hover:border hover:border-[#606c5d]",
           )}
           data-search-mode-badge="true"
           aria-pressed={searchMode === "code"}
@@ -351,7 +353,9 @@ export default function CourseSearchInput() {
             "focus:border-transparent",
             "transition-all duration-200 ease-in-out",
             "hover:scale-105 focus:scale-105",
-            searchMode !== "title" && "hover:bg-accent",
+            searchMode !== "title" && "hover:bg-none",
+            searchMode === "title" &&
+              "bg-[#606c5d] hover:bg-none text-white hover:text-black dark:hover:text-white hover:border hover:border-[#606c5d]",
           )}
           data-search-mode-badge="true"
           aria-pressed={searchMode === "title"}

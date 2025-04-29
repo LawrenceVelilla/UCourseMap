@@ -73,6 +73,67 @@ export async function parseCoursesHTML(html) {
   return courses;
 }
 
+/**
+ * Parse HTML content from a single course page
+ * @param {string} html - HTML content from the individual course page
+ * @param {string} department - Department code (e.g., 'cmput')
+ * @param {string} courseCode - Course code (e.g., '175')
+ * @returns {RawCourse|null} Parsed course object or null if not found
+ */
+export async function parseSingleCourseHTML(html, department, courseCode) {
+  try {
+    const $ = cheerio.load(html);
+
+    // Extract course title from the h1 heading
+    const fullHeading = $("h1").text().trim();
+    const headingMatch = fullHeading.match(/^([A-Z]+\s+\d+)\s*-\s*(.+)$/);
+
+    if (!headingMatch) {
+      console.error("Failed to parse course heading");
+      return null;
+    }
+
+    const fullCourseCode = headingMatch[1];
+    const title = headingMatch[2].trim();
+
+    // Extract units/credits from the h5 element
+    const unitsText = $("h5").text().trim();
+    const unitsMatch = unitsText.match(/(\d+)\s+units\s+\(fi\s+(\d+)\)\s*\(([^)]+)\)/);
+
+    const units = {
+      credits: unitsMatch ? parseInt(unitsMatch[1]) : null,
+      feeIndex: unitsMatch ? parseInt(unitsMatch[2]) : null,
+      term: unitsMatch ? unitsMatch[3].trim() : null,
+    };
+
+    // Extract description - it's in a paragraph after the h5 element
+    const description = $("h5").next("p").text().trim();
+
+    // Check if we successfully extracted the main course data
+    if (!title || !description) {
+      console.error("Failed to extract essential course data");
+      return null;
+    }
+
+    // Construct the URL for the course
+    const url = `/catalogue/course/${department}/${courseCode}`;
+
+    // Construct and return the course object
+    const course = {
+      department: department.toUpperCase(),
+      courseCode: fullCourseCode,
+      title,
+      units,
+      description,
+      url: url,
+    };
+
+    return course;
+  } catch (error) {
+    console.error("Error parsing single course HTML:", error);
+  }
+}
+
 // async function main() {
 //   const courses = await scrapeCourses('https://apps.ualberta.ca/catalogue/course/cmput');
 //   fs.writeFileSync('courses.json', JSON.stringify(courses, null, 2));

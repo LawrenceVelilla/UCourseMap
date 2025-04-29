@@ -15,7 +15,6 @@ dotenv.config({ path: path.resolve(__dirname, "../../.env.local") });
 // 7. Consider using a more structured approach for the OpenAI API calls, such as a wrapper class.
 // 8. Add a fallback mechanism in case OpenAI API is down or slow.
 
-// --- Refined Base Prompt ---
 const BASEPROMPT = `
 You are a helpful assistant that extracts structured course information from university course catalog descriptions.
 Your task is to analyze the provided text and extract:

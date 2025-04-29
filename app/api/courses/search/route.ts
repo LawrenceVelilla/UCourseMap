@@ -1,4 +1,3 @@
-// app/api/courses/search/route.ts
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/data";
 import { z } from "zod";

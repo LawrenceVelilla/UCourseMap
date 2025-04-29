@@ -22,11 +22,9 @@ export async function GET(
   }
 
   try {
-    // Call the data fetching function
     const course = await getCourseDetails(departmentCode, courseCodeNumber);
 
     if (!course) {
-      // Data function returned null, meaning not found
       return NextResponse.json(
         { message: `Course ${departmentCode.toUpperCase()} ${courseCodeNumber} not found` },
         { status: 404 },
@@ -35,7 +33,6 @@ export async function GET(
 
     return NextResponse.json(course);
   } catch (error) {
-    // Catch unexpected errors from the data function or processing
     console.error(`API Error fetching course ${departmentCode} ${courseCodeNumber}:`, error);
     return NextResponse.json({ message: "Internal Server Error" }, { status: 500 });
   }

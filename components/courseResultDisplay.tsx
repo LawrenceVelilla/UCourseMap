@@ -216,7 +216,6 @@ export function CourseResultDisplay({
           )}
         </CardHeader>
         <CardContent className="space-y-4">
-          {/* Keyword Badges */}
           {targetCourse.keywords && targetCourse.keywords.length > 0 ? (
             <div className="flex flex-wrap gap-2">
               {targetCourse.keywords.map((keyword, index) => (
@@ -251,9 +250,11 @@ export function CourseResultDisplay({
           )}
 
           <hr />
-
-          {/* Internal Grid for Side-by-Side Requirements */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
+          <section
+            id="prerequisites-corequisites"
+            aria-label="Prerequisites and Corequisites"
+            className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4"
+          >
             {/* Prerequisite Section */}
             <div className="prereq-section space-y-2">
               <Card
@@ -315,7 +316,7 @@ export function CourseResultDisplay({
                 </CardContent>
               </Card>
             </div>
-          </div>
+          </section>
         </CardContent>
       </Card>
 

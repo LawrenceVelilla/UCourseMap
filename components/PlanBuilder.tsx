@@ -117,13 +117,13 @@ export default function PlanBuilder() {
   // Convert Map to Array for easier rendering
   const selectedCoursesArray = Array.from(selectedCourses.entries());
 
-  // --- Create a stable dependency for the effect ---
+  // Create a stable dependency for the effect
   const selectedCourseKeys = selectedCoursesArray
     .map(([key]) => key)
     .sort()
     .join(",");
 
-  // --- Effect to fetch prerequisites ---
+  // Fetch prerequisites for selected courses
   useEffect(() => {
     console.log("PlanBuilder useEffect triggered. selectedCourses keys:", selectedCourseKeys);
     const keysToFetch = selectedCourseKeys ? selectedCourseKeys.split(",") : [];
@@ -136,16 +136,14 @@ export default function PlanBuilder() {
       }
     });
   }, [selectedCourseKeys, fetchPrerequisitesForCourse, prerequisiteInfo]);
-  // --- End Effect ---
 
-  // --- Calculate unique prerequisites for the new display ---
+  // Calculate unique prerequisites for the new display
   const allPrereqCodes = selectedCoursesArray.reduce((acc, [courseCode]) => {
     const prereqs = prerequisiteInfo.get(courseCode);
     return acc.concat(extractPrereqCodes(prereqs));
   }, [] as string[]);
 
   const uniquePrereqCodes = Array.from(new Set(allPrereqCodes)).sort();
-  // --- End Calculation ---
 
   // Log prerequisiteInfo state before rendering
   console.log("PlanBuilder rendering. prerequisiteInfo state:", prerequisiteInfo);
@@ -228,7 +226,7 @@ export default function PlanBuilder() {
         )}
       </div>
 
-      {/* --- Requirement Validation Section --- */}
+      {/* Validation Section */}
       <div className="requirement-validation mt-8">
         <h2 className="text-xl font-semibold mb-4">Requirement Check</h2>
         {requirementStatus.length === 0 ? (
@@ -276,9 +274,7 @@ export default function PlanBuilder() {
           </ul>
         )}
       </div>
-      {/* --- End Requirement Validation Section --- */}
 
-      {/* --- MODIFIED Prerequisite Visualization Section --- */}
       <div className="prerequisite-view mt-8">
         <h2 className="text-xl font-semibold mb-4">Unique Prerequisites Needed</h2>
         {selectedCoursesArray.length === 0 ? (
@@ -295,7 +291,6 @@ export default function PlanBuilder() {
           </div>
         )}
       </div>
-      {/* --- End MODIFIED Prerequisite Visualization Section --- */}
     </div>
   );
 }

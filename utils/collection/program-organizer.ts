@@ -1,12 +1,5 @@
 import { Program, ProgramBlock } from "../../lib/types";
 
-/**
- * Detects logical block categories from titles and content
- * Used to identify when a block serves as a heading/category
- *
- * @param block - Program block to analyze
- * @returns Boolean indicating if block is a category marker
- */
 export function isCategoryBlock(block: ProgramBlock): boolean {
   // Patterns that indicate category blocks
   const categoryPatterns = [
@@ -144,12 +137,6 @@ export function processRawProgram(rawProgram: any): Program {
   return program;
 }
 
-/**
- * Processes an existing program JSON file and returns an improved version
- *
- * @param programPath - Path to the program JSON file
- * @returns Promise resolving to the processed program
- */
 export async function improveProgram(programPath: string): Promise<Program> {
   try {
     // This would be a fetch in the browser or a file read in Node

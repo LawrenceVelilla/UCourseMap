@@ -41,7 +41,7 @@ export function checkConditionMet(
   }
 
   // Base Case 3: Condition exists but has NEITHER courses nor conditions (or they are empty arrays).
-  // This usually means the requirement is met (e.g., an empty AND group is true, an empty OR group is false,
+  // Usually means the requirement is met (e.g., an empty AND group is true, an empty OR group is false,
   // but often represents a placeholder or edge case where requirement is considered satisfied).
   // Adjust this logic if empty conditions should mean something else in your context.
   console.warn("Requirement condition has neither courses nor conditions:", condition);

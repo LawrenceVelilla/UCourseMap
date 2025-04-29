@@ -14,7 +14,7 @@
  * - Pass prepared data as props to the CourseResultDisplay client component.
  */
 import {
-  // getCourseAndPrerequisiteData, // REMOVED - Old redundant data fetching call.
+  // getCourseAndPrerequisiteData, // Old redundant data fetching call.
   getRecursivePrerequisitesCTE, // Fetches the full prerequisite graph including depth.
   getCoursesRequiring, // Fetches courses that list the target course as a prerequisite.
   getCoursesHavingCorequisite, // Fetches courses that list the target course as a corequisite.
@@ -76,7 +76,6 @@ function buildFullAst(
 
       visited.delete(courseCode);
 
-      // ---> MODIFICATION START <---
       if (subAst) {
         // If the course has prerequisites (subAst), create an implicit 'AND' node
         // linking the sub-AST to the course node itself.
@@ -86,7 +85,6 @@ function buildFullAst(
         // If the course has no prerequisites, just return the course node as a leaf.
         return node;
       }
-      // ---> MODIFICATION END <----
     } else if (node.type === "and" || node.type === "or") {
       const expandedChildren = node.children
         .map(expandNode)
@@ -119,10 +117,9 @@ export async function CourseInfoWrapper({ department, code }: CourseInfoWrapperP
   const targetCodeUpper = code.toUpperCase();
   const targetCourseCode = `${targetDeptUpper} ${targetCodeUpper}`;
 
-  // --- Artificial Delay for Testing Loading States ---
+  // Artificial Delay for Testing Loading States
   // console.log("[Wrapper] Adding artificial delay...");
   // await new Promise(resolve => setTimeout(resolve, 1500));
-  // --------------------------------------------------
 
   console.log(`[Wrapper] Fetching data for ${targetCourseCode}...`);
   try {
@@ -188,10 +185,8 @@ export async function CourseInfoWrapper({ department, code }: CourseInfoWrapperP
       </Alert>
     );
   }
-  // // Safety check removed as recursiveGraphData might not be needed directly for graph building anymore
-  // if (!recursiveGraphData) { ... }
 
-  // ---> Add safety check for graphResult
+  // Add safety check for graphResult
   if (!graphResult) {
     return (
       <Alert variant="destructive" className="mt-6">
@@ -203,7 +198,7 @@ export async function CourseInfoWrapper({ department, code }: CourseInfoWrapperP
     );
   }
 
-  // --- Prepare Simple Graph Data (Original CTE-based logic) ---
+  // Prepare Simple Graph Data (Original CTE-based logic)
   console.log("[Wrapper] Preparing SIMPLE graph data...");
   let simpleGraphData: { nodes: SimpleInputNode[]; edges: SimpleAppEdge[] } = {
     nodes: [],
@@ -254,13 +249,12 @@ export async function CourseInfoWrapper({ department, code }: CourseInfoWrapperP
           id: `edge-${sourceId}-${targetUpper}-${index}`,
           source: sourceId,
           target: targetUpper,
-          data: edge.data, // Pass depth if SimpleGraph uses it
-          // Add other SimpleAppEdge specific fields if necessary
+          data: edge.data,
         });
       } else {
-        // Create Text Node (if not excluded)
+        // text node
         const textNodeLabel = mapRequirementPatternToDescription(targetIdOrPattern);
-        const textNodeId = `text-${targetUpper}`; // Simple ID for text node
+        const textNodeId = `text-${targetUpper}`;
 
         if (!addedNodeIds.has(textNodeId)) {
           simpleNodes.push({
@@ -306,11 +300,12 @@ export async function CourseInfoWrapper({ department, code }: CourseInfoWrapperP
     };
   }
 
-  // --- Render Client Component with Prepared Data ---
+  // Render Client Component with Prepared Data
+  // Initial pass will be with simpleGraphData, then detailedgraphdata is processed when the user clicks it
+  // Done so we can limit the amount of data sent to the client
   return (
     <CourseResultDisplay
       targetCourse={targetCourseNode}
-      // Only pass simple graph data initially - detailed will be loaded on demand
       simpleGraphNodes={simpleGraphData.nodes}
       simpleGraphEdges={simpleGraphData.edges}
       department={department}

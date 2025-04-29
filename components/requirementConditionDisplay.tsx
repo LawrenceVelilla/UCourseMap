@@ -2,7 +2,7 @@ import Link from "next/link";
 import { RequirementCondition } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
-// --- HELPER FUNCTIONS ---
+// Helper functions
 function parseCourseCodeForLink(input: string): { dept: string; code: string } | null {
   if (!input) return null;
   const trimmedInput = input.trim().toUpperCase();
@@ -23,21 +23,18 @@ function looksLikeCourseCode(text: string): boolean {
   return parseCourseCodeForLink(text) !== null;
 }
 
-// --- COMPONENT ---
-
 export function RequirementConditionDisplay({ condition }: { condition: RequirementCondition }) {
-  // --- Handle nodes that are purely descriptive (description or pattern) ---
+  // Descriptive nodes (text requirements)
   const descriptiveText = condition.description?.trim() || condition.pattern?.trim();
   if (descriptiveText) {
     // Render descriptive text directly. Parent LI provides bullet context.
     return <span className="font-italic text-[#333] dark:text-[#fefae0]">{descriptiveText}</span>;
   }
 
-  // --- Determine Operator Text (only for AND/OR) ---
+  // If and/or, determine the operator text
   const operatorText =
     condition.operator === "AND" ? "ALL of:" : condition.operator === "OR" ? "ONE of:" : null;
 
-  // --- Determine if this node requires its own UL structure ---
   // Needs UL if it has an operator (AND/OR) OR if it has nested conditions.
   const needsOwnUl = !!operatorText || (condition.conditions && condition.conditions.length > 0);
   const hasDirectCourses = condition.courses && condition.courses.length > 0;
@@ -65,7 +62,7 @@ export function RequirementConditionDisplay({ condition }: { condition: Requirem
             operatorText ? "mt-0" : "mt-0",
           )}
         >
-          {/* Render Direct Courses (if any) as LIs within this UL */}
+          {/* Render Direct Courses as LIs within this UL */}
           {hasDirectCourses &&
             condition.courses!.map((itemText) => {
               const isCourse = looksLikeCourseCode(itemText);
@@ -138,7 +135,6 @@ export function RequirementConditionDisplay({ condition }: { condition: Requirem
 
       {/* Handle completely empty nodes (that weren't descriptive) */}
       {!descriptiveText && !hasDirectCourses && !hasNestedConditions && (
-        // Use span here too, as it's likely inside an LI
         <span className="font-italic text-[#588157] m-1">(No specific conditions listed here)</span>
       )}
     </>

@@ -140,16 +140,15 @@ async function runDataCollection() {
       await fs.writeFile(rawDataPath, JSON.stringify(scrapedData, null, 2));
       console.log(`✅ Scraped ${scrapedData.length} raw courses to ${rawDataPath}`);
     } else {
-      /* ... load existing logic ... */
+      scrapedData = await fs
+        .readFile(rawDataPath, "utf-8")
+        .then((data) => JSON.parse(data) as RawCourse[]);
     }
-
-    scrapedData = await fs
-      .readFile(rawDataPath, "utf-8")
-      .then((data) => JSON.parse(data) as RawCourse[]);
 
     // 2. Parse Data with AI
     if (scrapedData.length === 0) {
-      /* ... skip message ... */
+      console.warn("No scraped data available for parsing. Can't proceed.");
+      return;
     }
     if (await getConfirmationInput("AI Parsing (Keywords, Requirements)")) {
       ranParsing = true;
@@ -170,26 +169,29 @@ async function runDataCollection() {
         console.log(`✅ Parsed ${parsedData.length} courses to ${parsedDataPath}`);
       }
     } else {
-      /* ... skip message ... */
+      console.log(`\n[2/3] Skipping AI Parsing. Loading data from ${parsedDataPath}...`);
+      if (await checkFileExists(parsedDataPath)) {
+        parsedData = await fs
+          .readFile(parsedDataPath, "utf-8")
+          .then((data) => JSON.parse(data) as Course[]);
+      } else {
+        console.warn(`Parsed data file not found: ${parsedDataPath}`);
+        return;
+      }
     }
 
-    if (parsedData.length === 0)
-      parsedData = await fs
-        .readFile(parsedDataPath, "utf-8")
-        .then((data) => JSON.parse(data) as Course[]);
-
     // 3. Insert Data into Database
-    const parsedFileExists = await checkFileExists(parsedDataPath);
-    if (!parsedFileExists) {
-      /* ... skip message ... */
-    } else if (await getConfirmationInput("Database Insertion")) {
+
+    if (await getConfirmationInput("Database Insertion")) {
       console.log(`\n[3/3] Saving data from ${parsedDataPath} to Database...`);
       const saveResult = await saveCoursesToDB(department); // Call imported function
       if (!saveResult.success)
         console.warn(`⚠️ Database save finished with ${saveResult.failed} errors.`);
       else console.log(`✅ Database save completed successfully.`);
     } else {
-      /* ... skip message ... */
+      console.log(
+        `\n[3/3] Skipping Database Insertion. Data is not saved to the database. Script Done!`,
+      );
     }
 
     console.log("\n--- Pipeline Complete ---");

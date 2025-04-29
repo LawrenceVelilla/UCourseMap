@@ -31,7 +31,7 @@ export async function POST(request: Request) {
     // Store the plan (overwrites existing plan for this program)
     userPlansStore[programName] = selectedCourses;
 
-    // In a real app, you'd save to a database here:
+    // No database data yet
     // await prisma.userPlan.upsert({
     //   where: { userId_programName: { userId: 'currentUser', programName: programName } }, // Assuming user auth
     //   update: { planData: selectedCourses },

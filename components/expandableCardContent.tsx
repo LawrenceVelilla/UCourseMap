@@ -50,12 +50,10 @@ export function ExpandableCardContent({
     }
   }, [children, expanded, collapsedHeight]);
 
-  // Toggle expand / collapse state with a smooth height animation
   const toggleExpand = () => {
     if (!containerRef.current) return;
 
     if (expanded) {
-      // Animate from full height back to collapsed height
       animate(containerRef.current, {
         height: collapsedHeight,
         duration: 300,
@@ -85,7 +83,6 @@ export function ExpandableCardContent({
 
   return (
     <div>
-      {/* Wrapping element with relative positioning to position the fade overlay */}
       <div className="relative">
         <div ref={containerRef} style={{ height: collapsedHeight, overflow: "hidden" }}>
           {children}
@@ -95,7 +92,6 @@ export function ExpandableCardContent({
           )}
         </div>
       </div>
-      {/* Only render button if needed AND mounted */}
       {hasMounted && isOverflowing && (
         <div className="flex justify-center mt-3">
           <button

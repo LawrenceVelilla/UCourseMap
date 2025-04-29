@@ -1,7 +1,15 @@
+/*
+
+
+This file is just for prototyping and testing purposes.
+
+
+
+*/
+
 import { NextResponse } from "next/server";
 import { Course } from "../../../../lib/types";
 
-// --- Placeholder Course Data ---
 // IMPORTANT: Replace this with actual database fetching (e.g., Prisma)
 const placeholderCourses: Course[] = [
   {

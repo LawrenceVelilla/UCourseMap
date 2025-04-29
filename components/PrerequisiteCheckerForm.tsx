@@ -4,8 +4,8 @@ import React, { useState, FormEvent, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Alert, AlertDescription } from "@/components/ui/alert"; // Simplified Alert usage
-import { HelpCircle, Search } from "lucide-react"; // Added Search icon
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { HelpCircle, Search } from "lucide-react";
 
 // Helper function to parse course code string
 function parseCourseCode(input: string): { dept: string; code: string } | null {
@@ -38,7 +38,7 @@ export function PrerequisiteCheckerForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  // Initialize state from URL params for persistence on reload/navigation
+  // States for url params for back/forward navigation
   const initialDept = searchParams.get("dept");
   const initialCode = searchParams.get("code");
   const [inputValue, setInputValue] = useState(
@@ -91,7 +91,7 @@ export function PrerequisiteCheckerForm() {
         <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
         <Input
           placeholder="Enter course code (e.g., CMPUT 272)"
-          className="pl-9 pr-20 h-10 rounded-md focus-visible:ring-[#606c5d]" // Adjusted styling
+          className="pl-9 pr-20 h-10 rounded-md focus-visible:ring-[#606c5d]"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           aria-label="Course Code Input"

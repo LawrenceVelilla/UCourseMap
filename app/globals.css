@@ -154,7 +154,6 @@
   display: none; /* Chrome, Safari, Opera */
 }
 
-/* Mobile touch optimization */
 @media (max-width: 768px) {
   .touch-area {
     min-height: 44px; /* Apple's recommended minimum touch target size */

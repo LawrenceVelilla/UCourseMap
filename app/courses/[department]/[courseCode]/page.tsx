@@ -2,8 +2,8 @@ import { Suspense } from "react";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { CourseInfoWrapper } from "@/components/courseInfoWrapper"; // Re-use the wrapper
-import { CourseInfoSkeleton } from "@/components/ui/courseInfoSkeleton"; // Re-use the skeleton
+import { CourseInfoWrapper } from "@/components/courseInfoWrapper";
+import { CourseInfoSkeleton } from "@/components/ui/courseInfoSkeleton";
 
 // Define the expected params shape
 
@@ -17,9 +17,7 @@ export default async function DedicatedCoursePage({ params }: any) {
     typeof courseCode === "string";
 
   return (
-    // Main content area styling for this specific page layout
     <div className="flex-1 flex flex-col">
-      {/* No mobile header needed here unless desired */}
       <main className="flex-1 overflow-y-auto container mx-auto py-8 px-4">
         {/* Back Button */}
         <div className="mb-6">

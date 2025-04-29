@@ -1,4 +1,3 @@
-// app/api/courses/[department]/route.ts
 import { NextResponse, NextRequest } from "next/server";
 import { getCoursesByDepartment } from "@/lib/data"; // Adjust path if needed
 
@@ -10,19 +9,15 @@ export async function GET(
   request: NextRequest,
   context: any, // Use 'any' for the context parameter
 ) {
-  // Access params via the context object (assuming structure)
   const departmentCode = context?.params?.department;
-
   if (!departmentCode) {
     return NextResponse.json({ message: "Department code is required" }, { status: 400 });
   }
 
   try {
-    // Call the data fetching function
     const courses = await getCoursesByDepartment(departmentCode);
 
     // Note: getCoursesByDepartment already handles errors internally by returning []
-    // If it threw errors, we'd need a try/catch here too.
 
     return NextResponse.json(courses);
   } catch (error) {

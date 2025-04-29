@@ -146,7 +146,7 @@ async function scrapeTargetProgram() {
   };
 
   fs.writeFileSync(OUTPUT_JSON, JSON.stringify(output, null, 2), "utf8");
-  console.log(`✅ Saved "${TARGET_PROGRAM_TITLE}" to ${OUTPUT_JSON}`);
+  console.log(`Saved "${TARGET_PROGRAM_TITLE}" to ${OUTPUT_JSON}`);
 }
 
 scrapeTargetProgram().catch((err) => {

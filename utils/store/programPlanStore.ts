@@ -2,8 +2,6 @@ import { create } from "zustand";
 import {
   Program,
   Course,
-  ProgramBlock,
-  ProgramGroup,
   RequirementValidationResult,
   CourseStatus,
   RequirementCondition,

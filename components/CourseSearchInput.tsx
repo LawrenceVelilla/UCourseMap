@@ -207,7 +207,7 @@ export default function CourseSearchInput() {
                 onBlur={handleBlur}
                 autoComplete="off"
                 spellCheck={false}
-                className="w-full"
+                className="w-full rounded-lg border-2 border-muted bg-transparent focus-visible:border-ring focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
                 role="combobox"
                 aria-haspopup="listbox"
                 aria-expanded={open}
@@ -305,7 +305,7 @@ export default function CourseSearchInput() {
           onClick={doCheck}
           disabled={isChecking || (!selectedValue && !parseCourseString(inputValue))}
           aria-label="View course details"
-          className="min-w-[80px]"
+          className="min-w-[40px] bg-[#606c5d] hover:scale-105 transition-transform duration-200 ease-in-out"
         >
           {isChecking ? (
             <div className="flex items-center space-x-1">
@@ -324,12 +324,12 @@ export default function CourseSearchInput() {
           onClick={() => setSearchMode("code")}
           className={cn(
             "cursor-pointer select-none",
-            "ring-2",
+            "ring-1",
             searchMode === "code" ? "ring-ring scale-105" : "ring-transparent",
             "focus:outline-none focus:ring focus:ring-offset-0",
             "focus:border-transparent",
             "transition-all duration-200 ease-in-out",
-            searchMode !== "code" && "hover:bg-accent hover:scale-105",
+            searchMode !== "code" && "hover:scale-105",
           )}
           data-search-mode-badge="true"
           aria-pressed={searchMode === "code"}
@@ -346,7 +346,7 @@ export default function CourseSearchInput() {
           onClick={() => setSearchMode("title")}
           className={cn(
             "cursor-pointer select-none",
-            "ring-2",
+            "ring-1",
             searchMode === "title" ? "ring-ring scale-105" : "ring-transparent",
             "focus:outline-none focus:ring focus:ring-offset-0",
             "focus:border-transparent",

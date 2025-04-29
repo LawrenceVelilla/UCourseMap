@@ -147,7 +147,7 @@ const isHighSchoolPrereq = (text: string): boolean => {
   return highSchoolPatterns.has(text.toUpperCase().trim());
 };
 
-// --- Zod Schema for validating raw CTE results ---
+// Zod Schema validation for raw SQL results
 const RawCteResultSchema = z.object({
   id: z.string().uuid(),
   department: z.string(),
@@ -165,7 +165,7 @@ const RawCteResultSchema = z.object({
 });
 type RawCteResult = z.infer<typeof RawCteResultSchema>;
 
-// --- Helper for Pass 1: Process CTE rows into Course Nodes and Course–Course Edges ---
+// Function for processing course nodes and edges
 function processCourseNodes(
   validatedResults: RawCteResult[],
   courseNodesMap: Map<string, Course>,
@@ -210,7 +210,7 @@ function processCourseNodes(
   }
 }
 
-// --- Helper for Pass 2: Process missing (text) prerequisites ---
+// Function for processing text-based prerequisites
 function processTextPrerequisites(
   courseNodesMap: Map<string, Course>,
   nodeDepths: Map<string, number>,
@@ -259,7 +259,7 @@ function processTextPrerequisites(
   return textNodesMap;
 }
 
-// --- Main Improved CTE Function ---
+// Main function to fetch recursive prerequisites using CTE
 export const getRecursivePrerequisitesCTE = cache(
   async (
     departmentCode: string,
@@ -270,9 +270,9 @@ export const getRecursivePrerequisitesCTE = cache(
     const codeNumUpper = courseCodeNumber.toUpperCase();
     const fullCourseCode = `${deptUpper} ${codeNumUpper}`;
 
-    // --- Input Validation ---
+    // Validate and normalize input
     try {
-      CourseCodeSchema.parse(fullCourseCode); // Use the existing schema
+      CourseCodeSchema.parse(fullCourseCode); // Use schema
     } catch (error) {
       if (error instanceof z.ZodError) {
         console.error(`[DataCTE] Invalid course code format for ${fullCourseCode}:`, error);
@@ -284,15 +284,12 @@ export const getRecursivePrerequisitesCTE = cache(
         throw new Error("Unexpected validation error"); // Throw a generic error
       }
     }
-    // --- End Input Validation ---
-
     if (process.env.NODE_ENV === "development") {
       console.log(
         `[DataCTE] Fetching recursive prerequisites for: ${fullCourseCode} up to depth ${maxDepth}`,
       );
     }
 
-    // --- The Recursive CTE SQL Query ---
     const sql = Prisma.sql`
       WITH RECURSIVE PrereqGraph AS (
           SELECT
@@ -324,11 +321,10 @@ export const getRecursivePrerequisitesCTE = cache(
     `;
 
     try {
-      // Execute the recursive CTE query
       const rawResults = await prisma.$queryRaw<unknown[]>(sql);
       const validatedResults = z.array(RawCteResultSchema).parse(rawResults);
 
-      // --- Post-Processing: Modularized in two passes ---
+      // Initialize maps for course nodes and edges
       const courseNodesMap = new Map<string, Course>();
       const nodeDepths = new Map<string, number>();
       const finalEdges: AppEdge[] = [];
@@ -423,7 +419,6 @@ export const getCoursesHavingCorequisite = cache(
   },
 );
 
-// --- DEPRECATED / REMOVED FUNCTIONS ---
 // The original `getRecursivePrerequisites` (N+1 version) has been removed.
 // The `getCourseAndPrerequisiteData` might be less useful now with the CTE providing
 // full recursive data, but can be kept if simple direct prereq lists are needed elsewhere

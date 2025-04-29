@@ -1,4 +1,4 @@
-import { CourseStatus } from "@/lib/types"; // Adjust the import path as necessary
+import { CourseStatus } from "@/lib/types";
 
 // IMPORTANT: In-memory store for demonstration ONLY.
 // Replace with a database (e.g., Prisma + PostgreSQL) for persistence.

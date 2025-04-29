@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { CourseInfoWrapper } from "@/components/courseInfoWrapper";
 import { CourseInfoSkeleton } from "@/components/ui/courseInfoSkeleton";
-import CourseSearchInput from "@/components/CourseSearchInput"; // Import the new component
+import CourseSearchInput from "@/components/CourseSearchInput";
 
 // This page uses searchParams to determine which course to display
 export default async function PrerequisitesPage({ searchParams }: any) {
@@ -13,8 +13,7 @@ export default async function PrerequisitesPage({ searchParams }: any) {
   const dept = params?.dept || "";
   const code = params?.code || "";
 
-  // Determine if valid search parameters are present to trigger data fetching
-  // Ensure they are non-empty strings
+  // Validate search params
   const shouldFetchData = !!dept && !!code && typeof dept === "string" && typeof code === "string";
 
   return (
@@ -46,25 +45,19 @@ export default async function PrerequisitesPage({ searchParams }: any) {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
-              {/* Add space-y for spacing */}
-              {/* Keep the enhanced search input component */}
               <CourseSearchInput />
             </CardContent>
           </Card>
         </div>
 
-        {/* Results Area: Conditionally renders based on search params */}
         <div className="mt-6 results-area">
           {shouldFetchData ? (
-            // If search params exist, attempt to fetch/display results
-            // Wrap the data-fetching component in Suspense
             <Suspense fallback={<CourseInfoSkeleton />}>
               {/* CourseInfoWrapper handles fetching, error states, and rendering CourseResultDisplay */}
               {/* Pass validated dept and code */}
               <CourseInfoWrapper department={dept} code={code} />
             </Suspense>
           ) : (
-            // If no search params, show initial prompt message
             <div className="p-6 border rounded-md bg-card border-border frosted text-center md:w-2/3 lg:w-1/2 mx-auto shadow-sm">
               <p className="text-muted-foreground">
                 Enter a course code above to check its prerequisites and view related information.
@@ -73,7 +66,7 @@ export default async function PrerequisitesPage({ searchParams }: any) {
           )}
         </div>
 
-        {/* {{ Feedback Section }} */}
+        {/* Bottom Section: Feedback Card */}
         <div className="mt-12 pt-8 border-t border-border/40 flex justify-center">
           <Card className="w-full max-w-2xl shadow-sm border-border/60 frosted">
             <CardHeader>

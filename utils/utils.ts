@@ -12,13 +12,6 @@ export function encodedRedirect(type: "error" | "success", path: string, message
   return redirect(`${path}?${type}=${encodeURIComponent(message)}`);
 }
 
-/**
- * Organizes program blocks into logical categories.
- * This function identifies parent-child relationships and assigns category information.
- *
- * @param program - Raw program data with flat block structure
- * @returns - Restructured program with hierarchical organization
- */
 export function organizeProgram(program: Program): Program {
   const organizedProgram: Program = {
     programName: program.programName,
@@ -110,13 +103,6 @@ export function organizeProgram(program: Program): Program {
   return organizedProgram;
 }
 
-/**
- * Finds all courses in a program that match a given prefix
- *
- * @param program - Program data
- * @param prefix - Course prefix (e.g., "CMPUT")
- * @returns - Array of course codes matching the prefix
- */
 export function findCoursesByPrefix(program: Program, prefix: string): string[] {
   const courses: string[] = [];
 
@@ -133,13 +119,6 @@ export function findCoursesByPrefix(program: Program, prefix: string): string[] 
   return courses;
 }
 
-/**
- * Finds all possible prerequisite paths for a target course
- *
- * @param allCourses - Map of all courses with their prerequisites
- * @param targetCourse - Course to find prerequisites for
- * @returns - Object with prerequisite paths and dependency map
- */
 export function findPrerequisitePaths(allCourses: Map<string, Course>, targetCourse: string) {
   // Track visited courses to avoid cycles
   const visited = new Set<string>();

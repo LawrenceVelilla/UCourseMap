@@ -440,10 +440,9 @@ const PrerequisiteGraphLayout = ({
         onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
         onNodeClick={handleNodeClick}
-        className="bg-background" // Use theme variable for background
+        className="bg-background"
         nodesDraggable={false}
         nodesConnectable={false}
-        // Style applied directly for explicit theme control if needed beyond className
         style={theme === "dark" ? { backgroundColor: "#1a1a1a" } : { backgroundColor: "#FFFFFF" }} // Set graph background color.
         proOptions={{ hideAttribution: true }}
         minZoom={0.25}
@@ -459,8 +458,6 @@ const PrerequisiteGraphLayout = ({
     </div>
   );
 };
-
-// --- Wrapper Component --- (Unchanged)
 
 /**
  * Wraps the PrerequisiteGraphLayout with ReactFlowProvider.

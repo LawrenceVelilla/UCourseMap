@@ -1,18 +1,14 @@
 import { RequirementCondition } from "@/lib/types";
 import { InputNode, AppEdge, GraphNodeData } from "@/components/DetailedPrerequisiteGraph";
 
-// --- STEP 1: AST Definition ---
-
 export type PrereqNode =
   | { type: "course"; id: string; label: string } // Store label here too for easy graph node creation
   | { type: "text_requirement"; id: string; label: string } // For descriptive nodes
   | { type: "and"; children: PrereqNode[] }
   | { type: "or"; children: PrereqNode[] };
 
-// --- STEP 2: Convert RequirementCondition to Prereq AST ---
-
 /**
- * Converts a RequirementCondition (from your existing data) into a PrereqNode AST.
+ * Converts a RequirementCondition (from existing data) into a PrereqNode AST.
  */
 export function conditionToAst(
   condition: RequirementCondition,
@@ -20,7 +16,7 @@ export function conditionToAst(
 ): PrereqNode | null {
   if (!condition) return null;
 
-  // Handle descriptive nodes first
+  // Handle text nodes that are descriptive (description or pattern)
   const descriptiveText = condition.description?.trim() || condition.pattern?.trim();
   if (
     descriptiveText &&
@@ -39,7 +35,7 @@ export function conditionToAst(
     condition.courses.forEach((courseText) => {
       // Simple heuristic: if it looks like a course code, treat it as one.
       // Otherwise, treat it as a text requirement for now.
-      // TODO: Refine this logic if needed based on data source.
+      // TODO: Refine this logic if data becomes more complex.
       const isLikelyCourse = /^[A-Z]+\s*\d+[A-Z]*$/i.test(courseText.trim());
       if (isLikelyCourse) {
         children.push({
@@ -90,7 +86,7 @@ export function conditionToAst(
     return { type: "or", children: children };
   } else {
     // If no explicit operator but multiple children, default to OR?
-    // Or maybe assume AND? Let's default to OR as it's often "One of..."
+    // Or maybe assume AND? Default to OR as it's often "One of..."
     // console.warn("Condition with multiple children but no explicit AND/OR operator, defaulting to OR:", condition);
     return { type: "or", children: children }; // Defaulting to OR
     // Alternatively, throw an error or handle based on your data specifics
@@ -98,8 +94,7 @@ export function conditionToAst(
   }
 }
 
-// --- STEP 3: Convert Prereq AST to Graph Nodes/Edges ---
-
+// Converts a PrereqNode AST into a unique ID for operator nodes
 let nextOpId = 1;
 function freshOp(type: "and" | "or"): string {
   // Reset counter for each graph generation maybe? Or keep it global?

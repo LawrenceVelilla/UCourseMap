@@ -11,6 +11,9 @@
     "lint:routes": "next lint --dir app/api",
     "format": "prettier --write .",
     "gather": "tsx ./scripts/dataCompiler.ts",
+    "gather:single": "tsx ./scripts/dataCompiler.ts --",
+    "check-course": "tsx ./scripts/dataCompiler.ts --check-course",
+    "update-course": "tsx ./scripts/dataCompiler.ts --update-course",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci"

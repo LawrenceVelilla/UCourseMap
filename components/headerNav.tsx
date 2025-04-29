@@ -2,13 +2,11 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BookOpen, Calendar, GraduationCap, Home, User } from "lucide-react";
-import { cn } from "@/lib/utils"; // Utility for conditional classes
-import { ThemeSwitcher } from "./theme-switcher"; // Import the theme switchermport { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { ThemeSwitcher } from "./theme-switcher";
 
 export function HeaderNav() {
   const pathname = usePathname();
-
-  // Define navigation items for easier mapping
   const navItems = [
     { href: "/", label: "Home", icon: Home },
     // { href: "/classes", label: "Classes", icon: BookOpen },
@@ -22,7 +20,7 @@ export function HeaderNav() {
       <div className="container flex h-14 max-w-screen-2xl items-center px-2 sm:px-4">
         <nav className="flex-1 flex items-center">
           <Link href="/" className="mr-3 sm:mr-6 flex items-center space-x-2">
-            {/* You can add an icon or logo here if you like */}
+            {/* TODO: Add icon here */}
             <span className="font-bold text-sm sm:text-base whitespace-nowrap">UCourse Map</span>
           </Link>
           <div className="flex items-center justify-between space-x-1 sm:space-x-2 md:space-x-4 overflow-x-auto hide-scrollbar">
@@ -30,14 +28,11 @@ export function HeaderNav() {
               <Link
                 key={item.label}
                 href={item.href}
-                // Apply base styling + conditional active styling
                 className={cn(
                   "flex items-center justify-center gap-1 rounded-md px-2 py-2 text-sm font-medium transition-colors",
-                  "hover:text-primary", // Use theme primary color on hover
-                  "min-w-[40px] sm:min-w-[auto]", // Prevent squishing on small screens
-                  pathname === item.href
-                    ? "text-foreground" // Active state uses main foreground color
-                    : "text-muted-foreground", // Default state uses muted foreground
+                  "hover:text-primary",
+                  "min-w-[40px] sm:min-w-[auto]",
+                  pathname === item.href ? "text-foreground" : "text-muted-foreground",
                 )}
                 aria-label={item.label}
               >
@@ -53,7 +48,7 @@ export function HeaderNav() {
             href="/signin"
             className={cn(
               "flex items-center gap-1 rounded-md px-2 py-2 text-sm font-medium transition-colors",
-              "text-muted-foreground hover:text-primary", // Consistent styling for sign in link
+              "text-muted-foreground hover:text-primary",
             )}
             aria-label="Sign in"
           >

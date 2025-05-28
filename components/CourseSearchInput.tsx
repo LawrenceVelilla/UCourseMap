@@ -56,7 +56,7 @@ export default function CourseSearchInput() {
   const mouseIsOverList = useRef(false);
   const listRef = useRef<HTMLDivElement>(null);
 
-  const debounced = useDebounce(inputValue, 300);
+  const debounced = useDebounce(inputValue);
   const router = useRouter();
   const params = useSearchParams();
 

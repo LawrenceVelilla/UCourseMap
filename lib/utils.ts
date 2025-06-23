@@ -1,6 +1,7 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { ProgramBlock } from "./types";
+import { looksLikeCourseCode } from "./courseUtils";
 
 /**
  * Maps known requirement patterns (strings that are NOT standard course codes)
@@ -17,8 +18,7 @@ export function mapRequirementPatternToDescription(pattern: string): string {
   const upperPattern = trimmedPattern.toUpperCase();
 
   // Check if it looks like a STANDARD course code
-  const standardCourseCodeRegex = /^[A-Z]+\s*\d+[A-Z]*$/;
-  if (standardCourseCodeRegex.test(upperPattern)) {
+  if (looksLikeCourseCode(upperPattern)) {
     // If it looks like a standard course code, return it as is.
     return trimmedPattern;
   }

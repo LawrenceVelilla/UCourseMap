@@ -5,8 +5,9 @@ import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
 import { ipAddress } from "@vercel/edge";
 import { Prisma } from "@prisma/client";
+import { COURSE_SELECTORS, ERROR_MESSAGES, HTTP_STATUS } from "@/lib/constants";
+import { parseSearchInput } from "@/lib/courseUtils";
 
-// Set up Redis + rate limiter
 const redis = new Redis({
   url: process.env.UPSTASH_REDIS_REST_URL!,
   token: process.env.UPSTASH_REDIS_REST_TOKEN!,
@@ -28,7 +29,9 @@ export async function GET(request: NextRequest) {
   const ip = ipAddress(request) || "127.0.0.1";
   const { success } = await ratelimit.limit(ip);
   if (!success) {
-    return new NextResponse("Too Many Requests", { status: 429 });
+    return new NextResponse(ERROR_MESSAGES.TOO_MANY_REQUESTS, {
+      status: HTTP_STATUS.TOO_MANY_REQUESTS,
+    });
   }
 
   // parse + validate
@@ -43,7 +46,7 @@ export async function GET(request: NextRequest) {
       .join("; ");
     return NextResponse.json(
       { error: `Invalid query parameters: ${errorMessage}` },
-      { status: 400 },
+      { status: HTTP_STATUS.BAD_REQUEST },
     );
   }
 
@@ -59,13 +62,13 @@ export async function GET(request: NextRequest) {
     } else {
       // Default to 'code' search
       // Attempt to parse for specific code search, fallback to broader search
-      const codeParts = term.match(/^([A-Z]+)[\s]*(\d+[A-Z]*)$/);
-      if (codeParts && codeParts[1] && codeParts[2]) {
+      const searchInfo = parseSearchInput(term);
+      if (searchInfo.isSpecificSearch && searchInfo.department && searchInfo.courseCode) {
         // Specific course code search
         whereClause = {
           AND: [
-            { department: { startsWith: codeParts[1], mode: "insensitive" } },
-            { courseCode: { contains: codeParts[2], mode: "insensitive" } },
+            { department: { startsWith: searchInfo.department, mode: "insensitive" } },
+            { courseCode: { contains: searchInfo.courseCode, mode: "insensitive" } },
           ],
         };
       } else {
@@ -81,13 +84,16 @@ export async function GET(request: NextRequest) {
 
     const courses = await prisma.course.findMany({
       where: whereClause, // Use the dynamically built clause
-      select: { id: true, department: true, courseCode: true, title: true },
+      select: COURSE_SELECTORS.BASIC,
       take: 10,
       orderBy: [{ courseCode: "asc" }],
     });
     return NextResponse.json(courses);
   } catch (err) {
     console.error(err);
-    return NextResponse.json({ error: "Internal server error." }, { status: 500 });
+    return NextResponse.json(
+      { error: ERROR_MESSAGES.INTERNAL_SERVER_ERROR },
+      { status: HTTP_STATUS.INTERNAL_SERVER_ERROR },
+    );
   }
 }

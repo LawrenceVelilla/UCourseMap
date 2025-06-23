@@ -1,5 +1,11 @@
-import { NextResponse } from "next/server";
 import { getCourseDetails } from "@/lib/data";
+import {
+  handleApiError,
+  validateDepartmentAndCode,
+  createSuccessResponse,
+  createErrorResponse,
+} from "@/lib/apiUtils";
+import { ERROR_MESSAGES, HTTP_STATUS } from "@/lib/constants";
 
 interface Params {
   department: string;
@@ -10,11 +16,9 @@ export async function GET(request: Request, context: any) {
   const departmentCode = context.params.department;
   const courseCodeNumber = context.params.courseCode;
 
-  if (!departmentCode || !courseCodeNumber) {
-    return NextResponse.json(
-      { message: "Department and Course Code are required" },
-      { status: 400 },
-    );
+  const validationError = validateDepartmentAndCode(departmentCode, courseCodeNumber);
+  if (validationError) {
+    return validationError;
   }
 
   try {
@@ -23,16 +27,14 @@ export async function GET(request: Request, context: any) {
 
     if (!course) {
       // Data function returned null, meaning not found
-      return NextResponse.json(
-        { message: `Course ${departmentCode.toUpperCase()} ${courseCodeNumber} not found` },
-        { status: 404 },
+      return createErrorResponse(
+        `Course ${departmentCode.toUpperCase()} ${courseCodeNumber} not found`,
+        HTTP_STATUS.NOT_FOUND,
       );
     }
 
-    return NextResponse.json(course);
+    return createSuccessResponse(course);
   } catch (error) {
-    // Catch unexpected errors from the data function or processing
-    console.error(`API Error fetching course ${departmentCode} ${courseCodeNumber}:`, error);
-    return NextResponse.json({ message: "Internal Server Error" }, { status: 500 });
+    return handleApiError(error, `fetch course ${departmentCode} ${courseCodeNumber}`);
   }
 }

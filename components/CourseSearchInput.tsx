@@ -8,6 +8,7 @@ import useDebounce from "@/hooks/useDebounce";
 import { Loader2, ScanSearch, CaseSensitive } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { parseSearchInput } from "@/lib/courseUtils";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
@@ -22,14 +23,6 @@ interface SearchResult {
 interface ApiError {
   error: string;
   details?: any;
-}
-
-function parseCourseString(courseString: string) {
-  const m = courseString
-    .trim()
-    .toUpperCase()
-    .match(/^([A-Z]+(?:\s[A-Z]+)*)\s*(\d+[A-Z]*)$/);
-  return m ? { department: m[1], codeNumber: m[2] } : null;
 }
 
 async function fetchCourses(q: string, mode: "code" | "title"): Promise<SearchResult[]> {
@@ -103,16 +96,16 @@ export default function CourseSearchInput() {
   const doCheck = useCallback(() => {
     if (isChecking) return;
     const courseIdentifier = selectedValue ? selectedValue.courseCode : inputValue;
-    const parsed = parseCourseString(courseIdentifier);
-    if (!parsed) {
+    const parsed = parseSearchInput(courseIdentifier);
+    if (!parsed.isSpecificSearch || !parsed.department || !parsed.courseCode) {
       console.warn("Invalid course format for check:", courseIdentifier);
       return;
     }
     setIsChecking(true);
     setOpen(false);
-    lastSubmittedRef.current = { dept: parsed.department, code: parsed.codeNumber };
+    lastSubmittedRef.current = { dept: parsed.department, code: parsed.courseCode };
     router.push(
-      `/?dept=${encodeURIComponent(parsed.department)}&code=${encodeURIComponent(parsed.codeNumber)}`,
+      `/?dept=${encodeURIComponent(parsed.department)}&code=${encodeURIComponent(parsed.courseCode)}`,
     );
   }, [inputValue, selectedValue, router, isChecking]);
 
@@ -303,7 +296,9 @@ export default function CourseSearchInput() {
 
         <Button
           onClick={doCheck}
-          disabled={isChecking || (!selectedValue && !parseCourseString(inputValue))}
+          disabled={
+            isChecking || (!selectedValue && !parseSearchInput(inputValue).isSpecificSearch)
+          }
           aria-label="View course details"
           className="min-w-[80px] bg-[#606c5d]"
         >

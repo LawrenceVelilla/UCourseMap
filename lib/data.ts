@@ -3,6 +3,8 @@ import { PrismaClient, Prisma } from "@prisma/client";
 import { Course, RequirementsData, InputNode, AppEdge } from "./types";
 import { cache } from "react";
 import { z } from "zod";
+import { COURSE_SELECTORS } from "./constants";
+import { normalizeCourseCode, CourseCodeSchema, isHighSchoolPrerequisite } from "./courseUtils";
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -73,14 +75,14 @@ export const getMultipleCourseDetails = cache(
     if (!courseCodes || courseCodes.length === 0) return [];
 
     // Ensure consistent casing if necessary, though Prisma handles it well
-    const upperCaseCodes = courseCodes.map((code) => code.toUpperCase().trim());
+    const upperCaseCodes = courseCodes.map(normalizeCourseCode);
     if (process.env.NODE_ENV === "development") {
       console.log(`[Data] Fetching basic details for ${courseCodes.length} courses.`);
     }
     try {
       const courses = await prisma.course.findMany({
         where: { courseCode: { in: upperCaseCodes } },
-        select: { id: true, department: true, courseCode: true, title: true },
+        select: COURSE_SELECTORS.BASIC,
       });
       return courses;
     } catch (error) {
@@ -100,14 +102,14 @@ export const getCoursesByDepartment = cache(
     departmentCode: string,
   ): Promise<Pick<Course, "id" | "department" | "courseCode" | "title">[]> => {
     if (!departmentCode) return [];
-    const upperDept = departmentCode.toUpperCase().trim();
+    const upperDept = normalizeCourseCode(departmentCode);
     if (process.env.NODE_ENV === "development") {
       console.log(`[Data] Fetching basic details for courses in department: ${upperDept}`);
     }
     try {
       const courses = await prisma.course.findMany({
         where: { department: upperDept },
-        select: { id: true, department: true, courseCode: true, title: true },
+        select: COURSE_SELECTORS.BASIC,
         orderBy: { courseCode: "asc" },
       });
       return courses;
@@ -125,21 +127,6 @@ export const getCoursesByDepartment = cache(
  * Uses Zod for runtime validation of raw SQL query results.
  * Uses React Cache.
  */
-
-const highSchoolPatterns = new Set([
-  "MATHEMATICS 30-1",
-  "MATHEMATICS 31",
-  "PURE MATHEMATICS 30",
-  "PURE MATHEMATICS 31",
-  "PHYSICS 30",
-  "CHEMISTRY 30",
-  "BIOLOGY 30",
-  "ENGLISH LANGUAGE ARTS 30-1",
-  "ELA 30-1",
-]);
-const isHighSchoolPrereq = (text: string): boolean => {
-  return highSchoolPatterns.has(text.toUpperCase().trim());
-};
 
 const RawCteResultSchema = z.object({
   id: z.string().uuid(),
@@ -217,7 +204,7 @@ function processTextPrerequisites(
       for (const prereqString of courseNode.flattenedPrerequisites) {
         const normalizedPrereq = prereqString.toUpperCase().trim();
         // Only add if it's not already a known course and not a high school requirement
-        if (!courseNodesMap.has(normalizedPrereq) && !isHighSchoolPrereq(prereqString)) {
+        if (!courseNodesMap.has(normalizedPrereq) && !isHighSchoolPrerequisite(prereqString)) {
           // Create text node if missing
           if (!textNodesMap.has(normalizedPrereq)) {
             const textNode: InputNode = {
@@ -255,8 +242,8 @@ export const getRecursivePrerequisitesCTE = cache(
     courseCodeNumber: string,
     maxDepth: number = 6,
   ): Promise<{ nodes: (Course | InputNode)[]; edges: AppEdge[] }> => {
-    const deptUpper = departmentCode.toUpperCase();
-    const codeNumUpper = courseCodeNumber.toUpperCase();
+    const deptUpper = normalizeCourseCode(departmentCode);
+    const codeNumUpper = normalizeCourseCode(courseCodeNumber);
     const fullCourseCode = `${deptUpper} ${codeNumUpper}`;
 
     // Validate and normalize input
@@ -351,15 +338,6 @@ export const getRecursivePrerequisitesCTE = cache(
   },
 );
 
-const CourseCodeSchema = z
-  .string()
-  .trim()
-  .toUpperCase()
-  .regex(
-    /^([A-Z]{2,6})(?:\s([A-Z]+))?\s(\d{3}[A-Z]?)$/,
-    'Invalid course code format, expected formats like "DEPT 123" or "DEPT 123A"',
-  );
-
 async function getCoursesByDependency(
   field: "flattenedPrerequisites" | "flattenedCorequisites",
   rawCourseCode: string,
@@ -372,7 +350,7 @@ async function getCoursesByDependency(
     // 2.b Build findMany args with optional pagination
     const findManyArgs: Parameters<typeof prisma.course.findMany>[0] = {
       where: { [field]: { has: courseCode } },
-      select: { id: true, department: true, courseCode: true, title: true },
+      select: COURSE_SELECTORS.BASIC,
       orderBy: { courseCode: "asc" as const },
       ...(options?.take !== undefined ? { take: options.take } : {}),
       ...(options?.skip !== undefined ? { skip: options.skip } : {}),
@@ -407,100 +385,3 @@ export const getCoursesHavingCorequisite = cache(
     return getCoursesByDependency("flattenedCorequisites", targetCourseCode, options);
   },
 );
-
-// The original `getRecursivePrerequisites` (N+1 version) has been removed.
-// The `getCourseAndPrerequisiteData` might be less useful now with the CTE providing
-// full recursive data, but can be kept if simple direct prereq lists are needed elsewhere
-
-// export const getCourseAndPrerequisiteData = cache(
-//   async (departmentCode: string, courseCodeNumber: string) => {
-//     const targetCourse = await getCourseDetails(departmentCode, courseCodeNumber);
-
-//     if (!targetCourse) {
-//       return { targetCourse: null, prerequisiteCourses: [] };
-//     }
-
-//     let prerequisiteCourses: Pick<Course, "id" | "department" | "courseCode" | "title">[] = [];
-//     // Check if flattenedPrerequisites is an array and has items
-//     if (
-//       Array.isArray(targetCourse.flattenedPrerequisites) &&
-//       targetCourse.flattenedPrerequisites.length > 0
-//     ) {
-//       // Filter out non-course strings *before* fetching details
-//       const prereqCourseCodes = targetCourse.flattenedPrerequisites
-//         .map((req) => {
-//           const parsed = parseCourseString(req);
-//           // Create the full course code if parsing succeeded
-//           return parsed ? `${parsed.department} ${parsed.codeNumber}` : null;
-//         })
-//         .filter((code): code is string => !!code);
-
-//       if (prereqCourseCodes.length > 0) {
-//         prerequisiteCourses = await getMultipleCourseDetails(prereqCourseCodes);
-//       }
-//     }
-
-//     return { targetCourse, prerequisiteCourses };
-//   }
-// );
-
-/*
-export const getRecursivePrerequisites = cache(
-    async (
-        departmentCode: string,
-        courseCodeNumber: string,
-        maxDepth: number = , // Sensible default max depth
-        _visited: Set<string> = new Set() // Internal cycle detection
-    ): Promise<RecursiveData> => {
-
-        const deptUpper = departmentCode.toUpperCase();
-        const codeNumUpper = courseCodeNumber.toUpperCase();
-        const fullCourseCode = `${deptUpper} ${codeNumUpper}`;
-
-        // --- Base Cases ---
-        if (_visited.has(fullCourseCode)) return { nodes: [], edges: [] }; // Cycle
-        if (maxDepth <= 0) return { nodes: [], edges: [] }; // Depth limit
-        // --- End Base Cases ---
-
-        _visited.add(fullCourseCode);
-
-        const targetCourse = await getCourseDetails(deptUpper, codeNumUpper);
-        if (!targetCourse) {
-            _visited.delete(fullCourseCode); // Backtrack visited if not found
-            return { nodes: [], edges: [] };
-        }
-
-        const allNodesMap = new Map<string, Course>();
-        allNodesMap.set(fullCourseCode, targetCourse);
-        const allEdges: { source: string; target: string }[] = [];
-        const prerequisites = targetCourse.flattenedPrerequisites || [];
-
-        // console.log(`[Data] Recursively fetching for ${fullCourseCode} (Depth: ${maxDepth})`);
-
-        for (const prereqCode of prerequisites) {
-            const parsedPrereq = parseCourseString(prereqCode); // Check if it's a course code
-
-            // Add edge regardless of whether target is course or text
-            allEdges.push({ source: fullCourseCode, target: prereqCode.toUpperCase() }); // Store target uppercase
-
-            if (parsedPrereq) { // Only recurse if it's a parsable course code
-                const subData = await getRecursivePrerequisites(
-                    parsedPrereq.department,
-                    parsedPrereq.codeNumber,
-                    maxDepth - 1,
-                    _visited
-                );
-                subData.nodes.forEach(node => allNodesMap.set(node.courseCode, node)); // Deduplicate nodes
-                allEdges.push(...subData.edges); // Add edges from sub-tree
-            }
-        }
-
-        _visited.delete(fullCourseCode); // Allow visiting via different paths
-
-        return {
-            nodes: Array.from(allNodesMap.values()),
-            edges: allEdges, // Edges might contain duplicates if graph has multiple paths; React Flow usually handles this
-        };
-    }
-);
-*/

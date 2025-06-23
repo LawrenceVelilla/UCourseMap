@@ -1,5 +1,11 @@
 import { NextResponse } from "next/server";
 import { Course } from "../../../../lib/types";
+import {
+  handleApiError,
+  createErrorResponse,
+  createSuccessResponse,
+} from "../../../../lib/apiUtils";
+import { ERROR_MESSAGES, HTTP_STATUS } from "../../../../lib/constants";
 
 // Placeholder data for demonstration purposes
 // IMPORTANT: Replace this with actual database fetching (e.g., Prisma)
@@ -120,9 +126,9 @@ export async function POST(request: Request) {
     const { courseCodes } = body;
 
     if (!Array.isArray(courseCodes)) {
-      return NextResponse.json(
-        { message: "Invalid request body. Expected { courseCodes: string[] }." },
-        { status: 400 },
+      return createErrorResponse(
+        ERROR_MESSAGES.INVALID_REQUEST_BODY + ". Expected { courseCodes: string[] }.",
+        HTTP_STATUS.BAD_REQUEST,
       );
     }
 
@@ -131,7 +137,6 @@ export async function POST(request: Request) {
       courseCodes.includes(course.courseCode),
     );
 
-    // In a real app using Prisma:
     // const foundCourses = await prisma.course.findMany({
     //   where: {
     //     courseCode: {
@@ -142,13 +147,8 @@ export async function POST(request: Request) {
     // });
 
     console.log(`Fetched data for courses: ${foundCourses.map((c) => c.courseCode).join(", ")}`);
-    return NextResponse.json(foundCourses, { status: 200 });
+    return createSuccessResponse(foundCourses);
   } catch (error) {
-    console.error("Error fetching batch course data:", error);
-    const errorMessage = error instanceof Error ? error.message : "An unknown error occurred";
-    return NextResponse.json(
-      { message: "Failed to fetch batch course data", error: errorMessage },
-      { status: 500 },
-    );
+    return handleApiError(error, "fetch batch course data");
   }
 }
